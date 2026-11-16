@@ -1,0 +1,62 @@
+{
+"id": "e-iran-new-wave", "type": "school", "years": {"min": 1962, "max": 1979}, "admit": ["core", "periphery"],
+"school": {
+  "countries": ["IR"],
+  "directors": [
+    {"id": 119294, "name": "Abbas Kiarostami"},
+    {"id": 120227, "name": "Dariush Mehrjui"},
+    {"id": 1098592, "name": "Bahram Beyzai"},
+    {"id": 72196, "name": "Amir Naderi"},
+    {"id": 1128485, "name": "Ebrahim Golestan"},
+    {"id": 1299850, "name": "Parviz Kimiavi"},
+    {"id": 1198165, "name": "Sohrab Shahid-Saless"},
+    {"id": 1179182, "name": "Nasser Taghvai"}
+  ]
+},
+"sources": [
+  {"id": "miff-iran", "publication": "Melbourne International Film Festival 2024, via notas de Ehsan Khoshbakht/blog Notes on Cinematograph", "title": "Iranian New Wave: 1962-79 (programa derivado da série do MoMA; só os nomeados no texto)", "url": "https://notesoncinematograph.blogspot.com/2024/07/iranian-new-wave-196279-at-melbourne.html", "revision": "12/07/2024", "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-11-15"},
+  {"id": "moma-iran", "publication": "MoMA, comunicado de imprensa", "title": "Iranian Cinema before the Revolution, 1925-1979 (cerca de 70 filmes; curadoria de Ehsan Khoshbakht; só os nomeados no comunicado)", "url": "https://press.moma.org/wp-content/uploads/2023/08/Iranian_Cinema_PR_FINAL_10.6.pdf", "revision": "06/10/2023 (série de 13/10 a 27/11/2023)", "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-11-15"},
+  {"id": "wp-en-iranian-new-wave", "publication": "Wikipedia (en)", "title": "Iranian New Wave", "url": "https://en.wikipedia.org/w/index.php?oldid=1381215955", "revision": 1381215955, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-10-20"},
+  {"id": "wp-fa-iran-new-wave", "publication": "Wikipedia (fa)", "title": "موج نوی سینمای ایران", "url": "https://fa.wikipedia.org/w/index.php?oldid=44356256", "revision": 44356256, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-09-09"}
+],
+"consensus": null,
+"films": [
+  {"imdb": "tt0336693", "tmdb": 44065, "title": "The House Is Black", "year": 1963, "sources": ["miff-iran", "moma-iran", "wp-en-iranian-new-wave", "wp-fa-iran-new-wave"], "class": "core"},
+  {"imdb": "tt0122130", "tmdb": 149135, "title": "Brick and Mirror", "year": 1966, "sources": ["miff-iran", "moma-iran", "wp-en-iranian-new-wave", "wp-fa-iran-new-wave"], "class": "core"},
+  {"imdb": "tt0064356", "tmdb": 43984, "slug": "the-cow-1969", "title": "The Cow", "year": 1969, "sources": ["miff-iran", "moma-iran", "wp-en-iranian-new-wave", "wp-fa-iran-new-wave"], "class": "core"},
+  {"imdb": "tt0064368", "tmdb": 256786, "slug": "gheysar", "title": "Gheysar", "year": 1969, "sources": ["moma-iran", "wp-en-iranian-new-wave", "wp-fa-iran-new-wave"], "class": "core"},
+  {"imdb": "tt0066233", "tmdb": 266232, "title": "Postman", "year": 1972, "sources": ["wp-fa-iran-new-wave"], "class": "periphery"},
+  {"imdb": "tt0067649", "tmdb": 134346, "slug": "downpour-1972", "title": "Downpour", "year": 1972, "sources": ["wp-en-iranian-new-wave", "wp-fa-iran-new-wave"], "class": "periphery"},
+  {"imdb": "tt0069727", "tmdb": 268104, "title": "Peace in the Presence of Others", "year": 1972, "sources": ["wp-en-iranian-new-wave", "wp-fa-iran-new-wave"], "class": "periphery"},
+  {"imdb": "tt0070938", "tmdb": 318342, "slug": "a-simple-event", "title": "A Simple Event", "year": 1973, "sources": ["wp-en-iranian-new-wave", "wp-fa-iran-new-wave"], "class": "periphery"},
+  {"imdb": "tt0206947", "tmdb": 260294, "slug": "the-mongols", "title": "The Mongols", "year": 1973, "sources": ["wp-en-iranian-new-wave", "wp-fa-iran-new-wave"], "class": "periphery"},
+  {"imdb": "tt0071468", "tmdb": 370465, "title": "Waiting", "year": 1974, "sources": ["moma-iran"], "class": "periphery"},
+  {"imdb": "tt0072248", "tmdb": 213592, "slug": "still-life-1974", "title": "Still Life", "year": 1974, "sources": ["wp-en-iranian-new-wave"], "class": "periphery"},
+  {"imdb": "tt0071549", "tmdb": 266230, "title": "The Stranger and the Fog", "year": 1975, "sources": ["miff-iran", "wp-fa-iran-new-wave"], "class": "core"}
+],
+"exclude": [
+
+],
+"pending": [
+  {"title": "Wave, Coral and Rock", "year": 1962, "class": "periphery", "why": "the curation found no IMDb id for this film; it is written down so that it is not lost"},
+  {"title": "Tranquility in the Presence of Others", "year": 1969, "class": "periphery", "why": "the curation found no IMDb id for this film; it is written down so that it is not lost"},
+  {"title": "Prince Ehtejab", "year": 1974, "class": "periphery", "why": "the curation found no IMDb id for this film; it is written down so that it is not lost"},
+  {"imdb": "tt0930760", "title": "The Night It Rained", "year": 1967, "class": "periphery", "why": "above the prefilter and not in the index, but no TMDB id or Letterboxd page is known yet"},
+  {"imdb": "tt0065376", "title": "Mr. Naive", "year": 1970, "class": "periphery", "why": "above the prefilter and not in the index, but no TMDB id or Letterboxd page is known yet"},
+  {"imdb": "tt0067300", "title": "Khodahafez Rafigh", "year": 1970, "class": "periphery", "why": "above the prefilter and not in the index, but no TMDB id or Letterboxd page is known yet"},
+  {"imdb": "tt0318028", "title": "Reza Motorcyclist", "year": 1970, "class": "periphery", "why": "above the prefilter and not in the index, but no TMDB id or Letterboxd page is known yet"},
+  {"imdb": "tt1105388", "title": "The Morning of the Fourth Day", "year": 1972, "class": "periphery", "why": "above the prefilter and not in the index, but no TMDB id or Letterboxd page is known yet"},
+  {"imdb": "tt0070773", "title": "Tangna", "year": 1973, "class": "periphery", "why": "above the prefilter and not in the index, but no TMDB id or Letterboxd page is known yet"},
+  {"imdb": "tt0072117", "title": "Harmonica", "year": 1973, "class": "core", "why": "above the prefilter and not in the index, but no TMDB id or Letterboxd page is known yet"},
+  {"imdb": "tt0072254", "title": "Tangsir", "year": 1973, "class": "periphery", "why": "above the prefilter and not in the index, but no TMDB id or Letterboxd page is known yet"},
+  {"imdb": "tt0072151", "title": "Shazdeh Ehtejab", "year": 1974, "class": "periphery", "why": "above the prefilter and not in the index, but no TMDB id or Letterboxd page is known yet"},
+  {"imdb": "tt0074565", "title": "The Deer", "year": 1974, "class": "core", "why": "above the prefilter and not in the index, but no TMDB id or Letterboxd page is known yet"},
+  {"imdb": "tt0077403", "title": "The Cycle", "year": 1975, "class": "core", "why": "above the prefilter and not in the index, but no TMDB id or Letterboxd page is known yet"},
+  {"imdb": "tt0169580", "title": "The Garden of Stones", "year": 1976, "class": "periphery", "why": "above the prefilter and not in the index, but no TMDB id or Letterboxd page is known yet"},
+  {"imdb": "tt0074732", "title": "The Raven", "year": 1977, "class": "core", "why": "above the prefilter and not in the index, but no TMDB id or Letterboxd page is known yet"},
+  {"imdb": "tt0078893", "title": "Dead End", "year": 1977, "class": "periphery", "why": "above the prefilter and not in the index, but no TMDB id or Letterboxd page is known yet"},
+  {"imdb": "tt0079997", "title": "The Ballad of Tara", "year": 1979, "class": "periphery", "why": "above the prefilter and not in the index, but no TMDB id or Letterboxd page is known yet"},
+  {"imdb": "tt0320423", "title": "Tall Shadows of the Wind", "year": 1979, "class": "core", "why": "above the prefilter and not in the index, but no TMDB id or Letterboxd page is known yet"}
+],
+"counted": {"curationFilms": 50, "written": 12, "inIndexOfReference": 10, "notInIndexAdmitted": 24, "notInIndexPassingImdb7": 12, "pending": 19, "documentariesWrittenOut": 0, "leftOut": {"class not admitted by the era": 4, "outside the years of the era": 9, "not in the index and under the prefilter": 6, "named with no id and no class (not written in pending)": 0}}
+}

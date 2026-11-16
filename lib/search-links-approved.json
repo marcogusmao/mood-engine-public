@@ -1,0 +1,24 @@
+{
+  "approvedOn": "11/10/2026",
+  "approved": "Marco, 11/10/2026: \"Sim, aceitando só esta correção e travando a lista exata de filmes afetados\"",
+  "note": "Refused TMDB search hits of the offline build on the inputs below: [title, year, reason, search hit, IMDb id Marco's page names, relinked TMDB id or null = pending]. The v2.1 pin compares the list exactly only when the inputs hash the same; the build logs every difference.",
+  "inputs": {
+    "cache/friends.json": "bfaf2908feb27202bab8efbdf3e15b33294b6a4dba6a5b6ee3fbb65f391e2637",
+    "cache/tmdb.json": "8ce527466d8fb6736b6dc57727170b110aa7afb3322576dd6f1efc98d8625527",
+    "data/letterboxd/diary.csv": "914e3cd3192844e2a3dc0aaab72e8cd234991a093727dacd90f7957efceac90d",
+    "data/letterboxd/ratings.csv": "17c4d16e5742e19edc780be83e07cd590f7d60e42482eb886edc62baa88aa291",
+    "data/letterboxd/watched.csv": "63edfc08c530291878d905e28724bb394ccd113202ab0db9cd07a542efe60470",
+    "data/letterboxd/watchlist.csv": "686d7e8facc31e4c8a4e0f36b405875e39db0a99e5b336ca226840712274ebf1"
+  },
+  "links": [
+    ["Cosmos", 2014, "ambiguous", 315868, "tt2395695", null],
+    ["Split", 2016, "ambiguous", 358364, "tt4972582", 381288],
+    ["The Conformist", 1970, "ambiguous", 1780713, "tt0065571", 8416],
+    ["Under the Skin", 2013, "ambiguous", 698232, "tt1441395", 97370],
+    ["One Day", 2024, "short-without-imdb", 1259068, null, null],
+    ["Scenes from a Marriage", 1973, "ambiguous", 133919, "tt0070644", null],
+    ["The Hand", 2020, "ambiguous", 869169, "tt15165236", 846716],
+    ["Manas", 2024, "ambiguous", 1388901, "tt27911420", 1256408],
+    ["The Curse", 2023, "ambiguous", 1262809, "tt13623608", null]
+  ]
+}

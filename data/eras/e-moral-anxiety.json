@@ -1,0 +1,88 @@
+{
+"id": "e-moral-anxiety", "type": "school", "years": {"min": 1975, "max": 1989}, "admit": ["core", "periphery"],
+"school": {
+  "countries": ["PL"],
+  "directors": [
+    {"id": 591273, "name": "Krzysztof Zanussi"},
+    {"id": 1126, "name": "Krzysztof Kieślowski"},
+    {"id": 1128, "name": "Agnieszka Holland"},
+    {"id": 105897, "name": "Feliks Falk"},
+    {"id": 2801, "name": "Andrzej Wajda"},
+    {"id": 1044803, "name": "Wojciech Marczewski"},
+    {"id": 83319, "name": "Ryszard Bugajski"},
+    {"id": 268271, "name": "Marek Piwowski"},
+    {"id": 591269, "name": "Janusz Majewski"},
+    {"id": 1180572, "name": "Janusz Kijowski"},
+    {"id": 1057957, "name": "Barbara Sass"},
+    {"id": 591281, "name": "Filip Bajon"},
+    {"id": 2833, "name": "Janusz Zaorski"},
+    {"id": 558524, "name": "Wiesław Saniewski"},
+    {"id": 1478440, "name": "Piotr Andrejew"},
+    {"id": 1137915, "name": "Tomasz Zygadło"}
+  ],
+  "candidates": [
+    {"imdb": "tt0072446", "tmdb": 511, "slug": "the-promised-land-1975", "title": "The Promised Land", "year": 1975, "directors": ["Andrzej Wajda"], "minutes": 179},
+    {"imdb": "tt0075454", "tmdb": 208309, "slug": "hotel-pacific", "title": "Hotel Pacific", "year": 1975, "directors": ["Janusz Majewski"], "minutes": 94},
+    {"imdb": "tt0076575", "tmdb": 318545, "slug": "excuse-me-is-it-here-they-beat-up-people", "title": "Excuse Me, Is It Here They Beat Up People?", "year": 1976, "directors": ["Marek Piwowski"], "minutes": 90},
+    {"imdb": "tt0076455", "tmdb": 420210, "slug": "i-dont-know-1977", "title": "I Don't Know", "year": 1977, "directors": ["Krzysztof Kieslowski"], "minutes": 47},
+    {"imdb": "tt0076750", "tmdb": 298871, "slug": "the-gorgon-case", "title": "The Gorgon Case", "year": 1977, "directors": ["Janusz Majewski"], "minutes": 138},
+    {"imdb": "tt0076953", "tmdb": 317455, "slug": "screen-tests", "title": "Screen Tests", "year": 1977, "directors": ["Agnieszka Holland"], "minutes": 99},
+    {"imdb": "tt0176266", "tmdb": 420934, "slug": "the-dead-class", "title": "The Dead Class", "year": 1977, "directors": ["Andrzej Wajda"], "minutes": 72},
+    {"imdb": "tt0078310", "tmdb": 198515, "slug": "the-spiral-1978", "title": "The Spiral", "year": 1978, "directors": ["Krzysztof Zanussi"], "minutes": 83},
+    {"imdb": "tt0079696", "tmdb": 117483, "slug": "the-maids-of-wilko", "title": "The Maids of Wilko", "year": 1979, "directors": ["Andrzej Wajda"], "minutes": 116},
+    {"imdb": "tt0080176", "tmdb": 108710, "slug": "nightmares-1979", "title": "Nightmares", "year": 1979, "directors": ["Wojciech Marczewski"], "minutes": 100},
+    {"imdb": "tt0080381", "tmdb": 409699, "slug": "aria-for-an-athlete", "title": "Aria for an Athlete", "year": 1979, "directors": ["Filip Bajon"], "minutes": 108},
+    {"imdb": "tt0082294", "tmdb": 135625, "slug": "shivers-1981", "title": "Shivers", "year": 1981, "directors": ["Wojciech Marczewski"], "minutes": 106},
+    {"imdb": "tt0084123", "tmdb": 204164, "slug": "imperative", "title": "Imperative", "year": 1982, "directors": ["Krzysztof Zanussi"], "minutes": 102},
+    {"imdb": "tt0085812", "tmdb": 298160, "slug": "the-scream", "title": "The Scream", "year": 1983, "directors": ["Barbara Sass"], "minutes": 88},
+    {"imdb": "tt0085843", "tmdb": 2285, "slug": "a-love-in-germany", "title": "A Love in Germany", "year": 1983, "directors": ["Andrzej Wajda"], "minutes": 132},
+    {"imdb": "tt0088811", "tmdb": 42032, "slug": "angry-harvest", "title": "Angry Harvest", "year": 1985, "directors": ["Agnieszka Holland"], "minutes": 101},
+    {"imdb": "tt0089662", "tmdb": 246158, "slug": "custody-1983", "title": "Custody", "year": 1985, "directors": ["Wiesław Saniewski"], "minutes": 118},
+    {"imdb": "tt0091358", "tmdb": 270735, "slug": "chronicle-of-amorous-accidents", "title": "Chronicle of Amorous Accidents", "year": 1986, "directors": ["Andrzej Wajda"], "minutes": 120},
+    {"imdb": "tt0092685", "tmdb": 155531, "slug": "hero-of-the-year", "title": "Hero of the Year", "year": 1986, "directors": ["Feliks Falk"], "minutes": 115},
+    {"imdb": "tt0092713", "tmdb": 36264, "slug": "the-deserters", "title": "H.M. Deserters", "year": 1986, "directors": ["Janusz Majewski"], "minutes": 155},
+    {"imdb": "tt0085916", "tmdb": 246528, "slug": "the-mother-of-the-kings", "title": "The Mother of the Kings", "year": 1987, "directors": ["Janusz Zaorski"], "minutes": 127},
+    {"imdb": "tt0093475", "tmdb": 382781, "slug": "the-magnate", "title": "The Magnate", "year": 1987, "directors": ["Filip Bajon"], "minutes": 171},
+    {"imdb": "tt0098096", "tmdb": 36399, "slug": "soccer-poker", "title": "Soccer Poker", "year": 1989, "directors": ["Janusz Zaorski"], "minutes": 99}
+  ],
+  "candidatesFrom": "TMDB credits (job Director) of every name of the list, features of 40 minutes or more with an IMDb id, not in the index of reference, read on 14/11/2026 by the main session (data/era-filmographies.json of 4c8e805 for the 21:32 UTC names; filmografias-toquery.json for the 20 names added at 22:15 UTC), then the prefilter of the IMDb public file (votes >= 100 and rating >= 6.5); the 8 Decalogue episodes of 1989 are TV episodes and are left out",
+  "notAdded": [{"era": "anxiety", "name": "Antoni Krauze", "id": "Wikidata P4985 583745 (not used)", "why": "NOT confirmed: neither the en page (rev 1383982929) nor the pl page (rev 80347962) lists Antoni Krauze; the pl page names Krzysztof Krauze (another person, of the 1990s) as the \"younger brother\" of the movement"}]
+},
+"sources": [
+  {"id": "bfi-pl", "publication": "BFI", "title": "10 great Polish films (Michael Brooke): texto sobre Man of Marble", "url": "https://www.bfi.org.uk/lists/10-great-polish-films", "revision": null, "readOn": "2026-11-15", "mark": "read"},
+  {"id": "cult", "publication": "Culture.pl", "title": "Culture.pl: página da tag 'cinema-of-moral-anxiety' (7 itens) e guia multimídia 'Cinema of Moral Anxiety'", "url": "https://culture.pl/en/tag/cinema-of-moral-anxiety", "revision": null, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2020-02-25"},
+  {"id": "klas", "publication": "Klassiki", "title": "The Klassiki Companion: Poland in the Eighties (Sam Goff, 11/04/2024): filmes que o texto liga à 'cinema of moral anxiety'", "url": "https://klassiki.online/the-klassiki-companion-poland-in-the-eighties/", "revision": null, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2024-04-11"},
+  {"id": "wp-de", "publication": "Wikipedia (de)", "title": "Kino der moralischen Unruhe", "url": "https://de.wikipedia.org/w/index.php?oldid=271699871", "revision": 271699871, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-10-28"},
+  {"id": "wp-en", "publication": "Wikipedia (en)", "title": "Cinema of moral anxiety", "url": "https://en.wikipedia.org/w/index.php?oldid=1383982929", "revision": 1383982929, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-11-06"},
+  {"id": "wp-fr", "publication": "Wikipedia (fr)", "title": "Cinéma de l'inquiétude morale", "url": "https://fr.wikipedia.org/w/index.php?oldid=241316258", "revision": 241316258, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-11-13"},
+  {"id": "wp-pl", "publication": "Wikipedia (pl)", "title": "Kino moralnego niepokoju", "url": "https://pl.wikipedia.org/w/index.php?oldid=80347962", "revision": 80347962, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-08-06"}
+],
+"consensus": null,
+"films": [
+  {"imdb": "tt0073532", "tmdb": 91881, "slug": "personnel", "title": "Personnel", "year": 1975, "sources": ["wp-fr"], "class": "periphery"},
+  {"imdb": "tt0074220", "tmdb": 49134, "slug": "the-scar", "title": "The Scar", "year": 1976, "sources": ["klas", "wp-de", "wp-en", "wp-pl"], "class": "core"},
+  {"imdb": "tt0075256", "tmdb": 108733, "slug": "the-calm", "title": "The Calm", "year": 1976, "sources": ["klas", "wp-en", "wp-pl"], "class": "core"},
+  {"imdb": "tt0075730", "tmdb": 139467, "slug": "camouflage-1977", "title": "Camouflage", "year": 1977, "sources": ["cult", "wp-en", "wp-pl"], "class": "core"},
+  {"imdb": "tt0075902", "tmdb": 224, "slug": "man-of-marble", "title": "Man of Marble", "year": 1977, "sources": ["bfi-pl", "cult", "klas", "wp-en", "wp-fr", "wp-pl"], "class": "core"},
+  {"imdb": "tt0078099", "tmdb": 337433, "slug": "a-room-with-a-view-on-the-sea", "title": "Pokój z widokiem na morze", "year": 1978, "sources": ["wp-pl"], "class": "periphery"},
+  {"imdb": "tt0078507", "tmdb": 258392, "slug": "top-dog-1978", "title": "Wodzirej", "year": 1978, "sources": ["wp-pl"], "class": "periphery"},
+  {"imdb": "tt0078857", "tmdb": 42199, "slug": "without-anesthesia", "title": "Without Anesthesia", "year": 1978, "sources": ["wp-en", "wp-pl"], "class": "periphery"},
+  {"imdb": "tt0078516", "tmdb": 179851, "slug": "from-a-night-porters-point-of-view", "title": "From a Night Porter's Point of View", "year": 1979, "sources": ["wp-en"], "class": "periphery"},
+  {"imdb": "tt0078763", "tmdb": 42164, "slug": "camera-buff", "title": "Camera Buff", "year": 1979, "sources": ["cult", "klas", "wp-en", "wp-pl"], "class": "core"},
+  {"imdb": "tt0080342", "tmdb": 114171, "slug": "provincial-actors", "title": "Provincial Actors", "year": 1979, "sources": ["klas", "wp-de", "wp-en", "wp-pl"], "class": "core"},
+  {"imdb": "tt0081017", "tmdb": 299848, "slug": "kung-fu", "title": "Kung-fu", "year": 1979, "sources": ["wp-pl"], "class": "periphery"},
+  {"imdb": "tt0079090", "tmdb": 95269, "slug": "the-conductor", "title": "The Orchestra Conductor", "year": 1980, "sources": ["wp-en", "wp-pl"], "class": "periphery"},
+  {"imdb": "tt0080434", "tmdb": 424137, "slug": "without-love-1980", "title": "Bez milosci", "year": 1980, "sources": ["wp-pl"], "class": "periphery"},
+  {"imdb": "tt0080547", "tmdb": 155852, "slug": "the-moth", "title": "The Moth", "year": 1980, "sources": ["wp-en", "wp-pl"], "class": "periphery"},
+  {"imdb": "tt0080561", "tmdb": 198500, "slug": "the-constant-factor", "title": "The Constant Factor", "year": 1980, "sources": ["cult", "wp-en", "wp-pl"], "class": "core"},
+  {"imdb": "tt0081011", "tmdb": 204169, "slug": "the-contract-1980", "title": "Kontrakt", "year": 1980, "sources": ["wp-pl"], "class": "periphery"},
+  {"imdb": "tt0082625", "tmdb": 42983, "slug": "a-woman-alone-1987", "title": "A Lonely Woman", "year": 1987, "sources": ["cult"], "class": "periphery"}
+],
+"exclude": [
+
+],
+"pending": [
+
+],
+"counted": {"curationFilms": 22, "written": 18, "inIndexOfReference": 4, "notInIndexAdmitted": 18, "notInIndexPassingImdb7": 8, "pending": 0, "documentariesWrittenOut": 0, "leftOut": {"not in the index and under the prefilter": 4, "named with no id and no class (not written in pending)": 0}}
+}

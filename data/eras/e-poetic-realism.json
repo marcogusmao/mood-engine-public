@@ -1,0 +1,61 @@
+{
+"id": "e-poetic-realism", "type": "school", "years": {"min": 1930, "max": 1945}, "admit": ["core", "periphery"],
+"school": {
+  "countries": ["FR"],
+  "directors": [
+    {"id": 25161, "name": "Marcel Carné"},
+    {"id": 11528, "name": "Jean Renoir"},
+    {"id": 39058, "name": "Julien Duvivier"},
+    {"id": 142865, "name": "Jean Vigo"},
+    {"id": 238377, "name": "Jean Grémillon"},
+    {"id": 33797, "name": "Pierre Chenal"},
+    {"id": 238954, "name": "Marc Allégret"}
+  ]
+},
+"sources": [
+  {"id": "crit", "publication": "Criterion Collection (cópia do Internet Archive)", "title": "Poetic Realism (coleção da loja; 9 resultados; a página não mostra anos)", "url": "https://www.criterion.com/shop/collection/15-poetic-realism", "revision": null, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2025-08-12"},
+  {"id": "wp-cs", "publication": "Wikipedia (cs)", "title": "Poetický realismus", "url": "https://cs.wikipedia.org/w/index.php?oldid=24596510", "revision": 24596510, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2025-01-22"},
+  {"id": "wp-de", "publication": "Wikipedia (de)", "title": "Poetischer Realismus (Film)", "url": "https://de.wikipedia.org/w/index.php?oldid=271937509", "revision": 271937509, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-11-06"},
+  {"id": "wp-en", "publication": "Wikipedia (en)", "title": "Poetic realism", "url": "https://en.wikipedia.org/w/index.php?oldid=1356762276", "revision": 1356762276, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-05-29"},
+  {"id": "wp-fr", "publication": "Wikipedia (fr)", "title": "Réalisme poétique", "url": "https://fr.wikipedia.org/w/index.php?oldid=241335867", "revision": 241335867, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-11-14"}
+],
+"consensus": null,
+"films": [
+  {"imdb": "tt0021247", "tmdb": 153832, "slug": "little-lise-1930", "title": "Little Lise", "year": 1930, "sources": ["wp-en"], "class": "periphery"},
+  {"imdb": "tt0021409", "tmdb": 54419, "slug": "under-the-roofs-of-paris", "title": "Under the Roofs of Paris", "year": 1930, "sources": ["wp-de", "wp-fr"], "class": "periphery"},
+  {"imdb": "tt0022150", "tmdb": 32317, "slug": "le-million", "title": "Le Million", "year": 1931, "sources": ["wp-de"], "class": "periphery"},
+  {"imdb": "tt0022599", "tmdb": 31514, "slug": "a-nous-la-liberte", "title": "À Nous la Liberté", "year": 1931, "sources": ["wp-de", "wp-fr"], "class": "periphery"},
+  {"imdb": "tt0021754", "tmdb": 64545, "slug": "lilac", "title": "Cœur de lilas", "year": 1932, "sources": ["wp-fr"], "class": "periphery"},
+  {"imdb": "tt0024480", "tmdb": 205380, "slug": "july-14", "title": "July 14", "year": 1933, "sources": ["wp-fr"], "class": "periphery"},
+  {"imdb": "tt0024803", "tmdb": 44494, "slug": "zero-for-conduct-1933", "title": "Zero for Conduct", "year": 1933, "sources": ["wp-en"], "class": "periphery"},
+  {"imdb": "tt0024844", "tmdb": 43904, "slug": "latalante", "title": "L'Atalante", "year": 1934, "sources": ["wp-de", "wp-en", "wp-fr"], "class": "core"},
+  {"imdb": "tt0025198", "tmdb": 166883, "slug": "the-great-game-1934", "title": "Le Grand Jeu", "year": 1934, "sources": ["wp-en", "wp-fr"], "class": "periphery"},
+  {"imdb": "tt0025397", "tmdb": 63702, "slug": "liliom", "title": "Liliom", "year": 1934, "sources": ["wp-fr"], "class": "periphery"},
+  {"imdb": "tt0025898", "tmdb": 51949, "slug": "toni", "title": "Toni", "year": 1935, "sources": ["crit", "wp-de"], "class": "core"},
+  {"imdb": "tt0026095", "tmdb": 72400, "slug": "la-bandera", "title": "La Bandera", "year": 1935, "sources": ["wp-en"], "class": "periphery"},
+  {"imdb": "tt0026564", "tmdb": 32543, "slug": "carnival-in-flanders", "title": "Carnival in Flanders", "year": 1935, "sources": ["wp-en", "wp-fr"], "class": "periphery"},
+  {"imdb": "tt0026859", "tmdb": 285782, "slug": "pension-mimosas", "title": "Pension Mimosas", "year": 1935, "sources": ["wp-en"], "class": "periphery"},
+  {"imdb": "tt0027336", "tmdb": 45802, "slug": "the-lower-depths", "title": "The Lower Depths", "year": 1936, "sources": ["crit", "wp-en"], "class": "core"},
+  {"imdb": "tt0027342", "tmdb": 67443, "slug": "la-belle-equipe", "title": "La belle équipe", "year": 1936, "sources": ["wp-de", "wp-en", "wp-fr"], "class": "core"},
+  {"imdb": "tt0027478", "tmdb": 52677, "slug": "the-crime-of-monsieur-lange", "title": "The Crime of Monsieur Lange", "year": 1936, "sources": ["wp-de"], "class": "periphery"},
+  {"imdb": "tt0028950", "tmdb": 777, "slug": "grand-illusion", "title": "La Grande Illusion", "year": 1937, "sources": ["wp-cs", "wp-de", "wp-en", "wp-fr"], "class": "core"},
+  {"imdb": "tt0029453", "tmdb": 26252, "slug": "pepe-le-moko", "title": "Pépé le Moko", "year": 1937, "sources": ["crit", "wp-cs", "wp-de", "wp-en", "wp-fr"], "class": "core"},
+  {"imdb": "tt0029957", "tmdb": 29415, "slug": "la-bete-humaine", "title": "La Bête humaine", "year": 1938, "sources": ["crit", "wp-de", "wp-en", "wp-fr"], "class": "core"},
+  {"imdb": "tt0030100", "tmdb": 64294, "slug": "the-curtain-rises-1938", "title": "The Curtain Rises", "year": 1938, "sources": ["wp-fr"], "class": "periphery"},
+  {"imdb": "tt0030252", "tmdb": 48369, "slug": "hotel-du-nord", "title": "Hôtel du Nord", "year": 1938, "sources": ["crit", "wp-cs", "wp-de", "wp-en", "wp-fr"], "class": "core"},
+  {"imdb": "tt0030643", "tmdb": 46326, "slug": "port-of-shadows", "title": "Port of Shadows", "year": 1938, "sources": ["wp-de", "wp-en", "wp-fr"], "class": "core"},
+  {"imdb": "tt0031514", "tmdb": 27053, "slug": "daybreak-1939", "title": "Le Jour Se Lève", "year": 1939, "sources": ["wp-de", "wp-en", "wp-fr"], "class": "core"},
+  {"imdb": "tt0031885", "tmdb": 776, "slug": "the-rules-of-the-game", "title": "The Rules of the Game", "year": 1939, "sources": ["crit", "wp-de", "wp-en"], "class": "core"},
+  {"imdb": "tt0034093", "tmdb": 64897, "slug": "stormy-waters", "title": "Stormy Waters", "year": 1941, "sources": ["crit", "wp-en", "wp-fr"], "class": "core"},
+  {"imdb": "tt0035001", "tmdb": 63981, "slug": "summer-light-1943", "title": "Lumière d'été", "year": 1943, "sources": ["crit", "wp-en"], "class": "core"},
+  {"imdb": "tt0035737", "tmdb": 110573, "slug": "the-woman-who-dared", "title": "The Woman Who Dared", "year": 1944, "sources": ["wp-en"], "class": "periphery"},
+  {"imdb": "tt0037674", "tmdb": 2457, "slug": "children-of-paradise", "title": "Children of Paradise", "year": 1945, "sources": ["crit", "wp-de", "wp-en", "wp-fr"], "class": "core"}
+],
+"exclude": [
+
+],
+"pending": [
+  {"imdb": "tt0027818", "title": "Jenny", "year": 1936, "class": "periphery", "why": "above the prefilter and not in the index, but no TMDB id or Letterboxd page is known yet"}
+],
+"counted": {"curationFilms": 31, "written": 29, "inIndexOfReference": 21, "notInIndexAdmitted": 10, "notInIndexPassingImdb7": 4, "pending": 1, "documentariesWrittenOut": 0, "leftOut": {"not in the index and under the prefilter": 1, "named with no id and no class (not written in pending)": 10}}
+}

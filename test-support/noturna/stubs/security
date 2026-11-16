@@ -1,0 +1,21 @@
+#!/bin/bash
+# Test double for the Keychain tool (test/noturna-mac.test.js, 21/10/2026). It records that it was called (never the secret) and prints the key the test put in
+# NOTURNA_FAKE_CHAVE (an environment variable, so that no file of the test holds the canary). FAKE_SECURITY_FALHA=1 in controle.env: the item cannot be read (exit 44).
+D=$(cd "$(dirname "$0")" && pwd)
+if [ -f "$D/controle.env" ]; then . "$D/controle.env"; fi
+mkdir -p "$D/chamadas"
+# Review of 21/10/2026: a second item, the network token (service "gh-token-teste" in the token-mode tests). FAKE_TOKEN_FALHA=1: that item cannot be read (exit 44).
+servico=""
+prev=""
+for a in "$@"; do
+  if [ "$prev" = "-s" ]; then servico=$a; fi
+  prev=$a
+done
+printf 'chamado servico=%s\n' "$servico" >> "$D/chamadas/security.log"
+if [ "$servico" = "gh-token-teste" ]; then
+  if [ -n "${FAKE_TOKEN_FALHA-}" ]; then exit 44; fi
+  printf '%s\n' "${NOTURNA_FAKE_TOKEN:-gh-token-de-teste-0000}"
+  exit 0
+fi
+if [ -n "${FAKE_SECURITY_FALHA-}" ]; then exit 44; fi
+printf '%s\n' "${NOTURNA_FAKE_CHAVE:-chave-de-teste-0000}"

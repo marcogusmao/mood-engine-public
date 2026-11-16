@@ -1,0 +1,80 @@
+{
+"id": "e-czech-new-wave", "type": "school", "years": {"min": 1962, "max": 1970}, "admit": ["core", "periphery"],
+"school": {
+  "countries": ["CZ", "SK", "XC"],
+  "directors": [
+    {"id": 3974, "name": "Miloš Forman"},
+    {"id": 124137, "name": "Věra Chytilová"},
+    {"id": 11720, "name": "Jiří Menzel"},
+    {"id": 84736, "name": "Ivan Passer"},
+    {"id": 1024901, "name": "Jan Němec"},
+    {"id": 83998, "name": "Juraj Herz"},
+    {"id": 78001, "name": "Juraj Jakubisko"},
+    {"id": 544699, "name": "Elmar Klos"},
+    {"id": 544700, "name": "Ján Kadár"},
+    {"id": 119999, "name": "Pavel Juráček"},
+    {"id": 588758, "name": "Jaromil Jireš"},
+    {"id": 226662, "name": "František Vláčil"},
+    {"id": 588925, "name": "Karel Kachyňa"},
+    {"id": 137036, "name": "Štefan Uher"},
+    {"id": 137071, "name": "Vojtěch Jasný"},
+    {"id": 591234, "name": "Jan Schmidt"},
+    {"id": 137015, "name": "Oldřich Lipský"}
+  ]
+},
+"sources": [
+  {"id": "cat-en", "publication": "Wikipedia (en), categoria", "title": "Category:Czechoslovak New Wave films", "url": "https://en.wikipedia.org/wiki/Category:Czechoslovak_New_Wave_films", "revision": null, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-11-15"},
+  {"id": "crit-cz", "publication": "Criterion Channel (cópia do Internet Archive)", "title": "Czechoslovak New Wave (coleção do Channel)", "url": "https://www.criterionchannel.com/czechoslovak-new-wave", "revision": null, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-07-22"},
+  {"id": "emp", "publication": "Empire", "title": "Czech New Wave (08/08/2016, 'Key dates 1962–1968')", "url": "https://www.empireonline.com/movies/features/czech-new-wave-movie-era/", "revision": null, "readOn": "2026-11-15", "mark": "reported", "publishedOn": "2016-08-08"},
+  {"id": "icr", "publication": "Il Cinema Ritrovato (Cineteca di Bologna)", "title": "Emulsion Matters: Orwo and Nová Vlna (1963–1968), 2013 (texto da seção cita 3 filmes)", "url": "https://ilcinemaritrovato.it/en/sezioni/the-cinephiles-heaven/emulsion-matters-orwo-and-nova-vlna-1963-1968/", "revision": null, "readOn": "2026-11-15", "mark": "read"},
+  {"id": "wp-de", "publication": "Wikipedia (de)", "title": "Tschechoslowakische Neue Welle", "url": "https://de.wikipedia.org/w/index.php?oldid=268730524", "revision": 268730524, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-07-12"},
+  {"id": "wp-en", "publication": "Wikipedia (en)", "title": "Czechoslovak New Wave", "url": "https://en.wikipedia.org/w/index.php?oldid=1376669519", "revision": 1376669519, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-09-25"},
+  {"id": "wp-fr", "publication": "Wikipedia (fr)", "title": "Nouvelle Vague (Tchécoslovaquie)", "url": "https://fr.wikipedia.org/w/index.php?oldid=236173904", "revision": 236173904, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-05-13"},
+  {"id": "wp-pl", "publication": "Wikipedia (pl)", "title": "Czechosłowacka Nowa Fala", "url": "https://pl.wikipedia.org/w/index.php?oldid=80106544", "revision": 80106544, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-07-02"},
+  {"id": "wp-ru", "publication": "Wikipedia (ru)", "title": "Чехословацкая новая волна", "url": "https://ru.wikipedia.org/w/index.php?oldid=143710466", "revision": 143710466, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2025-02-27"}
+],
+"consensus": null,
+"films": [
+  {"imdb": "tt0054665", "tmdb": 41213, "slug": "the-fabulous-baron-munchausen", "title": "The Fabulous Baron Munchausen", "year": 1962, "sources": ["wp-en"], "class": "periphery"},
+  {"imdb": "tt0054780", "tmdb": 117042, "slug": "the-devils-trap", "title": "The Devil's Trap", "year": 1962, "sources": ["cat-en", "crit-cz", "wp-en"], "class": "core"},
+  {"imdb": "tt0056844", "tmdb": 47852, "slug": "when-the-cat-comes", "title": "The Cassandra Cat", "year": 1963, "sources": ["cat-en", "wp-en", "wp-fr", "wp-pl"], "class": "core"},
+  {"imdb": "tt0057374", "tmdb": 171295, "slug": "something-different", "title": "Something Different", "year": 1963, "sources": ["cat-en", "crit-cz", "wp-de", "wp-en", "wp-fr", "wp-ru"], "class": "core"},
+  {"imdb": "tt0176155", "tmdb": 47903, "slug": "the-sun-in-a-net", "title": "The Sun in a Net", "year": 1963, "sources": ["cat-en", "wp-en", "wp-fr"], "class": "periphery"},
+  {"imdb": "tt0056919", "tmdb": 46982, "slug": "black-peter-1964", "title": "Black Peter", "year": 1964, "sources": ["cat-en", "crit-cz", "wp-de", "wp-en", "wp-fr", "wp-pl", "wp-ru"], "class": "core"},
+  {"imdb": "tt0058001", "tmdb": 100589, "slug": "diamonds-of-the-night", "title": "Diamonds of the Night", "year": 1964, "sources": ["cat-en", "crit-cz", "wp-de", "wp-en", "wp-fr", "wp-pl"], "class": "core"},
+  {"imdb": "tt0058275", "tmdb": 20629, "slug": "lemonade-joe", "title": "Lemonade Joe", "year": 1964, "sources": ["cat-en", "icr", "wp-en", "wp-fr", "wp-pl"], "class": "core"},
+  {"imdb": "tt0058486", "tmdb": 18949, "slug": "the-last-trick", "title": "The Last Trick", "year": 1964, "sources": ["cat-en", "wp-en"], "class": "periphery"},
+  {"imdb": "tt0122574", "tmdb": 115243, "slug": "the-cry-1964", "title": "The Cry", "year": 1964, "sources": ["cat-en", "wp-de", "wp-en", "wp-fr", "wp-ru"], "class": "core"},
+  {"imdb": "tt0124888", "tmdb": 65890, "slug": "green-gold", "title": "Starci na chmelu", "year": 1964, "sources": ["crit-cz"], "class": "periphery"},
+  {"imdb": "tt0058924", "tmdb": 247446, "slug": "long-live-the-republic", "title": "Long Live the Republic!", "year": 1965, "sources": ["wp-de"], "class": "periphery"},
+  {"imdb": "tt0059415", "tmdb": 39387, "slug": "loves-of-a-blonde", "title": "Loves of a Blonde", "year": 1965, "sources": ["cat-en", "crit-cz", "emp", "wp-de", "wp-en", "wp-fr", "wp-pl", "wp-ru"], "class": "core"},
+  {"imdb": "tt0059527", "tmdb": 25905, "slug": "the-shop-on-main-street", "title": "The Shop on Main Street", "year": 1965, "sources": ["cat-en", "crit-cz", "emp", "wp-de", "wp-en", "wp-fr", "wp-pl"], "class": "core"},
+  {"imdb": "tt0060543", "tmdb": 77381, "slug": "intimate-lighting", "title": "Intimate Lighting", "year": 1965, "sources": ["cat-en", "crit-cz", "wp-de", "wp-en", "wp-fr"], "class": "core"},
+  {"imdb": "tt0060802", "tmdb": 789, "slug": "closely-watched-trains", "title": "Closely Watched Trains", "year": 1966, "sources": ["cat-en", "crit-cz", "emp", "wp-de", "wp-en", "wp-fr", "wp-pl", "wp-ru"], "class": "core"},
+  {"imdb": "tt0060959", "tmdb": 46919, "slug": "daisies", "title": "Daisies", "year": 1966, "sources": ["cat-en", "crit-cz", "icr", "wp-de", "wp-en", "wp-fr", "wp-pl", "wp-ru"], "class": "core"},
+  {"imdb": "tt0063371", "tmdb": 105348, "slug": "the-party-and-the-guests", "title": "A Report on the Party and the Guests", "year": 1966, "sources": ["cat-en", "crit-cz", "wp-de", "wp-en", "wp-fr"], "class": "core"},
+  {"imdb": "tt0060770", "tmdb": 104306, "slug": "the-return-of-the-prodigal-son", "title": "The Return of the Prodigal Son", "year": 1967, "sources": ["cat-en", "wp-en", "wp-fr"], "class": "periphery"},
+  {"imdb": "tt0061781", "tmdb": 38442, "slug": "the-firemens-ball", "title": "The Fireman's Ball", "year": 1967, "sources": ["cat-en", "emp", "wp-de", "wp-en", "wp-fr", "wp-pl", "wp-ru"], "class": "core"},
+  {"imdb": "tt0063278", "tmdb": 25904, "slug": "marketa-lazarova", "title": "Marketa Lazarová", "year": 1967, "sources": ["cat-en", "wp-en", "wp-pl"], "class": "periphery"},
+  {"imdb": "tt0173279", "tmdb": 326167, "slug": "wedding-under-supervision", "title": "Svatba jako řemen", "year": 1967, "sources": ["crit-cz"], "class": "periphery"},
+  {"imdb": "tt0062770", "tmdb": 19006, "slug": "the-flat", "title": "The Flat", "year": 1968, "sources": ["cat-en", "wp-en"], "class": "periphery"},
+  {"imdb": "tt0063527", "tmdb": 47189, "slug": "capricious-summer", "title": "Capricious Summer", "year": 1968, "sources": ["cat-en", "wp-en", "wp-fr", "wp-ru"], "class": "core"},
+  {"imdb": "tt0122770", "tmdb": 25908, "slug": "the-valley-of-the-bees", "title": "The Valley of the Bees", "year": 1968, "sources": ["cat-en", "crit-cz", "icr", "wp-en"], "class": "core"},
+  {"imdb": "tt0063633", "tmdb": 18352, "slug": "the-cremator", "title": "The Cremator", "year": 1969, "sources": ["cat-en", "wp-de", "wp-en", "wp-fr", "wp-ru"], "class": "core"},
+  {"imdb": "tt0063791", "tmdb": 46659, "slug": "all-my-good-countrymen", "title": "All My Compatriots", "year": 1969, "sources": ["wp-pl"], "class": "periphery"},
+  {"imdb": "tt0064316", "tmdb": 136464, "slug": "the-end-of-a-priest", "title": "End of a Priest", "year": 1969, "sources": ["wp-ru"], "class": "periphery"},
+  {"imdb": "tt0064994", "tmdb": 12078, "slug": "larks-on-a-string", "title": "Larks on a String", "year": 1969, "sources": ["cat-en", "wp-en", "wp-fr", "wp-pl", "wp-ru"], "class": "core"},
+  {"imdb": "tt0065193", "tmdb": 47900, "slug": "birds-orphans-and-fools", "title": "Birds, Orphans and Fools", "year": 1969, "sources": ["cat-en", "wp-de", "wp-en", "wp-fr"], "class": "core"},
+  {"imdb": "tt0065241", "tmdb": 105627, "slug": "the-joke", "title": "The Joke", "year": 1969, "sources": ["cat-en", "wp-en", "wp-fr", "wp-pl", "wp-ru"], "class": "core"},
+  {"imdb": "tt0064843", "tmdb": 212761, "slug": "case-for-a-rookie-hangman", "title": "Case for a Rookie Hangman", "year": 1970, "sources": ["cat-en", "crit-cz", "wp-de", "wp-en", "wp-fr", "wp-ru"], "class": "core"},
+  {"imdb": "tt0066516", "tmdb": 46315, "slug": "valerie-and-her-week-of-wonders", "title": "Valerie and Her Week of Wonders", "year": 1970, "sources": ["cat-en", "wp-de", "wp-en", "wp-fr", "wp-ru"], "class": "core"}
+],
+"exclude": [
+
+],
+"pending": [
+  {"imdb": "tt0171719", "title": "The Junk Shop", "year": 1965, "class": "periphery", "why": "above the prefilter and not in the index, but no TMDB id or Letterboxd page is known yet"},
+  {"imdb": "tt0122371", "title": "Adelheid", "year": 1970, "class": "periphery", "why": "above the prefilter and not in the index, but no TMDB id or Letterboxd page is known yet"}
+],
+"counted": {"curationFilms": 43, "written": 33, "inIndexOfReference": 23, "notInIndexAdmitted": 14, "notInIndexPassingImdb7": 8, "pending": 2, "documentariesWrittenOut": 0, "leftOut": {"class not admitted by the era": 1, "outside the years of the era": 5, "not in the index and under the prefilter": 2, "named with no id and no class (not written in pending)": 6}}
+}

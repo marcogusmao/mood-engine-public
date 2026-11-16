@@ -1,0 +1,13 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),os=require('node:os'),{execFileSync}=require('node:child_process');
+const ROOT=path.resolve(__dirname,'../..');
+function write(root,name,data){const f=path.join(root,name);fs.mkdirSync(path.dirname(f),{recursive:true});fs.writeFileSync(f,typeof data==='string'?data:JSON.stringify(data));return f;}
+function fixture(t){const root=fs.realpathSync(fs.mkdtempSync(path.join(os.tmpdir(),'mood-people-')));if(t)t.after(()=>fs.rmSync(root,{recursive:true,force:true}));return {root,privateDir:path.join(root,'.context/private/friend-a/test-run'),write:(n,d)=>write(root,n,d)};}
+function zip(root,{username='friend-a',rating='4.5',likes=true,extra={},row='Synthetic Film',year=2000,uri='https://boxd.it/abcd'}={}){
+ const files={'profile.csv':`Username,Email\n${username},PRIVATE-EMAIL-CANARY-DO-NOT-PUBLISH\n`,'watched.csv':`Date,Name,Year,Letterboxd URI\n2026-10-01,${row},${year},${uri}\n`,'ratings.csv':`Date,Name,Year,Letterboxd URI,Rating\n2026-10-01,${row},${year},${uri},${rating}\n`,'watchlist.csv':'Date,Name,Year,Letterboxd URI\n','diary.csv':`Date,Name,Year,Letterboxd URI,Rating,Rewatch,Tags,Watched Date\n2026-10-01,${row},${year},${uri},${rating},Yes,PRIVATE-TAG-CANARY-NOT-PUBLIC,2026-10-01\n2026-10-01,${row},${year},${uri},${rating},Yes,,2026-10-01\n`,...(likes?{'likes/films.csv':`Date,Name,Year,Letterboxd URI\n2026-10-01,${row},${year},${uri}\n`}:{}),...extra};
+ const spec=write(root,'archive-spec.json',files),archive=path.join(root,'synthetic.zip');
+ execFileSync('python3',['-B','-c','import json,zipfile,sys\nwith zipfile.ZipFile(sys.argv[2],"w",compression=zipfile.ZIP_STORED) as z:\n for k,v in json.load(open(sys.argv[1])).items():z.writestr(k,v)',spec,archive]);return archive;
+}
+function history(options={}){return {schemaVersion:1,personId:'friend-a',letterboxdUser:'friend-a',importedAt:'2026-10-14T12:00:00.000Z',sourceRequestId:'11111111-1111-4111-8111-111111111111',watched:[],ratings:[],watchlist:[],likes:[],diary:[],coverage:Object.fromEntries(['watched','ratings','watchlist','likes','diary'].map(k=>[k,{state:'complete',source:'export'}])),...options};}
+function sourceCopy(root){for(const n of ['build.js','verify.js','people.json','config.json','learning.config.json','lib','scripts','web','tools'])fs.cpSync(path.join(ROOT,n),path.join(root,n),{recursive:true});fs.mkdirSync(path.join(root,'data'),{recursive:true});for(const n of fs.readdirSync(path.join(ROOT,'data')))if(n!=='letterboxd'&&n!=='people')fs.cpSync(path.join(ROOT,'data',n),path.join(root,'data',n),{recursive:true});fs.mkdirSync(path.join(root,'cache'),{recursive:true});}
+module.exports={ROOT,fixture,write,zip,history,sourceCopy};

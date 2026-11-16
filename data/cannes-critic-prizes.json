@@ -1,0 +1,3911 @@
+{
+ "gerado": "2026-10-11",
+ "fonte": "Wikipedia (páginas de cada prêmio e anuais), conferência em .context/pesquisa-catalogo/conferencia-copias-antigas/",
+ "regra": "Marco, 11/10/2026: contam como aval de crítico Palma de Ouro (todas as formas), Grand Prix, Direção, Prêmio do Júri e Roteiro; os demais filmes da lista moviewithus/cannes-winners ficam como fã",
+ "premios_criticos": [
+  "Direção",
+  "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)",
+  "Grand Prix du Festival (nome da Palme em 1946-54 e 1964-74)",
+  "Palme d'Or (1955-63 e 1975-2026)",
+  "Palme d'Or especial (2018)",
+  "Palme retroativa 1939 (concedida em 2002)",
+  "Prêmio do Júri",
+  "Roteiro"
+ ],
+ "filmes": [
+  {
+   "slug": "fjord-2026",
+   "title": "Fjord",
+   "year": 2026,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     2026
+    ]
+   }
+  },
+  {
+   "slug": "minotaur-2026",
+   "title": "Minotaur",
+   "year": 2026,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     2026
+    ]
+   }
+  },
+  {
+   "slug": "fatherland-2026",
+   "title": "Fatherland",
+   "year": 2026,
+   "prizes": {
+    "Direção": [
+     2026
+    ]
+   }
+  },
+  {
+   "slug": "la-bola-negra",
+   "title": "La Bola Negra",
+   "year": 2026,
+   "prizes": {
+    "Direção": [
+     2026
+    ]
+   }
+  },
+  {
+   "slug": "the-dreamed-adventure",
+   "title": "The Dreamed Adventure",
+   "year": 2026,
+   "prizes": {
+    "Prêmio do Júri": [
+     2026
+    ]
+   }
+  },
+  {
+   "slug": "a-man-of-his-time",
+   "title": "A Man of His Time",
+   "year": 2026,
+   "prizes": {
+    "Roteiro": [
+     2026
+    ]
+   }
+  },
+  {
+   "slug": "it-was-just-an-accident",
+   "title": "It Was Just an Accident",
+   "year": 2025,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     2025
+    ]
+   }
+  },
+  {
+   "slug": "sentimental-value-2025",
+   "title": "Sentimental Value",
+   "year": 2025,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     2025
+    ]
+   }
+  },
+  {
+   "slug": "the-secret-agent-2025",
+   "title": "The Secret Agent",
+   "year": 2025,
+   "prizes": {
+    "Ator": [
+     2025
+    ],
+    "Direção": [
+     2025
+    ]
+   }
+  },
+  {
+   "slug": "sirat-2025",
+   "title": "Sirāt",
+   "year": 2025,
+   "prizes": {
+    "Prêmio do Júri": [
+     2025
+    ]
+   }
+  },
+  {
+   "slug": "sound-of-falling",
+   "title": "Sound of Falling",
+   "year": 2025,
+   "prizes": {
+    "Prêmio do Júri": [
+     2025
+    ]
+   }
+  },
+  {
+   "slug": "young-mothers",
+   "title": "Young Mothers",
+   "year": 2025,
+   "prizes": {
+    "Roteiro": [
+     2025
+    ]
+   }
+  },
+  {
+   "slug": "anora",
+   "title": "Anora",
+   "year": 2024,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     2024
+    ]
+   }
+  },
+  {
+   "slug": "all-we-imagine-as-light",
+   "title": "All We Imagine as Light",
+   "year": 2024,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     2024
+    ]
+   }
+  },
+  {
+   "slug": "grand-tour-2024",
+   "title": "Grand Tour",
+   "year": 2024,
+   "prizes": {
+    "Direção": [
+     2024
+    ]
+   }
+  },
+  {
+   "slug": "emilia-perez",
+   "title": "Emilia Pérez",
+   "year": 2024,
+   "prizes": {
+    "Prêmio do Júri": [
+     2024
+    ],
+    "Atriz": [
+     2024
+    ]
+   }
+  },
+  {
+   "slug": "the-substance",
+   "title": "The Substance",
+   "year": 2024,
+   "prizes": {
+    "Roteiro": [
+     2024
+    ]
+   }
+  },
+  {
+   "slug": "anatomy-of-a-fall",
+   "title": "Anatomy of a Fall",
+   "year": 2023,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     2023
+    ]
+   }
+  },
+  {
+   "slug": "the-zone-of-interest",
+   "title": "The Zone of Interest",
+   "year": 2023,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     2023
+    ]
+   }
+  },
+  {
+   "slug": "the-taste-of-things",
+   "title": "The Taste of Things",
+   "year": 2023,
+   "prizes": {
+    "Direção": [
+     2023
+    ]
+   }
+  },
+  {
+   "slug": "fallen-leaves-2023",
+   "title": "Fallen Leaves",
+   "year": 2023,
+   "prizes": {
+    "Prêmio do Júri": [
+     2023
+    ]
+   }
+  },
+  {
+   "slug": "monster-2023",
+   "title": "Monster",
+   "year": 2023,
+   "prizes": {
+    "Roteiro": [
+     2023
+    ]
+   }
+  },
+  {
+   "slug": "triangle-of-sadness",
+   "title": "Triangle of Sadness",
+   "year": 2022,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     2022
+    ]
+   }
+  },
+  {
+   "slug": "close-2022",
+   "title": "Close",
+   "year": 2022,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     2022
+    ]
+   }
+  },
+  {
+   "slug": "stars-at-noon",
+   "title": "Stars at Noon",
+   "year": 2022,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     2022
+    ]
+   }
+  },
+  {
+   "slug": "decision-to-leave",
+   "title": "Decision to Leave",
+   "year": 2022,
+   "prizes": {
+    "Direção": [
+     2022
+    ]
+   }
+  },
+  {
+   "slug": "eo",
+   "title": "EO",
+   "year": 2022,
+   "prizes": {
+    "Prêmio do Júri": [
+     2022
+    ]
+   }
+  },
+  {
+   "slug": "the-eight-mountains",
+   "title": "The Eight Mountains",
+   "year": 2022,
+   "prizes": {
+    "Prêmio do Júri": [
+     2022
+    ]
+   }
+  },
+  {
+   "slug": "cairo-conspiracy",
+   "title": "Cairo Conspiracy",
+   "year": 2022,
+   "prizes": {
+    "Roteiro": [
+     2022
+    ]
+   }
+  },
+  {
+   "slug": "titane",
+   "title": "Titane",
+   "year": 2021,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     2021
+    ]
+   }
+  },
+  {
+   "slug": "a-hero",
+   "title": "A Hero",
+   "year": 2021,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     2021
+    ]
+   }
+  },
+  {
+   "slug": "compartment-no-6",
+   "title": "Compartment No. 6",
+   "year": 2021,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     2021
+    ]
+   }
+  },
+  {
+   "slug": "annette",
+   "title": "Annette",
+   "year": 2021,
+   "prizes": {
+    "Direção": [
+     2021
+    ]
+   }
+  },
+  {
+   "slug": "aheds-knee",
+   "title": "Ahed's Knee",
+   "year": 2021,
+   "prizes": {
+    "Prêmio do Júri": [
+     2021
+    ]
+   }
+  },
+  {
+   "slug": "memoria-2021",
+   "title": "Memoria",
+   "year": 2021,
+   "prizes": {
+    "Prêmio do Júri": [
+     2021
+    ]
+   }
+  },
+  {
+   "slug": "drive-my-car",
+   "title": "Drive My Car",
+   "year": 2021,
+   "prizes": {
+    "Roteiro": [
+     2021
+    ]
+   }
+  },
+  {
+   "slug": "parasite-2019",
+   "title": "Parasite",
+   "year": 2019,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     2019
+    ]
+   }
+  },
+  {
+   "slug": "atlantics-2019",
+   "title": "Atlantics",
+   "year": 2019,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     2019
+    ]
+   }
+  },
+  {
+   "slug": "young-ahmed",
+   "title": "Young Ahmed",
+   "year": 2019,
+   "prizes": {
+    "Direção": [
+     2019
+    ]
+   }
+  },
+  {
+   "slug": "les-miserables-2019",
+   "title": "Les Misérables",
+   "year": 2019,
+   "prizes": {
+    "Prêmio do Júri": [
+     2019
+    ]
+   }
+  },
+  {
+   "slug": "bacurau",
+   "title": "Bacurau",
+   "year": 2019,
+   "prizes": {
+    "Prêmio do Júri": [
+     2019
+    ]
+   }
+  },
+  {
+   "slug": "portrait-of-a-lady-on-fire",
+   "title": "Portrait of a Lady on Fire",
+   "year": 2019,
+   "prizes": {
+    "Roteiro": [
+     2019
+    ]
+   }
+  },
+  {
+   "slug": "shoplifters",
+   "title": "Shoplifters",
+   "year": 2018,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     2018
+    ]
+   }
+  },
+  {
+   "slug": "the-image-book",
+   "title": "The Image Book",
+   "year": 2018,
+   "prizes": {
+    "Palme d'Or especial (2018)": [
+     2018
+    ]
+   }
+  },
+  {
+   "slug": "blackkklansman",
+   "title": "BlacKkKlansman",
+   "year": 2018,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     2018
+    ]
+   }
+  },
+  {
+   "slug": "cold-war-2018",
+   "title": "Cold War",
+   "year": 2018,
+   "prizes": {
+    "Direção": [
+     2018
+    ]
+   }
+  },
+  {
+   "slug": "capernaum",
+   "title": "Capernaum",
+   "year": 2018,
+   "prizes": {
+    "Prêmio do Júri": [
+     2018
+    ]
+   }
+  },
+  {
+   "slug": "happy-as-lazzaro",
+   "title": "Happy as Lazzaro",
+   "year": 2018,
+   "prizes": {
+    "Roteiro": [
+     2018
+    ]
+   }
+  },
+  {
+   "slug": "3-faces",
+   "title": "3 Faces",
+   "year": 2018,
+   "prizes": {
+    "Roteiro": [
+     2018
+    ]
+   }
+  },
+  {
+   "slug": "the-square-2017",
+   "title": "The Square",
+   "year": 2017,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     2017
+    ]
+   }
+  },
+  {
+   "slug": "bpm-beats-per-minute",
+   "title": "BPM (Beats per Minute)",
+   "year": 2017,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     2017
+    ]
+   }
+  },
+  {
+   "slug": "the-beguiled-2017",
+   "title": "The Beguiled",
+   "year": 2017,
+   "prizes": {
+    "Direção": [
+     2017
+    ]
+   }
+  },
+  {
+   "slug": "you-were-never-really-here",
+   "title": "You Were Never Really Here",
+   "year": 2017,
+   "prizes": {
+    "Ator": [
+     2017
+    ],
+    "Roteiro": [
+     2017
+    ]
+   }
+  },
+  {
+   "slug": "loveless-2017",
+   "title": "Loveless",
+   "year": 2017,
+   "prizes": {
+    "Prêmio do Júri": [
+     2017
+    ]
+   }
+  },
+  {
+   "slug": "the-killing-of-a-sacred-deer",
+   "title": "The Killing of a Sacred Deer",
+   "year": 2017,
+   "prizes": {
+    "Roteiro": [
+     2017
+    ]
+   }
+  },
+  {
+   "slug": "i-daniel-blake",
+   "title": "I, Daniel Blake",
+   "year": 2016,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     2016
+    ]
+   }
+  },
+  {
+   "slug": "its-only-the-end-of-the-world",
+   "title": "It's Only the End of the World",
+   "year": 2016,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     2016
+    ]
+   }
+  },
+  {
+   "slug": "graduation-2016",
+   "title": "Graduation",
+   "year": 2016,
+   "prizes": {
+    "Direção": [
+     2016
+    ]
+   }
+  },
+  {
+   "slug": "personal-shopper",
+   "title": "Personal Shopper",
+   "year": 2016,
+   "prizes": {
+    "Direção": [
+     2016
+    ]
+   }
+  },
+  {
+   "slug": "the-salesman-2016",
+   "title": "The Salesman",
+   "year": 2016,
+   "prizes": {
+    "Ator": [
+     2016
+    ],
+    "Roteiro": [
+     2016
+    ]
+   }
+  },
+  {
+   "slug": "american-honey",
+   "title": "American Honey",
+   "year": 2016,
+   "prizes": {
+    "Prêmio do Júri": [
+     2016
+    ]
+   }
+  },
+  {
+   "slug": "dheepan",
+   "title": "Dheepan",
+   "year": 2015,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     2015
+    ]
+   }
+  },
+  {
+   "slug": "son-of-saul",
+   "title": "Son of Saul",
+   "year": 2015,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     2015
+    ]
+   }
+  },
+  {
+   "slug": "the-assassin-2015",
+   "title": "The Assassin",
+   "year": 2015,
+   "prizes": {
+    "Direção": [
+     2015
+    ]
+   }
+  },
+  {
+   "slug": "the-lobster",
+   "title": "The Lobster",
+   "year": 2015,
+   "prizes": {
+    "Prêmio do Júri": [
+     2015
+    ]
+   }
+  },
+  {
+   "slug": "chronic",
+   "title": "Chronic",
+   "year": 2015,
+   "prizes": {
+    "Roteiro": [
+     2015
+    ]
+   }
+  },
+  {
+   "slug": "winter-sleep",
+   "title": "Winter Sleep",
+   "year": 2014,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     2014
+    ]
+   }
+  },
+  {
+   "slug": "the-wonders-2014",
+   "title": "The Wonders",
+   "year": 2014,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     2014
+    ]
+   }
+  },
+  {
+   "slug": "foxcatcher",
+   "title": "Foxcatcher",
+   "year": 2014,
+   "prizes": {
+    "Direção": [
+     2014
+    ]
+   }
+  },
+  {
+   "slug": "mommy-2014",
+   "title": "Mommy",
+   "year": 2014,
+   "prizes": {
+    "Prêmio do Júri": [
+     2014
+    ]
+   }
+  },
+  {
+   "slug": "goodbye-to-language",
+   "title": "Goodbye to Language",
+   "year": 2014,
+   "prizes": {
+    "Prêmio do Júri": [
+     2014
+    ]
+   }
+  },
+  {
+   "slug": "leviathan-2014",
+   "title": "Leviathan",
+   "year": 2014,
+   "prizes": {
+    "Roteiro": [
+     2014
+    ]
+   }
+  },
+  {
+   "slug": "blue-is-the-warmest-color",
+   "title": "Blue Is the Warmest Color",
+   "year": 2013,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     2013
+    ]
+   }
+  },
+  {
+   "slug": "inside-llewyn-davis",
+   "title": "Inside Llewyn Davis",
+   "year": 2013,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     2013
+    ]
+   }
+  },
+  {
+   "slug": "heli",
+   "title": "Heli",
+   "year": 2013,
+   "prizes": {
+    "Direção": [
+     2013
+    ]
+   }
+  },
+  {
+   "slug": "like-father-like-son-2013",
+   "title": "Like Father, Like Son",
+   "year": 2013,
+   "prizes": {
+    "Prêmio do Júri": [
+     2013
+    ]
+   }
+  },
+  {
+   "slug": "a-touch-of-sin",
+   "title": "A Touch of Sin",
+   "year": 2013,
+   "prizes": {
+    "Roteiro": [
+     2013
+    ]
+   }
+  },
+  {
+   "slug": "amour",
+   "title": "Amour",
+   "year": 2012,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     2012
+    ]
+   }
+  },
+  {
+   "slug": "reality",
+   "title": "Reality",
+   "year": 2012,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     2012
+    ]
+   }
+  },
+  {
+   "slug": "beyond-the-hills",
+   "title": "Beyond the Hills",
+   "year": 2012,
+   "prizes": {
+    "Atriz": [
+     2012
+    ],
+    "Roteiro": [
+     2012
+    ]
+   }
+  },
+  {
+   "slug": "the-angels-share",
+   "title": "The Angels' Share",
+   "year": 2012,
+   "prizes": {
+    "Prêmio do Júri": [
+     2012
+    ]
+   }
+  },
+  {
+   "slug": "post-tenebras-lux",
+   "title": "Post Tenebras Lux",
+   "year": 2012,
+   "prizes": {
+    "Direção": [
+     2012
+    ]
+   }
+  },
+  {
+   "slug": "the-tree-of-life-2011",
+   "title": "The Tree of Life",
+   "year": 2011,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     2011
+    ]
+   }
+  },
+  {
+   "slug": "once-upon-a-time-in-anatolia",
+   "title": "Once Upon a Time in Anatolia",
+   "year": 2011,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     2011
+    ]
+   }
+  },
+  {
+   "slug": "the-kid-with-a-bike",
+   "title": "The Kid with a Bike",
+   "year": 2011,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     2011
+    ]
+   }
+  },
+  {
+   "slug": "drive-2011",
+   "title": "Drive",
+   "year": 2011,
+   "prizes": {
+    "Direção": [
+     2011
+    ]
+   }
+  },
+  {
+   "slug": "polisse",
+   "title": "Polisse",
+   "year": 2011,
+   "prizes": {
+    "Prêmio do Júri": [
+     2011
+    ]
+   }
+  },
+  {
+   "slug": "footnote",
+   "title": "Footnote",
+   "year": 2011,
+   "prizes": {
+    "Roteiro": [
+     2011
+    ]
+   }
+  },
+  {
+   "slug": "uncle-boonmee-who-can-recall-his-past-lives",
+   "title": "Uncle Boonmee Who Can Recall His Past Lives",
+   "year": 2010,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     2010
+    ]
+   }
+  },
+  {
+   "slug": "of-gods-and-men",
+   "title": "Of Gods and Men",
+   "year": 2010,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     2010
+    ]
+   }
+  },
+  {
+   "slug": "on-tour-2010",
+   "title": "On Tour",
+   "year": 2010,
+   "prizes": {
+    "Direção": [
+     2010
+    ]
+   }
+  },
+  {
+   "slug": "a-screaming-man",
+   "title": "A Screaming Man",
+   "year": 2010,
+   "prizes": {
+    "Prêmio do Júri": [
+     2010
+    ]
+   }
+  },
+  {
+   "slug": "poetry",
+   "title": "Poetry",
+   "year": 2010,
+   "prizes": {
+    "Roteiro": [
+     2010
+    ]
+   }
+  },
+  {
+   "slug": "the-white-ribbon",
+   "title": "The White Ribbon",
+   "year": 2009,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     2009
+    ]
+   }
+  },
+  {
+   "slug": "a-prophet",
+   "title": "A Prophet",
+   "year": 2009,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     2009
+    ]
+   }
+  },
+  {
+   "slug": "butchered-2009",
+   "title": "Butchered",
+   "year": 2009,
+   "prizes": {
+    "Direção": [
+     2009
+    ]
+   }
+  },
+  {
+   "slug": "fish-tank",
+   "title": "Fish Tank",
+   "year": 2009,
+   "prizes": {
+    "Prêmio do Júri": [
+     2009
+    ]
+   }
+  },
+  {
+   "slug": "thirst-2009",
+   "title": "Thirst",
+   "year": 2009,
+   "prizes": {
+    "Prêmio do Júri": [
+     2009
+    ]
+   }
+  },
+  {
+   "slug": "spring-fever-2009",
+   "title": "Spring Fever",
+   "year": 2009,
+   "prizes": {
+    "Roteiro": [
+     2009
+    ]
+   }
+  },
+  {
+   "slug": "the-class-2008",
+   "title": "The Class",
+   "year": 2008,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     2008
+    ]
+   }
+  },
+  {
+   "slug": "gomorrah",
+   "title": "Gomorrah",
+   "year": 2008,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     2008
+    ]
+   }
+  },
+  {
+   "slug": "three-monkeys",
+   "title": "Three Monkeys",
+   "year": 2008,
+   "prizes": {
+    "Direção": [
+     2008
+    ]
+   }
+  },
+  {
+   "slug": "il-divo",
+   "title": "Il Divo",
+   "year": 2008,
+   "prizes": {
+    "Prêmio do Júri": [
+     2008
+    ]
+   }
+  },
+  {
+   "slug": "lornas-silence",
+   "title": "Lorna's Silence",
+   "year": 2008,
+   "prizes": {
+    "Roteiro": [
+     2008
+    ]
+   }
+  },
+  {
+   "slug": "4-months-3-weeks-and-2-days",
+   "title": "4 Months, 3 Weeks and 2 Days",
+   "year": 2007,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     2007
+    ]
+   }
+  },
+  {
+   "slug": "the-mourning-forest",
+   "title": "The Mourning Forest",
+   "year": 2007,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     2007
+    ]
+   }
+  },
+  {
+   "slug": "the-diving-bell-and-the-butterfly",
+   "title": "The Diving Bell and the Butterfly",
+   "year": 2007,
+   "prizes": {
+    "Direção": [
+     2007
+    ]
+   }
+  },
+  {
+   "slug": "silent-light",
+   "title": "Silent Light",
+   "year": 2007,
+   "prizes": {
+    "Prêmio do Júri": [
+     2007
+    ]
+   }
+  },
+  {
+   "slug": "persepolis",
+   "title": "Persepolis",
+   "year": 2007,
+   "prizes": {
+    "Prêmio do Júri": [
+     2007
+    ]
+   }
+  },
+  {
+   "slug": "the-edge-of-heaven",
+   "title": "The Edge of Heaven",
+   "year": 2007,
+   "prizes": {
+    "Roteiro": [
+     2007
+    ]
+   }
+  },
+  {
+   "slug": "the-wind-that-shakes-the-barley",
+   "title": "The Wind That Shakes the Barley",
+   "year": 2006,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     2006
+    ]
+   }
+  },
+  {
+   "slug": "flanders",
+   "title": "Flanders",
+   "year": 2006,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     2006
+    ]
+   }
+  },
+  {
+   "slug": "babel-2006",
+   "title": "Babel",
+   "year": 2006,
+   "prizes": {
+    "Direção": [
+     2006
+    ]
+   }
+  },
+  {
+   "slug": "volver",
+   "title": "Volver",
+   "year": 2006,
+   "prizes": {
+    "Atriz": [
+     2006
+    ],
+    "Roteiro": [
+     2006
+    ]
+   }
+  },
+  {
+   "slug": "red-road",
+   "title": "Red Road",
+   "year": 2006,
+   "prizes": {
+    "Prêmio do Júri": [
+     2006
+    ]
+   }
+  },
+  {
+   "slug": "the-child",
+   "title": "The Child",
+   "year": 2005,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     2005
+    ]
+   }
+  },
+  {
+   "slug": "broken-flowers",
+   "title": "Broken Flowers",
+   "year": 2005,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     2005
+    ]
+   }
+  },
+  {
+   "slug": "cache",
+   "title": "Caché",
+   "year": 2005,
+   "prizes": {
+    "Direção": [
+     2005
+    ]
+   }
+  },
+  {
+   "slug": "the-three-burials-of-melquiades-estrada",
+   "title": "The Three Burials of Melquiades Estrada",
+   "year": 2005,
+   "prizes": {
+    "Ator": [
+     2005
+    ],
+    "Roteiro": [
+     2005
+    ]
+   }
+  },
+  {
+   "slug": "shanghai-dreams",
+   "title": "Shanghai Dreams",
+   "year": 2005,
+   "prizes": {
+    "Prêmio do Júri": [
+     2005
+    ]
+   }
+  },
+  {
+   "slug": "fahrenheit-9-11",
+   "title": "Fahrenheit 9/11",
+   "year": 2004,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     2004
+    ]
+   }
+  },
+  {
+   "slug": "oldboy",
+   "title": "Oldboy",
+   "year": 2003,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     2004
+    ]
+   }
+  },
+  {
+   "slug": "exiles",
+   "title": "Exiles",
+   "year": 2004,
+   "prizes": {
+    "Direção": [
+     2004
+    ]
+   }
+  },
+  {
+   "slug": "the-ladykillers-2004-6",
+   "title": "The Ladykillers",
+   "year": 2004,
+   "prizes": {
+    "Prêmio do Júri": [
+     2004
+    ]
+   }
+  },
+  {
+   "slug": "tropical-malady",
+   "title": "Tropical Malady",
+   "year": 2004,
+   "prizes": {
+    "Prêmio do Júri": [
+     2004
+    ]
+   }
+  },
+  {
+   "slug": "look-at-me",
+   "title": "Look at Me",
+   "year": 2004,
+   "prizes": {
+    "Roteiro": [
+     2004
+    ]
+   }
+  },
+  {
+   "slug": "elephant-2003",
+   "title": "Elephant",
+   "year": 2003,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     2003
+    ],
+    "Direção": [
+     2003
+    ]
+   }
+  },
+  {
+   "slug": "distant",
+   "title": "Distant",
+   "year": 2002,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     2003
+    ],
+    "Ator": [
+     2003
+    ]
+   }
+  },
+  {
+   "slug": "the-barbarian-invasions",
+   "title": "The Barbarian Invasions",
+   "year": 2003,
+   "prizes": {
+    "Atriz": [
+     2003
+    ],
+    "Roteiro": [
+     2003
+    ]
+   }
+  },
+  {
+   "slug": "at-five-in-the-afternoon",
+   "title": "At Five in the Afternoon",
+   "year": 2003,
+   "prizes": {
+    "Prêmio do Júri": [
+     2003
+    ]
+   }
+  },
+  {
+   "slug": "the-pianist",
+   "title": "The Pianist",
+   "year": 2002,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     2002
+    ]
+   }
+  },
+  {
+   "slug": "the-man-without-a-past",
+   "title": "The Man Without a Past",
+   "year": 2002,
+   "prizes": {
+    "Atriz": [
+     2002
+    ],
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     2002
+    ]
+   }
+  },
+  {
+   "slug": "chihwaseon",
+   "title": "Chihwaseon",
+   "year": 2002,
+   "prizes": {
+    "Direção": [
+     2002
+    ]
+   }
+  },
+  {
+   "slug": "punch-drunk-love",
+   "title": "Punch-Drunk Love",
+   "year": 2002,
+   "prizes": {
+    "Direção": [
+     2002
+    ]
+   }
+  },
+  {
+   "slug": "divine-intervention",
+   "title": "Divine Intervention",
+   "year": 2002,
+   "prizes": {
+    "Prêmio do Júri": [
+     2002
+    ]
+   }
+  },
+  {
+   "slug": "sweet-sixteen",
+   "title": "Sweet Sixteen",
+   "year": 2002,
+   "prizes": {
+    "Roteiro": [
+     2002
+    ]
+   }
+  },
+  {
+   "slug": "the-sons-room",
+   "title": "The Son's Room",
+   "year": 2001,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     2001
+    ]
+   }
+  },
+  {
+   "slug": "the-piano-teacher",
+   "title": "The Piano Teacher",
+   "year": 2001,
+   "prizes": {
+    "Ator": [
+     2001
+    ],
+    "Atriz": [
+     2001
+    ],
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     2001
+    ]
+   }
+  },
+  {
+   "slug": "mulholland-drive",
+   "title": "Mulholland Drive",
+   "year": 2001,
+   "prizes": {
+    "Direção": [
+     2001
+    ]
+   }
+  },
+  {
+   "slug": "the-man-who-wasnt-there-2001",
+   "title": "The Man Who Wasn't There",
+   "year": 2001,
+   "prizes": {
+    "Direção": [
+     2001
+    ]
+   }
+  },
+  {
+   "slug": "no-mans-land-2001",
+   "title": "No Man's Land",
+   "year": 2001,
+   "prizes": {
+    "Roteiro": [
+     2001
+    ]
+   }
+  },
+  {
+   "slug": "dancer-in-the-dark",
+   "title": "Dancer in the Dark",
+   "year": 2000,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     2000
+    ],
+    "Atriz": [
+     2000
+    ]
+   }
+  },
+  {
+   "slug": "devils-on-the-doorstep",
+   "title": "Devils on the Doorstep",
+   "year": 2000,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     2000
+    ]
+   }
+  },
+  {
+   "slug": "yi-yi",
+   "title": "Yi Yi",
+   "year": 2000,
+   "prizes": {
+    "Direção": [
+     2000
+    ]
+   }
+  },
+  {
+   "slug": "blackboards",
+   "title": "Blackboards",
+   "year": 2000,
+   "prizes": {
+    "Prêmio do Júri": [
+     2000
+    ]
+   }
+  },
+  {
+   "slug": "songs-from-the-second-floor",
+   "title": "Songs from the Second Floor",
+   "year": 2000,
+   "prizes": {
+    "Prêmio do Júri": [
+     2000
+    ]
+   }
+  },
+  {
+   "slug": "nurse-betty",
+   "title": "Nurse Betty",
+   "year": 2000,
+   "prizes": {
+    "Roteiro": [
+     2000
+    ]
+   }
+  },
+  {
+   "slug": "rosetta",
+   "title": "Rosetta",
+   "year": 1999,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     1999
+    ],
+    "Atriz": [
+     1999
+    ]
+   }
+  },
+  {
+   "slug": "humanite",
+   "title": "Humanité",
+   "year": 1999,
+   "prizes": {
+    "Ator": [
+     1999
+    ],
+    "Atriz": [
+     1999
+    ],
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1999
+    ]
+   }
+  },
+  {
+   "slug": "all-about-my-mother",
+   "title": "All About My Mother",
+   "year": 1999,
+   "prizes": {
+    "Direção": [
+     1999
+    ]
+   }
+  },
+  {
+   "slug": "the-letter-1999",
+   "title": "The Letter",
+   "year": 1999,
+   "prizes": {
+    "Prêmio do Júri": [
+     1999
+    ]
+   }
+  },
+  {
+   "slug": "moloch",
+   "title": "Moloch",
+   "year": 1999,
+   "prizes": {
+    "Roteiro": [
+     1999
+    ]
+   }
+  },
+  {
+   "slug": "eternity-and-a-day",
+   "title": "Eternity and a Day",
+   "year": 1998,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     1998
+    ]
+   }
+  },
+  {
+   "slug": "life-is-beautiful",
+   "title": "Life Is Beautiful",
+   "year": 1997,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1998
+    ]
+   }
+  },
+  {
+   "slug": "the-general-1998",
+   "title": "The General",
+   "year": 1998,
+   "prizes": {
+    "Direção": [
+     1998
+    ]
+   }
+  },
+  {
+   "slug": "the-celebration",
+   "title": "The Celebration",
+   "year": 1998,
+   "prizes": {
+    "Prêmio do Júri": [
+     1998
+    ]
+   }
+  },
+  {
+   "slug": "class-trip-1998",
+   "title": "Class Trip",
+   "year": 1998,
+   "prizes": {
+    "Prêmio do Júri": [
+     1998
+    ]
+   }
+  },
+  {
+   "slug": "henry-fool",
+   "title": "Henry Fool",
+   "year": 1997,
+   "prizes": {
+    "Roteiro": [
+     1998
+    ]
+   }
+  },
+  {
+   "slug": "taste-of-cherry",
+   "title": "Taste of Cherry",
+   "year": 1997,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     1997
+    ]
+   }
+  },
+  {
+   "slug": "the-eel",
+   "title": "The Eel",
+   "year": 1997,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     1997
+    ]
+   }
+  },
+  {
+   "slug": "the-sweet-hereafter",
+   "title": "The Sweet Hereafter",
+   "year": 1997,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1997
+    ]
+   }
+  },
+  {
+   "slug": "happy-together-1997",
+   "title": "Happy Together",
+   "year": 1997,
+   "prizes": {
+    "Direção": [
+     1997
+    ]
+   }
+  },
+  {
+   "slug": "western",
+   "title": "Western",
+   "year": 1997,
+   "prizes": {
+    "Prêmio do Júri": [
+     1997
+    ]
+   }
+  },
+  {
+   "slug": "the-ice-storm",
+   "title": "The Ice Storm",
+   "year": 1997,
+   "prizes": {
+    "Roteiro": [
+     1997
+    ]
+   }
+  },
+  {
+   "slug": "secrets-lies",
+   "title": "Secrets & Lies",
+   "year": 1996,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     1996
+    ],
+    "Atriz": [
+     1996
+    ]
+   }
+  },
+  {
+   "slug": "breaking-the-waves",
+   "title": "Breaking the Waves",
+   "year": 1996,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1996
+    ]
+   }
+  },
+  {
+   "slug": "crash",
+   "title": "Crash",
+   "year": 1996,
+   "prizes": {
+    "Prêmio do Júri": [
+     1996
+    ],
+    "Prêmio especial / Jury Special Prize / Contribuição artística": [
+     1996
+    ]
+   }
+  },
+  {
+   "slug": "fargo",
+   "title": "Fargo",
+   "year": 1996,
+   "prizes": {
+    "Direção": [
+     1996
+    ]
+   }
+  },
+  {
+   "slug": "a-self-made-hero",
+   "title": "A Self-Made Hero",
+   "year": 1996,
+   "prizes": {
+    "Roteiro": [
+     1996
+    ]
+   }
+  },
+  {
+   "slug": "underground-1995",
+   "title": "Underground",
+   "year": 1995,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     1995
+    ]
+   }
+  },
+  {
+   "slug": "ulysses-gaze",
+   "title": "Ulysses' Gaze",
+   "year": 1995,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1995
+    ]
+   }
+  },
+  {
+   "slug": "la-haine",
+   "title": "La Haine",
+   "year": 1995,
+   "prizes": {
+    "Direção": [
+     1995
+    ]
+   }
+  },
+  {
+   "slug": "carrington",
+   "title": "Carrington",
+   "year": 1995,
+   "prizes": {
+    "Prêmio do Júri": [
+     1995
+    ],
+    "Ator": [
+     1995
+    ],
+    "Prêmio especial / Jury Special Prize / Contribuição artística": [
+     1995
+    ]
+   }
+  },
+  {
+   "slug": "dont-forget-youre-going-to-die",
+   "title": "Don't Forget You're Going to Die",
+   "year": 1995,
+   "prizes": {
+    "Prêmio do Júri": [
+     1995
+    ]
+   }
+  },
+  {
+   "slug": "pulp-fiction",
+   "title": "Pulp Fiction",
+   "year": 1994,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     1994
+    ]
+   }
+  },
+  {
+   "slug": "to-live",
+   "title": "To Live",
+   "year": 1994,
+   "prizes": {
+    "Ator": [
+     1994
+    ],
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1994
+    ]
+   }
+  },
+  {
+   "slug": "burnt-by-the-sun",
+   "title": "Burnt by the Sun",
+   "year": 1994,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1994
+    ]
+   }
+  },
+  {
+   "slug": "dear-diary-1993",
+   "title": "Dear Diary",
+   "year": 1993,
+   "prizes": {
+    "Direção": [
+     1994
+    ]
+   }
+  },
+  {
+   "slug": "queen-margot-1994",
+   "title": "Queen Margot",
+   "year": 1994,
+   "prizes": {
+    "Prêmio do Júri": [
+     1994
+    ],
+    "Atriz": [
+     1994
+    ]
+   }
+  },
+  {
+   "slug": "dead-tired",
+   "title": "Dead Tired",
+   "year": 1994,
+   "prizes": {
+    "Roteiro": [
+     1994
+    ]
+   }
+  },
+  {
+   "slug": "farewell-my-concubine",
+   "title": "Farewell My Concubine",
+   "year": 1993,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     1993
+    ]
+   }
+  },
+  {
+   "slug": "the-piano",
+   "title": "The Piano",
+   "year": 1993,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     1993
+    ],
+    "Atriz": [
+     1993
+    ]
+   }
+  },
+  {
+   "slug": "faraway-so-close",
+   "title": "Faraway, So Close!",
+   "year": 1993,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1993
+    ]
+   }
+  },
+  {
+   "slug": "naked",
+   "title": "Naked",
+   "year": 1993,
+   "prizes": {
+    "Ator": [
+     1993
+    ],
+    "Direção": [
+     1993
+    ]
+   }
+  },
+  {
+   "slug": "raining-stones",
+   "title": "Raining Stones",
+   "year": 1993,
+   "prizes": {
+    "Prêmio do Júri": [
+     1993
+    ]
+   }
+  },
+  {
+   "slug": "the-puppetmaster",
+   "title": "The Puppetmaster",
+   "year": 1993,
+   "prizes": {
+    "Prêmio do Júri": [
+     1993
+    ]
+   }
+  },
+  {
+   "slug": "the-best-intentions",
+   "title": "The Best Intentions",
+   "year": 1992,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     1992
+    ],
+    "Atriz": [
+     1992
+    ]
+   }
+  },
+  {
+   "slug": "the-stolen-children",
+   "title": "The Stolen Children",
+   "year": 1992,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1992
+    ]
+   }
+  },
+  {
+   "slug": "the-player",
+   "title": "The Player",
+   "year": 1992,
+   "prizes": {
+    "Ator": [
+     1992
+    ],
+    "Direção": [
+     1992
+    ]
+   }
+  },
+  {
+   "slug": "dream-of-light",
+   "title": "Dream of Light",
+   "year": 1992,
+   "prizes": {
+    "Prêmio do Júri": [
+     1992
+    ]
+   }
+  },
+  {
+   "slug": "an-independent-life",
+   "title": "An Independent Life",
+   "year": 1992,
+   "prizes": {
+    "Prêmio do Júri": [
+     1992
+    ]
+   }
+  },
+  {
+   "slug": "barton-fink",
+   "title": "Barton Fink",
+   "year": 1991,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     1991
+    ],
+    "Ator": [
+     1991
+    ],
+    "Direção": [
+     1991
+    ]
+   }
+  },
+  {
+   "slug": "la-belle-noiseuse",
+   "title": "La Belle Noiseuse",
+   "year": 1991,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1991
+    ]
+   }
+  },
+  {
+   "slug": "europa",
+   "title": "Europa",
+   "year": 1991,
+   "prizes": {
+    "Prêmio do Júri": [
+     1991
+    ]
+   }
+  },
+  {
+   "slug": "out-of-life",
+   "title": "Out of Life",
+   "year": 1991,
+   "prizes": {
+    "Prêmio do Júri": [
+     1991
+    ]
+   }
+  },
+  {
+   "slug": "wild-at-heart",
+   "title": "Wild at Heart",
+   "year": 1990,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     1990
+    ]
+   }
+  },
+  {
+   "slug": "the-sting-of-death",
+   "title": "The Sting of Death",
+   "year": 1990,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1990
+    ]
+   }
+  },
+  {
+   "slug": "the-law-1990",
+   "title": "The Law",
+   "year": 1990,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1990
+    ]
+   }
+  },
+  {
+   "slug": "taxi-blues",
+   "title": "Taxi Blues",
+   "year": 1990,
+   "prizes": {
+    "Direção": [
+     1990
+    ]
+   }
+  },
+  {
+   "slug": "hidden-agenda",
+   "title": "Hidden Agenda",
+   "year": 1990,
+   "prizes": {
+    "Prêmio do Júri": [
+     1990
+    ]
+   }
+  },
+  {
+   "slug": "sex-lies-and-videotape",
+   "title": "sex, lies, and videotape",
+   "year": 1989,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     1989
+    ],
+    "Ator": [
+     1989
+    ]
+   }
+  },
+  {
+   "slug": "too-beautiful-for-you",
+   "title": "Too Beautiful for You",
+   "year": 1989,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1989
+    ]
+   }
+  },
+  {
+   "slug": "cinema-paradiso",
+   "title": "Cinema Paradiso",
+   "year": 1988,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1989
+    ]
+   }
+  },
+  {
+   "slug": "time-of-the-gypsies",
+   "title": "Time of the Gypsies",
+   "year": 1988,
+   "prizes": {
+    "Direção": [
+     1989
+    ]
+   }
+  },
+  {
+   "slug": "jesus-of-montreal",
+   "title": "Jesus of Montreal",
+   "year": 1989,
+   "prizes": {
+    "Prêmio do Júri": [
+     1989
+    ]
+   }
+  },
+  {
+   "slug": "pelle-the-conqueror",
+   "title": "Pelle the Conqueror",
+   "year": 1987,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     1988
+    ]
+   }
+  },
+  {
+   "slug": "a-world-apart",
+   "title": "A World Apart",
+   "year": 1988,
+   "prizes": {
+    "Atriz": [
+     1988
+    ],
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1988
+    ]
+   }
+  },
+  {
+   "slug": "the-south",
+   "title": "The South",
+   "year": 1988,
+   "prizes": {
+    "Direção": [
+     1988
+    ]
+   }
+  },
+  {
+   "slug": "a-short-film-about-killing",
+   "title": "A Short Film About Killing",
+   "year": 1988,
+   "prizes": {
+    "Prêmio do Júri": [
+     1988
+    ]
+   }
+  },
+  {
+   "slug": "under-the-sun-of-satan",
+   "title": "Under the Sun of Satan",
+   "year": 1987,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     1987
+    ]
+   }
+  },
+  {
+   "slug": "repentance",
+   "title": "Repentance",
+   "year": 1984,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1987
+    ]
+   }
+  },
+  {
+   "slug": "wings-of-desire",
+   "title": "Wings of Desire",
+   "year": 1987,
+   "prizes": {
+    "Direção": [
+     1987
+    ]
+   }
+  },
+  {
+   "slug": "shinran-path-to-purity",
+   "title": "Shinran: Path to Purity",
+   "year": 1987,
+   "prizes": {
+    "Prêmio do Júri": [
+     1987
+    ]
+   }
+  },
+  {
+   "slug": "yeelen",
+   "title": "Yeelen",
+   "year": 1987,
+   "prizes": {
+    "Prêmio do Júri": [
+     1987
+    ]
+   }
+  },
+  {
+   "slug": "the-mission",
+   "title": "The Mission",
+   "year": 1986,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     1986
+    ]
+   }
+  },
+  {
+   "slug": "the-sacrifice",
+   "title": "The Sacrifice",
+   "year": 1986,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1986
+    ],
+    "Prêmio especial / Jury Special Prize / Contribuição artística": [
+     1986
+    ]
+   }
+  },
+  {
+   "slug": "therese",
+   "title": "Thérèse",
+   "year": 1986,
+   "prizes": {
+    "Prêmio do Júri": [
+     1986
+    ]
+   }
+  },
+  {
+   "slug": "after-hours",
+   "title": "After Hours",
+   "year": 1985,
+   "prizes": {
+    "Direção": [
+     1986
+    ]
+   }
+  },
+  {
+   "slug": "when-father-was-away-on-business",
+   "title": "When Father Was Away on Business",
+   "year": 1985,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     1985
+    ]
+   }
+  },
+  {
+   "slug": "birdy",
+   "title": "Birdy",
+   "year": 1984,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1985
+    ]
+   }
+  },
+  {
+   "slug": "rendez-vous",
+   "title": "Rendez-vous",
+   "year": 1985,
+   "prizes": {
+    "Direção": [
+     1985
+    ]
+   }
+  },
+  {
+   "slug": "colonel-redl",
+   "title": "Colonel Redl",
+   "year": 1985,
+   "prizes": {
+    "Prêmio do Júri": [
+     1985
+    ]
+   }
+  },
+  {
+   "slug": "paris-texas",
+   "title": "Paris, Texas",
+   "year": 1984,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     1984
+    ]
+   }
+  },
+  {
+   "slug": "diary-for-my-children",
+   "title": "Diary for My Children",
+   "year": 1984,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1984
+    ]
+   }
+  },
+  {
+   "slug": "a-sunday-in-the-country",
+   "title": "A Sunday in the Country",
+   "year": 1984,
+   "prizes": {
+    "Direção": [
+     1984
+    ]
+   }
+  },
+  {
+   "slug": "voyage-to-cythera",
+   "title": "Voyage to Cythera",
+   "year": 1984,
+   "prizes": {
+    "Roteiro": [
+     1984
+    ]
+   }
+  },
+  {
+   "slug": "the-ballad-of-narayama",
+   "title": "The Ballad of Narayama",
+   "year": 1983,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     1983
+    ]
+   }
+  },
+  {
+   "slug": "monty-pythons-the-meaning-of-life",
+   "title": "Monty Python's The Meaning of Life",
+   "year": 1983,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1983
+    ]
+   }
+  },
+  {
+   "slug": "largent-1983",
+   "title": "L'Argent",
+   "year": 1983,
+   "prizes": {
+    "Direção": [
+     1983
+    ]
+   }
+  },
+  {
+   "slug": "nostalgia-1983",
+   "title": "Nostalgia",
+   "year": 1983,
+   "prizes": {
+    "Direção": [
+     1983
+    ]
+   }
+  },
+  {
+   "slug": "kharij",
+   "title": "Kharij",
+   "year": 1982,
+   "prizes": {
+    "Prêmio do Júri": [
+     1983
+    ]
+   }
+  },
+  {
+   "slug": "missing",
+   "title": "Missing",
+   "year": 1982,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     1982
+    ],
+    "Ator": [
+     1982
+    ]
+   }
+  },
+  {
+   "slug": "the-road-1982",
+   "title": "The Road",
+   "year": 1982,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     1982
+    ]
+   }
+  },
+  {
+   "slug": "the-night-of-the-shooting-stars",
+   "title": "The Night of the Shooting Stars",
+   "year": 1982,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1982
+    ]
+   }
+  },
+  {
+   "slug": "fitzcarraldo",
+   "title": "Fitzcarraldo",
+   "year": 1982,
+   "prizes": {
+    "Direção": [
+     1982
+    ]
+   }
+  },
+  {
+   "slug": "moonlighting",
+   "title": "Moonlighting",
+   "year": 1982,
+   "prizes": {
+    "Roteiro": [
+     1982
+    ]
+   }
+  },
+  {
+   "slug": "man-of-iron",
+   "title": "Man of Iron",
+   "year": 1981,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     1981
+    ]
+   }
+  },
+  {
+   "slug": "light-years-away",
+   "title": "Light Years Away",
+   "year": 1981,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1981
+    ]
+   }
+  },
+  {
+   "slug": "mephisto",
+   "title": "Mephisto",
+   "year": 1981,
+   "prizes": {
+    "Roteiro": [
+     1981
+    ]
+   }
+  },
+  {
+   "slug": "all-that-jazz",
+   "title": "All That Jazz",
+   "year": 1979,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     1980
+    ]
+   }
+  },
+  {
+   "slug": "kagemusha",
+   "title": "Kagemusha",
+   "year": 1980,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     1980
+    ]
+   }
+  },
+  {
+   "slug": "my-american-uncle",
+   "title": "My American Uncle",
+   "year": 1980,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1980
+    ]
+   }
+  },
+  {
+   "slug": "the-terrace",
+   "title": "The Terrace",
+   "year": 1980,
+   "prizes": {
+    "Roteiro": [
+     1980
+    ],
+    "Atuação coadjuvante": [
+     1980
+    ]
+   }
+  },
+  {
+   "slug": "the-constant-factor",
+   "title": "The Constant Factor",
+   "year": 1980,
+   "prizes": {
+    "Prêmio do Júri": [
+     1980
+    ]
+   }
+  },
+  {
+   "slug": "apocalypse-now",
+   "title": "Apocalypse Now",
+   "year": 1979,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     1979
+    ]
+   }
+  },
+  {
+   "slug": "the-tin-drum",
+   "title": "The Tin Drum",
+   "year": 1979,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     1979
+    ]
+   }
+  },
+  {
+   "slug": "siberiade",
+   "title": "Siberiade",
+   "year": 1979,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1979
+    ]
+   }
+  },
+  {
+   "slug": "days-of-heaven",
+   "title": "Days of Heaven",
+   "year": 1978,
+   "prizes": {
+    "Direção": [
+     1979
+    ]
+   }
+  },
+  {
+   "slug": "the-tree-of-wooden-clogs",
+   "title": "The Tree of Wooden Clogs",
+   "year": 1978,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     1978
+    ]
+   }
+  },
+  {
+   "slug": "bye-bye-monkey",
+   "title": "Bye Bye Monkey",
+   "year": 1978,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1978
+    ]
+   }
+  },
+  {
+   "slug": "the-shout",
+   "title": "The Shout",
+   "year": 1978,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1978
+    ]
+   }
+  },
+  {
+   "slug": "empire-of-passion",
+   "title": "Empire of Passion",
+   "year": 1978,
+   "prizes": {
+    "Direção": [
+     1978
+    ]
+   }
+  },
+  {
+   "slug": "padre-padrone",
+   "title": "Padre Padrone",
+   "year": 1977,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     1977
+    ]
+   }
+  },
+  {
+   "slug": "taxi-driver",
+   "title": "Taxi Driver",
+   "year": 1976,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     1976
+    ]
+   }
+  },
+  {
+   "slug": "cria",
+   "title": "Cria!",
+   "year": 1976,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1976
+    ]
+   }
+  },
+  {
+   "slug": "the-marquise-of-o",
+   "title": "The Marquise of O",
+   "year": 1976,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1976
+    ]
+   }
+  },
+  {
+   "slug": "ugly-dirty-and-bad",
+   "title": "Ugly, Dirty and Bad",
+   "year": 1976,
+   "prizes": {
+    "Direção": [
+     1976
+    ]
+   }
+  },
+  {
+   "slug": "chronicle-of-the-years-of-fire",
+   "title": "Chronicle of the Years of Fire",
+   "year": 1975,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     1975
+    ]
+   }
+  },
+  {
+   "slug": "the-enigma-of-kaspar-hauser",
+   "title": "The Enigma of Kaspar Hauser",
+   "year": 1974,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1975
+    ]
+   }
+  },
+  {
+   "slug": "special-section",
+   "title": "Special Section",
+   "year": 1975,
+   "prizes": {
+    "Direção": [
+     1975
+    ]
+   }
+  },
+  {
+   "slug": "orders",
+   "title": "Orders",
+   "year": 1974,
+   "prizes": {
+    "Direção": [
+     1975
+    ]
+   }
+  },
+  {
+   "slug": "the-conversation",
+   "title": "The Conversation",
+   "year": 1974,
+   "prizes": {
+    "Grand Prix du Festival (nome da Palme em 1946-54 e 1964-74)": [
+     1974
+    ]
+   }
+  },
+  {
+   "slug": "arabian-nights-1974",
+   "title": "Arabian Nights",
+   "year": 1974,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1974
+    ]
+   }
+  },
+  {
+   "slug": "the-sugarland-express",
+   "title": "The Sugarland Express",
+   "year": 1974,
+   "prizes": {
+    "Roteiro": [
+     1974
+    ]
+   }
+  },
+  {
+   "slug": "the-hireling",
+   "title": "The Hireling",
+   "year": 1973,
+   "prizes": {
+    "Grand Prix du Festival (nome da Palme em 1946-54 e 1964-74)": [
+     1973
+    ]
+   }
+  },
+  {
+   "slug": "scarecrow",
+   "title": "Scarecrow",
+   "year": 1973,
+   "prizes": {
+    "Grand Prix du Festival (nome da Palme em 1946-54 e 1964-74)": [
+     1973
+    ]
+   }
+  },
+  {
+   "slug": "the-mother-and-the-whore",
+   "title": "The Mother and the Whore",
+   "year": 1973,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1973
+    ]
+   }
+  },
+  {
+   "slug": "the-hourglass-sanatorium",
+   "title": "The Hourglass Sanatorium",
+   "year": 1973,
+   "prizes": {
+    "Prêmio do Júri": [
+     1973
+    ]
+   }
+  },
+  {
+   "slug": "the-invitation",
+   "title": "The Invitation",
+   "year": 1973,
+   "prizes": {
+    "Prêmio do Júri": [
+     1973
+    ]
+   }
+  },
+  {
+   "slug": "the-working-class-goes-to-heaven",
+   "title": "The Working Class Goes to Heaven",
+   "year": 1971,
+   "prizes": {
+    "Grand Prix du Festival (nome da Palme em 1946-54 e 1964-74)": [
+     1972
+    ],
+    "Prêmio especial / Jury Special Prize / Contribuição artística": [
+     1972
+    ]
+   }
+  },
+  {
+   "slug": "the-mattei-affair",
+   "title": "The Mattei Affair",
+   "year": 1972,
+   "prizes": {
+    "Grand Prix du Festival (nome da Palme em 1946-54 e 1964-74)": [
+     1972
+    ],
+    "Prêmio especial / Jury Special Prize / Contribuição artística": [
+     1972
+    ]
+   }
+  },
+  {
+   "slug": "solaris",
+   "title": "Solaris",
+   "year": 1972,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1972
+    ]
+   }
+  },
+  {
+   "slug": "red-psalm",
+   "title": "Red Psalm",
+   "year": 1972,
+   "prizes": {
+    "Direção": [
+     1972
+    ]
+   }
+  },
+  {
+   "slug": "slaughterhouse-five",
+   "title": "Slaughterhouse-Five",
+   "year": 1972,
+   "prizes": {
+    "Prêmio do Júri": [
+     1972
+    ]
+   }
+  },
+  {
+   "slug": "the-go-between-1971",
+   "title": "The Go-Between",
+   "year": 1971,
+   "prizes": {
+    "Grand Prix du Festival (nome da Palme em 1946-54 e 1964-74)": [
+     1971
+    ]
+   }
+  },
+  {
+   "slug": "johnny-got-his-gun",
+   "title": "Johnny Got His Gun",
+   "year": 1971,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1971
+    ]
+   }
+  },
+  {
+   "slug": "taking-off",
+   "title": "Taking Off",
+   "year": 1971,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1971
+    ]
+   }
+  },
+  {
+   "slug": "joe-hill",
+   "title": "Joe Hill",
+   "year": 1971,
+   "prizes": {
+    "Prêmio do Júri": [
+     1971
+    ]
+   }
+  },
+  {
+   "slug": "love-1971",
+   "title": "Love",
+   "year": 1971,
+   "prizes": {
+    "Prêmio do Júri": [
+     1971
+    ]
+   }
+  },
+  {
+   "slug": "mash",
+   "title": "M*A*S*H",
+   "year": 1970,
+   "prizes": {
+    "Grand Prix du Festival (nome da Palme em 1946-54 e 1964-74)": [
+     1970
+    ]
+   }
+  },
+  {
+   "slug": "investigation-of-a-citizen-above-suspicion",
+   "title": "Investigation of a Citizen Above Suspicion",
+   "year": 1970,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1970
+    ]
+   }
+  },
+  {
+   "slug": "leo-the-last",
+   "title": "Leo the Last",
+   "year": 1970,
+   "prizes": {
+    "Direção": [
+     1970
+    ]
+   }
+  },
+  {
+   "slug": "the-falcons",
+   "title": "The Falcons",
+   "year": 1970,
+   "prizes": {
+    "Prêmio do Júri": [
+     1970
+    ]
+   }
+  },
+  {
+   "slug": "the-strawberry-statement",
+   "title": "The Strawberry Statement",
+   "year": 1970,
+   "prizes": {
+    "Prêmio do Júri": [
+     1970
+    ]
+   }
+  },
+  {
+   "slug": "if",
+   "title": "if....",
+   "year": 1968,
+   "prizes": {
+    "Grand Prix du Festival (nome da Palme em 1946-54 e 1964-74)": [
+     1969
+    ]
+   }
+  },
+  {
+   "slug": "adalen-31",
+   "title": "Adalen 31",
+   "year": 1969,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1969
+    ]
+   }
+  },
+  {
+   "slug": "antonio-das-mortes",
+   "title": "Antonio das Mortes",
+   "year": 1969,
+   "prizes": {
+    "Direção": [
+     1969
+    ]
+   }
+  },
+  {
+   "slug": "all-my-good-countrymen",
+   "title": "All My Good Countrymen",
+   "year": 1969,
+   "prizes": {
+    "Direção": [
+     1969
+    ]
+   }
+  },
+  {
+   "slug": "z",
+   "title": "Z",
+   "year": 1969,
+   "prizes": {
+    "Prêmio do Júri": [
+     1969
+    ],
+    "Ator": [
+     1969
+    ]
+   }
+  },
+  {
+   "slug": "blow-up",
+   "title": "Blow-Up",
+   "year": 1966,
+   "prizes": {
+    "Grand Prix du Festival (nome da Palme em 1946-54 e 1964-74)": [
+     1967
+    ]
+   }
+  },
+  {
+   "slug": "accident-1967",
+   "title": "Accident",
+   "year": 1967,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1967
+    ]
+   }
+  },
+  {
+   "slug": "i-even-met-happy-gypsies",
+   "title": "I Even Met Happy Gypsies",
+   "year": 1967,
+   "prizes": {
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1967
+    ]
+   }
+  },
+  {
+   "slug": "ten-thousand-days",
+   "title": "Ten Thousand Days",
+   "year": 1967,
+   "prizes": {
+    "Direção": [
+     1967
+    ]
+   }
+  },
+  {
+   "slug": "we-still-kill-the-old-way",
+   "title": "We Still Kill the Old Way",
+   "year": 1967,
+   "prizes": {
+    "Roteiro": [
+     1967
+    ]
+   }
+  },
+  {
+   "slug": "the-killing-game",
+   "title": "The Killing Game",
+   "year": 1967,
+   "prizes": {
+    "Roteiro": [
+     1967
+    ]
+   }
+  },
+  {
+   "slug": "the-birds-the-bees-and-the-italians",
+   "title": "The Birds, the Bees and the Italians",
+   "year": 1966,
+   "prizes": {
+    "Grand Prix du Festival (nome da Palme em 1946-54 e 1964-74)": [
+     1966
+    ]
+   }
+  },
+  {
+   "slug": "a-man-and-a-woman",
+   "title": "A Man and a Woman",
+   "year": 1966,
+   "prizes": {
+    "Grand Prix du Festival (nome da Palme em 1946-54 e 1964-74)": [
+     1966
+    ]
+   }
+  },
+  {
+   "slug": "alfie",
+   "title": "Alfie",
+   "year": 1966,
+   "prizes": {
+    "Prêmio do Júri": [
+     1966
+    ],
+    "Prêmio especial / Jury Special Prize / Contribuição artística": [
+     1966
+    ]
+   }
+  },
+  {
+   "slug": "lenin-in-poland",
+   "title": "Lenin in Poland",
+   "year": 1966,
+   "prizes": {
+    "Direção": [
+     1966
+    ]
+   }
+  },
+  {
+   "slug": "the-knack-and-how-to-get-it",
+   "title": "The Knack... and How to Get It",
+   "year": 1965,
+   "prizes": {
+    "Grand Prix du Festival (nome da Palme em 1946-54 e 1964-74)": [
+     1965
+    ],
+    "Prêmio técnico/gênero de 1946": [
+     1965
+    ]
+   }
+  },
+  {
+   "slug": "kwaidan",
+   "title": "Kwaidan",
+   "year": 1964,
+   "prizes": {
+    "Prêmio do Júri": [
+     1965
+    ],
+    "Prêmio especial / Jury Special Prize / Contribuição artística": [
+     1965
+    ]
+   }
+  },
+  {
+   "slug": "forest-of-the-hanged",
+   "title": "Forest of the Hanged",
+   "year": 1965,
+   "prizes": {
+    "Direção": [
+     1965
+    ]
+   }
+  },
+  {
+   "slug": "the-317th-platoon",
+   "title": "The 317th Platoon",
+   "year": 1965,
+   "prizes": {
+    "Roteiro": [
+     1965
+    ]
+   }
+  },
+  {
+   "slug": "the-hill",
+   "title": "The Hill",
+   "year": 1965,
+   "prizes": {
+    "Roteiro": [
+     1965
+    ]
+   }
+  },
+  {
+   "slug": "the-umbrellas-of-cherbourg",
+   "title": "The Umbrellas of Cherbourg",
+   "year": 1964,
+   "prizes": {
+    "Grand Prix du Festival (nome da Palme em 1946-54 e 1964-74)": [
+     1964
+    ]
+   }
+  },
+  {
+   "slug": "woman-in-the-dunes",
+   "title": "Woman in the Dunes",
+   "year": 1964,
+   "prizes": {
+    "Prêmio do Júri": [
+     1964
+    ],
+    "Prêmio especial / Jury Special Prize / Contribuição artística": [
+     1964
+    ]
+   }
+  },
+  {
+   "slug": "the-leopard",
+   "title": "The Leopard",
+   "year": 1963,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     1963
+    ]
+   }
+  },
+  {
+   "slug": "when-the-cat-comes",
+   "title": "When the Cat Comes",
+   "year": 1963,
+   "prizes": {
+    "Prêmio do Júri": [
+     1963
+    ]
+   }
+  },
+  {
+   "slug": "harakiri",
+   "title": "Harakiri",
+   "year": 1962,
+   "prizes": {
+    "Prêmio do Júri": [
+     1963
+    ],
+    "Prêmio especial / Jury Special Prize / Contribuição artística": [
+     1963
+    ]
+   }
+  },
+  {
+   "slug": "codine",
+   "title": "Codine",
+   "year": 1963,
+   "prizes": {
+    "Roteiro": [
+     1963
+    ]
+   }
+  },
+  {
+   "slug": "the-given-word",
+   "title": "The Given Word",
+   "year": 1962,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     1962
+    ]
+   }
+  },
+  {
+   "slug": "leclisse",
+   "title": "L'Eclisse",
+   "year": 1962,
+   "prizes": {
+    "Prêmio do Júri": [
+     1962
+    ],
+    "Prêmio especial / Jury Special Prize / Contribuição artística": [
+     1962
+    ]
+   }
+  },
+  {
+   "slug": "the-trial-of-joan-of-arc",
+   "title": "The Trial of Joan of Arc",
+   "year": 1962,
+   "prizes": {
+    "Prêmio do Júri": [
+     1962
+    ],
+    "Prêmio especial / Jury Special Prize / Contribuição artística": [
+     1962
+    ]
+   }
+  },
+  {
+   "slug": "the-long-absence",
+   "title": "The Long Absence",
+   "year": 1961,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     1961
+    ]
+   }
+  },
+  {
+   "slug": "viridiana",
+   "title": "Viridiana",
+   "year": 1961,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     1961
+    ]
+   }
+  },
+  {
+   "slug": "mother-joan-of-the-angels",
+   "title": "Mother Joan of the Angels",
+   "year": 1961,
+   "prizes": {
+    "Prêmio do Júri": [
+     1961
+    ],
+    "Prêmio especial / Jury Special Prize / Contribuição artística": [
+     1961
+    ]
+   }
+  },
+  {
+   "slug": "chronicle-of-flaming-years",
+   "title": "Chronicle of Flaming Years",
+   "year": 1961,
+   "prizes": {
+    "Direção": [
+     1961
+    ]
+   }
+  },
+  {
+   "slug": "la-dolce-vita",
+   "title": "La Dolce Vita",
+   "year": 1960,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     1960
+    ]
+   }
+  },
+  {
+   "slug": "lavventura",
+   "title": "L'Avventura",
+   "year": 1960,
+   "prizes": {
+    "Prêmio do Júri": [
+     1960
+    ]
+   }
+  },
+  {
+   "slug": "odd-obsession",
+   "title": "Odd Obsession",
+   "year": 1959,
+   "prizes": {
+    "Prêmio do Júri": [
+     1960
+    ]
+   }
+  },
+  {
+   "slug": "black-orpheus",
+   "title": "Black Orpheus",
+   "year": 1959,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     1959
+    ]
+   }
+  },
+  {
+   "slug": "stars-1959",
+   "title": "Stars",
+   "year": 1959,
+   "prizes": {
+    "Prêmio do Júri": [
+     1959
+    ],
+    "Prêmio especial / Jury Special Prize / Contribuição artística": [
+     1959
+    ]
+   }
+  },
+  {
+   "slug": "the-400-blows",
+   "title": "The 400 Blows",
+   "year": 1959,
+   "prizes": {
+    "Direção": [
+     1959
+    ]
+   }
+  },
+  {
+   "slug": "the-cranes-are-flying",
+   "title": "The Cranes Are Flying",
+   "year": 1957,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     1958
+    ],
+    "Prêmio especial / Jury Special Prize / Contribuição artística": [
+     1958
+    ]
+   }
+  },
+  {
+   "slug": "goha",
+   "title": "Goha",
+   "year": 1958,
+   "prizes": {
+    "Prêmio do Júri": [
+     1958
+    ]
+   }
+  },
+  {
+   "slug": "visages-de-bronze",
+   "title": "Visages de bronze",
+   "year": 1958,
+   "prizes": {
+    "Prêmio do Júri": [
+     1958
+    ]
+   }
+  },
+  {
+   "slug": "brink-of-life",
+   "title": "Brink of Life",
+   "year": 1958,
+   "prizes": {
+    "Atriz": [
+     1958
+    ],
+    "Direção": [
+     1958
+    ]
+   }
+  },
+  {
+   "slug": "mon-oncle",
+   "title": "Mon Oncle",
+   "year": 1958,
+   "prizes": {
+    "Prêmio do Júri": [
+     1958
+    ],
+    "Prêmio especial / Jury Special Prize / Contribuição artística": [
+     1958
+    ]
+   }
+  },
+  {
+   "slug": "young-husbands",
+   "title": "Young Husbands",
+   "year": 1958,
+   "prizes": {
+    "Roteiro": [
+     1958
+    ]
+   }
+  },
+  {
+   "slug": "friendly-persuasion",
+   "title": "Friendly Persuasion",
+   "year": 1956,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     1957
+    ]
+   }
+  },
+  {
+   "slug": "kanal-1957",
+   "title": "Kanal",
+   "year": 1957,
+   "prizes": {
+    "Prêmio do Júri": [
+     1957
+    ],
+    "Prêmio especial / Jury Special Prize / Contribuição artística": [
+     1957
+    ]
+   }
+  },
+  {
+   "slug": "the-seventh-seal",
+   "title": "The Seventh Seal",
+   "year": 1957,
+   "prizes": {
+    "Prêmio do Júri": [
+     1957
+    ],
+    "Prêmio especial / Jury Special Prize / Contribuição artística": [
+     1957
+    ]
+   }
+  },
+  {
+   "slug": "a-man-escaped",
+   "title": "A Man Escaped",
+   "year": 1956,
+   "prizes": {
+    "Direção": [
+     1957
+    ]
+   }
+  },
+  {
+   "slug": "the-silent-world",
+   "title": "The Silent World",
+   "year": 1956,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     1956
+    ]
+   }
+  },
+  {
+   "slug": "the-mystery-of-picasso",
+   "title": "The Mystery of Picasso",
+   "year": 1956,
+   "prizes": {
+    "Prêmio do Júri": [
+     1956
+    ],
+    "Prêmio especial / Jury Special Prize / Contribuição artística": [
+     1956
+    ]
+   }
+  },
+  {
+   "slug": "othello-1955-1",
+   "title": "Othello",
+   "year": 1955,
+   "prizes": {
+    "Direção": [
+     1956
+    ]
+   }
+  },
+  {
+   "slug": "marty",
+   "title": "Marty",
+   "year": 1955,
+   "prizes": {
+    "Palme d'Or (1955-63 e 1975-2026)": [
+     1955
+    ]
+   }
+  },
+  {
+   "slug": "lost-continent-1955",
+   "title": "Lost Continent",
+   "year": 1955,
+   "prizes": {
+    "Prêmio do Júri": [
+     1955
+    ],
+    "Prêmio especial / Jury Special Prize / Contribuição artística": [
+     1955
+    ]
+   }
+  },
+  {
+   "slug": "rififi",
+   "title": "Rififi",
+   "year": 1955,
+   "prizes": {
+    "Direção": [
+     1955
+    ]
+   }
+  },
+  {
+   "slug": "heroes-of-shipka",
+   "title": "Heroes of Shipka",
+   "year": 1955,
+   "prizes": {
+    "Direção": [
+     1955
+    ]
+   }
+  },
+  {
+   "slug": "gate-of-hell",
+   "title": "Gate of Hell",
+   "year": 1953,
+   "prizes": {
+    "Grand Prix du Festival (nome da Palme em 1946-54 e 1964-74)": [
+     1954
+    ],
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1954
+    ]
+   }
+  },
+  {
+   "slug": "monsieur-ripois",
+   "title": "Monsieur Ripois",
+   "year": 1954,
+   "prizes": {
+    "Prêmio do Júri": [
+     1954
+    ]
+   }
+  },
+  {
+   "slug": "the-wages-of-fear",
+   "title": "The Wages of Fear",
+   "year": 1953,
+   "prizes": {
+    "Grand Prix du Festival (nome da Palme em 1946-54 e 1964-74)": [
+     1953
+    ],
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1953
+    ],
+    "Prêmio especial / Jury Special Prize / Contribuição artística": [
+     1953
+    ]
+   }
+  },
+  {
+   "slug": "two-cents-worth-of-hope",
+   "title": "Two Cents Worth of Hope",
+   "year": 1952,
+   "prizes": {
+    "Grand Prix du Festival (nome da Palme em 1946-54 e 1964-74)": [
+     1952
+    ],
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1952
+    ]
+   }
+  },
+  {
+   "slug": "othello-1951",
+   "title": "Othello",
+   "year": 1951,
+   "prizes": {
+    "Grand Prix du Festival (nome da Palme em 1946-54 e 1964-74)": [
+     1952
+    ],
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1952
+    ]
+   }
+  },
+  {
+   "slug": "we-are-all-murderers",
+   "title": "We Are All Murderers",
+   "year": 1952,
+   "prizes": {
+    "Prêmio do Júri": [
+     1952
+    ],
+    "Prêmio especial / Jury Special Prize / Contribuição artística": [
+     1952
+    ]
+   }
+  },
+  {
+   "slug": "fan-fan-the-tulip",
+   "title": "Fan-Fan the Tulip",
+   "year": 1952,
+   "prizes": {
+    "Direção": [
+     1952
+    ]
+   }
+  },
+  {
+   "slug": "cops-and-robbers",
+   "title": "Cops and Robbers",
+   "year": 1951,
+   "prizes": {
+    "Roteiro": [
+     1952
+    ]
+   }
+  },
+  {
+   "slug": "miss-julie",
+   "title": "Miss Julie",
+   "year": 1951,
+   "prizes": {
+    "Grand Prix du Festival (nome da Palme em 1946-54 e 1964-74)": [
+     1951
+    ]
+   }
+  },
+  {
+   "slug": "miracle-in-milan",
+   "title": "Miracle in Milan",
+   "year": 1951,
+   "prizes": {
+    "Grand Prix du Festival (nome da Palme em 1946-54 e 1964-74)": [
+     1951
+    ]
+   }
+  },
+  {
+   "slug": "all-about-eve",
+   "title": "All About Eve",
+   "year": 1950,
+   "prizes": {
+    "Prêmio do Júri": [
+     1951
+    ],
+    "Atriz": [
+     1951
+    ],
+    "Prêmio especial / Jury Special Prize / Contribuição artística": [
+     1951
+    ]
+   }
+  },
+  {
+   "slug": "the-young-and-the-damned",
+   "title": "The Young and the Damned",
+   "year": 1950,
+   "prizes": {
+    "Direção": [
+     1951
+    ]
+   }
+  },
+  {
+   "slug": "the-browning-version",
+   "title": "The Browning Version",
+   "year": 1951,
+   "prizes": {
+    "Ator": [
+     1951
+    ],
+    "Roteiro": [
+     1951
+    ]
+   }
+  },
+  {
+   "slug": "the-third-man",
+   "title": "The Third Man",
+   "year": 1949,
+   "prizes": {
+    "Grand Prix du Festival (nome da Palme em 1946-54 e 1964-74)": [
+     1949
+    ],
+    "Grand Prix (1967+, inclui Grand Prix Spécial du Jury)": [
+     1949
+    ]
+   }
+  },
+  {
+   "slug": "the-walls-of-malapaga",
+   "title": "The Walls of Malapaga",
+   "year": 1949,
+   "prizes": {
+    "Atriz": [
+     1949
+    ],
+    "Direção": [
+     1949
+    ]
+   }
+  },
+  {
+   "slug": "lost-boundaries",
+   "title": "Lost Boundaries",
+   "year": 1949,
+   "prizes": {
+    "Roteiro": [
+     1949
+    ]
+   }
+  },
+  {
+   "slug": "the-battle-of-the-rails",
+   "title": "The Battle of the Rails",
+   "year": 1946,
+   "prizes": {
+    "Prêmio do Júri": [
+     1946
+    ],
+    "Direção": [
+     1946
+    ]
+   }
+  },
+  {
+   "slug": "pastoral-symphony",
+   "title": "Pastoral Symphony",
+   "year": 1946,
+   "prizes": {
+    "Grand Prix du Festival (nome da Palme em 1946-54 e 1964-74)": [
+     1946
+    ],
+    "Atriz": [
+     1946
+    ]
+   }
+  },
+  {
+   "slug": "the-lost-weekend",
+   "title": "The Lost Weekend",
+   "year": 1945,
+   "prizes": {
+    "Grand Prix du Festival (nome da Palme em 1946-54 e 1964-74)": [
+     1946
+    ],
+    "Ator": [
+     1946
+    ]
+   }
+  },
+  {
+   "slug": "brief-encounter",
+   "title": "Brief Encounter",
+   "year": 1945,
+   "prizes": {
+    "Grand Prix du Festival (nome da Palme em 1946-54 e 1964-74)": [
+     1946
+    ]
+   }
+  },
+  {
+   "slug": "maria-candelaria",
+   "title": "Maria Candelaria",
+   "year": 1944,
+   "prizes": {
+    "Grand Prix du Festival (nome da Palme em 1946-54 e 1964-74)": [
+     1946
+    ],
+    "Prêmio técnico/gênero de 1946": [
+     1946
+    ]
+   }
+  },
+  {
+   "slug": "men-without-wings",
+   "title": "Men Without Wings",
+   "year": 1946,
+   "prizes": {
+    "Grand Prix du Festival (nome da Palme em 1946-54 e 1964-74)": [
+     1946
+    ]
+   }
+  },
+  {
+   "slug": "neecha-nagar",
+   "title": "Neecha Nagar",
+   "year": 1946,
+   "prizes": {
+    "Grand Prix du Festival (nome da Palme em 1946-54 e 1964-74)": [
+     1946
+    ]
+   }
+  },
+  {
+   "slug": "red-meadows",
+   "title": "Red Meadows",
+   "year": 1945,
+   "prizes": {
+    "Grand Prix du Festival (nome da Palme em 1946-54 e 1964-74)": [
+     1946
+    ]
+   }
+  },
+  {
+   "slug": "rome-open-city",
+   "title": "Rome, Open City",
+   "year": 1945,
+   "prizes": {
+    "Grand Prix du Festival (nome da Palme em 1946-54 e 1964-74)": [
+     1946
+    ]
+   }
+  },
+  {
+   "slug": "the-last-chance",
+   "title": "The Last Chance",
+   "year": 1945,
+   "prizes": {
+    "Grand Prix du Festival (nome da Palme em 1946-54 e 1964-74)": [
+     1946
+    ]
+   }
+  },
+  {
+   "slug": "the-turning-point-1945",
+   "title": "The Turning Point",
+   "year": 1945,
+   "prizes": {
+    "Grand Prix du Festival (nome da Palme em 1946-54 e 1964-74)": [
+     1946
+    ]
+   }
+  },
+  {
+   "slug": "torment",
+   "title": "Torment",
+   "year": 1944,
+   "prizes": {
+    "Grand Prix du Festival (nome da Palme em 1946-54 e 1964-74)": [
+     1946
+    ]
+   }
+  },
+  {
+   "slug": "union-pacific",
+   "title": "Union Pacific",
+   "year": 1939,
+   "prizes": {
+    "Palme retroativa 1939 (concedida em 2002)": [
+     1939
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,142 @@
+#!/bin/bash
+# Test double for the Node 22 binary, used only by test/noturna-mac.test.js (21/10/2026). It stands in for `node` in every call that scripts/noturna-mac.sh makes:
+# it records the call (argv, and whether the secret and the flags reached it, NEVER the secret) in chamadas/node.log, and writes the files the real build would write.
+# The launcher wipes the environment, so the test's switches come from the file controle.env next to this one (export FAKE_...='...' lines).
+#   FAKE_NODE_VERSAO  what --version prints (default v22.23.3)        FAKE_RODADA   content stamped on the files of this "night" (default r1)
+#   FAKE_FALHA        build | people | verify | guarda | publico      (the Python stub reads selo | unittest)
+#   FAKE_PLANTAR      comma list: extra watchlist bandeira-ruim bandeira-subpasta link-docs
+#   FAKE_MAIN_ANDA    outro-arquivo | mesma-linha | json-quebrado: another commit reaches main while the build runs
+#   FAKE_VAZA=1       the build prints the TMDB token (the test proves the log shows [TMDB])     FAKE_ESPERA=<file>  the build waits (30 s at most) until the file exists
+#   FAKE_MUBI_DORME=N the MUBI collector sleeps N seconds, its pid in chamadas/mubi.pid
+D=$(cd "$(dirname "$0")" && pwd)
+if [ -f "$D/controle.env" ]; then . "$D/controle.env"; fi
+mkdir -p "$D/chamadas"
+
+log() { # log <tipo> <argumentos>
+  local tok=nao
+  if [ -n "${TMDB_TOKEN-}" ]; then tok=sim; fi
+  local gh=nao
+  if [ -n "${NOTURNA_GH_TOKEN-}" ]; then gh=sim; fi
+  printf '%s argv=%s FRONT_MEMORY_WRITE=%s TONIGHT_MEMORY_WRITE=%s tmdb_no_ambiente=%s WILL_UPLOAD_ENABLED=%s GIT_CONFIG_NOSYSTEM=%s GIT_ASKPASS=%s PYTHON=%s gh_no_ambiente=%s\n' \
+    "$1" "$2" "${FRONT_MEMORY_WRITE-}" "${TONIGHT_MEMORY_WRITE-}" "$tok" "${WILL_UPLOAD_ENABLED-}" "${GIT_CONFIG_NOSYSTEM-}" "${GIT_ASKPASS-}" "${PYTHON-}" "$gh" >> "$D/chamadas/node.log"
+}
+
+arg_depois() { # arg_depois <opcao> <argumentos...>
+  local want=$1 prev="" a
+  shift
+  for a in "$@"; do
+    if [ "$prev" = "$want" ]; then printf '%s' "$a"; return 0; fi
+    prev=$a
+  done
+}
+
+plantar() { case ",${FAKE_PLANTAR-}," in *",$1,"*) return 0 ;; esac; return 1; }
+
+# review of 21/10/2026 (C2): FAKE_DORME=<tipo> (people | verify | guarda | publico | fronteira) makes that call write its pid in chamadas/<tipo>.pid and sleep FAKE_DORME_S seconds (45), so
+# the test can prove that the step's own time limit ends it. The sleep is a child of this script in its group: the limit kills both.
+dorme_se() {
+  if [ "${FAKE_DORME-}" = "$1" ]; then
+    echo $$ > "$D/chamadas/$1.pid"
+    sleep "${FAKE_DORME_S:-45}"
+  fi
+}
+
+case "${1:-}" in
+  --version) printf '%s\n' "${FAKE_NODE_VERSAO:-v22.23.3}"; exit 0 ;;
+  --test) log suite "$*"; exit 0 ;;
+  build.js)
+    shift
+    case " $* " in
+      *" --self-test-guard "*) log guarda "$*"; dorme_se guarda; [ "${FAKE_FALHA-}" = guarda ] && exit 3; exit 0 ;;
+    esac
+    log build "$*"
+    [ "${FAKE_FALHA-}" = build ] && exit 3
+    out=$(arg_depois --out "$@")
+    rodada=${FAKE_RODADA:-r1}
+    if [ -n "${FAKE_ESPERA-}" ]; then
+      echo $$ > "$D/chamadas/build.pid"
+      n=0
+      while [ ! -e "$FAKE_ESPERA" ] && [ "$n" -lt 300 ]; do sleep 0.1; n=$((n + 1)); done
+    fi
+    mkdir -p "$out/data"
+    printf '<html>rodada %s</html>\n' "$rodada" > "$out/index.html"
+    printf '{"rodada":"%s"}\n' "$rodada" > "$out/manifest.json"
+    : > "$out/.nojekyll"
+    printf '{"meta":{"builtAt":"%s"}}\n' "$rodada" > "$out/data/index.json"
+    printf '{"rodada":"%s"}\n' "$rodada" > cache/tmdb.json
+    sed "s/^  \"g\": .*\$/  \"g\": \"$rodada\"/" cache/lists.json > cache/lists.json.novo && mv cache/lists.json.novo cache/lists.json
+    if [ "${FRONT_MEMORY_WRITE-}" = 1 ]; then printf '{"front":"%s"}\n' "$rodada" > cache/front-memory.json; fi
+    # 15/11/2026: the real build writes today's Tonight into cache/tonight-memory.json when it is told the night publishes (lib/tonight-memory.js)
+    if [ "${TONIGHT_MEMORY_WRITE-}" = 1 ]; then printf '{"tonight":"%s"}\n' "$rodada" > cache/tonight-memory.json; fi
+    # review of 21/10/2026 (B1): FAKE_CAPAS=N writes N covers of 3,000 random bytes in the site (the same ones every night, kept in capas-base); a night other than r1 redraws the first
+    # FAKE_CAPAS_TROCADAS of them. Random bytes do not compress, so the number of objects and bytes a night sends is what the test measures.
+    if [ -n "${FAKE_CAPAS-}" ]; then
+      base="$D/capas-base"
+      mkdir -p "$out/c"
+      if [ ! -d "$base" ]; then
+        mkdir -p "$base"
+        i=0
+        while [ "$i" -lt "$FAKE_CAPAS" ]; do head -c 3000 /dev/urandom > "$base/c$i.jpg"; i=$((i + 1)); done
+      fi
+      cp "$base"/*.jpg "$out/c/"
+      if [ "$rodada" != r1 ]; then
+        i=0
+        while [ "$i" -lt "${FAKE_CAPAS_TROCADAS:-0}" ]; do head -c 3000 /dev/urandom > "$out/c/c$i.jpg"; i=$((i + 1)); done
+      fi
+    fi
+    if plantar extra; then printf '{}\n' > cache/extra.json; fi
+    if plantar watchlist; then printf 'Date,Name,Year\n2026-10-21,Plantado,2026\n' >> data/letterboxd/watchlist.csv; fi
+    if plantar bandeira-ruim; then mkdir -p cache/flags; printf 'x' > cache/flags/x.svg; fi
+    if plantar bandeira-subpasta; then mkdir -p cache/flags/sub; printf 'x' > cache/flags/sub/y.png; fi
+    if plantar link-docs; then ln -s /etc "$out/l"; fi
+    if plantar index-board; then printf '{"board":"%s"}\n' "$rodada" > "$out/data/index-board.json"; fi
+    if plantar index-board-vazio; then : > "$out/data/index-board.json"; fi # a published site whose Board index is an empty file (review of 15/11/2026)
+    if [ "${FAKE_VAZA-}" = 1 ]; then echo "vazou:${TMDB_TOKEN-}"; echo "vazou:${TMDB_TOKEN-}" >&2; fi
+    if [ -n "${FAKE_MAIN_ANDA-}" ]; then
+      url=$(git remote get-url origin)
+      lateral="$D/lateral"
+      rm -rf "$lateral"
+      git clone -q "$url" "$lateral"
+      ( cd "$lateral" || exit 1
+        git config user.name t; git config user.email t@t
+        case "$FAKE_MAIN_ANDA" in
+          outro-arquivo) printf 'feature\n' > feature.txt ;;
+          mesma-linha) printf '{"rodada":"lateral"}\n' > cache/tmdb.json ;;
+          json-quebrado) sed '1s/.*/{"broken": /' cache/lists.json > cache/lists.json.novo && mv cache/lists.json.novo cache/lists.json ;;
+        esac
+        git add -A
+        git commit -qm "lateral: $FAKE_MAIN_ANDA"
+        git push -q origin HEAD:refs/heads/main )
+    fi
+    exit 0 ;;
+  scripts/build-people.js)
+    shift
+    log people "$*"
+    dorme_se people
+    [ "${FAKE_FALHA-}" = people ] && exit 3
+    marco=$(arg_depois --marco "$@")
+    out=$(arg_depois --out "$@")
+    rm -rf "$out"
+    cp -R "$marco" "$out"
+    exit 0 ;;
+  verify.js) shift; log verify "$*"; dorme_se verify; [ "${FAKE_FALHA-}" = verify ] && exit 3; exit 0 ;;
+  scripts/learning.js) shift; log publico "$*"; dorme_se publico; [ "${FAKE_FALHA-}" = publico ] && exit 3; exit 0 ;;
+  scripts/mubi-nightly.js)
+    log mubi "$*"
+    # 15/11/2026: what the collector was handed as the Board (--index <file>): a copy for the test to read, or nothing when the step gave no file
+    shift
+    rm -f "$D/chamadas/mubi-index.json"
+    indice=$(arg_depois --index "$@")
+    if [ -n "$indice" ] && [ -f "$indice" ]; then cp "$indice" "$D/chamadas/mubi-index.json"; fi
+    if [ -n "${FAKE_MUBI_DORME-}" ]; then
+      echo $$ > "$D/chamadas/mubi.pid"
+      sleep "$FAKE_MUBI_DORME"
+    fi
+    exit 0 ;;
+  scripts/verify-artifact-boundaries.js)
+    shift
+    log fronteira "$*"
+    dorme_se fronteira
+    exec "$NODE_REAL" "$ROOT/scripts/verify-artifact-boundaries.js" "$@" ;;
+  *) log outro "$*"; exit 0 ;;
+esac

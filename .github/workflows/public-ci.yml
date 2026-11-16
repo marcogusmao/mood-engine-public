@@ -1,0 +1,30 @@
+# Public CI: runs the tests that do not need private data.
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Build tests
+        run: node scripts/public-tests.mjs root
+      - name: Python tests
+        run: python3 -B -m unittest discover -s test -p '*_test.py'
+      - name: Worker tests
+        run: |
+          cd worker
+          npm ci --ignore-scripts
+          cd ..
+          node scripts/public-tests.mjs worker

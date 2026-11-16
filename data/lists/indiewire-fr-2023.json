@@ -1,0 +1,325 @@
+{
+ "id": "indiewire-fr-2023",
+ "source": {
+  "publication": "IndieWire",
+  "title": "The 39 Best French Movies of The 21st Century (So Far)",
+  "url": "https://www.indiewire.com/feature/best-french-movies-films-21st-century-so-far-1201848966/",
+  "edition": "2023-09-25",
+  "readOn": "2026-10-11",
+  "note": "Montada da matéria, na ordem dela; slug/imdb/tmdb conferidos na página do filme no Letterboxd. Sem cópia fiel no Letterboxd."
+ },
+ "items": [
+  {
+   "slug": "35-shots-of-rum",
+   "title": "35 Shots of Rum",
+   "year": 2008,
+   "imdb": "tt1100048",
+   "tmdb": 26191,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "amour",
+   "title": "Amour",
+   "year": 2012,
+   "imdb": "tt1602620",
+   "tmdb": 86837,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "portrait-of-a-lady-on-fire",
+   "title": "Portrait of a Lady on Fire",
+   "year": 2019,
+   "imdb": "tt8613070",
+   "tmdb": 531428,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "holy-motors",
+   "title": "Holy Motors",
+   "year": 2012,
+   "imdb": "tt2076220",
+   "tmdb": 103328,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "certified-copy",
+   "title": "Certified Copy",
+   "year": 2010,
+   "imdb": "tt1020773",
+   "tmdb": 48303,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "a-prophet",
+   "title": "A Prophet",
+   "year": 2009,
+   "imdb": "tt1235166",
+   "tmdb": 21575,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "amelie",
+   "title": "Amélie",
+   "year": 2001,
+   "imdb": "tt0211915",
+   "tmdb": 194,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "tomboy-2011",
+   "title": "Tomboy",
+   "year": 2011,
+   "imdb": "tt1847731",
+   "tmdb": 65229,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "cache",
+   "title": "Cache",
+   "year": 2005,
+   "imdb": "tt0387898",
+   "tmdb": 445,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "the-intouchables",
+   "title": "The Intouchables",
+   "year": 2011,
+   "imdb": "tt1675434",
+   "tmdb": 77338,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "tell-no-one",
+   "title": "Tell No One",
+   "year": 2006,
+   "imdb": "tt0362225",
+   "tmdb": 10795,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "the-diving-bell-and-the-butterfly",
+   "title": "The Diving Bell and the Butterfly",
+   "year": 2007,
+   "imdb": "tt0401383",
+   "tmdb": 2013,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "the-piano-teacher",
+   "title": "The Piano Teacher",
+   "year": 2001,
+   "imdb": "tt0254686",
+   "tmdb": 1791,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "my-golden-days",
+   "title": "My Golden Days",
+   "year": 2015,
+   "imdb": "tt4048050",
+   "tmdb": 315575,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "a-christmas-tale",
+   "title": "A Christmas Tale",
+   "year": 2008,
+   "imdb": "tt0993789",
+   "tmdb": 8892,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "goodbye-first-love",
+   "title": "Goodbye First Love",
+   "year": 2011,
+   "imdb": "tt1618447",
+   "tmdb": 82327,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "eden-2014-1",
+   "title": "Eden",
+   "year": 2014,
+   "imdb": "tt3090634",
+   "tmdb": 283330,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "summer-hours",
+   "title": "Summer Hours",
+   "year": 2008,
+   "imdb": "tt0836700",
+   "tmdb": 8282,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "things-to-come-2016",
+   "title": "Things to Come",
+   "year": 2016,
+   "imdb": "tt4120176",
+   "tmdb": 374465,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "something-in-the-air",
+   "title": "Something in the Air",
+   "year": 2012,
+   "imdb": "tt1846472",
+   "tmdb": 122089,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "the-class-2008",
+   "title": "The Class",
+   "year": 2008,
+   "imdb": "tt1068646",
+   "tmdb": 8841,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "lil-quinquin",
+   "title": "Li’L Quinquin",
+   "year": 2014,
+   "imdb": "tt3053694",
+   "tmdb": 63953,
+   "tmdbType": "tv"
+  },
+  {
+   "slug": "swimming-pool",
+   "title": "Swimming Pool",
+   "year": 2003,
+   "imdb": "tt0324133",
+   "tmdb": 302,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "i-lost-my-body",
+   "title": "I Lost My Body",
+   "year": 2019,
+   "imdb": "tt9806192",
+   "tmdb": 586940,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "titane",
+   "title": "Titane",
+   "year": 2021,
+   "imdb": "tt10944760",
+   "tmdb": 630240,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "girlhood-2014",
+   "title": "Girlhood",
+   "year": 2014,
+   "imdb": "tt3655522",
+   "tmdb": 266082,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "stranger-by-the-lake",
+   "title": "Stranger by the Lake",
+   "year": 2013,
+   "imdb": "tt2852458",
+   "tmdb": 186992,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "white-material",
+   "title": "White Material",
+   "year": 2009,
+   "imdb": "tt1135952",
+   "tmdb": 46207,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "la-vie-en-rose",
+   "title": "La Vie en Rose",
+   "year": 2007,
+   "imdb": "tt0450188",
+   "tmdb": 1407,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "faces-places",
+   "title": "Faces Places",
+   "year": 2017,
+   "imdb": "tt5598102",
+   "tmdb": 451995,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "house-of-tolerance",
+   "title": "House of Tolerance",
+   "year": 2011,
+   "imdb": "tt1660379",
+   "tmdb": 84427,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "being-17",
+   "title": "Being 17",
+   "year": 2016,
+   "imdb": "tt4331970",
+   "tmdb": 377154,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "petite-maman",
+   "title": "Petite Maman",
+   "year": 2021,
+   "imdb": "tt13204490",
+   "tmdb": 749004,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "the-beat-that-my-heart-skipped",
+   "title": "The Beat That My Heart Skipped",
+   "year": 2005,
+   "imdb": "tt0411270",
+   "tmdb": 1553,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "of-gods-and-men",
+   "title": "Of Gods and Men",
+   "year": 2010,
+   "imdb": "tt1588337",
+   "tmdb": 46332,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "man-on-the-train",
+   "title": "The Man on the Train",
+   "year": 2002,
+   "imdb": "tt0301414",
+   "tmdb": 22016,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "la-sapienza",
+   "title": "La Sapienza",
+   "year": 2014,
+   "imdb": "tt3182590",
+   "tmdb": 281968,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "goodbye-to-language",
+   "title": "Goodbye to Language",
+   "year": 2014,
+   "imdb": "tt2400275",
+   "tmdb": 114982,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "other-peoples-children-2022",
+   "title": "Other People’s Children",
+   "year": 2022,
+   "imdb": "tt15403712",
+   "tmdb": 803694,
+   "tmdbType": "movie"
+  }
+ ]
+}

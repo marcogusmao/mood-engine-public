@@ -1,0 +1,11 @@
+#!/bin/bash
+# Test double for `ps` in the PATH of the nightly's tests (test/noturna-mac.test.js, re-verification of 21/10/2026, finding MEDIUM 1). It runs the real ps with one difference:
+# NOTURNA_TESTE_FUSO_LOCAL=<zone> plays the time zone of the MACHINE. A caller that sets no TZ (the launcher: its environment wipe drops TZ, so it reads the Mac's own zone, -03 in
+# São Paulo) gets the `lstart` column in that zone; a caller that sets TZ (the night runs with TZ=UTC; `TZ=UTC ps`) gets the zone it asked for, exactly as the real ps does.
+# Without it every call goes to the real ps. It exists because a CI machine is on UTC and could not otherwise tell a launcher that reads local time from one that does not.
+if [ -z "${TZ-}" ] && [ -n "${NOTURNA_TESTE_FUSO_LOCAL-}" ]; then export TZ="$NOTURNA_TESTE_FUSO_LOCAL"; fi
+for p in /bin/ps /usr/bin/ps; do
+  if [ -x "$p" ]; then exec "$p" "$@"; fi
+done
+echo "ps real não achado" >&2
+exit 127

@@ -1,0 +1,12 @@
+#!/bin/bash
+# Test double for a Git remote helper that hangs (test/noturna-mac.test.js, re-verification of 21/10/2026, finding MEDIUM 2). `hang::x` as the URL of origin makes Git start
+# `git-remote-hang` (found in the PATH of the launcher) and wait for it to answer; it never does. Like the real git-remote-https it is a CHILD of the git process that inherits its
+# standard error (the pipe of the launcher's log), so it can outlive the git that was ended by a signal. It writes its pid and the pid of its own sleeper in chamadas/, sleeps
+# FAKE_HELPER_DORME_S seconds (controle.env, 40) and says nothing.
+D=$(cd "$(dirname "$0")" && pwd)
+if [ -f "$D/controle.env" ]; then . "$D/controle.env"; fi
+mkdir -p "$D/chamadas"
+echo $$ > "$D/chamadas/remote-hang.pid"
+sleep "${FAKE_HELPER_DORME_S:-40}" &
+echo $! > "$D/chamadas/remote-hang-sleep.pid"
+wait

@@ -1,0 +1,68 @@
+# Mood Engine, live. Deploy: npm install && npx wrangler login && npm run deploy   (see README.md)
+name = "mood-engine"
+main = "src/index.js"
+compatibility_date = "2025-09-01"
+
+[vars]
+# The index the nightly build publishes on GitHub Pages. Its pieces (index-board.json, index-moods.json …) and, from 3.3.0, the v2 family (index-v2-menus.json, index-v2-row-<id>.json, index-v2-mood-<id>.json, index-v2-opt-<catalog>-<option>.json, index-v2.json) are read from the same folder.
+INDEX_URL = "https://marcogusmao.github.io/mood-engine/data/index.json"
+# How long a copy of the index is trusted before it is read again (seconds).
+INDEX_TTL_SECONDS = "1800"
+# "false" (Marco, 10/10/2026): Explore has a required menu "Genre: All", so it lives in Discover only and stays off the Board.
+# "true": Explore has only its four optional menus, and Stremio then lists it on the Board too, as one more row.
+EXPLORE_ON_BOARD = "false"
+# Intake remains off until reviewed hosted prerequisites are satisfied.
+WILL_UPLOAD_ENABLED = "false"
+WILL_BROWSER_ORIGIN = "https://marcogusmao.github.io"
+WILL_PAGES_BASE = "https://marcogusmao.github.io/mood-engine"
+WILL_REPOSITORY_ID = "1413569629"
+WILL_REPOSITORY_OWNER_ID = "50679408"
+
+# Workers Logs (W8 of the 13/10/2026 plan, 19/10/2026): the events the Worker writes with console.warn (opensubtitles-download, opensubtitles-paused, …) are kept and searchable in the dashboard.
+# No [limits] section on purpose. GIT_SHA is not set here: `npm run deploy` passes it (package.json), and handler.js answers it as the X-Build header.
+# The invocation log is OFF on purpose (security review of 19/10/2026): it records `<Method> <URL>` of every request, and the URL holds the private token (/k/<token>/…), the signed /subfile
+# links (good for 30 days) and the videoHash and file name of the subtitle searches. The console.* events the Worker writes (no key, no hash, no token) are still kept. test/subfile.test.js
+# fails if `enabled = true` ever stands without `invocation_logs = false`.
+[observability]
+enabled = true
+
+[observability.logs]
+invocation_logs = false
+
+# Workers KV (Marco, 12/10/2026). The Cache API does keep entries on workers.dev (measured 13/10/2026) but per data centre and evictable at any time, so what must outlive an isolate and be shared by all of them for the subtitles the official list lacks
+# (src/subfile.js) lives here: the downloaded subtitles (30 days), the OpenSubtitles login token (about 20 hours), the time the day's quota comes back,
+# a stamp for a failed login and how many downloads in a row failed. The namespace id is not a secret. Without this binding it all stays in memory.
+[[kv_namespaces]]
+binding = "SUBS"
+id = "194ca4fd8cdc470387cf230194afae74"
+
+[[durable_objects.bindings]]
+name = "WILL_STATE"
+class_name = "WillState"
+
+[[migrations]]
+tag = "2026-10-14-will-state-sqlite-v1"
+new_sqlite_classes = ["WillState"]
+
+# Rate Limiting binding for Will's intake (Marco, 21/10/2026, lote 1 item 4: a global limit before the intake is turned on; BACKLOG.md). src/upload/api.js asks it, keyed by the sha256 of the caller's token (NOT the /64 or the address: Marco, 28/10/2026), for the
+# requests whose token the isolate has not seen accepted, before the Durable Object; a refusal is the 429 RATE_LIMITED the in-memory limiter (src/upload/limiter.js) already answers, and without this
+# binding (the node tests, and the generated config of test/upload-fixtures/runtime.mjs, which declares none) that limiter is the only layer. `wrangler dev --local` (npm run dev) with THIS file does get a simulated local
+# binding (measured 21/10/2026, wrangler 4.149.0: 25 calls with one key at limit 20, period 60 -> the first 20 `success: true`, the last 5 false; the real Cloudflare counter is not that one). 20 per 60 s per key: `period` accepts only 10 or 60, so the window is NOT the in-memory limiter's 20 per 10 minutes
+# (that one is the budget of one isolate; this one is a ceiling on the speed across the isolates of one Cloudflare location). The counters are per location and eventually consistent, not worldwide.
+# Syntax: the top-level `[[ratelimits]]` table of wrangler 4.149.0 (the version pinned in package.json; read from its config-schema.json on 21/10/2026: name, namespace_id as a string, simple.limit, simple.period 10|60);
+# the older form is `[[unsafe.bindings]] type = "ratelimit"`. namespace_id is a number WE choose, unique among this account's rate limit bindings (the date, 21/10/2026, is unlikely to collide); nothing was created.
+# DECIDED BY MARCO, 28/10/2026, 03:17 UTC (questionnaire; the three choices of the session of 21/10/2026): the 20 per 60 s stays, the key is the token's sha256 (his choice, not the recommended /64; accepted risk: a caller that changes token on every request is never limited by this binding, only by the in-memory table per /64) and failing open stays when the binding errs. Over 10 minutes 20 per 60 s is 200 per key per location, ten times the confirmed 20 per 10 minutes (worker/README.md, "The global layer").
+# NOT TRIED against the account: confirm the syntax and the Free plan at the first publication of this file, and measure the real binding (BACKLOG.md). test/will-rate-limit-binding.test.js pins this block.
+[[ratelimits]]
+name = "WILL_RATE_LIMIT"
+namespace_id = "20261021"
+simple = { limit = 20, period = 60 }
+
+# The ceiling of the WHOLE intake (Marco, 29/10/2026, ~14:55 UTC, questionnaire; the question left open since BACKLOG.md 21/10/2026, "a limit that does not depend on the caller"): a second Rate Limiting binding, asked by src/upload/api.js with ONE CONSTANT key, so every caller shares one count: 60 per 60 s for all of Will's browser routes, for the same
+# requests the per-token binding above is asked about (the ones the table charged; the per-token one first, so a single noisy token cannot spend the ceiling). This is what stops a caller that changes token on every request, which the per-token binding never sees. A refusal is the same 429 RATE_LIMITED with Retry-After 60; a binding that is missing or errs fails open, like the first.
+# ACCEPTED RISK, his: a persistent attacker can keep the ceiling used up, and then Will, whose token is valid, waits a minute at a time (Retry-After 60) while the attack lasts; the counters are per Cloudflare location and approximate, not worldwide, so the real ceiling is 60 per location and may be exceeded while the counts update.
+# namespace_id "20261029" is a number WE choose, different from the first (20261021) and from any other rate limit binding of this account (the date is unlikely to collide); NOT created and NOT tried against the account: the binding is created on the account by the first publication that carries this file (worker/README.md, "The global layer"). test/will-rate-limit-binding.test.js pins both blocks.
+[[ratelimits]]
+name = "WILL_RATE_LIMIT_GLOBAL"
+namespace_id = "20261029"
+simple = { limit = 60, period = 60 }

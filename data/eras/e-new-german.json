@@ -1,0 +1,76 @@
+{
+"id": "e-new-german", "type": "school", "years": {"min": 1962, "max": 1982}, "admit": ["core", "periphery"],
+"school": {
+  "countries": ["DE"],
+  "directors": [
+    {"id": 2725, "name": "Rainer Werner Fassbinder"},
+    {"id": 6818, "name": "Werner Herzog"},
+    {"id": 2303, "name": "Wim Wenders"},
+    {"id": 10249, "name": "Volker Schlöndorff"},
+    {"id": 39298, "name": "Margarethe von Trotta"},
+    {"id": 50870, "name": "Alexander Kluge"},
+    {"id": 72908, "name": "Edgar Reitz"},
+    {"id": 227824, "name": "Hans-Jürgen Syberberg"},
+    {"id": 45192, "name": "Werner Schroeter"},
+    {"id": 935136, "name": "Jean-Marie Straub"},
+    {"id": 935137, "name": "Danièle Huillet"},
+    {"id": 56203, "name": "Helma Sanders-Brahms"},
+    {"id": 19864, "name": "Rosa von Praunheim"},
+    {"id": 1039971, "name": "Ulrike Ottinger"},
+    {"id": 37313, "name": "Peter Fleischmann"},
+    {"id": 1865, "name": "Hark Bohm"}
+  ]
+},
+"sources": [
+  {"id": "bfi-ngc", "publication": "BFI", "title": "10 great New German Cinema films (Carmen Gray, 11/01/2024)", "url": "https://www.bfi.org.uk/lists/10-great-new-german-cinema-films", "revision": null, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2024-01-11"},
+  {"id": "hfa-2003", "publication": "Harvard Film Archive", "title": "The New German Cinema (Revisited) (2003)", "url": "https://harvardfilmarchive.org/programs/the-new-german-cinema-revisited", "revision": null, "readOn": "2026-11-15", "mark": "read"},
+  {"id": "hfa-2006", "publication": "Harvard Film Archive", "title": "The New German Cinema and Beyond (27/09–13/12/2006)", "url": "https://harvardfilmarchive.org/programs/the-new-german-cinema-and-beyond", "revision": null, "readOn": "2026-11-15", "mark": "read"},
+  {"id": "wp-en", "publication": "Wikipedia (en)", "title": "New German Cinema", "url": "https://en.wikipedia.org/w/index.php?oldid=1381597891", "revision": 1381597891, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-10-23"},
+  {"id": "wp-it", "publication": "Wikipedia (it)", "title": "Nuovo cinema tedesco", "url": "https://it.wikipedia.org/w/index.php?oldid=146580799", "revision": 146580799, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2025-09-03"}
+],
+"consensus": null,
+"films": [
+  {"imdb": "tt0054705", "tmdb": 116705, "slug": "the-bread-of-those-early-years", "title": "The Bread of Those Early Years", "year": 1962, "sources": ["wp-en", "wp-it"], "class": "periphery"},
+  {"imdb": "tt0059503", "tmdb": 128846, "slug": "not-reconciled", "title": "Not Reconciled", "year": 1965, "sources": ["bfi-ngc"], "class": "periphery"},
+  {"imdb": "tt0060063", "tmdb": 89785, "slug": "yesterday-girl", "title": "Yesterday Girl", "year": 1966, "sources": ["bfi-ngc", "wp-en"], "class": "core"},
+  {"imdb": "tt0060574", "tmdb": 45694, "slug": "young-torless", "title": "Young Törless", "year": 1966, "sources": ["hfa-2006", "wp-en"], "class": "core"},
+  {"imdb": "tt0062804", "tmdb": 95600, "slug": "chronicle-of-anna-magdalena-bach", "title": "The Chronicle of Anna Magdalena Bach", "year": 1968, "sources": ["wp-it"], "class": "periphery"},
+  {"imdb": "tt0063218", "tmdb": 67217, "slug": "signs-of-life", "title": "Signs of Life", "year": 1968, "sources": ["hfa-2003"], "class": "periphery"},
+  {"imdb": "tt0064507", "tmdb": 117979, "slug": "hunting-scenes-from-bavaria", "title": "Hunting Scenes from Bavaria", "year": 1969, "sources": ["wp-en"], "class": "periphery"},
+  {"imdb": "tt0065391", "tmdb": 48267, "slug": "the-american-soldier", "title": "The American Soldier", "year": 1970, "sources": ["hfa-2003", "hfa-2006"], "class": "periphery"},
+  {"imdb": "tt0066136", "tmdb": 130961, "slug": "it-is-not-the-homosexual-who-is-perverse-but-the-society-in-which-he-lives", "title": "It Is Not the Homosexual Who Is Perverse, But the Society in Which He Lives", "year": 1971, "sources": ["bfi-ngc", "wp-en"], "class": "core"},
+  {"imdb": "tt0067227", "tmdb": 10309, "slug": "the-merchant-of-four-seasons", "title": "The Merchant of Four Seasons", "year": 1972, "sources": ["hfa-2003"], "class": "periphery"},
+  {"imdb": "tt0068182", "tmdb": 2000, "slug": "aguirre-the-wrath-of-god", "title": "Aguirre, the Wrath of God", "year": 1972, "sources": ["bfi-ngc", "hfa-2003", "hfa-2006", "wp-en"], "class": "core"},
+  {"imdb": "tt0070904", "tmdb": 53094, "slug": "world-on-a-wire-1973", "title": "World on a Wire", "year": 1973, "sources": ["wp-en"], "class": "periphery"},
+  {"imdb": "tt0069687", "tmdb": 2204, "slug": "alice-in-the-cities", "title": "Alice in the Cities", "year": 1974, "sources": ["bfi-ngc", "wp-en"], "class": "core"},
+  {"imdb": "tt0071141", "tmdb": 216, "slug": "ali-fear-eats-the-soul", "title": "Ali: Fear Eats the Soul", "year": 1974, "sources": ["bfi-ngc", "hfa-2003", "hfa-2006", "wp-en"], "class": "core"},
+  {"imdb": "tt0071691", "tmdb": 11710, "slug": "the-enigma-of-kaspar-hauser", "title": "The Mystery of Kaspar Hauser", "year": 1974, "sources": ["bfi-ngc", "hfa-2003"], "class": "core"},
+  {"imdb": "tt0071483", "tmdb": 20017, "slug": "wrong-move", "title": "Wrong Move", "year": 1975, "sources": ["hfa-2003"], "class": "periphery"},
+  {"imdb": "tt0072976", "tmdb": 42254, "slug": "fox-and-his-friends", "title": "Fox and His Friends", "year": 1975, "sources": ["wp-en"], "class": "periphery"},
+  {"imdb": "tt0073844", "tmdb": 131862, "slug": "under-the-pavement-lies-the-strand", "title": "Under the Pavement Lies the Strand", "year": 1975, "sources": ["wp-en"], "class": "periphery"},
+  {"imdb": "tt0073858", "tmdb": 4762, "slug": "the-lost-honor-of-katharina-blum", "title": "The Lost Honour of Katharina Blum", "year": 1975, "sources": ["bfi-ngc", "hfa-2003", "wp-en"], "class": "core"},
+  {"imdb": "tt0073152", "tmdb": 10834, "slug": "kings-of-the-road", "title": "Kings of the Road", "year": 1976, "sources": ["hfa-2006", "wp-en"], "class": "core"},
+  {"imdb": "tt0075675", "tmdb": 11222, "slug": "the-american-friend", "title": "The American Friend", "year": 1977, "sources": ["hfa-2003", "wp-en"], "class": "core"},
+  {"imdb": "tt0076280", "tmdb": 6511, "slug": "the-consequence", "title": "Die Konsequenz", "year": 1977, "sources": ["wp-en"], "class": "periphery"},
+  {"imdb": "tt0077427", "tmdb": 12578, "slug": "germany-in-autumn", "title": "Germany in Autumn", "year": 1978, "sources": ["bfi-ngc", "wp-en"], "class": "core"},
+  {"imdb": "tt0078536", "tmdb": 122524, "slug": "the-second-awakening-of-christa-klages", "title": "The Second Awakening of Christa Klages", "year": 1978, "sources": ["wp-en"], "class": "periphery"},
+  {"imdb": "tt0078875", "tmdb": 659, "slug": "the-tin-drum", "title": "The Tin Drum", "year": 1979, "sources": ["bfi-ngc", "wp-en"], "class": "core"},
+  {"imdb": "tt0079095", "tmdb": 661, "slug": "the-marriage-of-maria-braun", "title": "The Marriage of Maria Braun", "year": 1979, "sources": ["bfi-ngc", "hfa-2003", "hfa-2006", "wp-en"], "class": "core"},
+  {"imdb": "tt0079641", "tmdb": 6404, "slug": "nosferatu-the-vampyre", "title": "Nosferatu the Vampyre", "year": 1979, "sources": ["wp-en"], "class": "periphery"},
+  {"imdb": "tt0080196", "tmdb": 45560, "slug": "berlin-alexanderplatz", "title": "Berlin Alexanderplatz", "year": 1980, "sources": ["wp-en"], "class": "periphery"},
+  {"imdb": "tt0082225", "tmdb": 42153, "slug": "celeste", "title": "Céleste", "year": 1980, "sources": ["wp-en"], "class": "periphery"},
+  {"imdb": "tt0082081", "tmdb": 42142, "slug": "marianne-and-juliane", "title": "Marianne and Juliane", "year": 1981, "sources": ["hfa-2003", "hfa-2006", "wp-en"], "class": "core"},
+  {"imdb": "tt0082671", "tmdb": 2264, "slug": "lola-1981", "title": "Lola", "year": 1981, "sources": ["wp-en"], "class": "periphery"},
+  {"imdb": "tt0083946", "tmdb": 9343, "slug": "fitzcarraldo", "title": "Fitzcarraldo", "year": 1982, "sources": ["wp-en"], "class": "periphery"},
+  {"imdb": "tt0083984", "tmdb": 274958, "slug": "last-five-days", "title": "Fünf letzte Tage", "year": 1982, "sources": ["wp-en"], "class": "periphery"},
+  {"imdb": "tt0084654", "tmdb": 2262, "slug": "veronika-voss", "title": "Veronika Voss", "year": 1982, "sources": ["wp-en"], "class": "periphery"},
+  {"imdb": "tt0084725", "tmdb": 30363, "slug": "the-state-of-things", "title": "The State of Things", "year": 1982, "sources": ["hfa-2006"], "class": "periphery"}
+],
+"exclude": [
+
+],
+"pending": [
+  {"imdb": "tt0079703", "title": "The Patriot", "year": 1979, "class": "periphery", "why": "above the prefilter and not in the index, but no TMDB id or Letterboxd page is known yet"}
+],
+"counted": {"curationFilms": 45, "written": 35, "inIndexOfReference": 27, "notInIndexAdmitted": 12, "notInIndexPassingImdb7": 1, "pending": 1, "documentariesWrittenOut": 0, "leftOut": {"outside the years of the era": 6, "not in the index and under the prefilter": 3, "named with no id and no class (not written in pending)": 0}}
+}

@@ -1,0 +1,3801 @@
+{
+  "letterboxd": "mgusmao",
+  "addon": {
+    "id": "com.mgusmao.moodengine",
+    "version": "2.4.0",
+    "name": "Mood Engine",
+    "description": "Rows built from your own Letterboxd taste, by mood, plus your curated lists and your friends. Never shows what you've already seen (except Old friends and the full Lists)."
+  },
+  "sizes": {
+    "tonight": 10,
+    "row": 100,
+    "discover": 100,
+    "cuts": 100,
+    "moodRepeatWindow": 30,
+    "because": 100,
+    "directors": 100,
+    "oldFriends": 100,
+    "watchlist": 100,
+    "friends": 100,
+    "friendsDiscover": 100,
+    "lists": 300
+  },
+  "tonight": {
+    "_doc": "Tonight (lib/rows.js, lib/tonight-memory.js). Marco, 14/11/2026 (questionnaire, 'Bigger pool + 30 days without repeating'): each pick is drawn from the top `depth` films of its mood (40; it was 12 since 19/10/2026) and a film that was in Tonight on one of the `noRepeatDays` days before today (30; cache/tonight-memory.json, written by the scheduled night alone) is not drawn, pinned or not. When none of a mood's top `depth` is free the best free film below them is taken, and when the whole mood was shown in that time, the film shown longest ago. depth is a whole number from 1, noRepeatDays a whole number from 0 (0 = no memory); a config without them gets 40 and 30. Marco, 19/10/2026 (questionnaire): the draw is EVEN among those films. bias is the exponent of the first pass's draw, top[floor(rand() ** bias * top.length)]: 1 is uniform, above 1 leans to the very top (it was 1.6 until 19/10/2026), below 1 leans to the last. A positive number. Anything else in any of the three stops the build.",
+    "bias": 1,
+    "depth": 40,
+    "noRepeatDays": 30
+  },
+  "tmdb": {
+    "_doc": "Marco, 20/10/2026: a film cached without the `trailer` key was never asked about its trailer; the build asks TMDB again for at most this many of them per run (lib/tmdb.js movie()), and the rest wait for the next night. 0 turns the backfill off. A film cached with `trailer: null` was asked and has none: it is asked again only at its 45-day expiry. The one-off bulk run is scripts/backfill-trailers.js.",
+    "trailerBackfillPerRun": 2000
+  },
+  "exclude": {
+    "_doc": "Films that are never recommended (lib/exclude.js, Marco 13/10/2026): out of every Board row, of the moods (rows, picker, the index's mood membership) and of the Discover catalogs of moods and directors. Search, Explore, Lists, Lists unseen and Friends keep them (eligible is untouched). IMDb ids, tt + digits; any other value stops the build. A film listed here must not be in a mood's `pins` (Marco, 15/11/2026: 'Keep the pins, except Paterson'): the build stops and names the film and the moods.",
+    "films": [
+      "tt5247022"
+    ]
+  },
+  "build": {
+    "seeds": 120,
+    "pool": 1100,
+    "listPool": 8000,
+    "listLookups": 4000,
+    "directors": 15,
+    "recentLoveDays": 180,
+    "rewatchAfterDays": 730,
+    "rewatchMinStars": 4,
+    "rewatchShares": [
+      {
+        "stars": 5,
+        "places": 40
+      },
+      {
+        "stars": 4.5,
+        "places": 35
+      },
+      {
+        "stars": 4,
+        "places": 25
+      }
+    ]
+  },
+  "weekRow": {
+    "days": 7,
+    "max": 200
+  },
+  "descriptionSeparator": "\n\n",
+  "posters": {
+    "base": "https://marcogusmao.github.io/mood-engine/posters/"
+  },
+  "shortRow": {
+    "_doc": "maxMinutes: the longest film of ⏱️ Under 95 minutes. minMinutes: THE floor of a feature film, the one number (Marco, 14/11/2026, \"Keep shorts only in the Short row\"): a film whose known runtime is under it is in no row that recommends a film he has not seen (the mood rows and Tonight, the v2 Board's moods, filters and combined rows, the special rows that recommend, Friends loved, Friends watched this week and this month, Best of your lists, New releases, Under 95 minutes, every Discover cut); the rows that show a source keep their shorts (watchlist, Worth watching again, Friends want to see this too, prizes, list rows, Loved by your directors, Lists, friends' collections). A film with no known runtime is not a short. 0 lets shorts in everywhere (lib/pool.js isShort, minFeatureMinutes).",
+    "maxMinutes": 95,
+    "minMinutes": 40
+  },
+  "music": {
+    "_doc": "Marco, 22/10/2026. ~03:50 UTC (\"in new releases dont recommend that many concert documentaries, im not into kpop, taylor swift\" / \"i like things that are like are in my letterboxd like stop making sense\"): in New releases for you a MUSIC film enters only with evidence from his Letterboxd. ~06:40 UTC (lote 2): the same rule for ALL the rows that recommend (the Board, the cuts by decade, runtime, country and rating, and the catalogs by country and decade still to come), not only New releases. A music film (lib/pool.js isMusicFilm: TMDB genre Music and, Documentary or a live keyword (15, among them concert, live concert, touring, musical performance) or Tour/Live/Concert/Unplugged/In Cinemas as a whole word in the title; it also marks a fiction film that has the Music genre and a live keyword, such as Trap, A Star Is Born) that he has not seen is recommended only with: a director he rated in 2+ films or an artist in 3+ with weight above 0.12 (the card's own thresholds, lib/taste.js personEvidence), OR the film is on his watchlist, OR it is in a list of trust critic or director. The rows that SHOW what a source holds do not ask it (your watchlist, Friends want to see this too, the prize row, the single-list rows, Loved by your directors, Lists, Lists (unseen), Friends, Search); Friends watched this week and month DO ask it. The Worker reads the verdict from the index (bit 8 of the flags) in Moods, Explore and the profiles' Tonight, Under 100 min and themes. README.md \"The music rule\" has the table. Risk he accepted: a show of a new artist disappears from the Board until he rates something of the person or puts it on the watchlist. The session's choice, not Marco's: the key is Marco's config only; lib/people.js deriveConfig does not copy it, so the profiles built per person (Will) keep their rows as they were. The first version of the key was newReleases.musicNeedsEvidence (still read when this one is absent: lib/pool.js musicOptions). Set needsEvidence to false to put every row back. Marco, 22/10/2026 ~15:15 UTC (questionnaire \"Music 1 of 4\"): the mood Music is EXEMPT from this rule in its own option of the Moods menu (\"it is the only place where I ask for music when I open the app\"): exemptMoods lists the mood ids; the static addon's Discover Moods option and the Worker's Moods option (index rules.musicExemptMoods) show the music films with no evidence, and no other surface does (the Board rows, Tonight, the cuts by country, decade and genre, Explore, the profiles, Friends watched, New releases; Search finds a held-back film by its name alone). The profile /p/marco mirrors the main address, so its Moods option Music is exempt too. Risk he accepted: K-pop and Taylor Swift shows appear inside Music, in the order of his taste. An empty list or no key puts the rule back in that option.",
+    "needsEvidence": true,
+    "exemptMoods": [
+      "music"
+    ]
+  },
+  "cuts": {
+    "countries": 12
+  },
+  "lists": [
+    {
+      "id": "nVqt6",
+      "name": "Top 250 Most Fans (Letterboxd)",
+      "short": "LB Top 250 Most Fans",
+      "url": "https://letterboxd.com/official/list/top-250-films-with-the-most-fans/",
+      "trust": "fan"
+    },
+    {
+      "id": "snFyM",
+      "name": "All-time Criterion Closet Picks (closetpicks)",
+      "short": "Closet Picks · all-time",
+      "url": "https://letterboxd.com/closetpicks/list/all-time-top-criterion-closet-picks/",
+      "trust": "critic"
+    },
+    {
+      "id": "f6ZGq",
+      "name": "Cannes Winners (moviewithus)",
+      "short": "Cannes Winners",
+      "url": "https://letterboxd.com/moviewithus/list/cannes-winners/",
+      "trust": "fan",
+      "criticSubset": "data/cannes-critic-prizes.json",
+      "criticSubsetLabel": "Cannes"
+    },
+    {
+      "id": "jzj52",
+      "name": "Oscar Intl. Feature winners (Oscars)",
+      "short": "Oscar Intl. Feature winners",
+      "url": "https://letterboxd.com/oscars/list/oscar-winning-films-international-feature/",
+      "trust": "critic"
+    },
+    {
+      "id": "eEESu",
+      "name": "Isabela Boscov's 40 (orafabarbosa)",
+      "short": "Isabela Boscov's 40",
+      "url": "https://letterboxd.com/orafabarbosa/list/isabela-boscov-os-40-filmes-que-eu-salvaria/",
+      "trust": "critic",
+      "checked": {
+        "on": "2026-10-11",
+        "films": 40
+      }
+    },
+    {
+      "id": "oA1xE",
+      "name": "IndieWire 100 best of the 80s (ramiraff)",
+      "short": "IW 100 best of the 80s",
+      "url": "https://letterboxd.com/ramiraff/list/indiewires-the-100-best-movies-of-the-80s/",
+      "trust": "critic",
+      "checked": {
+        "on": "2026-10-11",
+        "films": 100
+      }
+    },
+    {
+      "id": "hS3rc",
+      "name": "IndieWire 100 best of the 90s (mitchell)",
+      "short": "IW 100 best of the 90s",
+      "url": "https://letterboxd.com/mitchell/list/indiewires-100-best-movies-of-the-1990s/",
+      "trust": "critic",
+      "checked": {
+        "on": "2026-10-11",
+        "films": 100
+      }
+    },
+    {
+      "id": "xQY6K",
+      "name": "IndieWire best of the 2000s (benschmidt)",
+      "short": "IW best of the 2000s",
+      "url": "https://letterboxd.com/benschmidt/list/indiewires-best-films-of-the-2000s-2024-edition/",
+      "trust": "critic",
+      "checked": {
+        "on": "2026-10-11",
+        "films": 102
+      }
+    },
+    {
+      "id": "3JTHC",
+      "name": "IndieWire 100 best of the 2010s (nicconoh)",
+      "short": "IW 100 best of the 2010s",
+      "url": "https://letterboxd.com/nicconoh/list/indiewires-100-best-movies-of-the-decade/",
+      "trust": "critic",
+      "checked": {
+        "on": "2026-10-11",
+        "films": 100
+      }
+    },
+    {
+      "id": "uJUjE",
+      "name": "Criterion Channel best of the 2010s (criterion)",
+      "short": "CC · Best of the 2010s",
+      "url": "https://letterboxd.com/criterion/list/best-of-the-2010s-criterion-channel/",
+      "trust": "critic"
+    },
+    {
+      "id": "g6Xms",
+      "name": "IndieWire best French films of the 21st c. (verosanzb)",
+      "short": "IW best French, older ed.",
+      "url": "https://letterboxd.com/verosanzb/list/indiewires-best-french-movies-of-the-21st/",
+      "trust": "critic",
+      "checked": {
+        "on": "2026-10-11",
+        "films": 35
+      }
+    },
+    {
+      "id": "4XUmW",
+      "name": "IndieWire best animated films of the 21st c. (stephenbush)",
+      "short": "IW best animated, older ed.",
+      "url": "https://letterboxd.com/stephenbush/list/indiewires-best-animated-films-of-the-21st/",
+      "trust": "critic",
+      "checked": {
+        "on": "2026-10-11",
+        "films": 30
+      }
+    },
+    {
+      "id": "tIqsq",
+      "name": "IndieWire 65 best sci-fi of the 21st c. (mitchell)",
+      "short": "IW 65 best sci-fi 21st c.",
+      "url": "https://letterboxd.com/mitchell/list/indiewires-65-best-sci-fi-movies-of-the-21st/",
+      "trust": "critic",
+      "checked": {
+        "on": "2026-10-11",
+        "films": 65
+      }
+    },
+    {
+      "id": "xzt0W",
+      "name": "Coppola recommends (francisfcoppola)",
+      "short": "Coppola recommends",
+      "url": "https://letterboxd.com/francisfcoppola/list/movies-that-i-highly-recommend/",
+      "trust": "director"
+    },
+    {
+      "id": "tp03m",
+      "name": "Top Closet Picks (criterion)",
+      "short": "Closet Picks · top",
+      "url": "https://letterboxd.com/criterion/list/top-closet-picks-criterion-collection/",
+      "trust": "critic"
+    },
+    {
+      "id": "vec98",
+      "name": "Funny Ha Ha (MUBI)",
+      "short": "MUBI · Funny Ha Ha",
+      "url": "https://letterboxd.com/mubi/list/funny-ha-ha/",
+      "trust": "critic"
+    },
+    {
+      "id": "TsQtG",
+      "name": "New Hollywood Starter Pack (crew)",
+      "short": "LB New Hollywood Starter",
+      "url": "https://letterboxd.com/crew/list/new-hollywood-starter-pack/",
+      "trust": "critic"
+    },
+    {
+      "id": "2Qq4Q",
+      "name": "Psychosexual dramas, nihilistic fever dreams (magrosleau)",
+      "short": "Psychosexual dramas",
+      "url": "https://letterboxd.com/magrosleau/list/psychosexual-dramas-nihilistic-fever-dreams/",
+      "trust": "fan"
+    },
+    {
+      "id": "GRJ4",
+      "name": "Good films, 90 min or less (stautis)",
+      "short": "Good films, 90 min or less",
+      "url": "https://letterboxd.com/stautis/list/good-films-90-minutes-or-less/",
+      "trust": "fan"
+    },
+    {
+      "id": "1aHbm",
+      "name": "IndieWire 25 best docs of the 21st c. (matthew)",
+      "short": "IW 25 best docs, older ed.",
+      "url": "https://letterboxd.com/matthew/list/indiewires-25-best-documentaries-of-the-21st/",
+      "trust": "critic",
+      "checked": {
+        "on": "2026-10-11",
+        "films": 25
+      }
+    },
+    {
+      "id": "pDmkw",
+      "name": "Movies everyone should watch once (fcbarcelona)",
+      "short": "Everyone should watch once",
+      "url": "https://letterboxd.com/fcbarcelona/list/movies-everyone-should-watch-at-least-once/",
+      "trust": "fan"
+    },
+    {
+      "id": "1qX2M",
+      "name": "For when you want to feel something (ellefnning)",
+      "short": "Films to feel something",
+      "url": "https://letterboxd.com/ellefnning/list/for-when-you-want-to-feel-something/",
+      "trust": "fan"
+    },
+    {
+      "id": "jq61y",
+      "name": "Visually Insane (etolkin)",
+      "short": "Visually Insane",
+      "url": "https://letterboxd.com/etolkin/list/filmlist:28697007/",
+      "trust": "fan"
+    },
+    {
+      "id": "nZrSk",
+      "name": "Feeling lost in your 20s (adaydreaming)",
+      "short": "Feeling lost in your 20s",
+      "url": "https://letterboxd.com/adaydreaming/list/feeling-lost-in-your-20s/",
+      "trust": "fan"
+    },
+    {
+      "id": "4XYnu",
+      "name": "Comfort Movies (cinemaparadisa)",
+      "short": "Comfort Movies",
+      "url": "https://letterboxd.com/cinemaparadisa/list/comfort-movies/",
+      "trust": "fan"
+    },
+    {
+      "id": "top500-narrative",
+      "name": "Top 500 Narrative Features (Letterboxd)",
+      "short": "LB Top 500 Narrative",
+      "url": "https://letterboxd.com/official/list/letterboxds-top-500-films/",
+      "trust": "fan"
+    },
+    {
+      "id": "popular-week",
+      "name": "Popular this week (Letterboxd)",
+      "short": "LB Popular this week",
+      "url": "https://letterboxd.com/films/popular/this/week/",
+      "popular": true,
+      "trust": "fan"
+    },
+    {
+      "id": "jlyNq",
+      "name": "Sight and Sound greatest films 2022 (sightsoundmag)",
+      "short": "S&S greatest films 2022",
+      "url": "https://letterboxd.com/sightsoundmag/list/sight-and-sounds-greatest-films-of-all-time/",
+      "trust": "critic"
+    },
+    {
+      "id": "jrR92",
+      "name": "Sight and Sound directors' 100 (sight_and_sound)",
+      "short": "S&S directors' 100",
+      "url": "https://letterboxd.com/sight_and_sound/list/directors-100-greatest-films-of-all-time/",
+      "trust": "critic"
+    },
+    {
+      "id": "IbCKK",
+      "name": "NYT 100 best of the 21st c. (hetchy)",
+      "short": "NYT 100 best of the 21st c.",
+      "url": "https://letterboxd.com/hetchy/list/the-new-york-times-100-best-movies-of-the/",
+      "trust": "critic",
+      "checked": {
+        "on": "2026-10-11",
+        "films": 100
+      }
+    },
+    {
+      "id": "R7jhM",
+      "name": "TSPDT 1,000 greatest films 2026 (tspdtfanaccount)",
+      "short": "TSPDT 1,000 greatest 2026",
+      "url": "https://letterboxd.com/tspdtfanaccount/list/the-1000-greatest-films-21st-edition-2026/",
+      "trust": "critic",
+      "checked": {
+        "on": "2026-10-11",
+        "films": 1000
+      }
+    },
+    {
+      "id": "tspdt-21c-250",
+      "name": "TSPDT · 21st Century top 250",
+      "short": "TSPDT · 21st Century top 250",
+      "url": "https://letterboxd.com/tspdtfanaccount/list/top-250-19th-edition-2026-of-the-21st-centurys/",
+      "trust": "critic",
+      "checked": {
+        "on": "2026-10-22",
+        "films": 250
+      },
+      "description": "TSPDT (They Shoot Pictures, Don't They?), The 21st Century's Most Acclaimed Films, Top 250 (19th edition, published 01/02/2026), in the site's order. Copy by tspdtfanaccount, same films in the same order as the first 250 of its copy of the 1,000 (read 22/10/2026). Checked 22/10/2026 against https://theyshootpictures.com/21stcentury_allfilms_table.php: positions 1-250 agree on the year (plus or minus 1) at 250 of 250. Marco, 22/10/2026 ~06:45 UTC: the top 250 of each TSPDT list."
+    },
+    {
+      "id": "tspdt-poll26-250",
+      "name": "TSPDT · 2026 Poll top 250",
+      "short": "TSPDT · 2026 Poll top 250",
+      "url": "https://letterboxd.com/tspdtfanaccount/list/the-2026-tspdt-poll-your-favourite-films/",
+      "trust": "fan",
+      "top": 250,
+      "description": "TSPDT (They Shoot Pictures, Don't They?), The 2026 TSPDT Poll: Your Favourite Films (1,289 film buffs voted; https://theyshootpictures.com/2026poll_top250.htm), the first 250 of the 1,049 films of the copy by tspdtfanaccount (ranked; updated 18/08/2026). Checked 22/10/2026 against the site's Excel file (resources/2026_tspdt_poll_all_films.xlsx, column Ranking): the first 250 of this copy are exactly the 250 films ranked 250 or better, in an order that never goes against the ranking (ties share a number). trust fan: a poll of the public, not of critics (18 of the 250 are not among the 1,000 Greatest). Marco, 22/10/2026 ~06:45 UTC: the top 250 of each TSPDT list."
+    },
+    {
+      "id": "tspdt-poll21-250",
+      "name": "TSPDT · 2021 Poll top 250",
+      "short": "TSPDT · 2021 Poll top 250",
+      "url": "https://letterboxd.com/colmener/list/2021-tspdt-poll-1005-film-favourites/",
+      "trust": "fan",
+      "top": 250,
+      "description": "TSPDT (They Shoot Pictures, Don't They?), The 2021 TSPDT Poll: 1,005 Film Favourites (1,983 voters; https://theyshootpictures.com/2021poll.htm, 03/08/2021), the first 250 of the 1,005 films of the copy by colmener (ranked, 01/08/2021). Checked 22/10/2026 against the site's Excel file (column 2021 Rkg): the 250 are all of rank 247 or better; 7 films tie at rank 247 and the copy's order lets 4 in (The Wild Bunch, Sweet Smell of Success, La Strada, House) and leaves 3 out (The Exterminating Angel, Boyhood, Army of Shadows). trust fan: a poll of the public. The older poll, kept next to the 2026 one because the site still publishes both (20 of the 250 are not among the 1,000 Greatest). Marco, 22/10/2026 ~06:45 UTC: the top 250 of each TSPDT list."
+    },
+    {
+      "id": "tspdt-2025-50",
+      "name": "TSPDT · 50 best of 2025",
+      "short": "TSPDT · 50 best of 2025",
+      "url": "https://letterboxd.com/tspdtfanaccount/list/50-most-critically-acclaimed-films-of-2025/",
+      "trust": "critic",
+      "checked": {
+        "on": "2026-10-22",
+        "films": 50
+      },
+      "description": "TSPDT (They Shoot Pictures, Don't They?), 50 Most Critically-Acclaimed Films of 2025 (end-of-year ballots of Sight & Sound, Screen Slate, Film Comment, Con los Ojos Abiertos and Cahiers du Cinema; https://theyshootpictures.com/21stcentury.htm, 01/02/2026). Copy by tspdtfanaccount, checked 22/10/2026 against the page: 50 of 50 films, the same order except the tied places (25th). A list under 250 films enters whole. Marco, 22/10/2026 ~06:45 UTC: the top 250 of each TSPDT list."
+    },
+    {
+      "id": "tspdt-beyond-ss-alist",
+      "name": "TSPDT · Beyond the Sight & Sound Canon, A-List",
+      "short": "TSPDT · Beyond S&S A-List",
+      "url": "https://letterboxd.com/angelg/list/beyond-the-sight-sound-canon/",
+      "trust": "critic",
+      "order": "rating",
+      "description": "TSPDT (They Shoot Pictures, Don't They?), Beyond the Sight & Sound Canon, A-List: the films that the critics' ballots add to the Sight & Sound 2022 poll, compiled by Angel Gonzalez, published 08/04/2024 (1,030 films; https://theyshootpictures.com/beyondtheSScanon_A-List.htm). Copy by angelg, the one the site itself links (\"The A-List can also be viewed at Letterboxd\"). The site lists the films without ranking them, so the order of the copy is kept as the order of the list and no cut applies: the list enters whole. Not read yet when this entry was written: the 1,030 is the research's of 22/10/2026 (.context/pesquisa/2026-10-22-tspdt-listas.md of the Stremio repository, 272 to 279 films new to the index), the real count comes out of the first nightly build. Marco, 22/10/2026 ~15:05 UTC (questionnaire TSPDT 2 of 3): of the TSPDT lists with no position on the site only this one enters, as a list of critics (trust critic); the 1,000 Noir Films and the Recommendations stay out."
+    },
+    {
+      "id": "LOj8",
+      "name": "BBC 100 greatest of the 21st c. (mattevenson)",
+      "short": "BBC 100 greatest 21st c.",
+      "url": "https://letterboxd.com/mattevenson/list/bbc-culture-the-21st-centurys-100-greatest/",
+      "trust": "critic",
+      "checked": {
+        "on": "2026-10-11",
+        "films": 102
+      }
+    },
+    {
+      "id": "29d0g",
+      "name": "BBC 100 greatest non-English films (cinemaviscera)",
+      "short": "BBC 100 non-English films",
+      "url": "https://letterboxd.com/cinemaviscera/list/bbc-cultures-100-greatest-films-in-languages/",
+      "trust": "critic",
+      "checked": {
+        "on": "2026-10-11",
+        "films": 100
+      },
+      "corrections": [
+        {
+          "from": "the-discreet",
+          "to": "the-discreet-charm-of-the-bourgeoisie",
+          "why": "position 84 of BBC Culture 2018 is The Discreet Charm of the Bourgeoisie (1972); the copy points to The Discreet (1990). Checked against the article, 11/10/2026"
+        }
+      ]
+    },
+    {
+      "id": "3Xsj2",
+      "name": "Guardian 100 best of the 21st c. (imar)",
+      "short": "Guardian 100 best 21st c.",
+      "url": "https://letterboxd.com/imar/list/the-guardians-100-best-films-of-the-21st/",
+      "trust": "critic",
+      "checked": {
+        "on": "2026-10-11",
+        "films": 100
+      }
+    },
+    {
+      "id": "PaZAY",
+      "name": "Roger Ebert's Great Movies (rogerebert)",
+      "short": "Roger Ebert's Great Movies",
+      "url": "https://letterboxd.com/rogerebert/list/roger-eberts-great-movies-list/",
+      "trust": "critic"
+    },
+    {
+      "id": "r6YG",
+      "name": "Film Comment best of the 2000s (connordenney)",
+      "short": "Film Comment best of 2000s",
+      "url": "https://letterboxd.com/connordenney/list/film-comments-end-of-the-decade-critics-poll/",
+      "trust": "critic",
+      "checked": {
+        "on": "2026-10-11",
+        "films": 100
+      }
+    },
+    {
+      "id": "4yIKM",
+      "name": "Film Comment top 50 of the 2010s (ephender)",
+      "short": "Film Comment top 50 2010s",
+      "url": "https://letterboxd.com/ephender/list/film-comments-top-50-films-of-the-decade/",
+      "trust": "critic",
+      "checked": {
+        "on": "2026-10-11",
+        "films": 50
+      }
+    },
+    {
+      "id": "4r4Lc",
+      "name": "Slant 100 best of the 2010s (rhumanick)",
+      "short": "Slant 100 best of the 2010s",
+      "url": "https://letterboxd.com/rhumanick/list/slant-magazines-100-best-films-of-the-2010s/",
+      "trust": "critic",
+      "checked": {
+        "on": "2026-10-11",
+        "films": 100
+      }
+    },
+    {
+      "id": "29WI",
+      "name": "Slant top 100 of the 2000s (ephender)",
+      "short": "Slant top 100 of the 2000s",
+      "url": "https://letterboxd.com/ephender/list/slant-magazines-top-100-films-of-the-aughts/",
+      "trust": "critic",
+      "checked": {
+        "on": "2026-10-11",
+        "films": 100
+      }
+    },
+    {
+      "id": "UTghM",
+      "name": "Reverse Shot best of the 21st c. (reverse_shot)",
+      "short": "Reverse Shot best 21st c.",
+      "url": "https://letterboxd.com/reverse_shot/list/best-of-21st-century-so-far/",
+      "trust": "critic"
+    },
+    {
+      "id": "HYcJ6",
+      "name": "IndieWire 100 best of the 2020s (mattleidholm)",
+      "short": "IW 100 best of the 2020s",
+      "url": "https://letterboxd.com/mattleidholm/list/indiewires-100-best-movies-of-the-2020s-so/",
+      "trust": "critic",
+      "checked": {
+        "on": "2026-10-11",
+        "films": 100
+      }
+    },
+    {
+      "id": "6k8C",
+      "name": "Rosenbaum's 1000 essential films (jwier85)",
+      "short": "Rosenbaum 1,000 essential",
+      "url": "https://letterboxd.com/jwier85/list/jonathan-rosenbaums-1000-essential-films/",
+      "trust": "critic",
+      "checked": {
+        "on": "2026-10-11",
+        "films": 998
+      }
+    },
+    {
+      "id": "UrNbQ",
+      "name": "Abraccine 100 essential Brazilian films 2026 (abraccine)",
+      "short": "Abraccine 100 Brazilian 2026",
+      "url": "https://letterboxd.com/abraccine/list/100-filmes-brasileiros-essenciais/",
+      "trust": "critic"
+    },
+    {
+      "id": "xHj8",
+      "name": "Abraccine 100 best Brazilian films 2016 (p_polastri)",
+      "short": "Abraccine 100 Brazilian 2016",
+      "url": "https://letterboxd.com/p_polastri/list/os-100-melhores-filmes-brasileiros-abraccine/",
+      "trust": "critic",
+      "checked": {
+        "on": "2026-10-11",
+        "films": 102
+      }
+    },
+    {
+      "id": "aRWQQ",
+      "name": "Essential Art House (criterion)",
+      "short": "CC · Essential Art House",
+      "url": "https://letterboxd.com/criterion/list/essential-art-house-films-criterion-channel/",
+      "trust": "critic"
+    },
+    {
+      "id": "l8rqc",
+      "name": "Essential '90s (criterion)",
+      "short": "CC · Essential '90s",
+      "url": "https://letterboxd.com/criterion/list/essential-90s-criterion-channel/",
+      "trust": "critic"
+    },
+    {
+      "id": "poxvK",
+      "name": "Art-House Horror (criterion)",
+      "short": "CC · Art-House Horror",
+      "url": "https://letterboxd.com/criterion/list/art-house-horror-criterion-channel/",
+      "trust": "critic"
+    },
+    {
+      "id": "1R3EO",
+      "name": "Top 250 Documentaries (Letterboxd)",
+      "short": "LB Top 250 Documentaries",
+      "url": "https://letterboxd.com/official/list/top-250-documentary-films/",
+      "trust": "fan"
+    },
+    {
+      "id": "DnJog",
+      "name": "Villeneuve's Closet Picks (closetpicks)",
+      "short": "Closet Picks · Villeneuve",
+      "url": "https://letterboxd.com/closetpicks/list/denis-villeneuves-criterion-closet-picks/",
+      "trust": "director"
+    },
+    {
+      "id": "wWAxK",
+      "name": "Wim's 10 favorites (wimwenders)",
+      "short": "Wenders · 10 favorites",
+      "url": "https://letterboxd.com/wimwenders/list/wims-10-favorites/",
+      "trust": "director"
+    },
+    {
+      "id": "BiIyG",
+      "name": "Wim's favorite road movies (wimwenders)",
+      "short": "Wenders · road movies",
+      "url": "https://letterboxd.com/wimwenders/list/wims-dirty-dozen-of-his-favorite-road-movies/",
+      "trust": "director"
+    },
+    {
+      "id": "sofqa",
+      "name": "Wenders' Closet Picks (closetpicks)",
+      "short": "Closet Picks · Wenders",
+      "url": "https://letterboxd.com/closetpicks/list/wim-wenders-criterion-closet-picks/",
+      "trust": "director"
+    },
+    {
+      "id": "SE1Ga",
+      "name": "Lars von Trier's 21 favorites (lvtrier)",
+      "short": "Von Trier's 21 favorites",
+      "url": "https://letterboxd.com/lvtrier/list/lars-von-triers-21-favorite-films/",
+      "trust": "fan"
+    },
+    {
+      "id": "yPRy0",
+      "name": "20 films that inspired Megalopolis (francisfcoppola)",
+      "short": "20 films behind Megalopolis",
+      "url": "https://letterboxd.com/francisfcoppola/list/20-films-that-inspired-megalopolis/",
+      "trust": "director"
+    },
+    {
+      "id": "BHK3g",
+      "name": "Coppola's Closet Picks (closetpicks)",
+      "short": "Closet Picks · Coppola",
+      "url": "https://letterboxd.com/closetpicks/list/francis-ford-coppolas-criterion-closet-picks/",
+      "trust": "director"
+    },
+    {
+      "id": "snCbg",
+      "name": "Lucrecia Martel's Closet Picks (closetpicks)",
+      "short": "Closet Picks · Martel",
+      "url": "https://letterboxd.com/closetpicks/list/lucrecia-martels-criterion-closet-picks/",
+      "trust": "director"
+    },
+    {
+      "id": "snpM4",
+      "name": "Mike Leigh's Closet Picks (closetpicks)",
+      "short": "Closet Picks · Leigh",
+      "url": "https://letterboxd.com/closetpicks/list/mike-leighs-criterion-closet-picks/",
+      "trust": "director"
+    },
+    {
+      "id": "D0GkE",
+      "name": "Walter Salles' Closet Picks (closetpicks)",
+      "short": "Closet Picks · Salles",
+      "url": "https://letterboxd.com/closetpicks/list/walter-salles-criterion-closet-picks/",
+      "trust": "director"
+    },
+    {
+      "id": "snwqE",
+      "name": "Sean Baker's Closet Picks (closetpicks)",
+      "short": "Closet Picks · Baker",
+      "url": "https://letterboxd.com/closetpicks/list/sean-bakers-criterion-closet-picks/",
+      "trust": "director"
+    },
+    {
+      "id": "snq4i",
+      "name": "Edgar Wright's Closet Picks (closetpicks)",
+      "short": "Closet Picks · Wright",
+      "url": "https://letterboxd.com/closetpicks/list/edgar-wrights-criterion-closet-picks/",
+      "trust": "director"
+    },
+    {
+      "id": "sEogA",
+      "name": "Ari Aster's Closet Picks (closetpicks)",
+      "short": "Closet Picks · Aster",
+      "url": "https://letterboxd.com/closetpicks/list/ari-asters-criterion-closet-picks/",
+      "trust": "director"
+    },
+    {
+      "id": "sptoY",
+      "name": "Guillermo del Toro's Closet Picks (closetpicks)",
+      "short": "Closet Picks · del Toro",
+      "url": "https://letterboxd.com/closetpicks/list/guillermo-del-toros-criterion-closet-picks/",
+      "trust": "director"
+    },
+    {
+      "id": "1fC0S",
+      "name": "Gentle Cinema (dillamonster)",
+      "short": "Gentle Cinema",
+      "url": "https://letterboxd.com/dillamonster/list/gentle-cinema/",
+      "trust": "fan"
+    },
+    {
+      "id": "53tAO",
+      "name": "Edgar Wright's 100 favorite comedies (crew)",
+      "short": "Wright · 100 fav. comedies",
+      "url": "https://letterboxd.com/crew/list/edgar-wrights-100-favorite-comedies/",
+      "trust": "fan"
+    },
+    {
+      "id": "hKj3Y",
+      "name": "Top 250 Action (Letterboxd)",
+      "short": "LB Top 250 Action",
+      "url": "https://letterboxd.com/official/list/top-250-action-films/",
+      "trust": "fan"
+    },
+    {
+      "id": "CBSLW",
+      "name": "Gudegast's favorite heist and crime thrillers (crew)",
+      "short": "Gudegast · heist and crime",
+      "url": "https://letterboxd.com/crew/list/christian-gudegasts-favorite-heist-crime/",
+      "trust": "fan"
+    },
+    {
+      "id": "2cApa",
+      "name": "Befriending the lyrical loneliness (kun)",
+      "short": "Lyrical loneliness",
+      "url": "https://letterboxd.com/kun/list/befriending-the-lyrical-loneliness/",
+      "trust": "fan"
+    },
+    {
+      "id": "sPMW",
+      "name": "Catharsis (latifah)",
+      "short": "Catharsis",
+      "url": "https://letterboxd.com/latifah/list/catharsis/",
+      "trust": "fan"
+    },
+    {
+      "id": "jMnm",
+      "name": "Neon Noir (stjiub)",
+      "short": "Neon Noir",
+      "url": "https://letterboxd.com/stjiub/list/neon-noir/",
+      "trust": "fan"
+    },
+    {
+      "id": "nBu4k",
+      "name": "Movies to watch at night (mattjpg)",
+      "short": "Movies to watch at night",
+      "url": "https://letterboxd.com/mattjpg/list/movies-to-watch-at-night/",
+      "trust": "fan"
+    },
+    {
+      "id": "pqL8a",
+      "name": "Fear on Film (MUBI)",
+      "short": "MUBI · Fear on Film",
+      "url": "https://letterboxd.com/mubi/list/fear-on-film/",
+      "trust": "fan"
+    },
+    {
+      "id": "5spXY",
+      "name": "Top 250 International (brsan)",
+      "short": "Top 250 International",
+      "url": "https://letterboxd.com/brsan/list/letterboxds-top-250-international-films/",
+      "trust": "fan"
+    },
+    {
+      "id": "mIwli",
+      "name": "Top 100 Taiwanese (Letterboxd)",
+      "short": "LB Top 100 Taiwanese",
+      "url": "https://letterboxd.com/official/list/top-100-taiwanese-films/",
+      "trust": "fan"
+    },
+    {
+      "id": "asnPI",
+      "name": "Top 100 Concert Films (Letterboxd)",
+      "short": "LB Top 100 Concert Films",
+      "url": "https://letterboxd.com/official/list/top-100-concert-films/",
+      "trust": "fan"
+    },
+    {
+      "id": "WaoLy",
+      "name": "Tuning In: Sonic Journeys (MUBI)",
+      "short": "MUBI · Sonic Journeys",
+      "url": "https://letterboxd.com/mubi/list/tuning-in-sonic-journeys/",
+      "trust": "critic"
+    },
+    {
+      "id": "5R3nu",
+      "name": "A Canon of Slow Cinema (fr_qr)",
+      "short": "A Canon of Slow Cinema",
+      "url": "https://letterboxd.com/fr_qr/list/a-canon-of-slow-cinema/",
+      "trust": "fan",
+      "moods": {
+        "slow": 2
+      }
+    },
+    {
+      "id": "8UNg",
+      "name": "CCC Slow Cinema Canon (lightwisdom)",
+      "short": "CCC Slow Cinema Canon",
+      "url": "https://letterboxd.com/lightwisdom/list/ccc-or-slow-cinema-canon/",
+      "trust": "fan",
+      "moods": {
+        "slow": 2
+      }
+    },
+    {
+      "id": "wjlma",
+      "name": "100 best Brazilian films (brenoxmatos)",
+      "short": "100 best Brazilian films",
+      "url": "https://letterboxd.com/brenoxmatos/list/os-100-melhores-filmes-brasileiros-de-todos/",
+      "trust": "fan"
+    },
+    {
+      "id": "3SLxW",
+      "name": "Revista Paisà 20 best Brazilian films (revistapaisa)",
+      "short": "Paisà 20 best Brazilian",
+      "url": "https://letterboxd.com/revistapaisa/list/20-melhores-filmes-brasileiros-segundo-os/",
+      "trust": "fan"
+    },
+    {
+      "id": "Vw3z2",
+      "name": "20 underseen New Hollywood essentials (crew)",
+      "short": "20 underseen New Hollywood",
+      "url": "https://letterboxd.com/crew/list/20-underseen-new-hollywood-essentials/",
+      "trust": "fan"
+    },
+    {
+      "id": "Rewi",
+      "name": "Disillusionment in 1970s New Hollywood (settingsun)",
+      "short": "Disillusioned New Hollywood",
+      "url": "https://letterboxd.com/settingsun/list/disillusionment-in-sun-drenched-1970s-american/",
+      "trust": "fan"
+    },
+    {
+      "id": "s2YE",
+      "name": "Taiwanese New Waves (asianfanatic)",
+      "short": "Taiwanese New Waves",
+      "url": "https://letterboxd.com/asianfanatic/list/taiwanese-new-waves/",
+      "trust": "fan"
+    },
+    {
+      "id": "8RGgu",
+      "name": "100 greatest documentaries (juliodogpit)",
+      "short": "100 greatest documentaries",
+      "url": "https://letterboxd.com/juliodogpit/list/the-100-greatest-documentaries-ranked-as/",
+      "trust": "fan"
+    },
+    {
+      "id": "TsT1A",
+      "name": "Top 250 under 100 minutes (Letterboxd)",
+      "short": "LB Top 250 under 100 min",
+      "url": "https://letterboxd.com/official/list/top-250-films-below-100-minutes-in-runtime/",
+      "trust": "fan"
+    },
+    {
+      "id": "CzHG",
+      "name": "100 great movies under 100 minutes (hammerbros94)",
+      "short": "100 great under 100 min",
+      "url": "https://letterboxd.com/hammerbros94/list/100-great-movies-under-100-minutes/",
+      "trust": "fan"
+    },
+    {
+      "id": "5AOdi",
+      "name": "Top 100 Underseen (Letterboxd)",
+      "short": "LB Top 100 Underseen",
+      "url": "https://letterboxd.com/official/list/top-100-underseen-films/",
+      "trust": "fan"
+    },
+    {
+      "id": "2APE8",
+      "name": "Secret gems (smiskfisk)",
+      "short": "Secret gems",
+      "url": "https://letterboxd.com/smiskfisk/list/secret-gems-few-views-high-rating/",
+      "trust": "fan"
+    },
+    {
+      "id": "maWk",
+      "name": "Scorsese's 39 essential foreign films (beatlemaniac47)",
+      "short": "Scorsese's 39 foreign films",
+      "url": "https://letterboxd.com/beatlemaniac47/list/martin-scorseses-39-essential-foreign-films/",
+      "trust": "director",
+      "checked": {
+        "on": "2026-10-11",
+        "films": 39
+      }
+    },
+    {
+      "id": "fwxFQ",
+      "name": "World Cinema Project (The Film Foundation)",
+      "short": "World Cinema Project",
+      "url": "https://letterboxd.com/tff/list/the-film-foundations-world-cinema-project/",
+      "trust": "critic",
+      "corrections": [
+        {
+          "from": "pedro-paramo-2024",
+          "to": "pedro-paramo",
+          "why": "the World Cinema Project restored Pedro Páramo (1967, Carlos Velo); the list points to the 2024 Netflix film. Marco, 11/10/2026"
+        }
+      ],
+      "checked": {
+        "on": "2026-10-11",
+        "films": 70
+      }
+    },
+    {
+      "id": "q00BQ",
+      "name": "Scorsese's My Voyage to Italy (The Film Foundation)",
+      "short": "Scorsese · Voyage to Italy",
+      "url": "https://letterboxd.com/tff/list/films-discussed-in-martin-scorseses-my-voyage/",
+      "trust": "director",
+      "checked": {
+        "on": "2026-10-11",
+        "films": 38
+      }
+    },
+    {
+      "id": "indiewire-fr-2023",
+      "name": "IndieWire best French films of the 21st c. (2023)",
+      "short": "IW best French 2023",
+      "source": "static",
+      "file": "data/lists/indiewire-fr-2023.json",
+      "trust": "critic",
+      "description": "IndieWire, The 39 Best French Movies of The 21st Century (So Far), edition of 25/09/2023, https://www.indiewire.com/feature/best-french-movies-films-21st-century-so-far-1201848966/. No Letterboxd copy of this edition: assembled from the article, in its order, each film's slug and IMDb/TMDB ids checked on its Letterboxd page (11/10/2026). The 35-film copy (verosanzb) is the older edition."
+    },
+    {
+      "id": "indiewire-animated-2025",
+      "name": "IndieWire best animated films of the 21st c. (2025)",
+      "short": "IW best animated 2025",
+      "source": "static",
+      "file": "data/lists/indiewire-animated-2025.json",
+      "trust": "critic",
+      "description": "IndieWire, The 64 Best Animated Movies, Ranked, edition of 19/03/2025, https://www.indiewire.com/feature/best-animated-movies-21st-century-pixar-studio-ghibli-1201895863/. No Letterboxd copy of this edition: assembled from the article, in its order, each film's slug and IMDb/TMDB ids checked on its Letterboxd page (11/10/2026). The 30-film copy (stephenbush) is the older edition."
+    },
+    {
+      "id": "iw-docs-2024",
+      "name": "IndieWire 52 best docs of the 21st c. (2024)",
+      "short": "IW 52 best docs 2024",
+      "url": "https://letterboxd.com/borgesyrulfo/list/the-52-best-documentaries-of-the-21st-century/",
+      "trust": "critic",
+      "checked": {
+        "on": "2026-10-11",
+        "films": 52
+      },
+      "description": "IndieWire, The 50 Best Documentaries of the 21st Century (the body numbers 52), edition of 27/03/2024, https://www.indiewire.com/feature/best-documentaries-21st-century-1201857688/. Letterboxd copy by borgesyrulfo, checked 52 of 52 against the article, same order (11/10/2026). The 25-film copy (matthew) is the older edition."
+    },
+    {
+      "id": "X5VrU",
+      "name": "Rock Biopics That Don't Suck (Criterion Channel)",
+      "short": "CC · Rock Biopics",
+      "url": "https://letterboxd.com/criterion/list/rock-biopics-that-dont-suck-criterion-channel/",
+      "trust": "critic"
+    },
+    {
+      "id": "SWwe8",
+      "name": "VHS Forever (Criterion Channel)",
+      "short": "CC · VHS Forever",
+      "url": "https://letterboxd.com/criterion/list/vhs-forever-criterion-channel/",
+      "trust": "critic"
+    },
+    {
+      "id": "RGQuY",
+      "name": "The ’90s Do the ’70s (Criterion Channel)",
+      "short": "CC · The '90s Do the '70s",
+      "url": "https://letterboxd.com/criterion/list/the-90s-do-the-70s-criterion-channel/",
+      "trust": "critic"
+    },
+    {
+      "id": "QUw3i",
+      "name": "Hotels on Film (Criterion Channel)",
+      "short": "CC · Hotels on Film",
+      "url": "https://letterboxd.com/criterion/list/hotels-on-film-criterion-channel/",
+      "trust": "critic"
+    },
+    {
+      "id": "PQMVe",
+      "name": "Directed by Werner Herzog (Criterion Channel)",
+      "short": "CC · Directed by Herzog",
+      "url": "https://letterboxd.com/criterion/list/directed-by-werner-herzog-criterion-channel/",
+      "trust": "critic"
+    },
+    {
+      "id": "P9eui",
+      "name": "Hong Kong Action Classics (Criterion Channel)",
+      "short": "CC · Hong Kong Action",
+      "url": "https://letterboxd.com/criterion/list/hong-kong-action-classics-criterion-channel/",
+      "trust": "critic"
+    },
+    {
+      "id": "FAbFG",
+      "name": "Fun City (Criterion Channel)",
+      "short": "CC · Fun City",
+      "url": "https://letterboxd.com/criterion/list/fun-city-criterion-channel/",
+      "trust": "critic"
+    },
+    {
+      "id": "FAcf0",
+      "name": "Legacies of War: Vietnam Across the Divides (Criterion Channel)",
+      "short": "CC · Legacies of War",
+      "url": "https://letterboxd.com/criterion/list/legacies-of-war-vietnam-across-the-divides/",
+      "trust": "critic"
+    },
+    {
+      "id": "Eytt6",
+      "name": "Scene Stealers: Best Supporting Actors (Criterion Channel)",
+      "short": "CC · Scene Stealers",
+      "url": "https://letterboxd.com/criterion/list/scene-stealers-best-supporting-actors-criterion/",
+      "trust": "critic"
+    },
+    {
+      "id": "A305G",
+      "name": "Noirvember Essentials (Criterion Channel)",
+      "short": "CC · Noirvember Essentials",
+      "url": "https://letterboxd.com/criterion/list/noirvember-essentials-criterion-channel/",
+      "trust": "critic"
+    },
+    {
+      "id": "xxc7C",
+      "name": "Photographer’s Gaze (Criterion Channel)",
+      "short": "CC · Photographer's Gaze",
+      "url": "https://letterboxd.com/criterion/list/photographers-gaze-criterion-channel/",
+      "trust": "critic"
+    },
+    {
+      "id": "vRVZG",
+      "name": "Ensemble Casts (Criterion Channel)",
+      "short": "CC · Ensemble Casts",
+      "url": "https://letterboxd.com/criterion/list/ensemble-casts-criterion-channel/",
+      "trust": "critic"
+    },
+    {
+      "id": "v43F0",
+      "name": "Columbia’s Golden Era (Criterion Channel)",
+      "short": "CC · Columbia's Golden Era",
+      "url": "https://letterboxd.com/criterion/list/columbias-golden-era-criterion-channel/",
+      "trust": "critic"
+    },
+    {
+      "id": "v42Ha",
+      "name": "1999 (Criterion Channel)",
+      "short": "CC · 1999",
+      "url": "https://letterboxd.com/criterion/list/1999-criterion-channel/",
+      "trust": "critic"
+    },
+    {
+      "id": "sZZp2",
+      "name": "Best of the 2000s (Criterion Channel)",
+      "short": "CC · Best of the 2000s",
+      "url": "https://letterboxd.com/criterion/list/best-of-the-2000s-criterion-channel/",
+      "trust": "critic"
+    },
+    {
+      "id": "sCCek",
+      "name": "Interdimensional Romance (Criterion Channel)",
+      "short": "CC · Sci-fi romance",
+      "url": "https://letterboxd.com/criterion/list/interdimensional-romance-criterion-channel/",
+      "trust": "critic"
+    },
+    {
+      "id": "rnVXu",
+      "name": "Sundance Favorites (Criterion Channel)",
+      "short": "CC · Sundance Favorites",
+      "url": "https://letterboxd.com/criterion/list/sundance-favorites-criterion-channel/",
+      "trust": "critic"
+    },
+    {
+      "id": "qGQ6O",
+      "name": "Essential ’90s Part 2 (Criterion Channel)",
+      "short": "CC · Essential '90s II",
+      "url": "https://letterboxd.com/criterion/list/essential-90s-part-2-criterion-channel/",
+      "trust": "critic"
+    },
+    {
+      "id": "qGRDE",
+      "name": "’70s Sensations Part 2 (Criterion Channel)",
+      "short": "CC · '70s Sensations II",
+      "url": "https://letterboxd.com/criterion/list/70s-sensations-part-2-criterion-channel/",
+      "trust": "critic"
+    },
+    {
+      "id": "oUG3A",
+      "name": "High School Horror (Criterion Channel)",
+      "short": "CC · High School Horror",
+      "url": "https://letterboxd.com/criterion/list/high-school-horror-criterion-channel/",
+      "trust": "critic"
+    },
+    {
+      "id": "nxwmC",
+      "name": "AI (Criterion Channel)",
+      "short": "CC · AI",
+      "url": "https://letterboxd.com/criterion/list/ai-criterion-channel/",
+      "trust": "critic"
+    },
+    {
+      "id": "nzQyi",
+      "name": "Films that Feel Like Summertime, Part II (Criterion Channel)",
+      "short": "CC · Feel Like Summertime II",
+      "url": "https://letterboxd.com/criterion/list/films-that-feel-like-summertime-part-ii-criterion/",
+      "trust": "critic"
+    },
+    {
+      "id": "n38pM",
+      "name": "Method Acting (Criterion Channel)",
+      "short": "CC · Method Acting",
+      "url": "https://letterboxd.com/criterion/list/method-acting-criterion-channel/",
+      "trust": "critic"
+    },
+    {
+      "id": "m8t7U",
+      "name": "Erotic Thrillers (Criterion Channel)",
+      "short": "CC · Erotic Thrillers",
+      "url": "https://letterboxd.com/criterion/list/erotic-thrillers-criterion-channel/",
+      "trust": "critic"
+    },
+    {
+      "id": "l9opC",
+      "name": "’70s Sensations (Criterion Channel)",
+      "short": "CC · '70s Sensations",
+      "url": "https://letterboxd.com/criterion/list/70s-sensations-criterion-channel/",
+      "trust": "critic"
+    },
+    {
+      "id": "l9cYK",
+      "name": "All You Need Is Love (Criterion Channel)",
+      "short": "CC · All You Need Is Love",
+      "url": "https://letterboxd.com/criterion/list/all-you-need-is-love-criterion-channel/",
+      "trust": "critic"
+    },
+    {
+      "id": "hGHCU",
+      "name": "Films to Watch When You’re Questioning Love, Part II (Criterion Channel)",
+      "short": "CC · Questioning Love II",
+      "url": "https://letterboxd.com/criterion/list/films-to-watch-when-youre-questioning-love-1/",
+      "trust": "critic"
+    },
+    {
+      "id": "f6b8e",
+      "name": "Sundance Hits (Criterion Channel)",
+      "short": "CC · Sundance Hits",
+      "url": "https://letterboxd.com/criterion/list/sundance-hits-criterion-channel/",
+      "trust": "critic"
+    },
+    {
+      "id": "dUtkE",
+      "name": "Noirvember (Criterion Channel)",
+      "short": "CC · Noirvember",
+      "url": "https://letterboxd.com/criterion/list/noirvember-criterion-channel/",
+      "trust": "critic"
+    },
+    {
+      "id": "dCcac",
+      "name": "Horror (Criterion Channel)",
+      "short": "CC · Horror",
+      "url": "https://letterboxd.com/criterion/list/horror-criterion-channel/",
+      "trust": "critic"
+    },
+    {
+      "id": "dg1CU",
+      "name": "Apartment Envy in New York City (Criterion Channel)",
+      "short": "CC · Apartment Envy NYC",
+      "url": "https://letterboxd.com/criterion/list/apartment-envy-in-new-york-city-criterion/",
+      "trust": "critic"
+    },
+    {
+      "id": "cVG0q",
+      "name": "Films that Feel Like Summertime (Criterion Channel)",
+      "short": "CC · Feel Like Summertime",
+      "url": "https://letterboxd.com/criterion/list/films-that-feel-like-summertime-criterion/",
+      "trust": "critic"
+    },
+    {
+      "id": "cyImC",
+      "name": "Films to Watch When You’re Questioning Love (Criterion Channel)",
+      "short": "CC · Questioning Love",
+      "url": "https://letterboxd.com/criterion/list/films-to-watch-when-youre-questioning-love/",
+      "trust": "critic"
+    },
+    {
+      "id": "aRqxi",
+      "name": "Hollywood Classics (Criterion Channel)",
+      "short": "CC · Hollywood Classics",
+      "url": "https://letterboxd.com/criterion/list/hollywood-classics-criterion-channel/",
+      "trust": "critic"
+    },
+    {
+      "id": "c5mSy",
+      "name": "Films To Fall Asleep To (Criterion Channel)",
+      "short": "CC · Films To Fall Asleep To",
+      "url": "https://letterboxd.com/criterion/list/films-to-fall-asleep-to-criterion-channel/",
+      "trust": "critic"
+    },
+    {
+      "id": "cg9sY",
+      "name": "LGBTQ+ (Criterion Channel)",
+      "short": "CC · LGBTQ+",
+      "url": "https://letterboxd.com/criterion/list/lgbtq-criterion-channel/",
+      "trust": "critic"
+    },
+    {
+      "id": "Ig3Kg",
+      "name": "Summer Romances (Criterion Channel)",
+      "short": "CC · Summer Romances",
+      "url": "https://letterboxd.com/criterion/list/summer-romances-criterion-channel/",
+      "trust": "critic"
+    },
+    {
+      "id": "r2kLE",
+      "name": "Home for the Holidays (Criterion Channel)",
+      "short": "CC · Home for the Holidays",
+      "url": "https://letterboxd.com/criterion/list/home-for-the-holidays-criterion-channel/",
+      "trust": "critic"
+    },
+    {
+      "id": "qJwme",
+      "name": "Holiday Special (Criterion Channel)",
+      "short": "CC · Holiday Special",
+      "url": "https://letterboxd.com/criterion/list/holiday-special-criterion-channel/",
+      "trust": "critic"
+    },
+    {
+      "id": "qzvQW",
+      "name": "Hitchcock for the Holidays (Criterion Channel)",
+      "short": "CC · Hitchcock Holidays",
+      "url": "https://letterboxd.com/criterion/list/hitchcock-for-the-holidays-criterion-channel/",
+      "trust": "critic"
+    },
+    {
+      "id": "qzuGc",
+      "name": "Holiday Noir (Criterion Channel)",
+      "short": "CC · Holiday Noir",
+      "url": "https://letterboxd.com/criterion/list/holiday-noir-criterion-channel/",
+      "trust": "critic"
+    },
+    {
+      "id": "pQWeK",
+      "name": "Halloween Costume Inspiration — Horror Edition (Criterion Channel)",
+      "short": "CC · Horror costume ideas",
+      "url": "https://letterboxd.com/criterion/list/halloween-costume-inspiration-horror-edition/",
+      "trust": "critic"
+    },
+    {
+      "id": "pTamC",
+      "name": "Halloween Costume Inspiration — Iconic Characters (Criterion Channel)",
+      "short": "CC · Iconic costume ideas",
+      "url": "https://letterboxd.com/criterion/list/halloween-costume-inspiration-iconic-characters/",
+      "trust": "critic"
+    },
+    {
+      "id": "jtzhQ",
+      "name": "Dreaming of a Holiday Movie Marathon Part II (Criterion Channel)",
+      "short": "CC · Holiday Marathon II",
+      "url": "https://letterboxd.com/criterion/list/dreaming-of-a-holiday-movie-marathon-part/",
+      "trust": "critic"
+    },
+    {
+      "id": "hGHRq",
+      "name": "Holidays in the Sun (Criterion Channel)",
+      "short": "CC · Holidays in the Sun",
+      "url": "https://letterboxd.com/criterion/list/holidays-in-the-sun-i-criterion-channel/",
+      "trust": "critic"
+    },
+    {
+      "id": "ek1Zm",
+      "name": "Dreaming of a Holiday Movie Marathon (Criterion Channel)",
+      "short": "CC · Holiday Marathon",
+      "url": "https://letterboxd.com/criterion/list/dreaming-of-a-holiday-movie-marathon-criterion/",
+      "trust": "critic"
+    },
+    {
+      "id": "GAsK",
+      "name": "Best cinematography of all time, Fandor poll (newsnayr)",
+      "short": "Fandor cinematography poll",
+      "url": "https://letterboxd.com/newsnayr/list/whats-the-best-cinematography-of-all-time/",
+      "trust": "fan"
+    },
+    {
+      "id": "2mL0U",
+      "name": "ASC 100 milestone films in cinematography (ethanbrookins)",
+      "short": "ASC 100 milestone films",
+      "url": "https://letterboxd.com/ethanbrookins/list/the-asc-100-milestone-films-in-cinematography/",
+      "trust": "critic",
+      "checked": {
+        "on": "2026-10-13",
+        "films": 100
+      }
+    },
+    {
+      "id": "100b4",
+      "name": "Colour grading done right (clairecao)",
+      "short": "Colour grading done right",
+      "url": "https://letterboxd.com/clairecao/list/movies-where-the-colour-grading-doesnt-look/",
+      "trust": "fan"
+    }
+  ],
+  "moods": [
+    {
+      "id": "lift",
+      "name": "☀️ Lift me out",
+      "word": "Uplift",
+      "blurb": "Warm, funny, kind. For when the week was heavy.",
+      "genres": {
+        "Comedy": 1,
+        "Drama": 0.3,
+        "Romance": 0.3,
+        "Family": 0.3,
+        "Music": 0.4,
+        "Animation": 0.2,
+        "Horror": -3,
+        "War": -2,
+        "Thriller": -1.5,
+        "Crime": -0.8
+      },
+      "keywords": {
+        "heartwarming": 1.2,
+        "feel good": 1.2,
+        "feel-good": 1.2,
+        "hopeful": 1.1,
+        "uplifting": 1.1,
+        "lighthearted": 1,
+        "comforting": 1,
+        "cheerful": 0.9,
+        "joyful": 0.9,
+        "joyous": 0.9,
+        "whimsical": 0.7,
+        "playful": 0.6,
+        "tender": 0.6,
+        "kindness": 0.6,
+        "sincere": 0.4,
+        "friendship": 0.6,
+        "slice of life": 0.8,
+        "small town": 0.4,
+        "road trip": 0.5,
+        "community": 0.5,
+        "second chance": 0.6,
+        "food": 0.4,
+        "cooking": 0.5,
+        "depressing": -1.5,
+        "tragic": -1,
+        "grim": -1,
+        "harrowing": -1.5,
+        "suicide": -2,
+        "rape": -3,
+        "torture": -2,
+        "murder": -0.8,
+        "genocide": -3,
+        "holocaust": -3,
+        "drug addiction": -1,
+        "dying": -2,
+        "terminal illness": -2,
+        "euthanasia": -2.5,
+        "stroke": -1.5,
+        "dementia": -1.5,
+        "mental illness": -1,
+        "funeral": -0.8,
+        "death of daughter": -2,
+        "death of son": -2
+      },
+      "compoundKeywords": [
+        "male friendship",
+        "female friendship",
+        "unlikely friendship",
+        "interracial friendship",
+        "adult child friendship",
+        "animal human friendship",
+        "male female friendship",
+        "enduring friendship",
+        "lifelong friendship",
+        "african american friendship",
+        "small town america",
+        "small town girl",
+        "farming community",
+        "black community",
+        "small community",
+        "spiritual community"
+      ],
+      "minFit": 1.6,
+      "runtime": {
+        "max": 135
+      },
+      "pins": [
+        "tt0117615",
+        "tt0092048",
+        "tt0085859"
+      ],
+      "needHit": 0.9
+    },
+    {
+      "id": "escape",
+      "name": "🎳 Full escape",
+      "word": "Escape",
+      "blurb": "Zero homework. Pure fun.",
+      "genres": {
+        "Comedy": 1.2,
+        "Adventure": 0.7,
+        "Action": 0.5,
+        "Crime": 0.2,
+        "Drama": -0.6,
+        "War": -2,
+        "Horror": -1,
+        "Documentary": -1.5,
+        "History": -1
+      },
+      "keywords": {
+        "hilarious": 1,
+        "absurd": 0.8,
+        "farcical": 0.9,
+        "zany": 0.9,
+        "slapstick": 0.9,
+        "buddy comedy": 1,
+        "heist": 0.8,
+        "caper": 0.9,
+        "stoner": 0.8,
+        "party": 0.5,
+        "mockumentary": 0.8,
+        "spoof": 0.8,
+        "parody": 0.7,
+        "witty": 0.6,
+        "amused": 0.7,
+        "playful": 0.6,
+        "excited": 0.4,
+        "exhilarated": 0.5,
+        "road trip": 0.5,
+        "cult film": 0.4,
+        "bromance": 0.6,
+        "depressing": -1.5,
+        "tragic": -1.2,
+        "grief": -1,
+        "cancer": -1.2,
+        "suicide": -2,
+        "holocaust": -3,
+        "melancholy": -0.6,
+        "dying": -2,
+        "terminal illness": -2,
+        "euthanasia": -2.5,
+        "stroke": -1.5,
+        "dementia": -1.5,
+        "mental illness": -1,
+        "funeral": -0.8,
+        "death of daughter": -2,
+        "death of son": -2
+      },
+      "compoundKeywords": [
+        "slapstick comedy",
+        "bank heist",
+        "heist gone wrong",
+        "jewelry heist",
+        "diamond heist",
+        "art heist",
+        "money heist",
+        "gold heist",
+        "botched heist",
+        "stoner comedy",
+        "stoner movie",
+        "birthday party",
+        "house party",
+        "dinner party",
+        "christmas party",
+        "socialite party",
+        "wedding party",
+        "sex party",
+        "costume party",
+        "pool party",
+        "office party",
+        "horror spoof",
+        "james bond spoof",
+        "news spoof",
+        "superhero spoof",
+        "horror parody",
+        "dracula parody",
+        "vampire parody"
+      ],
+      "minFit": 1.6,
+      "runtime": {
+        "max": 125
+      }
+    },
+    {
+      "id": "reinvent",
+      "name": "🧭 Starting over",
+      "word": "Reinvention",
+      "blurb": "Work, identity, purpose. People figuring out who they are when the old answer stops working.",
+      "genres": {
+        "Drama": 0.6,
+        "Comedy": 0.7,
+        "Horror": -3,
+        "Thriller": -1.2,
+        "Mystery": -0.6,
+        "Action": -0.8,
+        "War": -1.5,
+        "Science Fiction": -0.5
+      },
+      "keywords": {
+        "midlife crisis": 1.4,
+        "starting over": 1.4,
+        "reinvention": 1.4,
+        "fresh start": 1.3,
+        "new beginning": 1.2,
+        "life change": 1.1,
+        "self-discovery": 1.2,
+        "finding yourself": 1.2,
+        "self-acceptance": 0.9,
+        "second chance": 1,
+        "career": 1,
+        "unemployment": 1,
+        "quitting a job": 1.2,
+        "new job": 0.8,
+        "job": 0.6,
+        "workplace": 0.7,
+        "office worker": 0.9,
+        "salaryman": 1,
+        "businessman": 0.5,
+        "small business": 0.9,
+        "entrepreneur": 0.8,
+        "restaurant": 0.6,
+        "chef": 0.7,
+        "cooking": 0.5,
+        "dance lessons": 1,
+        "dancing": 0.5,
+        "teacher": 0.4,
+        "mentor": 0.6,
+        "retirement": 0.8,
+        "boredom": 0.6,
+        "identity crisis": 1,
+        "identity": 0.5,
+        "existentialism": 0.7,
+        "meaning of life": 0.9,
+        "purpose": 0.8,
+        "passion": 0.6,
+        "ambition": 0.5,
+        "daily life": 0.8,
+        "everyday life": 0.8,
+        "routine": 0.8,
+        "simple life": 0.8,
+        "artist": 0.5,
+        "writer": 0.5,
+        "poet": 0.7,
+        "poetry": 0.6,
+        "following your dreams": 0.9,
+        "freedom": 0.4,
+        "road trip": 0.4,
+        "journey": 0.3,
+        "hopeful": 0.8,
+        "heartwarming": 0.6,
+        "uplifting": 0.7,
+        "inspirational": 0.6,
+        "reflective": 0.5,
+        "tender": 0.4,
+        "suicide": -3,
+        "rape": -3,
+        "torture": -2,
+        "murder": -1,
+        "serial killer": -2,
+        "depressing": -1.5,
+        "bleak": -1.5,
+        "harrowing": -1.5,
+        "tragic": -1,
+        "nihilism": -1.2,
+        "paranoia": -1.2,
+        "psychological thriller": -1.2,
+        "insanity": -1,
+        "violence": -0.8,
+        "dystopia": -0.8,
+        "dying": -1.2,
+        "terminal illness": -1.2,
+        "euthanasia": -2,
+        "stroke": -1,
+        "dementia": -1,
+        "death of wife": -1,
+        "death": -0.5,
+        "cancer": -1
+      },
+      "compoundKeywords": [
+        "life and career",
+        "struggling career",
+        "unemployment benefits",
+        "job interview",
+        "loss of job",
+        "fired from the job",
+        "job promotion",
+        "job-hopping",
+        "summer job",
+        "job seeking",
+        "losing a job",
+        "job transfer",
+        "workplace romance",
+        "workplace comedy",
+        "workplace drama",
+        "young entrepreneur",
+        "restaurant owner",
+        "restaurant management",
+        "celebrity chef",
+        "tap dancing",
+        "ballroom dancing",
+        "teacher student relationship",
+        "music teacher",
+        "high school teacher",
+        "female teacher",
+        "school teacher",
+        "dance teacher",
+        "math teacher",
+        "drama teacher",
+        "english teacher",
+        "retired teacher",
+        "mentor protégé relationship",
+        "student mentor relationship",
+        "thoughts of retirement",
+        "women's sexual identity",
+        "sexual identity",
+        "new identity",
+        "quest for identity",
+        "self identity",
+        "gender identity",
+        "the meaning of life",
+        "family's daily life",
+        "daily routine",
+        "portrait of an artist",
+        "struggling artist",
+        "gay artist",
+        "street artist",
+        "female artist",
+        "aspiring artist",
+        "painter as artist",
+        "aspiring writer",
+        "writer's block",
+        "female writer",
+        "crime fiction writer",
+        "mystery writer",
+        "ghost writer",
+        "struggling writer",
+        "poetry reading",
+        "hero's journey",
+        "personal journey",
+        "spiritual journey",
+        "dreamlike journey"
+      ],
+      "minFit": 1.5,
+      "pins": [
+        "tt0117615",
+        "tt0085859"
+      ],
+      "needHit": 0.9
+    },
+    {
+      "id": "letin",
+      "name": "🌧️ Let it in",
+      "word": "Catharsis",
+      "blurb": "Feel it all the way through. You'll come out lighter.",
+      "genres": {
+        "Drama": 1.2,
+        "Romance": 0.4,
+        "Comedy": -0.3,
+        "Action": -1,
+        "Horror": -1.5,
+        "Animation": -0.3
+      },
+      "keywords": {
+        "grief": 1,
+        "death of a loved one": 1,
+        "loss": 0.6,
+        "melancholy": 1,
+        "bittersweet": 1,
+        "reflective": 0.8,
+        "intimate": 0.8,
+        "tender": 0.8,
+        "contemplative": 0.7,
+        "empathetic": 0.6,
+        "nostalgic": 0.6,
+        "memory": 0.6,
+        "loneliness": 0.6,
+        "family relationships": 0.6,
+        "father daughter relationship": 0.6,
+        "father son relationship": 0.6,
+        "mother daughter relationship": 0.6,
+        "mother son relationship": 0.6,
+        "marriage": 0.5,
+        "divorce": 0.5,
+        "coming of age": 0.4,
+        "superhero": -1.5,
+        "gore": -1,
+        "slapstick": -1
+      },
+      "compoundKeywords": [
+        "grief and remembrance",
+        "loss of loved one",
+        "loss of child",
+        "loss of mother",
+        "loss of faith",
+        "loss of innocence",
+        "loss of husband",
+        "loss of home",
+        "loss of wife",
+        "loss of family",
+        "love and loss",
+        "loss of sister",
+        "loss of parents",
+        "loss of parent",
+        "contemplative cinema",
+        "nostalgic memory",
+        "childhood memory",
+        "queer loneliness",
+        "marriage crisis",
+        "dysfunctional marriage",
+        "unhappy marriage",
+        "failing marriage",
+        "abusive marriage",
+        "troubled marriage",
+        "marriage problems",
+        "sexless marriage",
+        "loveless marriage",
+        "late coming of age",
+        "a coming of age story"
+      ],
+      "minFit": 2.2,
+      "needHit": 0.8
+    },
+    {
+      "id": "night",
+      "name": "🌃 Night drive",
+      "word": "Nocturnal",
+      "blurb": "Neon, tension, style. Lights off, volume up.",
+      "genres": {
+        "Thriller": 1,
+        "Crime": 1,
+        "Mystery": 0.6,
+        "Drama": 0.2,
+        "Comedy": -0.5,
+        "Family": -2,
+        "Animation": -1.5,
+        "Romance": -0.3
+      },
+      "keywords": {
+        "neo-noir": 1.4,
+        "film noir": 1,
+        "noir": 0.8,
+        "night": 0.6,
+        "heist": 0.8,
+        "tense": 0.8,
+        "suspenseful": 0.8,
+        "gritty": 0.8,
+        "hitman": 0.6,
+        "getaway driver": 1,
+        "car chase": 0.6,
+        "gangster": 0.6,
+        "crime boss": 0.6,
+        "robbery": 0.6,
+        "detective": 0.6,
+        "private detective": 0.7,
+        "stylish": 0.6,
+        "nightlife": 0.6,
+        "conspiracy": 0.4,
+        "corruption": 0.4,
+        "anxious": 0.4
+      },
+      "compoundKeywords": [
+        "french noir",
+        "japanese noir",
+        "tech noir",
+        "western noir",
+        "british noir",
+        "future noir",
+        "nordic noir",
+        "night life",
+        "night shift",
+        "stormy night",
+        "night train",
+        "bank heist",
+        "heist gone wrong",
+        "jewelry heist",
+        "diamond heist",
+        "art heist",
+        "money heist",
+        "gold heist",
+        "botched heist",
+        "former gangster",
+        "female gangster",
+        "gangster boss",
+        "bank robbery",
+        "armed robbery",
+        "hold-up robbery",
+        "botched robbery",
+        "train robbery",
+        "attempted robbery",
+        "armored car robbery",
+        "payroll robbery",
+        "police detective",
+        "amateur detective",
+        "detective inspector",
+        "narcotics detective",
+        "detective story",
+        "former detective",
+        "female detective",
+        "hardboiled detective",
+        "railroad detective",
+        "art detective",
+        "eccentric detective",
+        "retired detective",
+        "conspiracy thriller",
+        "corporate conspiracy",
+        "police corruption",
+        "political corruption",
+        "systemic corruption",
+        "government corruption",
+        "mob corruption"
+      ],
+      "minFit": 2
+    },
+    {
+      "id": "wicked",
+      "name": "🎃 Something wicked",
+      "word": "Wicked",
+      "blurb": "Horror with craft. Leans harder in October.",
+      "genres": {
+        "Horror": 2,
+        "Thriller": 0.4,
+        "Comedy": 0.2,
+        "Family": -2,
+        "Romance": -0.5,
+        "Animation": -0.5
+      },
+      "keywords": {
+        "slasher": 0.8,
+        "zombie": 0.8,
+        "haunted house": 0.8,
+        "possession": 0.6,
+        "supernatural": 0.6,
+        "folk horror": 1,
+        "body horror": 0.8,
+        "cult film": 0.5,
+        "gore": 0.4,
+        "creature": 0.5,
+        "monster": 0.5,
+        "vampire": 0.6,
+        "demon": 0.5,
+        "horror comedy": 0.6,
+        "splatter": 0.5,
+        "frightened": 0.6,
+        "horrified": 0.6,
+        "eerie": 0.6,
+        "atmospheric": 0.4,
+        "psychological horror": 0.8
+      },
+      "compoundKeywords": [
+        "proto-slasher",
+        "slasher horror",
+        "teen slasher",
+        "zombie apocalypse",
+        "zombie horror",
+        "demonic possession",
+        "spirit possession",
+        "supernatural horror",
+        "supernatural creature",
+        "blood and gore",
+        "extreme gore",
+        "creature feature",
+        "giant creature",
+        "giant monster",
+        "alien monster",
+        "human monster",
+        "sea monster",
+        "water monster",
+        "monster movie",
+        "frankenstein’s monster",
+        "monster girl",
+        "legendary monster",
+        "vampire hunter (slayer)",
+        "vampiress (female vampire)",
+        "child vampire",
+        "vampire parody",
+        "demon hand",
+        "dream demon",
+        "splatter horror"
+      ],
+      "requireGenre": [
+        "Horror"
+      ],
+      "minFit": 2.4,
+      "runtime": {
+        "max": 135
+      },
+      "season": [
+        10
+      ]
+    },
+    {
+      "id": "wander",
+      "name": "🌍 Somewhere else",
+      "word": "Wanderlust",
+      "blurb": "Another country, another rhythm. The world-cinema shelf.",
+      "nonEnglish": 1.4,
+      "nonAnglo": 0.5,
+      "genres": {
+        "Drama": 0.4,
+        "Comedy": 0.3,
+        "Romance": 0.2,
+        "Horror": -1,
+        "Action": -0.5,
+        "Documentary": -0.5
+      },
+      "keywords": {
+        "village": 0.5,
+        "countryside": 0.5,
+        "travel": 0.5,
+        "journey": 0.4,
+        "contemplative": 0.6,
+        "slice of life": 0.6,
+        "family relationships": 0.4,
+        "city life": 0.4,
+        "tender": 0.4,
+        "intimate": 0.4,
+        "reflective": 0.4
+      },
+      "compoundKeywords": [
+        "village life",
+        "mountain village",
+        "small village",
+        "remote village",
+        "fishing village",
+        "train travel",
+        "car journey",
+        "journey around the world",
+        "journey on foot",
+        "dreamlike journey",
+        "contemplative cinema"
+      ],
+      "minFit": 2
+    },
+    {
+      "id": "slow",
+      "name": "🕯️ Slow and still",
+      "word": "Slow",
+      "blurb": "Long takes, quiet rooms, nothing hurried. The slow-cinema shelf.",
+      "nonEnglish": 0.9,
+      "nonAnglo": 0.4,
+      "genres": {
+        "Drama": 0.5,
+        "Action": -2,
+        "Adventure": -1,
+        "Animation": -1.5,
+        "Comedy": -0.8,
+        "Family": -2,
+        "Horror": -1.5,
+        "Thriller": -0.8,
+        "Science Fiction": -0.5,
+        "Music": -0.5,
+        "Documentary": -0.3,
+        "Crime": -0.4
+      },
+      "directors": {
+        "71174": 3,
+        "69759": 3,
+        "24011": 3,
+        "64992": 3,
+        "56383": 3,
+        "85637": 3,
+        "130030": 3,
+        "1051381": 3,
+        "256841": 3,
+        "119294": 3,
+        "95501": 3,
+        "8452": 3,
+        "1012088": 3,
+        "45791": 3,
+        "1002601": 3,
+        "10316": 3,
+        "20660": 3,
+        "37833": 3,
+        "56214": 3,
+        "109598": 3,
+        "133090": 3,
+        "1520165": 3
+      },
+      "keywords": {
+        "slow cinema": 3,
+        "contemplative cinema": 3,
+        "contemplative": 1.5,
+        "meditative": 1.5,
+        "minimalism": 1.5,
+        "long take": 1.5,
+        "silence": 1,
+        "alienation": 1,
+        "art house": 1,
+        "existentialism": 0.8,
+        "buddhism": 0.6,
+        "rain": 0.6,
+        "boredom": 0.8,
+        "atmospheric": 0.8,
+        "dreamlike": 0.7,
+        "experimental film": 0.8,
+        "lyrical": 0.8,
+        "poetic": 0.8,
+        "solitude": 0.8,
+        "loneliness": 0.7,
+        "melancholy": 0.6,
+        "nostalgic": 0.5,
+        "rural area": 0.5,
+        "road movie": 0.6,
+        "nihilism": 0.6,
+        "understated": 0.6,
+        "spirituality": 0.7,
+        "everyday life": 0.8,
+        "daily life": 0.6,
+        "slice of life": 0.5,
+        "countryside": 0.4,
+        "philosophical": 0.5,
+        "superhero": -2,
+        "slapstick": -1.5
+      },
+      "compoundKeywords": [
+        "urban alienation",
+        "sunshine through the rain",
+        "heavy rain",
+        "caught in the rain",
+        "dreamlike journey",
+        "poetic documentary",
+        "queer loneliness",
+        "nostalgic memory",
+        "family's daily life"
+      ],
+      "minFit": 2.5,
+      "needHit": 1.2,
+      "hitMin": 1,
+      "pins": [
+        "tt0079944",
+        "tt0046438",
+        "tt0377556",
+        "tt1588895",
+        "tt0120265"
+      ]
+    },
+    {
+      "id": "music",
+      "name": "🎵 Turn it up",
+      "word": "Music",
+      "blurb": "Concerts, musicians, records, dance floors.",
+      "genres": {
+        "Music": 2,
+        "Documentary": 0.5,
+        "Horror": -1
+      },
+      "keywords": {
+        "concert film": 1.2,
+        "concert": 0.8,
+        "music documentary": 1,
+        "musician": 0.8,
+        "band": 0.6,
+        "rock music": 0.6,
+        "jazz": 0.8,
+        "hip-hop": 0.6,
+        "singer": 0.6,
+        "songwriter": 0.6,
+        "record producer": 0.6,
+        "tour": 0.4,
+        "dance": 0.5,
+        "soul music": 0.8,
+        "funk": 0.6,
+        "samba": 1,
+        "bossa nova": 1,
+        "brazilian music": 1.2,
+        "mpb": 1,
+        "punk": 0.6,
+        "dj": 0.5,
+        "vinyl": 0.5
+      },
+      "compoundKeywords": [
+        "concert footage",
+        "rock concert",
+        "music concert",
+        "live concert",
+        "benefit concert",
+        "jazz singer or musician",
+        "street musician",
+        "struggling musician",
+        "african american musician",
+        "rock band",
+        "punk band",
+        "boy band",
+        "marching band",
+        "girl band",
+        "all girl band",
+        "music band",
+        "jazz club",
+        "jazz history",
+        "nightclub singer",
+        "singer-songwriter",
+        "aspiring singer",
+        "opera singer",
+        "pop singer",
+        "women singer",
+        "cabaret singer",
+        "folk singer",
+        "rock singer",
+        "street singer",
+        "music tour",
+        "dance performance",
+        "dance hall",
+        "dance competition",
+        "dance school",
+        "modern dance",
+        "dance teacher",
+        "song and dance",
+        "dance club",
+        "dance studio",
+        "punk rock",
+        "radio dj"
+      ],
+      "requireGenre": [
+        "Music"
+      ],
+      "minFit": 2
+    },
+    {
+      "id": "noir",
+      "name": "🌃 Noir",
+      "word": "Noir",
+      "blurb": "Shadows, femmes fatales and bad decisions. Classic and neo-noir.",
+      "genres": {
+        "Crime": 0.8,
+        "Thriller": 0.4,
+        "Mystery": 0.4,
+        "Drama": 0.1,
+        "Comedy": -0.6,
+        "Family": -2,
+        "Animation": -1.5,
+        "Romance": -0.3,
+        "Horror": -0.5,
+        "Documentary": -1
+      },
+      "keywords": {
+        "noir": 2,
+        "femme fatale": 1.2,
+        "hardboiled": 1,
+        "private detective": 0.8,
+        "private investigator": 0.8,
+        "detective": 0.5,
+        "corruption": 0.3,
+        "gangster": 0.3,
+        "heist": 0.3,
+        "hitman": 0.3
+      },
+      "compoundKeywords": [
+        "hardboiled detective",
+        "police detective",
+        "amateur detective",
+        "detective inspector",
+        "narcotics detective",
+        "detective story",
+        "former detective",
+        "female detective",
+        "railroad detective",
+        "art detective",
+        "eccentric detective",
+        "retired detective",
+        "police corruption",
+        "political corruption",
+        "systemic corruption",
+        "government corruption",
+        "mob corruption",
+        "former gangster",
+        "female gangster",
+        "gangster boss",
+        "bank heist",
+        "heist gone wrong",
+        "jewelry heist",
+        "diamond heist",
+        "art heist",
+        "money heist",
+        "gold heist",
+        "botched heist"
+      ],
+      "insideKeywords": {
+        "noir": "Marco, 15/11/2026 (questionnaire, Noir): \"Everything with \"noir\" in the tag, as before\". The only positive term that matches inside any TMDB keyword (film noir, neo-noir, tech noir, future noir, horror noir …); the family scores once. Every other positive term matches the whole keyword or a compound its recipe names (lib/moods.js)."
+      },
+      "minFit": 2,
+      "needHit": 1,
+      "lists": {
+        "A305G": 2.5,
+        "dUtkE": 2.5,
+        "jMnm": 1.5
+      }
+    },
+    {
+      "id": "whodunit",
+      "name": "🔍 Whodunit",
+      "word": "Whodunit",
+      "blurb": "A detective, a closed circle of suspects, and a reveal.",
+      "genres": {
+        "Mystery": 1,
+        "Crime": 0.5,
+        "Thriller": 0.2,
+        "Horror": -0.6,
+        "Action": -0.6,
+        "Animation": -0.5,
+        "Documentary": -1.5,
+        "War": -1
+      },
+      "keywords": {
+        "whodunit": 2.2,
+        "murder mystery": 1.8,
+        "amateur detective": 1.2,
+        "detective": 0.9,
+        "private detective": 0.8,
+        "police detective": 0.7,
+        "murder investigation": 0.9,
+        "investigation": 0.5,
+        "suspect": 0.5,
+        "murder": 0.3
+      },
+      "compoundKeywords": [
+        "detective inspector",
+        "narcotics detective",
+        "detective story",
+        "former detective",
+        "female detective",
+        "hardboiled detective",
+        "railroad detective",
+        "art detective",
+        "eccentric detective",
+        "retired detective",
+        "police investigation",
+        "criminal investigation",
+        "crime investigation",
+        "murder suspect",
+        "murder trial",
+        "framed for murder",
+        "witness to murder",
+        "suspicion of murder",
+        "murder plot",
+        "accused of murder",
+        "murder hunt"
+      ],
+      "minFit": 2.2,
+      "needHit": 1.2
+    },
+    {
+      "id": "mindbender",
+      "name": "🌀 Mind-benders",
+      "word": "Mind-bender",
+      "blurb": "Twists, loops and unreliable minds. You'll want to rewatch it.",
+      "genres": {
+        "Mystery": 0.5,
+        "Thriller": 0.4,
+        "Science Fiction": 0.4,
+        "Fantasy": 0.2,
+        "Drama": 0.1,
+        "Comedy": -0.4,
+        "Family": -1.5,
+        "Animation": -0.8,
+        "Documentary": -1.5,
+        "Romance": -0.2
+      },
+      "keywords": {
+        "plot twist": 1.8,
+        "twist ending": 1.8,
+        "unreliable narrator": 1.8,
+        "nonlinear timeline": 1.2,
+        "time loop": 1.8,
+        "mind game": 1.5,
+        "mind control": 0.9,
+        "simulated reality": 1.6,
+        "simulation": 1,
+        "computer simulation": 1.3,
+        "alternative reality": 1.2,
+        "loss of sense of reality": 1.4,
+        "reality vs fantasy": 1.3,
+        "dissociative identity disorder": 1.3,
+        "split personality": 1.3,
+        "doppelgänger": 1.3,
+        "psychological thriller": 1.1,
+        "psychological horror": 0.7,
+        "puzzle": 1,
+        "labyrinth": 0.7,
+        "paranoia": 0.7,
+        "amnesia": 0.7,
+        "memory loss": 0.7,
+        "hallucination": 1,
+        "delusion": 0.9,
+        "descent into madness": 1.1,
+        "breaking the fourth wall": 0.9,
+        "film within a film": 1,
+        "story within the story": 1.1,
+        "metafiction": 1.3,
+        "self-referential": 0.9,
+        "parallel world": 1.3,
+        "parallel universe": 1.3,
+        "multiverse": 1.4,
+        "ambiguous": 0.7,
+        "dreams": 0.3,
+        "surreal": 0.5,
+        "surrealism": 0.5
+      },
+      "compoundKeywords": [
+        "experimental surrealism",
+        "czech surrealism",
+        "suburban surrealism"
+      ],
+      "minFit": 1.8,
+      "needHit": 1
+    },
+    {
+      "id": "lol",
+      "name": "😂 Laugh out loud",
+      "word": "Laugh",
+      "blurb": "Funny first. The jokes land, the plot can wait.",
+      "genres": {
+        "Comedy": 2.3,
+        "Drama": -0.5,
+        "War": -1.5,
+        "Horror": -1,
+        "Documentary": -1.5,
+        "Thriller": -0.6,
+        "Crime": -0.2
+      },
+      "keywords": {
+        "hilarious": 1.2,
+        "slapstick comedy": 1.1,
+        "screwball comedy": 1.1,
+        "farce": 1,
+        "parody": 0.9,
+        "spoof": 0.9,
+        "buddy comedy": 0.9,
+        "anarchic comedy": 0.8,
+        "sex comedy": 0.5,
+        "teen comedy": 0.5,
+        "stand-up comedy": 0.8,
+        "sketch comedy": 0.8,
+        "stoner comedy": 0.8,
+        "mockumentary": 0.6,
+        "absurd": 0.4,
+        "prank": 0.7,
+        "action comedy": 0.7,
+        "adventure comedy": 0.5,
+        "tragic": -1,
+        "depressing": -1.5,
+        "holocaust": -3,
+        "suicide": -2
+      },
+      "compoundKeywords": [
+        "horror parody",
+        "dracula parody",
+        "vampire parody",
+        "horror spoof",
+        "james bond spoof",
+        "news spoof",
+        "superhero spoof",
+        "prank gone wrong"
+      ],
+      "minFit": 2.2
+    },
+    {
+      "id": "deadpan",
+      "name": "🧊 Deadpan",
+      "word": "Deadpan",
+      "blurb": "Dry, awkward, never winking. Dark comedy, mockumentary, understatement.",
+      "genres": {
+        "Comedy": 1,
+        "Drama": 0.2,
+        "Horror": -1,
+        "War": -1,
+        "Animation": -1,
+        "Documentary": -1
+      },
+      "keywords": {
+        "dark comedy": 1.7,
+        "deadpan": 2,
+        "black humor": 1.5,
+        "dry humor": 1.8,
+        "mockumentary": 1.5,
+        "understated": 1.2,
+        "socially awkward": 1.2,
+        "awkwardness": 1.2,
+        "cringe comedy": 1.8,
+        "ironic": 0.9,
+        "irony": 0.9,
+        "absurdism": 1.1,
+        "absurd": 0.9,
+        "surreal comedy": 1.2,
+        "satire": 0.8
+      },
+      "compoundKeywords": [
+        "deadpan comedy",
+        "social satire",
+        "political satire",
+        "media satire"
+      ],
+      "minFit": 1.9,
+      "needHit": 0.8
+    },
+    {
+      "id": "gentle",
+      "name": "🫖 Gentle",
+      "word": "Gentle",
+      "blurb": "Soft, kind, unhurried. Nobody gets hurt on purpose.",
+      "genres": {
+        "Drama": 0.3,
+        "Comedy": 0.5,
+        "Romance": 0.3,
+        "Family": 0.3,
+        "Animation": 0.2,
+        "Music": 0.2,
+        "Horror": -3,
+        "Thriller": -2,
+        "Crime": -1.5,
+        "War": -2,
+        "Action": -1.5,
+        "Documentary": -0.3,
+        "Mystery": -0.8,
+        "Science Fiction": -0.3
+      },
+      "keywords": {
+        "gentle": 1.8,
+        "comforting": 1.5,
+        "heartwarming": 1.4,
+        "heart warming": 1.4,
+        "kindness": 1.2,
+        "slice of life": 1,
+        "quiet life": 1.2,
+        "tenderness": 1.2,
+        "tender": 0.8,
+        "small town": 0.6,
+        "community": 0.5,
+        "wholesome": 1.3,
+        "feel good": 1,
+        "feel-good": 1,
+        "charming": 0.6,
+        "bittersweet": 0.4,
+        "sweet": 0.5,
+        "murder": -1.5,
+        "violence": -1,
+        "gore": -2,
+        "suicide": -2,
+        "rape": -3,
+        "torture": -2,
+        "holocaust": -3,
+        "genocide": -3,
+        "serial killer": -2
+      },
+      "compoundKeywords": [
+        "gentle giant",
+        "small town america",
+        "small town girl",
+        "farming community",
+        "black community",
+        "small community",
+        "spiritual community",
+        "charming man"
+      ],
+      "minFit": 2,
+      "needHit": 1,
+      "lists": {
+        "1fC0S": 2.5
+      }
+    },
+    {
+      "id": "rainy",
+      "name": "🌧️ Rainy day",
+      "word": "Rainy day",
+      "blurb": "Grey light, a hot drink, a slow film with a heart.",
+      "genres": {
+        "Drama": 0.4,
+        "Romance": 0.3,
+        "Comedy": 0.1,
+        "Horror": -2,
+        "Action": -1.5,
+        "Thriller": -0.8,
+        "Animation": -0.5,
+        "Documentary": -0.3
+      },
+      "keywords": {
+        "rain": 1.6,
+        "rainstorm": 1.4,
+        "raincoat": 1.2,
+        "stormy night": 1,
+        "fog": 0.8,
+        "foggy night": 1,
+        "melancholy": 1.2,
+        "loneliness": 0.9,
+        "lonely": 0.8,
+        "autumn": 1.2,
+        "contemplative cinema": 1.2,
+        "contemplative": 0.9,
+        "bittersweet": 0.8,
+        "nostalgic": 0.6
+      },
+      "compoundKeywords": [
+        "sunshine through the rain",
+        "heavy rain",
+        "caught in the rain",
+        "queer loneliness",
+        "lonely woman",
+        "lonely man",
+        "nostalgic memory"
+      ],
+      "minFit": 1.5,
+      "needHit": 1
+    },
+    {
+      "id": "road",
+      "name": "🛣️ Road trip",
+      "word": "Road",
+      "blurb": "A car, a map, nowhere to be.",
+      "genres": {
+        "Adventure": 0.3,
+        "Drama": 0.2,
+        "Comedy": 0.3,
+        "Horror": -1,
+        "War": -1.5,
+        "Documentary": -0.3
+      },
+      "keywords": {
+        "road movie": 2,
+        "road trip": 1.8,
+        "roadtrip": 1.8,
+        "on the road": 1.3,
+        "hitchhiker": 1,
+        "hitchhiking": 1,
+        "drifter": 0.7,
+        "car journey": 1,
+        "cross country trip": 1.3,
+        "bus trip": 0.8,
+        "travelogue": 0.7,
+        "journey": 0.5,
+        "nomad": 0.6,
+        "travel": 0.4
+      },
+      "compoundKeywords": [
+        "journey around the world",
+        "journey on foot",
+        "dreamlike journey",
+        "train travel"
+      ],
+      "minFit": 2,
+      "needHit": 1,
+      "lists": {
+        "BiIyG": 3
+      }
+    },
+    {
+      "id": "summer",
+      "name": "🏖️ Summer",
+      "word": "Summer",
+      "blurb": "Sun, salt and long afternoons. Heat you can feel through the screen.",
+      "genres": {
+        "Romance": 0.3,
+        "Comedy": 0.3,
+        "Drama": 0.2,
+        "Adventure": 0.2,
+        "Horror": -1,
+        "War": -1.5,
+        "Crime": -0.5,
+        "Thriller": -0.5
+      },
+      "keywords": {
+        "summer vacation": 1.6,
+        "summer": 1.5,
+        "summer job": 1,
+        "beach": 1,
+        "beach house": 1.2,
+        "swimming pool": 0.9,
+        "seaside": 1,
+        "seaside town": 1,
+        "vacation": 0.8,
+        "family vacation": 0.9,
+        "tropical island": 0.8,
+        "exotic island": 0.8,
+        "island": 0.4,
+        "heatwave": 1.1,
+        "sun": 0.6,
+        "sunlight": 0.6,
+        "sunset": 0.4,
+        "midsummer": 1.1,
+        "concentration camp": -3
+      },
+      "compoundKeywords": [
+        "summer camp",
+        "summer romance",
+        "summer cottage",
+        "remote island",
+        "isolated island",
+        "deserted island",
+        "pacific island",
+        "greek island"
+      ],
+      "minFit": 2,
+      "needHit": 1,
+      "lists": {
+        "cVG0q": 3,
+        "nzQyi": 3,
+        "Ig3Kg": 3,
+        "hGHRq": 3
+      }
+    },
+    {
+      "id": "slasher",
+      "name": "🔪 Slasher",
+      "word": "Slasher",
+      "blurb": "A mask, a body count, a final girl.",
+      "genres": {
+        "Horror": 1.5,
+        "Thriller": 0.3,
+        "Mystery": 0.2,
+        "Comedy": -0.2,
+        "Family": -3,
+        "Animation": -1.5,
+        "Documentary": -2,
+        "Romance": -0.5
+      },
+      "keywords": {
+        "slasher": 2.2,
+        "proto-slasher": 2,
+        "final girl": 2,
+        "masked killer": 1.5,
+        "summer camp": 0.5,
+        "psycho killer": 1,
+        "stalker": 0.4,
+        "teen horror": 0.8,
+        "serial killer": 0.3,
+        "splatter horror": 0.6,
+        "gore": 0.3,
+        "killer": 0.2
+      },
+      "compoundKeywords": [
+        "slasher horror",
+        "teen slasher",
+        "female serial killer",
+        "blood and gore",
+        "extreme gore",
+        "copycat killer",
+        "mysterious killer",
+        "teenage killer"
+      ],
+      "minFit": 3,
+      "requireGenre": [
+        "Horror"
+      ],
+      "needHit": 1.5
+    },
+    {
+      "id": "horror-comedy",
+      "name": "🧟 Horror-comedy",
+      "word": "Horror-comedy",
+      "blurb": "Screams and laughs in the same scene.",
+      "genres": {
+        "Horror": 1.2,
+        "Comedy": 1.2,
+        "Fantasy": 0.1,
+        "Family": -1,
+        "Drama": -0.6,
+        "Documentary": -2
+      },
+      "keywords": {
+        "comedy horror": 2,
+        "horror comedy": 2,
+        "horror spoof": 1.6,
+        "horror parody": 1.6,
+        "zombie comedy": 1.6,
+        "splatter comedy": 1.6,
+        "vampire comedy": 1.6,
+        "campy": 0.5,
+        "dark comedy": 0.3,
+        "parody": 0.4,
+        "spoof": 0.4
+      },
+      "compoundKeywords": [
+        "dracula parody",
+        "vampire parody",
+        "james bond spoof",
+        "news spoof",
+        "superhero spoof"
+      ],
+      "minFit": 2.4,
+      "requireGenre": [
+        "Horror"
+      ]
+    },
+    {
+      "id": "adrenaline",
+      "name": "🔥 Adrenaline",
+      "word": "Adrenaline",
+      "blurb": "Chases, fights, and the clock running down.",
+      "genres": {
+        "Action": 2.3,
+        "Thriller": 0.6,
+        "Adventure": 0.6,
+        "Crime": 0.3,
+        "War": 0.2,
+        "Science Fiction": 0.2,
+        "Drama": -0.5,
+        "Romance": -0.6,
+        "Documentary": -2,
+        "Animation": -0.3,
+        "Family": -1,
+        "Comedy": -0.2,
+        "Music": -1
+      },
+      "keywords": {
+        "car chase": 1,
+        "chase": 0.8,
+        "police chase": 1,
+        "foot chase": 0.9,
+        "boat chase": 0.9,
+        "martial arts": 0.9,
+        "shootout": 0.9,
+        "gunfight": 0.9,
+        "gun battle": 0.9,
+        "explosion": 0.8,
+        "heist": 0.6,
+        "hostage": 0.7,
+        "hostage situation": 0.8,
+        "action hero": 1,
+        "assassin": 0.6,
+        "sword fight": 0.7,
+        "fight": 0.4,
+        "survival": 0.4,
+        "revenge": 0.4,
+        "vigilante": 0.4,
+        "disaster": 0.5,
+        "contemplative": -1
+      },
+      "compoundKeywords": [
+        "motorcycle chase",
+        "martial arts master",
+        "mixed martial arts (mma)",
+        "martial arts tournament",
+        "police shootout",
+        "bank heist",
+        "heist gone wrong",
+        "jewelry heist",
+        "diamond heist",
+        "art heist",
+        "money heist",
+        "gold heist",
+        "botched heist",
+        "hostage-taking",
+        "liberation of hostage",
+        "held hostage",
+        "female assassin",
+        "professional assassin",
+        "fight for survival",
+        "street fight",
+        "bar fight",
+        "gun fight",
+        "struggle for survival",
+        "survival thriller",
+        "survival at sea",
+        "revenge killing",
+        "revenge thriller",
+        "revenge motive",
+        "vigilante justice",
+        "masked vigilante",
+        "natural disaster",
+        "disaster movie"
+      ],
+      "minFit": 2.2
+    },
+    {
+      "id": "swoon",
+      "name": "💘 Love stories",
+      "word": "Swoon",
+      "blurb": "Falling, wanting, losing. The big romances and the small ones.",
+      "genres": {
+        "Romance": 2.3,
+        "Drama": 0.3,
+        "Comedy": 0.2,
+        "Horror": -1.5,
+        "Action": -1,
+        "War": -0.8,
+        "Documentary": -1.5,
+        "Thriller": -0.5,
+        "Crime": -0.5,
+        "Animation": -0.2
+      },
+      "keywords": {
+        "love triangle": 0.7,
+        "falling in love": 1,
+        "love at first sight": 1.1,
+        "first love": 1,
+        "unrequited love": 0.9,
+        "forbidden love": 1,
+        "tragic love": 1,
+        "love affair": 0.7,
+        "new love": 0.8,
+        "young love": 0.8,
+        "teenage romance": 0.8,
+        "romantic": 0.7,
+        "romance": 0.7,
+        "romantic drama": 0.8,
+        "rekindled romance": 0.9,
+        "love of one's life": 1,
+        "lovesickness": 0.8,
+        "lovers": 0.6,
+        "fugitive lovers": 0.8,
+        "kiss": 0.4
+      },
+      "compoundKeywords": [
+        "romantic rivalry",
+        "romantic triangle",
+        "romantic fantasy",
+        "romantic dramedy",
+        "romantic rival",
+        "dark romance",
+        "gay romance",
+        "gothic romance",
+        "interracial romance",
+        "tragic romance",
+        "erotic romance",
+        "interspecies romance",
+        "african american romance",
+        "passion and romance",
+        "workplace romance",
+        "historical romance",
+        "summer romance",
+        "unexpected romance",
+        "unlikely romance",
+        "high school romance",
+        "teen romance",
+        "queer romance",
+        "star crossed lovers",
+        "former lovers",
+        "enemies to lovers",
+        "young lovers",
+        "first kiss"
+      ],
+      "minFit": 2.2
+    },
+    {
+      "id": "twotalk",
+      "name": "🗣️ Two people talking",
+      "word": "Two people talking",
+      "blurb": "A room, two voices, and nothing else needed.",
+      "genres": {
+        "Drama": 0.5,
+        "Romance": 0.3,
+        "Comedy": 0.2,
+        "Action": -2,
+        "Horror": -1.5,
+        "Adventure": -1.5,
+        "Science Fiction": -0.5,
+        "War": -1,
+        "Animation": -2,
+        "Documentary": -1
+      },
+      "keywords": {
+        "conversation": 1.6,
+        "long conversation": 1.5,
+        "small talk": 1.2,
+        "smalltalk": 1.2,
+        "monologue": 0.9,
+        "real time": 1,
+        "one location": 1,
+        "single location": 1,
+        "estranged couple": 1.2,
+        "divorced couple": 1.2,
+        "bickering couple": 1.2,
+        "married couple": 1,
+        "elderly couple": 1,
+        "lesbian couple": 0.8,
+        "couple": 0.7
+      },
+      "compoundKeywords": [
+        "religious conversation",
+        "long-married couple",
+        "young couple",
+        "runaway couple",
+        "engaged couple",
+        "traveling couple",
+        "interracial couple"
+      ],
+      "minFit": 1.6,
+      "needHit": 1.2
+    },
+    {
+      "id": "comingofage",
+      "name": "🧒 Growing up",
+      "word": "Growing up",
+      "blurb": "First loves, last summers, the year everything changes.",
+      "genres": {
+        "Drama": 0.4,
+        "Comedy": 0.2,
+        "Romance": 0.2,
+        "Family": 0.1,
+        "Horror": -1.5,
+        "Action": -1.5,
+        "War": -1.5,
+        "Thriller": -0.8,
+        "Science Fiction": -0.8,
+        "Documentary": -1,
+        "Crime": -0.6
+      },
+      "keywords": {
+        "coming of age": 2,
+        "adolescence": 1.2,
+        "teenage girl": 0.8,
+        "teenage boy": 0.8,
+        "teenager": 0.6,
+        "high school": 0.5,
+        "puberty": 1,
+        "teenage love": 0.9,
+        "teenage crush": 0.9,
+        "teenage protagonist": 0.9,
+        "first love": 0.7,
+        "growing up": 1.2,
+        "childhood friends": 0.6,
+        "boarding school": 0.5,
+        "teenage sexuality": 0.8,
+        "teenage romance": 0.8,
+        "teenage rebellion": 0.8,
+        "rebellious youth": 0.6,
+        "school life": 0.5,
+        "high school graduation": 0.6,
+        "prom": 0.5
+      },
+      "compoundKeywords": [
+        "late coming of age",
+        "a coming of age story",
+        "disturbed teenager",
+        "homeless teenager",
+        "high school student",
+        "japanese high school",
+        "high school friends",
+        "high school sports",
+        "junior high school",
+        "high school girl",
+        "high school romance",
+        "high school rivalry",
+        "high school sweetheart",
+        "high school athlete",
+        "girls' boarding school",
+        "boys' boarding school"
+      ],
+      "minFit": 1.8,
+      "needHit": 1
+    },
+    {
+      "id": "docs",
+      "name": "🎥 Documentaries",
+      "word": "Documentary",
+      "blurb": "Real people, real places. Music documentaries included.",
+      "genres": {
+        "Documentary": 3,
+        "Music": 0.8,
+        "Drama": -0.5,
+        "Comedy": -0.2
+      },
+      "keywords": {
+        "music documentary": 1.2,
+        "concert film": 1,
+        "concert": 0.8,
+        "musician": 0.8,
+        "jazz": 0.4,
+        "rock music": 0.5,
+        "band": 0.4,
+        "hip-hop": 0.4
+      },
+      "compoundKeywords": [
+        "concert footage",
+        "rock concert",
+        "music concert",
+        "live concert",
+        "benefit concert",
+        "jazz singer or musician",
+        "street musician",
+        "struggling musician",
+        "african american musician",
+        "jazz club",
+        "jazz history",
+        "rock band",
+        "punk band",
+        "boy band",
+        "marching band",
+        "girl band",
+        "all girl band",
+        "music band"
+      ],
+      "minFit": 2,
+      "where": {
+        "genresAny": [
+          "Documentary"
+        ]
+      },
+      "lists": {
+        "1aHbm": 2.5,
+        "iw-docs-2024": 2.5,
+        "1R3EO": 1.5,
+        "8RGgu": 1.5
+      }
+    },
+    {
+      "id": "midnight",
+      "name": "🌙 Cult and strange",
+      "word": "Cult and strange",
+      "blurb": "Cult favourites, late-night oddities, films that don't care what you think.",
+      "genres": {
+        "Horror": 0.3,
+        "Comedy": 0.1,
+        "Science Fiction": 0.3,
+        "Fantasy": 0.3,
+        "Family": -2,
+        "Animation": -0.8,
+        "Documentary": -1.5
+      },
+      "keywords": {
+        "cult film": 2.2,
+        "psychotronic": 1.8,
+        "psychotronic film": 1.8,
+        "grindhouse": 1.8,
+        "exploitation": 1.4,
+        "sexploitation": 1.2,
+        "b movie": 1.6,
+        "campy": 1.4,
+        "so bad it’s good": 1.8,
+        "trash": 0.8,
+        "surrealism": 0.9,
+        "surreal": 0.9,
+        "bizarre": 1.2,
+        "midnight movie": 2.2,
+        "bad taste": 1.2
+      },
+      "compoundKeywords": [
+        "nazisploitation (nazi exploitation film)",
+        "experimental surrealism",
+        "czech surrealism",
+        "suburban surrealism",
+        "bizarre creatures"
+      ],
+      "minFit": 1.6,
+      "needHit": 1
+    },
+    {
+      "id": "hidden",
+      "name": "💎 Hidden gems",
+      "word": "Hidden gem",
+      "blurb": "Loved by the few who found them.",
+      "genres": {},
+      "keywords": {},
+      "minFit": 0,
+      "where": {
+        "lb": {
+          "min": 3.8
+        },
+        "lbCount": {
+          "max": 9999
+        }
+      }
+    },
+    {
+      "id": "anthology",
+      "name": "🧩 Anthology films",
+      "word": "Anthology",
+      "blurb": "Several stories, one film.",
+      "genres": {},
+      "keywords": {
+        "anthology": 2.5,
+        "portmanteau": 2,
+        "multi-segment": 1.5,
+        "episodic movie": 1.2,
+        "vignette": 1,
+        "episodic": 0.9,
+        "multiple storylines": 0.8,
+        "compilation": 0.6
+      },
+      "compoundKeywords": [
+        "horror anthology",
+        "short compilation"
+      ],
+      "minFit": 1.6,
+      "needHit": 1.2
+    },
+    {
+      "id": "winter",
+      "name": "🎄 Winter and Christmas",
+      "word": "Winter",
+      "blurb": "Snow, fireplaces and holiday films.",
+      "genres": {
+        "Family": 0.2,
+        "Romance": 0.2,
+        "Comedy": 0.1
+      },
+      "keywords": {
+        "christmas": 1.8,
+        "christmas eve": 1.8,
+        "christmas party": 1.2,
+        "santa claus": 1.4,
+        "snow": 1,
+        "winter": 1.2,
+        "snowstorm": 0.8,
+        "blizzard": 0.8,
+        "new year's eve": 0.8,
+        "ice skating": 0.8,
+        "hanukkah": 1.2,
+        "holiday season": 1.2
+      },
+      "compoundKeywords": [
+        "christmas tree",
+        "christmas horror",
+        "snow skiing"
+      ],
+      "minFit": 2.2,
+      "needHit": 1,
+      "lists": {
+        "r2kLE": 2.5,
+        "qJwme": 2.5,
+        "qzvQW": 2.5,
+        "qzuGc": 2.5,
+        "jtzhQ": 2.5,
+        "ek1Zm": 2.5
+      }
+    },
+    {
+      "id": "visual",
+      "name": "🎨 Visually striking",
+      "word": "Visual",
+      "blurb": "Pictures first: composition, colour and light.",
+      "genres": {
+        "Fantasy": 0.3,
+        "Science Fiction": 0.2,
+        "Documentary": -1.5
+      },
+      "keywords": {
+        "surrealism": 2.1,
+        "surreal": 1.4,
+        "avant-garde": 2.1,
+        "experimental film": 2.1,
+        "experimental": 1.2,
+        "psychedelic": 2,
+        "dreamlike": 2.1,
+        "long take": 2.1,
+        "visual poetry": 2.4
+      },
+      "compoundKeywords": [
+        "experimental surrealism",
+        "czech surrealism",
+        "suburban surrealism",
+        "experimental cinema",
+        "experimental documentary",
+        "experimental narrative",
+        "dreamlike journey"
+      ],
+      "minFit": 2,
+      "directors": {
+        "12453": 3,
+        "30715": 3,
+        "21183": 3,
+        "240": 3,
+        "56512": 3,
+        "55119": 3,
+        "5655": 3,
+        "607": 2.6,
+        "137427": 2.6
+      },
+      "lists": {
+        "GAsK": 2.5,
+        "2mL0U": 2.5,
+        "100b4": 1.5
+      }
+    }
+  ],
+  "friends": [
+    {
+      "user": "friend-a",
+      "name": "Friend A"
+    },
+    {
+      "user": "friend-b",
+      "name": "Friend B"
+    },
+    {
+      "user": "friend-c",
+      "name": "Friend C"
+    },
+    {
+      "user": "friend-d",
+      "name": "Friend D"
+    },
+    {
+      "user": "friend-e",
+      "name": "Friend E"
+    },
+    {
+      "user": "friend-f",
+      "name": "Friend F"
+    },
+    {
+      "user": "friend-g",
+      "name": "Friend G"
+    }
+  ],
+  "ratingsIgnored": {
+    "users": [],
+    "rule": {
+      "share": 0.95,
+      "minRatings": 50
+    }
+  },
+  "friendLists": [
+    {
+      "owner": "friend-c",
+      "slug": "br",
+      "name": "Brazil"
+    },
+    {
+      "owner": "friend-c",
+      "slug": "horror",
+      "name": "Horror"
+    },
+    {
+      "owner": "friend-c",
+      "slug": "comedia",
+      "name": "Comedy"
+    },
+    {
+      "owner": "friend-a",
+      "slug": "hypnotic-movies-shot-in-an-eerie-minor-key",
+      "name": "Hypnotic movies shot in an eerie minor key",
+      "word": "Hypnotic"
+    },
+    {
+      "owner": "friend-a",
+      "slug": "love-is-a-secret-society",
+      "name": "Love is a secret society",
+      "word": "Love Society"
+    },
+    {
+      "owner": "friend-e",
+      "slug": "favorites",
+      "name": "Favorites"
+    }
+  ],
+  "friendRows": {
+    "love": {
+      "name": "👥 Friends loved, you haven't seen",
+      "minFriends": 2,
+      "minStars": 4,
+      "soloStars": 4.5,
+      "resolveMax": 400
+    },
+    "top": {
+      "name": "⭐ {name}'s top picks",
+      "word": "Top · {name}",
+      "minStars": 4.5
+    },
+    "session": {
+      "name": "🎟️ Watch together with {name}",
+      "word": "Watch together · {name}",
+      "minShared": 1
+    },
+    "all": {
+      "_doc": "Marco, 28/10/2026 (Discover proposal 5): the option 'All friends loved' of the Friends menu of the Worker's index (build.js, lib/friends-option.js): every film in the index that ANYONE of the crowd (the people you follow plus the configured friends) rated at the bar or more and that you have not seen, in the order of the index and spread over the directors. The bar is friendRows.love.minStars unless `minStars` is written here. Ratings ignored (ratingsIgnored) love nothing. Without `word` the option is not made. It is a direct collection, like the other friends options: no recommendation rule. Sits after the Top options and before Watch together.",
+      "word": "All friends loved"
+    },
+    "list": {
+      "name": "📂 {list} ({owner})",
+      "word": "{list} ({owner})"
+    }
+  },
+  "directorsLoved": {
+    "size": 100,
+    "_doc": "Loved by your directors (lib/directors-loved.js, Marco 11/10/2026). Favourites: your ratings (minFilms rated, average minAvg) + include + followed accounts mapped below; exclude always wins. defaultWeight: the taste weight given to an included or followed director with less of their own (about a director you rate 4.3 over 5 films).",
+    "file": "data/directors-loved.json",
+    "minFilms": 3,
+    "minAvg": 4.0,
+    "defaultWeight": 0.5,
+    "perDirector": 2,
+    "menuMin": 5,
+    "include": [],
+    "exclude": [
+      "Jeff Tremaine",
+      "Jimmy Chin"
+    ],
+    "accounts": {
+      "wimwenders": "Wim Wenders",
+      "francisfcoppola": "Francis Ford Coppola",
+      "lilfilm": "Sean Baker"
+    },
+    "aliases": {
+      "Alejandro G. Iñárritu": "Alejandro González Iñárritu"
+    },
+    "labels": {}
+  },
+  "board": {
+    "order": [
+      "tonight",
+      "watchlist",
+      "my-series",
+      "top-picks",
+      "friends-watchlist",
+      "newforyou",
+      "friends-love",
+      "short",
+      "escape",
+      "fromlists",
+      "directors",
+      "untried-directors",
+      "directors-loved",
+      "criterion",
+      "awards",
+      "friends-split",
+      "comingofage",
+      "oldfriends",
+      "small-kind",
+      "out-there",
+      "visual",
+      "comedy",
+      "winter",
+      "reinvent",
+      "adrenaline",
+      "wicked",
+      "swoon",
+      "twotalk",
+      "midnight",
+      "hidden",
+      "letin",
+      "after-midnight",
+      "anthology",
+      "slow",
+      "docs",
+      "1970s",
+      "1980s",
+      "1990s",
+      "2000s",
+      "2010s",
+      "2020s",
+      "latin-america",
+      "europe",
+      "british",
+      "nordic",
+      "eastern-bloc",
+      "middle-east",
+      "india",
+      "asia",
+      "africa",
+      "sight-sound",
+      "lb250",
+      "actor-week",
+      "friends-month",
+      "friends-week"
+    ],
+    "names": {
+      "tonight": "🎯 Tonight: 10 picks",
+      "watchlist": "📋 Your watchlist, newest first",
+      "my-series": "📺 Series to watch",
+      "top-picks": "⭐ Friend's top picks",
+      "friends-watchlist": "🤝 Friends want to see this too",
+      "newforyou": "🆕 New releases for you",
+      "friends-love": "👥 Friends loved it",
+      "short": "⏱️ Under 95 minutes",
+      "escape": "🎳 Fun and adventure",
+      "fromlists": "🎞️ Best of your lists",
+      "directors": "🎬 From directors you love",
+      "untried-directors": "🧭 Great directors you've never seen",
+      "directors-loved": "🎥 Your directors' favourite films",
+      "criterion": "📚 Criterion Closet picks",
+      "awards": "🏆 Cannes, Venice and Berlin winners",
+      "friends-split": "🆚 Friends can't agree",
+      "comingofage": "🧒 Growing up",
+      "oldfriends": "📼 Worth watching again",
+      "small-kind": "🫂 Warm and gentle",
+      "out-there": "🛣️ Journeys and far away",
+      "visual": "🎨 Visually striking",
+      "comedy": "😂 Comedy",
+      "winter": "🎄 Winter and Christmas",
+      "reinvent": "🧭 Starting over",
+      "adrenaline": "🔥 Action and thrills",
+      "wicked": "🎃 Horror",
+      "swoon": "💘 Love stories",
+      "twotalk": "🗣️ Two people talking",
+      "midnight": "🌙 Cult and strange",
+      "hidden": "💎 Hidden gems",
+      "letin": "🌧️ Sad and beautiful",
+      "after-midnight": "🌃 Night, crime and mystery",
+      "anthology": "🧩 Anthology films",
+      "slow": "🕯️ Slow and quiet",
+      "docs": "🎥 Documentaries",
+      "1970s": "🕰️ 1970s",
+      "1980s": "📼 1980s",
+      "1990s": "💿 1990s",
+      "2000s": "📀 2000s",
+      "2010s": "📱 2010s",
+      "2020s": "🆕 2020s",
+      "latin-america": "🌎 Latin America",
+      "europe": "🇪🇺 Europe",
+      "british": "🇬🇧 British and Irish cinema",
+      "nordic": "🧊 Nordic countries",
+      "eastern-bloc": "🧱 Eastern Europe and Russia",
+      "middle-east": "🕌 Middle East",
+      "india": "🇮🇳 India",
+      "asia": "🌏 East and Southeast Asia",
+      "africa": "🌍 Africa",
+      "sight-sound": "🎓 Sight & Sound greatest films",
+      "lb250": "🗳️ Letterboxd Top 250",
+      "actor-week": "🧑‍🎤 Actor of the week",
+      "friends-month": "📈 Friends watched this month",
+      "friends-week": "👥 Friends watched this week"
+    },
+    "place": {
+      "friends-week": "menu"
+    },
+    "legacyMoods": [
+      "lift",
+      "escape",
+      "reinvent",
+      "letin",
+      "night",
+      "wicked",
+      "wander",
+      "slow",
+      "music"
+    ],
+    "moodMenu": [
+      "lift",
+      "escape",
+      "reinvent",
+      "letin",
+      "night",
+      "wicked",
+      "wander",
+      "slow",
+      "music",
+      "noir",
+      "whodunit",
+      "mindbender",
+      "lol",
+      "deadpan",
+      "gentle",
+      "rainy",
+      "road",
+      "summer",
+      "slasher",
+      "horror-comedy",
+      "adrenaline",
+      "swoon",
+      "twotalk",
+      "comingofage",
+      "docs",
+      "midnight",
+      "hidden",
+      "anthology",
+      "winter",
+      "visual",
+      "friends-week"
+    ],
+    "menuLabels": {
+      "friends-week": "Friends this week"
+    },
+    "shuffle": {
+      "front": 8,
+      "tau": 15,
+      "penalty": 10,
+      "maxFronts": 3,
+      "maxLeads": 1,
+      "memory": "file",
+      "memoryDays": 7,
+      "halfLifeDays": 2,
+      "keep": [
+        "tonight",
+        "watchlist"
+      ]
+    },
+    "countries": [
+      "United States",
+      "France",
+      "United Kingdom",
+      "Japan",
+      "Germany",
+      "Italy",
+      "Canada",
+      "Brazil",
+      "Soviet Union",
+      "Hong Kong",
+      "Belgium",
+      "Spain",
+      "South Korea",
+      "Sweden",
+      "Taiwan",
+      "Australia",
+      "India",
+      "China",
+      "Denmark",
+      "Mexico",
+      "Czechoslovakia",
+      "Poland",
+      "Switzerland",
+      "Argentina",
+      "Iran",
+      "Netherlands",
+      "Portugal",
+      "Austria",
+      "Hungary",
+      "Ireland",
+      "Philippines",
+      "Russia",
+      "Finland",
+      "Norway",
+      "New Zealand",
+      "Greece",
+      "Romania",
+      "Yugoslavia",
+      "Chile",
+      "Turkey",
+      "Thailand",
+      "Czechia",
+      "Israel",
+      "Indonesia",
+      "Iceland",
+      "Senegal"
+    ],
+    "rows": [
+      {
+        "id": "1970s",
+        "kind": "filter",
+        "where": {
+          "years": {
+            "min": 1970,
+            "max": 1979
+          }
+        }
+      },
+      {
+        "id": "1980s",
+        "kind": "filter",
+        "where": {
+          "years": {
+            "min": 1980,
+            "max": 1989
+          }
+        }
+      },
+      {
+        "id": "1990s",
+        "kind": "filter",
+        "where": {
+          "years": {
+            "min": 1990,
+            "max": 1999
+          }
+        }
+      },
+      {
+        "id": "2000s",
+        "kind": "filter",
+        "where": {
+          "years": {
+            "min": 2000,
+            "max": 2009
+          }
+        }
+      },
+      {
+        "id": "2010s",
+        "kind": "filter",
+        "where": {
+          "years": {
+            "min": 2010,
+            "max": 2019
+          }
+        }
+      },
+      {
+        "id": "2020s",
+        "kind": "filter",
+        "where": {
+          "years": {
+            "min": 2020,
+            "max": 2029
+          }
+        }
+      },
+      {
+        "id": "europe",
+        "kind": "filter",
+        "where": {
+          "region": "europe"
+        }
+      },
+      {
+        "id": "british",
+        "kind": "filter",
+        "where": {
+          "region": "british"
+        }
+      },
+      {
+        "id": "nordic",
+        "kind": "filter",
+        "where": {
+          "region": "nordic"
+        }
+      },
+      {
+        "id": "eastern-bloc",
+        "kind": "filter",
+        "where": {
+          "region": "eastern-bloc"
+        }
+      },
+      {
+        "id": "middle-east",
+        "kind": "filter",
+        "where": {
+          "region": "middle-east"
+        }
+      },
+      {
+        "id": "india",
+        "kind": "filter",
+        "where": {
+          "region": "india"
+        }
+      },
+      {
+        "id": "asia",
+        "kind": "filter",
+        "where": {
+          "region": "asia"
+        }
+      },
+      {
+        "id": "africa",
+        "kind": "filter",
+        "where": {
+          "region": "africa"
+        }
+      },
+      {
+        "id": "brazil-now",
+        "kind": "filter",
+        "part": true,
+        "where": {
+          "countries": [
+            "BR"
+          ],
+          "years": {
+            "min": 2001
+          }
+        }
+      },
+      {
+        "id": "brazil-classic",
+        "kind": "filter",
+        "part": true,
+        "where": {
+          "countries": [
+            "BR"
+          ],
+          "years": {
+            "max": 2000
+          }
+        }
+      },
+      {
+        "id": "latam-hisp",
+        "kind": "filter",
+        "part": true,
+        "where": {
+          "region": "latam-hisp"
+        }
+      },
+      {
+        "id": "latin-america",
+        "kind": "combine",
+        "parts": [
+          "brazil-now",
+          "brazil-classic",
+          "latam-hisp"
+        ]
+      },
+      {
+        "id": "after-midnight",
+        "kind": "combine",
+        "parts": [
+          "night",
+          "noir",
+          "whodunit",
+          "mindbender"
+        ],
+        "tune": "taste"
+      },
+      {
+        "id": "small-kind",
+        "kind": "combine",
+        "parts": [
+          "gentle",
+          "lift",
+          "rainy"
+        ],
+        "boost": [
+          {
+            "part": "rainy",
+            "weekdays": [
+              0
+            ],
+            "x": 2
+          }
+        ]
+      },
+      {
+        "id": "out-there",
+        "kind": "combine",
+        "parts": [
+          "road",
+          "wander",
+          "summer"
+        ],
+        "boost": [
+          {
+            "part": "summer",
+            "months": [
+              12,
+              1,
+              2
+            ],
+            "x": 2
+          }
+        ]
+      },
+      {
+        "id": "comedy",
+        "kind": "combine",
+        "parts": [
+          "lol",
+          "deadpan"
+        ]
+      },
+      {
+        "id": "wicked",
+        "kind": "combine",
+        "parts": [
+          "wicked",
+          "slasher",
+          "horror-comedy"
+        ]
+      },
+      {
+        "id": "top-picks",
+        "kind": "top-picks",
+        "people": [
+          "friend-f",
+          "friend-g",
+          "friend-a",
+          "friend-e",
+          "friend-d",
+          "friend-c",
+          "friend-b"
+        ],
+        "minStars": 4.5,
+        "fillStars": 4,
+        "size": 100
+      },
+      {
+        "id": "friends-split",
+        "kind": "friends-split",
+        "minRatings": 3,
+        "minSd": 1.0
+      },
+      {
+        "id": "friends-watchlist",
+        "kind": "friends-watchlist",
+        "minPeople": 1,
+        "onlyConfiguredFriends": false
+      },
+      {
+        "id": "friends-month",
+        "kind": "friends-month",
+        "days": 30
+      },
+      {
+        "id": "untried-directors",
+        "kind": "untried-directors",
+        "minFilms": 3,
+        "minStars": 3.8,
+        "perDirector": 3,
+        "rotate": "week"
+      },
+      {
+        "id": "actor-week",
+        "kind": "actor-week",
+        "minRated": 3,
+        "minAvg": 4,
+        "minEligible": 5
+      },
+      {
+        "id": "awards",
+        "kind": "awards",
+        "sources": [
+          {
+            "file": "data/cannes-critic-prizes.json",
+            "label": "Cannes",
+            "prizes": [
+              "Palme d'Or",
+              "Palme d'Or especial",
+              "Palme retroativa 1939",
+              "Grand Prix du Festival",
+              "Grand Prix",
+              "Prêmio do Júri"
+            ]
+          },
+          {
+            "file": "data/venice-golden-lion.json",
+            "label": "Venice"
+          },
+          {
+            "file": "data/berlin-golden-bear.json",
+            "label": "Berlin"
+          }
+        ]
+      },
+      {
+        "id": "criterion",
+        "kind": "list",
+        "listIds": [
+          "snFyM",
+          "tp03m"
+        ]
+      },
+      {
+        "id": "sight-sound",
+        "kind": "list",
+        "listIds": [
+          "jlyNq",
+          "jrR92"
+        ]
+      },
+      {
+        "id": "lb250",
+        "kind": "list",
+        "listIds": [
+          "nVqt6"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+#!/bin/bash
+# Test double for the Python of the nightly (test/noturna-mac.test.js, 21/10/2026). Only the Python tests and the cover self-test are faked;
+# `-I ...` (the JSON check after a rebase) goes to the real Python, PYTHON_REAL in controle.env.
+#   FAKE_FALHA=selo    tools/selo/render.py --self-test exits 1        FAKE_FALHA=unittest   the unit tests exit 1
+D=$(cd "$(dirname "$0")" && pwd)
+if [ -f "$D/controle.env" ]; then . "$D/controle.env"; fi
+mkdir -p "$D/chamadas"
+printf 'python3 %s\n' "$*" >> "$D/chamadas/python.log"
+case "${1:-}" in
+  -I) exec "$PYTHON_REAL" "$@" ;;
+esac
+case "$*" in
+  *"tools/selo/render.py --self-test"*)
+    if [ "${FAKE_FALHA-}" = selo ]; then echo "self-test falhou (fake)" >&2; exit 1; fi
+    echo "5 covers drawn"; exit 0 ;;
+  *"-m unittest"*)
+    # review of 21/10/2026 (C2): FAKE_DORME=unittest hangs the unit tests (pid in chamadas/unittest.pid) so that the test can prove the step's time limit
+    if [ "${FAKE_DORME-}" = unittest ]; then echo $$ > "$D/chamadas/unittest.pid"; sleep "${FAKE_DORME_S:-45}"; fi
+    if [ "${FAKE_FALHA-}" = unittest ]; then echo "FAILED (failures=1) (fake)" >&2; exit 1; fi
+    echo "OK"; exit 0 ;;
+  *"import sys, PIL"*) echo "python 3.9.6 Pillow 11.3.0"; exit 0 ;;
+esac
+exit 0

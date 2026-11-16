@@ -1,0 +1,1507 @@
+{
+ "gerado": "2026-10-13",
+ "fonte": "Wikipedia em inglês, página \"Golden Lion\", revisão oldid=1374859417 (https://en.wikipedia.org/w/index.php?title=Golden_Lion&oldid=1374859417); IMDb ids do Wikidata (P345), conferidos contra o Letterboxd; consulta em 13/10/2026",
+ "regra": "Marco, 13/10/2026: fileira Cannes, Venice and Berlin winners; só o prêmio principal de Veneza (Leão de Ouro, 1949+, ex aequo incluídos). Grand Prix/Júri e demais prêmios de Veneza ficam de fora neste lote.",
+ "premios_criticos": [
+  "Golden Lion (1949-2026)"
+ ],
+ "anos_sem_premio": [
+  {
+   "ano": 1953,
+   "motivo": "Wikipedia: júri não conseguiu decidir, prêmio declarado vazio"
+  },
+  {
+   "ano": 1956,
+   "motivo": "Wikipedia: empate Harp of Burma x Calle Mayor, júri não decidiu; prêmio declarado vazio"
+  },
+  {
+   "ano": "1969-1979",
+   "motivo": "Wikipedia: nenhum Leão de Ouro entre 1969 e 1979; a tabela lista 1969-1972 e 1979 como edições não competitivas (1973-1978 não aparecem na tabela)"
+  }
+ ],
+ "filmes": [
+  {
+   "slug": "woman-unknown",
+   "title": "Woman Unknown",
+   "year": 2026,
+   "imdb": "tt34888026",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     2026
+    ]
+   },
+   "titulo_original": "Kvinde, ukendt",
+   "diretor": "May el-Toukhy",
+   "pais": [
+    "Denmark",
+    "Sweden",
+    "Latvia"
+   ],
+   "wikipedia": "Woman Unknown (film)",
+   "wikidata": "Q140743054",
+   "wikidata_revid": 2556243468,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt34888026/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "father-mother-sister-brother",
+   "title": "Father Mother Sister Brother",
+   "year": 2025,
+   "imdb": "tt31189315",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     2025
+    ]
+   },
+   "titulo_original": "Father Mother Sister Brother",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Jim Jarmusch",
+   "pais": [
+    "United States",
+    "Ireland",
+    "France"
+   ],
+   "wikipedia": "Father Mother Sister Brother",
+   "wikidata": "Q124364048",
+   "wikidata_revid": 2551975586,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt31189315/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "the-room-next-door-2024",
+   "title": "The Room Next Door",
+   "year": 2024,
+   "imdb": "tt29439114",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     2024
+    ]
+   },
+   "titulo_original": "La habitación de al lado",
+   "diretor": "Pedro Almodóvar",
+   "pais": [
+    "Spain"
+   ],
+   "wikipedia": "The Room Next Door",
+   "wikidata": "Q124359261",
+   "wikidata_revid": 2551975687,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt29439114/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "poor-things-2023",
+   "title": "Poor Things",
+   "year": 2023,
+   "imdb": "tt14230458",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     2023
+    ]
+   },
+   "titulo_original": "Poor Things",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Yorgos Lanthimos",
+   "pais": [
+    "Ireland",
+    "United Kingdom",
+    "United States"
+   ],
+   "wikipedia": "Poor Things (film)",
+   "wikidata": "Q108760382",
+   "wikidata_revid": 2556688036,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt14230458/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "all-the-beauty-and-the-bloodshed",
+   "title": "All the Beauty and the Bloodshed",
+   "year": 2022,
+   "imdb": "tt21374850",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     2022
+    ]
+   },
+   "titulo_original": "All the Beauty and the Bloodshed",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Laura Poitras",
+   "pais": [
+    "United States"
+   ],
+   "wikipedia": "All the Beauty and the Bloodshed",
+   "wikidata": "Q113445202",
+   "wikidata_revid": 2556683483,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt21374850/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "happening",
+   "title": "Happening",
+   "year": 2021,
+   "imdb": "tt13880104",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     2021
+    ]
+   },
+   "titulo_original": "L'Événement",
+   "diretor": "Audrey Diwan",
+   "pais": [
+    "France"
+   ],
+   "wikipedia": "Happening (film)",
+   "wikidata": "Q107675028",
+   "wikidata_revid": 2552241955,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt13880104/ nomeia o mesmo tt",
+   "notas": [
+    "ano do filme: Letterboxd 2021, Wikidata P577 2002; usado o do Letterboxd (mesma regra do arquivo de Cannes)"
+   ]
+  },
+  {
+   "slug": "nomadland",
+   "title": "Nomadland",
+   "year": 2020,
+   "imdb": "tt9770150",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     2020
+    ]
+   },
+   "titulo_original": "Nomadland",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Chloé Zhao",
+   "pais": [
+    "United States"
+   ],
+   "wikipedia": "Nomadland",
+   "wikidata": "Q61740820",
+   "wikidata_revid": 2552244167,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt9770150/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "joker-2019",
+   "title": "Joker",
+   "year": 2019,
+   "imdb": "tt7286456",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     2019
+    ]
+   },
+   "titulo_original": "Joker",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Todd Phillips",
+   "pais": [
+    "United States"
+   ],
+   "wikipedia": "Joker (2019 film)",
+   "wikidata": "Q42759035",
+   "wikidata_revid": 2554146096,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt7286456/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "roma-2018",
+   "title": "Roma",
+   "year": 2018,
+   "imdb": "tt6155172",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     2018
+    ]
+   },
+   "titulo_original": "Roma",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Alfonso Cuarón",
+   "pais": [
+    "Mexico",
+    "United States"
+   ],
+   "wikipedia": "Roma (2018 film)",
+   "wikidata": "Q27959455",
+   "wikidata_revid": 2538809760,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt6155172/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "the-shape-of-water",
+   "title": "The Shape of Water",
+   "year": 2017,
+   "imdb": "tt5580390",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     2017
+    ]
+   },
+   "titulo_original": "The Shape of Water",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Guillermo del Toro",
+   "pais": [
+    "United States",
+    "Mexico"
+   ],
+   "wikipedia": "The Shape of Water",
+   "wikidata": "Q26698156",
+   "wikidata_revid": 2547717831,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt5580390/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "the-woman-who-left",
+   "title": "The Woman Who Left",
+   "year": 2016,
+   "imdb": "tt5843990",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     2016
+    ]
+   },
+   "titulo_original": "Ang Babaeng Humayo",
+   "diretor": "Lav Diaz",
+   "pais": [
+    "Philippines"
+   ],
+   "wikipedia": "The Woman Who Left",
+   "wikidata": "Q26158148",
+   "wikidata_revid": 2535252037,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt5843990/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "from-afar",
+   "title": "From Afar",
+   "year": 2015,
+   "imdb": "tt4721400",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     2015
+    ]
+   },
+   "titulo_original": "Desde allá",
+   "diretor": "Lorenzo Vigas",
+   "pais": [
+    "Venezuela"
+   ],
+   "wikipedia": "From Afar (film)",
+   "wikidata": "Q20747599",
+   "wikidata_revid": 2555583397,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt4721400/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "a-pigeon-sat-on-a-branch-reflecting-on-existence",
+   "title": "A Pigeon Sat on a Branch Reflecting on Existence",
+   "year": 2014,
+   "imdb": "tt1883180",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     2014
+    ]
+   },
+   "titulo_original": "En duva satt på en gren och funderade på tillvaron",
+   "diretor": "Roy Andersson",
+   "pais": [
+    "Sweden"
+   ],
+   "wikipedia": "A Pigeon Sat on a Branch Reflecting on Existence",
+   "wikidata": "Q10483256",
+   "wikidata_revid": 2535110356,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt1883180/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "sacro-gra",
+   "title": "Sacro GRA",
+   "year": 2013,
+   "imdb": "tt3172520",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     2013
+    ]
+   },
+   "titulo_original": "Sacro GRA",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Gianfranco Rosi",
+   "pais": [
+    "Italy"
+   ],
+   "wikipedia": "Sacro GRA",
+   "wikidata": "Q14853564",
+   "wikidata_revid": 2535011544,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt3172520/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "pieta",
+   "title": "Pietà",
+   "year": 2012,
+   "imdb": "tt2299842",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     2012
+    ]
+   },
+   "titulo_original": "피에타",
+   "diretor": "Kim Ki-duk",
+   "pais": [
+    "South Korea"
+   ],
+   "wikipedia": "Pietà (film)",
+   "wikidata": "Q483197",
+   "wikidata_revid": 2548010487,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt2299842/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "faust-2011",
+   "title": "Faust",
+   "year": 2011,
+   "imdb": "tt1437357",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     2011
+    ]
+   },
+   "titulo_original": "Фауст",
+   "diretor": "Alexander Sokurov",
+   "pais": [
+    "Russia"
+   ],
+   "wikipedia": "Faust (2011 film)",
+   "wikidata": "Q541354",
+   "wikidata_revid": 2534726913,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt1437357/ nomeia o mesmo tt",
+   "titulo_wikidata_en": "Faust (2011 film)"
+  },
+  {
+   "slug": "somewhere",
+   "title": "Somewhere",
+   "year": 2010,
+   "imdb": "tt1421051",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     2010
+    ]
+   },
+   "titulo_original": "Somewhere",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Sofia Coppola",
+   "pais": [
+    "United States"
+   ],
+   "wikipedia": "Somewhere (film)",
+   "wikidata": "Q1338368",
+   "wikidata_revid": 2551369794,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt1421051/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "lebanon",
+   "title": "Lebanon",
+   "year": 2009,
+   "imdb": "tt1483831",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     2009
+    ]
+   },
+   "titulo_original": "לבנון",
+   "diretor": "Samuel Maoz",
+   "pais": [
+    "Israel"
+   ],
+   "wikipedia": "Lebanon (film)",
+   "wikidata": "Q1142358",
+   "wikidata_revid": 2540586170,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt1483831/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "the-wrestler",
+   "title": "The Wrestler",
+   "year": 2008,
+   "imdb": "tt1125849",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     2008
+    ]
+   },
+   "titulo_original": "The Wrestler",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Darren Aronofsky",
+   "pais": [
+    "United States"
+   ],
+   "wikipedia": "The Wrestler (2008 film)",
+   "wikidata": "Q139326",
+   "wikidata_revid": 2554557264,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt1125849/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "lust-caution",
+   "title": "Lust, Caution",
+   "year": 2007,
+   "imdb": "tt0808357",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     2007
+    ]
+   },
+   "titulo_original": "色，戒",
+   "diretor": "Ang Lee",
+   "pais": [
+    "Taiwan",
+    "China",
+    "United States"
+   ],
+   "wikipedia": "Lust, Caution",
+   "wikidata": "Q718524",
+   "wikidata_revid": 2537911338,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0808357/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "still-life",
+   "title": "Still Life",
+   "year": 2006,
+   "imdb": "tt0859765",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     2006
+    ]
+   },
+   "titulo_original": "三峡好人",
+   "diretor": "Jia Zhangke",
+   "pais": [
+    "China"
+   ],
+   "wikipedia": "Still Life (2006 film)",
+   "wikidata": "Q1371155",
+   "wikidata_revid": 2538006370,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0859765/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "brokeback-mountain",
+   "title": "Brokeback Mountain",
+   "year": 2005,
+   "imdb": "tt0388795",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     2005
+    ]
+   },
+   "titulo_original": "Brokeback Mountain",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Ang Lee",
+   "pais": [
+    "United States"
+   ],
+   "wikipedia": "Brokeback Mountain",
+   "wikidata": "Q160618",
+   "wikidata_revid": 2538689471,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0388795/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "vera-drake",
+   "title": "Vera Drake",
+   "year": 2004,
+   "imdb": "tt0383694",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     2004
+    ]
+   },
+   "titulo_original": "Vera Drake",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Mike Leigh",
+   "pais": [
+    "United Kingdom"
+   ],
+   "wikipedia": "Vera Drake",
+   "wikidata": "Q916645",
+   "wikidata_revid": 2537874711,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0383694/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "the-return",
+   "title": "The Return",
+   "year": 2003,
+   "imdb": "tt0376968",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     2003
+    ]
+   },
+   "titulo_original": "Возвращение",
+   "diretor": "Andrey Zvyagintsev",
+   "pais": [
+    "Russia"
+   ],
+   "wikipedia": "The Return (2003 film)",
+   "wikidata": "Q385494",
+   "wikidata_revid": 2537926236,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0376968/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "the-magdalene-sisters",
+   "title": "The Magdalene Sisters",
+   "year": 2002,
+   "imdb": "tt0318411",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     2002
+    ]
+   },
+   "titulo_original": "The Magdalene Sisters",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Peter Mullan",
+   "pais": [
+    "Ireland",
+    "United Kingdom"
+   ],
+   "wikipedia": "The Magdalene Sisters",
+   "wikidata": "Q606723",
+   "wikidata_revid": 2538810612,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0318411/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "monsoon-wedding",
+   "title": "Monsoon Wedding",
+   "year": 2001,
+   "imdb": "tt0265343",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     2001
+    ]
+   },
+   "titulo_original": "Monsoon Wedding",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Mira Nair",
+   "pais": [
+    "India"
+   ],
+   "wikipedia": "Monsoon Wedding",
+   "wikidata": "Q945586",
+   "wikidata_revid": 2548320462,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0265343/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "the-circle",
+   "title": "The Circle",
+   "year": 2000,
+   "imdb": "tt0255094",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     2000
+    ]
+   },
+   "titulo_original": "دایره",
+   "diretor": "Jafar Panahi",
+   "pais": [
+    "Iran"
+   ],
+   "wikipedia": "The Circle (2000 film)",
+   "wikidata": "Q1194947",
+   "wikidata_revid": 2537975989,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0255094/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "not-one-less",
+   "title": "Not One Less",
+   "year": 1999,
+   "imdb": "tt0209189",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1999
+    ]
+   },
+   "titulo_original": "一個都不能少",
+   "diretor": "Zhang Yimou",
+   "pais": [
+    "China"
+   ],
+   "wikipedia": "Not One Less",
+   "wikidata": "Q1190863",
+   "wikidata_revid": 2542416911,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0209189/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "the-way-we-laughed",
+   "title": "The Way We Laughed",
+   "year": 1998,
+   "imdb": "tt0139951",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1998
+    ]
+   },
+   "titulo_original": "Così ridevano",
+   "diretor": "Gianni Amelio",
+   "pais": [
+    "Italy"
+   ],
+   "wikipedia": "The Way We Laughed",
+   "wikidata": "Q1752164",
+   "wikidata_revid": 2534759583,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0139951/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "fireworks-1997",
+   "title": "Hana-bi",
+   "year": 1997,
+   "imdb": "tt0119250",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1997
+    ]
+   },
+   "titulo_original": "はなび",
+   "diretor": "Takeshi Kitano",
+   "pais": [
+    "Japan"
+   ],
+   "wikipedia": "Hana-bi",
+   "wikidata": "Q1125897",
+   "wikidata_revid": 2538772335,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0119250/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "michael-collins",
+   "title": "Michael Collins",
+   "year": 1996,
+   "imdb": "tt0117039",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1996
+    ]
+   },
+   "titulo_original": "Michael Collins",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Neil Jordan",
+   "pais": [
+    "Ireland",
+    "United Kingdom"
+   ],
+   "wikipedia": "Michael Collins (film)",
+   "wikidata": "Q430535",
+   "wikidata_revid": 2539855465,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0117039/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "cyclo",
+   "title": "Cyclo",
+   "year": 1995,
+   "imdb": "tt0112767",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1995
+    ]
+   },
+   "titulo_original": "Xích lô",
+   "diretor": "Anh Hung Tran",
+   "pais": [
+    "Vietnam",
+    "France"
+   ],
+   "wikipedia": "Cyclo (film)",
+   "wikidata": "Q2253032",
+   "wikidata_revid": 2538389515,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0112767/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "before-the-rain",
+   "title": "Before the Rain",
+   "year": 1994,
+   "imdb": "tt0110882",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1994
+    ]
+   },
+   "titulo_original": "Пред дождот",
+   "diretor": "Milčo Mančevski",
+   "pais": [
+    "Macedonia"
+   ],
+   "wikipedia": "Before the Rain (1994 film)",
+   "wikidata": "Q911013",
+   "wikidata_revid": 2538764986,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0110882/ nomeia o mesmo tt",
+   "ex_aequo_com": [
+    "vive-lamour"
+   ]
+  },
+  {
+   "slug": "vive-lamour",
+   "title": "Vive L'Amour",
+   "year": 1994,
+   "imdb": "tt0109066",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1994
+    ]
+   },
+   "titulo_original": "愛情萬歲",
+   "diretor": "Tsai Ming-liang",
+   "pais": [
+    "Taiwan"
+   ],
+   "wikipedia": "Vive l'amour",
+   "wikidata": "Q711684",
+   "wikidata_revid": 2537937213,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0109066/ nomeia o mesmo tt",
+   "ex_aequo_com": [
+    "before-the-rain"
+   ]
+  },
+  {
+   "slug": "short-cuts",
+   "title": "Short Cuts",
+   "year": 1993,
+   "imdb": "tt0108122",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1993
+    ]
+   },
+   "titulo_original": "Short Cuts",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Robert Altman",
+   "pais": [
+    "United States"
+   ],
+   "wikipedia": "Short Cuts",
+   "wikidata": "Q605226",
+   "wikidata_revid": 2549165843,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0108122/ nomeia o mesmo tt",
+   "ex_aequo_com": [
+    "three-colours-blue"
+   ]
+  },
+  {
+   "slug": "three-colours-blue",
+   "title": "Three Colours: Blue",
+   "year": 1993,
+   "imdb": "tt0108394",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1993
+    ]
+   },
+   "titulo_original": "Trois couleurs: Bleu",
+   "diretor": "Krzysztof Kieślowski",
+   "pais": [
+    "France",
+    "Poland"
+   ],
+   "wikipedia": "Three Colours: Blue",
+   "wikidata": "Q932814",
+   "wikidata_revid": 2538210986,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0108394/ nomeia o mesmo tt",
+   "ex_aequo_com": [
+    "short-cuts"
+   ]
+  },
+  {
+   "slug": "the-story-of-qiu-ju",
+   "title": "The Story of Qiu Ju",
+   "year": 1992,
+   "imdb": "tt0105197",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1992
+    ]
+   },
+   "titulo_original": "秋菊打官司",
+   "diretor": "Zhang Yimou",
+   "pais": [
+    "China"
+   ],
+   "wikipedia": "The Story of Qiu Ju",
+   "wikidata": "Q644174",
+   "wikidata_revid": 2538806642,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0105197/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "close-to-eden",
+   "title": "Close to Eden",
+   "year": 1991,
+   "imdb": "tt0103176",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1991
+    ]
+   },
+   "titulo_original": "У́рга – территория любви",
+   "diretor": "Nikita Mikhalkov",
+   "pais": [
+    "Soviet Union"
+   ],
+   "wikipedia": "Close to Eden",
+   "wikidata": "Q1169942",
+   "wikidata_revid": 2538548712,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0103176/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "rosencrantz-guildenstern-are-dead",
+   "title": "Rosencrantz & Guildenstern Are Dead",
+   "year": 1990,
+   "imdb": "tt0100519",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1990
+    ]
+   },
+   "titulo_original": "Rosencrantz & Guildenstern Are Dead",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Tom Stoppard",
+   "pais": [
+    "United Kingdom",
+    "United States"
+   ],
+   "wikipedia": "Rosencrantz & Guildenstern Are Dead (film)",
+   "wikidata": "Q1579166",
+   "wikidata_revid": 2534745538,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0100519/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "a-city-of-sadness",
+   "title": "A City of Sadness",
+   "year": 1989,
+   "imdb": "tt0096908",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1989
+    ]
+   },
+   "titulo_original": "悲情城市",
+   "diretor": "Hou Hsiao-hsien",
+   "pais": [
+    "Taiwan"
+   ],
+   "wikipedia": "A City of Sadness",
+   "wikidata": "Q133461",
+   "wikidata_revid": 2538847958,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0096908/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "the-legend-of-the-holy-drinker",
+   "title": "The Legend of the Holy Drinker",
+   "year": 1988,
+   "imdb": "tt0095513",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1988
+    ]
+   },
+   "titulo_original": "La leggenda del santo bevitore",
+   "diretor": "Ermanno Olmi",
+   "pais": [
+    "Italy",
+    "France"
+   ],
+   "wikipedia": "The Legend of the Holy Drinker (film)",
+   "wikidata": "Q2182637",
+   "wikidata_revid": 2537884511,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0095513/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "au-revoir-les-enfants",
+   "title": "Au revoir les enfants",
+   "year": 1987,
+   "imdb": "tt0092593",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1987
+    ]
+   },
+   "titulo_original": "Au revoir les enfants",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Louis Malle",
+   "pais": [
+    "France",
+    "West Germany"
+   ],
+   "wikipedia": "Au revoir les enfants",
+   "wikidata": "Q187276",
+   "wikidata_revid": 2552897116,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0092593/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "the-green-ray",
+   "title": "The Green Ray",
+   "year": 1986,
+   "imdb": "tt0091830",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1986
+    ]
+   },
+   "titulo_original": "Le Rayon vert",
+   "diretor": "Éric Rohmer",
+   "pais": [
+    "France"
+   ],
+   "wikipedia": "The Green Ray (film)",
+   "wikidata": "Q1171334",
+   "wikidata_revid": 2538398929,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0091830/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "vagabond",
+   "title": "Vagabond",
+   "year": 1985,
+   "imdb": "tt0089960",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1985
+    ]
+   },
+   "titulo_original": "Sans toit ni loi",
+   "diretor": "Agnès Varda",
+   "pais": [
+    "France"
+   ],
+   "wikipedia": "Vagabond (1985 film)",
+   "wikidata": "Q2298257",
+   "wikidata_revid": 2537882651,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0089960/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "a-year-of-the-quiet-sun",
+   "title": "A Year of the Quiet Sun",
+   "year": 1984,
+   "imdb": "tt0088009",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1984
+    ]
+   },
+   "titulo_original": "Rok spokojnego słońca",
+   "diretor": "Krzysztof Zanussi",
+   "pais": [
+    "Poland"
+   ],
+   "wikipedia": "A Year of the Quiet Sun",
+   "wikidata": "Q1094047",
+   "wikidata_revid": 2537926913,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0088009/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "first-name-carmen",
+   "title": "First Name: Carmen",
+   "year": 1983,
+   "imdb": "tt0086153",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1983
+    ]
+   },
+   "titulo_original": "Prénom Carmen",
+   "diretor": "Jean-Luc Godard",
+   "pais": [
+    "France"
+   ],
+   "wikipedia": "First Name: Carmen",
+   "wikidata": "Q2296139",
+   "wikidata_revid": 2550579186,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0086153/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "the-state-of-things",
+   "title": "The State of Things",
+   "year": 1982,
+   "imdb": "tt0084725",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1982
+    ]
+   },
+   "titulo_original": "Der Stand der Dinge",
+   "diretor": "Wim Wenders",
+   "pais": [
+    "West Germany"
+   ],
+   "wikipedia": "The State of Things (film)",
+   "wikidata": "Q692367",
+   "wikidata_revid": 2538290540,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0084725/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "marianne-and-juliane",
+   "title": "Marianne and Juliane",
+   "year": 1981,
+   "imdb": "tt0082081",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1981
+    ]
+   },
+   "titulo_original": "Die Bleierne Zeit",
+   "diretor": "Margarethe von Trotta",
+   "pais": [
+    "West Germany"
+   ],
+   "wikipedia": "Marianne and Juliane",
+   "wikidata": "Q703966",
+   "wikidata_revid": 2537882547,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0082081/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "atlantic-city",
+   "title": "Atlantic City",
+   "year": 1980,
+   "imdb": "tt0080388",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1980
+    ]
+   },
+   "titulo_original": "Atlantic City",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Louis Malle",
+   "pais": [
+    "Canada",
+    "France"
+   ],
+   "wikipedia": "Atlantic City (1980 film)",
+   "wikidata": "Q756329",
+   "wikidata_revid": 2555812667,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0080388/ nomeia o mesmo tt",
+   "ex_aequo_com": [
+    "gloria"
+   ]
+  },
+  {
+   "slug": "gloria",
+   "title": "Gloria",
+   "year": 1980,
+   "imdb": "tt0080798",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1980
+    ]
+   },
+   "titulo_original": "Gloria",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "John Cassavetes",
+   "pais": [
+    "United States"
+   ],
+   "wikipedia": "Gloria (1980 film)",
+   "wikidata": "Q627942",
+   "wikidata_revid": 2538554987,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0080798/ nomeia o mesmo tt",
+   "ex_aequo_com": [
+    "atlantic-city"
+   ]
+  },
+  {
+   "slug": "artists-under-the-big-top-perplexed",
+   "title": "Artists Under the Big Top: Perplexed",
+   "year": 1968,
+   "imdb": "tt0062679",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1968
+    ]
+   },
+   "titulo_original": "Die Artisten in der Zirkuskuppel: Ratlos",
+   "diretor": "Alexander Kluge",
+   "pais": [
+    "West Germany"
+   ],
+   "wikipedia": "Artists Under the Big Top: Perplexed",
+   "wikidata": "Q573953",
+   "wikidata_revid": 2538215009,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0062679/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "belle-de-jour",
+   "title": "Belle de Jour",
+   "year": 1967,
+   "imdb": "tt0061395",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1967
+    ]
+   },
+   "titulo_original": "Belle de Jour",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Luis Buñuel",
+   "pais": [
+    "France"
+   ],
+   "wikipedia": "Belle de Jour (film)",
+   "wikidata": "Q470375",
+   "wikidata_revid": 2555338067,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0061395/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "the-battle-of-algiers",
+   "title": "The Battle of Algiers",
+   "year": 1966,
+   "imdb": "tt0058946",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1966
+    ]
+   },
+   "titulo_original": "La battaglia di Algeri",
+   "diretor": "Gillo Pontecorvo",
+   "pais": [
+    "Algeria",
+    "Italy"
+   ],
+   "wikipedia": "The Battle of Algiers",
+   "wikidata": "Q784812",
+   "wikidata_revid": 2546862197,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0058946/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "sandra",
+   "title": "Sandra",
+   "year": 1965,
+   "imdb": "tt0059856",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1965
+    ]
+   },
+   "titulo_original": "Vaghe stelle dell'Orsa ...",
+   "diretor": "Luchino Visconti",
+   "pais": [
+    "Italy"
+   ],
+   "wikipedia": "Sandra (1965 film)",
+   "wikidata": "Q1816145",
+   "wikidata_revid": 2538850590,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0059856/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "red-desert",
+   "title": "Red Desert",
+   "year": 1964,
+   "imdb": "tt0058003",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1964
+    ]
+   },
+   "titulo_original": "Il deserto rosso",
+   "diretor": "Michelangelo Antonioni",
+   "pais": [
+    "Italy"
+   ],
+   "wikipedia": "Red Desert (film)",
+   "wikidata": "Q399647",
+   "wikidata_revid": 2538405545,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0058003/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "hands-over-the-city",
+   "title": "Hands over the City",
+   "year": 1963,
+   "imdb": "tt0057286",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1963
+    ]
+   },
+   "titulo_original": "Le mani sulla città",
+   "diretor": "Francesco Rosi",
+   "pais": [
+    "Italy"
+   ],
+   "wikipedia": "Hands over the City",
+   "wikidata": "Q2253732",
+   "wikidata_revid": 2538244827,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0057286/ nomeia o mesmo tt",
+   "titulo_wikidata_en": "Hands Over the City"
+  },
+  {
+   "slug": "family-diary",
+   "title": "Family Diary",
+   "year": 1962,
+   "imdb": "tt0056966",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1962
+    ]
+   },
+   "titulo_original": "Cronaca familiare",
+   "diretor": "Valerio Zurlini",
+   "pais": [
+    "Italy"
+   ],
+   "wikipedia": "Family Diary",
+   "wikidata": "Q1754854",
+   "wikidata_revid": 2550192406,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0056966/ nomeia o mesmo tt",
+   "ex_aequo_com": [
+    "ivans-childhood"
+   ]
+  },
+  {
+   "slug": "ivans-childhood",
+   "title": "Ivan's Childhood",
+   "year": 1962,
+   "imdb": "tt0056111",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1962
+    ]
+   },
+   "titulo_original": "Ива́ново де́тство",
+   "diretor": "Andrei Tarkovsky",
+   "pais": [
+    "Soviet Union"
+   ],
+   "wikipedia": "Ivan's Childhood",
+   "wikidata": "Q147878",
+   "wikidata_revid": 2538756787,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0056111/ nomeia o mesmo tt",
+   "ex_aequo_com": [
+    "family-diary"
+   ]
+  },
+  {
+   "slug": "last-year-at-marienbad",
+   "title": "Last Year at Marienbad",
+   "year": 1961,
+   "imdb": "tt0054632",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1961
+    ]
+   },
+   "titulo_original": "L'année dernière à Marienbad",
+   "diretor": "Alain Resnais",
+   "pais": [
+    "France"
+   ],
+   "wikipedia": "Last Year at Marienbad",
+   "wikidata": "Q225355",
+   "wikidata_revid": 2549976116,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0054632/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "tomorrow-is-my-turn",
+   "title": "Tomorrow Is My Turn",
+   "year": 1960,
+   "imdb": "tt0054161",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1960
+    ]
+   },
+   "titulo_original": "Le Passage du Rhin",
+   "diretor": "André Cayatte",
+   "pais": [
+    "France"
+   ],
+   "wikipedia": "Tomorrow Is My Turn (film)",
+   "wikidata": "Q744482",
+   "wikidata_revid": 2538414259,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0054161/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "general-della-rovere",
+   "title": "General Della Rovere",
+   "year": 1959,
+   "imdb": "tt0053856",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1959
+    ]
+   },
+   "titulo_original": "Il generale della Rovere",
+   "diretor": "Roberto Rossellini",
+   "pais": [
+    "France",
+    "Italy"
+   ],
+   "wikipedia": "General Della Rovere",
+   "wikidata": "Q862713",
+   "wikidata_revid": 2545343814,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0053856/ nomeia o mesmo tt",
+   "ex_aequo_com": [
+    "the-great-war"
+   ]
+  },
+  {
+   "slug": "the-great-war",
+   "title": "The Great War",
+   "year": 1959,
+   "imdb": "tt0052861",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1959
+    ]
+   },
+   "titulo_original": "La grande guerra",
+   "diretor": "Mario Monicelli",
+   "pais": [
+    "France",
+    "Italy"
+   ],
+   "wikipedia": "The Great War (1959 film)",
+   "wikidata": "Q150867",
+   "wikidata_revid": 2540363472,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0052861/ nomeia o mesmo tt",
+   "ex_aequo_com": [
+    "general-della-rovere"
+   ]
+  },
+  {
+   "slug": "the-rickshaw-man",
+   "title": "Rickshaw Man",
+   "year": 1958,
+   "imdb": "tt0051955",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1958
+    ]
+   },
+   "titulo_original": "無法松の一生",
+   "diretor": "Hiroshi Inagaki",
+   "pais": [
+    "Japan"
+   ],
+   "wikipedia": "Rickshaw Man",
+   "wikidata": "Q1060505",
+   "wikidata_revid": 2538948400,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0051955/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "aparajito",
+   "title": "Aparajito",
+   "year": 1956,
+   "imdb": "tt0048956",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1957
+    ]
+   },
+   "titulo_original": "অপরাজিত",
+   "diretor": "Satyajit Ray",
+   "pais": [
+    "India"
+   ],
+   "wikipedia": "Aparajito",
+   "wikidata": "Q622382",
+   "wikidata_revid": 2555358604,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0048956/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "ordet",
+   "title": "Ordet",
+   "year": 1955,
+   "imdb": "tt0048452",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1955
+    ]
+   },
+   "titulo_original": "Ordet",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Carl Theodor Dreyer",
+   "pais": [
+    "Denmark"
+   ],
+   "wikipedia": "Ordet",
+   "wikidata": "Q2352630",
+   "wikidata_revid": 2552144800,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0048452/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "romeo-and-juliet-1954",
+   "title": "Romeo and Juliet",
+   "year": 1954,
+   "imdb": "tt0047029",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1954
+    ]
+   },
+   "titulo_original": "Romeo and Juliet",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Renato Castellani",
+   "pais": [
+    "United Kingdom"
+   ],
+   "wikipedia": "Romeo and Juliet (1954 film)",
+   "wikidata": "Q2716956",
+   "wikidata_revid": 2538952663,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0047029/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "forbidden-games-1952",
+   "title": "Forbidden Games",
+   "year": 1952,
+   "imdb": "tt0043686",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1952
+    ]
+   },
+   "titulo_original": "Jeux interdits",
+   "diretor": "René Clément",
+   "pais": [
+    "France"
+   ],
+   "wikipedia": "Forbidden Games",
+   "wikidata": "Q976558",
+   "wikidata_revid": 2539390977,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0043686/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "rashomon",
+   "title": "Rashomon",
+   "year": 1950,
+   "imdb": "tt0042876",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1951
+    ]
+   },
+   "titulo_original": "羅生門",
+   "diretor": "Akira Kurosawa",
+   "pais": [
+    "Japan"
+   ],
+   "wikipedia": "Rashomon",
+   "wikidata": "Q135465",
+   "wikidata_revid": 2540152559,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0042876/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "justice-is-done",
+   "title": "Justice Is Done",
+   "year": 1950,
+   "imdb": "tt0042625",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1950
+    ]
+   },
+   "titulo_original": "Justice est faite",
+   "diretor": "André Cayatte",
+   "pais": [
+    "France"
+   ],
+   "wikipedia": "Justice Is Done",
+   "wikidata": "Q2283907",
+   "wikidata_revid": 2538570196,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0042625/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "manon",
+   "title": "Manon",
+   "year": 1949,
+   "imdb": "tt0041634",
+   "prizes": {
+    "Golden Lion (1949-2026)": [
+     1949
+    ]
+   },
+   "titulo_original": "Manon",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Henri-Georges Clouzot",
+   "pais": [
+    "France"
+   ],
+   "wikipedia": "Manon (1949 film)",
+   "wikidata": "Q937385",
+   "wikidata_revid": 2549652745,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0041634/ nomeia o mesmo tt",
+   "notas": [
+    "ano do filme: Letterboxd 1949, Wikidata P577 1950; usado o do Letterboxd (mesma regra do arquivo de Cannes)"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,78 @@
+{
+"id": "e-neorealism", "type": "school", "years": {"min": 1943, "max": 1955}, "admit": ["core", "periphery"],
+"school": {
+  "countries": ["IT"],
+  "directors": [
+    {"id": 4410, "name": "Roberto Rossellini"},
+    {"id": 12329, "name": "Vittorio De Sica"},
+    {"id": 15127, "name": "Luchino Visconti"},
+    {"id": 41634, "name": "Giuseppe De Santis"},
+    {"id": 146793, "name": "Alberto Lattuada"},
+    {"id": 31890, "name": "Luigi Zampa"},
+    {"id": 95040, "name": "Pietro Germi"},
+    {"id": 20877, "name": "Renato Castellani"},
+    {"id": 122016, "name": "Carlo Lizzani"},
+    {"id": 129074, "name": "Francesco Maselli"}
+  ]
+},
+"sources": [
+  {"id": "bfi-neo", "publication": "BFI", "title": "10 great Italian neorealist films (Pasquale Iannone, 06/03/2014)", "url": "https://www.bfi.org.uk/lists/10-great-italian-neorealist-films", "revision": null, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2014-03-06"},
+  {"id": "cat-en", "publication": "Wikipedia (en), categoria", "title": "Category:Italian neorealist films", "url": "https://en.wikipedia.org/wiki/Category:Italian_neorealist_films", "revision": null, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-11-15"},
+  {"id": "cat-fr", "publication": "Wikipedia (fr), categoria", "title": "Catégorie:Film néo-réaliste", "url": "https://fr.wikipedia.org/wiki/Catégorie:Film_néo-réaliste", "revision": null, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-11-15"},
+  {"id": "cat-it", "publication": "Wikipedia (it), categoria", "title": "Categoria:Film del neorealismo", "url": "https://it.wikipedia.org/wiki/Categoria:Film_del_neorealismo", "revision": null, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-11-15"},
+  {"id": "cat-pl", "publication": "Wikipedia (pl), categoria", "title": "Kategoria:Filmy włoskiego neorealizmu", "url": "https://pl.wikipedia.org/wiki/Kategoria:Filmy_włoskiego_neorealizmu", "revision": null, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-11-15"},
+  {"id": "crit-neo", "publication": "Criterion Channel (cópia do Internet Archive)", "title": "Italian Neorealism (coleção do Channel)", "url": "https://www.criterionchannel.com/italian-neorealism", "revision": null, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-04-11"},
+  {"id": "wp-de", "publication": "Wikipedia (de)", "title": "Italienischer Neorealismus", "url": "https://de.wikipedia.org/w/index.php?oldid=270096448", "revision": 270096448, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-08-30"},
+  {"id": "wp-en", "publication": "Wikipedia (en)", "title": "Italian neorealism", "url": "https://en.wikipedia.org/w/index.php?oldid=1382165908", "revision": 1382165908, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-10-27"},
+  {"id": "wp-fr", "publication": "Wikipedia (fr)", "title": "Néoréalisme (cinéma)", "url": "https://fr.wikipedia.org/w/index.php?oldid=241350682", "revision": 241350682, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-11-14"},
+  {"id": "wp-it", "publication": "Wikipedia (it)", "title": "Neorealismo (cinema)", "url": "https://it.wikipedia.org/w/index.php?oldid=152916868", "revision": 152916868, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-10-15"},
+  {"id": "wp-ru", "publication": "Wikipedia (ru)", "title": "Итальянский неореализм", "url": "https://ru.wikipedia.org/w/index.php?oldid=149606874", "revision": 149606874, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2025-11-05"}
+],
+"consensus": null,
+"films": [
+  {"imdb": "tt0034493", "tmdb": 61461, "slug": "the-children-are-watching-us", "title": "The Children Are Watching Us", "year": 1943, "sources": ["crit-neo", "wp-en", "wp-ru"], "class": "core"},
+  {"imdb": "tt0035160", "tmdb": 5155, "slug": "obsession-1943", "title": "Ossessione", "year": 1943, "sources": ["bfi-neo", "cat-en", "cat-fr", "cat-it", "cat-pl", "wp-en", "wp-it", "wp-ru"], "class": "core"},
+  {"imdb": "tt0036781", "tmdb": 187769, "slug": "two-anonymous-letters", "title": "Two Anonymous Letters", "year": 1945, "sources": ["cat-fr"], "class": "periphery"},
+  {"imdb": "tt0037739", "tmdb": 109359, "slug": "days-of-glory-1945", "title": "Giorni di gloria", "year": 1945, "sources": ["cat-it"], "class": "periphery"},
+  {"imdb": "tt0038890", "tmdb": 307, "slug": "rome-open-city", "title": "Rome, Open City", "year": 1945, "sources": ["bfi-neo", "cat-en", "cat-fr", "cat-it", "cat-pl", "crit-neo", "wp-de", "wp-en", "wp-fr", "wp-it", "wp-ru"], "class": "core"},
+  {"imdb": "tt0038327", "tmdb": 146783, "slug": "the-bandit-1946", "title": "The Bandit", "year": 1946, "sources": ["cat-it", "wp-it"], "class": "periphery"},
+  {"imdb": "tt0038823", "tmdb": 8429, "slug": "paisan", "title": "Paisà", "year": 1946, "sources": ["cat-en", "cat-fr", "cat-it", "cat-pl", "crit-neo", "wp-de", "wp-en", "wp-fr", "wp-it", "wp-ru"], "class": "core"},
+  {"imdb": "tt0038913", "tmdb": 43469, "slug": "shoeshine", "title": "Shoeshine", "year": 1946, "sources": ["cat-en", "cat-fr", "cat-it", "cat-pl", "wp-en", "wp-fr", "wp-it", "wp-ru"], "class": "core"},
+  {"imdb": "tt0039233", "tmdb": 204722, "slug": "tragic-hunt", "title": "Tragic Hunt", "year": 1947, "sources": ["cat-fr", "cat-it", "wp-de", "wp-fr", "wp-it"], "class": "core"},
+  {"imdb": "tt0038970", "tmdb": 82813, "slug": "under-the-sun-of-rome", "title": "Under the Sun of Rome", "year": 1948, "sources": ["cat-fr", "cat-it", "cat-pl", "wp-it"], "class": "core"},
+  {"imdb": "tt0039417", "tmdb": 8016, "slug": "germany-year-zero", "title": "Germany, Year Zero", "year": 1948, "sources": ["bfi-neo", "cat-en", "cat-it", "cat-pl", "crit-neo", "wp-de", "wp-en", "wp-fr", "wp-it", "wp-ru"], "class": "core"},
+  {"imdb": "tt0039424", "tmdb": 242240, "slug": "lost-youth", "title": "Lost Youth", "year": 1948, "sources": ["wp-it"], "class": "periphery"},
+  {"imdb": "tt0040100", "tmdb": 94770, "slug": "difficult-years", "title": "Difficult Years", "year": 1948, "sources": ["cat-it", "wp-it"], "class": "periphery"},
+  {"imdb": "tt0040522", "tmdb": 5156, "slug": "bicycle-thieves", "title": "Bicycle Thieves", "year": 1948, "sources": ["cat-en", "cat-fr", "cat-it", "cat-pl", "crit-neo", "wp-de", "wp-en", "wp-fr", "wp-it", "wp-ru"], "class": "core"},
+  {"imdb": "tt0040773", "tmdb": 185078, "slug": "without-pity", "title": "Without Pity", "year": 1948, "sources": ["cat-it", "wp-it"], "class": "periphery"},
+  {"imdb": "tt0040866", "tmdb": 43445, "slug": "la-terra-trema", "title": "La Terra Trema", "year": 1948, "sources": ["bfi-neo", "cat-en", "cat-it", "cat-pl", "wp-de", "wp-en", "wp-it", "wp-ru"], "class": "core"},
+  {"imdb": "tt0040137", "tmdb": 65718, "slug": "the-walls-of-malapaga", "title": "The Walls of Malapaga", "year": 1949, "sources": ["wp-ru"], "class": "periphery"},
+  {"imdb": "tt0040737", "tmdb": 31058, "slug": "bitter-rice", "title": "Bitter Rice", "year": 1949, "sources": ["cat-en", "cat-fr", "cat-it", "cat-pl", "crit-neo", "wp-de", "wp-en", "wp-it"], "class": "core"},
+  {"imdb": "tt0041248", "tmdb": 204623, "slug": "heaven-over-the-marshes", "title": "Heaven over the Marshes", "year": 1949, "sources": ["cat-fr"], "class": "periphery"},
+  {"imdb": "tt0041506", "tmdb": 195382, "slug": "in-the-name-of-the-law-1949", "title": "In the Name of the Law", "year": 1949, "sources": ["cat-it", "cat-pl", "wp-it"], "class": "periphery"},
+  {"imdb": "tt0041303", "tmdb": 85747, "slug": "sunday-in-august-1950", "title": "Sunday in August", "year": 1950, "sources": ["wp-it"], "class": "periphery"},
+  {"imdb": "tt0041931", "tmdb": 4173, "slug": "stromboli", "title": "Stromboli", "year": 1950, "sources": ["cat-en", "cat-it", "cat-pl", "crit-neo", "wp-en", "wp-it"], "class": "core"},
+  {"imdb": "tt0042301", "tmdb": 57628, "slug": "the-path-of-hope", "title": "Path of Hope", "year": 1950, "sources": ["cat-en", "cat-fr", "cat-it", "wp-it"], "class": "core"},
+  {"imdb": "tt0042355", "tmdb": 49781, "slug": "story-of-a-love-affair", "title": "Story of a Love Affair", "year": 1950, "sources": ["wp-it"], "class": "disputed", "included": {"source": "wp-it", "why": "Fellini and Antonioni are no longer directors of the era; the sources name this one film"}},
+  {"imdb": "tt0042477", "tmdb": 56518, "slug": "the-flowers-of-st-francis", "title": "Francesco, giullare di Dio", "year": 1950, "sources": ["bfi-neo", "crit-neo"], "class": "core"},
+  {"imdb": "tt0042794", "tmdb": 151194, "slug": "under-the-olive-tree", "title": "No Peace Under the Olive Tree", "year": 1950, "sources": ["cat-en", "cat-fr", "cat-it", "wp-it", "wp-ru"], "class": "core"},
+  {"imdb": "tt0043332", "tmdb": 43372, "slug": "bellissima", "title": "Bellissima", "year": 1951, "sources": ["cat-en", "wp-en", "wp-it", "wp-ru"], "class": "core"},
+  {"imdb": "tt0043809", "tmdb": 43379, "slug": "miracle-in-milan", "title": "Miracle in Milan", "year": 1951, "sources": ["cat-en", "cat-it", "cat-pl", "wp-en", "wp-it"], "class": "core"},
+  {"imdb": "tt0043511", "tmdb": 41464, "slug": "europa-51", "title": "Europe '51", "year": 1952, "sources": ["cat-en", "crit-neo", "wp-en", "wp-it", "wp-ru"], "class": "core"},
+  {"imdb": "tt0044572", "tmdb": 117478, "slug": "two-cents-worth-of-hope", "title": "Two Cents Worth of Hope", "year": 1952, "sources": ["cat-it", "cat-pl", "wp-it"], "class": "periphery"},
+  {"imdb": "tt0045098", "tmdb": 158693, "slug": "rome-11-00", "title": "Rome 11:00", "year": 1952, "sources": ["cat-en", "cat-fr", "cat-it", "wp-de", "wp-en", "wp-it", "wp-ru"], "class": "core"},
+  {"imdb": "tt0045274", "tmdb": 833, "slug": "umberto-d", "title": "Umberto D.", "year": 1952, "sources": ["bfi-neo", "cat-en", "cat-it", "cat-pl", "crit-neo", "wp-de", "wp-en", "wp-it", "wp-ru"], "class": "core"},
+  {"imdb": "tt0046521", "tmdb": 12548, "slug": "i-vitelloni", "title": "I Vitelloni", "year": 1953, "sources": ["cat-it", "cat-pl", "crit-neo", "wp-it"], "class": "disputed", "included": {"source": "cat-it", "why": "Fellini and Antonioni are no longer directors of the era; the sources name this one film"}},
+  {"imdb": "tt0046511", "tmdb": 2748, "slug": "journey-to-italy", "title": "Journey to Italy", "year": 1954, "sources": ["cat-en", "cat-it", "cat-pl", "crit-neo", "wp-en", "wp-it"], "class": "core"},
+  {"imdb": "tt0046881", "tmdb": 107035, "slug": "chronicle-of-poor-lovers", "title": "Chronicle of Poor Lovers", "year": 1954, "sources": ["cat-it", "wp-it"], "class": "periphery"},
+  {"imdb": "tt0047528", "tmdb": 405, "slug": "la-strada", "title": "La Strada", "year": 1954, "sources": ["bfi-neo", "cat-en", "cat-it", "cat-pl", "crit-neo", "wp-it"], "class": "disputed", "included": {"source": "bfi-neo", "why": "Fellini and Antonioni are no longer directors of the era; the sources name this one film"}},
+  {"imdb": "tt0048585", "tmdb": 210370, "slug": "abandoned-1955", "title": "The Abandoned", "year": 1955, "sources": ["cat-it", "wp-it"], "class": "periphery"}
+],
+"exclude": [
+
+],
+"pending": [
+
+],
+"counted": {"curationFilms": 75, "written": 37, "inIndexOfReference": 24, "notInIndexAdmitted": 31, "notInIndexPassingImdb7": 5, "pending": 0, "documentariesWrittenOut": 0, "leftOut": {"class not admitted by the era": 1, "outside the years of the era": 19, "not in the index and under the prefilter": 18, "named with no id and no class (not written in pending)": 2}}
+}

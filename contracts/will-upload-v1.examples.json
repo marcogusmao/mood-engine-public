@@ -1,0 +1,64 @@
+{
+  "valid": [
+    {
+      "schema": "identity",
+      "value": {
+        "schemaVersion": 1,
+        "personId": "friend-a"
+      }
+    },
+    {
+      "schema": "intake",
+      "value": {
+        "schemaVersion": 1,
+        "personId": "friend-a",
+        "requestId": "4e755125-723a-47b2-9811-7adf431e8901",
+        "kind": "letterboxd-export",
+        "bytes": 1,
+        "archiveSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "chunks": [
+          {
+            "ordinal": 0,
+            "bytes": 1,
+            "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+          }
+        ]
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "schema": "identity",
+      "value": {
+        "schemaVersion": 1,
+        "personId": "marco"
+      }
+    },
+    {
+      "schema": "identity",
+      "value": {
+        "schemaVersion": 1,
+        "personId": "friend-a",
+        "url": "https://example.test"
+      }
+    },
+    {
+      "schema": "intake",
+      "value": {
+        "schemaVersion": 1,
+        "personId": "friend-a",
+        "requestId": "4e755125-723a-47b2-9811-7adf431e8901",
+        "kind": "letterboxd-export",
+        "bytes": "1",
+        "archiveSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "chunks": [
+          {
+            "ordinal": 0,
+            "bytes": 1,
+            "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+          }
+        ]
+      }
+    }
+  ]
+}

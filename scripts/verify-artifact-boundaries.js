@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),P=require('../lib/people-publication'),G=require('../lib/learning/public');
+const CACHE=['tmdb.json','friends.json','lists.json','imdb-ratings.json','posters.json','mubi.json','mubi-report.json','front-memory.json','tonight-memory.json','directors.json'];
+function verifyCache(dir,{privacy=null}={}){let bytes=0;for(const file of P.walk(dir)){const rel=path.relative(dir,file).split(path.sep).join('/');if(!CACHE.includes(rel)&&!/^flags\/[a-z]{2}\.png$/.test(rel))throw Error('Unexpected cache-update artifact path');const raw=fs.readFileSync(file);bytes+=raw.length;if(bytes>128*1024*1024)throw Error('Cache artifact exceeds bound');if(rel.endsWith('.json')){JSON.parse(raw);if(privacy)G.assertPublicJson(raw.toString('utf8'),privacy);}}return true;}
+function verifyFixture(dir){const publicDir=path.join(dir,'public');if(!fs.existsSync(publicDir))throw Error('Aggregate missing; acceptance incomplete');const privacy={terms:['PRIVATE-EMAIL-CANARY-DO-NOT-PUBLISH','PRIVATE-TAG-CANARY-NOT-PUBLIC']};P.verifyAggregate(publicDir,{privacy});for(const name of ['cache-update','outputs','logs']){const p=path.join(dir,name);if(!fs.existsSync(p))continue;if(name==='cache-update')verifyCache(p,{privacy});else for(const f of P.walk(p))G.assertPrivateAbsent(fs.readFileSync(f,'utf8'),privacy);}return true;}
+if(require.main===module){try{const args=process.argv.slice(2);if(args.includes('--cache'))verifyCache(args[args.indexOf('--cache')+1]);else verifyFixture(args[args.indexOf('--fixture')+1]);console.log('OK: outgoing artifact boundaries');}catch(e){console.error(e.message);process.exitCode=1;}}
+module.exports={verifyCache,verifyFixture,CACHE};

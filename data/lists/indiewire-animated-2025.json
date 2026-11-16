@@ -1,0 +1,525 @@
+{
+ "id": "indiewire-animated-2025",
+ "source": {
+  "publication": "IndieWire",
+  "title": "The 64 Best Animated Movies, Ranked",
+  "url": "https://www.indiewire.com/feature/best-animated-movies-21st-century-pixar-studio-ghibli-1201895863/",
+  "edition": "2025-03-19",
+  "readOn": "2026-10-11",
+  "note": "Montada da matéria, na ordem dela; slug/imdb/tmdb conferidos na página do filme no Letterboxd. Sem cópia fiel no Letterboxd."
+ },
+ "items": [
+  {
+   "slug": "spirited-away",
+   "title": "Spirited Away",
+   "year": 2001,
+   "imdb": "tt0245429",
+   "tmdb": 129,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "spider-man-across-the-spider-verse",
+   "title": "Spider-Man: Across the Spider-Verse",
+   "year": 2023,
+   "imdb": "tt9362722",
+   "tmdb": 569094,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "fantastic-mr-fox",
+   "title": "Fantastic Mr. Fox",
+   "year": 2009,
+   "imdb": "tt0432283",
+   "tmdb": 10315,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "the-red-turtle",
+   "title": "The Red Turtle",
+   "year": 2016,
+   "imdb": "tt3666024",
+   "tmdb": 337703,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "spider-man-into-the-spider-verse",
+   "title": "Spider-Man: Into the Spiderverse",
+   "year": 2018,
+   "imdb": "tt4633694",
+   "tmdb": 324857,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "the-tale-of-the-princess-kaguya",
+   "title": "The Tale of the Princess Kaguya",
+   "year": 2013,
+   "imdb": "tt2576852",
+   "tmdb": 149871,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "wolfwalkers",
+   "title": "Wolfwalkers",
+   "year": 2020,
+   "imdb": "tt5198068",
+   "tmdb": 441130,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "the-wind-rises",
+   "title": "The Wind Rises",
+   "year": 2013,
+   "imdb": "tt2013293",
+   "tmdb": 149870,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "the-boy-and-the-heron",
+   "title": "The Boy and the Heron",
+   "year": 2023,
+   "imdb": "tt6587046",
+   "tmdb": 508883,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "the-incredibles",
+   "title": "The Incredibles",
+   "year": 2004,
+   "imdb": "tt0317705",
+   "tmdb": 9806,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "chicken-run",
+   "title": "Chicken Run",
+   "year": 2000,
+   "imdb": "tt0120630",
+   "tmdb": 7443,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "rango",
+   "title": "Rango",
+   "year": 2011,
+   "imdb": "tt1192628",
+   "tmdb": 44896,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "the-illusionist-2010",
+   "title": "The Illusionist",
+   "year": 2010,
+   "imdb": "tt0775489",
+   "tmdb": 41201,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "flee-2021",
+   "title": "Flee",
+   "year": 2021,
+   "imdb": "tt8430054",
+   "tmdb": 680813,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "persepolis",
+   "title": "Persepolis",
+   "year": 2007,
+   "imdb": "tt0808417",
+   "tmdb": 2011,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "world-of-tomorrow",
+   "title": "World of Tomorrow",
+   "year": 2015,
+   "imdb": "tt4171032",
+   "tmdb": 303867,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "the-congress-2013",
+   "title": "The Congress",
+   "year": 2013,
+   "imdb": "tt1821641",
+   "tmdb": 152795,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "walle",
+   "title": "WALL•E",
+   "year": 2008,
+   "imdb": "tt0910970",
+   "tmdb": 10681,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "kubo-and-the-two-strings",
+   "title": "Kubo and the Two Strings",
+   "year": 2016,
+   "imdb": "tt4302938",
+   "tmdb": 313297,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "waltz-with-bashir",
+   "title": "Waltz With Bashir",
+   "year": 2008,
+   "imdb": "tt1185616",
+   "tmdb": 8885,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "the-mitchells-vs-the-machines",
+   "title": "The Mitchells vs. The Machines",
+   "year": 2021,
+   "imdb": "tt7979580",
+   "tmdb": 501929,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "paprika-2006",
+   "title": "Paprika",
+   "year": 2006,
+   "imdb": "tt0851578",
+   "tmdb": 4977,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "up",
+   "title": "Up",
+   "year": 2009,
+   "imdb": "tt1049413",
+   "tmdb": 14160,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "coraline",
+   "title": "Coraline",
+   "year": 2009,
+   "imdb": "tt0327597",
+   "tmdb": 14836,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "howls-moving-castle",
+   "title": "Howl’s Moving Castle",
+   "year": 2004,
+   "imdb": "tt0347149",
+   "tmdb": 4935,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "shaun-the-sheep-movie",
+   "title": "Shaun the Sheep Movie",
+   "year": 2015,
+   "imdb": "tt2872750",
+   "tmdb": 263109,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "ratatouille",
+   "title": "Ratatouille",
+   "year": 2007,
+   "imdb": "tt0382932",
+   "tmdb": 2062,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "marcel-the-shell-with-shoes-on-2021",
+   "title": "Marcel the Shell with Shoes On",
+   "year": 2021,
+   "imdb": "tt15339456",
+   "tmdb": 869626,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "your-name",
+   "title": "Your Name",
+   "year": 2016,
+   "imdb": "tt5311514",
+   "tmdb": 372058,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "the-lego-movie",
+   "title": "The Lego Movie",
+   "year": 2014,
+   "imdb": "tt1490017",
+   "tmdb": 137106,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "millennium-actress",
+   "title": "Millennium Actress",
+   "year": 2001,
+   "imdb": "tt0291350",
+   "tmdb": 33320,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "flow-2024",
+   "title": "Flow",
+   "year": 2024,
+   "imdb": "tt4772188",
+   "tmdb": 823219,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "isle-of-dogs-2018",
+   "title": "Isle of Dogs",
+   "year": 2018,
+   "imdb": "tt5104604",
+   "tmdb": 399174,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "the-triplets-of-belleville",
+   "title": "The Triplets of Belleville",
+   "year": 2003,
+   "imdb": "tt0286244",
+   "tmdb": 9662,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "anomalisa",
+   "title": "Anomalisa",
+   "year": 2015,
+   "imdb": "tt2401878",
+   "tmdb": 291270,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "moana-2016",
+   "title": "Moana",
+   "year": 2016,
+   "imdb": "tt3521164",
+   "tmdb": 277834,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "cloudy-with-a-chance-of-meatballs",
+   "title": "Cloudy with a Chance of Meatballs",
+   "year": 2009,
+   "imdb": "tt0844471",
+   "tmdb": 22794,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "frozen-2013",
+   "title": "Frozen",
+   "year": 2013,
+   "imdb": "tt2294629",
+   "tmdb": 109445,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "inside-out-2015",
+   "title": "Inside Out",
+   "year": 2015,
+   "imdb": "tt2096673",
+   "tmdb": 150540,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "sita-sings-the-blues",
+   "title": "Sita Sings the Blues",
+   "year": 2008,
+   "imdb": "tt1172203",
+   "tmdb": 20529,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "song-of-the-sea",
+   "title": "Song of the Sea",
+   "year": 2014,
+   "imdb": "tt1865505",
+   "tmdb": 110416,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "guillermo-del-toros-pinocchio",
+   "title": "Guillermo del Toro’s Pinocchio",
+   "year": 2022,
+   "imdb": "tt1488589",
+   "tmdb": 555604,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "paranorman",
+   "title": "ParaNorman",
+   "year": 2012,
+   "imdb": "tt1623288",
+   "tmdb": 77174,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "finding-nemo",
+   "title": "Finding Nemo",
+   "year": 2003,
+   "imdb": "tt0266543",
+   "tmdb": 12,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "turning-red",
+   "title": "Turning Red",
+   "year": 2022,
+   "imdb": "tt8097030",
+   "tmdb": 508947,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "lilo-stitch",
+   "title": "Lilo & Stitch",
+   "year": 2002,
+   "imdb": "tt0275847",
+   "tmdb": 11544,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "coco-2017",
+   "title": "Coco",
+   "year": 2017,
+   "imdb": "tt2380307",
+   "tmdb": 354912,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "soul-2020",
+   "title": "Soul",
+   "year": 2020,
+   "imdb": "tt2948372",
+   "tmdb": 508442,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "toy-story-3",
+   "title": "Toy Story 3",
+   "year": 2010,
+   "imdb": "tt0435761",
+   "tmdb": 10193,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "belle-2021",
+   "title": "Belle",
+   "year": 2021,
+   "imdb": "tt13651628",
+   "tmdb": 776305,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "wallace-gromit-vengeance-most-fowl",
+   "title": "Wallace & Gromit: Vengeance Most Fowl",
+   "year": 2024,
+   "imdb": "tt17163970",
+   "tmdb": 929204,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "i-lost-my-body",
+   "title": "I Lost My Body",
+   "year": 2019,
+   "imdb": "tt9806192",
+   "tmdb": 586940,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "the-secret-of-kells",
+   "title": "The Secret of Kells",
+   "year": 2009,
+   "imdb": "tt0485601",
+   "tmdb": 26963,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "how-to-train-your-dragon",
+   "title": "How to Train Your Dragon",
+   "year": 2010,
+   "imdb": "tt0892769",
+   "tmdb": 10191,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "ernest-celestine",
+   "title": "Ernest & Celestine",
+   "year": 2012,
+   "imdb": "tt1816518",
+   "tmdb": 126319,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "the-breadwinner",
+   "title": "The Breadwinner",
+   "year": 2017,
+   "imdb": "tt3901826",
+   "tmdb": 435129,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "my-life-as-a-courgette",
+   "title": "My Life as a Courgette",
+   "year": 2016,
+   "imdb": "tt2321405",
+   "tmdb": 393559,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "kung-fu-panda",
+   "title": "Kung Fu Panda",
+   "year": 2008,
+   "imdb": "tt0441773",
+   "tmdb": 9502,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "puss-in-boots-the-last-wish",
+   "title": "Puss in Boots: The Last Wish",
+   "year": 2022,
+   "imdb": "tt3915174",
+   "tmdb": 315162,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "shrek-2",
+   "title": "Shrek 2",
+   "year": 2004,
+   "imdb": "tt0298148",
+   "tmdb": 809,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "the-emperors-new-groove",
+   "title": "The Emperor’s New Groove",
+   "year": 2000,
+   "imdb": "tt0120917",
+   "tmdb": 11688,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "apollo-10-a-space-age-childhood",
+   "title": "Apollo 10 1⁄2: A Space Age Childhood",
+   "year": 2022,
+   "imdb": "tt7978758",
+   "tmdb": 664996,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "encanto",
+   "title": "Encanto",
+   "year": 2021,
+   "imdb": "tt2953050",
+   "tmdb": 568124,
+   "tmdbType": "movie"
+  },
+  {
+   "slug": "a-scanner-darkly",
+   "title": "A Scanner Darkly",
+   "year": 2006,
+   "imdb": "tt0405296",
+   "tmdb": 3509,
+   "tmdbType": "movie"
+  }
+ ]
+}

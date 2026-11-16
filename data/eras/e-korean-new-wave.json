@@ -1,0 +1,50 @@
+{
+"id": "e-korean-new-wave", "type": "school", "years": {"min": 1996}, "admit": ["core", "periphery"],
+"school": {
+  "countries": ["KR"],
+  "directors": [
+    {"id": 21684, "name": "Bong Joon Ho"},
+    {"id": 10099, "name": "Park Chan-wook"},
+    {"id": 96657, "name": "Lee Chang-dong"},
+    {"id": 150975, "name": "Hong Sang-soo"},
+    {"id": 1188, "name": "Kim Ki-duk"},
+    {"id": 69081, "name": "Kim Jee-woon"},
+    {"id": 75915, "name": "Na Hong-jin"},
+    {"id": 96631, "name": "Hur Jin-ho"},
+    {"id": 68905, "name": "Jang Joon-hwan"},
+    {"id": 126809, "name": "Lee Joon-ik"},
+    {"id": 939147, "name": "Yeon Sang-ho"},
+    {"id": 1583324, "name": "Yoon Ga-eun"},
+    {"id": 2166752, "name": "Kim Bora"}
+  ]
+},
+"sources": [
+  {"id": "wp-en-cinema-of-south-korea", "publication": "Wikipedia (en)", "title": "Cinema of South Korea", "url": "https://en.wikipedia.org/w/index.php?oldid=1383775022", "revision": 1383775022, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-11-04"}
+],
+"consensus": null,
+"films": [
+  {"imdb": "tt0192657", "tmdb": 10355, "slug": "shiri", "title": "Shiri", "year": 1999, "sources": ["wp-en-cinema-of-south-korea"], "class": "periphery"},
+  {"imdb": "tt0260991", "tmdb": 2440, "slug": "joint-security-area", "title": "Joint Security Area", "year": 2000, "sources": ["wp-en-cinema-of-south-korea"], "class": "periphery"},
+  {"imdb": "tt0281718", "tmdb": 19635, "slug": "friend", "title": "Friend", "year": 2001, "sources": ["wp-en-cinema-of-south-korea"], "class": "periphery"},
+  {"imdb": "tt0293715", "tmdb": 11178, "slug": "my-sassy-girl", "title": "My Sassy Girl", "year": 2001, "sources": ["wp-en-cinema-of-south-korea"], "class": "periphery"},
+  {"imdb": "tt0364569", "tmdb": 670, "slug": "oldboy", "title": "Oldboy", "year": 2003, "sources": ["wp-en-cinema-of-south-korea"], "class": "periphery"},
+  {"imdb": "tt0387596", "tmdb": 19644, "slug": "silmido", "title": "Silmido", "year": 2003, "sources": ["wp-en-cinema-of-south-korea"], "class": "periphery"},
+  {"imdb": "tt0386064", "tmdb": 11658, "slug": "tae-guk-gi-the-brotherhood-of-war", "title": "Taegukgi", "year": 2004, "sources": ["wp-en-cinema-of-south-korea"], "class": "periphery"},
+  {"imdb": "tt0468492", "tmdb": 1255, "slug": "the-host", "title": "The Host", "year": 2006, "sources": ["wp-en-cinema-of-south-korea"], "class": "periphery"},
+  {"imdb": "tt2299842", "tmdb": 123377, "title": "Pietà", "year": 2012, "sources": ["wp-en-cinema-of-south-korea"], "class": "periphery"},
+  {"imdb": "tt5215952", "tmdb": 293670, "title": "The Wailing", "year": 2016, "sources": ["wp-en-cinema-of-south-korea"], "class": "periphery"},
+  {"imdb": "tt5700672", "tmdb": 396535, "slug": "train-to-busan", "title": "Train to Busan", "year": 2016, "sources": ["wp-en-cinema-of-south-korea"], "class": "periphery"},
+  {"imdb": "tt6751668", "tmdb": 496243, "title": "Parasite", "year": 2019, "sources": ["wp-en-cinema-of-south-korea"], "class": "periphery"},
+  {"imdb": "tt12477480", "tmdb": 705996, "title": "Decision to Leave", "year": 2022, "sources": ["wp-en-cinema-of-south-korea"], "class": "periphery"},
+  {"imdb": "tt13056052", "tmdb": 736732, "title": "Broker", "year": 2022, "sources": ["wp-en-cinema-of-south-korea"], "class": "periphery"}
+],
+"exclude": [
+
+],
+"pending": [
+  {"imdb": "tt3541262", "title": "The Admiral: Roaring Currents", "year": 2014, "class": "periphery", "why": "above the prefilter and not in the index, but no TMDB id or Letterboxd page is known yet"},
+  {"imdb": "tt4914580", "title": "The Age of Shadows", "year": 2016, "class": "periphery", "why": "above the prefilter and not in the index, but no TMDB id or Letterboxd page is known yet"},
+  {"imdb": "tt9541602", "title": "Extreme Job", "year": 2019, "class": "periphery", "why": "above the prefilter and not in the index, but no TMDB id or Letterboxd page is known yet"}
+],
+"counted": {"curationFilms": 18, "written": 14, "inIndexOfReference": 10, "notInIndexAdmitted": 7, "notInIndexPassingImdb7": 6, "pending": 3, "documentariesWrittenOut": 0, "leftOut": {"class not admitted by the era": 1, "named with no id and no class (not written in pending)": 0}}
+}

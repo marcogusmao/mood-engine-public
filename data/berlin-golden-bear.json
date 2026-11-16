@@ -1,0 +1,1907 @@
+{
+ "gerado": "2026-10-13",
+ "fonte": "Wikipedia em inglês, página \"Golden Bear\", revisão oldid=1377765480 (https://en.wikipedia.org/w/index.php?title=Golden_Bear&oldid=1377765480); IMDb ids do Wikidata (P345), conferidos contra o Letterboxd; consulta em 13/10/2026",
+ "regra": "Marco, 13/10/2026: fileira Cannes, Venice and Berlin winners; só o prêmio principal de Berlim (Urso de Ouro, 1951+, ex aequo incluídos). Prêmios do júri e demais Ursos ficam de fora neste lote. Decisão de sessão (13/10/2026, reversível): os cinco Ursos de Ouro de 1951 concedidos por gênero (Four in a Jeep, Without Leaving an Address, In Beaver Valley, Justice Is Done, Cinderella) NÃO contam: os filmes ficam no arquivo sob a chave 'Golden Bear (1951, por gênero)', mas essa string não está em premios_criticos; para voltarem a contar, acrescente-a de volta à lista.",
+ "premios_criticos": [
+  "Golden Bear (1952-2026)"
+ ],
+ "anos_sem_premio": [
+  {
+   "ano": 1970,
+   "motivo": "Wikipedia: nenhum prêmio por causa da polêmica do filme o.k., de Michael Verhoeven; o júri renunciou"
+  }
+ ],
+ "filmes": [
+  {
+   "slug": "yellow-letters",
+   "title": "Yellow Letters",
+   "year": 2026,
+   "imdb": "tt32888226",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     2026
+    ]
+   },
+   "titulo_original": "Gelbe Briefe",
+   "diretor": "İlker Çatak",
+   "pais": [
+    "Germany",
+    "France",
+    "Turkey"
+   ],
+   "wikipedia": "Yellow Letters",
+   "wikidata": "Q136163095",
+   "wikidata_revid": 2556580992,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt32888226/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "dreams-2024-5",
+   "title": "Dreams (Sex Love)",
+   "year": 2024,
+   "imdb": "tt30810787",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     2025
+    ]
+   },
+   "titulo_original": "Drømmer",
+   "diretor": "Dag Johan Haugerud",
+   "pais": [
+    "Norway"
+   ],
+   "wikipedia": "Dreams (Sex Love)",
+   "wikidata": "Q129759798",
+   "wikidata_revid": 2551974004,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt30810787/ nomeia o mesmo tt",
+   "titulo_wikidata_en": "Dreams"
+  },
+  {
+   "slug": "dahomey",
+   "title": "Dahomey",
+   "year": 2024,
+   "imdb": "tt31015216",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     2024
+    ]
+   },
+   "titulo_original": "Dahomey",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Mati Diop",
+   "pais": [
+    "France",
+    "Senegal",
+    "Benin"
+   ],
+   "wikipedia": "Dahomey (film)",
+   "wikidata": "Q124319816",
+   "wikidata_revid": 2552135229,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt31015216/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "on-the-adamant",
+   "title": "On the Adamant",
+   "year": 2023,
+   "imdb": "tt26448811",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     2023
+    ]
+   },
+   "titulo_original": "Sur l'Adamant",
+   "diretor": "Nicolas Philibert",
+   "pais": [
+    "France",
+    "Japan"
+   ],
+   "wikipedia": "On the Adamant",
+   "wikidata": "Q116414358",
+   "wikidata_revid": 2544055126,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt26448811/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "alcarras",
+   "title": "Alcarràs",
+   "year": 2022,
+   "imdb": "tt11930126",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     2022
+    ]
+   },
+   "titulo_original": "Alcarràs",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Carla Simón",
+   "pais": [
+    "Spain",
+    "Italy"
+   ],
+   "wikipedia": "Alcarràs (film)",
+   "wikidata": "Q110622667",
+   "wikidata_revid": 2548926004,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt11930126/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "bad-luck-banging-or-loony-porn",
+   "title": "Bad Luck Banging or Loony Porn",
+   "year": 2021,
+   "imdb": "tt14033502",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     2021
+    ]
+   },
+   "titulo_original": "Babardeală cu bucluc sau porno balamuc",
+   "diretor": "Radu Jude",
+   "pais": [
+    "Romania"
+   ],
+   "wikipedia": "Bad Luck Banging or Loony Porn",
+   "wikidata": "Q105441000",
+   "wikidata_revid": 2552245428,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt14033502/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "there-is-no-evil",
+   "title": "There Is No Evil",
+   "year": 2020,
+   "imdb": "tt11697844",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     2020
+    ]
+   },
+   "titulo_original": "شیطان وجود ندارد",
+   "diretor": "Mohammad Rasoulof",
+   "pais": [
+    "Iran"
+   ],
+   "wikipedia": "There Is No Evil",
+   "wikidata": "Q84321441",
+   "wikidata_revid": 2552241966,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt11697844/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "synonyms",
+   "title": "Synonyms",
+   "year": 2019,
+   "imdb": "tt7016254",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     2019
+    ]
+   },
+   "titulo_original": "Synonymes",
+   "diretor": "Nadav Lapid",
+   "pais": [
+    "France",
+    "Israel"
+   ],
+   "wikipedia": "Synonyms (film)",
+   "wikidata": "Q61672685",
+   "wikidata_revid": 2538563598,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt7016254/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "touch-me-not-2018",
+   "title": "Touch Me Not",
+   "year": 2018,
+   "imdb": "tt4949112",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     2018
+    ]
+   },
+   "titulo_original": "Nu mă atinge-mă",
+   "diretor": "Adina Pintilie",
+   "pais": [
+    "Romania"
+   ],
+   "wikipedia": "Touch Me Not",
+   "wikidata": "Q44869778",
+   "wikidata_revid": 2553155310,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt4949112/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "on-body-and-soul",
+   "title": "On Body and Soul",
+   "year": 2017,
+   "imdb": "tt5607714",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     2017
+    ]
+   },
+   "titulo_original": "Testről és lélekről",
+   "diretor": "Ildikó Enyedi",
+   "pais": [
+    "Hungary"
+   ],
+   "wikipedia": "On Body and Soul",
+   "wikidata": "Q28127581",
+   "wikidata_revid": 2547814826,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt5607714/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "fire-at-sea",
+   "title": "Fire at Sea",
+   "year": 2016,
+   "imdb": "tt3652526",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     2016
+    ]
+   },
+   "titulo_original": "Fuocoammare",
+   "diretor": "Gianfranco Rosi",
+   "pais": [
+    "Italy"
+   ],
+   "wikipedia": "Fire at Sea",
+   "wikidata": "Q22238173",
+   "wikidata_revid": 2535223830,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt3652526/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "taxi-2015",
+   "title": "Taxi",
+   "year": 2015,
+   "imdb": "tt4359416",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     2015
+    ]
+   },
+   "titulo_original": "تاکسی",
+   "diretor": "Jafar Panahi",
+   "pais": [
+    "Iran"
+   ],
+   "wikipedia": "Taxi (2015 film)",
+   "wikidata": "Q18844625",
+   "wikidata_revid": 2538550637,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt4359416/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "black-coal-thin-ice",
+   "title": "Black Coal, Thin Ice",
+   "year": 2014,
+   "imdb": "tt3469910",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     2014
+    ]
+   },
+   "titulo_original": "白日焰火",
+   "diretor": "Diao Yinan",
+   "pais": [
+    "China"
+   ],
+   "wikipedia": "Black Coal, Thin Ice",
+   "wikidata": "Q15731283",
+   "wikidata_revid": 2538410079,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt3469910/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "childs-pose",
+   "title": "Child's Pose",
+   "year": 2013,
+   "imdb": "tt2187115",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     2013
+    ]
+   },
+   "titulo_original": "Poziția copilului",
+   "diretor": "Călin Peter Netzer",
+   "pais": [
+    "Romania"
+   ],
+   "wikipedia": "Child's Pose (film)",
+   "wikidata": "Q4778856",
+   "wikidata_revid": 2549671379,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt2187115/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "caesar-must-die",
+   "title": "Caesar Must Die",
+   "year": 2012,
+   "imdb": "tt2177511",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     2012
+    ]
+   },
+   "titulo_original": "Cesare deve morire",
+   "diretor": "Paolo and Vittorio Taviani",
+   "pais": [
+    "Italy"
+   ],
+   "wikipedia": "Caesar Must Die",
+   "wikidata": "Q1059540",
+   "wikidata_revid": 2550188979,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt2177511/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "a-separation",
+   "title": "A Separation",
+   "year": 2011,
+   "imdb": "tt1832382",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     2011
+    ]
+   },
+   "titulo_original": "جدایی نادر از سیمین",
+   "diretor": "Asghar Farhadi",
+   "pais": [
+    "Iran"
+   ],
+   "wikipedia": "A Separation",
+   "wikidata": "Q640561",
+   "wikidata_revid": 2547912741,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt1832382/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "honey-2010",
+   "title": "Honey",
+   "year": 2010,
+   "imdb": "tt1571724",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     2010
+    ]
+   },
+   "titulo_original": "Bal",
+   "diretor": "Semih Kaplanoğlu",
+   "pais": [
+    "Turkey"
+   ],
+   "wikipedia": "Honey (2010 film)",
+   "wikidata": "Q804582",
+   "wikidata_revid": 2545089832,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt1571724/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "the-milk-of-sorrow",
+   "title": "The Milk of Sorrow",
+   "year": 2009,
+   "imdb": "tt1206488",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     2009
+    ]
+   },
+   "titulo_original": "La teta asustada",
+   "diretor": "Claudia Llosa",
+   "pais": [
+    "Spain",
+    "Peru"
+   ],
+   "wikipedia": "The Milk of Sorrow",
+   "wikidata": "Q1129420",
+   "wikidata_revid": 2534681472,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt1206488/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "elite-squad",
+   "title": "Elite Squad",
+   "year": 2007,
+   "imdb": "tt0861739",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     2008
+    ]
+   },
+   "titulo_original": "Tropa de Elite",
+   "diretor": "José Padilha",
+   "pais": [
+    "Brazil"
+   ],
+   "wikipedia": "Elite Squad",
+   "wikidata": "Q282781",
+   "wikidata_revid": 2548760007,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0861739/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "tuyas-marriage",
+   "title": "Tuya's Marriage",
+   "year": 2006,
+   "imdb": "tt0949564",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     2007
+    ]
+   },
+   "titulo_original": "图雅的婚事",
+   "diretor": "Wang Quan'an",
+   "pais": [
+    "China"
+   ],
+   "wikipedia": "Tuya's Marriage",
+   "wikidata": "Q430987",
+   "wikidata_revid": 2537912110,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0949564/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "grbavica-the-land-of-my-dreams",
+   "title": "Grbavica",
+   "year": 2006,
+   "imdb": "tt0464029",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     2006
+    ]
+   },
+   "titulo_original": "Grbavica",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Jasmila Žbanić",
+   "pais": [
+    "Bosnia and Herzegovina"
+   ],
+   "wikipedia": "Grbavica (film)",
+   "wikidata": "Q116171",
+   "wikidata_revid": 2540359241,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0464029/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "u-carmen-ekhayelitsha",
+   "title": "U-Carmen eKhayelitsha",
+   "year": 2005,
+   "imdb": "tt0445776",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     2005
+    ]
+   },
+   "titulo_original": "U-Carmen eKhayelitsha",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Mark Dornford-May",
+   "pais": [
+    "South Africa"
+   ],
+   "wikipedia": "U-Carmen eKhayelitsha",
+   "wikidata": "Q2141815",
+   "wikidata_revid": 2534787238,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0445776/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "head-on-2004",
+   "title": "Head-On",
+   "year": 2004,
+   "imdb": "tt0347048",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     2004
+    ]
+   },
+   "titulo_original": "Gegen die Wand",
+   "diretor": "Fatih Akin",
+   "pais": [
+    "Germany",
+    "Turkey"
+   ],
+   "wikipedia": "Head-On (film)",
+   "wikidata": "Q325648",
+   "wikidata_revid": 2537878298,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0347048/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "in-this-world",
+   "title": "In This World",
+   "year": 2002,
+   "imdb": "tt0310154",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     2003
+    ]
+   },
+   "titulo_original": "In This World",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Michael Winterbottom",
+   "pais": [
+    "United Kingdom"
+   ],
+   "wikipedia": "In This World",
+   "wikidata": "Q1458594",
+   "wikidata_revid": 2538718192,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0310154/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "bloody-sunday",
+   "title": "Bloody Sunday",
+   "year": 2002,
+   "imdb": "tt0280491",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     2002
+    ]
+   },
+   "titulo_original": "Bloody Sunday",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Paul Greengrass",
+   "pais": [
+    "United Kingdom",
+    "Ireland"
+   ],
+   "wikipedia": "Bloody Sunday (film)",
+   "wikidata": "Q885302",
+   "wikidata_revid": 2537920707,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0280491/ nomeia o mesmo tt",
+   "ex_aequo_com": [
+    "spirited-away"
+   ]
+  },
+  {
+   "slug": "spirited-away",
+   "title": "Spirited Away",
+   "year": 2001,
+   "imdb": "tt0245429",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     2002
+    ]
+   },
+   "titulo_original": "千と千尋の神隠し",
+   "diretor": "Hayao Miyazaki",
+   "pais": [
+    "Japan"
+   ],
+   "wikipedia": "Spirited Away",
+   "wikidata": "Q155653",
+   "wikidata_revid": 2549398279,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0245429/ nomeia o mesmo tt",
+   "ex_aequo_com": [
+    "bloody-sunday"
+   ]
+  },
+  {
+   "slug": "intimacy-2001",
+   "title": "Intimacy",
+   "year": 2001,
+   "imdb": "tt0256103",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     2001
+    ]
+   },
+   "titulo_original": "Intimacy",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Patrice Chéreau",
+   "pais": [
+    "France"
+   ],
+   "wikipedia": "Intimacy (2001 film)",
+   "wikidata": "Q76827",
+   "wikidata_revid": 2549912399,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0256103/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "magnolia",
+   "title": "Magnolia",
+   "year": 1999,
+   "imdb": "tt0175880",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     2000
+    ]
+   },
+   "titulo_original": "Magnolia",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Paul Thomas Anderson",
+   "pais": [
+    "United States"
+   ],
+   "wikipedia": "Magnolia (film)",
+   "wikidata": "Q588420",
+   "wikidata_revid": 2553164340,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0175880/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "the-thin-red-line",
+   "title": "The Thin Red Line",
+   "year": 1998,
+   "imdb": "tt0120863",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1999
+    ]
+   },
+   "titulo_original": "The Thin Red Line",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Terrence Malick",
+   "pais": [
+    "United States"
+   ],
+   "wikipedia": "The Thin Red Line (1998 film)",
+   "wikidata": "Q221491",
+   "wikidata_revid": 2556403053,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0120863/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "central-station",
+   "title": "Central Station",
+   "year": 1998,
+   "imdb": "tt0140888",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1998
+    ]
+   },
+   "titulo_original": "Central do Brasil",
+   "diretor": "Walter Salles",
+   "pais": [
+    "Brazil",
+    "France"
+   ],
+   "wikipedia": "Central Station (film)",
+   "wikidata": "Q1054036",
+   "wikidata_revid": 2556225307,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0140888/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "the-people-vs-larry-flynt",
+   "title": "The People vs. Larry Flynt",
+   "year": 1996,
+   "imdb": "tt0117318",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1997
+    ]
+   },
+   "titulo_original": "The People vs. Larry Flynt",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Miloš Forman",
+   "pais": [
+    "United States"
+   ],
+   "wikipedia": "The People vs. Larry Flynt",
+   "wikidata": "Q750077",
+   "wikidata_revid": 2538756986,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0117318/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "sense-and-sensibility",
+   "title": "Sense and Sensibility",
+   "year": 1995,
+   "imdb": "tt0114388",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1996
+    ]
+   },
+   "titulo_original": "Sense and Sensibility",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Ang Lee",
+   "pais": [
+    "United States"
+   ],
+   "wikipedia": "Sense and Sensibility (1995 film)",
+   "wikidata": "Q643263",
+   "wikidata_revid": 2552657359,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0114388/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "fresh-bait",
+   "title": "The Bait",
+   "year": 1995,
+   "imdb": "tt0112387",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1995
+    ]
+   },
+   "titulo_original": "L'appât",
+   "diretor": "Bertrand Tavernier",
+   "pais": [
+    "France"
+   ],
+   "wikipedia": "The Bait (1995 film)",
+   "wikidata": "Q1087039",
+   "wikidata_revid": 2538405536,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0112387/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "in-the-name-of-the-father-1993",
+   "title": "In the Name of the Father",
+   "year": 1993,
+   "imdb": "tt0107207",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1994
+    ]
+   },
+   "titulo_original": "In the Name of the Father",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Jim Sheridan",
+   "pais": [
+    "United Kingdom",
+    "Ireland"
+   ],
+   "wikipedia": "In the Name of the Father",
+   "wikidata": "Q304074",
+   "wikidata_revid": 2538329633,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0107207/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "the-wedding-banquet",
+   "title": "The Wedding Banquet",
+   "year": 1993,
+   "imdb": "tt0107156",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1993
+    ]
+   },
+   "titulo_original": "喜宴",
+   "diretor": "Ang Lee",
+   "pais": [
+    "Taiwan",
+    "United States"
+   ],
+   "wikipedia": "The Wedding Banquet",
+   "wikidata": "Q182071",
+   "wikidata_revid": 2541059768,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0107156/ nomeia o mesmo tt",
+   "ex_aequo_com": [
+    "women-from-the-lake-of-scented-souls"
+   ]
+  },
+  {
+   "slug": "women-from-the-lake-of-scented-souls",
+   "title": "Woman Sesame Oil Maker",
+   "year": 1993,
+   "imdb": "tt0108608",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1993
+    ]
+   },
+   "titulo_original": "香魂女",
+   "diretor": "Xie Fei",
+   "pais": [
+    "China"
+   ],
+   "wikipedia": "Woman Sesame Oil Maker",
+   "wikidata": "Q1088947",
+   "wikidata_revid": 2534798953,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0108608/ nomeia o mesmo tt",
+   "ex_aequo_com": [
+    "the-wedding-banquet"
+   ]
+  },
+  {
+   "slug": "grand-canyon",
+   "title": "Grand Canyon",
+   "year": 1991,
+   "imdb": "tt0101969",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1992
+    ]
+   },
+   "titulo_original": "Grand Canyon",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Lawrence Kasdan",
+   "pais": [
+    "United States"
+   ],
+   "wikipedia": "Grand Canyon (1991 film)",
+   "wikidata": "Q1542548",
+   "wikidata_revid": 2538820846,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0101969/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "the-house-of-smiles",
+   "title": "The House of Smiles",
+   "year": 1991,
+   "imdb": "tt0094841",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1991
+    ]
+   },
+   "titulo_original": "La casa del sorriso",
+   "diretor": "Marco Ferreri",
+   "pais": [
+    "Italy"
+   ],
+   "wikipedia": "The House of Smiles",
+   "wikidata": "Q1088798",
+   "wikidata_revid": 2534798934,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0094841/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "larks-on-a-string",
+   "title": "Larks on a String",
+   "year": 1969,
+   "imdb": "tt0064994",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1990
+    ]
+   },
+   "titulo_original": "Skřivánci na niti",
+   "diretor": "Jiří Menzel",
+   "pais": [
+    "Czechoslovakia"
+   ],
+   "wikipedia": "Larks on a String",
+   "wikidata": "Q2303863",
+   "wikidata_revid": 2537887469,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0064994/ nomeia o mesmo tt",
+   "notas": [
+    "ano do filme: Letterboxd 1969, Wikidata P577 1990; usado o do Letterboxd (mesma regra do arquivo de Cannes)",
+    "ano do filme (1969) distante do ano do prêmio (1990)"
+   ],
+   "ex_aequo_com": [
+    "music-box"
+   ]
+  },
+  {
+   "slug": "music-box",
+   "title": "Music Box",
+   "year": 1989,
+   "imdb": "tt0100211",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1990
+    ]
+   },
+   "titulo_original": "Music Box",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Costa-Gavras",
+   "pais": [
+    "United States"
+   ],
+   "wikipedia": "Music Box (film)",
+   "wikidata": "Q1427849",
+   "wikidata_revid": 2545395314,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0100211/ nomeia o mesmo tt",
+   "ex_aequo_com": [
+    "larks-on-a-string"
+   ]
+  },
+  {
+   "slug": "rain-man",
+   "title": "Rain Man",
+   "year": 1988,
+   "imdb": "tt0095953",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1989
+    ]
+   },
+   "titulo_original": "Rain Man",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Barry Levinson",
+   "pais": [
+    "United States"
+   ],
+   "wikipedia": "Rain Man",
+   "wikidata": "Q188845",
+   "wikidata_revid": 2550878283,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0095953/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "red-sorghum",
+   "title": "Red Sorghum",
+   "year": 1988,
+   "imdb": "tt0093206",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1988
+    ]
+   },
+   "titulo_original": "红高粱",
+   "diretor": "Zhang Yimou",
+   "pais": [
+    "China"
+   ],
+   "wikipedia": "Red Sorghum (film)",
+   "wikidata": "Q166588",
+   "wikidata_revid": 2538005969,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0093206/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "the-theme",
+   "title": "The Theme",
+   "year": 1979,
+   "imdb": "tt0079999",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1987
+    ]
+   },
+   "titulo_original": "Teмa",
+   "diretor": "Gleb Panfilov",
+   "pais": [
+    "Soviet Union"
+   ],
+   "wikipedia": "The Theme",
+   "wikidata": "Q734048",
+   "wikidata_revid": 2538004277,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0079999/ nomeia o mesmo tt",
+   "notas": [
+    "ano do filme (1979) distante do ano do prêmio (1987)"
+   ]
+  },
+  {
+   "slug": "the-baader-meinhof-gang-on-trial",
+   "title": "Stammheim",
+   "year": 1986,
+   "imdb": "tt0092004",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1986
+    ]
+   },
+   "titulo_original": "Stammheim – Die Baader-Meinhof-Gruppe vor Gericht",
+   "diretor": "Reinhard Hauff",
+   "pais": [
+    "West Germany"
+   ],
+   "wikipedia": "Stammheim (film)",
+   "wikidata": "Q571512",
+   "wikidata_revid": 2538212730,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0092004/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "the-woman-and-the-stranger",
+   "title": "The Woman and the Stranger",
+   "year": 1985,
+   "imdb": "tt0089169",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1985
+    ]
+   },
+   "titulo_original": "Die Frau und der Fremde",
+   "diretor": "Rainer Simon",
+   "pais": [
+    "East Germany"
+   ],
+   "wikipedia": "The Woman and the Stranger",
+   "wikidata": "Q480773",
+   "wikidata_revid": 2534719025,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0089169/ nomeia o mesmo tt",
+   "ex_aequo_com": [
+    "wetherby"
+   ]
+  },
+  {
+   "slug": "wetherby",
+   "title": "Wetherby",
+   "year": 1985,
+   "imdb": "tt0090310",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1985
+    ]
+   },
+   "titulo_original": "Wetherby",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "David Hare",
+   "pais": [
+    "United Kingdom"
+   ],
+   "wikipedia": "Wetherby (film)",
+   "wikidata": "Q3420924",
+   "wikidata_revid": 2538578134,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0090310/ nomeia o mesmo tt",
+   "notas": [
+    "ano do filme: Letterboxd 1985, Wikidata P577 1984; usado o do Letterboxd (mesma regra do arquivo de Cannes)"
+   ],
+   "ex_aequo_com": [
+    "the-woman-and-the-stranger"
+   ]
+  },
+  {
+   "slug": "love-streams",
+   "title": "Love Streams",
+   "year": 1984,
+   "imdb": "tt0087644",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1984
+    ]
+   },
+   "titulo_original": "Love Streams",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "John Cassavetes",
+   "pais": [
+    "United States"
+   ],
+   "wikipedia": "Love Streams (film)",
+   "wikidata": "Q2521232",
+   "wikidata_revid": 2538278413,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0087644/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "ascendancy",
+   "title": "Ascendancy",
+   "year": 1983,
+   "imdb": "tt0083582",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1983
+    ]
+   },
+   "titulo_original": "Ascendancy",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Edward Bennett",
+   "pais": [
+    "United Kingdom"
+   ],
+   "wikipedia": "Ascendancy (film)",
+   "wikidata": "Q2607773",
+   "wikidata_revid": 2553931706,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0083582/ nomeia o mesmo tt",
+   "ex_aequo_com": [
+    "the-beehive"
+   ]
+  },
+  {
+   "slug": "the-beehive",
+   "title": "La colmena",
+   "year": 1982,
+   "imdb": "tt0083743",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1983
+    ]
+   },
+   "titulo_original": "La colmena",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Mario Camus",
+   "pais": [
+    "Spain"
+   ],
+   "wikipedia": "La colmena (film)",
+   "wikidata": "Q1402826",
+   "wikidata_revid": 2534726153,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0083743/ nomeia o mesmo tt",
+   "ex_aequo_com": [
+    "ascendancy"
+   ]
+  },
+  {
+   "slug": "veronika-voss",
+   "title": "Veronika Voss",
+   "year": 1982,
+   "imdb": "tt0084654",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1982
+    ]
+   },
+   "titulo_original": "Die Sehnsucht der Veronika Voss",
+   "diretor": "Rainer Werner Fassbinder",
+   "pais": [
+    "West Germany"
+   ],
+   "wikipedia": "Veronika Voss",
+   "wikidata": "Q703188",
+   "wikidata_revid": 2550198904,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0084654/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "faster-faster",
+   "title": "Deprisa, deprisa",
+   "year": 1981,
+   "imdb": "tt0082259",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1981
+    ]
+   },
+   "titulo_original": "Deprisa, deprisa",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Carlos Saura",
+   "pais": [
+    "Spain"
+   ],
+   "wikipedia": "Deprisa, deprisa",
+   "wikidata": "Q922099",
+   "wikidata_revid": 2538848759,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0082259/ nomeia o mesmo tt",
+   "titulo_wikidata_en": "Deprisa, Deprisa"
+  },
+  {
+   "slug": "heartland",
+   "title": "Heartland",
+   "year": 1979,
+   "imdb": "tt0082508",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1980
+    ]
+   },
+   "titulo_original": "Heartland",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Richard Pearce",
+   "pais": [
+    "United States"
+   ],
+   "wikipedia": "Heartland (1979 film)",
+   "wikidata": "Q1402558",
+   "wikidata_revid": 2510547404,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0082508/ nomeia o mesmo tt",
+   "ex_aequo_com": [
+    "palermo-or-wolfsburg"
+   ]
+  },
+  {
+   "slug": "palermo-or-wolfsburg",
+   "title": "Palermo or Wolfsburg",
+   "year": 1980,
+   "imdb": "tt0081299",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1980
+    ]
+   },
+   "titulo_original": "Palermo oder Wolfsburg",
+   "diretor": "Werner Schroeter",
+   "pais": [
+    "West Germany"
+   ],
+   "wikipedia": "Palermo or Wolfsburg",
+   "wikidata": "Q322107",
+   "wikidata_revid": 2538219753,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0081299/ nomeia o mesmo tt",
+   "ex_aequo_com": [
+    "heartland"
+   ]
+  },
+  {
+   "slug": "david-1979",
+   "title": "David",
+   "year": 1979,
+   "imdb": "tt0079028",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1979
+    ]
+   },
+   "titulo_original": "David",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Peter Lilienthal",
+   "pais": [
+    "West Germany"
+   ],
+   "wikipedia": "David (1979 film)",
+   "wikidata": "Q325286",
+   "wikidata_revid": 2481922391,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0079028/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "ascensor",
+   "title": "Ascensor",
+   "year": 1978,
+   "imdb": "tt0425756",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1978
+    ]
+   },
+   "titulo_original": "Ascensor",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Tomás Muñoz",
+   "pais": [
+    "Spain"
+   ],
+   "wikipedia": "Ascensor",
+   "wikidata": "Q2866389",
+   "wikidata_revid": 2438286552,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0425756/ nomeia o mesmo tt",
+   "ex_aequo_com": [
+    "trout",
+    "what-max-said"
+   ]
+  },
+  {
+   "slug": "trout",
+   "title": "Las truchas",
+   "year": 1978,
+   "imdb": "tt0078421",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1978
+    ]
+   },
+   "titulo_original": "Las truchas",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "José Luis García Sánchez",
+   "pais": [
+    "Spain"
+   ],
+   "wikipedia": "Las truchas",
+   "wikidata": "Q3218260",
+   "wikidata_revid": 2510558551,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0078421/ nomeia o mesmo tt",
+   "ex_aequo_com": [
+    "ascensor",
+    "what-max-said"
+   ]
+  },
+  {
+   "slug": "what-max-said",
+   "title": "What Max Said",
+   "year": 1978,
+   "imdb": "tt0076520",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1978
+    ]
+   },
+   "titulo_original": "Las palabras de Max",
+   "diretor": "Emilio Martínez-Lázaro",
+   "pais": [
+    "Spain"
+   ],
+   "wikipedia": "What Max Said",
+   "wikidata": "Q3015346",
+   "wikidata_revid": 2510561875,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0076520/ nomeia o mesmo tt",
+   "ex_aequo_com": [
+    "ascensor",
+    "trout"
+   ]
+  },
+  {
+   "slug": "the-ascent",
+   "title": "The Ascent",
+   "year": 1977,
+   "imdb": "tt0075404",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1977
+    ]
+   },
+   "titulo_original": "Восхождение",
+   "diretor": "Larisa Shepitko",
+   "pais": [
+    "Soviet Union"
+   ],
+   "wikipedia": "The Ascent (1977 film)",
+   "wikidata": "Q760053",
+   "wikidata_revid": 2538554718,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0075404/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "buffalo-bill-and-the-indians-or-sitting-bulls-history-lesson",
+   "title": "Buffalo Bill and the Indians, or Sitting Bull's History Lesson",
+   "year": 1976,
+   "imdb": "tt0074254",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1976
+    ]
+   },
+   "titulo_original": "Buffalo Bill and the Indians, or Sitting Bull's History Lesson",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Robert Altman",
+   "pais": [
+    "United States"
+   ],
+   "wikipedia": "Buffalo Bill and the Indians, or Sitting Bull's History Lesson",
+   "wikidata": "Q1001943",
+   "wikidata_revid": 2540595358,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0074254/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "adoption",
+   "title": "Adoption",
+   "year": 1975,
+   "imdb": "tt0073948",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1975
+    ]
+   },
+   "titulo_original": "Örökbefogadás",
+   "diretor": "Márta Mészáros",
+   "pais": [
+    "Hungary"
+   ],
+   "wikipedia": "Adoption (film)",
+   "wikidata": "Q1475202",
+   "wikidata_revid": 2534734015,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0073948/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "the-apprenticeship-of-duddy-kravitz",
+   "title": "The Apprenticeship of Duddy Kravitz",
+   "year": 1974,
+   "imdb": "tt0071155",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1974
+    ]
+   },
+   "titulo_original": "The Apprenticeship of Duddy Kravitz",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Ted Kotcheff",
+   "pais": [
+    "Canada"
+   ],
+   "wikipedia": "The Apprenticeship of Duddy Kravitz (film)",
+   "wikidata": "Q1402938",
+   "wikidata_revid": 2538224351,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0071155/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "distant-thunder",
+   "title": "Distant Thunder",
+   "year": 1973,
+   "imdb": "tt0069737",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1973
+    ]
+   },
+   "titulo_original": "অশনি সংকেত",
+   "diretor": "Satyajit Ray",
+   "pais": [
+    "India"
+   ],
+   "wikipedia": "Distant Thunder (1973 film)",
+   "wikidata": "Q715026",
+   "wikidata_revid": 2555358730,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0069737/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "the-canterbury-tales",
+   "title": "The Canterbury Tales",
+   "year": 1972,
+   "imdb": "tt0067647",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1972
+    ]
+   },
+   "titulo_original": "I racconti di Canterbury",
+   "diretor": "Pier Paolo Pasolini",
+   "pais": [
+    "Italy"
+   ],
+   "wikipedia": "The Canterbury Tales (film)",
+   "wikidata": "Q858047",
+   "wikidata_revid": 2556118278,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0067647/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "the-garden-of-the-finzi-continis",
+   "title": "The Garden of the Finzi-Continis",
+   "year": 1970,
+   "imdb": "tt0065777",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1971
+    ]
+   },
+   "titulo_original": "Il giardino dei Finzi Contini",
+   "diretor": "Vittorio De Sica",
+   "pais": [
+    "West Germany",
+    "Italy"
+   ],
+   "wikipedia": "The Garden of the Finzi-Continis (film)",
+   "wikidata": "Q683014",
+   "wikidata_revid": 2538770600,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0065777/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "early-works",
+   "title": "Early Works",
+   "year": 1969,
+   "imdb": "tt0064874",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1969
+    ]
+   },
+   "titulo_original": "Rani radovi / Рани радови",
+   "diretor": "Želimir Žilnik",
+   "pais": [
+    "Yugoslavia"
+   ],
+   "wikipedia": "Early Works (film)",
+   "wikidata": "Q2026238",
+   "wikidata_revid": 2537970404,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0064874/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "who-saw-him-die",
+   "title": "Who Saw Him Die?",
+   "year": 1968,
+   "imdb": "tt0063384",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1968
+    ]
+   },
+   "titulo_original": "Ole dole doff",
+   "diretor": "Jan Troell",
+   "pais": [
+    "Sweden"
+   ],
+   "wikipedia": "Who Saw Him Die?",
+   "wikidata": "Q532112",
+   "wikidata_revid": 2534725740,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0063384/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "the-departure",
+   "title": "Le Départ",
+   "year": 1967,
+   "imdb": "tt0061605",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1967
+    ]
+   },
+   "titulo_original": "Le Départ",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Jerzy Skolimowski",
+   "pais": [
+    "Belgium"
+   ],
+   "wikipedia": "Le Départ",
+   "wikidata": "Q1197125",
+   "wikidata_revid": 2538421972,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0061605/ nomeia o mesmo tt",
+   "titulo_wikidata_en": "The Departure"
+  },
+  {
+   "slug": "cul-de-sac",
+   "title": "Cul-de-Sac",
+   "year": 1966,
+   "imdb": "tt0060268",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1966
+    ]
+   },
+   "titulo_original": "Cul-de-Sac",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Roman Polanski",
+   "pais": [
+    "United Kingdom"
+   ],
+   "wikipedia": "Cul-de-sac (1966 film)",
+   "wikidata": "Q1637787",
+   "wikidata_revid": 2538837603,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0060268/ nomeia o mesmo tt",
+   "titulo_wikidata_en": "Cul-de-sac"
+  },
+  {
+   "slug": "alphaville",
+   "title": "Alphaville",
+   "year": 1965,
+   "imdb": "tt0058898",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1965
+    ]
+   },
+   "titulo_original": "Alphaville, une étrange aventure de Lemmy Caution",
+   "diretor": "Jean-Luc Godard",
+   "pais": [
+    "France",
+    "Italy"
+   ],
+   "wikipedia": "Alphaville (film)",
+   "wikidata": "Q542688",
+   "wikidata_revid": 2550578886,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0058898/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "dry-summer",
+   "title": "Dry Summer",
+   "year": 1963,
+   "imdb": "tt0062322",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1964
+    ]
+   },
+   "titulo_original": "Susuz Yaz",
+   "diretor": "Metin Erksan",
+   "pais": [
+    "Turkey"
+   ],
+   "wikipedia": "Dry Summer",
+   "wikidata": "Q1542380",
+   "wikidata_revid": 2545092010,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0062322/ nomeia o mesmo tt",
+   "notas": [
+    "ano do filme: Letterboxd 1963, Wikidata P577 1964; usado o do Letterboxd (mesma regra do arquivo de Cannes)"
+   ]
+  },
+  {
+   "slug": "bushido-the-cruel-code-of-the-samurai",
+   "title": "Bushido, Samurai Saga",
+   "year": 1963,
+   "imdb": "tt0055816",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1963
+    ]
+   },
+   "titulo_original": "武士道残酷物語",
+   "diretor": "Tadashi Imai",
+   "pais": [
+    "Japan"
+   ],
+   "wikipedia": "Bushido, Samurai Saga",
+   "wikidata": "Q1403726",
+   "wikidata_revid": 2551533674,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0055816/ nomeia o mesmo tt",
+   "ex_aequo_com": [
+    "to-bed-or-not-to-bed"
+   ]
+  },
+  {
+   "slug": "to-bed-or-not-to-bed",
+   "title": "To Bed or Not to Bed",
+   "year": 1963,
+   "imdb": "tt0056995",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1963
+    ]
+   },
+   "titulo_original": "Il diavolo",
+   "diretor": "Gian Luigi Polidoro",
+   "pais": [
+    "Italy"
+   ],
+   "wikipedia": "To Bed or Not to Bed",
+   "wikidata": "Q474072",
+   "wikidata_revid": 2537997881,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0056995/ nomeia o mesmo tt",
+   "ex_aequo_com": [
+    "bushido-the-cruel-code-of-the-samurai"
+   ]
+  },
+  {
+   "slug": "a-kind-of-loving",
+   "title": "A Kind of Loving",
+   "year": 1962,
+   "imdb": "tt0056141",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1962
+    ]
+   },
+   "titulo_original": "A Kind of Loving",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "John Schlesinger",
+   "pais": [
+    "United Kingdom"
+   ],
+   "wikipedia": "A Kind of Loving (film)",
+   "wikidata": "Q1477112",
+   "wikidata_revid": 2538764957,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0056141/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "la-notte",
+   "title": "La Notte",
+   "year": 1961,
+   "imdb": "tt0054130",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1961
+    ]
+   },
+   "titulo_original": "La Notte",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Michelangelo Antonioni",
+   "pais": [
+    "Italy"
+   ],
+   "wikipedia": "La Notte",
+   "wikidata": "Q1215047",
+   "wikidata_revid": 2538422630,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0054130/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "el-lazarillo-de-tormes",
+   "title": "El Lazarillo de Tormes",
+   "year": 1959,
+   "imdb": "tt0052995",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1960
+    ]
+   },
+   "titulo_original": "El Lazarillo de Tormes",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "César Fernández Ardavín",
+   "pais": [
+    "Spain"
+   ],
+   "wikipedia": "El Lazarillo de Tormes",
+   "wikidata": "Q281677",
+   "wikidata_revid": 2551011394,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0052995/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "the-cousins-1959",
+   "title": "Les Cousins",
+   "year": 1959,
+   "imdb": "tt0052708",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1959
+    ]
+   },
+   "titulo_original": "Les Cousins",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Claude Chabrol",
+   "pais": [
+    "France"
+   ],
+   "wikipedia": "Les Cousins (film)",
+   "wikidata": "Q141557",
+   "wikidata_revid": 2554557852,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0052708/ nomeia o mesmo tt",
+   "titulo_wikidata_en": "The Cousins"
+  },
+  {
+   "slug": "wild-strawberries",
+   "title": "Wild Strawberries",
+   "year": 1957,
+   "imdb": "tt0050986",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1958
+    ]
+   },
+   "titulo_original": "Smultronstället",
+   "diretor": "Ingmar Bergman",
+   "pais": [
+    "Sweden"
+   ],
+   "wikipedia": "Wild Strawberries (film)",
+   "wikidata": "Q239756",
+   "wikidata_revid": 2537967524,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0050986/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "12-angry-men",
+   "title": "12 Angry Men",
+   "year": 1957,
+   "imdb": "tt0050083",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1957
+    ]
+   },
+   "titulo_original": "12 Angry Men",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Sidney Lumet",
+   "pais": [
+    "United States"
+   ],
+   "wikipedia": "12 Angry Men",
+   "wikidata": "Q2345",
+   "wikidata_revid": 2550146441,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0050083/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "invitation-to-the-dance",
+   "title": "Invitation to the Dance",
+   "year": 1956,
+   "imdb": "tt0049367",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1956
+    ]
+   },
+   "titulo_original": "Invitation to the Dance",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Gene Kelly",
+   "pais": [
+    "United States"
+   ],
+   "wikipedia": "Invitation to the Dance (film)",
+   "wikidata": "Q1308277",
+   "wikidata_revid": 2552191667,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0049367/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "the-rats-1955",
+   "title": "Die Ratten",
+   "year": 1955,
+   "imdb": "tt0048542",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1955
+    ]
+   },
+   "titulo_original": "Die Ratten",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Robert Siodmak",
+   "pais": [
+    "West Germany"
+   ],
+   "wikipedia": "Die Ratten",
+   "wikidata": "Q554975",
+   "wikidata_revid": 2518398555,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0048542/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "hobsons-choice",
+   "title": "Hobson's Choice",
+   "year": 1954,
+   "imdb": "tt0047094",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1954
+    ]
+   },
+   "titulo_original": "Hobson's Choice",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "David Lean",
+   "pais": [
+    "United Kingdom"
+   ],
+   "wikipedia": "Hobson's Choice (1954 film)",
+   "wikidata": "Q1613944",
+   "wikidata_revid": 2534748259,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0047094/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "the-wages-of-fear",
+   "title": "The Wages of Fear",
+   "year": 1953,
+   "imdb": "tt0046268",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1953
+    ]
+   },
+   "titulo_original": "Le salaire de la peur",
+   "diretor": "Henri-Georges Clouzot",
+   "pais": [
+    "France",
+    "Italy"
+   ],
+   "wikipedia": "The Wages of Fear",
+   "wikidata": "Q465773",
+   "wikidata_revid": 2555037337,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0046268/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "one-summer-of-happiness",
+   "title": "One Summer of Happiness",
+   "year": 1951,
+   "imdb": "tt0043652",
+   "prizes": {
+    "Golden Bear (1952-2026)": [
+     1952
+    ]
+   },
+   "titulo_original": "Hon dansade en sommar",
+   "diretor": "Arne Mattsson",
+   "pais": [
+    "Sweden"
+   ],
+   "wikipedia": "One Summer of Happiness",
+   "wikidata": "Q1536123",
+   "wikidata_revid": 2538820605,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0043652/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "beaver-valley",
+   "title": "In Beaver Valley",
+   "year": 1950,
+   "imdb": "tt0042592",
+   "prizes": {
+    "Golden Bear (1951, por gênero)": [
+     1951
+    ]
+   },
+   "titulo_original": "In Beaver Valley",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "James Algar",
+   "pais": [
+    "United States"
+   ],
+   "categoria_1951": "Documentary",
+   "wikipedia": "In Beaver Valley",
+   "wikidata": "Q3213438",
+   "wikidata_revid": 2510572151,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0042592/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "cinderella",
+   "title": "Cinderella",
+   "year": 1950,
+   "imdb": "tt0042332",
+   "prizes": {
+    "Golden Bear (1951, por gênero)": [
+     1951
+    ]
+   },
+   "titulo_original": "Cinderella",
+   "titulo_original_nota": "a Wikipedia mescla as colunas: título original igual ao título em inglês",
+   "diretor": "Wilfred Jackson",
+   "pais": [
+    "United States"
+   ],
+   "categoria_1951": "Music Film",
+   "wikipedia": "Cinderella (1950 film)",
+   "wikidata": "Q191753",
+   "wikidata_revid": 2538946580,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0042332/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "four-in-a-jeep",
+   "title": "Four in a Jeep",
+   "year": 1951,
+   "imdb": "tt0044192",
+   "prizes": {
+    "Golden Bear (1951, por gênero)": [
+     1951
+    ]
+   },
+   "titulo_original": "Die Vier im Jeep",
+   "diretor": "Leopold Lindtberg",
+   "pais": [
+    "Switzerland"
+   ],
+   "categoria_1951": "Drama",
+   "wikipedia": "Four in a Jeep",
+   "wikidata": "Q520462",
+   "wikidata_revid": 2537891647,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0044192/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "justice-is-done",
+   "title": "Justice Is Done",
+   "year": 1950,
+   "imdb": "tt0042625",
+   "prizes": {
+    "Golden Bear (1951, por gênero)": [
+     1951
+    ]
+   },
+   "titulo_original": "Justice est faite",
+   "diretor": "André Cayatte",
+   "pais": [
+    "France"
+   ],
+   "categoria_1951": "Thriller & Adventure",
+   "wikipedia": "Justice Is Done",
+   "wikidata": "Q2283907",
+   "wikidata_revid": 2538570196,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0042625/ nomeia o mesmo tt"
+  },
+  {
+   "slug": "without-leaving-an-address",
+   "title": "Without Leaving an Address",
+   "year": 1951,
+   "imdb": "tt0042923",
+   "prizes": {
+    "Golden Bear (1951, por gênero)": [
+     1951
+    ]
+   },
+   "titulo_original": "...Sans laisser d'adresse",
+   "diretor": "Jean-Paul Le Chanois",
+   "pais": [
+    "France"
+   ],
+   "categoria_1951": "Comedy",
+   "wikipedia": "Without Leaving an Address",
+   "wikidata": "Q1403096",
+   "wikidata_revid": 2538633371,
+   "imdb_fonte": "Wikidata P345 (valor único, sem rank deprecated), conferido: a página do Letterboxd /imdb/tt0042923/ nomeia o mesmo tt"
+  }
+ ]
+}

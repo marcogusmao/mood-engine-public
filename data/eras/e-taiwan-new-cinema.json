@@ -1,0 +1,64 @@
+{
+"id": "e-taiwan-new-cinema", "type": "school", "years": {"min": 1982, "max": 2000}, "admit": ["core", "periphery"],
+"school": {
+  "countries": ["TW"],
+  "directors": [
+    {"id": 64992, "name": "Hou Hsiao-hsien"},
+    {"id": 143035, "name": "Edward Yang"},
+    {"id": 1158867, "name": "Wan Jen"},
+    {"id": 1092245, "name": "Ko I-chen"},
+    {"id": 1092244, "name": "Chang Yi"},
+    {"id": 71174, "name": "Tsai Ming-liang"},
+    {"id": 143036, "name": "Wu Nien-jen"},
+    {"id": 1158874, "name": "Chen Kun-hou"}
+  ]
+},
+"sources": [
+  {"id": "bfi-tw-2025", "publication": "BFI Southbank (notícia do BFI + guia da Dazed)", "title": "Myriad Voices: Reframing Taiwan New Cinema (15 filmes; só estes foram nomeados nos textos que li)", "url": "https://www.bfi.org.uk/news/programme-highlights-announced-april-2025-bfi-southbank-bfi-imax-new-taiwan-cinema-wojciech-jerzy-has-bong-joon-ho-season-curated-karina-longworth", "revision": "31/03-30/04/2025", "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-11-15"},
+  {"id": "bfi-tw-art", "publication": "BFI", "title": "The many voices behind Taiwan New Cinema (Hyun Jin Cho, 09/05/2025)", "url": "https://www.bfi.org.uk/features/many-voices-behind-taiwan-new-cinema", "revision": "09/05/2025", "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-11-15"},
+  {"id": "wp-en-cinema-of-taiwan", "publication": "Wikipedia (en)", "title": "Cinema of Taiwan", "url": "https://en.wikipedia.org/w/index.php?oldid=1372844267", "revision": 1372844267, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-09-02"},
+  {"id": "wp-en-taiwan-new-cinema", "publication": "Wikipedia (en)", "title": "Taiwan New Cinema", "url": "https://en.wikipedia.org/w/index.php?oldid=1357861092", "revision": 1357861092, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-06-05"},
+  {"id": "wp-ja-taiwan-new-cinema", "publication": "Wikipedia (ja)", "title": "台湾ニューシネマ", "url": "https://ja.wikipedia.org/w/index.php?oldid=108352958", "revision": 108352958, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-02-10"},
+  {"id": "wp-zh-taiwan-new-cinema", "publication": "Wikipedia (zh)", "title": "台灣新電影", "url": "https://zh.wikipedia.org/w/index.php?oldid=95597891", "revision": 95597891, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-11-14"}
+],
+"consensus": null,
+"films": [
+  {"imdb": "tt0085626", "tmdb": 130922, "slug": "in-our-time-1982", "title": "In Our Time", "year": 1982, "sources": ["bfi-tw-art", "wp-en-cinema-of-taiwan", "wp-en-taiwan-new-cinema"], "class": "core"},
+  {"imdb": "tt0085503", "tmdb": 176650, "slug": "the-sandwich-man-1983", "title": "The Sandwich Man", "year": 1983, "sources": ["bfi-tw-art", "wp-en-taiwan-new-cinema", "wp-zh-taiwan-new-cinema"], "class": "core"},
+  {"imdb": "tt0085533", "tmdb": 105703, "slug": "the-boys-from-fengkuei", "title": "The Boys from Fengkuei", "year": 1983, "sources": ["bfi-tw-2025", "bfi-tw-art", "wp-en-taiwan-new-cinema", "wp-ja-taiwan-new-cinema", "wp-zh-taiwan-new-cinema"], "class": "core"},
+  {"imdb": "tt0085635", "tmdb": 106373, "slug": "that-day-on-the-beach", "title": "That Day, on the Beach", "year": 1983, "sources": ["wp-en-taiwan-new-cinema", "wp-zh-taiwan-new-cinema"], "class": "periphery"},
+  {"imdb": "tt0085695", "tmdb": 176656, "slug": "growing-up", "title": "Growing Up", "year": 1983, "sources": ["bfi-tw-art", "wp-en-cinema-of-taiwan", "wp-zh-taiwan-new-cinema"], "class": "core"},
+  {"imdb": "tt0337507", "tmdb": 272122, "slug": "ah-fei", "title": "Ah Fei", "year": 1983, "sources": ["bfi-tw-2025", "wp-en-taiwan-new-cinema", "wp-zh-taiwan-new-cinema"], "class": "core"},
+  {"imdb": "tt0491008", "tmdb": 205660, "title": "A Flower in the Raining Night", "year": 1983, "sources": ["wp-en-taiwan-new-cinema", "wp-zh-taiwan-new-cinema"], "class": "periphery"},
+  {"imdb": "tt0087164", "tmdb": 92989, "slug": "a-summer-at-grandpas", "title": "A Summer at Grandpa's", "year": 1984, "sources": ["wp-en-taiwan-new-cinema", "wp-ja-taiwan-new-cinema", "wp-zh-taiwan-new-cinema"], "class": "periphery"},
+  {"imdb": "tt1587888", "tmdb": 176666, "slug": "jade-love", "title": "Jade Love", "year": 1984, "sources": ["wp-en-taiwan-new-cinema", "wp-zh-taiwan-new-cinema"], "class": "periphery"},
+  {"imdb": "tt0089866", "tmdb": 106380, "slug": "taipei-story", "title": "Taipei Story", "year": 1985, "sources": ["bfi-tw-2025", "wp-en-cinema-of-taiwan", "wp-en-taiwan-new-cinema", "wp-ja-taiwan-new-cinema", "wp-zh-taiwan-new-cinema"], "class": "core"},
+  {"imdb": "tt0090185", "tmdb": 45999, "title": "The Time to Live and the Time to Die", "year": 1985, "sources": ["wp-en-taiwan-new-cinema", "wp-ja-taiwan-new-cinema", "wp-zh-taiwan-new-cinema"], "class": "periphery"},
+  {"imdb": "tt0092231", "tmdb": 256133, "slug": "kuei-mei-a-woman", "title": "Kuei-mei, a Woman", "year": 1985, "sources": ["bfi-tw-2025", "bfi-tw-art", "wp-en-taiwan-new-cinema"], "class": "core"},
+  {"imdb": "tt0091355", "tmdb": 78450, "slug": "terrorizers", "title": "The Terrorizers", "year": 1986, "sources": ["wp-en-taiwan-new-cinema", "wp-ja-taiwan-new-cinema", "wp-zh-taiwan-new-cinema"], "class": "periphery"},
+  {"imdb": "tt0091406", "tmdb": 45996, "slug": "dust-in-the-wind", "title": "Dust in the Wind", "year": 1986, "sources": ["wp-en-taiwan-new-cinema", "wp-ja-taiwan-new-cinema", "wp-zh-taiwan-new-cinema"], "class": "periphery"},
+  {"imdb": "tt0092829", "tmdb": 176664, "slug": "strawman", "title": "Strawman", "year": 1987, "sources": ["bfi-tw-2025", "wp-en-taiwan-new-cinema", "wp-zh-taiwan-new-cinema"], "class": "core"},
+  {"imdb": "tt0093633", "tmdb": 99599, "slug": "daughter-of-the-nile", "title": "Daughter of the Nile", "year": 1987, "sources": ["wp-en-taiwan-new-cinema", "wp-ja-taiwan-new-cinema", "wp-zh-taiwan-new-cinema"], "class": "periphery"},
+  {"imdb": "tt0096908", "tmdb": 49982, "slug": "a-city-of-sadness", "title": "A City of Sadness", "year": 1989, "sources": ["bfi-tw-2025", "wp-en-cinema-of-taiwan", "wp-en-taiwan-new-cinema", "wp-ja-taiwan-new-cinema", "wp-zh-taiwan-new-cinema"], "class": "core"},
+  {"imdb": "tt0490518", "tmdb": 262831, "slug": "banana-paradise", "title": "Banana Paradise", "year": 1989, "sources": ["wp-en-taiwan-new-cinema", "wp-zh-taiwan-new-cinema"], "class": "periphery"},
+  {"imdb": "tt0101985", "tmdb": 15804, "slug": "a-brighter-summer-day", "title": "A Brighter Summer Day", "year": 1991, "sources": ["wp-en-cinema-of-taiwan", "wp-en-taiwan-new-cinema", "wp-ja-taiwan-new-cinema", "wp-zh-taiwan-new-cinema"], "class": "periphery"},
+  {"imdb": "tt0108602", "tmdb": 176668, "slug": "hill-of-no-return", "title": "Hill of No Return", "year": 1992, "sources": ["wp-en-taiwan-new-cinema", "wp-ja-taiwan-new-cinema", "wp-zh-taiwan-new-cinema"], "class": "periphery"},
+  {"imdb": "tt0107157", "tmdb": 96712, "slug": "the-puppetmaster", "title": "The Puppetmaster", "year": 1993, "sources": ["wp-en-taiwan-new-cinema", "wp-ja-taiwan-new-cinema", "wp-zh-taiwan-new-cinema"], "class": "periphery"},
+  {"imdb": "tt0109685", "tmdb": 54233, "slug": "a-confucian-confusion", "title": "A Confucian Confusion", "year": 1994, "sources": ["wp-en-cinema-of-taiwan", "wp-en-taiwan-new-cinema", "wp-ja-taiwan-new-cinema", "wp-zh-taiwan-new-cinema"], "class": "periphery"},
+  {"imdb": "tt0109691", "tmdb": 163202, "slug": "a-borrowed-life", "title": "A Borrowed Life", "year": 1995, "sources": ["wp-en-taiwan-new-cinema", "wp-zh-taiwan-new-cinema"], "class": "periphery"},
+  {"imdb": "tt0112659", "tmdb": 341234, "slug": "super-citizen-ko", "title": "Super Citizen Ko", "year": 1995, "sources": ["wp-en-taiwan-new-cinema", "wp-zh-taiwan-new-cinema"], "class": "periphery"},
+  {"imdb": "tt0113256", "tmdb": 99600, "slug": "good-men-good-women", "title": "Good Men, Good Women", "year": 1995, "sources": ["wp-en-taiwan-new-cinema", "wp-ja-taiwan-new-cinema", "wp-zh-taiwan-new-cinema"], "class": "periphery"},
+  {"imdb": "tt0116962", "tmdb": 54421, "slug": "mahjong", "title": "Mahjong", "year": 1996, "sources": ["wp-en-taiwan-new-cinema", "wp-ja-taiwan-new-cinema", "wp-zh-taiwan-new-cinema"], "class": "periphery"},
+  {"imdb": "tt0117151", "tmdb": 88811, "slug": "goodbye-south-goodbye", "title": "Goodbye South", "year": 1998, "sources": ["wp-en-taiwan-new-cinema", "wp-ja-taiwan-new-cinema", "wp-zh-taiwan-new-cinema"], "class": "periphery"},
+  {"imdb": "tt0156587", "tmdb": 45935, "slug": "flowers-of-shanghai", "title": "Flowers of Shanghai", "year": 1998, "sources": ["wp-en-taiwan-new-cinema", "wp-ja-taiwan-new-cinema", "wp-zh-taiwan-new-cinema"], "class": "periphery"}
+],
+"exclude": [
+
+],
+"pending": [
+  {"title": "Out of the Blue", "year": 1984, "class": "core", "why": "the curation found no IMDb id for this film; it is written down so that it is not lost"},
+  {"title": "Autumn Tempest", "year": 1988, "class": "core", "why": "the curation found no IMDb id for this film; it is written down so that it is not lost"},
+  {"imdb": "tt0086631", "title": "The Green, Green Grass of Home", "year": 1982, "class": "core", "why": "above the prefilter and not in the index, but no TMDB id or Letterboxd page is known yet"}
+],
+"counted": {"curationFilms": 41, "written": 28, "inIndexOfReference": 28, "notInIndexAdmitted": 8, "notInIndexPassingImdb7": 0, "pending": 3, "documentariesWrittenOut": 0, "leftOut": {"class not admitted by the era": 1, "not in the index and under the prefilter": 7, "named with no id and no class (not written in pending)": 0}}
+}

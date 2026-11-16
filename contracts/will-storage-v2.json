@@ -1,0 +1,1576 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "storageVersion": 2,
+  "limits": {
+    "packBytes": 671088640,
+    "files": 30002,
+    "fileManifestBytes": 2097152,
+    "fileBytes": 8388608,
+    "blockBytes": 262144,
+    "pageRecords": 64,
+    "pageBytes": 32768,
+    "pathBytes": 512,
+    "slotPhysicalBytes": 850000000,
+    "coordinatorPhysicalBytes": 350000000,
+    "metadataBytes": 8388608,
+    "streams": 8,
+    "streamMs": 20000,
+    "gcBatch": 128
+  },
+  "rootPrefix": {
+    "files": "will-storage-v2:files",
+    "chunks": "will-storage-v2:chunks"
+  },
+  "errors": [
+    "ALLOCATION_EXISTS",
+    "ALLOCATION_HASH",
+    "BODY_BOUNDS",
+    "CHUNK_BOUNDS",
+    "CHUNK_CONTINUITY",
+    "CONTROL_CONFLICT",
+    "DUPLICATE_PATH",
+    "FILE_BOUNDS",
+    "FILE_HASH",
+    "FREEZE_REQUIRED",
+    "GC_NOT_RETIRED",
+    "HANDOFF_REQUIRED",
+    "INCOMPLETE_PACK",
+    "INIT_EPOCH",
+    "INIT_REF",
+    "INVALID_DTO",
+    "INVALID_PATH",
+    "INVALID_PHASE",
+    "INVALID_RECEIPT",
+    "INVALID_REF",
+    "LEASE_FENCED",
+    "LEASE_REQUIRED",
+    "MAP_CONTINUITY",
+    "METADATA_BOUNDS",
+    "METRICS_ACCOUNTING_CHANGED",
+    "NFC",
+    "NOT_FOUND",
+    "NOT_PUBLIC",
+    "NO_FREE_SLOT",
+    "NO_PENDING_CONTROL",
+    "PAGE_BOUNDS",
+    "PAIR_INCOMPLETE",
+    "POST",
+    "PREPARED_EXISTS",
+    "PROTECTED",
+    "PUBLIC_DESCRIPTOR_HASH",
+    "PUT_CONFLICT",
+    "READ_RETIRED",
+    "RESERVATION_RACE",
+    "ROLE_REQUIRED",
+    "SEAL_RECEIPT_HASH",
+    "SEAL_ROOT",
+    "SLOT_ERROR",
+    "STALE_CONTROL",
+    "STALE_EPOCH",
+    "STALE_PREPARATION",
+    "STALE_PROMOTION",
+    "STALE_RECEIPT",
+    "STORAGE_BUDGET_DEFERRED",
+    "STREAM_DEADLINE",
+    "STREAM_LIMIT",
+    "WRITE_FENCED"
+  ],
+  "$defs": {
+    "PublicRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "storageVersion",
+        "personId",
+        "revision",
+        "slot",
+        "slotEpoch"
+      ],
+      "properties": {
+        "storageVersion": {
+          "const": 2
+        },
+        "personId": {
+          "const": "friend-a"
+        },
+        "revision": {
+          "type": "string",
+          "pattern": "^r-[a-f0-9]{32}$"
+        },
+        "slot": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3
+        },
+        "slotEpoch": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        }
+      }
+    },
+    "Allocation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "storageVersion",
+        "personId",
+        "revision",
+        "slot",
+        "slotEpoch",
+        "generation",
+        "leaseEpoch",
+        "requestId",
+        "runId",
+        "runAttempt",
+        "builtAt",
+        "codeSha",
+        "packBytes",
+        "fileCount",
+        "chunkCount",
+        "filesRoot",
+        "chunksRoot",
+        "receiptSha256",
+        "fileManifestSha256",
+        "personContextSha256",
+        "allocationHash"
+      ],
+      "properties": {
+        "storageVersion": {
+          "const": 2
+        },
+        "personId": {
+          "const": "friend-a"
+        },
+        "revision": {
+          "type": "string",
+          "pattern": "^r-[a-f0-9]{32}$"
+        },
+        "slot": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3
+        },
+        "slotEpoch": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "generation": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "leaseEpoch": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "requestId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "runId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "runAttempt": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "builtAt": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "codeSha": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "packBytes": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 671088640
+        },
+        "fileCount": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 30002
+        },
+        "chunkCount": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2560
+        },
+        "filesRoot": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "chunksRoot": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "receiptSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "fileManifestSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "personContextSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "allocationHash": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "WritePermit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "storageVersion",
+        "personId",
+        "revision",
+        "slot",
+        "slotEpoch",
+        "allocationHash",
+        "action",
+        "address",
+        "leaseEpoch",
+        "writerFence",
+        "expiresAt"
+      ],
+      "properties": {
+        "storageVersion": {
+          "const": 2
+        },
+        "personId": {
+          "const": "friend-a"
+        },
+        "revision": {
+          "type": "string",
+          "pattern": "^r-[a-f0-9]{32}$"
+        },
+        "slot": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3
+        },
+        "slotEpoch": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "allocationHash": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "action": {
+          "enum": [
+            "chunk",
+            "page"
+          ]
+        },
+        "address": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2559
+        },
+        "leaseEpoch": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "writerFence": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "expiresAt": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        }
+      }
+    },
+    "SealReceipt": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "storageVersion",
+        "personId",
+        "revision",
+        "slot",
+        "slotEpoch",
+        "allocationHash",
+        "filesRoot",
+        "chunksRoot",
+        "packBytes",
+        "fileCount",
+        "chunkCount",
+        "sealVersion",
+        "sealed",
+        "sha256"
+      ],
+      "properties": {
+        "storageVersion": {
+          "const": 2
+        },
+        "personId": {
+          "const": "friend-a"
+        },
+        "revision": {
+          "type": "string",
+          "pattern": "^r-[a-f0-9]{32}$"
+        },
+        "slot": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3
+        },
+        "slotEpoch": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "allocationHash": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "filesRoot": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "chunksRoot": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "packBytes": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 671088640
+        },
+        "fileCount": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 30002
+        },
+        "chunkCount": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2560
+        },
+        "sealVersion": {
+          "const": 1
+        },
+        "sealed": {
+          "const": true
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "Pair": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "requestId",
+        "generation",
+        "leaseEpoch",
+        "codeSha",
+        "builtAt",
+        "allocationHash",
+        "receiptSha256",
+        "fileManifestSha256",
+        "personContextSha256",
+        "snapshotId",
+        "contentSha256",
+        "publicRef",
+        "sealReceiptSha256"
+      ],
+      "properties": {
+        "requestId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "generation": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "leaseEpoch": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "codeSha": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "builtAt": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "allocationHash": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "receiptSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "fileManifestSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "personContextSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "snapshotId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "contentSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "publicRef": {
+          "$ref": "#/$defs/PublicRef"
+        },
+        "sealReceiptSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "ControlCommand": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "storageVersion",
+            "personId",
+            "revision",
+            "slot",
+            "slotEpoch",
+            "operationId",
+            "controlVersion",
+            "action",
+            "args"
+          ],
+          "properties": {
+            "storageVersion": {
+              "const": 2
+            },
+            "personId": {
+              "const": "friend-a"
+            },
+            "revision": {
+              "type": "string",
+              "pattern": "^r-[a-f0-9]{32}$"
+            },
+            "slot": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 3
+            },
+            "slotEpoch": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "operationId": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128
+            },
+            "controlVersion": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "action": {
+              "const": "init"
+            },
+            "args": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "allocation",
+                "writerFence"
+              ],
+              "properties": {
+                "allocation": {
+                  "$ref": "#/$defs/Allocation"
+                },
+                "writerFence": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 9007199254740991
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "storageVersion",
+            "personId",
+            "revision",
+            "slot",
+            "slotEpoch",
+            "operationId",
+            "controlVersion",
+            "action",
+            "args"
+          ],
+          "properties": {
+            "storageVersion": {
+              "const": 2
+            },
+            "personId": {
+              "const": "friend-a"
+            },
+            "revision": {
+              "type": "string",
+              "pattern": "^r-[a-f0-9]{32}$"
+            },
+            "slot": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 3
+            },
+            "slotEpoch": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "operationId": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128
+            },
+            "controlVersion": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "action": {
+              "const": "freeze"
+            },
+            "args": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "writerFence"
+              ],
+              "properties": {
+                "writerFence": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 9007199254740991
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "storageVersion",
+            "personId",
+            "revision",
+            "slot",
+            "slotEpoch",
+            "operationId",
+            "controlVersion",
+            "action",
+            "args"
+          ],
+          "properties": {
+            "storageVersion": {
+              "const": 2
+            },
+            "personId": {
+              "const": "friend-a"
+            },
+            "revision": {
+              "type": "string",
+              "pattern": "^r-[a-f0-9]{32}$"
+            },
+            "slot": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 3
+            },
+            "slotEpoch": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "operationId": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128
+            },
+            "controlVersion": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "action": {
+              "const": "seal"
+            },
+            "args": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [],
+              "properties": {}
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "storageVersion",
+            "personId",
+            "revision",
+            "slot",
+            "slotEpoch",
+            "operationId",
+            "controlVersion",
+            "action",
+            "args"
+          ],
+          "properties": {
+            "storageVersion": {
+              "const": 2
+            },
+            "personId": {
+              "const": "friend-a"
+            },
+            "revision": {
+              "type": "string",
+              "pattern": "^r-[a-f0-9]{32}$"
+            },
+            "slot": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 3
+            },
+            "slotEpoch": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "operationId": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128
+            },
+            "controlVersion": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "action": {
+              "const": "retire"
+            },
+            "args": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "writerFence"
+              ],
+              "properties": {
+                "writerFence": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 9007199254740991
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "storageVersion",
+            "personId",
+            "revision",
+            "slot",
+            "slotEpoch",
+            "operationId",
+            "controlVersion",
+            "action",
+            "args"
+          ],
+          "properties": {
+            "storageVersion": {
+              "const": 2
+            },
+            "personId": {
+              "const": "friend-a"
+            },
+            "revision": {
+              "type": "string",
+              "pattern": "^r-[a-f0-9]{32}$"
+            },
+            "slot": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 3
+            },
+            "slotEpoch": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "operationId": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128
+            },
+            "controlVersion": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "action": {
+              "const": "gc"
+            },
+            "args": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [],
+              "properties": {}
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "storageVersion",
+            "personId",
+            "revision",
+            "slot",
+            "slotEpoch",
+            "operationId",
+            "controlVersion",
+            "action",
+            "args"
+          ],
+          "properties": {
+            "storageVersion": {
+              "const": 2
+            },
+            "personId": {
+              "const": "friend-a"
+            },
+            "revision": {
+              "type": "string",
+              "pattern": "^r-[a-f0-9]{32}$"
+            },
+            "slot": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 3
+            },
+            "slotEpoch": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "operationId": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128
+            },
+            "controlVersion": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "action": {
+              "const": "status"
+            },
+            "args": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [],
+              "properties": {}
+            }
+          }
+        }
+      ]
+    },
+    "ControlReceipt": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "storageVersion",
+            "personId",
+            "revision",
+            "slot",
+            "slotEpoch",
+            "operationId",
+            "controlVersion",
+            "action",
+            "args",
+            "phase"
+          ],
+          "properties": {
+            "storageVersion": {
+              "const": 2
+            },
+            "personId": {
+              "const": "friend-a"
+            },
+            "revision": {
+              "type": "string",
+              "pattern": "^r-[a-f0-9]{32}$"
+            },
+            "slot": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 3
+            },
+            "slotEpoch": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "operationId": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128
+            },
+            "controlVersion": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "action": {
+              "const": "init"
+            },
+            "args": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "allocation",
+                "writerFence"
+              ],
+              "properties": {
+                "allocation": {
+                  "$ref": "#/$defs/Allocation"
+                },
+                "writerFence": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 9007199254740991
+                }
+              }
+            },
+            "phase": {
+              "enum": [
+                "FREE",
+                "WRITING",
+                "FROZEN",
+                "SEALING",
+                "SEALED",
+                "RETIRING",
+                "GC"
+              ]
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "storageVersion",
+            "personId",
+            "revision",
+            "slot",
+            "slotEpoch",
+            "operationId",
+            "controlVersion",
+            "action",
+            "args",
+            "phase"
+          ],
+          "properties": {
+            "storageVersion": {
+              "const": 2
+            },
+            "personId": {
+              "const": "friend-a"
+            },
+            "revision": {
+              "type": "string",
+              "pattern": "^r-[a-f0-9]{32}$"
+            },
+            "slot": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 3
+            },
+            "slotEpoch": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "operationId": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128
+            },
+            "controlVersion": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "action": {
+              "const": "freeze"
+            },
+            "args": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "writerFence"
+              ],
+              "properties": {
+                "writerFence": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 9007199254740991
+                }
+              }
+            },
+            "phase": {
+              "enum": [
+                "FREE",
+                "WRITING",
+                "FROZEN",
+                "SEALING",
+                "SEALED",
+                "RETIRING",
+                "GC"
+              ]
+            },
+            "done": {
+              "type": "boolean"
+            },
+            "physicalBytes": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "sealReceipt": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/SealReceipt"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "storageVersion",
+            "personId",
+            "revision",
+            "slot",
+            "slotEpoch",
+            "operationId",
+            "controlVersion",
+            "action",
+            "args",
+            "phase"
+          ],
+          "properties": {
+            "storageVersion": {
+              "const": 2
+            },
+            "personId": {
+              "const": "friend-a"
+            },
+            "revision": {
+              "type": "string",
+              "pattern": "^r-[a-f0-9]{32}$"
+            },
+            "slot": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 3
+            },
+            "slotEpoch": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "operationId": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128
+            },
+            "controlVersion": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "action": {
+              "const": "seal"
+            },
+            "args": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [],
+              "properties": {}
+            },
+            "phase": {
+              "enum": [
+                "FREE",
+                "WRITING",
+                "FROZEN",
+                "SEALING",
+                "SEALED",
+                "RETIRING",
+                "GC"
+              ]
+            },
+            "done": {
+              "type": "boolean"
+            },
+            "sealReceipt": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/SealReceipt"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "storageVersion",
+            "personId",
+            "revision",
+            "slot",
+            "slotEpoch",
+            "operationId",
+            "controlVersion",
+            "action",
+            "args",
+            "phase"
+          ],
+          "properties": {
+            "storageVersion": {
+              "const": 2
+            },
+            "personId": {
+              "const": "friend-a"
+            },
+            "revision": {
+              "type": "string",
+              "pattern": "^r-[a-f0-9]{32}$"
+            },
+            "slot": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 3
+            },
+            "slotEpoch": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "operationId": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128
+            },
+            "controlVersion": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "action": {
+              "const": "retire"
+            },
+            "args": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "writerFence"
+              ],
+              "properties": {
+                "writerFence": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 9007199254740991
+                }
+              }
+            },
+            "phase": {
+              "enum": [
+                "FREE",
+                "WRITING",
+                "FROZEN",
+                "SEALING",
+                "SEALED",
+                "RETIRING",
+                "GC"
+              ]
+            },
+            "done": {
+              "type": "boolean"
+            },
+            "physicalBytes": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 0
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "storageVersion",
+            "personId",
+            "revision",
+            "slot",
+            "slotEpoch",
+            "operationId",
+            "controlVersion",
+            "action",
+            "args",
+            "phase"
+          ],
+          "properties": {
+            "storageVersion": {
+              "const": 2
+            },
+            "personId": {
+              "const": "friend-a"
+            },
+            "revision": {
+              "type": "string",
+              "pattern": "^r-[a-f0-9]{32}$"
+            },
+            "slot": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 3
+            },
+            "slotEpoch": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "operationId": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128
+            },
+            "controlVersion": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "action": {
+              "const": "gc"
+            },
+            "args": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [],
+              "properties": {}
+            },
+            "phase": {
+              "enum": [
+                "RETIRING",
+                "GC",
+                "FREE"
+              ]
+            },
+            "done": {
+              "type": "boolean"
+            },
+            "physicalBytes": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "waitingPins": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "cursor": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "files",
+                "chunks",
+                "file_pages",
+                "deleted"
+              ],
+              "properties": {
+                "files": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "chunks": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                },
+                "file_pages": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                },
+                "deleted": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "storageVersion",
+            "personId",
+            "revision",
+            "slot",
+            "slotEpoch",
+            "operationId",
+            "controlVersion",
+            "action",
+            "args",
+            "phase"
+          ],
+          "properties": {
+            "storageVersion": {
+              "const": 2
+            },
+            "personId": {
+              "const": "friend-a"
+            },
+            "revision": {
+              "type": "string",
+              "pattern": "^r-[a-f0-9]{32}$"
+            },
+            "slot": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 3
+            },
+            "slotEpoch": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "operationId": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128
+            },
+            "controlVersion": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "action": {
+              "const": "status"
+            },
+            "args": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [],
+              "properties": {}
+            },
+            "phase": {
+              "enum": [
+                "FREE",
+                "WRITING",
+                "FROZEN",
+                "SEALING",
+                "SEALED",
+                "RETIRING",
+                "GC"
+              ]
+            },
+            "sealReceipt": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/SealReceipt"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "terminal": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "progress": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "counts": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "chunks",
+                "files",
+                "pages"
+              ],
+              "properties": {
+                "chunks": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "files": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "pages": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "GcReceipt": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "storageVersion",
+        "personId",
+        "revision",
+        "slot",
+        "slotEpoch",
+        "operationId",
+        "controlVersion",
+        "action",
+        "args",
+        "phase",
+        "done",
+        "cursor",
+        "physicalBytes"
+      ],
+      "properties": {
+        "storageVersion": {
+          "const": 2
+        },
+        "personId": {
+          "const": "friend-a"
+        },
+        "revision": {
+          "type": "string",
+          "pattern": "^r-[a-f0-9]{32}$"
+        },
+        "slot": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3
+        },
+        "slotEpoch": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "operationId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "controlVersion": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "action": {
+          "const": "gc"
+        },
+        "args": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [],
+          "properties": {}
+        },
+        "phase": {
+          "const": "FREE"
+        },
+        "done": {
+          "const": true
+        },
+        "physicalBytes": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "waitingPins": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "cursor": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "files",
+            "chunks",
+            "file_pages",
+            "deleted"
+          ],
+          "properties": {
+            "files": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "chunks": {
+              "type": [
+                "integer",
+                "null"
+              ]
+            },
+            "file_pages": {
+              "type": [
+                "integer",
+                "null"
+              ]
+            },
+            "deleted": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        }
+      }
+    },
+    "FileRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "path",
+        "offset",
+        "bytes",
+        "sha256"
+      ],
+      "properties": {
+        "path": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "offset": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 671088640
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 8388608
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "ChunkRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ordinal",
+        "bytes",
+        "sha256"
+      ],
+      "properties": {
+        "ordinal": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2559
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 262144
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "FilePage": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 64,
+      "items": {
+        "$ref": "#/$defs/FileRecord"
+      }
+    }
+  },
+  "canonicalEncoding": "UTF-8 JSON; object keys sorted by code unit, paths sorted by UTF-8 bytes; hash links concatenate lowercase hex Hprev, LF, canonical(page). Fixed pages contain 64 records except the final page."
+}

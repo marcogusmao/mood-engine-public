@@ -1,0 +1,10 @@
+(function(root,factory){if(typeof module==='object'&&module.exports)module.exports=factory();else root.MoodSelector=factory();})(typeof globalThis==='object'?globalThis:this,function(){
+'use strict';
+function noise(today,id,roll){let h=2166136261^roll;for(const c of today+id)h=Math.imul(h^c.charCodeAt(0),16777619);return ((h>>>0)%10000)/10000;}
+// Marco, 11/10/2026: a film in a critic or director list (cv:1) needs no 3.5 floor and gets the same light push at every position of the
+// dial (VOUCH, never multiplied by safe or wild); lw (0-1) is how much Marco agrees with the film's lists, also constant (LISTS).
+// Marco, 11/10/2026 (later): a vouched film still needs a Letterboxd average of 2.5 (VOUCHED_MIN) when it has one; with none it passes.
+const VOUCH=.15,LISTS=.3,VOUCHED_MIN=2.5;
+function rank(DATA,state,{eligible=()=>true}={}){const {mood,time,kind,safe}=state,wild=1-safe;const list=kind==='rewatch'?DATA.rewatch:DATA.films,tonight=new Set(DATA.tonight),out=[];for(const x of list){const num=v=>typeof v==="number"&&Number.isFinite(v)&&v>=0&&v<=5;if(![x.lb,x.fr].some(v=>num(v)&&v>=3.5)&&!(x.cv===1&&(!num(x.lb)||x.lb>=VOUCHED_MIN)))continue;if(state.skipped?.has(x.t))continue;if(time&&!(Number.isFinite(x.r)&&x.r>0&&x.r<=time))continue;const fits=Object.entries(x.f).filter(([m])=>eligible(x,m,kind)).map(([,f])=>f);const fit=mood==='tonight'?(fits.length?Math.max(...fits):null):eligible(x,mood,kind)?x.f[mood]:null;if(fit==null)continue;let s=1.1*Math.min(fit,1.6);if(kind==='rewatch'){const years=x.last?(Date.parse(DATA.today)-Date.parse(x.last))/31557600000:6;s+=.9*(x.rating-4)+.08*Math.min(years,10);}else{s+=(.45+.7*safe)*(x.ts||0)+(.25+.5*safe)*(x.q||0);if(x.w)s+=.4*safe;if(x.pins&&x.pins.includes(mood))s+=1.2;if(mood==='tonight'&&tonight.has(x.t))s+=2.5*safe;s+=wild*((x.l&&x.l!=='en'?.3:0)+(x.vc<1500?.35:0));if(x.cv===1)s+=VOUCH;if(typeof x.lw==="number"&&x.lw>0&&x.lw<=1)s+=LISTS*x.lw;}s+=wild*1.6*noise(DATA.today,String(x.t),state.roll);out.push({x,s,fit});}return out.sort((a,b)=>b.s-a.s);}
+return {rank,noise,VOUCH,LISTS,VOUCHED_MIN};
+});

@@ -1,0 +1,49 @@
+#!/bin/bash
+# Test double for `git` in the PATH of the nightly's tests (test/noturna-mac.test.js, review of 21/10/2026). It records ONE line per call in chamadas/git.log and then runs the real git:
+#   <subcommand> helper_zerado=<sim|nao> helper_token=<sim|nao> nosystem=<value of GIT_CONFIG_NOSYSTEM> token_amb=<sim|nao>
+# helper_zerado: an argument `credential.helper=` (the empty value that clears the helpers of the configuration); helper_token: a `credential.helper=!...` argument; token_amb: whether
+# NOTURNA_GH_TOKEN (the GitHub token) was in the environment of this call. NEVER the token itself. FAKE_GIT_VAZA=1 in controle.env: the push and ls-remote calls of the night print the token on stderr (a git that leaks; the launcher's fetch is not simulated: its output is not masked).
+D=$(cd "$(dirname "$0")" && pwd)
+if [ -f "$D/controle.env" ]; then . "$D/controle.env"; fi
+mkdir -p "$D/chamadas"
+sub=""
+zerado=nao
+htoken=nao
+pula=0
+for a in "$@"; do
+  if [ "$pula" = 1 ]; then pula=0; [ "$prev" = "-c" ] && case "$a" in credential.helper=) zerado=sim ;; credential.helper=!*) htoken=sim ;; esac; prev=""; continue; fi
+  case "$a" in
+    -C|-c) pula=1; prev=$a ;;
+    -*) ;;
+    *) if [ -z "$sub" ]; then sub=$a; fi ;;
+  esac
+done
+tok=nao
+if [ -n "${NOTURNA_GH_TOKEN-}" ]; then tok=sim; fi
+# review of 21/10/2026 (B1): force=sim when the call has --force (the gh-pages update of a Sunday night is forced, an ordinary night's is not); alvo = the last argument (the refspec of an update).
+force=nao
+alvo=""
+for a in "$@"; do
+  case "$a" in --force|-f) force=sim ;; esac
+  alvo=$a
+done
+case "$sub" in push) ;; *) alvo="" ;; esac
+printf '%s helper_zerado=%s helper_token=%s nosystem=%s token_amb=%s force=%s alvo=%s\n' "$sub" "$zerado" "$htoken" "${GIT_CONFIG_NOSYSTEM-}" "$tok" "$force" "${alvo##*:}" >> "$D/chamadas/git.log"
+case "$sub" in push|ls-remote) if [ -n "${FAKE_GIT_VAZA-}" ]; then echo "vazou-gh:${NOTURNA_GH_TOKEN-}" >&2; fi ;; esac
+# review of 21/10/2026 (C2): FAKE_GIT_DORME=<sub> and FAKE_GIT_DORME_N=<n> (default 1): the n-th call of that subcommand since the world began hangs (FAKE_GIT_DORME_S seconds, 30; its pid in chamadas/git-dorme.pid), to
+# prove the time limit of the launcher's fetch (n=1), the night's second fetch and the ls-remote calls. exec: the process that sleeps is the one the limit ends.
+if [ -n "${FAKE_GIT_DORME-}" ] && [ "$sub" = "$FAKE_GIT_DORME" ]; then
+  n=$(grep -c "^$sub " "$D/chamadas/git.log")
+  if [ "$n" -eq "${FAKE_GIT_DORME_N:-1}" ]; then echo $$ > "$D/chamadas/git-dorme.pid"; exec sleep "${FAKE_GIT_DORME_S:-30}"; fi
+fi
+# 15/11/2026 (the night of 15/11: the push of gh-pages died with "RPC failed; curl 55"): FAKE_GIT_PUSH_FALHA=<comma list of numbers>: the n-th `push` call since the world began fails with
+# that message and exit 1, without reaching the origin. "2" is the gh-pages push of a first night; "3,4" the push that follows it and its one retry.
+if [ -n "${FAKE_GIT_PUSH_FALHA-}" ] && [ "$sub" = push ]; then
+  n=$(grep -c "^$sub " "$D/chamadas/git.log")
+  case ",$FAKE_GIT_PUSH_FALHA," in *",$n,"*) echo "error: RPC failed; curl 55 Recv failure: Connection reset by peer" >&2; exit 1 ;; esac
+fi
+for g in /usr/bin/git /opt/homebrew/bin/git /usr/local/bin/git; do
+  if [ -x "$g" ]; then exec "$g" "$@"; fi
+done
+echo "git real não achado" >&2
+exit 127

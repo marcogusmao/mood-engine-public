@@ -1,0 +1,46 @@
+{
+"id": "e-british-new-wave", "type": "cycle", "years": {"min": 1956, "max": 1972}, "admit": ["core"],
+"school": null,
+"sources": [
+  {"id": "bfi-ks", "publication": "BFI", "title": "Where to begin with kitchen sink drama (Neil Mitchell, 22/06/2016)", "url": "https://www.bfi.org.uk/features/where-begin-with-kitchen-sink-drama", "revision": null, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2016-06-22"},
+  {"id": "bfi-ks-prec", "publication": "BFI", "title": "Where to begin with kitchen sink drama (precursores e 'onde não começar')", "url": "https://www.bfi.org.uk/features/where-begin-with-kitchen-sink-drama", "revision": null, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2016-06-22"},
+  {"id": "crit-bnw", "publication": "Criterion Channel (cópia do Internet Archive)", "title": "British New Wave (coleção do Channel)", "url": "https://www.criterionchannel.com/british-new-wave", "revision": null, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-06-11"},
+  {"id": "wp-en-bnw", "publication": "Wikipedia (en)", "title": "British New Wave", "url": "https://en.wikipedia.org/w/index.php?oldid=1385178949", "revision": 1385178949, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-11-12"},
+  {"id": "wp-en-fcfilms", "publication": "Wikipedia (en)", "title": "Free Cinema, rev. 1385182604: filmes que o texto nomeia nos programas de 1956–59", "url": "https://en.wikipedia.org/w/index.php?oldid=1385182604", "revision": null, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-11-12"},
+  {"id": "wp-en-ks", "publication": "Wikipedia (en)", "title": "Kitchen sink realism (seção 'List of films', 1940–1980)", "url": "https://en.wikipedia.org/w/index.php?oldid=1385286064", "revision": 1385286064, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-11-12"}
+],
+"consensus": null,
+"films": [
+  {"imdb": "tt0050800", "tmdb": 88051, "slug": "on-the-bowery", "title": "On the Bowery", "year": 1956, "sources": ["wp-en-fcfilms"], "class": "disputed", "included": {"source": "wp-en-fcfilms", "why": "Marco, 15/11/2026 (second round, \"Let the British ones in\"): the sources disagree on this film and he let it in"}},
+  {"imdb": "tt0051204", "tmdb": 119687, "slug": "woman-in-a-dressing-gown", "title": "Woman in a Dressing Gown", "year": 1957, "sources": ["bfi-ks-prec", "wp-en-ks"], "class": "core"},
+  {"imdb": "tt0053226", "tmdb": 43103, "slug": "room-at-the-top", "title": "Room at the Top", "year": 1958, "sources": ["bfi-ks", "wp-en-bnw", "wp-en-ks"], "class": "core"},
+  {"imdb": "tt0051879", "tmdb": 50011, "slug": "look-back-in-anger", "title": "Look Back in Anger", "year": 1959, "sources": ["bfi-ks", "crit-bnw", "wp-en-bnw", "wp-en-ks"], "class": "core"},
+  {"imdb": "tt0053796", "tmdb": 18929, "slug": "the-entertainer", "title": "The Entertainer", "year": 1960, "sources": ["crit-bnw", "wp-en-bnw", "wp-en-ks"], "class": "core"},
+  {"imdb": "tt0054269", "tmdb": 37230, "slug": "saturday-night-and-sunday-morning", "title": "Saturday Night and Sunday Morning", "year": 1960, "sources": ["bfi-ks", "crit-bnw", "wp-en-bnw", "wp-en-ks"], "class": "core"},
+  {"imdb": "tt0055506", "tmdb": 25062, "slug": "a-taste-of-honey", "title": "A Taste of Honey", "year": 1961, "sources": ["bfi-ks", "crit-bnw", "wp-en-bnw", "wp-en-ks"], "class": "core"},
+  {"imdb": "tt0056141", "tmdb": 33765, "slug": "a-kind-of-loving", "title": "A Kind of Loving", "year": 1962, "sources": ["bfi-ks", "wp-en-bnw", "wp-en-ks"], "class": "core"},
+  {"imdb": "tt0056194", "tmdb": 16103, "slug": "the-loneliness-of-the-long-distance-runner", "title": "The Loneliness of the Long Distance Runner", "year": 1962, "sources": ["bfi-ks", "wp-en-bnw", "wp-en-ks"], "class": "core"},
+  {"imdb": "tt0057239", "tmdb": 76000, "slug": "the-l-shaped-room", "title": "The L-Shaped Room", "year": 1962, "sources": ["bfi-ks", "wp-en-bnw", "wp-en-ks"], "class": "core"},
+  {"imdb": "tt0056868", "tmdb": 26535, "slug": "billy-liar", "title": "Billy Liar", "year": 1963, "sources": ["bfi-ks-prec", "wp-en-bnw", "wp-en-ks"], "class": "disputed", "included": {"source": "bfi-ks-prec", "why": "Marco, 15/11/2026 (second round, \"Let the British ones in\"): the sources disagree on this film and he let it in"}},
+  {"imdb": "tt0057415", "tmdb": 175164, "slug": "a-place-to-go", "title": "A Place to Go", "year": 1963, "sources": ["bfi-ks-prec", "wp-en-ks"], "class": "core"},
+  {"imdb": "tt0057578", "tmdb": 18774, "slug": "this-sporting-life", "title": "This Sporting Life", "year": 1963, "sources": ["bfi-ks", "crit-bnw", "wp-en-bnw", "wp-en-ks"], "class": "core"},
+  {"imdb": "tt0057244", "tmdb": 140008, "slug": "the-leather-boys", "title": "The Leather Boys", "year": 1964, "sources": ["bfi-ks-prec", "wp-en-bnw", "wp-en-ks"], "class": "core"},
+  {"imdb": "tt0058142", "tmdb": 64811, "slug": "girl-with-green-eyes", "title": "Girl with Green Eyes", "year": 1964, "sources": ["crit-bnw", "wp-en-bnw", "wp-en-ks"], "class": "core"},
+  {"imdb": "tt0058182", "tmdb": 704, "slug": "a-hard-days-night", "title": "A Hard Day's Night", "year": 1964, "sources": ["wp-en-bnw", "wp-en-ks"], "class": "disputed", "included": {"source": "wp-en-bnw", "why": "Marco, 15/11/2026 (second round, \"Let the British ones in\"): the sources disagree on this film and he let it in"}},
+  {"imdb": "tt0058557", "tmdb": 3092, "slug": "seance-on-a-wet-afternoon", "title": "Séance on a Wet Afternoon", "year": 1964, "sources": ["crit-bnw", "wp-en-bnw", "wp-en-ks"], "class": "core"},
+  {"imdb": "tt0060086", "tmdb": 15598, "slug": "alfie", "title": "Alfie", "year": 1966, "sources": ["bfi-ks-prec", "wp-en-bnw", "wp-en-ks"], "class": "disputed", "included": {"source": "bfi-ks-prec", "why": "Marco, 15/11/2026 (second round, \"Let the British ones in\"): the sources disagree on this film and he let it in"}},
+  {"imdb": "tt0061180", "tmdb": 70635, "slug": "the-whisperers", "title": "The Whisperers", "year": 1967, "sources": ["bfi-ks-prec", "wp-en-ks"], "class": "core"},
+  {"imdb": "tt0062141", "tmdb": 76072, "slug": "poor-cow", "title": "Poor Cow", "year": 1967, "sources": ["bfi-ks", "wp-en-bnw", "wp-en-ks"], "class": "core"},
+  {"imdb": "tt0062426", "tmdb": 47069, "slug": "up-the-junction", "title": "Up the Junction", "year": 1968, "sources": ["bfi-ks-prec", "wp-en-bnw", "wp-en-ks"], "class": "core"},
+  {"imdb": "tt0064111", "tmdb": 54006, "slug": "bronco-bullfrog", "title": "Bronco Bullfrog", "year": 1969, "sources": ["bfi-ks-prec", "wp-en-ks"], "class": "core"},
+  {"imdb": "tt0064541", "tmdb": 13384, "slug": "kes", "title": "Kes", "year": 1969, "sources": ["bfi-ks", "wp-en-bnw", "wp-en-ks"], "class": "core"},
+  {"imdb": "tt0066401", "tmdb": 157031, "slug": "spring-and-port-wine", "title": "Spring and Port Wine", "year": 1970, "sources": ["bfi-ks-prec", "wp-en-ks"], "class": "core"}
+],
+"exclude": [
+
+],
+"pending": [
+
+],
+"counted": {"curationFilms": 397, "written": 24, "inIndexOfReference": 11, "notInIndexAdmitted": 13, "notInIndexPassingImdb7": 8, "pending": 0, "documentariesWrittenOut": 0, "leftOut": {"class not admitted by the era": 372, "outside the years of the era": 1, "named with no id and no class (not written in pending)": 1}}
+}

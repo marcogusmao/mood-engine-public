@@ -1,0 +1,895 @@
+{
+  "schemaVersion": 1,
+  "personId": "friend-a",
+  "frozenAt": "2026-10-14",
+  "apiBase": "/api/v1/friend-a",
+  "internalBase": "/api/internal/v1/friend-a",
+  "addonPath": "/u/friend-a/manifest.json",
+  "objectName": "friend-a-v1",
+  "constants": {
+    "chunkBytes": 262144,
+    "archiveBytes": 8388608,
+    "snapshotBytes": 67108864,
+    "storageBytes": 268435456,
+    "jsonBytes": 16384,
+    "manifestBytes": 65536,
+    "leaseSeconds": 21600,
+    "credentialSeconds": 2592000,
+    "invitationSeconds": 604800,
+    "uploadExpirySeconds": 86400,
+    "archiveExpirySeconds": 604800,
+    "maxUploadsPerDay": 3,
+    "archiveBytesPerDay": 25165824,
+    "chunkAttemptsPerDay": 512,
+    "statusReadsPerHour": 120,
+    "residentIndexBytes": 25165824,
+    "residentIndexSlots": 128
+  },
+  "states": [
+    "uploading",
+    "queued",
+    "processing",
+    "publishing",
+    "ready",
+    "failed",
+    "cancelled",
+    "expired"
+  ],
+  "patterns": {
+    "uuid": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$",
+    "sha256": "^[0-9a-f]{64}$",
+    "revision": "^r-[0-9a-f]{32}$"
+  },
+  "schemas": {
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion",
+        "personId"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "personId": {
+          "const": "friend-a"
+        }
+      }
+    },
+    "session": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion",
+        "personId",
+        "inviteId",
+        "credential"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "personId": {
+          "const": "friend-a"
+        },
+        "inviteId": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+        },
+        "credential": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{43}$"
+        }
+      }
+    },
+    "intake": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion",
+        "personId",
+        "requestId",
+        "kind",
+        "bytes",
+        "archiveSha256",
+        "chunks"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "personId": {
+          "const": "friend-a"
+        },
+        "requestId": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+        },
+        "kind": {
+          "const": "letterboxd-export"
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 8388608
+        },
+        "archiveSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "chunks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "ordinal",
+              "bytes",
+              "sha256"
+            ],
+            "properties": {
+              "ordinal": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 255
+              },
+              "bytes": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 262144
+              },
+              "sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              }
+            }
+          },
+          "minItems": 1,
+          "maxItems": 32
+        }
+      }
+    },
+    "invitation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion",
+        "personId",
+        "inviteId",
+        "tokenHash",
+        "expiresAt",
+        "expectedAuthEpoch"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "personId": {
+          "const": "friend-a"
+        },
+        "inviteId": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+        },
+        "tokenHash": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "expiresAt": {
+          "type": "string",
+          "format": "utc-date-time"
+        },
+        "expectedAuthEpoch": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        }
+      }
+    },
+    "revoke": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion",
+        "personId",
+        "expectedAuthEpoch"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "personId": {
+          "const": "friend-a"
+        },
+        "expectedAuthEpoch": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        }
+      }
+    },
+    "heartbeat": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion",
+        "personId",
+        "requestId",
+        "leaseEpoch"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "personId": {
+          "const": "friend-a"
+        },
+        "requestId": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+        },
+        "leaseEpoch": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 2147483647
+        }
+      }
+    },
+    "snapshot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion",
+        "personId",
+        "requestId",
+        "leaseEpoch",
+        "bytes",
+        "chunks",
+        "contentSha256"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "personId": {
+          "const": "friend-a"
+        },
+        "requestId": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+        },
+        "leaseEpoch": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 2147483647
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 67108864
+        },
+        "chunks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "ordinal",
+              "bytes",
+              "sha256"
+            ],
+            "properties": {
+              "ordinal": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 255
+              },
+              "bytes": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 262144
+              },
+              "sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              }
+            }
+          },
+          "minItems": 1,
+          "maxItems": 256
+        },
+        "contentSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "seal": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion",
+        "personId",
+        "requestId",
+        "leaseEpoch",
+        "parserVersion",
+        "coverage"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "personId": {
+          "const": "friend-a"
+        },
+        "requestId": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+        },
+        "leaseEpoch": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 2147483647
+        },
+        "parserVersion": {
+          "const": 1
+        },
+        "coverage": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "watched",
+            "ratings",
+            "watchlist",
+            "likes",
+            "diary",
+            "following"
+          ],
+          "properties": {
+            "watched": {
+              "enum": [
+                "complete",
+                "partial",
+                "unknown",
+                "unavailable",
+                "stale"
+              ]
+            },
+            "ratings": {
+              "enum": [
+                "complete",
+                "partial",
+                "unknown",
+                "unavailable",
+                "stale"
+              ]
+            },
+            "watchlist": {
+              "enum": [
+                "complete",
+                "partial",
+                "unknown",
+                "unavailable",
+                "stale"
+              ]
+            },
+            "likes": {
+              "enum": [
+                "complete",
+                "partial",
+                "unknown",
+                "unavailable",
+                "stale"
+              ]
+            },
+            "diary": {
+              "enum": [
+                "complete",
+                "partial",
+                "unknown",
+                "unavailable",
+                "stale"
+              ]
+            },
+            "following": {
+              "enum": [
+                "complete",
+                "partial",
+                "unknown",
+                "unavailable",
+                "stale"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "prepare": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion",
+        "personId",
+        "requestId",
+        "leaseEpoch",
+        "snapshotId",
+        "revision",
+        "codeSha",
+        "receiptSha256",
+        "fileManifestSha256",
+        "personContextSha256"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "personId": {
+          "const": "friend-a"
+        },
+        "requestId": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+        },
+        "leaseEpoch": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 2147483647
+        },
+        "snapshotId": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+        },
+        "revision": {
+          "type": "string",
+          "pattern": "^r-[0-9a-f]{32}$"
+        },
+        "codeSha": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "receiptSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "fileManifestSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "personContextSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "fail": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion",
+        "personId",
+        "requestId",
+        "leaseEpoch",
+        "code",
+        "retryable"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "personId": {
+          "const": "friend-a"
+        },
+        "requestId": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+        },
+        "leaseEpoch": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 2147483647
+        },
+        "code": {
+          "enum": [
+            "INVALID_ZIP",
+            "EXPORT_PROFILE_UNSUPPORTED",
+            "WRONG_OWNER",
+            "ARCHIVE_EXPIRED",
+            "SOURCE_UNAVAILABLE",
+            "BUILD_FAILED",
+            "SNAPSHOT_FAILED",
+            "VALIDATION_FAILED",
+            "REPLAY_MISMATCH"
+          ]
+        },
+        "retryable": {
+          "type": "boolean"
+        }
+      }
+    },
+    "ack": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion",
+        "personId",
+        "receiptSha256"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "personId": {
+          "const": "friend-a"
+        },
+        "receiptSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "abandon": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion",
+        "personId",
+        "expectedGeneration",
+        "terminalRunId",
+        "terminalRunAttempt",
+        "reasonCode"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "personId": {
+          "const": "friend-a"
+        },
+        "expectedGeneration": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 2147483647
+        },
+        "terminalRunId": {
+          "type": "string",
+          "pattern": "^[0-9]+$"
+        },
+        "terminalRunAttempt": {
+          "type": "string",
+          "pattern": "^[0-9]+$"
+        },
+        "reasonCode": {
+          "const": "REPLAY_MISMATCH"
+        }
+      }
+    }
+  },
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/session",
+      "role": "invitation",
+      "requestSchema": "session",
+      "successStatus": 201
+    },
+    {
+      "method": "GET",
+      "path": "/status",
+      "role": "credential",
+      "requestSchema": null,
+      "successStatus": 200
+    },
+    {
+      "method": "POST",
+      "path": "/uploads",
+      "role": "credential",
+      "requestSchema": "intake",
+      "successStatus": 201
+    },
+    {
+      "method": "PUT",
+      "path": "/uploads/:requestId/chunks/:ordinal",
+      "role": "credential",
+      "requestSchema": "chunk",
+      "successStatus": 204
+    },
+    {
+      "method": "GET",
+      "path": "/uploads/:requestId",
+      "role": "credential",
+      "requestSchema": null,
+      "successStatus": 200
+    },
+    {
+      "method": "POST",
+      "path": "/uploads/:requestId/complete",
+      "role": "credential",
+      "requestSchema": "identity",
+      "successStatus": 202
+    },
+    {
+      "method": "POST",
+      "path": "/uploads/:requestId/cancel",
+      "role": "credential",
+      "requestSchema": "identity",
+      "successStatus": 200
+    },
+    {
+      "method": "GET",
+      "path": "/publication",
+      "role": "public",
+      "requestSchema": null,
+      "successStatus": 200
+    },
+    {
+      "method": "POST",
+      "path": "/claim",
+      "role": "build",
+      "requestSchema": "identity",
+      "successStatus": 200
+    },
+    {
+      "method": "POST",
+      "path": "/requests/:requestId/heartbeat",
+      "role": "build",
+      "requestSchema": "heartbeat",
+      "successStatus": 200
+    },
+    {
+      "method": "GET",
+      "path": "/blobs/:blobId/manifest",
+      "role": "build",
+      "requestSchema": null,
+      "successStatus": 200
+    },
+    {
+      "method": "GET",
+      "path": "/blobs/:blobId/chunks/:ordinal",
+      "role": "build",
+      "requestSchema": null,
+      "successStatus": 200
+    },
+    {
+      "method": "POST",
+      "path": "/requests/:requestId/snapshots",
+      "role": "build",
+      "requestSchema": "snapshot",
+      "successStatus": 201
+    },
+    {
+      "method": "PUT",
+      "path": "/snapshots/:blobId/chunks/:ordinal",
+      "role": "build",
+      "requestSchema": "chunk",
+      "successStatus": 204
+    },
+    {
+      "method": "POST",
+      "path": "/snapshots/:blobId/seal",
+      "role": "build",
+      "requestSchema": "seal",
+      "successStatus": 200
+    },
+    {
+      "method": "POST",
+      "path": "/requests/:requestId/prepare",
+      "role": "build",
+      "requestSchema": "prepare",
+      "successStatus": 200
+    },
+    {
+      "method": "POST",
+      "path": "/requests/:requestId/fail",
+      "role": "build",
+      "requestSchema": "fail",
+      "successStatus": 200
+    },
+    {
+      "method": "GET",
+      "path": "/prepared",
+      "role": "deploy",
+      "requestSchema": null,
+      "successStatus": 200
+    },
+    {
+      "method": "POST",
+      "path": "/publications/:revision/ack",
+      "role": "deploy",
+      "requestSchema": "ack",
+      "successStatus": 200
+    },
+    {
+      "method": "POST",
+      "path": "/publications/:revision/reconcile",
+      "role": "deploy",
+      "requestSchema": "ack",
+      "successStatus": 200
+    },
+    {
+      "method": "POST",
+      "path": "/invitations",
+      "role": "admin",
+      "requestSchema": "invitation",
+      "successStatus": 200
+    },
+    {
+      "method": "POST",
+      "path": "/revoke",
+      "role": "admin",
+      "requestSchema": "revoke",
+      "successStatus": 200
+    },
+    {
+      "method": "POST",
+      "path": "/publications/:revision/abandon",
+      "role": "admin",
+      "requestSchema": "abandon",
+      "successStatus": 200
+    },
+    {
+      "method": "GET",
+      "path": "/retained",
+      "role": "build",
+      "requestSchema": null,
+      "successStatus": 200
+    },
+    {
+      "method": "GET",
+      "path": "/replay",
+      "role": "build",
+      "requestSchema": null,
+      "successStatus": 200
+    },
+    {
+      "method": "GET",
+      "path": "/replay/:revision/blobs/:blobId/manifest",
+      "role": "build",
+      "requestSchema": null,
+      "successStatus": 200
+    },
+    {
+      "method": "GET",
+      "path": "/replay/:revision/blobs/:blobId/chunks/:ordinal",
+      "role": "build",
+      "requestSchema": null,
+      "successStatus": 200
+    }
+  ],
+  "wire": {
+    "chunkHeaders": [
+      "X-Chunk-SHA256",
+      "Content-Type"
+    ],
+    "leaseReadHeaders": [
+      "X-Request-Id",
+      "X-Lease-Epoch"
+    ],
+    "snapshotWriteHeaders": [
+      "X-Request-Id",
+      "X-Lease-Epoch"
+    ],
+    "chunkResponseHeaders": [
+      "X-Chunk-SHA256",
+      "Content-Length"
+    ]
+  },
+  "responses": {
+    "allJsonIdentity": {
+      "schemaVersion": {
+        "const": 1
+      },
+      "personId": {
+        "const": "friend-a"
+      }
+    },
+    "session": [
+      "schemaVersion",
+      "personId",
+      "expiresAt"
+    ],
+    "allocation": [
+      "schemaVersion",
+      "personId",
+      "requestId",
+      "generation",
+      "state",
+      "blobId",
+      "chunkCount"
+    ],
+    "status": [
+      "schemaVersion",
+      "personId",
+      "state",
+      "request",
+      "activePublication",
+      "pollAfterSeconds"
+    ],
+    "uploadStatus": [
+      "schemaVersion",
+      "personId",
+      "requestId",
+      "generation",
+      "state",
+      "acceptedAt",
+      "nextScheduledAt",
+      "error",
+      "received",
+      "activePublication",
+      "pollAfterSeconds"
+    ],
+    "lease": [
+      "schemaVersion",
+      "personId",
+      "requestId",
+      "generation",
+      "kind",
+      "revision",
+      "leaseEpoch",
+      "runId",
+      "runAttempt",
+      "leaseExpiresAt",
+      "sourceBlobId",
+      "activeSnapshot",
+      "publications"
+    ],
+    "publication": [
+      "schemaVersion",
+      "personId",
+      "state",
+      "activePublication"
+    ],
+    "activePublication": [
+      "revision",
+      "publishedAt",
+      "pagePath",
+      "releasePath",
+      "addonPath"
+    ],
+    "prepared": [
+      "schemaVersion",
+      "personId",
+      "publications"
+    ],
+    "preparedPublication": [
+      "revision",
+      "generation",
+      "codeSha",
+      "runId",
+      "runAttempt",
+      "receiptSha256",
+      "fileManifestSha256",
+      "personContextSha256",
+      "releasePath"
+    ],
+    "error": [
+      "schemaVersion",
+      "personId",
+      "error"
+    ],
+    "retained": [
+      "schemaVersion",
+      "personId",
+      "publications"
+    ],
+    "replay": [
+      "schemaVersion",
+      "personId",
+      "publications"
+    ],
+    "replayPublication": [
+      "revision",
+      "generation",
+      "codeSha",
+      "runId",
+      "runAttempt",
+      "receiptSha256",
+      "fileManifestSha256",
+      "personContextSha256",
+      "releasePath",
+      "requestId",
+      "snapshotId",
+      "leaseEpoch"
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+"id": "e-iran-art-cinema", "type": "school", "years": {"min": 1980}, "admit": ["core", "periphery"],
+"school": {
+  "countries": ["IR"],
+  "directors": [
+    {"id": 119294, "name": "Abbas Kiarostami"},
+    {"id": 120226, "name": "Mohsen Makhmalbaf"},
+    {"id": 20026, "name": "Samira Makhmalbaf"},
+    {"id": 120229, "name": "Jafar Panahi"},
+    {"id": 120227, "name": "Dariush Mehrjui"},
+    {"id": 1098592, "name": "Bahram Beyzai"},
+    {"id": 110695, "name": "Majid Majidi"},
+    {"id": 54607, "name": "Bahman Ghobadi"},
+    {"id": 229931, "name": "Asghar Farhadi"}
+  ]
+},
+"sources": [
+  {"id": "wp-en-iranian-new-wave", "publication": "Wikipedia (en)", "title": "Iranian New Wave", "url": "https://en.wikipedia.org/w/index.php?oldid=1381215955", "revision": 1381215955, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-10-20"},
+  {"id": "wp-fa-iran-new-wave", "publication": "Wikipedia (fa)", "title": "موج نوی سینمای ایران", "url": "https://fa.wikipedia.org/w/index.php?oldid=44356256", "revision": 44356256, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-09-09"}
+],
+"consensus": null,
+"films": [
+  {"imdb": "tt0088992", "tmdb": 213938, "slug": "the-runner", "title": "The Runner", "year": 1984, "sources": ["wp-en-iranian-new-wave", "wp-fa-iran-new-wave"], "class": "periphery"},
+  {"imdb": "tt0116384", "tmdb": 43771, "title": "Gabbeh", "year": 1996, "sources": ["wp-fa-iran-new-wave"], "class": "periphery"},
+  {"imdb": "tt0117214", "tmdb": 43976, "slug": "a-moment-of-innocence", "title": "A Moment of Innocence", "year": 1997, "sources": ["wp-en-iranian-new-wave"], "class": "periphery"},
+  {"imdb": "tt0118849", "tmdb": 21334, "slug": "children-of-heaven", "title": "Children of Heaven", "year": 1997, "sources": ["wp-en-iranian-new-wave", "wp-fa-iran-new-wave"], "class": "periphery"},
+  {"imdb": "tt0191043", "tmdb": 17078, "slug": "the-color-of-paradise", "title": "The Color of Paradise", "year": 1999, "sources": ["wp-en-iranian-new-wave"], "class": "periphery"},
+  {"imdb": "tt0371280", "tmdb": 40427, "slug": "crimson-gold", "title": "Crimson Gold", "year": 2003, "sources": ["wp-en-iranian-new-wave", "wp-fa-iran-new-wave"], "class": "periphery"},
+  {"imdb": "tt1360860", "tmdb": 37181, "slug": "about-elly", "title": "About Elly", "year": 2009, "sources": ["wp-en-iranian-new-wave", "wp-fa-iran-new-wave"], "class": "periphery"},
+  {"imdb": "tt1832382", "tmdb": 60243, "title": "A Separation", "year": 2011, "sources": ["wp-en-iranian-new-wave", "wp-fa-iran-new-wave"], "class": "periphery"}
+],
+"exclude": [
+
+],
+"pending": [
+  {"imdb": "tt0122186", "title": "Captain Khorshid", "year": 1987, "class": "periphery", "why": "above the prefilter and not in the index, but no TMDB id or Letterboxd page is known yet"}
+],
+"counted": {"curationFilms": 50, "written": 8, "inIndexOfReference": 8, "notInIndexAdmitted": 1, "notInIndexPassingImdb7": 1, "pending": 1, "documentariesWrittenOut": 0, "leftOut": {"outside the years of the era": 34, "class not admitted by the era": 4, "named with no id and no class (not written in pending)": 0}}
+}

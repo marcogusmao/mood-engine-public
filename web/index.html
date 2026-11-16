@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mood Engine</title>
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="Tonight's film, picked from your own taste.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #231f1c; --ink: #f3ead8; --soft: rgba(243,234,216,.68); --line: rgba(243,234,216,.18); --accent: #e8b04a; --on-accent: #231f1c;
+    --serif: "Gloock", Georgia, serif; --sans: "Hanken Grotesk", system-ui, -apple-system, sans-serif;
+  }
+  /* The mood is the lighting. */
+  body[data-mood="lift"]     { --bg:#f5dc8c; --ink:#2d230f; --soft:rgba(45,35,15,.7);  --line:rgba(45,35,15,.2);  --accent:#2d5fa0; --on-accent:#fff7e2; }
+  body[data-mood="escape"]   { --bg:#e9622c; --ink:#1e0f08; --soft:rgba(30,15,8,.72); --line:rgba(30,15,8,.22); --accent:#1e0f08; --on-accent:#ffe9d6; }
+  body[data-mood="reinvent"] { --bg:#c9d6c0; --ink:#1d2a22; --soft:rgba(29,42,34,.7); --line:rgba(29,42,34,.2); --accent:#3f5f4a; --on-accent:#eef4ea; }
+  body[data-mood="letin"]    { --bg:#56636f; --ink:#eef1f4; --soft:rgba(238,241,244,.72);--line:rgba(238,241,244,.2);--accent:#c8dbec; --on-accent:#26303a; }
+  body[data-mood="night"]    { --bg:#121c3a; --ink:#e9ecff; --soft:rgba(233,236,255,.66);--line:rgba(233,236,255,.16);--accent:#ffb347; --on-accent:#121c3a; }
+  body[data-mood="wicked"]   { --bg:#3a0d12; --ink:#f6e6dc; --soft:rgba(246,230,220,.66);--line:rgba(246,230,220,.16);--accent:#ff5a3c; --on-accent:#2a080b; }
+  body[data-mood="wander"]   { --bg:#0f5c5a; --ink:#eaf6f1; --soft:rgba(234,246,241,.7); --line:rgba(234,246,241,.18);--accent:#f2c14e; --on-accent:#0c3b3a; }
+  body[data-mood="slow"]     { --bg:#2e2418; --ink:#f4e6cb; --soft:rgba(244,230,203,.7); --line:rgba(244,230,203,.18);--accent:#e0a458; --on-accent:#2e2418; }
+  body[data-mood="music"]    { --bg:#6a1f5c; --ink:#ffeaf6; --soft:rgba(255,234,246,.7); --line:rgba(255,234,246,.18);--accent:#ffd23f; --on-accent:#4a1240; }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 400 17px/1.55 var(--sans); transition: background-color .7s ease, color .7s ease; }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; } .also button:hover img, .also a:hover img { transform: none !important; } }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 28px 16px 64px; }
+  @media (min-width: 720px) { .wrap { padding: 40px 32px 80px; } }
+
+  header { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; }
+  .brand { font: 400 22px/1 var(--serif); margin: 0; }
+  .updated { color: var(--soft); font-size: 14px; margin: 0; }
+
+  .ask { font: 400 clamp(40px, 7vw, 76px)/1.02 var(--serif); margin: 44px 0 20px; letter-spacing: -0.01em; }
+  .moods { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 18px; padding: 0; list-style: none; }
+  .chip { min-height:44px; font: 500 16px/1 var(--sans); color: var(--ink); background: transparent; border: 1.5px solid var(--line); border-radius: 999px; padding: 11px 16px; cursor: pointer; transition: border-color .2s, background-color .2s; }
+  .chip:hover { border-color: var(--ink); }
+  .chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+
+  .controls { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 28px; color: var(--soft); font-size: 15px; }
+  .seg { display: inline-flex; border: 1.5px solid var(--line); border-radius: 999px; overflow: hidden; }
+  .seg button { min-height:44px; font: 500 14px/1 var(--sans); color: var(--soft); background: none; border: 0; padding: 9px 13px; cursor: pointer; }
+  .seg button[aria-pressed="true"] { background: var(--line); color: var(--ink); }
+  .dial { display: inline-flex; align-items: center; gap: 10px; }
+  .dial input { min-height:44px; accent-color: var(--accent); width: 130px; }
+  .blurb { color: var(--soft); margin: 14px 0 0; min-height: 1.55em; }
+
+  .hero { display: grid; grid-template-columns: 1fr; gap: 24px; margin: 40px 0 0; padding-top: 32px; border-top: 1.5px solid var(--line); }
+  @media (min-width: 760px) { .hero { grid-template-columns: 300px 1fr; gap: 44px; } .hero .poster { width: 100%; } }
+  .hero.enter { animation: develop .7s ease both; }
+  @keyframes develop { from { opacity: 0; filter: saturate(0) brightness(1.3); } to { opacity: 1; filter: none; } }
+  .poster { width: 62%; max-width: 300px; aspect-ratio: 2/3; object-fit: cover; border-radius: 6px; background: var(--line); display: block; }
+  .credit { color: var(--soft); margin: 0 0 6px; font-size: 16px; }
+  .title { font: 400 clamp(44px, 8vw, 92px)/.95 var(--serif); margin: 0 0 14px; letter-spacing: -0.015em; overflow-wrap: anywhere; }
+  .meta { color: var(--soft); margin: 0 0 22px; }
+  .why { list-style: none; padding: 0; margin: 0 0 22px; display: grid; gap: 8px; max-width: 62ch; }
+  .why li { padding-left: 22px; position: relative; }
+  .why li::before { content: ""; position: absolute; left: 0; top: .62em; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); }
+  .overview { max-width: 62ch; margin: 0 0 26px; color: var(--soft); }
+  .actions { display: flex; flex-wrap: wrap; gap: 10px; }
+  .btn { font: 700 16px/1 var(--sans); border-radius: 999px; padding: 14px 20px; text-decoration: none; border: 1.5px solid var(--ink); background: none; color: var(--ink); cursor: pointer; }
+  .btn.primary { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+  .btn.quiet { border-color: var(--line); color: var(--soft); font-weight: 500; }
+
+  h2 { font: 400 30px/1.1 var(--serif); margin: 64px 0 18px; }
+  .also { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(140px, 1fr); gap: 16px; overflow-x: auto; padding-bottom: 8px; scroll-snap-type: x mandatory; }
+  .also button, .also a { all: unset; cursor: pointer; scroll-snap-align: start; display: block; }
+  .also button:focus-visible, .also a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+  .also img { width: 100%; aspect-ratio: 2/3; object-fit: cover; border-radius: 6px; background: var(--line); display: block; transition: transform .25s; }
+  .also button:hover img, .also a:hover img { transform: translateY(-3px); }
+  .friend-row { font: 700 17px/1.3 var(--sans); margin: 28px 0 12px; }
+  .friend-who { color: var(--soft); font-size: 14px; margin: 0 0 8px; }
+  .also strong { display: block; font-weight: 700; font-size: 15px; margin-top: 8px; line-height: 1.25; }
+  .also span { display: block; color: var(--soft); font-size: 13px; line-height: 1.35; margin-top: 3px; }
+
+  .picker { font: 500 15px/1 var(--sans); color: var(--ink); background: transparent; border: 1.5px solid var(--line); border-radius: 999px; padding: 9px 14px; max-width: 100%; }
+  .picker option { color: #231f1c; background: #f3ead8; }
+  .empty { margin: 40px 0 0; padding: 32px 0; border-top: 1.5px solid var(--line); color: var(--soft); max-width: 60ch; }
+
+  .portrait { max-width: 68ch; }
+  .portrait p { margin: 0 0 14px; }
+  .portrait b { font-weight: 700; }
+
+  footer { margin-top: 64px; padding-top: 22px; border-top: 1.5px solid var(--line); color: var(--soft); font-size: 14px; display: flex; flex-wrap: wrap; gap: 10px 28px; justify-content: space-between; }
+  footer a { color: var(--ink); }
+  .feedback-controls button, .feedback-controls select, .feedback-controls input, #feedbackPanel button, #feedbackPanel summary{min-height:44px; padding-block:10px; cursor:pointer}
+  .feedback-controls .btn.quiet, #feedbackPanel .btn.quiet, #feedbackStatus .btn.quiet, #filmFeedback, #chooseToday { color:var(--ink); }
+    #feedbackPanel select { min-height:44px; font:inherit; max-width:100%; }
+  #feedbackPanel { border-top:1.5px solid var(--line); padding-block:24px; overflow-wrap:anywhere; }
+  #feedbackPanel label { display:block; margin-block:12px; }
+  #feedbackPanel select { color:var(--ink); background:var(--bg); border:1px solid var(--line); padding:8px; }
+  #feedbackStatus { overflow-wrap:anywhere; }
+  .hero > *, .controls > * { min-width:0; }
+  .brand { line-height:1.25; overflow-wrap:anywhere; }
+  .owner-link { min-height:44px; display:inline-flex; align-items:center; }
+  .owner-link[hidden] { display:none; }
+  @media (max-width: 520px) { body[data-owner="friend-a"] .owner-link { flex-basis:100%; } }
+  .installation { min-width:0; max-width:68ch; color:var(--ink); }
+  .installation p { margin-block:0 16px; }
+  .installation .btn, #retry { min-height:44px; max-width:100%; line-height:1.4; overflow-wrap:anywhere; }
+  .installation .btn:disabled { opacity:.6; cursor:default; }
+  .installation label { display:block; margin-block:16px 8px; }
+  .installation textarea { width:100%; min-height:88px; font:400 1rem/1.5 var(--sans); background:var(--bg); color:var(--ink); border:1px solid var(--ink); padding:12px; resize:vertical; overflow-wrap:anywhere; }
+  #installStatus { margin-block:16px; }
+  #clientSetup summary { min-height:44px; padding-block:10px; cursor:pointer; }
+  #clientSetup ol { padding-left:24px; }
+  #clientSetup li { margin-block:10px; }
+  @media (forced-colors: active) { :focus-visible { outline-color:Highlight; } }
+
+  [hidden] { display:none !important; }
+  .skip-link { position:absolute; inset-inline-start:16px; top:8px; background:var(--bg); color:var(--ink); padding:12px; z-index:2; transform:translateY(-150%); }
+  .skip-link:focus { transform:none; }
+  main { min-width:0; }
+  .installation { margin-block:24px; }
+  .installation p { max-width:68ch; }
+  #willUpload { max-width:68ch; margin-block:24px; overflow-wrap:anywhere; }
+  #willUpload summary { min-height:44px; cursor:pointer; font:400 26px/1.3 var(--serif); padding-block:8px; }
+  #willUpload label { display:block; margin-block:16px 8px; }
+  #willUpload input { max-width:100%; min-height:44px; font:inherit; color:var(--ink); }
+  #willUpload input::file-selector-button { min-height:44px; font:inherit; color:var(--ink); background:var(--bg); border:1px solid var(--ink); padding:8px 12px; margin-inline-end:12px; border-radius:6px; cursor:pointer; }
+  #willUpload .btn { min-height:44px; line-height:1.4; max-width:100%; }
+  #willUpload p { max-width:68ch; }
+  #uploadProgress { width:100%; accent-color:var(--accent); }
+  #uploadBytes { font-variant-numeric:tabular-nums; }
+  #personCoverage { color:var(--soft); max-width:68ch; }
+  .dial { flex-wrap:wrap; }
+</style>
+</head>
+<body data-owner="mgusmao" data-will-api-origin="">
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="wrap">
+  <header>
+    <p class="brand" id="brand">Mood Engine</p>
+    <p class="updated" id="updated"></p>
+    <a class="owner-link" id="ownerLink" hidden></a>
+  </header>
+
+  <main id="main" tabindex="-1">
+  <section id="willUpload" hidden aria-label="Will’s Letterboxd export">
+    <details id="uploadDetails" open>
+      <summary id="uploadSummary">Import your Letterboxd export</summary>
+      <p>Will · @friend-a</p>
+      <p id="replacementNote" hidden>Your current page stays available until the replacement is published.</p>
+      <form id="uploadForm" hidden>
+        <label for="uploadFile">Letterboxd export (.zip)</label>
+        <input id="uploadFile" type="file" accept=".zip,application/zip" aria-describedby="uploadHelp uploadStatus">
+        <p id="uploadHelp">Up to 8 MiB. Your ZIP is processed privately. Your film page and taste portrait are public. <a href="https://letterboxd.com/settings/data/" rel="noreferrer">Download your Letterboxd export</a>.</p>
+        <p id="uploadSelection"></p>
+        <div class="actions"><button class="btn primary" id="uploadSubmit" type="submit">Upload export</button><button class="btn quiet" id="uploadRemove" type="button">Remove file</button></div>
+      </form>
+      <progress id="uploadProgress" hidden aria-label="Bytes acknowledged"></progress><p id="uploadBytes"></p>
+      <p id="uploadStatus" role="status" aria-live="polite"></p>
+      <p id="uploadSchedule"></p><p id="uploadChecked"></p>
+      <p id="credentialStatus" role="status"></p>
+      <div class="actions"><button class="btn" id="uploadCheck" type="button">Check progress</button><button class="btn quiet" id="uploadPause" type="button" hidden>Pause updates</button><button class="btn quiet" id="uploadCancel" type="button" hidden>Cancel upload</button><button class="btn quiet" id="uploadSignOut" type="button" hidden>Forget upload credential</button></div>
+    </details>
+  </section>
+    <section class="installation" id="installation" aria-label="Add rows to Stremio">
+      <p id="installationIntro">Pick a film here, or add these rows to Stremio.</p>
+      <p id="installationHelp">Mood, time and feedback controls change picks on this page. Stremio shows the generated addon rows.</p>
+      <div class="actions"><button class="btn" id="install" type="button" disabled>Install in Stremio</button><button class="btn" id="copyManifest" type="button" disabled>Copy addon URL</button></div>
+      <p id="installStatus" role="status" aria-live="polite">Load the recommendations to enable installation.</p>
+      <div id="manifestFallback" hidden><label for="manifestUrl">Addon URL — copy into Stremio</label><textarea id="manifestUrl" readonly rows="3" spellcheck="false"></textarea></div>
+      <details id="clientSetup" hidden>
+        <summary>Set up Stremio or Fusion</summary>
+        <p>Use the live addon link from this page for Will’s published recommendations. Get the latest Stremio release offered for your device through <a href="https://www.stremio.com/downloads" rel="noreferrer">Stremio downloads</a>. If you already use Fusion Media Center, follow the Fusion steps below.</p>
+        <ul>
+          <li><strong>Samsung / Tizen:</strong> install or update Stremio in the TV’s Apps store. Stremio lists support for Samsung models from 2019 onward; availability depends on your TV and store.</li>
+          <li><strong>Google TV:</strong> install or update Stremio for Android TV from Google Play on the TV.</li>
+          <li><strong>Apple TV:</strong> if Fusion Media Center is already installed, add the addon and Home widgets below. A current fresh-install download could not be verified; check <a href="https://fusionapp.dev/" rel="noreferrer">Fusion’s official site</a> for availability.</li>
+          <li><strong>Computer:</strong> choose the current Stremio download for your operating system and processor. An existing Fusion installation on Mac can also use the addon.</li>
+        </ul>
+        <ol>
+          <li><strong>Stremio:</strong> on your computer, select Install in Stremio, then confirm in the app. If the app does not open, select Copy addon URL and paste it into Stremio’s addon search. Sign into the same Stremio account on your Samsung and Google TV, reopen the app, and check for Mood Engine · Will.</li>
+          <li><strong>Fusion:</strong> select Copy addon URL. In Fusion, open Settings → Addons, add the URL and enable the addon.</li>
+          <li><strong>Fusion Home:</strong> open Settings → Widgets, add a widget, then choose an external catalogue from Mood Engine · Will. Repeat for the rows you want on Home. Setting names may vary by app version.</li>
+        </ol>
+        <p>Check that the addon is Mood Engine · Will. If you already have it, check its URL before adding another copy. Use Fusion’s Addons screen for the URL; Import Widgets expects a widget export file.</p>
+        <p>Mood Engine supplies film recommendations. To watch, keep your playback addons configured in each app.</p>
+      </details>
+    </section>
+  <p id="personCoverage"></p>
+  <div id="pickerContent">
+  <h1 class="ask">How’s tonight?</h1>
+  <ul class="moods" id="moods" aria-label="Pick a mood"></ul>
+  <div class="controls">
+    <span>Time <span class="seg" id="time" role="group" aria-label="Time available">
+      <button aria-pressed="true" data-v="0">Any</button><button aria-pressed="false" data-v="105">Under 1h45</button><button aria-pressed="false" data-v="120">Under 2h</button>
+    </span></span>
+    <span><span class="seg" id="kind" role="group" aria-label="New or rewatch">
+      <button aria-pressed="true" data-v="new">Something new</button><button aria-pressed="false" data-v="rewatch">An old friend</button>
+    </span></span>
+    <label class="dial">Safe bet <input id="dial" type="range" min="0" max="100" value="70" aria-label="Safe bet to wildcard"> Wildcard</label>
+  </div>
+  <p class="blurb" id="blurb"></p>
+
+  <div class="feedback-controls actions">
+    <button class="btn quiet" id="myFeedback" disabled>My feedback</button>
+    <button class="btn quiet" id="newSession" disabled>New session</button>
+    <button class="btn quiet" id="exportFeedback" disabled>Export feedback</button>
+    <button class="btn quiet" id="importFeedbackButton" disabled type="button">Import feedback</button><input id="importFeedback" type="file" accept="application/json" hidden>
+  </div>
+  <p id="feedbackStatus" role="status" aria-live="polite"></p>
+  <section id="feedbackPanel" hidden aria-label="Film feedback"></section>
+  <section id="stage" aria-live="polite"></section>
+
+  <section id="alsoWrap" hidden>
+    <h2>Also tonight</h2>
+    <div class="also" id="also"></div>
+  </section>
+
+  <section id="friends" hidden>
+    <h2>What your friends are watching</h2>
+    <p class="friend-who" id="friendWho"></p>
+    <div id="friendRows"></div>
+  </section>
+
+  <section id="lists" hidden>
+    <h2>Your lists, minus what you’ve seen</h2>
+    <p class="friend-who"><label>List <select class="picker" id="listPick"></select></label> <span id="listCount"></span></p>
+    <div class="also" id="listRow"></div>
+  </section>
+
+  <section class="portrait" id="portrait"></section>
+
+  </div>
+  </main>
+  <footer>
+
+    <span>Film data from TMDB. This product uses the TMDB API but is not endorsed or certified by TMDB.</span>
+  </footer>
+</div>
+
+<script src="assets/person.js"></script>
+<script src="assets/upload.js"></script>
+<script src="assets/feedback-core.js"></script>
+<script src="assets/selector.js"></script>
+<script src="assets/feedback.js"></script>
+<script>
+(() => {
+  const $ = (s) => document.querySelector(s);
+  const IMG = (p, size = "w500") => (p ? `https://image.tmdb.org/t/p/${size}${p}` : "");
+  const STARS = (r) => "★".repeat(Math.floor(r)) + (r % 1 >= 0.5 ? "½" : "");
+  const MONTH = (iso) => (iso ? new Date(iso + "T12:00:00Z").toLocaleString("en-US", { month: "short", year: "numeric", timeZone: "UTC" }) : "");
+  let feedback, currentSet = null, visibilityObserver, secondaryObservers = new Map(), exposureSeen = new Set();
+  const context = (mood = state.mood) => ({ moodId: mood === "tonight" ? null : mood, timeLimit: state.time || null, kind: state.kind, safe: state.safe, snapshotId: null, policyId: DATA.policyId || "baseline-v2" });
+  const placement = () => ({ rowId: state.mood, position: state.index + 1, candidateSetId: currentSet?.id || null });
+  const allowed = (x,mood,kind) => !feedback || MoodFeedback.eligible(feedback.state(), x.i, {moodId:mood,kind});
+  function status(message, event, name) {
+    const region = $("#feedbackStatus"); region.textContent = message;
+    if (event && MoodFeedback.EFFECTS.includes(event.type)) {
+      const undo = document.createElement("button"); undo.className="btn quiet"; undo.textContent=`Undo ${name}`;
+      undo.onclick=async()=>{ await feedback.record("undo",event.filmId,context(),{targetEventId:event.eventId}); region.textContent=feedback.saved?"Saved on this browser — decision undone":"Not saved — this change lasts only while this page is open"; };
+      region.append(" ",undo);
+    }
+  }
+  async function record(type,x,payload={},mood=state.mood) {
+    const event = await feedback.record(type,x.i,context(mood),payload,placement());
+    status(feedback.saved?"Saved on this browser":"Not saved — this change lasts only while this page is open",event,x.n);
+    if (["seen","not_tonight","wrong_mood","not_for_me"].includes(type)) $("#myFeedback").focus();
+    return event;
+  }
+
+  let DATA, state = { mood: "tonight", time: 0, kind: "new", safe: 0.7, roll: 0, picks: [], index: 0 };
+
+  let owner, sessionStorageKey;
+  const installation=MoodFeedbackUI.installation({install:$("#install"),copy:$("#copyManifest"),field:$("#manifestUrl"),fallback:$("#manifestFallback"),status:$("#installStatus"),location,navigator});
+  let loadedRevision=null, loadingRevision=null;
+  async function loadData(active) {
+    if(!loadedRevision)installation.setReady(false);
+    if(!loadedRevision)$("#stage").textContent="Loading recommendations…";
+    let nextRevision=null;
+    try {
+      owner=null;
+      owner=MoodFeedbackUI.validateOwner(document.body.dataset.owner);
+      sessionStorageKey=MoodFeedbackUI.sessionKey(owner);
+      if(owner==='friend-a') {
+        document.title="Will’s Mood Engine";
+        $("#brand").textContent="Will’s Mood Engine";
+        $("#ownerLink").textContent="Will · @friend-a";
+        $("#ownerLink").href="https://letterboxd.com/friend-a/";
+        $("#ownerLink").hidden=false;
+        $("#exportFeedback").textContent="Back up feedback";
+        $("#importFeedbackButton").textContent="Restore feedback";
+      }
+      let data;
+      if(owner==='friend-a'){
+        if(active?.revision===loadedRevision||active?.revision===loadingRevision)return;
+        loadingRevision=active?.revision;
+        const release=await MoodPerson.load({apiOrigin:document.body.dataset.willApiOrigin,fetch,location,publication:active});
+        if(!release){$("#pickerContent").hidden=true;$("#installStatus").textContent="Install becomes available after your first page is published.";return;}
+        data=release.data;
+        installation.setManifest(release.manifest);
+        $("#personCoverage").textContent=MoodPerson.coverageText(release.person);
+        nextRevision=release.person.revision;
+      }else{
+        const response=await fetch("data/engine.json");
+        if(!response.ok)throw new Error('Data unavailable');
+        data=await response.json();
+      }
+      if(!data||!Array.isArray(data.films)||!Array.isArray(data.rewatch)||!Array.isArray(data.moods)||!Array.isArray(data.tonight)||!data.stats||!Number.isFinite(data.stats.watched)||!Number.isFinite(Date.parse(data.generated)))throw new Error('Invalid engine data');
+      await init(data);
+      loadedRevision=nextRevision;
+      $("#pickerContent").hidden=false;
+      installation.setReady(true);
+      $("#installStatus").textContent=owner==='friend-a'?"Rows ready for Stremio and Fusion. Confirm installation in your app.":"Rows ready to add to Stremio. Opening the installer does not confirm installation.";
+      document.querySelectorAll('.feedback-controls button').forEach(b=>b.disabled=false);
+      return true;
+    } catch {
+      if(loadedRevision&&DATA){$("#installStatus").textContent="Could not check the new publication. Your last loaded page remains available.";return false;}
+      installation.setReady(false);
+      $("#stage").innerHTML=`<p class="empty">${owner?'The recommendations didn’t load. Check your connection and retry.':'This page’s owner is not supported. Return to your personal page and retry.'}</p><button class="btn" id="retry" type="button">Retry</button>`;
+      $("#pickerContent").hidden=false;
+      $("#retry").onclick=()=>loadData(active);
+      return false;
+    } finally { loadingRevision=null; }
+  }
+  if(document.body.dataset.owner==='friend-a'){
+    owner='friend-a';sessionStorageKey=MoodFeedbackUI.sessionKey(owner);
+    $("#installation").ariaLabel="Add rows to Stremio or Fusion";
+    $("#installationIntro").textContent="Pick a film here, or add these rows to Stremio or Fusion.";
+    $("#installationHelp").textContent="Mood, time and feedback controls change picks on this page. Your apps show the published addon rows.";
+    $('label[for="manifestUrl"]').textContent="Addon URL — copy into Stremio or Fusion";
+    $("#clientSetup").hidden=false;
+    document.title="Will’s Mood Engine";$("#brand").textContent="Will’s Mood Engine";
+    $("#ownerLink").textContent="Will · @friend-a";$("#ownerLink").href="https://letterboxd.com/friend-a/";$("#ownerLink").hidden=false;
+    $("#pickerContent").hidden=true;
+    $("#installStatus").textContent="Install becomes available after your first page is published.";
+    let idb=null;try{idb=window.indexedDB;}catch{}
+    MoodUpload.mount({document,location,history,crypto,fetch,indexedDB:idb,apiOrigin:document.body.dataset.willApiOrigin,onPublication:loadData});
+  }else loadData();
+
+  let eligibilityKey=null, expiryStarted=false;
+  function refreshFeedback(projected) {
+    const key=JSON.stringify(projected.active.filter(e=>['seen','not_tonight','wrong_mood','not_for_me'].includes(e.type)).map(e=>e.eventId));
+    if(key===eligibilityKey)return;
+    eligibilityKey=key;
+    if(DATA&&feedback){render(false,true);renderFriends();renderLists();}
+  }
+
+  async function init(data) {
+    DATA = data;
+    state.skipped = new Set();
+    let sessionId;
+    try { sessionId=sessionStorage.getItem(sessionStorageKey); if(!sessionId){sessionId=crypto.randomUUID();sessionStorage.setItem(sessionStorageKey,sessionId);} } catch { sessionId=crypto.randomUUID(); }
+    let indexedDB=null;try{indexedDB=window.indexedDB;}catch{}
+    feedback=MoodFeedbackUI.createController({owner,storage:MoodFeedbackUI.indexedStore(indexedDB,owner),sessionId,onStatus:status,onChange:refreshFeedback});
+    await feedback.load();if(owner==='mgusmao')try{await feedback.migrate(localStorage,[...DATA.films,...DATA.rewatch]);}catch{}
+    const refreshExpiry=()=>refreshFeedback(feedback.state());
+    const scheduleExpiry=()=>setTimeout(()=>{refreshExpiry();scheduleExpiry();},Math.max(1,Date.parse(MoodFeedback.midnight(new Date().toISOString()))-Date.now()));
+    if(!expiryStarted){scheduleExpiry(); window.addEventListener("focus",refreshExpiry);expiryStarted=true;}
+    if(owner==='mgusmao'&&DATA.feedbackIncludedAt)status(`Included in build ${DATA.feedbackIncludedAt}. ${feedback.saved?'New decisions are saved on this browser.':'Not saved — new decisions last only while this page is open.'}`);
+    $("#myFeedback").onclick=()=>openHistory();
+    $("#newSession").onclick=()=>{const id=feedback.newSession();try{sessionStorage.setItem(sessionStorageKey,id);}catch{}exposureSeen=new Set();status("New session started on this browser");render(false,true);};
+    $("#exportFeedback").onclick=async()=>{try{for(const [i,batch] of (await feedback.exportBatches()).entries()){const url=URL.createObjectURL(new Blob([JSON.stringify(batch)],{type:"application/json"}));const a=document.createElement("a");a.href=url;a.download=`mood-feedback-${i+1}.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}status(owner==='friend-a'?"Feedback backup exported. Restore it on Will’s page to keep feedback in this browser; it does not update the hosted build.":"Feedback exported — import this file into a private build directory");}catch(e){status(`Export failed: ${e.message}`);}};
+    $("#importFeedbackButton").onclick=()=>$("#importFeedback").click();
+    $("#importFeedback").onchange=async e=>{try{const file=e.target.files[0];if(!file)return;if(file.size>10*1024*1024)throw new Error("Split exports into batches smaller than 10 MiB");await feedback.importBatch(JSON.parse(await file.text()));status(feedback.saved?"Saved on this browser — feedback imported":"Not saved — this change lasts only while this page is open");}catch(e){status(`Import rejected: ${e.message}. Your earlier feedback is preserved.`);}e.target.value="";};
+    $("#updated").textContent = `Built ${new Date(data.generated).toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric" })} from ${data.stats.watched.toLocaleString()} films you’ve seen`;
+
+    const moods = [{ id: "tonight", name: "🎯 Just pick for me", blurb: "One pick per mood, rotated daily. The engine’s best guess for right now." }, ...data.moods];
+    $("#moods").innerHTML = moods.map((m) => `<li><button class="chip" data-mood="${esc(m.id)}" aria-pressed="${m.id === state.mood}">${esc(m.name)}</button></li>`).join("");
+    $("#moods").onclick=(e) => {
+      const b = e.target.closest("button[data-mood]"); if (!b) return;
+      state.mood = b.dataset.mood; state.roll = 0;
+      document.querySelectorAll(".chip").forEach((c) => c.setAttribute("aria-pressed", c === b));
+      render(true);
+    };
+    seg("#time", (v) => (state.time = Number(v)));
+    seg("#kind", (v) => (state.kind = v));
+    $("#dial").oninput=(e) => { state.safe = 1 - e.target.value / 100; render(false); };
+    state.safe = 1 - $("#dial").value / 100;
+
+    renderPortrait();
+    renderFriends();
+    renderLists();
+    render(true);
+  }
+
+  // The curated lists (data.lists): the first unseen films of the one you pick. Stremio's Discover tab has them whole.
+  function renderLists() {
+    const ls = (DATA.lists || []).filter((l) => l.items.length);
+    if (!ls.length) return;
+    $("#lists").hidden = false;
+    $("#listPick").innerHTML = ls.map((l, i) => `<option value="${i}">${esc(l.name)}</option>`).join("");
+    const show = () => {
+      const l = ls[$("#listPick").value];
+      $("#listCount").textContent = `${l.unseen} unseen of ${l.total} films (Discover → Lists (unseen) has them all)`;
+      $("#listRow").innerHTML = l.items.map((x) => `
+        <a data-film="${esc(x.i)}" data-row="list-${esc(l.id)}" data-position="${l.items.indexOf(x)+1}" href="stremio:///detail/movie/${esc(x.i)}/${esc(x.i)}" aria-label="Open ${esc(x.n)} in Stremio">
+          <img src="https://images.metahub.space/poster/medium/${esc(x.i)}/img" alt="" loading="lazy">
+          <strong>${esc(x.n)}</strong>
+          <span>${esc(x.w || String(x.y))}</span>
+        </a>`).join("");
+      instrumentCards($("#listRow"));
+    };
+    $("#listPick").onchange=show;
+    show();
+  }
+
+  // Rows built from your friends' public Letterboxd pages (data.friends); each film opens in Stremio by its IMDb id.
+  function renderFriends() {
+    const f = DATA.friends;
+    if (!f || !f.rows.length) return;
+    $("#friends").hidden = false;
+    $("#friendWho").textContent = f.people.map((p) => `${p.name}: ${p.withTt.toLocaleString()} films with an IMDb id`).join(" · ");
+    $("#friendRows").innerHTML = f.rows.map((r) => `
+      <h3 class="friend-row">${esc(r.name)}</h3>
+      <div class="also">${r.items.slice(0, 20).map((x) => `
+        <a data-film="${esc(x.i)}" data-row="friend-${esc(r.id)}" data-position="${r.items.indexOf(x)+1}" href="stremio:///detail/movie/${esc(x.i)}/${esc(x.i)}" aria-label="Open ${esc(x.n)} in Stremio">
+          <img src="https://images.metahub.space/poster/medium/${esc(x.i)}/img" alt="" loading="lazy">
+          <strong>${esc(x.n)}</strong>
+          <span>${esc(x.w || String(x.y))}</span>
+        </a>`).join("")}</div>`).join("");
+    instrumentCards($("#friendRows"));
+  }
+
+  function seg(sel, set) {
+    $(sel).onclick=(e) => {
+      const b = e.target.closest("button"); if (!b) return;
+      $(sel).querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", x === b));
+      set(b.dataset.v); state.roll = 0; render(true);
+    };
+  }
+
+  function rank() {
+    const projected = feedback?.state();
+    return MoodSelector.rank(DATA,state,{eligible:(x,mood,kind)=>!projected || MoodFeedback.eligible(projected,x.i,{moodId:mood,kind})});
+  }
+
+  function openPanel(trigger,markup) {
+    const p=$("#feedbackPanel");p.innerHTML=markup+`<p><button class="btn quiet" id="closeFeedback">Close feedback</button></p>`;
+    const close=MoodFeedbackUI.panel({document,panel:p,trigger});$("#closeFeedback").onclick=close;return close;
+  }
+  function openHistory() {
+    openPanel($("#myFeedback"),`<h2>My feedback</h2><p>${feedback.saved?'Stored on this browser.':'Not saved — these decisions last only while this page is open. Export to keep a copy.'} ${owner==='friend-a'?'Back up and restore feedback on Will’s page in this browser. This does not apply feedback to the hosted build.':''} Undo changes only the local decision; Letterboxd history remains.</p><div id="feedbackHistory"></div>`);
+    const root=$("#feedbackHistory"), active=feedback.state().active.filter(e=>MoodFeedback.EFFECTS.includes(e.type));
+    if(!active.length)root.textContent="No active decisions. Export also includes earlier decisions and Undo.";
+    for(const e of active){const f=[...DATA.films,...DATA.rewatch].find(x=>x.i===e.filmId);const row=document.createElement("p");row.textContent=`${f?.n||e.filmId}: ${e.type.replaceAll("_"," ")} `;const undo=document.createElement("button");undo.className="btn quiet";undo.textContent=`Undo ${f?.n||e.filmId}`;undo.onclick=async()=>{await feedback.record("undo",e.filmId,context(),{targetEventId:e.eventId});openHistory();};row.append(undo);root.append(row);}
+  }
+  function openFeedback(x,trigger) {
+    const moods=Object.keys(x.f||{});
+    const close=openPanel(trigger,`<h2>Feedback on ${esc(x.n)}</h2><p>These decisions can be undone in My feedback.</p>
+      <div class="actions"><button class="btn quiet" data-action="wrong_mood">Wrong mood</button><button class="btn quiet" data-action="not_for_me">Not for me</button><button class="btn quiet" data-action="seen">I've seen this</button><button class="btn quiet" data-action="playback_failure">Playback problem</button></div>
+      <label>Mood <select id="feedbackMood">${moods.map(m=>`<option value="${esc(m)}" ${m===state.mood?'selected':''}>${esc(DATA.moods.find(x=>x.id===m)?.word||m)}</option>`).join("")}</select></label>
+      <label>Playback problem <select id="playbackReason"><option value="no-source">No source</option><option value="did-not-open">Did not open</option><option value="wrong-title">Wrong title</option><option value="other">Other</option></select></label>
+      <p>Wrong mood hides this film only in the chosen mood. Not for me hides it from personal recommendations. Seen removes it from unseen suggestions. Playback problems do not change your taste or watched history.</p>
+      <details><summary>Optional answers after watching</summary><label>Rating <select id="explicitRating"><option value="">No answer</option>${Array.from({length:10},(_,i)=>`<option value="${(i+1)/2}">${(i+1)/2} stars</option>`).join("")}</select></label><button class="btn quiet" id="saveRating">Save rating</button><label>Did it fit the mood? <select id="sessionFit"><option value="">No answer</option><option value="yes">Yes</option><option value="no">No</option><option value="depends">Depends</option></select></label><button class="btn quiet" id="saveFit">Save mood answer</button></details>
+      ${owner==='friend-a'?'':`<details><summary>Experience review</summary><p>Experience assertions have separate evidence and revision history. Export/import and correction are available through the private learning CLI; no labels are inferred from clicking this card.</p></details>`}`);
+    $("#feedbackPanel").querySelectorAll('[data-action]').forEach(b=>b.onclick=async()=>{const type=b.dataset.action,mood=type==='wrong_mood'?$("#feedbackMood").value:state.mood;const payload=type==='wrong_mood'?{moodId:mood}:type==='seen'?{watchedDate:null}:type==='playback_failure'?{reason:$("#playbackReason").value}:{};if(type==='wrong_mood'&&!mood)return;await record(type,x,payload,mood);close();});
+    $("#saveRating").onclick=async()=>{const v=$("#explicitRating").value;if(v)await record("rating",x,{value:Number(v)});};
+    $("#saveFit").onclick=async()=>{const v=$("#sessionFit").value;if(v)await record("session_fit",x,{value:v},$("#feedbackMood").value);};
+  }
+
+  function reasons(x) {
+    const r = [];
+    const mood = state.mood;
+    if (state.kind === "rewatch") r.push(`You gave it ${STARS(x.rating)}${x.last ? `, last logged ${MONTH(x.last)}` : ""}`);
+    if (x.pins && x.pins.includes(mood)) r.push("Pinned for this mood");
+    if (x.w) r.push("It’s on your watchlist");
+    (x.why || []).forEach((w) => r.push(w));
+    if (x.seed) { const [t, rt] = x.seed.split("|"); r.push(`Recommended off ${t}, which you gave ${STARS(Number(rt))}`); }
+    const hits = mood === "tonight" ? Object.values(x.h || {})[0] : (x.h || {})[mood];
+    if (hits && hits.length) r.push(`Themes: ${hits.join(", ")}`);
+    if (x.vc) r.push(`${x.va.toFixed(1)} on TMDB from ${x.vc >= 1000 ? Math.round(x.vc / 1000) + "k" : x.vc} votes`);
+    const quality=(x.why||[]).find(w=>/^Letterboxd \d/.test(w)||/ rated it \d.* on Letterboxd$/.test(w));
+    const visible=r.slice(0,4);
+    if(quality&&!visible.includes(quality))visible[visible.length<4?visible.length:3]=quality;
+    return visible;
+  }
+
+  function render(animate, preserve=false) {
+    const chosen=state.picks[state.index]?.i;
+    const ranked = rank();
+    const moodMeta = DATA.moods.find((m) => m.id === state.mood);
+    document.body.dataset.mood = state.mood === "tonight" ? "" : state.mood;
+    $("#blurb").textContent = state.mood === "tonight" ? "One pick per mood, rotated daily. The engine’s best guess for right now." : moodMeta ? moodMeta.blurb : "";
+    state.picks = ranked.slice(0, 12).map((r) => r.x);
+    state.index = preserve?Math.max(0,state.picks.findIndex(x=>x.i===chosen)):0;
+    currentSet=null;
+    const ids=state.picks.map(x=>x.i), captured=context();
+    feedback?.candidateSet(ids,captured).then(set=>{if(JSON.stringify(ids)===JSON.stringify(state.picks.map(x=>x.i)))currentSet=set;});
+    show(animate);
+  }
+
+  function show(animate) {
+    const stage = $("#stage");
+    const x = state.picks[state.index];
+    if (!x) {
+      stage.innerHTML = `<p class="empty">Nothing fits all of that tonight. Choose “Any” to include films without a known runtime, or review My feedback to undo a decision.</p>`;
+      $("#alsoWrap").hidden = true;
+      return;
+    }
+    const credit = x.d && x.d.length ? `a film by ${x.d.join(" & ")}` : "";
+    const meta = [x.y, x.r ? `${x.r} minutes` : "", x.g && x.g.join(", ")].filter(Boolean).join(", ");
+    stage.innerHTML = `
+      <article class="hero${animate ? " enter" : ""}">
+        <img class="poster" src="${esc(IMG(x.p))}" alt="Poster for ${esc(x.n)}">
+        <div>
+          ${credit ? `<p class="credit">${esc(credit)}</p>` : ""}
+          <h2 class="title" style="margin-top:0">${esc(x.n)}</h2>
+          <p class="meta">${esc(meta)}</p>
+          <ul class="why">${reasons(x).map((r) => `<li>${esc(r)}</li>`).join("")}</ul>
+          ${x.o ? `<p class="overview">${esc(x.o)}</p>` : ""}
+          <div class="actions">
+            <a class="btn primary" href="stremio:///detail/movie/${esc(x.i)}/${esc(x.i)}">Watch in Stremio</a>
+            <a class="btn" href="https://letterboxd.com/tmdb/${esc(x.t)}/" target="_blank" rel="noopener">See on Letterboxd</a>
+            <button class="btn quiet" id="skip">Not tonight</button><button class="btn quiet" id="filmFeedback">Feedback</button><button class="btn quiet" id="chooseToday">Choose for today</button>
+          </div>
+        </div>
+      </article>`;
+    $("#skip").onclick=()=>record("not_tonight",x);
+    $("#filmFeedback").onclick=e=>openFeedback(x,e.currentTarget);
+    $("#chooseToday").onclick=()=>record("choose_today",x);
+    stage.querySelector('a.primary').onclick=()=>record("open_stremio",x);
+    stage.querySelector('a[target]').onclick=()=>record("details_opened",x);
+    visibilityObserver?.disconnect();
+    visibilityObserver=MoodFeedbackUI.observe({Observer:window.IntersectionObserver,document,element:stage.querySelector("article"),seen:exposureSeen,key:JSON.stringify([state.mood,state.time,state.kind,state.safe,state.roll,state.index,x.i]),emit:()=>record("card_visible",x)});
+    const rest = state.picks.filter((_, i) => i !== state.index).slice(0, 6);
+    $("#alsoWrap").hidden = !rest.length;
+    $("#also").innerHTML = rest.map((y) => `
+      <button data-film="${esc(y.i)}" data-row="also-${esc(state.mood)}" data-position="${state.picks.indexOf(y)+1}" data-t="${esc(y.t)}" aria-label="Show ${esc(y.n)}">
+        <img src="${esc(IMG(y.p, "w342"))}" alt="" loading="lazy">
+        <strong>${esc(y.n)}</strong>
+        <span>${esc(reasons(y)[0] || String(y.y))}</span>
+      </button>`).join("");
+    instrumentCards($("#also"));
+    $("#also").onclick = (e) => {
+      const b = e.target.closest("button[data-t]"); if (!b) return;
+      const opened=state.picks.find(p=>String(p.t)===b.dataset.t); if(opened) feedback.record("details_opened",opened.i,context(),{},{rowId:b.dataset.row,position:Number(b.dataset.position),candidateSetId:currentSet?.id||null});
+      state.index = state.picks.findIndex((p) => String(p.t) === b.dataset.t);
+      show(true);
+      $("#stage").scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
+    };
+  }
+
+  function instrumentCards(container) {
+    for(const observer of secondaryObservers.get(container)||[]) observer?.disconnect();
+    const observers=[];
+    container.querySelectorAll('[data-film]').forEach(element=>{
+      const filmId=element.dataset.film, rowId=element.dataset.row, position=Number(element.dataset.position), captured=context();
+      const observedPlacement={rowId,position,candidateSetId:container.id==='also'?currentSet?.id||null:null};
+      const key=JSON.stringify([captured,state.roll,rowId,position,filmId]);
+      const emit=type=>feedback.record(type,filmId,captured,{},observedPlacement);
+      if(element.tagName==='A')element.onclick=()=>emit('open_stremio');
+      observers.push(MoodFeedbackUI.observe({Observer:window.IntersectionObserver,document,element,seen:exposureSeen,key,emit:()=>emit('card_visible')}));
+    });
+    secondaryObservers.set(container,observers);
+  }
+
+  function renderPortrait() {
+    const f = DATA.fingerprint;
+    if (!f) return;
+    const list = (arr, fmt) => arr.map(fmt).join(", ").replace(/, ([^,]*)$/, " and $1");
+    const dirs = f.directors.slice(0, 5);
+    const kws = f.keywords.slice(0, 5);
+    const langs = f.languages.filter((l) => l.label !== "English").slice(0, 3);
+    $("#portrait").innerHTML = `
+      <h2>What it knows about you</h2>
+      <p>You’ve rated <b>${esc(f.rated.toLocaleString())}</b> films, averaging <b>${esc(f.mean)}★</b>. Everything below is measured against that average, and leans toward zero when it rests on only a few films.</p>
+      ${dirs.length ? `<p>The directors you trust most: ${list(dirs, (d) => `<b>${esc(d.label)}</b> (${d.avg.toFixed(1)}★ over ${esc(d.n)})`)}.</p>` : ""}
+      ${kws.length ? `<p>What reliably lands for you: ${list(kws, (k) => `“${esc(k.label)}”`)}.</p>` : ""}
+      ${langs.length ? `<p>Outside English, you rate ${list(langs, (l) => `${esc(l.label)} films ${l.avg.toFixed(1)}★`)} on average.</p>` : ""}
+      ${f.coldGenres.length ? `<p>Where you’re hardest to please: ${list(f.coldGenres, (g) => `${esc(g.label)} (${g.avg.toFixed(1)}★)`)}. Those get a lighter touch in your rows.</p>` : ""}
+      <p>It knows ${esc(DATA.stats.candidates.toLocaleString())} films you haven’t seen, ${esc(DATA.stats.watchlist)} of them from your watchlist${owner==='friend-a'?'. These picks reflect the generated data loaded by this page.':', and it rebuilds every night from your Letterboxd so anything you log disappears from your picks the next morning.'}</p>`;
+  }
+
+  function esc(s) { return String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])); }
+})();
+</script>
+</body>
+</html>

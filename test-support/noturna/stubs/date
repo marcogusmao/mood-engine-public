@@ -1,0 +1,30 @@
+#!/bin/bash
+# Test double for `date` in the PATH of the nightly's tests (test/noturna-mac.test.js, review of 21/10/2026, finding B2). Everything goes to the real /bin/date, with two exceptions:
+#   FAKE_DATA_SP="D1 D2 ..." in controle.env: the call `TZ=America/Sao_Paulo date +%F` (the São Paulo day, the only form the launcher and the night use for it) answers D1 the first time,
+#       D2 the second and the last value ever after. It is how a night that crosses midnight is simulated: the day the night STARTED is D1, what the clock says when it ends is D2.
+#   NOTURNA_TESTE_DATA_DESLOCA=N in the environment of the test run: every call is moved N days forward (date -v+Nd, BSD date). It is the control of the finding: the suite must stay green
+#       with the real clock a day ahead, because nothing in it may depend on today's date (the launcher's PATH keeps NOTURNA_* variables, so it reaches every script).
+D=$(cd "$(dirname "$0")" && pwd)
+if [ "${TZ-}" = "America/Sao_Paulo" ] && [ "$*" = "+%F" ]; then
+  if [ -f "$D/controle.env" ]; then . "$D/controle.env"; fi
+  if [ -n "${FAKE_DATA_SP-}" ]; then
+    mkdir -p "$D/chamadas"
+    n=0
+    if [ -f "$D/chamadas/data.n" ]; then n=$(cat "$D/chamadas/data.n"); fi
+    n=$((n + 1))
+    printf '%s\n' "$n" > "$D/chamadas/data.n"
+    i=0
+    ultimo=""
+    for v in $FAKE_DATA_SP; do
+      i=$((i + 1))
+      ultimo=$v
+      if [ "$i" -eq "$n" ]; then break; fi
+    done
+    printf '%s\n' "$ultimo"
+    exit 0
+  fi
+fi
+# NOTURNA_TESTE_CARIMBO="20261021-120000": the installer's `date +%Y%m%d-%H%M%S` (the stamp of a replaced file's copy) answers it, so two replacements are in "the same second" without depending on the real second.
+if [ "$*" = "+%Y%m%d-%H%M%S" ] && [ -n "${NOTURNA_TESTE_CARIMBO-}" ]; then printf '%s\n' "$NOTURNA_TESTE_CARIMBO"; exit 0; fi
+if [ -n "${NOTURNA_TESTE_DATA_DESLOCA-}" ]; then exec /bin/date "-v+${NOTURNA_TESTE_DATA_DESLOCA}d" "$@"; fi
+exec /bin/date "$@"

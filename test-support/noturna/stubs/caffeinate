@@ -1,0 +1,10 @@
+#!/bin/bash
+# Test double for caffeinate (test/noturna-mac.test.js, 21/10/2026): records the whole argument list in chamadas/caffeinate.log (finding C4: the test reads the -i), drops the options (-i, -s ...)
+# and runs the command. It does not keep any Mac awake.
+D=$(cd "$(dirname "$0")" && pwd)
+mkdir -p "$D/chamadas"
+printf '%s\n' "$*" >> "$D/chamadas/caffeinate.log"
+while [ $# -gt 0 ]; do
+  case "$1" in -*) shift ;; *) break ;; esac
+done
+exec "$@"

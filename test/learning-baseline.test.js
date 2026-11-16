@@ -1,0 +1,5 @@
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),{execFileSync}=require('node:child_process');
+const T=require('../lib/taste');
+const fixture=require('./fixtures/learning/baseline-taste.json');
+test('exporting immutable ALPHA preserves frozen baseline features, score and portrait',()=>{const ratings=fixture.ratings.map(({filmId,...r})=>({film:fixture.films.find(f=>f.imdb===filmId),...r}));const model=T.learn(ratings);const a=assert;for(const [i,f] of fixture.films.entries()){a.equal(T.score(f,model).score,fixture.scores[i]);a.deepEqual(T.featuresOf(f),fixture.features[i]);}a.deepEqual(T.fingerprint(model),fixture.fingerprint);a(Object.isFrozen(T.ALPHA));});
+test('frozen original selector demonstrates unknown runtime passing a limit',()=>{const original=require('./fixtures/learning/baseline-selector');const data={today:'2026-10-10',tonight:[],films:[{t:1,i:'tt1',r:null,f:{lift:1},vc:1}],rewatch:[]};assert.equal(original(data,{mood:'lift',time:120,kind:'new',safe:.3,roll:0,skipped:new Set()}).length,1);});

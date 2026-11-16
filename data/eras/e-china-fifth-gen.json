@@ -1,0 +1,78 @@
+{
+"id": "e-china-fifth-gen", "type": "school", "years": {"min": 1984, "max": 2006}, "admit": ["core", "periphery"],
+"school": {
+  "countries": ["CN", "HK", "TW"],
+  "directors": [
+    {"id": 607, "name": "Zhang Yimou"},
+    {"id": 20640, "name": "Chen Kaige"},
+    {"id": 583343, "name": "Tian Zhuangzhuang"},
+    {"id": 131078, "name": "Li Shaohong"},
+    {"id": 134026, "name": "Huang Jianxin"},
+    {"id": 1206522, "name": "Wu Ziniu"},
+    {"id": 1184597, "name": "Zhang Junzhao"},
+    {"id": 112064, "name": "Hu Mei"},
+    {"id": 96221, "name": "Zhou Xiaowen"},
+    {"id": 77305, "name": "He Ping"}
+  ],
+  "candidates": [
+    {"imdb": "tt0108651", "tmdb": 320170, "slug": "stand-straight-dont-bend-over", "title": "Stand Straight, Don't Bend Over", "year": 1993, "directors": ["Huang Jianxin"], "minutes": 116},
+    {"imdb": "tt0109235", "tmdb": 295279, "slug": "back-to-back-face-to-face", "title": "Back to Back, Face to Face", "year": 1994, "directors": ["Huang Jianxin"], "minutes": 148},
+    {"imdb": "tt0111752", "tmdb": 59146, "slug": "the-wooden-mans-bride", "title": "The Wooden Man's Bride", "year": 1994, "directors": ["Huang Jianxin"], "minutes": 113},
+    {"imdb": "tt0113718", "tmdb": 48336, "slug": "lumiere-and-company", "title": "Lumière & Company", "year": 1995, "directors": ["Zhang Yimou"], "minutes": 88},
+    {"imdb": "tt0113930", "tmdb": 258475, "slug": "dont-cry-nanking", "title": "Don't Cry, Nanking", "year": 1995, "directors": ["Wu Ziniu"], "minutes": 120},
+    {"imdb": "tt0115012", "tmdb": 37557, "slug": "shanghai-triad", "title": "Shanghai Triad", "year": 1995, "directors": ["Zhang Yimou"], "minutes": 108},
+    {"imdb": "tt0116295", "tmdb": 47694, "slug": "temptress-moon", "title": "Temptress Moon", "year": 1996, "directors": ["Chen Kaige"], "minutes": 132},
+    {"imdb": "tt0120543", "tmdb": 37909, "slug": "keep-cool", "title": "Keep Cool", "year": 1997, "directors": ["Zhang Yimou"], "minutes": 93},
+    {"imdb": "tt0151464", "tmdb": 263163, "slug": "surveillance-1997", "title": "Surveillance", "year": 1997, "directors": ["Huang Jianxin"], "minutes": 100},
+    {"imdb": "tt0162866", "tmdb": 10387, "slug": "the-emperor-and-the-assassin", "title": "The Emperor and the Assassin", "year": 1998, "directors": ["Chen Kaige"], "minutes": 162},
+    {"imdb": "tt0205483", "tmdb": 181067, "slug": "puccini-turandot-at-the-forbidden-city-of-beijing", "title": "Puccini: Turandot at the Forbidden City of Beijing", "year": 1999, "directors": ["Zhang Yimou"], "minutes": 129},
+    {"imdb": "tt0209189", "tmdb": 36210, "slug": "not-one-less", "title": "Not One Less", "year": 1999, "directors": ["Zhang Yimou"], "minutes": 106},
+    {"imdb": "tt0303243", "tmdb": 45861, "slug": "happy-times", "title": "Happy Times", "year": 2000, "directors": ["Zhang Yimou"], "minutes": 102},
+    {"imdb": "tt0304808", "tmdb": 23676, "slug": "ten-minutes-older-the-trumpet", "title": "Ten Minutes Older: The Trumpet", "year": 2002, "directors": ["Chen Kaige"], "minutes": 92},
+    {"imdb": "tt0332639", "tmdb": 18385, "slug": "together", "title": "Together", "year": 2002, "directors": ["Chen Kaige"], "minutes": 116},
+    {"imdb": "tt0416634", "tmdb": 101824, "slug": "tea-horse-road-series-delamu", "title": "Tea-Horse Road Series: Delamu", "year": 2004, "directors": ["Tian Zhuangzhuang"], "minutes": 110},
+    {"imdb": "tt0437447", "tmdb": 14226, "slug": "riding-alone-for-thousands-of-miles", "title": "Riding Alone for Thousands of Miles", "year": 2005, "directors": ["Zhang Yimou"], "minutes": 109},
+    {"imdb": "tt0457472", "tmdb": 69811, "slug": "stolen-life", "title": "Stolen Life", "year": 2005, "directors": ["Li Shaohong"], "minutes": 90},
+    {"imdb": "tt0487942", "tmdb": 45856, "slug": "gimme-kudos", "title": "Gimme Kudos", "year": 2005, "directors": ["Huang Jianxin"], "minutes": 95}
+  ],
+  "candidatesFrom": "TMDB credits (job Director) of every name of the list, features of 40 minutes or more with an IMDb id, not in the index of reference, read on 14/11/2026 by the main session (data/era-filmographies.json of 4c8e805 for the 21:32 UTC names; filmografias-toquery.json for the 20 names added at 22:15 UTC), then the prefilter of the IMDb public file (votes >= 100 and rating >= 6.5); the 8 Decalogue episodes of 1989 are TV episodes and are left out"
+},
+"sources": [
+  {"id": "agnsw", "publication": "Art Gallery of NSW", "title": "Film series: The Fifth Generation (8 filmes)", "url": "https://www.artgallery.nsw.gov.au/art/watch-listen-read/read/fifth-generation/", "revision": "sem data na página; cópia salva em 14/11/2026", "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-11-15"},
+  {"id": "austin", "publication": "Austin Film Society, via Austin Chronicle", "title": "The Fifth Generation: Chinese Films of the Past Two Decades (6 filmes)", "url": "https://www.austinchronicle.com/screens/the-fifth-generation-chinese-films-of-the-past-two-decades-11714707/", "revision": "17/01/2003", "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-11-15"},
+  {"id": "hkiff2019", "publication": "Hong Kong International Film Festival 2019, via lista MCLC", "title": "retrospectiva da Quinta Geração (5 filmes)", "url": "https://lists.osu.edu/pipermail/mclc/2019-March/007437.html", "revision": "03/2019; a página devolve 404, só o resumo de uma busca", "readOn": "2026-11-15", "mark": "reported", "publishedOn": "2026-11-15"},
+  {"id": "senses", "publication": "Senses of Cinema", "title": "Zhang Yimou (perfil de 2002; One and Eight e Yellow Earth como os dois que abrem a Quinta Geração, segundo Tony Rayns)", "url": "https://www.sensesofcinema.com/2002/great-directors/zhang/", "revision": 2002, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-11-15"},
+  {"id": "wp-en-cinema-of-china", "publication": "Wikipedia (en)", "title": "Cinema of China (seções: Rise of the fifth generation; The sixth generation; Other directors; New documentary movement)", "url": "https://en.wikipedia.org/w/index.php?oldid=1382940998", "revision": 1382940998, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-10-31"},
+  {"id": "wp-zh-china-mainland", "publication": "Wikipedia (zh)", "title": "中国大陆电影 (a redireção de 第五代导演 cai aqui)", "url": "https://zh.wikipedia.org/w/index.php?oldid=95401570", "revision": 95401570, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-11-04"}
+],
+"consensus": null,
+"films": [
+  {"imdb": "tt0087433", "tmdb": 92990, "slug": "yellow-earth", "title": "Yellow Earth", "year": 1984, "sources": ["agnsw", "hkiff2019", "senses", "wp-en-cinema-of-china", "wp-zh-china-mainland"], "class": "core"},
+  {"imdb": "tt0091190", "tmdb": 176643, "slug": "the-black-cannon-incident", "title": "The Black Cannon Incident", "year": 1985, "sources": ["hkiff2019", "wp-en-cinema-of-china", "wp-zh-china-mainland"], "class": "core"},
+  {"imdb": "tt0090907", "tmdb": 42018, "slug": "the-horse-thief", "title": "Horse Thief", "year": 1986, "sources": ["austin", "hkiff2019"], "class": "core"},
+  {"imdb": "tt0093133", "tmdb": 148597, "slug": "king-of-the-children", "title": "King of the Children", "year": 1987, "sources": ["wp-en-cinema-of-china", "wp-zh-china-mainland"], "class": "periphery"},
+  {"imdb": "tt0093206", "tmdb": 42006, "slug": "red-sorghum", "title": "Red Sorghum", "year": 1988, "sources": ["agnsw", "wp-en-cinema-of-china", "wp-zh-china-mainland"], "class": "core"},
+  {"imdb": "tt0099902", "tmdb": 41821, "slug": "ju-dou", "title": "Ju Dou", "year": 1990, "sources": ["wp-en-cinema-of-china", "wp-zh-china-mainland"], "class": "periphery"},
+  {"imdb": "tt0101440", "tmdb": 41783, "slug": "life-on-a-string", "title": "Life on a String", "year": 1991, "sources": ["wp-en-cinema-of-china"], "class": "periphery"},
+  {"imdb": "tt0101640", "tmdb": 10404, "slug": "raise-the-red-lantern", "title": "Raise the Red Lantern", "year": 1991, "sources": ["agnsw", "wp-en-cinema-of-china", "wp-zh-china-mainland"], "class": "core"},
+  {"imdb": "tt0105197", "tmdb": 38143, "slug": "the-story-of-qiu-ju", "title": "The Story of Qiu Ju", "year": 1992, "sources": ["austin", "wp-en-cinema-of-china", "wp-zh-china-mainland"], "class": "core"},
+  {"imdb": "tt0106332", "tmdb": 10997, "slug": "farewell-my-concubine", "title": "Farewell My Concubine", "year": 1993, "sources": ["wp-en-cinema-of-china", "wp-zh-china-mainland"], "class": "periphery"},
+  {"imdb": "tt0107358", "tmdb": 44162, "slug": "the-blue-kite", "title": "The Blue Kite", "year": 1994, "sources": ["agnsw", "austin"], "class": "core"},
+  {"imdb": "tt0109738", "tmdb": 124468, "slug": "ermo", "title": "Ermo", "year": 1994, "sources": ["agnsw"], "class": "periphery"},
+  {"imdb": "tt0110081", "tmdb": 31439, "title": "To Live", "year": 1994, "sources": ["wp-zh-china-mainland"], "class": "periphery"},
+  {"imdb": "tt0125994", "tmdb": 26784, "slug": "the-emperors-shadow", "title": "The Emperor's Shadow", "year": 1996, "sources": ["austin"], "class": "periphery"}
+],
+"exclude": [
+  {"imdb": "tt0299977", "title": "Hero", "why": "a wuxia blockbuster that the sources do not call Fifth Generation, taken out by name", "source": "Marco, 15/11/2026: 'Keep 1984–2006, take the three blockbusters out by name'"},
+  {"imdb": "tt0385004", "title": "House of Flying Daggers", "why": "a wuxia blockbuster that the sources do not call Fifth Generation, taken out by name", "source": "Marco, 15/11/2026: 'Keep 1984–2006, take the three blockbusters out by name'"},
+  {"imdb": "tt0473444", "title": "Curse of the Golden Flower", "why": "a wuxia blockbuster that the sources do not call Fifth Generation, taken out by name", "source": "Marco, 15/11/2026: 'Keep 1984–2006, take the three blockbusters out by name'"},
+  {"imdb": "tt0091377", "title": "Old Well", "why": "a film of a director of another generation, kept out by Marco", "source": "Marco, 15/11/2026: 'No, keep them out' (the four films of directors of other generations)"},
+  {"imdb": "tt0087301", "title": "Hibiscus Town", "why": "a film of a director of another generation, kept out by Marco", "source": "Marco, 15/11/2026: 'No, keep them out' (the four films of directors of other generations)"},
+  {"imdb": "tt0116511", "title": "A Mongolian Tale", "why": "a film of a director of another generation, kept out by Marco", "source": "Marco, 15/11/2026: 'No, keep them out' (the four films of directors of other generations)"},
+  {"imdb": "tt0111424", "title": "The Day the Sun Turned Cold", "why": "a film of a director of another generation, kept out by Marco", "source": "Marco, 15/11/2026: 'No, keep them out' (the four films of directors of other generations)"}
+],
+"pending": [
+
+],
+"counted": {"curationFilms": 20, "written": 14, "inIndexOfReference": 7, "notInIndexAdmitted": 8, "notInIndexPassingImdb7": 5, "pending": 0, "documentariesWrittenOut": 0, "leftOut": {"outside the years of the era": 1, "named by a written exclusion": 4, "not in the index and under the prefilter": 1, "named with no id and no class (not written in pending)": 0}}
+}

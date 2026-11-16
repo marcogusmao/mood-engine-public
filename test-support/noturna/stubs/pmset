@@ -1,0 +1,17 @@
+#!/bin/bash
+# Test double for pmset -g batt (test/noturna-mac.test.js, 21/10/2026). Same two lines the real one prints: "Now drawing from '<source>'" and the battery line with the percentage.
+#   unset FAKE_BATERIA:                 on the charger ('AC Power') at 95%
+#   FAKE_BATERIA=12:                    'Battery Power', 12%, discharging
+#   FAKE_BATERIA=5 and FAKE_TOMADA=1:   'AC Power' with the battery at 5%, charging (decision A2 of 21/10/2026: the plug counts, the percentage does not)
+#   FAKE_PMSET_SEM_BATERIA=1:           a desktop Mac: 'AC Power' and no battery line
+D=$(cd "$(dirname "$0")" && pwd)
+if [ -f "$D/controle.env" ]; then . "$D/controle.env"; fi
+if [ -n "${FAKE_PMSET_SEM_BATERIA-}" ]; then
+  printf "Now drawing from 'AC Power'\n"
+elif [ -n "${FAKE_BATERIA-}" ] && [ -n "${FAKE_TOMADA-}" ]; then
+  printf "Now drawing from 'AC Power'\n -InternalBattery-0 (id=1234)\t%s%%; charging; 0:30 remaining present: true\n" "$FAKE_BATERIA"
+elif [ -n "${FAKE_BATERIA-}" ]; then
+  printf "Now drawing from 'Battery Power'\n -InternalBattery-0 (id=1234)\t%s%%; discharging; 1:00 remaining present: true\n" "$FAKE_BATERIA"
+else
+  printf "Now drawing from 'AC Power'\n -InternalBattery-0 (id=1234)\t95%%; charging; 0:30 remaining present: true\n"
+fi

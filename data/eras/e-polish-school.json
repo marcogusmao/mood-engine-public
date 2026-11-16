@@ -1,0 +1,74 @@
+{
+"id": "e-polish-school", "type": "school", "years": {"min": 1955, "max": 1965}, "admit": ["core", "periphery"],
+"school": {
+  "countries": ["PL"],
+  "directors": [
+    {"id": 2801, "name": "Andrzej Wajda"},
+    {"id": 238433, "name": "Andrzej Munk"},
+    {"id": 40615, "name": "Jerzy Kawalerowicz"},
+    {"id": 27002, "name": "Wojciech Has"},
+    {"id": 591241, "name": "Kazimierz Kutz"},
+    {"id": 1062920, "name": "Tadeusz Konwicki"},
+    {"id": 1137991, "name": "Stanisław Różewicz"},
+    {"id": 591479, "name": "Jerzy Passendorfer"},
+    {"id": 5354479, "name": "Stanisław Lenartowicz"},
+    {"id": 1269142, "name": "Jerzy Zarzycki"}
+  ],
+  "candidates": [
+    {"imdb": "tt0054485", "tmdb": 262336, "slug": "one-room-tenants", "title": "One Room Tenants", "year": 1960, "directors": ["Wojciech Has"], "minutes": 92},
+    {"imdb": "tt0055388", "tmdb": 242542, "slug": "goodbye-to-the-past", "title": "Goodbye to the Past", "year": 1961, "directors": ["Wojciech Has"], "minutes": 72},
+    {"imdb": "tt0055447", "tmdb": 191407, "slug": "siberian-lady-macbeth", "title": "Siberian Lady Macbeth", "year": 1962, "directors": ["Andrzej Wajda"], "minutes": 93},
+    {"imdb": "tt0055747", "tmdb": 8773, "slug": "love-at-twenty", "title": "Love at Twenty", "year": 1962, "directors": ["Andrzej Wajda"], "minutes": 120},
+    {"imdb": "tt0056030", "tmdb": 374794, "slug": "the-voice-from-beyond", "title": "The Voice from Beyond", "year": 1962, "directors": ["Stanisław Różewicz"], "minutes": 112},
+    {"imdb": "tt0057308", "tmdb": 296625, "slug": "silence-1963", "title": "Silence", "year": 1963, "directors": ["Kazimierz Kutz"], "minutes": 95},
+    {"imdb": "tt0060847", "tmdb": 149511, "slug": "the-ashes", "title": "The Ashes", "year": 1965, "directors": ["Andrzej Wajda"], "minutes": 234}
+  ],
+  "candidatesFrom": "TMDB credits (job Director) of every name of the list, features of 40 minutes or more with an IMDb id, not in the index of reference, read on 14/11/2026 by the main session (data/era-filmographies.json of 4c8e805 for the 21:32 UTC names; filmografias-toquery.json for the 20 names added at 22:15 UTC), then the prefilter of the IMDb public file (votes >= 100 and rating >= 6.5); the 8 Decalogue episodes of 1989 are TV episodes and are left out"
+},
+"sources": [
+  {"id": "cult", "publication": "Culture.pl", "title": "The Polish Film School (Roberto Galea; 18/09/2012, atualizado 28/04/2014): filmografia selecionada de 17 filmes", "url": "https://culture.pl/en/article/the-polish-film-school", "revision": null, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2014-04-28"},
+  {"id": "emp", "publication": "Empire", "title": "Polish film school (artigo, 'Key dates 1955–1963')", "url": "https://www.empireonline.com/", "revision": null, "readOn": "2026-11-15", "mark": "reported"},
+  {"id": "klas", "publication": "Klassiki", "title": "The Klassiki Companion: The Polish Film School (Sam Goff, 05/03/2026): filmes que o texto chama de da Escola", "url": "https://klassiki.online/the-klassiki-companion-the-polish-film-school/", "revision": null, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-03-05"},
+  {"id": "wp-cs", "publication": "Wikipedia (cs)", "title": "Polská filmová škola", "url": "https://cs.wikipedia.org/w/index.php?oldid=25918359", "revision": 25918359, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-05-26"},
+  {"id": "wp-en", "publication": "Wikipedia (en)", "title": "Polish Film School", "url": "https://en.wikipedia.org/w/index.php?oldid=1365315054", "revision": 1365315054, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-07-21"},
+  {"id": "wp-pl", "publication": "Wikipedia (pl)", "title": "Polska szkoła filmowa", "url": "https://pl.wikipedia.org/w/index.php?oldid=80070827", "revision": 80070827, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-06-26"},
+  {"id": "wp-ru", "publication": "Wikipedia (ru)", "title": "Польская школа кинематографа", "url": "https://ru.wikipedia.org/w/index.php?oldid=149921505", "revision": 149921505, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2025-11-15"}
+],
+"consensus": null,
+"films": [
+  {"imdb": "tt0048500", "tmdb": 43322, "slug": "a-generation", "title": "A Generation", "year": 1955, "sources": ["emp", "klas", "wp-ru"], "class": "core"},
+  {"imdb": "tt0049077", "tmdb": 199219, "slug": "shadow-1956", "title": "Shadow", "year": 1956, "sources": ["cult", "wp-cs"], "class": "core"},
+  {"imdb": "tt0050282", "tmdb": 132133, "slug": "man-on-the-tracks", "title": "Man on the Tracks", "year": 1957, "sources": ["cult", "wp-en", "wp-pl", "wp-ru"], "class": "core"},
+  {"imdb": "tt0050585", "tmdb": 29933, "slug": "kanal-1957", "title": "Canal", "year": 1957, "sources": ["cult", "emp", "klas", "wp-en", "wp-pl", "wp-ru"], "class": "core"},
+  {"imdb": "tt0050856", "tmdb": 408226, "slug": "the-real-end-of-the-great-war", "title": "The Real End of the Great War", "year": 1957, "sources": ["cult", "klas", "wp-en", "wp-pl"], "class": "core"},
+  {"imdb": "tt0050359", "tmdb": 117767, "slug": "eroica-1958-1", "title": "Eroica", "year": 1958, "sources": ["cult", "klas", "wp-cs", "wp-en", "wp-pl", "wp-ru"], "class": "core"},
+  {"imdb": "tt0052037", "tmdb": 227245, "slug": "the-last-day-of-summer-1958", "title": "The Last Day of Summer", "year": 1958, "sources": ["cult", "klas", "wp-cs", "wp-en", "wp-pl"], "class": "core"},
+  {"imdb": "tt0052063", "tmdb": 132141, "slug": "the-noose-1958", "title": "Noose", "year": 1958, "sources": ["wp-pl", "wp-ru"], "class": "periphery"},
+  {"imdb": "tt0052080", "tmdb": 5055, "slug": "ashes-and-diamonds", "title": "Ashes and Diamonds", "year": 1958, "sources": ["cult", "emp", "klas", "wp-en", "wp-pl", "wp-ru"], "class": "core"},
+  {"imdb": "tt0052083", "tmdb": 105762, "slug": "farewells", "title": "Farewells", "year": 1958, "sources": ["cult", "emp", "klas", "wp-en", "wp-pl"], "class": "core"},
+  {"imdb": "tt0052403", "tmdb": 452120, "slug": "free-city", "title": "Free City", "year": 1958, "sources": ["wp-pl"], "class": "periphery"},
+  {"imdb": "tt0052608", "tmdb": 155519, "slug": "the-depot-of-the-dead", "title": "The Depot of the Dead", "year": 1959, "sources": ["cult", "wp-cs", "wp-pl"], "class": "core"},
+  {"imdb": "tt0052980", "tmdb": 81209, "slug": "cross-of-valor", "title": "Cross of Valor", "year": 1959, "sources": ["wp-pl"], "class": "periphery"},
+  {"imdb": "tt0053148", "tmdb": 154416, "slug": "eagle-1959", "title": "The Eagle", "year": 1959, "sources": ["wp-pl"], "class": "periphery"},
+  {"imdb": "tt0053176", "tmdb": 38898, "slug": "night-train", "title": "Night Train", "year": 1959, "sources": ["cult", "klas", "wp-cs", "wp-en", "wp-pl", "wp-ru"], "class": "core"},
+  {"imdb": "tt0053465", "tmdb": 81321, "slug": "the-attempt", "title": "Zamach", "year": 1959, "sources": ["wp-pl"], "class": "periphery"},
+  {"imdb": "tt0054119", "tmdb": 80324, "slug": "innocent-sorcerers", "title": "Innocent Sorcerers", "year": 1960, "sources": ["emp", "klas"], "class": "core"},
+  {"imdb": "tt0054123", "tmdb": 114001, "slug": "nobodys-calling", "title": "Nobody’s Calling", "year": 1960, "sources": ["wp-en", "wp-pl"], "class": "periphery"},
+  {"imdb": "tt0054495", "tmdb": 121455, "slug": "bad-luck", "title": "Bad Luck", "year": 1960, "sources": ["cult", "wp-en", "wp-pl", "wp-ru"], "class": "core"},
+  {"imdb": "tt0055101", "tmdb": 297157, "slug": "the-people-from-the-train", "title": "Panic on the Train", "year": 1961, "sources": ["wp-cs"], "class": "periphery"},
+  {"imdb": "tt0055153", "tmdb": 113458, "slug": "mother-joan-of-the-angels", "title": "Mother Joan of the Angels", "year": 1961, "sources": ["klas", "wp-en", "wp-pl", "wp-ru"], "class": "core"},
+  {"imdb": "tt0055492", "tmdb": 217411, "slug": "birth-certificate", "title": "Świadectwo urodzenia", "year": 1961, "sources": ["wp-en", "wp-pl"], "class": "periphery"},
+  {"imdb": "tt0056291", "tmdb": 11502, "slug": "knife-in-the-water", "title": "Knife in the Water", "year": 1962, "sources": ["cult", "emp", "klas"], "class": "core"},
+  {"imdb": "tt0054159", "tmdb": 25939, "slug": "passenger", "title": "Passenger", "year": 1963, "sources": ["cult", "emp", "wp-cs", "wp-en", "wp-pl"], "class": "core"},
+  {"imdb": "tt0057196", "tmdb": 129659, "slug": "how-to-be-loved", "title": "How to Be Loved", "year": 1963, "sources": ["cult", "wp-en", "wp-pl", "wp-ru"], "class": "core"},
+  {"imdb": "tt0059670", "tmdb": 193348, "slug": "salto", "title": "Salto", "year": 1965, "sources": ["cult", "wp-cs"], "class": "core"}
+],
+"exclude": [
+
+],
+"pending": [
+  {"imdb": "tt0051598", "title": "Eve Wants to Sleep", "year": 1958, "class": "periphery", "why": "above the prefilter and not in the index, but no TMDB id or Letterboxd page is known yet"},
+  {"imdb": "tt0054004", "title": "Knights of the Teutonic Order", "year": 1960, "class": "periphery", "why": "above the prefilter and not in the index, but no TMDB id or Letterboxd page is known yet"}
+],
+"counted": {"curationFilms": 38, "written": 26, "inIndexOfReference": 12, "notInIndexAdmitted": 23, "notInIndexPassingImdb7": 9, "pending": 2, "documentariesWrittenOut": 0, "leftOut": {"outside the years of the era": 3, "not in the index and under the prefilter": 7, "named with no id and no class (not written in pending)": 0}}
+}

@@ -1,0 +1,84 @@
+{
+  "letterboxd": "marco",
+  "friends": [
+    {
+      "user": "ana",
+      "name": "Ana"
+    },
+    {
+      "user": "bia",
+      "name": "Bia"
+    }
+  ],
+  "addonUrl": "https://example.invalid/SECRET-TOKEN/manifest.json",
+  "moods": [
+    {
+      "id": "lift",
+      "name": "Lift me out",
+      "word": "lift",
+      "blurb": "Lift me out (fixture)",
+      "genres": {
+        "Comedy": 1,
+        "Drama": 0.3,
+        "Horror": -3
+      },
+      "keywords": {
+        "heartwarming": 1.2,
+        "friendship": 0.6
+      },
+      "minFit": 1.2,
+      "runtime": {
+        "max": 135
+      }
+    },
+    {
+      "id": "wander",
+      "name": "Wander",
+      "word": "wander",
+      "blurb": "Wander (fixture)",
+      "genres": {
+        "Drama": 0.5,
+        "Thriller": 0.4
+      },
+      "keywords": {
+        "heist": 0.8,
+        "friendship": 0.4
+      },
+      "minFit": 1.2
+    },
+    {
+      "id": "slow",
+      "name": "Slow and still",
+      "word": "slow",
+      "blurb": "Slow and still (fixture)",
+      "genres": {
+        "Drama": 0.4
+      },
+      "keywords": {
+        "slow burn": 1.5,
+        "loneliness": 1
+      },
+      "minFit": 1.2,
+      "needHit": 0.5
+    }
+  ],
+  "lists": [
+    {
+      "id": "critics-picks",
+      "name": "Critics Picks",
+      "trust": "critic"
+    },
+    {
+      "id": "static-pick",
+      "name": "Static Pick",
+      "trust": "critic",
+      "source": "static",
+      "file": "data/lists/static-pick.json"
+    }
+  ],
+  "directorsLoved": {
+    "include": [
+      "Jane Auteur"
+    ]
+  }
+}

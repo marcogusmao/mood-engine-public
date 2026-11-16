@@ -1,0 +1,45 @@
+# Generated on every build — published by the workflow, never committed
+docs/
+
+# The raw Letterboxd export contains your email and private data. Only data/letterboxd/*.csv is committed.
+*.zip
+data/**/profile.csv
+data/**/comments.csv
+data/**/reviews.csv
+
+# Isolated owners' exports and caches stay private, including staging/rollback folders.
+data/people/
+cache/people/
+
+.DS_Store
+node_modules
+build.log
+.wrangler/
+
+# Covers with the ratings drawn on them: raw downloads and drawn files. The workflow keeps them with actions/cache; only cache/posters.json (the hashes) is committed.
+cache/posters-raw/
+cache/posters-out/
+
+# The MUBI collector's run report (resume point and history of its executions) sits next to cache/mubi.json when --out is cache; only mubi.json is committed.
+cache/report.json
+
+# Local secrets for wrangler dev (never committed)
+.dev.vars
+# Local env files never enter the repo; an .env.example (none today) would stay trackable.
+.env
+.env.*
+!.env.example
+
+# Private learning records and execution evidence
+.context/
+learning-private/
+feedback/
+snapshots/
+models/
+experience.json
+embeddings.json
+web-personal.json
+
+# Hosted intake materialization (even if a local runner temp is inside the checkout).
+.context/private/
+mood-private/

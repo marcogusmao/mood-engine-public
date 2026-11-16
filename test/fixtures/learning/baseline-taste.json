@@ -1,0 +1,550 @@
+{
+  "notice": "Artificial reference fixture frozen before refactor",
+  "films": [
+    {
+      "id": 1,
+      "imdb": "tt1",
+      "title": "Fixture 0",
+      "year": 1990,
+      "genres": [
+        "Comedy"
+      ],
+      "directors": [
+        {
+          "id": 0,
+          "name": "Fixture director"
+        }
+      ],
+      "keywords": [
+        "friendship"
+      ],
+      "countries": [
+        "US"
+      ],
+      "lang": "en"
+    },
+    {
+      "id": 2,
+      "imdb": "tt2",
+      "title": "Fixture 1",
+      "year": 1991,
+      "genres": [
+        "Drama"
+      ],
+      "directors": [
+        {
+          "id": 1,
+          "name": "Fixture director"
+        }
+      ],
+      "keywords": [
+        "friendship"
+      ],
+      "countries": [
+        "US"
+      ],
+      "lang": "en"
+    },
+    {
+      "id": 3,
+      "imdb": "tt3",
+      "title": "Fixture 2",
+      "year": 1992,
+      "genres": [
+        "Comedy"
+      ],
+      "directors": [
+        {
+          "id": 2,
+          "name": "Fixture director"
+        }
+      ],
+      "keywords": [
+        "friendship"
+      ],
+      "countries": [
+        "US"
+      ],
+      "lang": "en"
+    },
+    {
+      "id": 4,
+      "imdb": "tt4",
+      "title": "Fixture 3",
+      "year": 1993,
+      "genres": [
+        "Drama"
+      ],
+      "directors": [
+        {
+          "id": 0,
+          "name": "Fixture director"
+        }
+      ],
+      "keywords": [
+        "friendship"
+      ],
+      "countries": [
+        "US"
+      ],
+      "lang": "en"
+    },
+    {
+      "id": 5,
+      "imdb": "tt5",
+      "title": "Fixture 4",
+      "year": 1994,
+      "genres": [
+        "Comedy"
+      ],
+      "directors": [
+        {
+          "id": 1,
+          "name": "Fixture director"
+        }
+      ],
+      "keywords": [
+        "friendship"
+      ],
+      "countries": [
+        "US"
+      ],
+      "lang": "en"
+    },
+    {
+      "id": 6,
+      "imdb": "tt6",
+      "title": "Fixture 5",
+      "year": 1995,
+      "genres": [
+        "Drama"
+      ],
+      "directors": [
+        {
+          "id": 2,
+          "name": "Fixture director"
+        }
+      ],
+      "keywords": [
+        "friendship"
+      ],
+      "countries": [
+        "US"
+      ],
+      "lang": "en"
+    },
+    {
+      "id": 7,
+      "imdb": "tt7",
+      "title": "Fixture 6",
+      "year": 1996,
+      "genres": [
+        "Comedy"
+      ],
+      "directors": [
+        {
+          "id": 0,
+          "name": "Fixture director"
+        }
+      ],
+      "keywords": [
+        "friendship"
+      ],
+      "countries": [
+        "US"
+      ],
+      "lang": "en"
+    },
+    {
+      "id": 8,
+      "imdb": "tt8",
+      "title": "Fixture 7",
+      "year": 1997,
+      "genres": [
+        "Drama"
+      ],
+      "directors": [
+        {
+          "id": 1,
+          "name": "Fixture director"
+        }
+      ],
+      "keywords": [
+        "friendship"
+      ],
+      "countries": [
+        "US"
+      ],
+      "lang": "en"
+    }
+  ],
+  "ratings": [
+    {
+      "filmId": "tt1",
+      "rating": 0.5,
+      "liked": true
+    },
+    {
+      "filmId": "tt2",
+      "rating": 1,
+      "liked": false
+    },
+    {
+      "filmId": "tt3",
+      "rating": 1.5,
+      "liked": true
+    },
+    {
+      "filmId": "tt4",
+      "rating": 2,
+      "liked": false
+    },
+    {
+      "filmId": "tt5",
+      "rating": 2.5,
+      "liked": true
+    },
+    {
+      "filmId": "tt6",
+      "rating": 3,
+      "liked": false
+    },
+    {
+      "filmId": "tt7",
+      "rating": 3.5,
+      "liked": true
+    },
+    {
+      "filmId": "tt8",
+      "rating": 4,
+      "liked": false
+    }
+  ],
+  "scores": [
+    0.09414682539682538,
+    0.5814484126984127,
+    0.29732142857142857,
+    0.13700396825396824,
+    0.5385912698412698,
+    0.3401785714285714,
+    0.09414682539682538,
+    0.5814484126984127
+  ],
+  "features": [
+    [
+      {
+        "key": "d:0",
+        "type": "director",
+        "label": "Fixture director"
+      },
+      {
+        "key": "g:Comedy",
+        "type": "genre",
+        "label": "Comedy"
+      },
+      {
+        "key": "k:friendship",
+        "type": "keyword",
+        "label": "friendship"
+      },
+      {
+        "key": "n:US",
+        "type": "country",
+        "label": "US"
+      },
+      {
+        "key": "l:en",
+        "type": "lang",
+        "label": "English"
+      },
+      {
+        "key": "e:1990",
+        "type": "decade",
+        "label": "1990s"
+      }
+    ],
+    [
+      {
+        "key": "d:1",
+        "type": "director",
+        "label": "Fixture director"
+      },
+      {
+        "key": "g:Drama",
+        "type": "genre",
+        "label": "Drama"
+      },
+      {
+        "key": "k:friendship",
+        "type": "keyword",
+        "label": "friendship"
+      },
+      {
+        "key": "n:US",
+        "type": "country",
+        "label": "US"
+      },
+      {
+        "key": "l:en",
+        "type": "lang",
+        "label": "English"
+      },
+      {
+        "key": "e:1990",
+        "type": "decade",
+        "label": "1990s"
+      }
+    ],
+    [
+      {
+        "key": "d:2",
+        "type": "director",
+        "label": "Fixture director"
+      },
+      {
+        "key": "g:Comedy",
+        "type": "genre",
+        "label": "Comedy"
+      },
+      {
+        "key": "k:friendship",
+        "type": "keyword",
+        "label": "friendship"
+      },
+      {
+        "key": "n:US",
+        "type": "country",
+        "label": "US"
+      },
+      {
+        "key": "l:en",
+        "type": "lang",
+        "label": "English"
+      },
+      {
+        "key": "e:1990",
+        "type": "decade",
+        "label": "1990s"
+      }
+    ],
+    [
+      {
+        "key": "d:0",
+        "type": "director",
+        "label": "Fixture director"
+      },
+      {
+        "key": "g:Drama",
+        "type": "genre",
+        "label": "Drama"
+      },
+      {
+        "key": "k:friendship",
+        "type": "keyword",
+        "label": "friendship"
+      },
+      {
+        "key": "n:US",
+        "type": "country",
+        "label": "US"
+      },
+      {
+        "key": "l:en",
+        "type": "lang",
+        "label": "English"
+      },
+      {
+        "key": "e:1990",
+        "type": "decade",
+        "label": "1990s"
+      }
+    ],
+    [
+      {
+        "key": "d:1",
+        "type": "director",
+        "label": "Fixture director"
+      },
+      {
+        "key": "g:Comedy",
+        "type": "genre",
+        "label": "Comedy"
+      },
+      {
+        "key": "k:friendship",
+        "type": "keyword",
+        "label": "friendship"
+      },
+      {
+        "key": "n:US",
+        "type": "country",
+        "label": "US"
+      },
+      {
+        "key": "l:en",
+        "type": "lang",
+        "label": "English"
+      },
+      {
+        "key": "e:1990",
+        "type": "decade",
+        "label": "1990s"
+      }
+    ],
+    [
+      {
+        "key": "d:2",
+        "type": "director",
+        "label": "Fixture director"
+      },
+      {
+        "key": "g:Drama",
+        "type": "genre",
+        "label": "Drama"
+      },
+      {
+        "key": "k:friendship",
+        "type": "keyword",
+        "label": "friendship"
+      },
+      {
+        "key": "n:US",
+        "type": "country",
+        "label": "US"
+      },
+      {
+        "key": "l:en",
+        "type": "lang",
+        "label": "English"
+      },
+      {
+        "key": "e:1990",
+        "type": "decade",
+        "label": "1990s"
+      }
+    ],
+    [
+      {
+        "key": "d:0",
+        "type": "director",
+        "label": "Fixture director"
+      },
+      {
+        "key": "g:Comedy",
+        "type": "genre",
+        "label": "Comedy"
+      },
+      {
+        "key": "k:friendship",
+        "type": "keyword",
+        "label": "friendship"
+      },
+      {
+        "key": "n:US",
+        "type": "country",
+        "label": "US"
+      },
+      {
+        "key": "l:en",
+        "type": "lang",
+        "label": "English"
+      },
+      {
+        "key": "e:1990",
+        "type": "decade",
+        "label": "1990s"
+      }
+    ],
+    [
+      {
+        "key": "d:1",
+        "type": "director",
+        "label": "Fixture director"
+      },
+      {
+        "key": "g:Drama",
+        "type": "genre",
+        "label": "Drama"
+      },
+      {
+        "key": "k:friendship",
+        "type": "keyword",
+        "label": "friendship"
+      },
+      {
+        "key": "n:US",
+        "type": "country",
+        "label": "US"
+      },
+      {
+        "key": "l:en",
+        "type": "lang",
+        "label": "English"
+      },
+      {
+        "key": "e:1990",
+        "type": "decade",
+        "label": "1990s"
+      }
+    ]
+  ],
+  "fingerprint": {
+    "mean": 2.25,
+    "rated": 8,
+    "directors": [
+      {
+        "label": "Fixture director",
+        "avg": 2.5,
+        "n": 3,
+        "w": 0.222,
+        "films": [
+          "Fixture 1",
+          "Fixture 4",
+          "Fixture 7"
+        ]
+      },
+      {
+        "label": "Fixture director",
+        "avg": 2,
+        "n": 3,
+        "w": -0.056,
+        "films": [
+          "Fixture 0",
+          "Fixture 3",
+          "Fixture 6"
+        ]
+      }
+    ],
+    "cast": [],
+    "keywords": [
+      {
+        "label": "friendship",
+        "avg": 2.25,
+        "n": 8,
+        "w": 0.083,
+        "films": [
+          "Fixture 0",
+          "Fixture 1",
+          "Fixture 2",
+          "Fixture 3"
+        ]
+      }
+    ],
+    "languages": [
+      {
+        "label": "English",
+        "avg": 2.25,
+        "n": 8,
+        "w": 0.071,
+        "films": [
+          "Fixture 0",
+          "Fixture 1",
+          "Fixture 2",
+          "Fixture 3"
+        ]
+      }
+    ],
+    "decades": [],
+    "coldGenres": []
+  }
+}

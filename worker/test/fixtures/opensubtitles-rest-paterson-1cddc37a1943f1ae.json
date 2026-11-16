@@ -1,0 +1,501 @@
+{
+ "total_pages": 1,
+ "total_count": 29,
+ "per_page": 50,
+ "page": 1,
+ "data": [
+  {
+   "id": "9255580",
+   "type": "subtitle",
+   "attributes": {
+    "subtitle_id": "9255580",
+    "language": "en",
+    "release": "Paterson.2016.1080p.BluRay.X264-AMIABLE",
+    "legacy_subtitle_id": 12765658,
+    "moviehash_match": true,
+    "files": [
+     {
+      "file_id": 10171647,
+      "file_name": "Paterson.2016.1080p.BluRay.X264-AMIABLE_track4_[eng]"
+     }
+    ]
+   }
+  },
+  {
+   "id": "9255579",
+   "type": "subtitle",
+   "attributes": {
+    "subtitle_id": "9255579",
+    "language": "en",
+    "release": "Paterson.2016.1080p.BluRay.X264-AMIABLE",
+    "legacy_subtitle_id": 12765656,
+    "moviehash_match": true,
+    "files": [
+     {
+      "file_id": 10171648,
+      "file_name": "Paterson.2016.1080p.BluRay.X264-AMIABLE_track3_[eng]"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1028628",
+   "type": "subtitle",
+   "attributes": {
+    "subtitle_id": "1028628",
+    "language": "pt-BR",
+    "release": "Para TODOS os releases BluRay, BDRip e BRRip",
+    "legacy_subtitle_id": 6927142,
+    "moviehash_match": true,
+    "files": [
+     {
+      "file_id": 1116107,
+      "file_name": "Paterson.2016.[BluRay+BRRip+BDRip] - renomeie para seu release"
+     }
+    ]
+   }
+  },
+  {
+   "id": "11846933",
+   "type": "subtitle",
+   "attributes": {
+    "subtitle_id": "11846933",
+    "language": "pt-BR",
+    "release": "Paterson.2016.1080p.MUBI.WEB-DL.AAC2.0.H.264-andrehsa.mkv",
+    "legacy_subtitle_id": 13781926,
+    "moviehash_match": false,
+    "files": [
+     {
+      "file_id": 12751891,
+      "file_name": "Paterson.2016.1080p.MUBI.WEB-DL.pt-BR"
+     }
+    ]
+   }
+  },
+  {
+   "id": "5885458",
+   "type": "subtitle",
+   "attributes": {
+    "subtitle_id": "5885458",
+    "language": "en",
+    "release": "Paterson.2016.1080p.BluRay.x265-RARBG",
+    "legacy_subtitle_id": 8573607,
+    "moviehash_match": false,
+    "files": [
+     {
+      "file_id": 6900095,
+      "file_name": "Paterson.2016.1080p.BluRay.x265-RARBG"
+     }
+    ]
+   }
+  },
+  {
+   "id": "4929617",
+   "type": "subtitle",
+   "attributes": {
+    "subtitle_id": "4929617",
+    "language": "en",
+    "release": "Paterson.2016.German.DTS.DL.720p.BluRay.x264-LeetHD",
+    "legacy_subtitle_id": 7902822,
+    "moviehash_match": false,
+    "files": [
+     {
+      "file_id": 5052889,
+      "file_name": "Paterson.2016.German.DTS.DL.720p.BluRay.x264-LeetHD"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1030060",
+   "type": "subtitle",
+   "attributes": {
+    "subtitle_id": "1030060",
+    "language": "pt-PT",
+    "release": "Paterson.2016.1080p.WEB-DL.DD5.1.H264-FGT",
+    "legacy_subtitle_id": 7123796,
+    "moviehash_match": false,
+    "files": [
+     {
+      "file_id": 1117577,
+      "file_name": "Paterson.2016.1080p.WEB-DL.DD5.1.H264-FGT"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1030067",
+   "type": "subtitle",
+   "attributes": {
+    "subtitle_id": "1030067",
+    "language": "pt-PT",
+    "release": "Paterson.2016",
+    "legacy_subtitle_id": 7123797,
+    "moviehash_match": false,
+    "files": [
+     {
+      "file_id": 1117588,
+      "file_name": "Paterson.2016.PT"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1030047",
+   "type": "subtitle",
+   "attributes": {
+    "subtitle_id": "1030047",
+    "language": "pt-PT",
+    "release": "Paterson.2016.1080p.BluRay.x264-AMIABLE",
+    "legacy_subtitle_id": 7123795,
+    "moviehash_match": false,
+    "files": [
+     {
+      "file_id": 1117563,
+      "file_name": "Paterson.2016.1080p.BluRay.x264-AMIABLE"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1029967",
+   "type": "subtitle",
+   "attributes": {
+    "subtitle_id": "1029967",
+    "language": "pt-PT",
+    "release": "Paterson.2016.1080p.WEB-DL.DD5.1.H264-FGT",
+    "legacy_subtitle_id": 7041821,
+    "moviehash_match": false,
+    "files": [
+     {
+      "file_id": 1117478,
+      "file_name": "Paterson.2016.1080p.WEB-DL.H264.AC3-EVO.EtHD.pb"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1029660",
+   "type": "subtitle",
+   "attributes": {
+    "subtitle_id": "1029660",
+    "language": "pt-PT",
+    "release": "Paterson.(2016).720p.BRRip.XviD.AC3-RARBG",
+    "legacy_subtitle_id": 6993484,
+    "moviehash_match": false,
+    "files": [
+     {
+      "file_id": 1117198,
+      "file_name": "Paterson.(2016).720p.BRRip.XviD.AC3-RARBG"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1029486",
+   "type": "subtitle",
+   "attributes": {
+    "subtitle_id": "1029486",
+    "language": "en",
+    "release": "Paterson.2016.1080p.BluRay.REMUX.AVC.DTS-HD.MA5.1-RM",
+    "legacy_subtitle_id": 6962083,
+    "moviehash_match": false,
+    "files": [
+     {
+      "file_id": 1117012,
+      "file_name": "Paterson.2016.1080p.BluRay.REMUX.AVC.DTS-HD.MA5"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1029453",
+   "type": "subtitle",
+   "attributes": {
+    "subtitle_id": "1029453",
+    "language": "en",
+    "release": "Paterson.2016.1080p.BluRay.REMUX.AVC.DTS-HD.MA5.1-RM",
+    "legacy_subtitle_id": 6962082,
+    "moviehash_match": false,
+    "files": [
+     {
+      "file_id": 1116974,
+      "file_name": "Paterson.2016.1080p.BluRay.REMUX.AVC.DTS-HD.MA5"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1028656",
+   "type": "subtitle",
+   "attributes": {
+    "subtitle_id": "1028656",
+    "language": "pt-BR",
+    "release": "Para TODOS os releases BluRay, BDRip e BRRip [LEGENDA AMARELA]",
+    "legacy_subtitle_id": 6927143,
+    "moviehash_match": false,
+    "files": [
+     {
+      "file_id": 1116137,
+      "file_name": "Paterson.2016.[BluRay+BRRip+BDRip].[LEGENDA AMARELA]"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1028575",
+   "type": "subtitle",
+   "attributes": {
+    "subtitle_id": "1028575",
+    "language": "pt-BR",
+    "release": "Paterson.2016.720p.BluRay.X264-AMIABLE",
+    "legacy_subtitle_id": 6926794,
+    "moviehash_match": false,
+    "files": [
+     {
+      "file_id": 1116058,
+      "file_name": "Paterson.2016.720p.BluRay.X264-AMIABLE"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1028511",
+   "type": "subtitle",
+   "attributes": {
+    "subtitle_id": "1028511",
+    "language": "en",
+    "release": "Paterson (2016) 720p BluRay 900MB - SHERiF",
+    "legacy_subtitle_id": 6926553,
+    "moviehash_match": false,
+    "files": [
+     {
+      "file_id": 1115998,
+      "file_name": "Paterson (2016) 720p BluRay 900MB - SHERiF"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1028470",
+   "type": "subtitle",
+   "attributes": {
+    "subtitle_id": "1028470",
+    "language": "en",
+    "release": "Paterson.2016.1080p.WEB-DL.DD5.1.H264-FGT",
+    "legacy_subtitle_id": 6926339,
+    "moviehash_match": false,
+    "files": [
+     {
+      "file_id": 1115954,
+      "file_name": "Paterson.2016.1080p.WEB-DL.DD5.1.H264-FGT"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1028451",
+   "type": "subtitle",
+   "attributes": {
+    "subtitle_id": "1028451",
+    "language": "en",
+    "release": "Paterson.2016.1080p.WEB-DL.DD5.1.H264-FGT",
+    "legacy_subtitle_id": 6926338,
+    "moviehash_match": false,
+    "files": [
+     {
+      "file_id": 1115938,
+      "file_name": "Paterson.2016.1080p.WEB-DL.DD5.1.H264-FGT-HI"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1028438",
+   "type": "subtitle",
+   "attributes": {
+    "subtitle_id": "1028438",
+    "language": "en",
+    "release": "Paterson.2016.720p.BluRay.X264-AMIABLE",
+    "legacy_subtitle_id": 6926337,
+    "moviehash_match": false,
+    "files": [
+     {
+      "file_id": 1115927,
+      "file_name": "Paterson.2016.720p.BluRay.X264-AMIABLE"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1028424",
+   "type": "subtitle",
+   "attributes": {
+    "subtitle_id": "1028424",
+    "language": "en",
+    "release": "Paterson.2016.720p.BluRay.X264-AMIABLE",
+    "legacy_subtitle_id": 6926336,
+    "moviehash_match": false,
+    "files": [
+     {
+      "file_id": 1115908,
+      "file_name": "Paterson.2016.720p.BluRay.X264-AMIABLE-HI"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1028388",
+   "type": "subtitle",
+   "attributes": {
+    "subtitle_id": "1028388",
+    "language": "en",
+    "release": "Paterson.2016.720p.BluRay.X264-AMIABLE",
+    "legacy_subtitle_id": 6926279,
+    "moviehash_match": false,
+    "files": [
+     {
+      "file_id": 1115874,
+      "file_name": "Paterson.2016.720p.BluRay.X264-AMIABLE"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1028375",
+   "type": "subtitle",
+   "attributes": {
+    "subtitle_id": "1028375",
+    "language": "en",
+    "release": "Paterson.2016.720p.BluRay.X264-AMIABLE",
+    "legacy_subtitle_id": 6926278,
+    "moviehash_match": false,
+    "files": [
+     {
+      "file_id": 1115857,
+      "file_name": "Paterson.2016.720p.BluRay.X264-AMIABLE.HI"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1028211",
+   "type": "subtitle",
+   "attributes": {
+    "subtitle_id": "1028211",
+    "language": "pt-BR",
+    "release": "Para TODOS os releases HDRip, WEB-DL e WEBRip [LEGENDA AMARELA]",
+    "legacy_subtitle_id": 6924526,
+    "moviehash_match": false,
+    "files": [
+     {
+      "file_id": 1115688,
+      "file_name": "Paterson.2016.[WEB-DL+WEBRip+HDRip].[LEGENDA AMARELA]"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1028180",
+   "type": "subtitle",
+   "attributes": {
+    "subtitle_id": "1028180",
+    "language": "pt-BR",
+    "release": "Para TODOS os releases HDRip, WEB-DL e WEBRip",
+    "legacy_subtitle_id": 6924525,
+    "moviehash_match": false,
+    "files": [
+     {
+      "file_id": 1115662,
+      "file_name": "Paterson.2016.[WEB-DL+WEBRip+HDRip] - renomeie para seu release"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1028161",
+   "type": "subtitle",
+   "attributes": {
+    "subtitle_id": "1028161",
+    "language": "en",
+    "release": "Paterson.2016.][V][.720p.WEB-DL.X264.EN.23.976fps",
+    "legacy_subtitle_id": 6924420,
+    "moviehash_match": false,
+    "files": [
+     {
+      "file_id": 1115645,
+      "file_name": "Paterson.2016.][V][.720p.WEB-DL.X264.EN.23.976fps"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1028029",
+   "type": "subtitle",
+   "attributes": {
+    "subtitle_id": "1028029",
+    "language": "en",
+    "release": "Paterson (2016) 720p HDRip R6 (en. drama, mystery, thriller)",
+    "legacy_subtitle_id": 6914840,
+    "moviehash_match": false,
+    "files": [
+     {
+      "file_id": 1115512,
+      "file_name": "Paterson (2016) 720p HDRip R6 (en. drama_ mystery_ thriller)"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1027975",
+   "type": "subtitle",
+   "attributes": {
+    "subtitle_id": "1027975",
+    "language": "pt-BR",
+    "release": "Paterson.2016.DVDScr.XVID.AC3.HQ.Hive-CM8.[LEG. AMARELA]",
+    "legacy_subtitle_id": 6905980,
+    "moviehash_match": false,
+    "files": [
+     {
+      "file_id": 1115456,
+      "file_name": "Paterson.2016.DVDScr.XVID.AC3.HQ.Hive-CM8.[LEG. AMARELA]"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1027953",
+   "type": "subtitle",
+   "attributes": {
+    "subtitle_id": "1027953",
+    "language": "pt-BR",
+    "release": "Paterson.2016.DVDScr.XVID.AC3.HQ.Hive-CM8",
+    "legacy_subtitle_id": 6905979,
+    "moviehash_match": false,
+    "files": [
+     {
+      "file_id": 1115431,
+      "file_name": "Paterson.2016.DVDScr.XVID.AC3.HQ.Hive-CM8"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1027653",
+   "type": "subtitle",
+   "attributes": {
+    "subtitle_id": "1027653",
+    "language": "en",
+    "release": "Paterson.2016.DVDScr.XVID.AC3.HQve-CM8",
+    "legacy_subtitle_id": 6877018,
+    "moviehash_match": false,
+    "files": [
+     {
+      "file_id": 1115122,
+      "file_name": "Paterson.2016.DVDScr.XVID.AC3.HQ.Hive-CM8"
+     }
+    ]
+   }
+  }
+ ]
+}

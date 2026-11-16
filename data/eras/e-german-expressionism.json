@@ -1,0 +1,44 @@
+{
+"id": "e-german-expressionism", "type": "cycle", "years": {"min": 1920, "max": 1927}, "admit": ["core"],
+"school": null,
+"sources": [
+  {"id": "bfi-expr", "publication": "BFI", "title": "10 great German expressionist films (P. Hutchinson e A. Barrett, 08/06/2017)", "url": "https://www.bfi.org.uk/lists/10-great-german-expressionist-films", "revision": null, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2017-06-08"},
+  {"id": "bfi-weimar", "publication": "BFI", "title": "How Weimar cinema influenced 6 modern genres (Alex Barrett, 14/05/2019)", "url": "https://www.bfi.org.uk/features/how-weimar-cinema-influenced-6-modern-genres", "revision": null, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2019-05-14"},
+  {"id": "cat-en-expr", "publication": "Wikipedia (en), categoria", "title": "Category:German Expressionist films", "url": "https://en.wikipedia.org/wiki/Category:German_Expressionist_films", "revision": null, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-11-15"},
+  {"id": "moma", "publication": "MoMA (comunicado de imprensa, PDF)", "title": "Weimar Cinema, 1919–1933: Daydreams and Nightmares (17/11/2010–07/03/2011): programação de 17/11/2010 a 31/01/2011 (60 dos 81 títulos da mostra)", "url": "http://press.moma.org/wp-content/press-archives/PRESS_RELEASE_ARCHIVE/WeimarRelease_Final.pdf", "revision": null, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2010-10-29"},
+  {"id": "wp-cs-expr", "publication": "Wikipedia (cs)", "title": "Německý filmový expresionismus", "url": "https://cs.wikipedia.org/w/index.php?oldid=26152325", "revision": 26152325, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-08-22"},
+  {"id": "wp-de-expr", "publication": "Wikipedia (de)", "title": "Expressionismus (Film)", "url": "https://de.wikipedia.org/w/index.php?oldid=271328733", "revision": 271328733, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-10-14"},
+  {"id": "wp-en-expr", "publication": "Wikipedia (en)", "title": "German expressionist cinema", "url": "https://en.wikipedia.org/w/index.php?oldid=1382485842", "revision": 1382485842, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-10-28"},
+  {"id": "wp-fr-expr", "publication": "Wikipedia (fr)", "title": "Cinéma expressionniste", "url": "https://fr.wikipedia.org/w/index.php?oldid=232948107", "revision": 232948107, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-02-02"},
+  {"id": "wp-it-expr", "publication": "Wikipedia (it)", "title": "Cinema espressionista", "url": "https://it.wikipedia.org/w/index.php?oldid=144424996", "revision": 144424996, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2025-04-09"}
+],
+"consensus": null,
+"films": [
+  {"imdb": "tt0010323", "tmdb": 234, "slug": "the-cabinet-of-dr-caligari-1920", "title": "The Cabinet of Dr. Caligari", "year": 1920, "sources": ["bfi-expr", "bfi-weimar", "cat-en-expr", "moma", "wp-cs-expr", "wp-de-expr", "wp-fr-expr", "wp-it-expr"], "class": "core"},
+  {"imdb": "tt0011237", "tmdb": 2972, "slug": "the-golem-how-he-came-into-the-world", "title": "The Golem: How He Came into the World", "year": 1920, "sources": ["bfi-expr", "cat-en-expr", "wp-cs-expr", "wp-de-expr", "wp-en-expr", "wp-fr-expr"], "class": "core"},
+  {"imdb": "tt0011833", "tmdb": 175503, "slug": "from-morn-to-midnight", "title": "From Morn to Midnight", "year": 1920, "sources": ["bfi-expr", "cat-en-expr", "moma", "wp-de-expr", "wp-it-expr"], "class": "core"},
+  {"imdb": "tt0012494", "tmdb": 29267, "slug": "destiny", "title": "Destiny", "year": 1921, "sources": ["bfi-expr", "cat-en-expr", "wp-de-expr", "wp-fr-expr", "wp-it-expr"], "class": "core"},
+  {"imdb": "tt0013086", "tmdb": 5998, "slug": "dr-mabuse-the-gambler", "title": "Dr. Mabuse the Gambler", "year": 1922, "sources": ["cat-en-expr", "moma", "wp-de-expr", "wp-fr-expr", "wp-it-expr"], "class": "core"},
+  {"imdb": "tt0013442", "tmdb": 653, "slug": "nosferatu", "title": "Nosferatu", "year": 1922, "sources": ["bfi-expr", "bfi-weimar", "cat-en-expr", "moma", "wp-cs-expr", "wp-de-expr", "wp-en-expr", "wp-fr-expr", "wp-it-expr"], "class": "core"},
+  {"imdb": "tt0013496", "tmdb": 28480, "slug": "phantom-1922", "title": "Phantom", "year": 1922, "sources": ["cat-en-expr", "wp-de-expr", "wp-fr-expr"], "class": "core"},
+  {"imdb": "tt0013579", "tmdb": 84956, "slug": "warning-shadows", "title": "Warning Shadows", "year": 1923, "sources": ["bfi-expr", "cat-en-expr", "wp-de-expr", "wp-en-expr", "wp-fr-expr", "wp-it-expr"], "class": "core"},
+  {"imdb": "tt0014397", "tmdb": 175716, "slug": "crime-and-punishment-1923", "title": "Crime and Punishment", "year": 1923, "sources": ["cat-en-expr", "wp-de-expr", "wp-fr-expr"], "class": "core"},
+  {"imdb": "tt0014516", "tmdb": 130052, "slug": "the-street-1923", "title": "Die Straße", "year": 1923, "sources": ["cat-en-expr", "moma", "wp-de-expr", "wp-it-expr"], "class": "core"},
+  {"imdb": "tt0014586", "tmdb": 27522, "slug": "waxworks", "title": "Waxworks", "year": 1924, "sources": ["bfi-expr", "cat-en-expr", "moma", "wp-de-expr", "wp-fr-expr", "wp-it-expr"], "class": "core"},
+  {"imdb": "tt0015064", "tmdb": 5991, "slug": "the-last-laugh", "title": "The Last Laugh", "year": 1924, "sources": ["bfi-weimar", "cat-en-expr", "moma", "wp-de-expr", "wp-fr-expr"], "class": "core"},
+  {"imdb": "tt0015175", "tmdb": 31506, "slug": "die-nibelungen-siegfried", "title": "Die Nibelungen", "year": 1924, "sources": ["bfi-weimar", "cat-en-expr", "wp-fr-expr"], "class": "core"},
+  {"imdb": "tt0015202", "tmdb": 2974, "slug": "the-hands-of-orlac-1924", "title": "The Hands of Orlac", "year": 1924, "sources": ["bfi-expr", "cat-en-expr", "wp-de-expr", "wp-fr-expr"], "class": "core"},
+  {"imdb": "tt0016481", "tmdb": 94803, "slug": "variety-1925", "title": "Variety", "year": 1925, "sources": ["bfi-expr", "cat-en-expr", "moma"], "class": "core"},
+  {"imdb": "tt0016563", "tmdb": 184438, "slug": "the-chronicles-of-the-gray-house", "title": "Chronicles of the Gray House", "year": 1925, "sources": ["moma", "wp-de-expr", "wp-fr-expr"], "class": "core"},
+  {"imdb": "tt0016847", "tmdb": 10728, "slug": "faust-1926", "title": "Faust", "year": 1926, "sources": ["cat-en-expr", "wp-de-expr", "wp-fr-expr"], "class": "core"},
+  {"imdb": "tt0017438", "tmdb": 27519, "slug": "the-student-of-prague-1926", "title": "The Student of Prague", "year": 1926, "sources": ["bfi-expr", "cat-en-expr"], "class": "core"},
+  {"imdb": "tt0017136", "tmdb": 19, "slug": "metropolis", "title": "Metropolis", "year": 1927, "sources": ["bfi-expr", "bfi-weimar", "cat-en-expr", "wp-cs-expr", "wp-de-expr", "wp-en-expr", "wp-fr-expr", "wp-it-expr"], "class": "core"}
+],
+"exclude": [
+
+],
+"pending": [
+
+],
+"counted": {"curationFilms": 100, "written": 19, "inIndexOfReference": 12, "notInIndexAdmitted": 9, "notInIndexPassingImdb7": 0, "pending": 0, "documentariesWrittenOut": 0, "leftOut": {"class not admitted by the era": 76, "outside the years of the era": 3, "not in the index and under the prefilter": 2, "named with no id and no class (not written in pending)": 3}}
+}

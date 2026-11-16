@@ -1,0 +1,349 @@
+{
+  "version": 1,
+  "items": {
+    "tt0099864": {
+      "name": "It",
+      "countries": [
+        "US",
+        "CA"
+      ],
+      "language": "en",
+      "source": "https://www.wikidata.org/wiki/Q1131225",
+      "retrievedAt": "2026-10-13T01:06:11.962540+00:00",
+      "identity": "IMDb matched in Wikidata P345"
+    },
+    "tt10037498": {
+      "name": "Power Alley",
+      "countries": [
+        "BR",
+        "FR",
+        "UY"
+      ],
+      "language": null,
+      "source": "https://www.wikidata.org/wiki/Q123085106",
+      "retrievedAt": "2026-10-13T01:06:11.962558+00:00",
+      "identity": "IMDb matched in Wikidata P345"
+    },
+    "tt10551102": {
+      "name": "Lovers Rock",
+      "countries": [
+        "GB"
+      ],
+      "language": "en",
+      "source": "https://www.wikidata.org/wiki/Q96100980",
+      "retrievedAt": "2026-10-13T01:06:11.962563+00:00",
+      "identity": "IMDb matched in Wikidata P345"
+    },
+    "tt10551108": {
+      "name": "Red, White and Blue",
+      "countries": [
+        "GB"
+      ],
+      "language": "en",
+      "source": "https://www.wikidata.org/wiki/Q98069576",
+      "retrievedAt": "2026-10-13T01:06:11.962567+00:00",
+      "identity": "IMDb matched in Wikidata P345"
+    },
+    "tt10731256": {
+      "name": "Don't Worry Darling",
+      "countries": [
+        "US"
+      ],
+      "language": "en",
+      "source": "https://www.wikidata.org/wiki/Q100801718",
+      "retrievedAt": "2026-10-13T01:06:11.962571+00:00",
+      "identity": "IMDb matched in Wikidata P345"
+    },
+    "tt1355642": {
+      "name": "Fullmetal Alchemist: Brotherhood",
+      "countries": [
+        "JP"
+      ],
+      "language": "ja",
+      "source": "https://www.wikidata.org/wiki/Q437808",
+      "retrievedAt": "2026-10-13T01:06:11.962575+00:00",
+      "identity": "IMDb matched in Wikidata P345"
+    },
+    "tt13940818": {
+      "name": "The Contestant",
+      "countries": [
+        "GB",
+        "US"
+      ],
+      "language": null,
+      "source": "https://www.wikidata.org/wiki/Q122964827",
+      "retrievedAt": "2026-10-13T01:06:11.962580+00:00",
+      "identity": "IMDb matched in Wikidata P345"
+    },
+    "tt14142060": {
+      "name": "Rental Family",
+      "countries": [
+        "US",
+        "JP"
+      ],
+      "language": "en",
+      "source": "https://www.wikidata.org/wiki/Q124947229",
+      "retrievedAt": "2026-10-13T01:06:11.962584+00:00",
+      "identity": "IMDb matched in Wikidata P345"
+    },
+    "tt15262254": {
+      "name": "The Viewing",
+      "countries": [
+        "US"
+      ],
+      "language": "en",
+      "source": "https://www.wikidata.org/wiki/Q114957531",
+      "retrievedAt": "2026-10-13T01:06:11.962588+00:00",
+      "identity": "IMDb matched in Wikidata P345"
+    },
+    "tt1659950": {
+      "name": "New Moomin",
+      "countries": [
+        "JP"
+      ],
+      "language": "ja",
+      "source": "https://www.wikidata.org/wiki/Q1610914",
+      "retrievedAt": "2026-10-13T01:06:11.962592+00:00",
+      "identity": "IMDb matched in Wikidata P345"
+    },
+    "tt1817273": {
+      "name": "The Place Beyond the Pines",
+      "countries": [
+        "US"
+      ],
+      "language": "en",
+      "source": "https://www.wikidata.org/wiki/Q1754980",
+      "retrievedAt": "2026-10-13T01:06:11.962595+00:00",
+      "identity": "IMDb matched in Wikidata P345"
+    },
+    "tt2089051": {
+      "name": "Black Mirror: The National Anthem",
+      "countries": [
+        "GB"
+      ],
+      "language": "en",
+      "source": "https://www.wikidata.org/wiki/Q18029734",
+      "retrievedAt": "2026-10-13T01:06:11.962598+00:00",
+      "identity": "IMDb matched in Wikidata P345"
+    },
+    "tt2103085": {
+      "name": "Top of the Lake",
+      "countries": [
+        "NZ",
+        "GB",
+        "AU"
+      ],
+      "language": "en",
+      "source": "https://www.wikidata.org/wiki/Q7779266",
+      "retrievedAt": "2026-10-13T01:06:11.962602+00:00",
+      "identity": "IMDb matched in Wikidata P345"
+    },
+    "tt22248376": {
+      "name": "Frieren: Beyond Journey's End",
+      "countries": [
+        "JP"
+      ],
+      "language": "ja",
+      "source": "https://www.wikidata.org/wiki/Q115792176",
+      "retrievedAt": "2026-10-13T01:06:11.962605+00:00",
+      "identity": "IMDb matched in Wikidata P345"
+    },
+    "tt23782554": {
+      "name": "Red Path",
+      "countries": [
+        "TN",
+        "FR",
+        "BE",
+        "PL",
+        "SA",
+        "QA"
+      ],
+      "language": "ar",
+      "source": "https://www.wikidata.org/wiki/Q131341672",
+      "retrievedAt": "2026-10-13T01:06:11.962610+00:00",
+      "identity": "IMDb matched in Wikidata P345"
+    },
+    "tt26684398": {
+      "name": "SPY x FAMILY CODE: White",
+      "countries": [
+        "JP"
+      ],
+      "language": "ja",
+      "source": "https://www.wikidata.org/wiki/Q117305646",
+      "retrievedAt": "2026-10-13T01:06:11.962614+00:00",
+      "identity": "IMDb matched in Wikidata P345"
+    },
+    "tt2815902": {
+      "name": "The Childhood of a Leader",
+      "countries": [
+        "FR",
+        "GB",
+        "US"
+      ],
+      "language": null,
+      "source": "https://www.wikidata.org/wiki/Q19007192",
+      "retrievedAt": "2026-10-13T01:06:11.962618+00:00",
+      "identity": "IMDb matched in Wikidata P345"
+    },
+    "tt28664733": {
+      "name": "Lost in Starlight",
+      "countries": [
+        "KR"
+      ],
+      "language": "ko",
+      "source": "https://www.wikidata.org/wiki/Q131823316",
+      "retrievedAt": "2026-10-13T01:06:11.962621+00:00",
+      "identity": "IMDb matched in Wikidata P345"
+    },
+    "tt30446847": {
+      "name": "Jay Kelly",
+      "countries": [
+        "US",
+        "GB"
+      ],
+      "language": "en",
+      "source": "https://www.wikidata.org/wiki/Q124829697",
+      "retrievedAt": "2026-10-13T01:06:11.962625+00:00",
+      "identity": "IMDb matched in Wikidata P345"
+    },
+    "tt30835095": {
+      "name": "Ren Faire",
+      "countries": [
+        "US"
+      ],
+      "language": null,
+      "source": "https://www.wikidata.org/wiki/Q124684533",
+      "retrievedAt": "2026-10-13T01:06:11.962628+00:00",
+      "identity": "IMDb matched in Wikidata P345"
+    },
+    "tt32547691": {
+      "name": "Pressure",
+      "countries": [
+        "GB",
+        "FR"
+      ],
+      "language": "en",
+      "source": "https://www.wikidata.org/wiki/Q127698549",
+      "retrievedAt": "2026-10-13T01:06:11.962631+00:00",
+      "identity": "IMDb matched in Wikidata P345"
+    },
+    "tt32600395": {
+      "name": "100 METERS",
+      "countries": [
+        "JP"
+      ],
+      "language": "ja",
+      "source": "https://www.wikidata.org/wiki/Q134007355",
+      "retrievedAt": "2026-10-13T01:06:11.962634+00:00",
+      "identity": "IMDb matched in Wikidata P345"
+    },
+    "tt32820897": {
+      "name": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+      "countries": [
+        "JP"
+      ],
+      "language": "ja",
+      "source": "https://www.wikidata.org/wiki/Q126948105",
+      "retrievedAt": "2026-10-13T01:06:11.962636+00:00",
+      "identity": "IMDb matched in Wikidata P345"
+    },
+    "tt33037725": {
+      "name": "Ancestral Visions of the Future",
+      "countries": [
+        "FR",
+        "LS"
+      ],
+      "language": null,
+      "source": "https://www.wikidata.org/wiki/Q131986177",
+      "retrievedAt": "2026-10-13T01:06:11.962639+00:00",
+      "identity": "IMDb matched in Wikidata P345"
+    },
+    "tt5618752": {
+      "name": "A Gentle Creature",
+      "countries": [
+        "FR",
+        "UA",
+        "DE",
+        "LV",
+        "LT",
+        "RU"
+      ],
+      "language": "ru",
+      "source": "https://www.wikidata.org/wiki/Q29382552",
+      "retrievedAt": "2026-10-13T01:06:11.962643+00:00",
+      "identity": "IMDb matched in Wikidata P345"
+    },
+    "tt5709230": {
+      "name": "Black Mirror: Shut Up and Dance",
+      "countries": [
+        "GB"
+      ],
+      "language": "en",
+      "source": "https://www.wikidata.org/wiki/Q27539496",
+      "retrievedAt": "2026-10-13T01:06:11.962646+00:00",
+      "identity": "IMDb matched in Wikidata P345"
+    },
+    "tt9619824": {
+      "name": "Final Destination Bloodlines",
+      "countries": [
+        "US"
+      ],
+      "language": "en",
+      "source": "https://www.wikidata.org/wiki/Q118212751",
+      "retrievedAt": "2026-10-13T01:06:11.962655+00:00",
+      "identity": "IMDb matched in Wikidata P345"
+    },
+    "tt9788486": {
+      "name": "Love, Death & Robots: The Witness",
+      "countries": [],
+      "language": "en",
+      "source": "https://www.wikidata.org/wiki/Q71090721",
+      "retrievedAt": "2026-10-13T01:06:11.962658+00:00",
+      "identity": "IMDb matched in Wikidata P345"
+    },
+    "tt9788510": {
+      "name": "Love, Death & Robots: Zima Blue",
+      "countries": [],
+      "language": "en",
+      "source": "https://www.wikidata.org/wiki/Q65034716",
+      "retrievedAt": "2026-10-13T01:06:11.962661+00:00",
+      "identity": "IMDb matched in Wikidata P345"
+    },
+    "tt23219324": {
+      "name": "Ari Shaffir: JEW",
+      "countries": [
+        "US"
+      ],
+      "language": "en",
+      "source": "https://letterboxd.com/film/ari-shaffir-jew/",
+      "retrievedAt": "2026-10-13T01:10:29.760171+00:00",
+      "identity": "IMDb matched in Letterboxd research record; current Details lists USA and English (primary for Ari Shaffir: JEW)",
+      "verifiedAt": "2026-10-13T01:21:37.719Z"
+    },
+    "tt20899704": {
+      "name": "Way Out Ahead of Us",
+      "countries": [
+        "US"
+      ],
+      "language": "en",
+      "source": "https://letterboxd.com/film/way-out-ahead-of-us/",
+      "sources": [
+        "https://fidmarseille.org/en/festivals/festival-33/films/way-out-ahead-of-us"
+      ],
+      "retrievedAt": "2026-10-13T01:10:29.760171+00:00",
+      "identity": "IMDb matched in Letterboxd research record; current Details lists USA and English",
+      "verifiedAt": "2026-10-13T01:21:37.719Z"
+    },
+    "tt13653876": {
+      "name": "Star Wars: Visions – The Duel",
+      "countries": [],
+      "language": "ja",
+      "source": "https://www.starwars.com/news/star-wars-visions-trailer-and-cast",
+      "retrievedAt": "2026-10-13T01:21:37.719Z",
+      "identity": "IMDb matched by research package; official title The Duel and Ronin",
+      "note": "Lucasfilm explicitly calls Japanese the original voice cast of all nine shorts and names The Duel. Letterboxd lists English, the dub; production country remains unknown. Identity IMDb confirmed in the matched Letterboxd research record."
+    }
+  },
+  "note": "Cover-only supplemental facts for records missing usable main-language/production metadata; keyed by confirmed IMDb. Never used for menus, ranking, eligibility or synopsis. Sources retrieved 12/10/2026 BRT.",
+  "reviewedAt": "2026-10-13T01:21:37.719Z"
+}

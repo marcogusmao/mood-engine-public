@@ -1,0 +1,65 @@
+{
+  "order": [
+    "tonight",
+    "top-picks",
+    "friends-watchlist",
+    "untried-directors",
+    "criterion",
+    "awards",
+    "friends-split",
+    "sight-sound",
+    "lb250",
+    "actor-week",
+    "friends-month",
+    "friends-week"
+  ],
+  "names": {
+    "tonight": "🎯 Tonight: 10 picks",
+    "top-picks": "⭐ Friend's top picks",
+    "friends-watchlist": "🤝 Friends want to see this too",
+    "untried-directors": "🧭 Great directors you've never seen",
+    "criterion": "📚 Criterion Closet picks",
+    "awards": "🏆 Cannes, Venice and Berlin winners",
+    "friends-split": "🆚 Friends can't agree",
+    "sight-sound": "🎓 Sight & Sound greatest films",
+    "lb250": "🗳️ Letterboxd Top 250",
+    "actor-week": "🧑‍🎤 Actor of the week",
+    "friends-month": "📈 Friends watched this month",
+    "friends-week": "👥 Friends watched this week"
+  },
+  "place": {
+    "friends-week": "menu"
+  },
+  "legacyMoods": [
+    "lift",
+    "escape",
+    "reinvent",
+    "letin",
+    "night",
+    "wicked",
+    "wander",
+    "slow",
+    "music"
+  ],
+  "moodMenu": [
+    "escape",
+    "slow",
+    "lift",
+    "friends-week"
+  ],
+  "menuLabels": {
+    "friends-week": "Friends this week"
+  },
+  "countries": [
+    "United States",
+    "France",
+    "Japan",
+    "Italy",
+    "United Kingdom",
+    "Germany",
+    "Brazil",
+    "South Korea",
+    "Spain",
+    "Canada"
+  ]
+}

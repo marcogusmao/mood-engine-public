@@ -1,0 +1,5 @@
+#!/bin/bash
+# Test double for osascript (test/noturna-mac.test.js, 21/10/2026): records the arguments of each notification in chamadas/osascript.log.
+D=$(cd "$(dirname "$0")" && pwd)
+mkdir -p "$D/chamadas"
+printf '%s\n' "$*" >> "$D/chamadas/osascript.log"

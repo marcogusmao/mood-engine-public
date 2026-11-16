@@ -1,0 +1,29 @@
+{
+  "directors": [
+    {
+      "name": "Jane Auteur",
+      "sources": [
+        {
+          "id": "jane1",
+          "confidence": "high",
+          "kind": "interview",
+          "url": "https://example.org/jane-interview",
+          "title": "A made-up interview",
+          "date": "2020-01-01"
+        }
+      ],
+      "films": [
+        {
+          "title": "Whole Affair",
+          "imdb": "tt0000011",
+          "tmdb": 11,
+          "tmdbType": "movie",
+          "year": 2011,
+          "sources": [
+            "jane1"
+          ]
+        }
+      ]
+    }
+  ]
+}

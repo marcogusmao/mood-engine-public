@@ -1,0 +1,236 @@
+{
+  "films": {
+    "just-below": {
+      "title": "Just Below",
+      "year": 2001,
+      "tmdbId": 1,
+      "imdbId": "tt0000001",
+      "r": 3.49,
+      "rn": 1001,
+      "t": 1760000000000
+    },
+    "friend-saves": {
+      "title": "Friend Saves",
+      "year": 2002,
+      "tmdbId": 2,
+      "imdbId": "tt0000002",
+      "r": 3,
+      "rn": 1002,
+      "t": 1760000000000
+    },
+    "crowd-only": {
+      "title": "Crowd Only",
+      "year": 2003,
+      "tmdbId": 3,
+      "imdbId": "tt0000003",
+      "r": 3,
+      "rn": 1003,
+      "t": 1760000000000
+    },
+    "suspiria": {
+      "title": "Suspiria",
+      "year": 1977,
+      "tmdbId": 4,
+      "imdbId": "tt0000004",
+      "r": 3.9,
+      "rn": 1004,
+      "t": 1760000000000
+    },
+    "suspiria-2018": {
+      "title": "Suspiria",
+      "year": 2018,
+      "tmdbId": 5,
+      "imdbId": "tt0000005",
+      "r": 3.6,
+      "rn": 1005,
+      "t": 1760000000000
+    },
+    "no-runtime": {
+      "title": "No Runtime",
+      "year": 2006,
+      "tmdbId": 6,
+      "imdbId": "tt0000006",
+      "r": 3.8,
+      "rn": 1006,
+      "t": 1760000000000
+    },
+    "community-only": {
+      "title": "Community Only",
+      "year": 2007,
+      "tmdbId": 7,
+      "imdbId": "tt0000007",
+      "r": 3.9,
+      "rn": 1007,
+      "t": 1760000000000
+    },
+    "seen-one": {
+      "title": "Seen One",
+      "year": 2008,
+      "tmdbId": 8,
+      "imdbId": "tt0000008",
+      "r": 4,
+      "rn": 1008,
+      "t": 1760000000000
+    },
+    "no-average": {
+      "title": "No Average",
+      "year": 2009,
+      "tmdbId": 9,
+      "imdbId": "tt0000009",
+      "t": 1760000000000
+    },
+    "whole-affair": {
+      "title": "Whole Affair",
+      "year": 2004,
+      "tmdbId": 11,
+      "imdbId": "tt0000011",
+      "r": 4.2,
+      "rn": 1011,
+      "t": 1760000000000
+    },
+    "poisoned-prompt": {
+      "title": "Poisoned Prompt",
+      "year": 2016,
+      "tmdbId": 16,
+      "imdbId": "tt0000016",
+      "r": 3.8,
+      "rn": 1016,
+      "t": 1760000000000,
+      "apiKey": "sk-FAKE-123"
+    }
+  },
+  "users": {
+    "ana": {
+      "fetchedAt": "2026-10-10T00:00:00.000Z",
+      "films": [
+        [
+          "friend-saves",
+          "Friend Saves",
+          2002,
+          3.5
+        ],
+        [
+          "suspiria",
+          "Suspiria",
+          1977,
+          4.5
+        ],
+        [
+          "community-only",
+          "Community Only",
+          2007,
+          4
+        ],
+        [
+          "seen-one",
+          "Seen One",
+          2008,
+          4.5
+        ],
+        [
+          "just-below",
+          "Just Below",
+          2001,
+          2
+        ]
+      ],
+      "watchlist": []
+    },
+    "bia": {
+      "fetchedAt": "2026-10-10T00:00:00.000Z",
+      "films": [
+        [
+          "suspiria",
+          "Suspiria",
+          1977,
+          4
+        ],
+        [
+          "just-below",
+          "Just Below",
+          2001,
+          3
+        ],
+        [
+          "seen-one",
+          "Seen One",
+          2008,
+          3.5
+        ],
+        [
+          "friend-saves",
+          "Friend Saves",
+          2002,
+          4
+        ]
+      ],
+      "watchlist": [
+        [
+          "no-runtime",
+          "No Runtime",
+          2006
+        ]
+      ]
+    },
+    "stranger": {
+      "fetchedAt": "2026-10-10T00:00:00.000Z",
+      "films": [
+        [
+          "crowd-only",
+          "Crowd Only",
+          2003,
+          5
+        ],
+        [
+          "just-below",
+          "Just Below",
+          2001,
+          5
+        ],
+        [
+          "seen-one",
+          "Seen One",
+          2008,
+          4
+        ],
+        [
+          "friend-saves",
+          "Friend Saves",
+          2002,
+          3
+        ]
+      ],
+      "watchlist": []
+    }
+  },
+  "following": {
+    "users": [
+      [
+        "stranger",
+        "Stranger"
+      ]
+    ]
+  },
+  "me": {
+    "slugs": [
+      "seen-one"
+    ],
+    "fetchedAt": "2026-10-10T00:00:00.000Z"
+  },
+  "watchlist": {
+    "fetchedAt": "2026-10-10T00:00:00.000Z",
+    "items": [
+      [
+        "suspiria",
+        "Suspiria",
+        1977
+      ],
+      [
+        "community-only",
+        "Community Only",
+        2007
+      ]
+    ]
+  },
+  "lists": {}
+}

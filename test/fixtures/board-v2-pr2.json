@@ -1,0 +1,1168 @@
+{
+ "order": [
+  "tonight",
+  "watchlist",
+  "my-series",
+  "newforyou",
+  "friends-love",
+  "short",
+  "escape",
+  "fromlists",
+  "directors",
+  "directors-loved",
+  "comingofage",
+  "oldfriends",
+  "small-kind",
+  "out-there",
+  "visual",
+  "comedy",
+  "winter",
+  "reinvent",
+  "adrenaline",
+  "wicked",
+  "swoon",
+  "twotalk",
+  "midnight",
+  "hidden",
+  "letin",
+  "after-midnight",
+  "anthology",
+  "slow",
+  "docs",
+  "1970s",
+  "1980s",
+  "1990s",
+  "2000s",
+  "2010s",
+  "2020s",
+  "latin-america",
+  "europe",
+  "british",
+  "nordic",
+  "eastern-bloc",
+  "middle-east",
+  "india",
+  "asia",
+  "africa",
+  "friends-week"
+ ],
+ "names": {
+  "tonight": "🎯 Tonight: 10 picks",
+  "watchlist": "📋 Your watchlist, newest first",
+  "my-series": "📺 Series to watch",
+  "newforyou": "🆕 New releases for you",
+  "friends-love": "👥 Friends loved it",
+  "short": "⏱️ Under 95 minutes",
+  "escape": "🎳 Fun and adventure",
+  "fromlists": "🎞️ Best of your lists",
+  "directors": "🎬 From directors you love",
+  "directors-loved": "🎥 Your directors' favourite films",
+  "comingofage": "🧒 Growing up",
+  "oldfriends": "📼 Worth watching again",
+  "small-kind": "🫂 Warm and gentle",
+  "out-there": "🛣️ Journeys and far away",
+  "visual": "🎨 Visually striking",
+  "comedy": "😂 Comedy",
+  "winter": "🎄 Winter and Christmas",
+  "reinvent": "🧭 Starting over",
+  "adrenaline": "🔥 Action and thrills",
+  "wicked": "🎃 Horror",
+  "swoon": "💘 Love stories",
+  "twotalk": "🗣️ Two people talking",
+  "midnight": "🌙 Cult and strange",
+  "hidden": "💎 Hidden gems",
+  "letin": "🌧️ Sad and beautiful",
+  "after-midnight": "🌃 Night, crime and mystery",
+  "anthology": "🧩 Anthology films",
+  "slow": "🕯️ Slow and quiet",
+  "docs": "🎥 Documentaries",
+  "1970s": "🕰️ 1970s",
+  "1980s": "📼 1980s",
+  "1990s": "💿 1990s",
+  "2000s": "📀 2000s",
+  "2010s": "📱 2010s",
+  "2020s": "🆕 2020s",
+  "latin-america": "🌎 Latin America",
+  "europe": "🇪🇺 Europe",
+  "british": "🇬🇧 British and Irish cinema",
+  "nordic": "🧊 Nordic countries",
+  "eastern-bloc": "🧱 Eastern Europe and Russia",
+  "middle-east": "🕌 Middle East",
+  "india": "🇮🇳 India",
+  "asia": "🌏 East and Southeast Asia",
+  "africa": "🌍 Africa",
+  "friends-week": "👥 Friends watched this week"
+ },
+ "place": {
+  "friends-week": "menu"
+ },
+ "legacyMoods": [
+  "lift",
+  "escape",
+  "reinvent",
+  "letin",
+  "night",
+  "wicked",
+  "wander",
+  "slow",
+  "music"
+ ],
+ "moodMenu": [
+  "lift",
+  "escape",
+  "reinvent",
+  "letin",
+  "night",
+  "wicked",
+  "wander",
+  "slow",
+  "music",
+  "noir",
+  "whodunit",
+  "mindbender",
+  "lol",
+  "deadpan",
+  "gentle",
+  "rainy",
+  "road",
+  "summer",
+  "slasher",
+  "horror-comedy",
+  "adrenaline",
+  "swoon",
+  "twotalk",
+  "comingofage",
+  "docs",
+  "midnight",
+  "hidden",
+  "anthology",
+  "winter",
+  "visual",
+  "friends-week"
+ ],
+ "menuLabels": {
+  "friends-week": "Friends this week"
+ },
+ "countries": [
+  "United States",
+  "France",
+  "Japan",
+  "Italy",
+  "United Kingdom",
+  "Germany",
+  "Brazil",
+  "South Korea",
+  "Spain",
+  "Canada"
+ ],
+ "moods": [
+  {
+   "id": "noir",
+   "name": "🌃 Noir",
+   "word": "Noir",
+   "blurb": "Shadows, femmes fatales and bad decisions. Classic and neo-noir.",
+   "genres": {
+    "Crime": 0.8,
+    "Thriller": 0.4,
+    "Mystery": 0.4,
+    "Drama": 0.1,
+    "Comedy": -0.6,
+    "Family": -2,
+    "Animation": -1.5,
+    "Romance": -0.3,
+    "Horror": -0.5,
+    "Documentary": -1
+   },
+   "keywords": {
+    "noir": 2,
+    "femme fatale": 1.2,
+    "hardboiled": 1,
+    "private detective": 0.8,
+    "private investigator": 0.8,
+    "detective": 0.5,
+    "corruption": 0.3,
+    "gangster": 0.3,
+    "heist": 0.3,
+    "hitman": 0.3
+   },
+   "minFit": 2,
+   "needHit": 1,
+   "lists": {
+    "A305G": 2.5,
+    "dUtkE": 2.5,
+    "jMnm": 1.5
+   }
+  },
+  {
+   "id": "whodunit",
+   "name": "🔍 Whodunit",
+   "word": "Whodunit",
+   "blurb": "A detective, a closed circle of suspects, and a reveal.",
+   "genres": {
+    "Mystery": 1,
+    "Crime": 0.5,
+    "Thriller": 0.2,
+    "Horror": -0.6,
+    "Action": -0.6,
+    "Animation": -0.5,
+    "Documentary": -1.5,
+    "War": -1
+   },
+   "keywords": {
+    "whodunit": 2.2,
+    "murder mystery": 1.8,
+    "amateur detective": 1.2,
+    "detective": 0.9,
+    "private detective": 0.8,
+    "police detective": 0.7,
+    "murder investigation": 0.9,
+    "investigation": 0.5,
+    "suspect": 0.5,
+    "murder": 0.3
+   },
+   "minFit": 2.2,
+   "needHit": 1.2
+  },
+  {
+   "id": "mindbender",
+   "name": "🌀 Mind-benders",
+   "word": "Mind-bender",
+   "blurb": "Twists, loops and unreliable minds. You'll want to rewatch it.",
+   "genres": {
+    "Mystery": 0.5,
+    "Thriller": 0.4,
+    "Science Fiction": 0.4,
+    "Fantasy": 0.2,
+    "Drama": 0.1,
+    "Comedy": -0.4,
+    "Family": -1.5,
+    "Animation": -0.8,
+    "Documentary": -1.5,
+    "Romance": -0.2
+   },
+   "keywords": {
+    "plot twist": 1.8,
+    "twist ending": 1.8,
+    "unreliable narrator": 1.8,
+    "nonlinear timeline": 1.2,
+    "time loop": 1.8,
+    "mind game": 1.5,
+    "mind control": 0.9,
+    "simulated reality": 1.6,
+    "simulation": 1,
+    "computer simulation": 1.3,
+    "alternative reality": 1.2,
+    "loss of sense of reality": 1.4,
+    "reality vs fantasy": 1.3,
+    "dissociative identity disorder": 1.3,
+    "split personality": 1.3,
+    "doppelgänger": 1.3,
+    "psychological thriller": 1.1,
+    "psychological horror": 0.7,
+    "puzzle": 1,
+    "labyrinth": 0.7,
+    "paranoia": 0.7,
+    "amnesia": 0.7,
+    "memory loss": 0.7,
+    "hallucination": 1,
+    "delusion": 0.9,
+    "descent into madness": 1.1,
+    "breaking the fourth wall": 0.9,
+    "film within a film": 1,
+    "story within the story": 1.1,
+    "metafiction": 1.3,
+    "self-referential": 0.9,
+    "parallel world": 1.3,
+    "parallel universe": 1.3,
+    "multiverse": 1.4,
+    "ambiguous": 0.7,
+    "dreams": 0.3,
+    "surreal": 0.5,
+    "surrealism": 0.5
+   },
+   "minFit": 1.8,
+   "needHit": 1
+  },
+  {
+   "id": "lol",
+   "name": "😂 Laugh out loud",
+   "word": "Laugh",
+   "blurb": "Funny first. The jokes land, the plot can wait.",
+   "genres": {
+    "Comedy": 2.3,
+    "Drama": -0.5,
+    "War": -1.5,
+    "Horror": -1,
+    "Documentary": -1.5,
+    "Thriller": -0.6,
+    "Crime": -0.2
+   },
+   "keywords": {
+    "hilarious": 1.2,
+    "slapstick comedy": 1.1,
+    "screwball comedy": 1.1,
+    "farce": 1,
+    "parody": 0.9,
+    "spoof": 0.9,
+    "buddy comedy": 0.9,
+    "anarchic comedy": 0.8,
+    "sex comedy": 0.5,
+    "teen comedy": 0.5,
+    "stand-up comedy": 0.8,
+    "sketch comedy": 0.8,
+    "stoner comedy": 0.8,
+    "mockumentary": 0.6,
+    "absurd": 0.4,
+    "prank": 0.7,
+    "action comedy": 0.7,
+    "adventure comedy": 0.5,
+    "tragic": -1,
+    "depressing": -1.5,
+    "holocaust": -3,
+    "suicide": -2
+   },
+   "minFit": 2.2
+  },
+  {
+   "id": "deadpan",
+   "name": "🧊 Deadpan",
+   "word": "Deadpan",
+   "blurb": "Dry, awkward, never winking. Dark comedy, mockumentary, understatement.",
+   "genres": {
+    "Comedy": 1,
+    "Drama": 0.2,
+    "Horror": -1,
+    "War": -1,
+    "Animation": -1,
+    "Documentary": -1
+   },
+   "keywords": {
+    "dark comedy": 1.7,
+    "deadpan": 2,
+    "black humor": 1.5,
+    "dry humor": 1.8,
+    "mockumentary": 1.5,
+    "understated": 1.2,
+    "socially awkward": 1.2,
+    "awkwardness": 1.2,
+    "cringe comedy": 1.8,
+    "ironic": 0.9,
+    "irony": 0.9,
+    "absurdism": 1.1,
+    "absurd": 0.9,
+    "surreal comedy": 1.2,
+    "satire": 0.8
+   },
+   "minFit": 1.9,
+   "needHit": 0.8
+  },
+  {
+   "id": "gentle",
+   "name": "🫖 Gentle",
+   "word": "Gentle",
+   "blurb": "Soft, kind, unhurried. Nobody gets hurt on purpose.",
+   "genres": {
+    "Drama": 0.3,
+    "Comedy": 0.5,
+    "Romance": 0.3,
+    "Family": 0.3,
+    "Animation": 0.2,
+    "Music": 0.2,
+    "Horror": -3,
+    "Thriller": -2,
+    "Crime": -1.5,
+    "War": -2,
+    "Action": -1.5,
+    "Documentary": -0.3,
+    "Mystery": -0.8,
+    "Science Fiction": -0.3
+   },
+   "keywords": {
+    "gentle": 1.8,
+    "comforting": 1.5,
+    "heartwarming": 1.4,
+    "heart warming": 1.4,
+    "kindness": 1.2,
+    "slice of life": 1,
+    "quiet life": 1.2,
+    "tenderness": 1.2,
+    "tender": 0.8,
+    "small town": 0.6,
+    "community": 0.5,
+    "wholesome": 1.3,
+    "feel good": 1,
+    "feel-good": 1,
+    "charming": 0.6,
+    "bittersweet": 0.4,
+    "sweet": 0.5,
+    "murder": -1.5,
+    "violence": -1,
+    "gore": -2,
+    "suicide": -2,
+    "rape": -3,
+    "torture": -2,
+    "holocaust": -3,
+    "genocide": -3,
+    "serial killer": -2
+   },
+   "minFit": 2,
+   "needHit": 1,
+   "lists": {
+    "1fC0S": 2.5
+   }
+  },
+  {
+   "id": "rainy",
+   "name": "🌧️ Rainy day",
+   "word": "Rainy day",
+   "blurb": "Grey light, a hot drink, a slow film with a heart.",
+   "genres": {
+    "Drama": 0.4,
+    "Romance": 0.3,
+    "Comedy": 0.1,
+    "Horror": -2,
+    "Action": -1.5,
+    "Thriller": -0.8,
+    "Animation": -0.5,
+    "Documentary": -0.3
+   },
+   "keywords": {
+    "rain": 1.6,
+    "rainstorm": 1.4,
+    "raincoat": 1.2,
+    "stormy night": 1,
+    "fog": 0.8,
+    "foggy night": 1,
+    "melancholy": 1.2,
+    "loneliness": 0.9,
+    "lonely": 0.8,
+    "autumn": 1.2,
+    "contemplative cinema": 1.2,
+    "contemplative": 0.9,
+    "bittersweet": 0.8,
+    "nostalgic": 0.6
+   },
+   "minFit": 1.5,
+   "needHit": 1
+  },
+  {
+   "id": "road",
+   "name": "🛣️ Road trip",
+   "word": "Road",
+   "blurb": "A car, a map, nowhere to be.",
+   "genres": {
+    "Adventure": 0.3,
+    "Drama": 0.2,
+    "Comedy": 0.3,
+    "Horror": -1,
+    "War": -1.5,
+    "Documentary": -0.3
+   },
+   "keywords": {
+    "road movie": 2,
+    "road trip": 1.8,
+    "roadtrip": 1.8,
+    "on the road": 1.3,
+    "hitchhiker": 1,
+    "hitchhiking": 1,
+    "drifter": 0.7,
+    "car journey": 1,
+    "cross country trip": 1.3,
+    "bus trip": 0.8,
+    "travelogue": 0.7,
+    "journey": 0.5,
+    "nomad": 0.6,
+    "travel": 0.4
+   },
+   "minFit": 2,
+   "needHit": 1,
+   "lists": {
+    "BiIyG": 3
+   }
+  },
+  {
+   "id": "summer",
+   "name": "🏖️ Summer",
+   "word": "Summer",
+   "blurb": "Sun, salt and long afternoons. Heat you can feel through the screen.",
+   "genres": {
+    "Romance": 0.3,
+    "Comedy": 0.3,
+    "Drama": 0.2,
+    "Adventure": 0.2,
+    "Horror": -1,
+    "War": -1.5,
+    "Crime": -0.5,
+    "Thriller": -0.5
+   },
+   "keywords": {
+    "summer vacation": 1.6,
+    "summer": 1.5,
+    "summer job": 1,
+    "beach": 1,
+    "beach house": 1.2,
+    "swimming pool": 0.9,
+    "seaside": 1,
+    "seaside town": 1,
+    "vacation": 0.8,
+    "family vacation": 0.9,
+    "tropical island": 0.8,
+    "exotic island": 0.8,
+    "island": 0.4,
+    "heatwave": 1.1,
+    "sun": 0.6,
+    "sunlight": 0.6,
+    "sunset": 0.4,
+    "midsummer": 1.1,
+    "concentration camp": -3
+   },
+   "minFit": 2,
+   "needHit": 1,
+   "lists": {
+    "cVG0q": 3,
+    "nzQyi": 3,
+    "Ig3Kg": 3,
+    "hGHRq": 3
+   }
+  },
+  {
+   "id": "slasher",
+   "name": "🔪 Slasher",
+   "word": "Slasher",
+   "blurb": "A mask, a body count, a final girl.",
+   "genres": {
+    "Horror": 1.5,
+    "Thriller": 0.3,
+    "Mystery": 0.2,
+    "Comedy": -0.2,
+    "Family": -3,
+    "Animation": -1.5,
+    "Documentary": -2,
+    "Romance": -0.5
+   },
+   "keywords": {
+    "slasher": 2.2,
+    "proto-slasher": 2,
+    "final girl": 2,
+    "masked killer": 1.5,
+    "summer camp": 0.5,
+    "psycho killer": 1,
+    "stalker": 0.4,
+    "teen horror": 0.8,
+    "serial killer": 0.3,
+    "splatter horror": 0.6,
+    "gore": 0.3,
+    "killer": 0.2
+   },
+   "minFit": 3,
+   "requireGenre": [
+    "Horror"
+   ],
+   "needHit": 1.5
+  },
+  {
+   "id": "horror-comedy",
+   "name": "🧟 Horror-comedy",
+   "word": "Horror-comedy",
+   "blurb": "Screams and laughs in the same scene.",
+   "genres": {
+    "Horror": 1.2,
+    "Comedy": 1.2,
+    "Fantasy": 0.1,
+    "Family": -1,
+    "Drama": -0.6,
+    "Documentary": -2
+   },
+   "keywords": {
+    "comedy horror": 2,
+    "horror comedy": 2,
+    "horror spoof": 1.6,
+    "horror parody": 1.6,
+    "zombie comedy": 1.6,
+    "splatter comedy": 1.6,
+    "vampire comedy": 1.6,
+    "campy": 0.5,
+    "dark comedy": 0.3,
+    "parody": 0.4,
+    "spoof": 0.4
+   },
+   "minFit": 2.4,
+   "requireGenre": [
+    "Horror"
+   ]
+  },
+  {
+   "id": "adrenaline",
+   "name": "🔥 Adrenaline",
+   "word": "Adrenaline",
+   "blurb": "Chases, fights, and the clock running down.",
+   "genres": {
+    "Action": 2.3,
+    "Thriller": 0.6,
+    "Adventure": 0.6,
+    "Crime": 0.3,
+    "War": 0.2,
+    "Science Fiction": 0.2,
+    "Drama": -0.5,
+    "Romance": -0.6,
+    "Documentary": -2,
+    "Animation": -0.3,
+    "Family": -1,
+    "Comedy": -0.2,
+    "Music": -1
+   },
+   "keywords": {
+    "car chase": 1,
+    "chase": 0.8,
+    "police chase": 1,
+    "foot chase": 0.9,
+    "boat chase": 0.9,
+    "martial arts": 0.9,
+    "shootout": 0.9,
+    "gunfight": 0.9,
+    "gun battle": 0.9,
+    "explosion": 0.8,
+    "heist": 0.6,
+    "hostage": 0.7,
+    "hostage situation": 0.8,
+    "action hero": 1,
+    "assassin": 0.6,
+    "sword fight": 0.7,
+    "fight": 0.4,
+    "survival": 0.4,
+    "revenge": 0.4,
+    "vigilante": 0.4,
+    "disaster": 0.5,
+    "contemplative": -1
+   },
+   "minFit": 2.2
+  },
+  {
+   "id": "swoon",
+   "name": "💘 Love stories",
+   "word": "Swoon",
+   "blurb": "Falling, wanting, losing. The big romances and the small ones.",
+   "genres": {
+    "Romance": 2.3,
+    "Drama": 0.3,
+    "Comedy": 0.2,
+    "Horror": -1.5,
+    "Action": -1,
+    "War": -0.8,
+    "Documentary": -1.5,
+    "Thriller": -0.5,
+    "Crime": -0.5,
+    "Animation": -0.2
+   },
+   "keywords": {
+    "love triangle": 0.7,
+    "falling in love": 1,
+    "love at first sight": 1.1,
+    "first love": 1,
+    "unrequited love": 0.9,
+    "forbidden love": 1,
+    "tragic love": 1,
+    "love affair": 0.7,
+    "new love": 0.8,
+    "young love": 0.8,
+    "teenage romance": 0.8,
+    "romantic": 0.7,
+    "romance": 0.7,
+    "romantic drama": 0.8,
+    "rekindled romance": 0.9,
+    "love of one's life": 1,
+    "lovesickness": 0.8,
+    "lovers": 0.6,
+    "fugitive lovers": 0.8,
+    "kiss": 0.4
+   },
+   "minFit": 2.2
+  },
+  {
+   "id": "twotalk",
+   "name": "🗣️ Two people talking",
+   "word": "Two people talking",
+   "blurb": "A room, two voices, and nothing else needed.",
+   "genres": {
+    "Drama": 0.5,
+    "Romance": 0.3,
+    "Comedy": 0.2,
+    "Action": -2,
+    "Horror": -1.5,
+    "Adventure": -1.5,
+    "Science Fiction": -0.5,
+    "War": -1,
+    "Animation": -2,
+    "Documentary": -1
+   },
+   "keywords": {
+    "conversation": 1.6,
+    "long conversation": 1.5,
+    "small talk": 1.2,
+    "smalltalk": 1.2,
+    "monologue": 0.9,
+    "real time": 1,
+    "one location": 1,
+    "single location": 1,
+    "estranged couple": 1.2,
+    "divorced couple": 1.2,
+    "bickering couple": 1.2,
+    "married couple": 1,
+    "elderly couple": 1,
+    "lesbian couple": 0.8,
+    "couple": 0.7
+   },
+   "minFit": 1.6,
+   "needHit": 1.2
+  },
+  {
+   "id": "comingofage",
+   "name": "🧒 Growing up",
+   "word": "Growing up",
+   "blurb": "First loves, last summers, the year everything changes.",
+   "genres": {
+    "Drama": 0.4,
+    "Comedy": 0.2,
+    "Romance": 0.2,
+    "Family": 0.1,
+    "Horror": -1.5,
+    "Action": -1.5,
+    "War": -1.5,
+    "Thriller": -0.8,
+    "Science Fiction": -0.8,
+    "Documentary": -1,
+    "Crime": -0.6
+   },
+   "keywords": {
+    "coming of age": 2,
+    "adolescence": 1.2,
+    "teenage girl": 0.8,
+    "teenage boy": 0.8,
+    "teenager": 0.6,
+    "high school": 0.5,
+    "puberty": 1,
+    "teenage love": 0.9,
+    "teenage crush": 0.9,
+    "teenage protagonist": 0.9,
+    "first love": 0.7,
+    "growing up": 1.2,
+    "childhood friends": 0.6,
+    "boarding school": 0.5,
+    "teenage sexuality": 0.8,
+    "teenage romance": 0.8,
+    "teenage rebellion": 0.8,
+    "rebellious youth": 0.6,
+    "school life": 0.5,
+    "high school graduation": 0.6,
+    "prom": 0.5
+   },
+   "minFit": 1.8,
+   "needHit": 1
+  },
+  {
+   "id": "docs",
+   "name": "🎥 Documentaries",
+   "word": "Documentary",
+   "blurb": "Real people, real places. Music documentaries included.",
+   "genres": {
+    "Documentary": 3,
+    "Music": 0.8,
+    "Drama": -0.5,
+    "Comedy": -0.2
+   },
+   "keywords": {
+    "music documentary": 1.2,
+    "concert film": 1,
+    "concert": 0.8,
+    "musician": 0.8,
+    "jazz": 0.4,
+    "rock music": 0.5,
+    "band": 0.4,
+    "hip-hop": 0.4
+   },
+   "minFit": 2,
+   "where": {
+    "genresAny": [
+     "Documentary"
+    ]
+   },
+   "lists": {
+    "1aHbm": 2.5,
+    "iw-docs-2024": 2.5,
+    "1R3EO": 1.5,
+    "8RGgu": 1.5
+   }
+  },
+  {
+   "id": "midnight",
+   "name": "🌙 Cult and strange",
+   "word": "Cult and strange",
+   "blurb": "Cult favourites, late-night oddities, films that don't care what you think.",
+   "genres": {
+    "Horror": 0.3,
+    "Comedy": 0.1,
+    "Science Fiction": 0.3,
+    "Fantasy": 0.3,
+    "Family": -2,
+    "Animation": -0.8,
+    "Documentary": -1.5
+   },
+   "keywords": {
+    "cult film": 2.2,
+    "psychotronic": 1.8,
+    "psychotronic film": 1.8,
+    "grindhouse": 1.8,
+    "exploitation": 1.4,
+    "sexploitation": 1.2,
+    "b movie": 1.6,
+    "campy": 1.4,
+    "so bad it’s good": 1.8,
+    "trash": 0.8,
+    "surrealism": 0.9,
+    "surreal": 0.9,
+    "bizarre": 1.2,
+    "midnight movie": 2.2,
+    "bad taste": 1.2
+   },
+   "minFit": 1.6,
+   "needHit": 1
+  },
+  {
+   "id": "hidden",
+   "name": "💎 Hidden gems",
+   "word": "Hidden gem",
+   "blurb": "Loved by the few who found them.",
+   "genres": {},
+   "keywords": {},
+   "minFit": 0,
+   "where": {
+    "lb": {
+     "min": 3.8
+    },
+    "lbCount": {
+     "max": 9999
+    }
+   }
+  },
+  {
+   "id": "anthology",
+   "name": "🧩 Anthology films",
+   "word": "Anthology",
+   "blurb": "Several stories, one film.",
+   "genres": {},
+   "keywords": {
+    "anthology": 2.5,
+    "portmanteau": 2,
+    "multi-segment": 1.5,
+    "episodic movie": 1.2,
+    "vignette": 1,
+    "episodic": 0.9,
+    "multiple storylines": 0.8,
+    "compilation": 0.6
+   },
+   "minFit": 1.6,
+   "needHit": 1.2
+  },
+  {
+   "id": "winter",
+   "name": "🎄 Winter and Christmas",
+   "word": "Winter",
+   "blurb": "Snow, fireplaces and holiday films.",
+   "genres": {
+    "Family": 0.2,
+    "Romance": 0.2,
+    "Comedy": 0.1
+   },
+   "keywords": {
+    "christmas": 1.8,
+    "christmas eve": 1.8,
+    "christmas party": 1.2,
+    "santa claus": 1.4,
+    "snow": 1,
+    "winter": 1.2,
+    "snowstorm": 0.8,
+    "blizzard": 0.8,
+    "new year's eve": 0.8,
+    "ice skating": 0.8,
+    "hanukkah": 1.2,
+    "holiday season": 1.2
+   },
+   "minFit": 2.2,
+   "needHit": 1,
+   "lists": {
+    "r2kLE": 2.5,
+    "qJwme": 2.5,
+    "qzvQW": 2.5,
+    "qzuGc": 2.5,
+    "jtzhQ": 2.5,
+    "ek1Zm": 2.5
+   }
+  },
+  {
+   "id": "visual",
+   "name": "🎨 Visually striking",
+   "word": "Visual",
+   "blurb": "Pictures first: composition, colour and light.",
+   "genres": {
+    "Fantasy": 0.3,
+    "Science Fiction": 0.2,
+    "Documentary": -1.5
+   },
+   "keywords": {
+    "surrealism": 2.1,
+    "surreal": 1.4,
+    "avant-garde": 2.1,
+    "experimental film": 2.1,
+    "experimental": 1.2,
+    "psychedelic": 2,
+    "dreamlike": 2.1,
+    "long take": 2.1,
+    "visual poetry": 2.4
+   },
+   "minFit": 2,
+   "directors": {
+    "12453": 3,
+    "30715": 3,
+    "21183": 3,
+    "240": 3,
+    "56512": 3,
+    "55119": 3,
+    "5655": 3,
+    "607": 2.6,
+    "137427": 2.6
+   },
+   "lists": {
+    "GAsK": 2.5,
+    "2mL0U": 2.5,
+    "100b4": 1.5
+   }
+  }
+ ],
+ "rows": [
+  {
+   "id": "1970s",
+   "kind": "filter",
+   "where": {
+    "years": {
+     "min": 1970,
+     "max": 1979
+    }
+   }
+  },
+  {
+   "id": "1980s",
+   "kind": "filter",
+   "where": {
+    "years": {
+     "min": 1980,
+     "max": 1989
+    }
+   }
+  },
+  {
+   "id": "1990s",
+   "kind": "filter",
+   "where": {
+    "years": {
+     "min": 1990,
+     "max": 1999
+    }
+   }
+  },
+  {
+   "id": "2000s",
+   "kind": "filter",
+   "where": {
+    "years": {
+     "min": 2000,
+     "max": 2009
+    }
+   }
+  },
+  {
+   "id": "2010s",
+   "kind": "filter",
+   "where": {
+    "years": {
+     "min": 2010,
+     "max": 2019
+    }
+   }
+  },
+  {
+   "id": "2020s",
+   "kind": "filter",
+   "where": {
+    "years": {
+     "min": 2020,
+     "max": 2029
+    }
+   }
+  },
+  {
+   "id": "europe",
+   "kind": "filter",
+   "where": {
+    "region": "europe"
+   }
+  },
+  {
+   "id": "british",
+   "kind": "filter",
+   "where": {
+    "region": "british"
+   }
+  },
+  {
+   "id": "nordic",
+   "kind": "filter",
+   "where": {
+    "region": "nordic"
+   }
+  },
+  {
+   "id": "eastern-bloc",
+   "kind": "filter",
+   "where": {
+    "region": "eastern-bloc"
+   }
+  },
+  {
+   "id": "middle-east",
+   "kind": "filter",
+   "where": {
+    "region": "middle-east"
+   }
+  },
+  {
+   "id": "india",
+   "kind": "filter",
+   "where": {
+    "region": "india"
+   }
+  },
+  {
+   "id": "asia",
+   "kind": "filter",
+   "where": {
+    "region": "asia"
+   }
+  },
+  {
+   "id": "africa",
+   "kind": "filter",
+   "where": {
+    "region": "africa"
+   }
+  },
+  {
+   "id": "brazil-now",
+   "kind": "filter",
+   "part": true,
+   "where": {
+    "countries": [
+     "BR"
+    ],
+    "years": {
+     "min": 2001
+    }
+   }
+  },
+  {
+   "id": "brazil-classic",
+   "kind": "filter",
+   "part": true,
+   "where": {
+    "countries": [
+     "BR"
+    ],
+    "years": {
+     "max": 2000
+    }
+   }
+  },
+  {
+   "id": "latam-hisp",
+   "kind": "filter",
+   "part": true,
+   "where": {
+    "region": "latam-hisp"
+   }
+  },
+  {
+   "id": "latin-america",
+   "kind": "combine",
+   "parts": [
+    "brazil-now",
+    "brazil-classic",
+    "latam-hisp"
+   ]
+  },
+  {
+   "id": "after-midnight",
+   "kind": "combine",
+   "parts": [
+    "night",
+    "noir",
+    "whodunit",
+    "mindbender"
+   ],
+   "tune": "taste"
+  },
+  {
+   "id": "small-kind",
+   "kind": "combine",
+   "parts": [
+    "gentle",
+    "lift",
+    "rainy"
+   ],
+   "boost": [
+    {
+     "part": "rainy",
+     "weekdays": [
+      0
+     ],
+     "x": 2
+    }
+   ]
+  },
+  {
+   "id": "out-there",
+   "kind": "combine",
+   "parts": [
+    "road",
+    "wander",
+    "summer"
+   ],
+   "boost": [
+    {
+     "part": "summer",
+     "months": [
+      12,
+      1,
+      2
+     ],
+     "x": 2
+    }
+   ]
+  },
+  {
+   "id": "comedy",
+   "kind": "combine",
+   "parts": [
+    "lol",
+    "deadpan"
+   ]
+  },
+  {
+   "id": "wicked",
+   "kind": "combine",
+   "parts": [
+    "wicked",
+    "slasher",
+    "horror-comedy"
+   ]
+  }
+ ]
+}

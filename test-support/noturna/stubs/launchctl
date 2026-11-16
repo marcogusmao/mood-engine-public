@@ -1,0 +1,5 @@
+#!/bin/bash
+# Test double for the job manager (test/noturna-mac.test.js, 21/10/2026). Nothing in the nightly's scripts may call it: the test proves that this log never exists.
+D=$(cd "$(dirname "$0")" && pwd)
+mkdir -p "$D/chamadas"
+printf '%s\n' "$*" >> "$D/chamadas/launchctl.log"

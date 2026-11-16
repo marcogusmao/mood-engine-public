@@ -1,0 +1,1 @@
+{"schemaVersion":1,"productionPolicy":"baseline-v2","mode":"off","embeddings":{"enabled":false},"diversity":{"enabledInProduction":false},"remoteFeedback":{"enabled":false},"experiment":{"id":"learning-diagnostic-v1","seed":"mood-learning-v1","ridgeLambdas":[0.1,1,10,100],"facetCounts":[1,3],"mmrLambdas":[1,0.8],"retrievalPerFacet":60}}

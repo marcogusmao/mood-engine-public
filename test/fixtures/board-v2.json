@@ -1,0 +1,53 @@
+{
+  "order": [
+    "short",
+    "tonight",
+    "escape",
+    "friends-week",
+    "newforyou",
+    "directors"
+  ],
+  "names": {
+    "directors": "🎬 From directors you love",
+    "escape": "🎳 Fun and adventure",
+    "friends-week": "👥 Friends watched this week",
+    "newforyou": "🆕 New releases for you",
+    "short": "⏱️ Under 95 minutes",
+    "tonight": "🎯 Tonight: 10 picks"
+  },
+  "place": {
+    "friends-week": "menu"
+  },
+  "legacyMoods": [
+    "lift",
+    "escape",
+    "reinvent",
+    "letin",
+    "night",
+    "wicked",
+    "wander",
+    "slow",
+    "music"
+  ],
+  "moodMenu": [
+    "escape",
+    "slow",
+    "lift",
+    "friends-week"
+  ],
+  "menuLabels": {
+    "friends-week": "Friends this week"
+  },
+  "countries": [
+    "United States",
+    "France",
+    "Japan",
+    "Italy",
+    "United Kingdom",
+    "Germany",
+    "Brazil",
+    "South Korea",
+    "Spain",
+    "Canada"
+  ]
+}

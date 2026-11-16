@@ -1,0 +1,20 @@
+{
+  "id": "static-pick",
+  "source": {
+    "publication": "Fixture Weekly",
+    "title": "Static Pick",
+    "url": "https://example.org/static-pick",
+    "edition": "2025-01-01",
+    "readOn": "2026-10-12"
+  },
+  "items": [
+    {
+      "slug": "suspiria-2018",
+      "title": "Suspiria",
+      "year": 2018,
+      "imdb": "tt0000005",
+      "tmdb": 5,
+      "tmdbType": "movie"
+    }
+  ]
+}

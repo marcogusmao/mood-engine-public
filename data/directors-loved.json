@@ -1,0 +1,8494 @@
+{
+ "generated": "2026-10-11",
+ "directors": [
+  {
+   "name": "David Lynch",
+   "sources": [
+    {
+     "id": "lynch-interview",
+     "kind": "interview",
+     "confidence": "medium",
+     "title": "Lynch sobre quatro filmes \"de cinema perfeito\" + entrevista (Far Out, via Open Culture)",
+     "url": "https://faroutmagazine.co.uk/david-lynch-favourite-directors-films-list/",
+     "date": "2020-07",
+     "note": "Citações diretas de Lynch (livro e entrevista) na matéria."
+    }
+   ],
+   "films": [
+    {
+     "title": "It's a Gift",
+     "year": 1934,
+     "imdb": "tt0025318",
+     "tmdb": 28001,
+     "tmdbType": "movie",
+     "letterboxd": "its-a-gift",
+     "sources": [
+      "lynch-interview"
+     ]
+    },
+    {
+     "title": "Sunset Boulevard",
+     "year": 1950,
+     "imdb": "tt0043014",
+     "tmdb": 599,
+     "tmdbType": "movie",
+     "letterboxd": "sunset-boulevard",
+     "sources": [
+      "lynch-interview"
+     ]
+    },
+    {
+     "title": "Monsieur Hulot's Holiday",
+     "year": 1953,
+     "imdb": "tt0046487",
+     "tmdb": 778,
+     "tmdbType": "movie",
+     "letterboxd": "monsieur-hulots-holiday",
+     "sources": [
+      "lynch-interview"
+     ]
+    },
+    {
+     "title": "Rear Window",
+     "year": 1954,
+     "imdb": "tt0047396",
+     "tmdb": 567,
+     "tmdbType": "movie",
+     "letterboxd": "rear-window",
+     "sources": [
+      "lynch-interview"
+     ]
+    },
+    {
+     "title": "8½",
+     "year": 1963,
+     "imdb": "tt0056801",
+     "tmdb": 422,
+     "tmdbType": "movie",
+     "letterboxd": "8-half",
+     "sources": [
+      "lynch-interview"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Terrence Malick",
+   "sources": [],
+   "films": []
+  },
+  {
+   "name": "John Cassavetes",
+   "sources": [],
+   "films": []
+  },
+  {
+   "name": "Stanley Kubrick",
+   "sources": [
+    {
+     "id": "kubrick-cinema-1963",
+     "kind": "interview",
+     "confidence": "medium",
+     "title": "Top 10 enviado à revista Cinema, 1963 (lista própria; confirmado pelo BFI via Nick Wrigley na matéria)",
+     "url": "https://faroutmagazine.co.uk/stanley-kubrick-10-favourite-films/",
+     "date": "1963"
+    }
+   ],
+   "films": [
+    {
+     "title": "Hell's Angels",
+     "year": 1930,
+     "imdb": "tt0020960",
+     "tmdb": 22301,
+     "tmdbType": "movie",
+     "letterboxd": "hells-angels",
+     "sources": [
+      "kubrick-cinema-1963"
+     ]
+    },
+    {
+     "title": "City Lights",
+     "year": 1931,
+     "imdb": "tt0021749",
+     "tmdb": 901,
+     "tmdbType": "movie",
+     "letterboxd": "city-lights",
+     "sources": [
+      "kubrick-cinema-1963"
+     ]
+    },
+    {
+     "title": "The Bank Dick",
+     "year": 1940,
+     "imdb": "tt0032234",
+     "tmdb": 911,
+     "tmdbType": "movie",
+     "letterboxd": "the-bank-dick",
+     "sources": [
+      "kubrick-cinema-1963"
+     ]
+    },
+    {
+     "title": "Citizen Kane",
+     "year": 1941,
+     "imdb": "tt0033467",
+     "tmdb": 15,
+     "tmdbType": "movie",
+     "letterboxd": "citizen-kane",
+     "sources": [
+      "kubrick-cinema-1963"
+     ]
+    },
+    {
+     "title": "Roxie Hart",
+     "year": 1942,
+     "imdb": "tt0035272",
+     "tmdb": 57684,
+     "tmdbType": "movie",
+     "letterboxd": "roxie-hart",
+     "sources": [
+      "kubrick-cinema-1963"
+     ]
+    },
+    {
+     "title": "Henry V",
+     "year": 1944,
+     "imdb": "tt0036910",
+     "tmdb": 22638,
+     "tmdbType": "movie",
+     "letterboxd": "henry-v-1944",
+     "sources": [
+      "kubrick-cinema-1963"
+     ]
+    },
+    {
+     "title": "The Treasure of the Sierra Madre",
+     "year": 1948,
+     "imdb": "tt0040897",
+     "tmdb": 3090,
+     "tmdbType": "movie",
+     "letterboxd": "the-treasure-of-the-sierra-madre",
+     "sources": [
+      "kubrick-cinema-1963"
+     ]
+    },
+    {
+     "title": "I Vitelloni",
+     "year": 1953,
+     "imdb": "tt0046521",
+     "tmdb": 12548,
+     "tmdbType": "movie",
+     "letterboxd": "i-vitelloni",
+     "sources": [
+      "kubrick-cinema-1963"
+     ]
+    },
+    {
+     "title": "Wild Strawberries",
+     "year": 1957,
+     "imdb": "tt0050986",
+     "tmdb": 614,
+     "tmdbType": "movie",
+     "letterboxd": "wild-strawberries",
+     "sources": [
+      "kubrick-cinema-1963"
+     ]
+    },
+    {
+     "title": "La Notte",
+     "year": 1961,
+     "imdb": "tt0054130",
+     "tmdb": 41050,
+     "tmdbType": "movie",
+     "letterboxd": "la-notte",
+     "sources": [
+      "kubrick-cinema-1963"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Wong Kar-wai",
+   "sources": [],
+   "films": []
+  },
+  {
+   "name": "Yorgos Lanthimos",
+   "sources": [
+    {
+     "id": "lanthimos-closet-2018",
+     "kind": "criterion-closet",
+     "confidence": "high",
+     "title": "Yorgos Lanthimos & Ariane Labed's Closet Picks",
+     "url": "https://www.criterion.com/shop/collection/467-yorgos-lanthimos-ariane-labed-s-closet-picks",
+     "date": null,
+     "note": "Lista do casal; parte pode ser escolha de Ariane Labed.",
+     "with": "Ariane Labed"
+    },
+    {
+     "id": "lanthimos-closet-solo",
+     "kind": "criterion-closet",
+     "confidence": "high",
+     "title": "Yorgos Lanthimos's Closet Picks",
+     "url": "https://www.criterion.com/shop/collection/900-yorgos-lanthimos-s-closet-picks",
+     "date": null,
+     "note": "A caixa \"Three Films by Luis Buñuel\" não foi expandida."
+    }
+   ],
+   "films": [
+    {
+     "title": "Things to Come",
+     "year": 1936,
+     "imdb": "tt0028358",
+     "tmdb": 3596,
+     "tmdbType": "movie",
+     "letterboxd": "things-to-come",
+     "sources": [
+      "lanthimos-closet-2018"
+     ]
+    },
+    {
+     "title": "12 Angry Men",
+     "year": 1957,
+     "imdb": "tt0050083",
+     "tmdb": 389,
+     "tmdbType": "movie",
+     "letterboxd": "12-angry-men",
+     "sources": [
+      "lanthimos-closet-2018"
+     ]
+    },
+    {
+     "title": "Pickpocket",
+     "year": 1959,
+     "imdb": "tt0053168",
+     "tmdb": 690,
+     "tmdbType": "movie",
+     "letterboxd": "pickpocket",
+     "sources": [
+      "lanthimos-closet-2018"
+     ]
+    },
+    {
+     "title": "Viridiana",
+     "year": 1961,
+     "imdb": "tt0055601",
+     "tmdb": 4497,
+     "tmdbType": "movie",
+     "letterboxd": "viridiana",
+     "sources": [
+      "lanthimos-closet-2018"
+     ]
+    },
+    {
+     "title": "Black God, White Devil",
+     "year": 1964,
+     "imdb": "tt0058006",
+     "tmdb": 67612,
+     "tmdbType": "movie",
+     "letterboxd": "black-god-white-devil",
+     "sources": [
+      "lanthimos-closet-solo"
+     ]
+    },
+    {
+     "title": "Au Hasard Balthazar",
+     "year": 1966,
+     "imdb": "tt0060138",
+     "tmdb": 20108,
+     "tmdbType": "movie",
+     "letterboxd": "au-hasard-balthazar",
+     "sources": [
+      "lanthimos-closet-2018"
+     ]
+    },
+    {
+     "title": "Persona",
+     "year": 1966,
+     "imdb": "tt0060827",
+     "tmdb": 797,
+     "tmdbType": "movie",
+     "letterboxd": "persona",
+     "sources": [
+      "lanthimos-closet-solo"
+     ]
+    },
+    {
+     "title": "Branded to Kill",
+     "year": 1967,
+     "imdb": "tt0061882",
+     "tmdb": 17905,
+     "tmdbType": "movie",
+     "letterboxd": "branded-to-kill",
+     "sources": [
+      "lanthimos-closet-2018"
+     ]
+    },
+    {
+     "title": "Le Samouraï",
+     "year": 1967,
+     "imdb": "tt0062229",
+     "tmdb": 5511,
+     "tmdbType": "movie",
+     "letterboxd": "le-samourai",
+     "sources": [
+      "lanthimos-closet-2018"
+     ]
+    },
+    {
+     "title": "Salesman",
+     "year": 1969,
+     "imdb": "tt0064921",
+     "tmdb": 27375,
+     "tmdbType": "movie",
+     "letterboxd": "salesman",
+     "sources": [
+      "lanthimos-closet-2018"
+     ]
+    },
+    {
+     "title": "Five Easy Pieces",
+     "year": 1970,
+     "imdb": "tt0065724",
+     "tmdb": 26617,
+     "tmdbType": "movie",
+     "letterboxd": "five-easy-pieces",
+     "sources": [
+      "lanthimos-closet-2018"
+     ]
+    },
+    {
+     "title": "Carnal Knowledge",
+     "year": 1971,
+     "imdb": "tt0066892",
+     "tmdb": 36492,
+     "tmdbType": "movie",
+     "letterboxd": "carnal-knowledge",
+     "sources": [
+      "lanthimos-closet-solo"
+     ]
+    },
+    {
+     "title": "Macbeth",
+     "year": 1971,
+     "imdb": "tt0067372",
+     "tmdb": 11316,
+     "tmdbType": "movie",
+     "letterboxd": "macbeth-1971",
+     "sources": [
+      "lanthimos-closet-2018"
+     ]
+    },
+    {
+     "title": "Ali: Fear Eats the Soul",
+     "year": 1974,
+     "imdb": "tt0071141",
+     "tmdb": 216,
+     "tmdbType": "movie",
+     "letterboxd": "ali-fear-eats-the-soul",
+     "sources": [
+      "lanthimos-closet-2018"
+     ]
+    },
+    {
+     "title": "Mikey and Nicky",
+     "year": 1976,
+     "imdb": "tt0074901",
+     "tmdb": 59143,
+     "tmdbType": "movie",
+     "letterboxd": "mikey-and-nicky",
+     "sources": [
+      "lanthimos-closet-solo"
+     ]
+    },
+    {
+     "title": "Man Bites Dog",
+     "year": 1992,
+     "imdb": "tt0103905",
+     "tmdb": 10086,
+     "tmdbType": "movie",
+     "letterboxd": "man-bites-dog",
+     "sources": [
+      "lanthimos-closet-2018"
+     ]
+    },
+    {
+     "title": "Naked",
+     "year": 1993,
+     "imdb": "tt0107653",
+     "tmdb": 21450,
+     "tmdbType": "movie",
+     "letterboxd": "naked",
+     "sources": [
+      "lanthimos-closet-2018"
+     ]
+    },
+    {
+     "title": "Inland Empire",
+     "year": 2006,
+     "imdb": "tt0460829",
+     "tmdb": 1730,
+     "tmdbType": "movie",
+     "letterboxd": "inland-empire",
+     "sources": [
+      "lanthimos-closet-solo"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Paul Thomas Anderson",
+   "sources": [
+    {
+     "id": "pta-indiewire-44",
+     "kind": "interview",
+     "confidence": "medium",
+     "title": "44 filmes que PTA citou em entrevistas (IndieWire, com fonte por item; via No Film School)",
+     "url": "https://nofilmschool.com/paul-thomas-anderson-favorite-films",
+     "date": "2020-03",
+     "note": "Exclui The Master (filme dele) e a franquia Missão Impossível (sem título único). Lista de visionamentos recentes com citação, não ranking."
+    }
+   ],
+   "films": [
+    {
+     "title": "The Bitter Tea of General Yen",
+     "year": 1932,
+     "imdb": "tt0023814",
+     "tmdb": 34187,
+     "tmdbType": "movie",
+     "letterboxd": "the-bitter-tea-of-general-yen",
+     "sources": [
+      "pta-indiewire-44"
+     ]
+    },
+    {
+     "title": "Gaslight",
+     "year": 1944,
+     "imdb": "tt0036855",
+     "tmdb": 13528,
+     "tmdbType": "movie",
+     "letterboxd": "gaslight-1944",
+     "sources": [
+      "pta-indiewire-44"
+     ]
+    },
+    {
+     "title": "I Know Where I'm Going!",
+     "year": 1945,
+     "imdb": "tt0037800",
+     "tmdb": 56137,
+     "tmdbType": "movie",
+     "letterboxd": "i-know-where-im-going",
+     "sources": [
+      "pta-indiewire-44"
+     ]
+    },
+    {
+     "title": "The Big Sleep",
+     "year": 1946,
+     "imdb": "tt0038355",
+     "tmdb": 910,
+     "tmdbType": "movie",
+     "letterboxd": "the-big-sleep",
+     "sources": [
+      "pta-indiewire-44"
+     ]
+    },
+    {
+     "title": "The Passionate Friends",
+     "year": 1949,
+     "imdb": "tt0041735",
+     "tmdb": 51618,
+     "tmdbType": "movie",
+     "letterboxd": "the-passionate-friends",
+     "sources": [
+      "pta-indiewire-44"
+     ]
+    },
+    {
+     "title": "The Earrings of Madame de...",
+     "year": 1953,
+     "imdb": "tt0046022",
+     "tmdb": 27030,
+     "tmdbType": "movie",
+     "letterboxd": "the-earrings-of-madame-de",
+     "sources": [
+      "pta-indiewire-44"
+     ]
+    },
+    {
+     "title": "Rear Window",
+     "year": 1954,
+     "imdb": "tt0047396",
+     "tmdb": 567,
+     "tmdbType": "movie",
+     "letterboxd": "rear-window",
+     "sources": [
+      "pta-indiewire-44"
+     ]
+    },
+    {
+     "title": "Bad Day at Black Rock",
+     "year": 1955,
+     "imdb": "tt0047849",
+     "tmdb": 14554,
+     "tmdbType": "movie",
+     "letterboxd": "bad-day-at-black-rock",
+     "sources": [
+      "pta-indiewire-44"
+     ]
+    },
+    {
+     "title": "Lolita",
+     "year": 1962,
+     "imdb": "tt0056193",
+     "tmdb": 802,
+     "tmdbType": "movie",
+     "letterboxd": "lolita",
+     "sources": [
+      "pta-indiewire-44"
+     ]
+    },
+    {
+     "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
+     "year": 1964,
+     "imdb": "tt0057012",
+     "tmdb": 935,
+     "tmdbType": "movie",
+     "letterboxd": "dr-strangelove-or-how-i-learned-to-stop-worrying-and-love-the-bomb",
+     "sources": [
+      "pta-indiewire-44"
+     ]
+    },
+    {
+     "title": "I Am Cuba",
+     "year": 1964,
+     "imdb": "tt0058604",
+     "tmdb": 32015,
+     "tmdbType": "movie",
+     "letterboxd": "i-am-cuba",
+     "sources": [
+      "pta-indiewire-44"
+     ]
+    },
+    {
+     "title": "Jaws",
+     "year": 1975,
+     "imdb": "tt0073195",
+     "tmdb": 578,
+     "tmdbType": "movie",
+     "letterboxd": "jaws",
+     "sources": [
+      "pta-indiewire-44"
+     ]
+    },
+    {
+     "title": "Nashville",
+     "year": 1975,
+     "imdb": "tt0073440",
+     "tmdb": 3121,
+     "tmdbType": "movie",
+     "letterboxd": "nashville",
+     "sources": [
+      "pta-indiewire-44"
+     ]
+    },
+    {
+     "title": "The Shining",
+     "year": 1980,
+     "imdb": "tt0081505",
+     "tmdb": 694,
+     "tmdbType": "movie",
+     "letterboxd": "the-shining",
+     "sources": [
+      "pta-indiewire-44"
+     ]
+    },
+    {
+     "title": "Repo Man",
+     "year": 1984,
+     "imdb": "tt0087995",
+     "tmdb": 13820,
+     "tmdbType": "movie",
+     "letterboxd": "repo-man",
+     "sources": [
+      "pta-indiewire-44"
+     ]
+    },
+    {
+     "title": "Blue Velvet",
+     "year": 1986,
+     "imdb": "tt0090756",
+     "tmdb": 793,
+     "tmdbType": "movie",
+     "letterboxd": "blue-velvet",
+     "sources": [
+      "pta-indiewire-44"
+     ]
+    },
+    {
+     "title": "Full Metal Jacket",
+     "year": 1987,
+     "imdb": "tt0093058",
+     "tmdb": 600,
+     "tmdbType": "movie",
+     "letterboxd": "full-metal-jacket",
+     "sources": [
+      "pta-indiewire-44"
+     ]
+    },
+    {
+     "title": "House of Games",
+     "year": 1987,
+     "imdb": "tt0093223",
+     "tmdb": 26719,
+     "tmdbType": "movie",
+     "letterboxd": "house-of-games",
+     "sources": [
+      "pta-indiewire-44"
+     ]
+    },
+    {
+     "title": "Rain Man",
+     "year": 1988,
+     "imdb": "tt0095953",
+     "tmdb": 380,
+     "tmdbType": "movie",
+     "letterboxd": "rain-man",
+     "sources": [
+      "pta-indiewire-44"
+     ]
+    },
+    {
+     "title": "The Silence of the Lambs",
+     "year": 1991,
+     "imdb": "tt0102926",
+     "tmdb": 274,
+     "tmdbType": "movie",
+     "letterboxd": "the-silence-of-the-lambs",
+     "sources": [
+      "pta-indiewire-44"
+     ]
+    },
+    {
+     "title": "What's Eating Gilbert Grape",
+     "year": 1993,
+     "imdb": "tt0108550",
+     "tmdb": 1587,
+     "tmdbType": "movie",
+     "letterboxd": "whats-eating-gilbert-grape",
+     "sources": [
+      "pta-indiewire-44"
+     ]
+    },
+    {
+     "title": "The Birdcage",
+     "year": 1996,
+     "imdb": "tt0115685",
+     "tmdb": 11000,
+     "tmdbType": "movie",
+     "letterboxd": "the-birdcage",
+     "sources": [
+      "pta-indiewire-44"
+     ]
+    },
+    {
+     "title": "Jackie Brown",
+     "year": 1997,
+     "imdb": "tt0119396",
+     "tmdb": 184,
+     "tmdbType": "movie",
+     "letterboxd": "jackie-brown",
+     "sources": [
+      "pta-indiewire-44"
+     ]
+    },
+    {
+     "title": "Big Daddy",
+     "year": 1999,
+     "imdb": "tt0142342",
+     "tmdb": 9032,
+     "tmdbType": "movie",
+     "letterboxd": "big-daddy",
+     "sources": [
+      "pta-indiewire-44"
+     ]
+    },
+    {
+     "title": "Dogville",
+     "year": 2003,
+     "imdb": "tt0276919",
+     "tmdb": 553,
+     "tmdbType": "movie",
+     "letterboxd": "dogville",
+     "sources": [
+      "pta-indiewire-44"
+     ]
+    },
+    {
+     "title": "Moonlight",
+     "year": 2016,
+     "imdb": "tt4975722",
+     "tmdb": 376867,
+     "tmdbType": "movie",
+     "letterboxd": "moonlight-2016",
+     "sources": [
+      "pta-indiewire-44"
+     ]
+    },
+    {
+     "title": "Call Me by Your Name",
+     "year": 2017,
+     "imdb": "tt5726616",
+     "tmdb": 398818,
+     "tmdbType": "movie",
+     "letterboxd": "call-me-by-your-name",
+     "sources": [
+      "pta-indiewire-44"
+     ]
+    },
+    {
+     "title": "City of Ghosts",
+     "year": 2017,
+     "imdb": "tt6333056",
+     "tmdb": 428501,
+     "tmdbType": "movie",
+     "letterboxd": "city-of-ghosts-2017",
+     "sources": [
+      "pta-indiewire-44"
+     ]
+    },
+    {
+     "title": "Dunkirk",
+     "year": 2017,
+     "imdb": "tt5013056",
+     "tmdb": 374720,
+     "tmdbType": "movie",
+     "letterboxd": "dunkirk-2017",
+     "sources": [
+      "pta-indiewire-44"
+     ]
+    },
+    {
+     "title": "Get Out",
+     "year": 2017,
+     "imdb": "tt5052448",
+     "tmdb": 419430,
+     "tmdbType": "movie",
+     "letterboxd": "get-out-2017",
+     "sources": [
+      "pta-indiewire-44"
+     ]
+    },
+    {
+     "title": "Girls Trip",
+     "year": 2017,
+     "imdb": "tt3564472",
+     "tmdb": 417870,
+     "tmdbType": "movie",
+     "letterboxd": "girls-trip",
+     "sources": [
+      "pta-indiewire-44"
+     ]
+    },
+    {
+     "title": "Lady Bird",
+     "year": 2017,
+     "imdb": "tt4925292",
+     "tmdb": 391713,
+     "tmdbType": "movie",
+     "letterboxd": "lady-bird",
+     "sources": [
+      "pta-indiewire-44"
+     ]
+    },
+    {
+     "title": "The Post",
+     "year": 2017,
+     "imdb": "tt6294822",
+     "tmdb": 446354,
+     "tmdbType": "movie",
+     "letterboxd": "the-post-2017",
+     "sources": [
+      "pta-indiewire-44"
+     ]
+    },
+    {
+     "title": "The Shape of Water",
+     "year": 2017,
+     "imdb": "tt5580390",
+     "tmdb": 399055,
+     "tmdbType": "movie",
+     "letterboxd": "the-shape-of-water",
+     "sources": [
+      "pta-indiewire-44"
+     ]
+    },
+    {
+     "title": "A Quiet Place",
+     "year": 2018,
+     "imdb": "tt6644200",
+     "tmdb": 447332,
+     "tmdbType": "movie",
+     "letterboxd": "a-quiet-place-2018",
+     "sources": [
+      "pta-indiewire-44"
+     ]
+    },
+    {
+     "title": "If Beale Street Could Talk",
+     "year": 2018,
+     "imdb": "tt7125860",
+     "tmdb": 465914,
+     "tmdbType": "movie",
+     "letterboxd": "if-beale-street-could-talk",
+     "sources": [
+      "pta-indiewire-44"
+     ]
+    },
+    {
+     "title": "Gunda",
+     "year": 2020,
+     "imdb": "tt11464016",
+     "tmdb": 664601,
+     "tmdbType": "movie",
+     "letterboxd": "gunda-2020",
+     "sources": [
+      "pta-indiewire-44"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Werner Herzog",
+   "sources": [
+    {
+     "id": "herzog-rt-2009",
+     "kind": "interview",
+     "confidence": "medium",
+     "title": "Herzog escolhe os 5 melhores filmes (Rotten Tomatoes, 2009; via Open Culture)",
+     "url": "https://openculture.com/2014/05/werner-herzog-picks-his-5-favorite-films.html",
+     "date": "2009"
+    }
+   ],
+   "films": [
+    {
+     "title": "Intolerance: Love's Struggle Throughout the Ages",
+     "year": 1916,
+     "imdb": "tt0006864",
+     "tmdb": 3059,
+     "tmdbType": "movie",
+     "letterboxd": "intolerance-loves-struggle-throughout-the-ages",
+     "sources": [
+      "herzog-rt-2009"
+     ]
+    },
+    {
+     "title": "Nosferatu",
+     "year": 1922,
+     "imdb": "tt0013442",
+     "tmdb": 653,
+     "tmdbType": "movie",
+     "letterboxd": "nosferatu",
+     "sources": [
+      "herzog-rt-2009"
+     ]
+    },
+    {
+     "title": "Freaks",
+     "year": 1932,
+     "imdb": "tt0022913",
+     "tmdb": 136,
+     "tmdbType": "movie",
+     "letterboxd": "freaks",
+     "sources": [
+      "herzog-rt-2009"
+     ]
+    },
+    {
+     "title": "Rashomon",
+     "year": 1950,
+     "imdb": "tt0042876",
+     "tmdb": 548,
+     "tmdbType": "movie",
+     "letterboxd": "rashomon",
+     "sources": [
+      "herzog-rt-2009"
+     ]
+    },
+    {
+     "title": "Where Is the Friend's House?",
+     "year": 1987,
+     "imdb": "tt0093342",
+     "tmdb": 49964,
+     "tmdbType": "movie",
+     "letterboxd": "where-is-the-friends-house",
+     "sources": [
+      "herzog-rt-2009"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Denis Villeneuve",
+   "sources": [
+    {
+     "id": "villeneuve-closet",
+     "kind": "criterion-closet",
+     "confidence": "high",
+     "title": "Villeneuve: Criterion Closet Picks",
+     "url": "https://www.criterion.com/shop/collection/771-denis-villeneuve-s-closet-picks",
+     "date": null,
+     "note": "Filmes lidos na transcrição da conta closetpicks no Letterboxd (caixas expandidas); a página da Criterion confere os títulos."
+    }
+   ],
+   "films": [
+    {
+     "title": "The Wages of Fear",
+     "year": 1953,
+     "imdb": "tt0046268",
+     "tmdb": 204,
+     "tmdbType": "movie",
+     "letterboxd": "the-wages-of-fear",
+     "sources": [
+      "villeneuve-closet"
+     ]
+    },
+    {
+     "title": "Seven Samurai",
+     "year": 1954,
+     "imdb": "tt0047478",
+     "tmdb": 346,
+     "tmdbType": "movie",
+     "letterboxd": "seven-samurai",
+     "sources": [
+      "villeneuve-closet"
+     ]
+    },
+    {
+     "title": "Through a Glass Darkly",
+     "year": 1961,
+     "imdb": "tt0055499",
+     "tmdb": 11602,
+     "tmdbType": "movie",
+     "letterboxd": "through-a-glass-darkly",
+     "sources": [
+      "villeneuve-closet"
+     ]
+    },
+    {
+     "title": "The Silence",
+     "year": 1963,
+     "imdb": "tt0057611",
+     "tmdb": 11506,
+     "tmdbType": "movie",
+     "letterboxd": "the-silence",
+     "sources": [
+      "villeneuve-closet"
+     ]
+    },
+    {
+     "title": "Winter Light",
+     "year": 1963,
+     "imdb": "tt0057358",
+     "tmdb": 29455,
+     "tmdbType": "movie",
+     "letterboxd": "winter-light",
+     "sources": [
+      "villeneuve-closet"
+     ]
+    },
+    {
+     "title": "Satyricon",
+     "year": 1969,
+     "imdb": "tt0064940",
+     "tmdb": 11163,
+     "tmdbType": "movie",
+     "letterboxd": "satyricon-1969",
+     "sources": [
+      "villeneuve-closet"
+     ]
+    },
+    {
+     "title": "The Element of Crime",
+     "year": 1984,
+     "imdb": "tt0087280",
+     "tmdb": 9063,
+     "tmdbType": "movie",
+     "letterboxd": "the-element-of-crime",
+     "sources": [
+      "villeneuve-closet"
+     ]
+    },
+    {
+     "title": "Epidemic",
+     "year": 1987,
+     "imdb": "tt0092972",
+     "tmdb": 29445,
+     "tmdbType": "movie",
+     "letterboxd": "epidemic",
+     "sources": [
+      "villeneuve-closet"
+     ]
+    },
+    {
+     "title": "Europa",
+     "year": 1991,
+     "imdb": "tt0101829",
+     "tmdb": 9065,
+     "tmdbType": "movie",
+     "letterboxd": "europa",
+     "sources": [
+      "villeneuve-closet"
+     ]
+    },
+    {
+     "title": "Three Colours: Blue",
+     "year": 1993,
+     "imdb": "tt0108394",
+     "tmdb": 108,
+     "tmdbType": "movie",
+     "letterboxd": "three-colours-blue",
+     "sources": [
+      "villeneuve-closet"
+     ]
+    },
+    {
+     "title": "Three Colours: Red",
+     "year": 1994,
+     "imdb": "tt0111495",
+     "tmdb": 110,
+     "tmdbType": "movie",
+     "letterboxd": "three-colours-red",
+     "sources": [
+      "villeneuve-closet"
+     ]
+    },
+    {
+     "title": "Three Colours: White",
+     "year": 1994,
+     "imdb": "tt0111507",
+     "tmdb": 109,
+     "tmdbType": "movie",
+     "letterboxd": "three-colours-white",
+     "sources": [
+      "villeneuve-closet"
+     ]
+    },
+    {
+     "title": "Che: Part One",
+     "year": 2008,
+     "imdb": "tt0892255",
+     "tmdb": 8881,
+     "tmdbType": "movie",
+     "letterboxd": "che-part-one",
+     "sources": [
+      "villeneuve-closet"
+     ]
+    },
+    {
+     "title": "Che: Part Two",
+     "year": 2008,
+     "imdb": "tt0374569",
+     "tmdb": 8880,
+     "tmdbType": "movie",
+     "letterboxd": "che-part-two",
+     "sources": [
+      "villeneuve-closet"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Richard Linklater",
+   "sources": [
+    {
+     "id": "linklater-ss2022",
+     "kind": "sight-and-sound-2022",
+     "confidence": "high",
+     "title": "Cédula individual, Sight and Sound 2022 (enquete de diretores)",
+     "url": "https://www.bfi.org.uk/sight-and-sound/greatest-films-all-time/all-voters/richard-linklater",
+     "date": "2022"
+    },
+    {
+     "id": "linklater-criterion-top10",
+     "kind": "criterion-top10",
+     "confidence": "high",
+     "title": "Richard Linklater's Top 10 (Criterion, Current)",
+     "url": "https://www.criterion.com/current/top-10-lists/42-richard-linklater-s-top-10",
+     "date": null
+    }
+   ],
+   "films": [
+    {
+     "title": "Fanny and Alexander",
+     "year": 1982,
+     "imdb": "tt0083922",
+     "tmdb": 5961,
+     "tmdbType": "movie",
+     "letterboxd": "fanny-and-alexander",
+     "sources": [
+      "linklater-ss2022",
+      "linklater-criterion-top10"
+     ]
+    },
+    {
+     "title": "Citizen Kane",
+     "year": 1941,
+     "imdb": "tt0033467",
+     "tmdb": 15,
+     "tmdbType": "movie",
+     "letterboxd": "citizen-kane",
+     "sources": [
+      "linklater-ss2022"
+     ]
+    },
+    {
+     "title": "Day of Wrath",
+     "year": 1943,
+     "imdb": "tt0036506",
+     "tmdb": 41391,
+     "tmdbType": "movie",
+     "letterboxd": "day-of-wrath",
+     "sources": [
+      "linklater-criterion-top10"
+     ]
+    },
+    {
+     "title": "I Know Where I'm Going!",
+     "year": 1945,
+     "imdb": "tt0037800",
+     "tmdb": 56137,
+     "tmdbType": "movie",
+     "letterboxd": "i-know-where-im-going",
+     "sources": [
+      "linklater-criterion-top10"
+     ]
+    },
+    {
+     "title": "Unfaithfully Yours",
+     "year": 1948,
+     "imdb": "tt0040919",
+     "tmdb": 33115,
+     "tmdbType": "movie",
+     "letterboxd": "unfaithfully-yours",
+     "sources": [
+      "linklater-criterion-top10"
+     ]
+    },
+    {
+     "title": "The Flowers of St. Francis",
+     "year": 1950,
+     "imdb": "tt0042477",
+     "tmdb": 56518,
+     "tmdbType": "movie",
+     "letterboxd": "the-flowers-of-st-francis",
+     "sources": [
+      "linklater-criterion-top10"
+     ]
+    },
+    {
+     "title": "Tokyo Story",
+     "year": 1953,
+     "imdb": "tt0046438",
+     "tmdb": 18148,
+     "tmdbType": "movie",
+     "letterboxd": "tokyo-story",
+     "sources": [
+      "linklater-criterion-top10"
+     ]
+    },
+    {
+     "title": "Some Came Running",
+     "year": 1958,
+     "imdb": "tt0052218",
+     "tmdb": 38724,
+     "tmdbType": "movie",
+     "letterboxd": "some-came-running",
+     "sources": [
+      "linklater-ss2022"
+     ]
+    },
+    {
+     "title": "Pickpocket",
+     "year": 1959,
+     "imdb": "tt0053168",
+     "tmdb": 690,
+     "tmdbType": "movie",
+     "letterboxd": "pickpocket",
+     "sources": [
+      "linklater-criterion-top10"
+     ]
+    },
+    {
+     "title": "Andrei Rublev",
+     "year": 1966,
+     "imdb": "tt0060107",
+     "tmdb": 895,
+     "tmdbType": "movie",
+     "letterboxd": "andrei-rublev",
+     "sources": [
+      "linklater-criterion-top10"
+     ]
+    },
+    {
+     "title": "Au Hasard Balthazar",
+     "year": 1966,
+     "imdb": "tt0060138",
+     "tmdb": 20108,
+     "tmdbType": "movie",
+     "letterboxd": "au-hasard-balthazar",
+     "sources": [
+      "linklater-criterion-top10"
+     ]
+    },
+    {
+     "title": "The Last Picture Show",
+     "year": 1971,
+     "imdb": "tt0067328",
+     "tmdb": 25188,
+     "tmdbType": "movie",
+     "letterboxd": "the-last-picture-show",
+     "sources": [
+      "linklater-ss2022"
+     ]
+    },
+    {
+     "title": "The Godfather",
+     "year": 1972,
+     "imdb": "tt0068646",
+     "tmdb": 238,
+     "tmdbType": "movie",
+     "letterboxd": "the-godfather",
+     "sources": [
+      "linklater-ss2022"
+     ]
+    },
+    {
+     "title": "The Mother and the Whore",
+     "year": 1973,
+     "imdb": "tt0070359",
+     "tmdb": 48693,
+     "tmdbType": "movie",
+     "letterboxd": "the-mother-and-the-whore",
+     "sources": [
+      "linklater-ss2022"
+     ]
+    },
+    {
+     "title": "Barry Lyndon",
+     "year": 1975,
+     "imdb": "tt0072684",
+     "tmdb": 3175,
+     "tmdbType": "movie",
+     "letterboxd": "barry-lyndon",
+     "sources": [
+      "linklater-ss2022"
+     ]
+    },
+    {
+     "title": "Nashville",
+     "year": 1975,
+     "imdb": "tt0073440",
+     "tmdb": 3121,
+     "tmdbType": "movie",
+     "letterboxd": "nashville",
+     "sources": [
+      "linklater-ss2022"
+     ]
+    },
+    {
+     "title": "L'Argent",
+     "year": 1983,
+     "imdb": "tt0085180",
+     "tmdb": 42112,
+     "tmdbType": "movie",
+     "letterboxd": "largent-1983",
+     "sources": [
+      "linklater-ss2022"
+     ]
+    },
+    {
+     "title": "The Last Temptation of Christ",
+     "year": 1988,
+     "imdb": "tt0095497",
+     "tmdb": 11051,
+     "tmdbType": "movie",
+     "letterboxd": "the-last-temptation-of-christ",
+     "sources": [
+      "linklater-criterion-top10"
+     ]
+    },
+    {
+     "title": "GoodFellas",
+     "year": 1990,
+     "imdb": "tt0099685",
+     "tmdb": 769,
+     "tmdbType": "movie",
+     "letterboxd": "goodfellas",
+     "sources": [
+      "linklater-ss2022"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Joel e Ethan Coen",
+   "sources": [],
+   "films": []
+  },
+  {
+   "name": "Quentin Tarantino",
+   "sources": [
+    {
+     "id": "tarantino-ss2012",
+     "kind": "sight-and-sound-2012",
+     "confidence": "high",
+     "title": "Cédula individual, Sight and Sound 2012 (enquete de diretores)",
+     "url": "http://www.bfi.org.uk/films-tv-people/sightandsoundpoll2012/voter/1134",
+     "date": "2012"
+    },
+    {
+     "id": "tarantino-sky-2009",
+     "kind": "interview",
+     "confidence": "medium",
+     "title": "Os 20 filmes favoritos de 1992 a 2009 (Sky Movies, 2009, com transcrição; via Flicks)",
+     "url": "https://flicks.co.nz/features/quentin-tarantinos-favourite-20-movies-from-1992-to-2009",
+     "date": "2009"
+    }
+   ],
+   "films": [
+    {
+     "title": "Dazed and Confused",
+     "year": 1993,
+     "imdb": "tt0106677",
+     "tmdb": 9571,
+     "tmdbType": "movie",
+     "letterboxd": "dazed-and-confused",
+     "sources": [
+      "tarantino-ss2012",
+      "tarantino-sky-2009"
+     ]
+    },
+    {
+     "title": "His Girl Friday",
+     "year": 1940,
+     "imdb": "tt0032599",
+     "tmdb": 3085,
+     "tmdbType": "movie",
+     "letterboxd": "his-girl-friday",
+     "sources": [
+      "tarantino-ss2012"
+     ]
+    },
+    {
+     "title": "The Great Escape",
+     "year": 1963,
+     "imdb": "tt0057115",
+     "tmdb": 5925,
+     "tmdbType": "movie",
+     "letterboxd": "the-great-escape",
+     "sources": [
+      "tarantino-ss2012"
+     ]
+    },
+    {
+     "title": "The Good, the Bad and the Ugly",
+     "year": 1966,
+     "imdb": "tt0060196",
+     "tmdb": 429,
+     "tmdbType": "movie",
+     "letterboxd": "the-good-the-bad-and-the-ugly",
+     "sources": [
+      "tarantino-ss2012"
+     ]
+    },
+    {
+     "title": "Pretty Maids All in a Row",
+     "year": 1971,
+     "imdb": "tt0067610",
+     "tmdb": 69321,
+     "tmdbType": "movie",
+     "letterboxd": "pretty-maids-all-in-a-row",
+     "sources": [
+      "tarantino-ss2012"
+     ]
+    },
+    {
+     "title": "Jaws",
+     "year": 1975,
+     "imdb": "tt0073195",
+     "tmdb": 578,
+     "tmdbType": "movie",
+     "letterboxd": "jaws",
+     "sources": [
+      "tarantino-ss2012"
+     ]
+    },
+    {
+     "title": "Carrie",
+     "year": 1976,
+     "imdb": "tt0074285",
+     "tmdb": 7340,
+     "tmdbType": "movie",
+     "letterboxd": "carrie-1976",
+     "sources": [
+      "tarantino-ss2012"
+     ]
+    },
+    {
+     "title": "Taxi Driver",
+     "year": 1976,
+     "imdb": "tt0075314",
+     "tmdb": 103,
+     "tmdbType": "movie",
+     "letterboxd": "taxi-driver",
+     "sources": [
+      "tarantino-ss2012"
+     ]
+    },
+    {
+     "title": "The Bad News Bears",
+     "year": 1976,
+     "imdb": "tt0074174",
+     "tmdb": 23479,
+     "tmdbType": "movie",
+     "letterboxd": "the-bad-news-bears",
+     "sources": [
+      "tarantino-ss2012"
+     ]
+    },
+    {
+     "title": "Rolling Thunder",
+     "year": 1977,
+     "imdb": "tt0076637",
+     "tmdb": 21948,
+     "tmdbType": "movie",
+     "letterboxd": "rolling-thunder",
+     "sources": [
+      "tarantino-ss2012"
+     ]
+    },
+    {
+     "title": "Sorcerer",
+     "year": 1977,
+     "imdb": "tt0076740",
+     "tmdb": 38985,
+     "tmdbType": "movie",
+     "letterboxd": "sorcerer",
+     "sources": [
+      "tarantino-ss2012"
+     ]
+    },
+    {
+     "title": "Apocalypse Now",
+     "year": 1979,
+     "imdb": "tt0078788",
+     "tmdb": 28,
+     "tmdbType": "movie",
+     "letterboxd": "apocalypse-now",
+     "sources": [
+      "tarantino-ss2012"
+     ]
+    },
+    {
+     "title": "Police Story 3: Super Cop",
+     "year": 1992,
+     "imdb": "tt0104558",
+     "tmdb": 11134,
+     "tmdbType": "movie",
+     "letterboxd": "police-story-3-super-cop",
+     "sources": [
+      "tarantino-sky-2009"
+     ]
+    },
+    {
+     "title": "Speed",
+     "year": 1994,
+     "imdb": "tt0111257",
+     "tmdb": 1637,
+     "tmdbType": "movie",
+     "letterboxd": "speed",
+     "sources": [
+      "tarantino-sky-2009"
+     ]
+    },
+    {
+     "title": "Friday",
+     "year": 1995,
+     "imdb": "tt0113118",
+     "tmdb": 10634,
+     "tmdbType": "movie",
+     "letterboxd": "friday",
+     "sources": [
+      "tarantino-sky-2009"
+     ]
+    },
+    {
+     "title": "The Blade",
+     "year": 1995,
+     "imdb": "tt0112800",
+     "tmdb": 42845,
+     "tmdbType": "movie",
+     "letterboxd": "the-blade",
+     "sources": [
+      "tarantino-sky-2009"
+     ]
+    },
+    {
+     "title": "Boogie Nights",
+     "year": 1997,
+     "imdb": "tt0118749",
+     "tmdb": 4995,
+     "tmdbType": "movie",
+     "letterboxd": "boogie-nights",
+     "sources": [
+      "tarantino-sky-2009"
+     ]
+    },
+    {
+     "title": "Audition",
+     "year": 1999,
+     "imdb": "tt0235198",
+     "tmdb": 11075,
+     "tmdbType": "movie",
+     "letterboxd": "audition",
+     "sources": [
+      "tarantino-sky-2009"
+     ]
+    },
+    {
+     "title": "Fight Club",
+     "year": 1999,
+     "imdb": "tt0137523",
+     "tmdb": 550,
+     "tmdbType": "movie",
+     "letterboxd": "fight-club",
+     "sources": [
+      "tarantino-sky-2009"
+     ]
+    },
+    {
+     "title": "The Insider",
+     "year": 1999,
+     "imdb": "tt0140352",
+     "tmdb": 9008,
+     "tmdbType": "movie",
+     "letterboxd": "the-insider",
+     "sources": [
+      "tarantino-sky-2009"
+     ]
+    },
+    {
+     "title": "The Matrix",
+     "year": 1999,
+     "imdb": "tt0133093",
+     "tmdb": 603,
+     "tmdbType": "movie",
+     "letterboxd": "the-matrix",
+     "sources": [
+      "tarantino-sky-2009"
+     ]
+    },
+    {
+     "title": "Battle Royale",
+     "year": 2000,
+     "imdb": "tt0266308",
+     "tmdb": 3176,
+     "tmdbType": "movie",
+     "letterboxd": "battle-royale",
+     "sources": [
+      "tarantino-sky-2009"
+     ]
+    },
+    {
+     "title": "Joint Security Area",
+     "year": 2000,
+     "imdb": "tt0260991",
+     "tmdb": 2440,
+     "tmdbType": "movie",
+     "letterboxd": "joint-security-area",
+     "sources": [
+      "tarantino-sky-2009"
+     ]
+    },
+    {
+     "title": "Unbreakable",
+     "year": 2000,
+     "imdb": "tt0217869",
+     "tmdb": 9741,
+     "tmdbType": "movie",
+     "letterboxd": "unbreakable",
+     "sources": [
+      "tarantino-sky-2009"
+     ]
+    },
+    {
+     "title": "Anything Else",
+     "year": 2003,
+     "imdb": "tt0313792",
+     "tmdb": 10739,
+     "tmdbType": "movie",
+     "letterboxd": "anything-else",
+     "sources": [
+      "tarantino-sky-2009"
+     ]
+    },
+    {
+     "title": "Dogville",
+     "year": 2003,
+     "imdb": "tt0276919",
+     "tmdb": 553,
+     "tmdbType": "movie",
+     "letterboxd": "dogville",
+     "sources": [
+      "tarantino-sky-2009"
+     ]
+    },
+    {
+     "title": "Lost in Translation",
+     "year": 2003,
+     "imdb": "tt0335266",
+     "tmdb": 153,
+     "tmdbType": "movie",
+     "letterboxd": "lost-in-translation",
+     "sources": [
+      "tarantino-sky-2009"
+     ]
+    },
+    {
+     "title": "Memories of Murder",
+     "year": 2003,
+     "imdb": "tt0353969",
+     "tmdb": 11423,
+     "tmdbType": "movie",
+     "letterboxd": "memories-of-murder",
+     "sources": [
+      "tarantino-sky-2009"
+     ]
+    },
+    {
+     "title": "Shaun of the Dead",
+     "year": 2004,
+     "imdb": "tt0365748",
+     "tmdb": 747,
+     "tmdbType": "movie",
+     "letterboxd": "shaun-of-the-dead",
+     "sources": [
+      "tarantino-sky-2009"
+     ]
+    },
+    {
+     "title": "Team America: World Police",
+     "year": 2004,
+     "imdb": "tt0372588",
+     "tmdb": 3989,
+     "tmdbType": "movie",
+     "letterboxd": "team-america-world-police",
+     "sources": [
+      "tarantino-sky-2009"
+     ]
+    },
+    {
+     "title": "The Host",
+     "year": 2006,
+     "imdb": "tt0468492",
+     "tmdb": 1255,
+     "tmdbType": "movie",
+     "letterboxd": "the-host",
+     "sources": [
+      "tarantino-sky-2009"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Pedro Almodóvar",
+   "sources": [
+    {
+     "id": "almodovar-mubi",
+     "kind": "interview",
+     "confidence": "medium",
+     "title": "43 filmes compilados pelo MUBI de S&S 1992, Time Out 1995, Nickelodeon 1994, El País 2010, AFI Fest 2012 (via The Film Stage)",
+     "url": "https://thefilmstage.com/pedro-almodovars-favorite-films-of-all-time",
+     "date": "2014-10",
+     "note": "Compilação do MUBI; as cédulas originais não foram vistas. \"The Finger Man\" (1962) não bate com nenhum título conhecido: tratar como suspeito."
+    }
+   ],
+   "films": [
+    {
+     "title": "Easy Living",
+     "year": 1937,
+     "imdb": "tt0028816",
+     "tmdb": 80364,
+     "tmdbType": "movie",
+     "letterboxd": "easy-living",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    },
+    {
+     "title": "Midnight",
+     "year": 1939,
+     "imdb": "tt0031647",
+     "tmdb": 31993,
+     "tmdbType": "movie",
+     "letterboxd": "midnight-1939",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    },
+    {
+     "title": "The Rules of the Game",
+     "year": 1939,
+     "imdb": "tt0031885",
+     "tmdb": 776,
+     "tmdbType": "movie",
+     "letterboxd": "the-rules-of-the-game",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    },
+    {
+     "title": "Citizen Kane",
+     "year": 1941,
+     "imdb": "tt0033467",
+     "tmdb": 15,
+     "tmdbType": "movie",
+     "letterboxd": "citizen-kane",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    },
+    {
+     "title": "To Be or Not to Be",
+     "year": 1942,
+     "imdb": "tt0035446",
+     "tmdb": 198,
+     "tmdbType": "movie",
+     "letterboxd": "to-be-or-not-to-be",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    },
+    {
+     "title": "Leave Her to Heaven",
+     "year": 1945,
+     "imdb": "tt0037865",
+     "tmdb": 17645,
+     "tmdbType": "movie",
+     "letterboxd": "leave-her-to-heaven",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    },
+    {
+     "title": "The Killers",
+     "year": 1946,
+     "imdb": "tt0038669",
+     "tmdb": 14638,
+     "tmdbType": "movie",
+     "letterboxd": "the-killers",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    },
+    {
+     "title": "Nightmare Alley",
+     "year": 1947,
+     "imdb": "tt0039661",
+     "tmdb": 19169,
+     "tmdbType": "movie",
+     "letterboxd": "nightmare-alley",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    },
+    {
+     "title": "Out of the Past",
+     "year": 1947,
+     "imdb": "tt0039689",
+     "tmdb": 678,
+     "tmdbType": "movie",
+     "letterboxd": "out-of-the-past",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    },
+    {
+     "title": "Letter from an Unknown Woman",
+     "year": 1948,
+     "imdb": "tt0040536",
+     "tmdb": 946,
+     "tmdbType": "movie",
+     "letterboxd": "letter-from-an-unknown-woman",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    },
+    {
+     "title": "All About Eve",
+     "year": 1950,
+     "imdb": "tt0042192",
+     "tmdb": 705,
+     "tmdbType": "movie",
+     "letterboxd": "all-about-eve",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    },
+    {
+     "title": "Rashomon",
+     "year": 1950,
+     "imdb": "tt0042876",
+     "tmdb": 548,
+     "tmdbType": "movie",
+     "letterboxd": "rashomon",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    },
+    {
+     "title": "The Quiet Man",
+     "year": 1952,
+     "imdb": "tt0045061",
+     "tmdb": 3109,
+     "tmdbType": "movie",
+     "letterboxd": "the-quiet-man",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    },
+    {
+     "title": "Él",
+     "year": 1953,
+     "imdb": "tt0045361",
+     "tmdb": 43344,
+     "tmdbType": "movie",
+     "letterboxd": "el",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    },
+    {
+     "title": "Johnny Guitar",
+     "year": 1954,
+     "imdb": "tt0047136",
+     "tmdb": 26596,
+     "tmdbType": "movie",
+     "letterboxd": "johnny-guitar",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    },
+    {
+     "title": "Journey to Italy",
+     "year": 1954,
+     "imdb": "tt0046511",
+     "tmdb": 2748,
+     "tmdbType": "movie",
+     "letterboxd": "journey-to-italy",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    },
+    {
+     "title": "Senso",
+     "year": 1954,
+     "imdb": "tt0047469",
+     "tmdb": 43195,
+     "tmdbType": "movie",
+     "letterboxd": "senso",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    },
+    {
+     "title": "The Criminal Life of Archibaldo de la Cruz",
+     "year": 1955,
+     "imdb": "tt0048037",
+     "tmdb": 37628,
+     "tmdbType": "movie",
+     "letterboxd": "the-criminal-life-of-archibaldo-de-la-cruz",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    },
+    {
+     "title": "The Night of the Hunter",
+     "year": 1955,
+     "imdb": "tt0048424",
+     "tmdb": 3112,
+     "tmdbType": "movie",
+     "letterboxd": "the-night-of-the-hunter",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    },
+    {
+     "title": "The Searchers",
+     "year": 1956,
+     "imdb": "tt0049730",
+     "tmdb": 3114,
+     "tmdbType": "movie",
+     "letterboxd": "the-searchers",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    },
+    {
+     "title": "Funny Face",
+     "year": 1957,
+     "imdb": "tt0050419",
+     "tmdb": 13320,
+     "tmdbType": "movie",
+     "letterboxd": "funny-face",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    },
+    {
+     "title": "Touch of Evil",
+     "year": 1958,
+     "imdb": "tt0052311",
+     "tmdb": 1480,
+     "tmdbType": "movie",
+     "letterboxd": "touch-of-evil",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    },
+    {
+     "title": "Vertigo",
+     "year": 1958,
+     "imdb": "tt0052357",
+     "tmdb": 426,
+     "tmdbType": "movie",
+     "letterboxd": "vertigo",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    },
+    {
+     "title": "North by Northwest",
+     "year": 1959,
+     "imdb": "tt0053125",
+     "tmdb": 213,
+     "tmdbType": "movie",
+     "letterboxd": "north-by-northwest",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    },
+    {
+     "title": "Some Like It Hot",
+     "year": 1959,
+     "imdb": "tt0053291",
+     "tmdb": 239,
+     "tmdbType": "movie",
+     "letterboxd": "some-like-it-hot",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    },
+    {
+     "title": "Eyes Without a Face",
+     "year": 1960,
+     "imdb": "tt0053459",
+     "tmdb": 31417,
+     "tmdbType": "movie",
+     "letterboxd": "eyes-without-a-face",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    },
+    {
+     "title": "The Apartment",
+     "year": 1960,
+     "imdb": "tt0053604",
+     "tmdb": 284,
+     "tmdbType": "movie",
+     "letterboxd": "the-apartment",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    },
+    {
+     "title": "Splendor in the Grass",
+     "year": 1961,
+     "imdb": "tt0055471",
+     "tmdb": 28569,
+     "tmdbType": "movie",
+     "letterboxd": "splendor-in-the-grass",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    },
+    {
+     "title": "Viridiana",
+     "year": 1961,
+     "imdb": "tt0055601",
+     "tmdb": 4497,
+     "tmdbType": "movie",
+     "letterboxd": "viridiana",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    },
+    {
+     "title": "Le Doulos",
+     "year": 1962,
+     "imdb": "tt0054821",
+     "tmdb": 20778,
+     "tmdbType": "movie",
+     "letterboxd": "le-doulos",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    },
+    {
+     "title": "8½",
+     "year": 1963,
+     "imdb": "tt0056801",
+     "tmdb": 422,
+     "tmdbType": "movie",
+     "letterboxd": "8-half",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    },
+    {
+     "title": "The Executioner",
+     "year": 1963,
+     "imdb": "tt0057643",
+     "tmdb": 4498,
+     "tmdbType": "movie",
+     "letterboxd": "the-executioner",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    },
+    {
+     "title": "Red Desert",
+     "year": 1964,
+     "imdb": "tt0058003",
+     "tmdb": 26638,
+     "tmdbType": "movie",
+     "letterboxd": "red-desert",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    },
+    {
+     "title": "Le Cercle Rouge",
+     "year": 1970,
+     "imdb": "tt0065531",
+     "tmdb": 11657,
+     "tmdbType": "movie",
+     "letterboxd": "le-cercle-rouge",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    },
+    {
+     "title": "Amarcord",
+     "year": 1973,
+     "imdb": "tt0071129",
+     "tmdb": 7857,
+     "tmdbType": "movie",
+     "letterboxd": "amarcord",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    },
+    {
+     "title": "The Godfather Part II",
+     "year": 1974,
+     "imdb": "tt0071562",
+     "tmdb": 240,
+     "tmdbType": "movie",
+     "letterboxd": "the-godfather-part-ii",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    },
+    {
+     "title": "Taxi Driver",
+     "year": 1976,
+     "imdb": "tt0075314",
+     "tmdb": 103,
+     "tmdbType": "movie",
+     "letterboxd": "taxi-driver",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    },
+    {
+     "title": "Opening Night",
+     "year": 1977,
+     "imdb": "tt0079672",
+     "tmdb": 33665,
+     "tmdbType": "movie",
+     "letterboxd": "opening-night",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    },
+    {
+     "title": "Raging Bull",
+     "year": 1980,
+     "imdb": "tt0081398",
+     "tmdb": 1578,
+     "tmdbType": "movie",
+     "letterboxd": "raging-bull",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    },
+    {
+     "title": "Blue Velvet",
+     "year": 1986,
+     "imdb": "tt0090756",
+     "tmdb": 793,
+     "tmdbType": "movie",
+     "letterboxd": "blue-velvet",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    },
+    {
+     "title": "The Dead",
+     "year": 1987,
+     "imdb": "tt0092843",
+     "tmdb": 39507,
+     "tmdbType": "movie",
+     "letterboxd": "the-dead",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    },
+    {
+     "title": "Husbands and Wives",
+     "year": 1992,
+     "imdb": "tt0104466",
+     "tmdb": 28384,
+     "tmdbType": "movie",
+     "letterboxd": "husbands-and-wives",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    },
+    {
+     "title": "Schindler's List",
+     "year": 1993,
+     "imdb": "tt0108052",
+     "tmdb": 424,
+     "tmdbType": "movie",
+     "letterboxd": "schindlers-list",
+     "sources": [
+      "almodovar-mubi"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Robert Altman",
+   "sources": [],
+   "films": []
+  },
+  {
+   "name": "Martin Scorsese",
+   "sources": [
+    {
+     "id": "scorsese-ss2022",
+     "kind": "sight-and-sound-2022",
+     "confidence": "high",
+     "title": "Cédula individual, Sight and Sound 2022 (enquete de diretores)",
+     "url": "https://www.bfi.org.uk/sight-and-sound/greatest-films-all-time/all-voters/martin-scorsese",
+     "date": "2022"
+    },
+    {
+     "id": "scorsese-ss2012",
+     "kind": "sight-and-sound-2012",
+     "confidence": "high",
+     "title": "Cédula individual, Sight and Sound 2012 (enquete de diretores)",
+     "url": "http://www.bfi.org.uk/films-tv-people/sightandsoundpoll2012/voter/1058",
+     "date": "2012"
+    },
+    {
+     "id": "scorsese-39-foreign",
+     "kind": "interview",
+     "confidence": "medium",
+     "title": "Martin Scorsese's 39 Essential Foreign Films (lista enviada a Colin Levy)",
+     "url": "https://nofilmschool.com/scorsese-foreign-film-list",
+     "date": "2012",
+     "letterboxd": "https://letterboxd.com/beatlemaniac47/list/martin-scorseses-39-essential-foreign-films",
+     "note": "cópia Letterboxd conferida 39/39 e mesma ordem em 11/10/2026",
+     "short": "39 Essential Foreign Films"
+    },
+    {
+     "id": "scorsese-my-voyage-to-italy",
+     "kind": "documentary",
+     "confidence": "high",
+     "title": "Films discussed in Scorsese's My Voyage to Italy (1999)",
+     "url": "https://letterboxd.com/tff/list/films-discussed-in-martin-scorseses-my-voyage",
+     "date": "1999",
+     "short": "My Voyage to Italy"
+    }
+   ],
+   "films": [
+    {
+     "title": "Citizen Kane",
+     "year": 1941,
+     "imdb": "tt0033467",
+     "tmdb": 15,
+     "tmdbType": "movie",
+     "letterboxd": "citizen-kane",
+     "sources": [
+      "scorsese-ss2022",
+      "scorsese-ss2012"
+     ]
+    },
+    {
+     "title": "Paisan",
+     "year": 1946,
+     "imdb": "tt0038823",
+     "tmdb": 8429,
+     "tmdbType": "movie",
+     "letterboxd": "paisan",
+     "sources": [
+      "scorsese-ss2022",
+      "scorsese-ss2012",
+      "scorsese-39-foreign",
+      "scorsese-my-voyage-to-italy"
+     ]
+    },
+    {
+     "title": "The Red Shoes",
+     "year": 1948,
+     "imdb": "tt0040725",
+     "tmdb": 19542,
+     "tmdbType": "movie",
+     "letterboxd": "the-red-shoes",
+     "sources": [
+      "scorsese-ss2022",
+      "scorsese-ss2012"
+     ]
+    },
+    {
+     "title": "Ashes and Diamonds",
+     "year": 1958,
+     "imdb": "tt0052080",
+     "tmdb": 5055,
+     "tmdbType": "movie",
+     "letterboxd": "ashes-and-diamonds",
+     "sources": [
+      "scorsese-ss2022",
+      "scorsese-ss2012"
+     ]
+    },
+    {
+     "title": "8½",
+     "year": 1963,
+     "imdb": "tt0056801",
+     "tmdb": 422,
+     "tmdbType": "movie",
+     "letterboxd": "8-half",
+     "sources": [
+      "scorsese-ss2022",
+      "scorsese-ss2012",
+      "scorsese-my-voyage-to-italy"
+     ]
+    },
+    {
+     "title": "The Leopard",
+     "year": 1963,
+     "imdb": "tt0057091",
+     "tmdb": 1040,
+     "tmdbType": "movie",
+     "letterboxd": "the-leopard",
+     "sources": [
+      "scorsese-ss2022",
+      "scorsese-ss2012"
+     ]
+    },
+    {
+     "title": "2001: A Space Odyssey",
+     "year": 1968,
+     "imdb": "tt0062622",
+     "tmdb": 62,
+     "tmdbType": "movie",
+     "letterboxd": "2001-a-space-odyssey",
+     "sources": [
+      "scorsese-ss2022",
+      "scorsese-ss2012"
+     ]
+    },
+    {
+     "title": "Diary of a Country Priest",
+     "year": 1951,
+     "imdb": "tt0042619",
+     "tmdb": 43376,
+     "tmdbType": "movie",
+     "letterboxd": "diary-of-a-country-priest",
+     "sources": [
+      "scorsese-ss2022"
+     ]
+    },
+    {
+     "title": "The River",
+     "year": 1951,
+     "imdb": "tt0043972",
+     "tmdb": 45218,
+     "tmdbType": "movie",
+     "letterboxd": "the-river",
+     "sources": [
+      "scorsese-ss2012"
+     ]
+    },
+    {
+     "title": "Ikiru",
+     "year": 1952,
+     "imdb": "tt0044741",
+     "tmdb": 3782,
+     "tmdbType": "movie",
+     "letterboxd": "ikiru",
+     "sources": [
+      "scorsese-ss2022",
+      "scorsese-39-foreign"
+     ]
+    },
+    {
+     "title": "Ugetsu",
+     "year": 1953,
+     "imdb": "tt0046478",
+     "tmdb": 14696,
+     "tmdbType": "movie",
+     "letterboxd": "ugetsu",
+     "sources": [
+      "scorsese-ss2012",
+      "scorsese-39-foreign"
+     ]
+    },
+    {
+     "title": "Ordet",
+     "year": 1955,
+     "imdb": "tt0048452",
+     "tmdb": 48035,
+     "tmdbType": "movie",
+     "letterboxd": "ordet",
+     "sources": [
+      "scorsese-ss2022"
+     ]
+    },
+    {
+     "title": "The Searchers",
+     "year": 1956,
+     "imdb": "tt0049730",
+     "tmdb": 3114,
+     "tmdbType": "movie",
+     "letterboxd": "the-searchers",
+     "sources": [
+      "scorsese-ss2012"
+     ]
+    },
+    {
+     "title": "Vertigo",
+     "year": 1958,
+     "imdb": "tt0052357",
+     "tmdb": 426,
+     "tmdbType": "movie",
+     "letterboxd": "vertigo",
+     "sources": [
+      "scorsese-ss2012"
+     ]
+    },
+    {
+     "title": "Salvatore Giuliano",
+     "year": 1962,
+     "imdb": "tt0055399",
+     "tmdb": 27523,
+     "tmdbType": "movie",
+     "letterboxd": "salvatore-giuliano",
+     "sources": [
+      "scorsese-ss2012"
+     ]
+    },
+    {
+     "title": "Metropolis",
+     "year": 1927,
+     "imdb": "tt0017136",
+     "tmdb": 19,
+     "tmdbType": "movie",
+     "letterboxd": "metropolis",
+     "sources": [
+      "scorsese-39-foreign"
+     ]
+    },
+    {
+     "title": "Nosferatu",
+     "year": 1922,
+     "imdb": "tt0013442",
+     "tmdb": 653,
+     "tmdbType": "movie",
+     "letterboxd": "nosferatu",
+     "sources": [
+      "scorsese-39-foreign"
+     ]
+    },
+    {
+     "title": "Dr. Mabuse, the Gambler",
+     "year": 1922,
+     "imdb": "tt0013086",
+     "tmdb": 5998,
+     "tmdbType": "movie",
+     "letterboxd": "dr-mabuse-the-gambler",
+     "sources": [
+      "scorsese-39-foreign"
+     ]
+    },
+    {
+     "title": "Napoleon",
+     "year": 1927,
+     "imdb": "tt0018192",
+     "tmdb": 42536,
+     "tmdbType": "movie",
+     "letterboxd": "napoleon",
+     "sources": [
+      "scorsese-39-foreign"
+     ]
+    },
+    {
+     "title": "Grand Illusion",
+     "year": 1937,
+     "imdb": "tt0028950",
+     "tmdb": 777,
+     "tmdbType": "movie",
+     "letterboxd": "grand-illusion",
+     "sources": [
+      "scorsese-39-foreign"
+     ]
+    },
+    {
+     "title": "The Rules of the Game",
+     "year": 1939,
+     "imdb": "tt0031885",
+     "tmdb": 776,
+     "tmdbType": "movie",
+     "letterboxd": "the-rules-of-the-game",
+     "sources": [
+      "scorsese-39-foreign"
+     ]
+    },
+    {
+     "title": "Children of Paradise",
+     "year": 1945,
+     "imdb": "tt0037674",
+     "tmdb": 2457,
+     "tmdbType": "movie",
+     "letterboxd": "children-of-paradise",
+     "sources": [
+      "scorsese-39-foreign"
+     ]
+    },
+    {
+     "title": "Rome, Open City",
+     "year": 1945,
+     "imdb": "tt0038890",
+     "tmdb": 307,
+     "tmdbType": "movie",
+     "letterboxd": "rome-open-city",
+     "sources": [
+      "scorsese-39-foreign",
+      "scorsese-my-voyage-to-italy"
+     ]
+    },
+    {
+     "title": "La Terra Trema",
+     "year": 1948,
+     "imdb": "tt0040866",
+     "tmdb": 43445,
+     "tmdbType": "movie",
+     "letterboxd": "la-terra-trema",
+     "sources": [
+      "scorsese-39-foreign",
+      "scorsese-my-voyage-to-italy"
+     ]
+    },
+    {
+     "title": "Bicycle Thieves",
+     "year": 1948,
+     "imdb": "tt0040522",
+     "tmdb": 5156,
+     "tmdbType": "movie",
+     "letterboxd": "bicycle-thieves",
+     "sources": [
+      "scorsese-39-foreign",
+      "scorsese-my-voyage-to-italy"
+     ]
+    },
+    {
+     "title": "Umberto D.",
+     "year": 1952,
+     "imdb": "tt0045274",
+     "tmdb": 833,
+     "tmdbType": "movie",
+     "letterboxd": "umberto-d",
+     "sources": [
+      "scorsese-39-foreign",
+      "scorsese-my-voyage-to-italy"
+     ]
+    },
+    {
+     "title": "Beauty and the Beast",
+     "year": 1946,
+     "imdb": "tt0038348",
+     "tmdb": 648,
+     "tmdbType": "movie",
+     "letterboxd": "beauty-and-the-beast",
+     "sources": [
+      "scorsese-39-foreign"
+     ]
+    },
+    {
+     "title": "Tokyo Story",
+     "year": 1953,
+     "imdb": "tt0046438",
+     "tmdb": 18148,
+     "tmdbType": "movie",
+     "letterboxd": "tokyo-story",
+     "sources": [
+      "scorsese-39-foreign"
+     ]
+    },
+    {
+     "title": "Seven Samurai",
+     "year": 1954,
+     "imdb": "tt0047478",
+     "tmdb": 346,
+     "tmdbType": "movie",
+     "letterboxd": "seven-samurai",
+     "sources": [
+      "scorsese-39-foreign"
+     ]
+    },
+    {
+     "title": "Sansho the Bailiff",
+     "year": 1954,
+     "imdb": "tt0047445",
+     "tmdb": 20532,
+     "tmdbType": "movie",
+     "letterboxd": "sansho-the-bailiff",
+     "sources": [
+      "scorsese-39-foreign"
+     ]
+    },
+    {
+     "title": "High and Low",
+     "year": 1963,
+     "imdb": "tt0057565",
+     "tmdb": 12493,
+     "tmdbType": "movie",
+     "letterboxd": "high-and-low",
+     "sources": [
+      "scorsese-39-foreign"
+     ]
+    },
+    {
+     "title": "Big Deal on Madonna Street",
+     "year": 1958,
+     "imdb": "tt0052216",
+     "tmdb": 24382,
+     "tmdbType": "movie",
+     "letterboxd": "big-deal-on-madonna-street",
+     "sources": [
+      "scorsese-39-foreign"
+     ]
+    },
+    {
+     "title": "Rocco and His Brothers",
+     "year": 1960,
+     "imdb": "tt0054248",
+     "tmdb": 8422,
+     "tmdbType": "movie",
+     "letterboxd": "rocco-and-his-brothers",
+     "sources": [
+      "scorsese-39-foreign"
+     ]
+    },
+    {
+     "title": "The 400 Blows",
+     "year": 1959,
+     "imdb": "tt0053198",
+     "tmdb": 147,
+     "tmdbType": "movie",
+     "letterboxd": "the-400-blows",
+     "sources": [
+      "scorsese-39-foreign"
+     ]
+    },
+    {
+     "title": "Shoot the Piano Player",
+     "year": 1960,
+     "imdb": "tt0054389",
+     "tmdb": 1818,
+     "tmdbType": "movie",
+     "letterboxd": "shoot-the-piano-player",
+     "sources": [
+      "scorsese-39-foreign"
+     ]
+    },
+    {
+     "title": "Breathless",
+     "year": 1960,
+     "imdb": "tt0053472",
+     "tmdb": 269,
+     "tmdbType": "movie",
+     "letterboxd": "breathless",
+     "sources": [
+      "scorsese-39-foreign"
+     ]
+    },
+    {
+     "title": "Band of Outsiders",
+     "year": 1964,
+     "imdb": "tt0057869",
+     "tmdb": 8073,
+     "tmdbType": "movie",
+     "letterboxd": "band-of-outsiders",
+     "sources": [
+      "scorsese-39-foreign"
+     ]
+    },
+    {
+     "title": "Il Sorpasso",
+     "year": 1962,
+     "imdb": "tt0056512",
+     "tmdb": 24188,
+     "tmdbType": "movie",
+     "letterboxd": "il-sorpasso",
+     "sources": [
+      "scorsese-39-foreign"
+     ]
+    },
+    {
+     "title": "L'Avventura",
+     "year": 1960,
+     "imdb": "tt0053619",
+     "tmdb": 5165,
+     "tmdbType": "movie",
+     "letterboxd": "lavventura",
+     "sources": [
+      "scorsese-39-foreign",
+      "scorsese-my-voyage-to-italy"
+     ]
+    },
+    {
+     "title": "Blow-Up",
+     "year": 1966,
+     "imdb": "tt0060176",
+     "tmdb": 1052,
+     "tmdbType": "movie",
+     "letterboxd": "blow-up",
+     "sources": [
+      "scorsese-39-foreign"
+     ]
+    },
+    {
+     "title": "Before the Revolution",
+     "year": 1964,
+     "imdb": "tt0056371",
+     "tmdb": 42788,
+     "tmdbType": "movie",
+     "letterboxd": "before-the-revolution",
+     "sources": [
+      "scorsese-39-foreign"
+     ]
+    },
+    {
+     "title": "The Butcher",
+     "year": 1970,
+     "imdb": "tt0064106",
+     "tmdb": 2912,
+     "tmdbType": "movie",
+     "letterboxd": "the-butcher-1970",
+     "sources": [
+      "scorsese-39-foreign"
+     ]
+    },
+    {
+     "title": "Weekend",
+     "year": 1967,
+     "imdb": "tt0062480",
+     "tmdb": 8075,
+     "tmdbType": "movie",
+     "letterboxd": "weekend-1967",
+     "sources": [
+      "scorsese-39-foreign"
+     ]
+    },
+    {
+     "title": "Death by Hanging",
+     "year": 1968,
+     "imdb": "tt0063198",
+     "tmdb": 98193,
+     "tmdbType": "movie",
+     "letterboxd": "death-by-hanging",
+     "sources": [
+      "scorsese-39-foreign"
+     ]
+    },
+    {
+     "title": "The Merchant of Four Seasons",
+     "year": 1972,
+     "imdb": "tt0067227",
+     "tmdb": 10309,
+     "tmdbType": "movie",
+     "letterboxd": "the-merchant-of-four-seasons",
+     "sources": [
+      "scorsese-39-foreign"
+     ]
+    },
+    {
+     "title": "Ali: Fear Eats the Soul",
+     "year": 1974,
+     "imdb": "tt0071141",
+     "tmdb": 216,
+     "tmdbType": "movie",
+     "letterboxd": "ali-fear-eats-the-soul",
+     "sources": [
+      "scorsese-39-foreign"
+     ]
+    },
+    {
+     "title": "The Marriage of Maria Braun",
+     "year": 1979,
+     "imdb": "tt0079095",
+     "tmdb": 661,
+     "tmdbType": "movie",
+     "letterboxd": "the-marriage-of-maria-braun",
+     "sources": [
+      "scorsese-39-foreign"
+     ]
+    },
+    {
+     "title": "Kings of the Road",
+     "year": 1976,
+     "imdb": "tt0073152",
+     "tmdb": 10834,
+     "tmdbType": "movie",
+     "letterboxd": "kings-of-the-road",
+     "sources": [
+      "scorsese-39-foreign"
+     ]
+    },
+    {
+     "title": "The American Friend",
+     "year": 1977,
+     "imdb": "tt0075675",
+     "tmdb": 11222,
+     "tmdbType": "movie",
+     "letterboxd": "the-american-friend",
+     "sources": [
+      "scorsese-39-foreign"
+     ]
+    },
+    {
+     "title": "The Enigma of Kaspar Hauser",
+     "year": 1974,
+     "imdb": "tt0071691",
+     "tmdb": 11710,
+     "tmdbType": "movie",
+     "letterboxd": "the-enigma-of-kaspar-hauser",
+     "sources": [
+      "scorsese-39-foreign"
+     ]
+    },
+    {
+     "title": "Aguirre, the Wrath of God",
+     "year": 1972,
+     "imdb": "tt0068182",
+     "tmdb": 2000,
+     "tmdbType": "movie",
+     "letterboxd": "aguirre-the-wrath-of-god",
+     "sources": [
+      "scorsese-39-foreign"
+     ]
+    },
+    {
+     "title": "1860",
+     "year": 1934,
+     "imdb": "tt0023729",
+     "tmdb": 94889,
+     "tmdbType": "movie",
+     "letterboxd": "1860",
+     "sources": [
+      "scorsese-my-voyage-to-italy"
+     ]
+    },
+    {
+     "title": "Fabiola",
+     "year": 1949,
+     "imdb": "tt0041342",
+     "tmdb": 167603,
+     "tmdbType": "movie",
+     "letterboxd": "fabiola-1949",
+     "sources": [
+      "scorsese-my-voyage-to-italy"
+     ]
+    },
+    {
+     "title": "The Iron Crown",
+     "year": 1941,
+     "imdb": "tt0033489",
+     "tmdb": 68058,
+     "tmdbType": "movie",
+     "letterboxd": "the-iron-crown",
+     "sources": [
+      "scorsese-my-voyage-to-italy"
+     ]
+    },
+    {
+     "title": "Cabiria",
+     "year": 1914,
+     "imdb": "tt0003740",
+     "tmdb": 5153,
+     "tmdbType": "movie",
+     "letterboxd": "cabiria",
+     "sources": [
+      "scorsese-my-voyage-to-italy"
+     ]
+    },
+    {
+     "title": "Undersea Fantasy",
+     "year": 1940,
+     "imdb": "tt0027606",
+     "tmdb": 213627,
+     "tmdbType": "movie",
+     "letterboxd": "undersea-fantasy",
+     "sources": [
+      "scorsese-my-voyage-to-italy"
+     ]
+    },
+    {
+     "title": "Journey to Italy",
+     "year": 1954,
+     "imdb": "tt0046511",
+     "tmdb": 2748,
+     "tmdbType": "movie",
+     "letterboxd": "journey-to-italy",
+     "sources": [
+      "scorsese-my-voyage-to-italy"
+     ]
+    },
+    {
+     "title": "The Taking of Power by Louis XIV",
+     "year": 1966,
+     "imdb": "tt0060860",
+     "tmdb": 69912,
+     "tmdbType": "movie",
+     "letterboxd": "the-taking-of-power-by-louis-xiv",
+     "sources": [
+      "scorsese-my-voyage-to-italy"
+     ]
+    },
+    {
+     "title": "Germany, Year Zero",
+     "year": 1948,
+     "imdb": "tt0039417",
+     "tmdb": 8016,
+     "tmdbType": "movie",
+     "letterboxd": "germany-year-zero",
+     "sources": [
+      "scorsese-my-voyage-to-italy"
+     ]
+    },
+    {
+     "title": "L'Amore",
+     "year": 1948,
+     "imdb": "tt0040092",
+     "tmdb": 43444,
+     "tmdbType": "movie",
+     "letterboxd": "lamore-1948",
+     "sources": [
+      "scorsese-my-voyage-to-italy"
+     ]
+    },
+    {
+     "title": "Stromboli",
+     "year": 1950,
+     "imdb": "tt0041931",
+     "tmdb": 4173,
+     "tmdbType": "movie",
+     "letterboxd": "stromboli",
+     "sources": [
+      "scorsese-my-voyage-to-italy"
+     ]
+    },
+    {
+     "title": "The Flowers of St. Francis",
+     "year": 1950,
+     "imdb": "tt0042477",
+     "tmdb": 56518,
+     "tmdbType": "movie",
+     "letterboxd": "the-flowers-of-st-francis",
+     "sources": [
+      "scorsese-my-voyage-to-italy"
+     ]
+    },
+    {
+     "title": "Europa '51",
+     "year": 1952,
+     "imdb": "tt0043511",
+     "tmdb": 41464,
+     "tmdbType": "movie",
+     "letterboxd": "europa-51",
+     "sources": [
+      "scorsese-my-voyage-to-italy"
+     ]
+    },
+    {
+     "title": "What Scoundrels Men Are!",
+     "year": 1932,
+     "imdb": "tt0023645",
+     "tmdb": 63182,
+     "tmdbType": "movie",
+     "letterboxd": "what-scoundrels-men-are",
+     "sources": [
+      "scorsese-my-voyage-to-italy"
+     ]
+    },
+    {
+     "title": "Mister Max",
+     "year": 1937,
+     "imdb": "tt0029562",
+     "tmdb": 58659,
+     "tmdbType": "movie",
+     "letterboxd": "mister-max",
+     "sources": [
+      "scorsese-my-voyage-to-italy"
+     ]
+    },
+    {
+     "title": "Shoeshine",
+     "year": 1946,
+     "imdb": "tt0038913",
+     "tmdb": 43469,
+     "tmdbType": "movie",
+     "letterboxd": "shoeshine",
+     "sources": [
+      "scorsese-my-voyage-to-italy"
+     ]
+    },
+    {
+     "title": "The Roof",
+     "year": 1956,
+     "imdb": "tt0049839",
+     "tmdb": 113936,
+     "tmdbType": "movie",
+     "letterboxd": "the-roof",
+     "sources": [
+      "scorsese-my-voyage-to-italy"
+     ]
+    },
+    {
+     "title": "Two Women",
+     "year": 1960,
+     "imdb": "tt0054749",
+     "tmdb": 24167,
+     "tmdbType": "movie",
+     "letterboxd": "two-women",
+     "sources": [
+      "scorsese-my-voyage-to-italy"
+     ]
+    },
+    {
+     "title": "The Garden of the Finzi-Continis",
+     "year": 1970,
+     "imdb": "tt0065777",
+     "tmdb": 4789,
+     "tmdbType": "movie",
+     "letterboxd": "the-garden-of-the-finzi-continis",
+     "sources": [
+      "scorsese-my-voyage-to-italy"
+     ]
+    },
+    {
+     "title": "The Gold of Naples",
+     "year": 1954,
+     "imdb": "tt0047313",
+     "tmdb": 56122,
+     "tmdbType": "movie",
+     "letterboxd": "the-gold-of-naples",
+     "sources": [
+      "scorsese-my-voyage-to-italy"
+     ]
+    },
+    {
+     "title": "The Lower Depths",
+     "year": 1936,
+     "imdb": "tt0027336",
+     "tmdb": 45802,
+     "tmdbType": "movie",
+     "letterboxd": "the-lower-depths",
+     "sources": [
+      "scorsese-my-voyage-to-italy"
+     ]
+    },
+    {
+     "title": "Obsession",
+     "year": 1943,
+     "imdb": "tt0035160",
+     "tmdb": 5155,
+     "tmdbType": "movie",
+     "letterboxd": "obsession-1943",
+     "sources": [
+      "scorsese-my-voyage-to-italy"
+     ]
+    },
+    {
+     "title": "Days of Glory",
+     "year": 1945,
+     "imdb": "tt0037739",
+     "tmdb": 109359,
+     "tmdbType": "movie",
+     "letterboxd": "days-of-glory-1945",
+     "sources": [
+      "scorsese-my-voyage-to-italy"
+     ]
+    },
+    {
+     "title": "Bellissima",
+     "year": 1951,
+     "imdb": "tt0043332",
+     "tmdb": 43372,
+     "tmdbType": "movie",
+     "letterboxd": "bellissima",
+     "sources": [
+      "scorsese-my-voyage-to-italy"
+     ]
+    },
+    {
+     "title": "Senso",
+     "year": 1954,
+     "imdb": "tt0047469",
+     "tmdb": 43195,
+     "tmdbType": "movie",
+     "letterboxd": "senso",
+     "sources": [
+      "scorsese-my-voyage-to-italy"
+     ]
+    },
+    {
+     "title": "I Vitelloni",
+     "year": 1953,
+     "imdb": "tt0046521",
+     "tmdb": 12548,
+     "tmdbType": "movie",
+     "letterboxd": "i-vitelloni",
+     "sources": [
+      "scorsese-my-voyage-to-italy"
+     ]
+    },
+    {
+     "title": "La Strada",
+     "year": 1954,
+     "imdb": "tt0047528",
+     "tmdb": 405,
+     "tmdbType": "movie",
+     "letterboxd": "la-strada",
+     "sources": [
+      "scorsese-my-voyage-to-italy"
+     ]
+    },
+    {
+     "title": "Nights of Cabiria",
+     "year": 1957,
+     "imdb": "tt0050783",
+     "tmdb": 19426,
+     "tmdbType": "movie",
+     "letterboxd": "nights-of-cabiria",
+     "sources": [
+      "scorsese-my-voyage-to-italy"
+     ]
+    },
+    {
+     "title": "La Dolce Vita",
+     "year": 1960,
+     "imdb": "tt0053779",
+     "tmdb": 439,
+     "tmdbType": "movie",
+     "letterboxd": "la-dolce-vita",
+     "sources": [
+      "scorsese-my-voyage-to-italy"
+     ]
+    },
+    {
+     "title": "Divorce Italian Style",
+     "year": 1961,
+     "imdb": "tt0055913",
+     "tmdb": 20271,
+     "tmdbType": "movie",
+     "letterboxd": "divorce-italian-style",
+     "sources": [
+      "scorsese-my-voyage-to-italy"
+     ]
+    },
+    {
+     "title": "La Notte",
+     "year": 1961,
+     "imdb": "tt0054130",
+     "tmdb": 41050,
+     "tmdbType": "movie",
+     "letterboxd": "la-notte",
+     "sources": [
+      "scorsese-my-voyage-to-italy"
+     ]
+    },
+    {
+     "title": "L'Eclisse",
+     "year": 1962,
+     "imdb": "tt0056736",
+     "tmdb": 21135,
+     "tmdbType": "movie",
+     "letterboxd": "leclisse",
+     "sources": [
+      "scorsese-my-voyage-to-italy"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "David Fincher",
+   "sources": [
+    {
+     "id": "fincher-2008",
+     "kind": "interview",
+     "confidence": "medium",
+     "title": "Lista manuscrita de 26 favoritos (turnê de Benjamin Button, 2008; via The Film Stage)",
+     "url": "https://thefilmstage.com/from-8-12-to-zelig-read-david-finchers-handwritten-list-of-his-26-favorite-films",
+     "date": "2008"
+    }
+   ],
+   "films": [
+    {
+     "title": "Citizen Kane",
+     "year": 1941,
+     "imdb": "tt0033467",
+     "tmdb": 15,
+     "tmdbType": "movie",
+     "letterboxd": "citizen-kane",
+     "sources": [
+      "fincher-2008"
+     ]
+    },
+    {
+     "title": "Rear Window",
+     "year": 1954,
+     "imdb": "tt0047396",
+     "tmdb": 567,
+     "tmdbType": "movie",
+     "letterboxd": "rear-window",
+     "sources": [
+      "fincher-2008"
+     ]
+    },
+    {
+     "title": "Lawrence of Arabia",
+     "year": 1962,
+     "imdb": "tt0056172",
+     "tmdb": 947,
+     "tmdbType": "movie",
+     "letterboxd": "lawrence-of-arabia",
+     "sources": [
+      "fincher-2008"
+     ]
+    },
+    {
+     "title": "8½",
+     "year": 1963,
+     "imdb": "tt0056801",
+     "tmdb": 422,
+     "tmdbType": "movie",
+     "letterboxd": "8-half",
+     "sources": [
+      "fincher-2008"
+     ]
+    },
+    {
+     "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
+     "year": 1964,
+     "imdb": "tt0057012",
+     "tmdb": 935,
+     "tmdbType": "movie",
+     "letterboxd": "dr-strangelove-or-how-i-learned-to-stop-worrying-and-love-the-bomb",
+     "sources": [
+      "fincher-2008"
+     ]
+    },
+    {
+     "title": "The Graduate",
+     "year": 1967,
+     "imdb": "tt0061722",
+     "tmdb": 37247,
+     "tmdbType": "movie",
+     "letterboxd": "the-graduate",
+     "sources": [
+      "fincher-2008"
+     ]
+    },
+    {
+     "title": "Butch Cassidy and the Sundance Kid",
+     "year": 1969,
+     "imdb": "tt0064115",
+     "tmdb": 642,
+     "tmdbType": "movie",
+     "letterboxd": "butch-cassidy-and-the-sundance-kid",
+     "sources": [
+      "fincher-2008"
+     ]
+    },
+    {
+     "title": "Cabaret",
+     "year": 1972,
+     "imdb": "tt0068327",
+     "tmdb": 10784,
+     "tmdbType": "movie",
+     "letterboxd": "cabaret",
+     "sources": [
+      "fincher-2008"
+     ]
+    },
+    {
+     "title": "American Graffiti",
+     "year": 1973,
+     "imdb": "tt0069704",
+     "tmdb": 838,
+     "tmdbType": "movie",
+     "letterboxd": "american-graffiti",
+     "sources": [
+      "fincher-2008"
+     ]
+    },
+    {
+     "title": "Paper Moon",
+     "year": 1973,
+     "imdb": "tt0070510",
+     "tmdb": 11293,
+     "tmdbType": "movie",
+     "letterboxd": "paper-moon",
+     "sources": [
+      "fincher-2008"
+     ]
+    },
+    {
+     "title": "The Exorcist",
+     "year": 1973,
+     "imdb": "tt0070047",
+     "tmdb": 9552,
+     "tmdbType": "movie",
+     "letterboxd": "the-exorcist",
+     "sources": [
+      "fincher-2008"
+     ]
+    },
+    {
+     "title": "Chinatown",
+     "year": 1974,
+     "imdb": "tt0071315",
+     "tmdb": 829,
+     "tmdbType": "movie",
+     "letterboxd": "chinatown",
+     "sources": [
+      "fincher-2008"
+     ]
+    },
+    {
+     "title": "The Godfather Part II",
+     "year": 1974,
+     "imdb": "tt0071562",
+     "tmdb": 240,
+     "tmdbType": "movie",
+     "letterboxd": "the-godfather-part-ii",
+     "sources": [
+      "fincher-2008"
+     ]
+    },
+    {
+     "title": "Jaws",
+     "year": 1975,
+     "imdb": "tt0073195",
+     "tmdb": 578,
+     "tmdbType": "movie",
+     "letterboxd": "jaws",
+     "sources": [
+      "fincher-2008"
+     ]
+    },
+    {
+     "title": "Monty Python and the Holy Grail",
+     "year": 1975,
+     "imdb": "tt0071853",
+     "tmdb": 762,
+     "tmdbType": "movie",
+     "letterboxd": "monty-python-and-the-holy-grail",
+     "sources": [
+      "fincher-2008"
+     ]
+    },
+    {
+     "title": "All the President's Men",
+     "year": 1976,
+     "imdb": "tt0074119",
+     "tmdb": 891,
+     "tmdbType": "movie",
+     "letterboxd": "all-the-presidents-men",
+     "sources": [
+      "fincher-2008"
+     ]
+    },
+    {
+     "title": "Taxi Driver",
+     "year": 1976,
+     "imdb": "tt0075314",
+     "tmdb": 103,
+     "tmdbType": "movie",
+     "letterboxd": "taxi-driver",
+     "sources": [
+      "fincher-2008"
+     ]
+    },
+    {
+     "title": "Animal House",
+     "year": 1978,
+     "imdb": "tt0077975",
+     "tmdb": 8469,
+     "tmdbType": "movie",
+     "letterboxd": "animal-house",
+     "sources": [
+      "fincher-2008"
+     ]
+    },
+    {
+     "title": "Days of Heaven",
+     "year": 1978,
+     "imdb": "tt0077405",
+     "tmdb": 16642,
+     "tmdbType": "movie",
+     "letterboxd": "days-of-heaven",
+     "sources": [
+      "fincher-2008"
+     ]
+    },
+    {
+     "title": "Alien",
+     "year": 1979,
+     "imdb": "tt0078748",
+     "tmdb": 348,
+     "tmdbType": "movie",
+     "letterboxd": "alien",
+     "sources": [
+      "fincher-2008"
+     ]
+    },
+    {
+     "title": "All That Jazz",
+     "year": 1979,
+     "imdb": "tt0078754",
+     "tmdb": 16858,
+     "tmdbType": "movie",
+     "letterboxd": "all-that-jazz",
+     "sources": [
+      "fincher-2008"
+     ]
+    },
+    {
+     "title": "Being There",
+     "year": 1979,
+     "imdb": "tt0078841",
+     "tmdb": 10322,
+     "tmdbType": "movie",
+     "letterboxd": "being-there",
+     "sources": [
+      "fincher-2008"
+     ]
+    },
+    {
+     "title": "Mad Max 2",
+     "year": 1981,
+     "imdb": "tt0082694",
+     "tmdb": 8810,
+     "tmdbType": "movie",
+     "letterboxd": "mad-max-2",
+     "sources": [
+      "fincher-2008"
+     ]
+    },
+    {
+     "title": "The Year of Living Dangerously",
+     "year": 1982,
+     "imdb": "tt0086617",
+     "tmdb": 11541,
+     "tmdbType": "movie",
+     "letterboxd": "the-year-of-living-dangerously",
+     "sources": [
+      "fincher-2008"
+     ]
+    },
+    {
+     "title": "Zelig",
+     "year": 1983,
+     "imdb": "tt0086637",
+     "tmdb": 11030,
+     "tmdbType": "movie",
+     "letterboxd": "zelig",
+     "sources": [
+      "fincher-2008"
+     ]
+    },
+    {
+     "title": "The Terminator",
+     "year": 1984,
+     "imdb": "tt0088247",
+     "tmdb": 218,
+     "tmdbType": "movie",
+     "letterboxd": "the-terminator",
+     "sources": [
+      "fincher-2008"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Wes Anderson",
+   "sources": [
+    {
+     "id": "wes-ss2022",
+     "kind": "sight-and-sound-2022",
+     "confidence": "high",
+     "title": "Cédula individual, Sight and Sound 2022 (enquete de diretores)",
+     "url": "https://www.bfi.org.uk/sight-and-sound/greatest-films-all-time/all-voters/wes-anderson",
+     "date": "2022"
+    },
+    {
+     "id": "wes-criterion-top10",
+     "kind": "criterion-top10",
+     "confidence": "high",
+     "title": "Wes Anderson's Top 10 (Criterion, Current)",
+     "url": "https://www.criterion.com/current/top-10-lists/115-wes-anderson-s-top-10",
+     "date": null,
+     "note": "Imamura aparece como empate (caixa Eclipse) na posição 3."
+    },
+    {
+     "id": "wes-criterion-mobile-closet",
+     "kind": "criterion-closet",
+     "confidence": "high",
+     "title": "Criterion Mobile Closet, Hollywood Bowl (nove escolhas), reportado pelo Open Culture",
+     "url": "https://www.openculture.com/2026/09/wes-anderson-picks-nine-of-his-favorite-criterion-films.html",
+     "date": "2026-09",
+     "note": "Verificado só pela matéria do Open Culture (página da Criterion não lida)."
+    }
+   ],
+   "films": [
+    {
+     "title": "The Earrings of Madame de...",
+     "year": 1953,
+     "imdb": "tt0046022",
+     "tmdb": 27030,
+     "tmdbType": "movie",
+     "letterboxd": "the-earrings-of-madame-de",
+     "sources": [
+      "wes-ss2022",
+      "wes-criterion-top10"
+     ]
+    },
+    {
+     "title": "Design for Living",
+     "year": 1933,
+     "imdb": "tt0023940",
+     "tmdb": 77210,
+     "tmdbType": "movie",
+     "letterboxd": "design-for-living",
+     "sources": [
+      "wes-criterion-mobile-closet"
+     ]
+    },
+    {
+     "title": "The 39 Steps",
+     "year": 1935,
+     "imdb": "tt0026029",
+     "tmdb": 260,
+     "tmdbType": "movie",
+     "letterboxd": "the-39-steps",
+     "sources": [
+      "wes-criterion-mobile-closet"
+     ]
+    },
+    {
+     "title": "Grand Illusion",
+     "year": 1937,
+     "imdb": "tt0028950",
+     "tmdb": 777,
+     "tmdbType": "movie",
+     "letterboxd": "grand-illusion",
+     "sources": [
+      "wes-ss2022"
+     ]
+    },
+    {
+     "title": "Stagecoach",
+     "year": 1939,
+     "imdb": "tt0031971",
+     "tmdb": 995,
+     "tmdbType": "movie",
+     "letterboxd": "stagecoach",
+     "sources": [
+      "wes-criterion-mobile-closet"
+     ]
+    },
+    {
+     "title": "The Lady Eve",
+     "year": 1941,
+     "imdb": "tt0033804",
+     "tmdb": 3086,
+     "tmdbType": "movie",
+     "letterboxd": "the-lady-eve",
+     "sources": [
+      "wes-criterion-mobile-closet"
+     ]
+    },
+    {
+     "title": "Heaven Can Wait",
+     "year": 1943,
+     "imdb": "tt0035979",
+     "tmdb": 18727,
+     "tmdbType": "movie",
+     "letterboxd": "heaven-can-wait",
+     "sources": [
+      "wes-criterion-mobile-closet"
+     ]
+    },
+    {
+     "title": "Jenny Lamour",
+     "year": 1947,
+     "imdb": "tt0039739",
+     "tmdb": 49842,
+     "tmdbType": "movie",
+     "letterboxd": "quai-des-orfevres-1947",
+     "sources": [
+      "wes-ss2022"
+     ]
+    },
+    {
+     "title": "The Red Shoes",
+     "year": 1948,
+     "imdb": "tt0040725",
+     "tmdb": 19542,
+     "tmdbType": "movie",
+     "letterboxd": "the-red-shoes",
+     "sources": [
+      "wes-criterion-mobile-closet"
+     ]
+    },
+    {
+     "title": "The Big Risk",
+     "year": 1960,
+     "imdb": "tt0052698",
+     "tmdb": 34145,
+     "tmdbType": "movie",
+     "letterboxd": "classe-tous-risques",
+     "sources": [
+      "wes-criterion-top10"
+     ]
+    },
+    {
+     "title": "Pigs and Battleships",
+     "year": 1961,
+     "imdb": "tt0054709",
+     "tmdb": 31104,
+     "tmdbType": "movie",
+     "letterboxd": "pigs-and-battleships",
+     "sources": [
+      "wes-criterion-top10"
+     ]
+    },
+    {
+     "title": "The Exterminating Angel",
+     "year": 1962,
+     "imdb": "tt0056732",
+     "tmdb": 29264,
+     "tmdbType": "movie",
+     "letterboxd": "the-exterminating-angel",
+     "sources": [
+      "wes-criterion-top10"
+     ]
+    },
+    {
+     "title": "Vivre Sa Vie",
+     "year": 1962,
+     "imdb": "tt0056663",
+     "tmdb": 1626,
+     "tmdbType": "movie",
+     "letterboxd": "vivre-sa-vie",
+     "sources": [
+      "wes-ss2022"
+     ]
+    },
+    {
+     "title": "The Insect Woman",
+     "year": 1963,
+     "imdb": "tt0057363",
+     "tmdb": 42984,
+     "tmdbType": "movie",
+     "letterboxd": "the-insect-woman",
+     "sources": [
+      "wes-criterion-top10"
+     ]
+    },
+    {
+     "title": "Charulata",
+     "year": 1964,
+     "imdb": "tt0057935",
+     "tmdb": 35790,
+     "tmdbType": "movie",
+     "letterboxd": "charulata",
+     "sources": [
+      "wes-criterion-mobile-closet"
+     ]
+    },
+    {
+     "title": "Intentions of Murder",
+     "year": 1964,
+     "imdb": "tt0057829",
+     "tmdb": 49571,
+     "tmdbType": "movie",
+     "letterboxd": "intentions-of-murder",
+     "sources": [
+      "wes-criterion-top10"
+     ]
+    },
+    {
+     "title": "The Spy Who Came In from the Cold",
+     "year": 1965,
+     "imdb": "tt0059749",
+     "tmdb": 13580,
+     "tmdbType": "movie",
+     "letterboxd": "the-spy-who-came-in-from-the-cold",
+     "sources": [
+      "wes-criterion-top10"
+     ]
+    },
+    {
+     "title": "Au Hasard Balthazar",
+     "year": 1966,
+     "imdb": "tt0060138",
+     "tmdb": 20108,
+     "tmdbType": "movie",
+     "letterboxd": "au-hasard-balthazar",
+     "sources": [
+      "wes-criterion-top10"
+     ]
+    },
+    {
+     "title": "The Taking of Power by Louis XIV",
+     "year": 1966,
+     "imdb": "tt0060860",
+     "tmdb": 69912,
+     "tmdbType": "movie",
+     "letterboxd": "the-taking-of-power-by-louis-xiv",
+     "sources": [
+      "wes-criterion-top10"
+     ]
+    },
+    {
+     "title": "Naked Childhood",
+     "year": 1968,
+     "imdb": "tt0065695",
+     "tmdb": 31345,
+     "tmdbType": "movie",
+     "letterboxd": "lenfance-nue",
+     "sources": [
+      "wes-criterion-top10"
+     ]
+    },
+    {
+     "title": "The Friends of Eddie Coyle",
+     "year": 1973,
+     "imdb": "tt0070077",
+     "tmdb": 25680,
+     "tmdbType": "movie",
+     "letterboxd": "the-friends-of-eddie-coyle",
+     "sources": [
+      "wes-criterion-top10"
+     ]
+    },
+    {
+     "title": "The Man Who Loved Women",
+     "year": 1977,
+     "imdb": "tt0076155",
+     "tmdb": 1421,
+     "tmdbType": "movie",
+     "letterboxd": "the-man-who-loved-women",
+     "sources": [
+      "wes-ss2022"
+     ]
+    },
+    {
+     "title": "Loulou",
+     "year": 1980,
+     "imdb": "tt0081076",
+     "tmdb": 39415,
+     "tmdbType": "movie",
+     "letterboxd": "loulou",
+     "sources": [
+      "wes-ss2022"
+     ]
+    },
+    {
+     "title": "Tootsie",
+     "year": 1982,
+     "imdb": "tt0084805",
+     "tmdb": 9576,
+     "tmdbType": "movie",
+     "letterboxd": "tootsie",
+     "sources": [
+      "wes-criterion-mobile-closet"
+     ]
+    },
+    {
+     "title": "Mishima: A Life in Four Chapters",
+     "year": 1985,
+     "imdb": "tt0089603",
+     "tmdb": 27064,
+     "tmdbType": "movie",
+     "letterboxd": "mishima-a-life-in-four-chapters",
+     "sources": [
+      "wes-criterion-top10"
+     ]
+    },
+    {
+     "title": "Vagabond",
+     "year": 1985,
+     "imdb": "tt0089960",
+     "tmdb": 44018,
+     "tmdbType": "movie",
+     "letterboxd": "vagabond",
+     "sources": [
+      "wes-ss2022"
+     ]
+    },
+    {
+     "title": "Olivier, Olivier",
+     "year": 1992,
+     "imdb": "tt0102583",
+     "tmdb": 124096,
+     "tmdbType": "movie",
+     "letterboxd": "olivier-olivier",
+     "sources": [
+      "wes-ss2022"
+     ]
+    },
+    {
+     "title": "It All Starts Today",
+     "year": 1999,
+     "imdb": "tt0186730",
+     "tmdb": 32273,
+     "tmdbType": "movie",
+     "letterboxd": "it-all-starts-today",
+     "sources": [
+      "wes-ss2022"
+     ]
+    },
+    {
+     "title": "Kings & Queen",
+     "year": 2004,
+     "imdb": "tt0344273",
+     "tmdb": 44524,
+     "tmdbType": "movie",
+     "letterboxd": "kings-and-queen",
+     "sources": [
+      "wes-ss2022"
+     ]
+    },
+    {
+     "title": "Flow",
+     "year": 2024,
+     "imdb": "tt4772188",
+     "tmdb": 823219,
+     "tmdbType": "movie",
+     "letterboxd": "flow-2024",
+     "sources": [
+      "wes-criterion-mobile-closet"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Wim Wenders",
+   "sources": [
+    {
+     "id": "wenders-ss2022",
+     "kind": "sight-and-sound-2022",
+     "confidence": "high",
+     "title": "Cédula individual, Sight and Sound 2022 (enquete de diretores)",
+     "url": "https://www.bfi.org.uk/sight-and-sound/greatest-films-all-time/all-voters/wim-wenders",
+     "date": "2022"
+    },
+    {
+     "id": "wenders-closet",
+     "kind": "criterion-closet",
+     "confidence": "high",
+     "title": "Wenders: Criterion Closet Picks",
+     "url": "https://www.criterion.com/shop/collection/634-wim-wenders-closet-picks",
+     "date": null,
+     "note": "Filmes lidos na transcrição da conta closetpicks no Letterboxd (caixas expandidas); a página da Criterion confere os títulos."
+    },
+    {
+     "id": "wenders-lbx-10",
+     "kind": "letterboxd-own",
+     "confidence": "high",
+     "title": "Lista 'Wim's 10 favorites' (conta própria wimwenders)",
+     "url": "https://letterboxd.com/wimwenders/list/wims-10-favorites/",
+     "date": null
+    },
+    {
+     "id": "wenders-lbx-road",
+     "kind": "letterboxd-own",
+     "confidence": "high",
+     "title": "Lista 'Dirty Dozen of his favorite Road Movies' (conta própria wimwenders)",
+     "url": "https://letterboxd.com/wimwenders/list/wims-dirty-dozen-of-his-favorite-road-movies/",
+     "date": null
+    }
+   ],
+   "films": [
+    {
+     "title": "Only Angels Have Wings",
+     "year": 1939,
+     "imdb": "tt0031762",
+     "tmdb": 43832,
+     "tmdbType": "movie",
+     "letterboxd": "only-angels-have-wings",
+     "sources": [
+      "wenders-ss2022",
+      "wenders-lbx-10"
+     ]
+    },
+    {
+     "title": "On the Beach",
+     "year": 1959,
+     "imdb": "tt0053137",
+     "tmdb": 35412,
+     "tmdbType": "movie",
+     "letterboxd": "on-the-beach",
+     "sources": [
+      "wenders-ss2022",
+      "wenders-lbx-10"
+     ]
+    },
+    {
+     "title": "One, Two, Three",
+     "year": 1961,
+     "imdb": "tt0055256",
+     "tmdb": 430,
+     "tmdbType": "movie",
+     "letterboxd": "one-two-three",
+     "sources": [
+      "wenders-ss2022",
+      "wenders-lbx-10"
+     ]
+    },
+    {
+     "title": "The Last Adventure",
+     "year": 1967,
+     "imdb": "tt0061376",
+     "tmdb": 11396,
+     "tmdbType": "movie",
+     "letterboxd": "the-last-adventure",
+     "sources": [
+      "wenders-ss2022",
+      "wenders-lbx-10"
+     ]
+    },
+    {
+     "title": "Mississippi Mermaid",
+     "year": 1969,
+     "imdb": "tt0064990",
+     "tmdb": 1651,
+     "tmdbType": "movie",
+     "letterboxd": "mississippi-mermaid",
+     "sources": [
+      "wenders-ss2022",
+      "wenders-lbx-10"
+     ]
+    },
+    {
+     "title": "The King of Comedy",
+     "year": 1982,
+     "imdb": "tt0085794",
+     "tmdb": 262,
+     "tmdbType": "movie",
+     "letterboxd": "the-king-of-comedy",
+     "sources": [
+      "wenders-ss2022",
+      "wenders-lbx-10"
+     ]
+    },
+    {
+     "title": "Down by Law",
+     "year": 1986,
+     "imdb": "tt0090967",
+     "tmdb": 1554,
+     "tmdbType": "movie",
+     "letterboxd": "down-by-law",
+     "sources": [
+      "wenders-ss2022",
+      "wenders-lbx-10"
+     ]
+    },
+    {
+     "title": "Barfly",
+     "year": 1987,
+     "imdb": "tt0092618",
+     "tmdb": 10937,
+     "tmdbType": "movie",
+     "letterboxd": "barfly",
+     "sources": [
+      "wenders-ss2022",
+      "wenders-lbx-10"
+     ]
+    },
+    {
+     "title": "Enter the Void",
+     "year": 2009,
+     "imdb": "tt1191111",
+     "tmdb": 34647,
+     "tmdbType": "movie",
+     "letterboxd": "enter-the-void",
+     "sources": [
+      "wenders-ss2022",
+      "wenders-lbx-10"
+     ]
+    },
+    {
+     "title": "I Was Born, But...",
+     "year": 1932,
+     "imdb": "tt0023634",
+     "tmdb": 28268,
+     "tmdbType": "movie",
+     "letterboxd": "i-was-born-but",
+     "sources": [
+      "wenders-lbx-10"
+     ]
+    },
+    {
+     "title": "The Rules of the Game",
+     "year": 1939,
+     "imdb": "tt0031885",
+     "tmdb": 776,
+     "tmdbType": "movie",
+     "letterboxd": "the-rules-of-the-game",
+     "sources": [
+      "wenders-closet"
+     ]
+    },
+    {
+     "title": "The Grapes of Wrath",
+     "year": 1940,
+     "imdb": "tt0032551",
+     "tmdb": 596,
+     "tmdbType": "movie",
+     "letterboxd": "the-grapes-of-wrath",
+     "sources": [
+      "wenders-lbx-road"
+     ]
+    },
+    {
+     "title": "Detour",
+     "year": 1945,
+     "imdb": "tt0037638",
+     "tmdb": 20367,
+     "tmdbType": "movie",
+     "letterboxd": "detour",
+     "sources": [
+      "wenders-lbx-road"
+     ]
+    },
+    {
+     "title": "Jour de Fête",
+     "year": 1949,
+     "imdb": "tt0040497",
+     "tmdb": 4595,
+     "tmdbType": "movie",
+     "letterboxd": "jour-de-fete",
+     "sources": [
+      "wenders-closet"
+     ]
+    },
+    {
+     "title": "Monsieur Hulot's Holiday",
+     "year": 1953,
+     "imdb": "tt0046487",
+     "tmdb": 778,
+     "tmdbType": "movie",
+     "letterboxd": "monsieur-hulots-holiday",
+     "sources": [
+      "wenders-closet"
+     ]
+    },
+    {
+     "title": "The Searchers",
+     "year": 1956,
+     "imdb": "tt0049730",
+     "tmdb": 3114,
+     "tmdbType": "movie",
+     "letterboxd": "the-searchers",
+     "sources": [
+      "wenders-lbx-road"
+     ]
+    },
+    {
+     "title": "Mon Oncle",
+     "year": 1958,
+     "imdb": "tt0050706",
+     "tmdb": 427,
+     "tmdbType": "movie",
+     "letterboxd": "mon-oncle",
+     "sources": [
+      "wenders-closet"
+     ]
+    },
+    {
+     "title": "Good Morning",
+     "year": 1959,
+     "imdb": "tt0053134",
+     "tmdb": 28276,
+     "tmdbType": "movie",
+     "letterboxd": "good-morning-1959",
+     "sources": [
+      "wenders-ss2022"
+     ]
+    },
+    {
+     "title": "Accattone",
+     "year": 1961,
+     "imdb": "tt0054599",
+     "tmdb": 12491,
+     "tmdbType": "movie",
+     "letterboxd": "accattone",
+     "sources": [
+      "wenders-closet"
+     ]
+    },
+    {
+     "title": "Mamma Roma",
+     "year": 1962,
+     "imdb": "tt0056215",
+     "tmdb": 47796,
+     "tmdbType": "movie",
+     "letterboxd": "mamma-roma",
+     "sources": [
+      "wenders-closet"
+     ]
+    },
+    {
+     "title": "Vivre Sa Vie",
+     "year": 1962,
+     "imdb": "tt0056663",
+     "tmdb": 1626,
+     "tmdbType": "movie",
+     "letterboxd": "vivre-sa-vie",
+     "sources": [
+      "wenders-closet"
+     ]
+    },
+    {
+     "title": "Love Meetings",
+     "year": 1964,
+     "imdb": "tt0057960",
+     "tmdb": 42733,
+     "tmdbType": "movie",
+     "letterboxd": "love-meetings",
+     "sources": [
+      "wenders-closet"
+     ]
+    },
+    {
+     "title": "The Gospel According to St. Matthew",
+     "year": 1964,
+     "imdb": "tt0058715",
+     "tmdb": 24192,
+     "tmdbType": "movie",
+     "letterboxd": "the-gospel-according-to-st-matthew",
+     "sources": [
+      "wenders-closet"
+     ]
+    },
+    {
+     "title": "Pierrot le Fou",
+     "year": 1965,
+     "imdb": "tt0059592",
+     "tmdb": 2786,
+     "tmdbType": "movie",
+     "letterboxd": "pierrot-le-fou",
+     "sources": [
+      "wenders-lbx-road"
+     ]
+    },
+    {
+     "title": "Pleasures of the Flesh",
+     "year": 1965,
+     "imdb": "tt0059159",
+     "tmdb": 72026,
+     "tmdbType": "movie",
+     "letterboxd": "pleasures-of-the-flesh",
+     "sources": [
+      "wenders-closet"
+     ]
+    },
+    {
+     "title": "The Hawks and the Sparrows",
+     "year": 1966,
+     "imdb": "tt0061132",
+     "tmdb": 33954,
+     "tmdbType": "movie",
+     "letterboxd": "the-hawks-and-the-sparrows",
+     "sources": [
+      "wenders-closet"
+     ]
+    },
+    {
+     "title": "Violence at Noon",
+     "year": 1966,
+     "imdb": "tt0060486",
+     "tmdb": 42720,
+     "tmdbType": "movie",
+     "letterboxd": "violence-at-noon",
+     "sources": [
+      "wenders-closet"
+     ]
+    },
+    {
+     "title": "Japanese Summer: Double Suicide",
+     "year": 1967,
+     "imdb": "tt0062009",
+     "tmdb": 48515,
+     "tmdbType": "movie",
+     "letterboxd": "japanese-summer-double-suicide",
+     "sources": [
+      "wenders-closet"
+     ]
+    },
+    {
+     "title": "Oedipus Rex",
+     "year": 1967,
+     "imdb": "tt0061613",
+     "tmdb": 42691,
+     "tmdbType": "movie",
+     "letterboxd": "oedipus-rex",
+     "sources": [
+      "wenders-closet"
+     ]
+    },
+    {
+     "title": "PlayTime",
+     "year": 1967,
+     "imdb": "tt0062136",
+     "tmdb": 10227,
+     "tmdbType": "movie",
+     "letterboxd": "playtime",
+     "sources": [
+      "wenders-closet"
+     ]
+    },
+    {
+     "title": "Sing a Song of Sex",
+     "year": 1967,
+     "imdb": "tt0062042",
+     "tmdb": 77124,
+     "tmdbType": "movie",
+     "letterboxd": "sing-a-song-of-sex",
+     "sources": [
+      "wenders-closet"
+     ]
+    },
+    {
+     "title": "Theorem",
+     "year": 1968,
+     "imdb": "tt0063678",
+     "tmdb": 5335,
+     "tmdbType": "movie",
+     "letterboxd": "theorem",
+     "sources": [
+      "wenders-closet"
+     ]
+    },
+    {
+     "title": "Three Resurrected Drunkards",
+     "year": 1968,
+     "imdb": "tt0063169",
+     "tmdb": 108512,
+     "tmdbType": "movie",
+     "letterboxd": "three-resurrected-drunkards",
+     "sources": [
+      "wenders-closet"
+     ]
+    },
+    {
+     "title": "Easy Rider",
+     "year": 1969,
+     "imdb": "tt0064276",
+     "tmdb": 624,
+     "tmdbType": "movie",
+     "letterboxd": "easy-rider",
+     "sources": [
+      "wenders-lbx-road"
+     ]
+    },
+    {
+     "title": "Medea",
+     "year": 1969,
+     "imdb": "tt0066065",
+     "tmdb": 26356,
+     "tmdbType": "movie",
+     "letterboxd": "medea",
+     "sources": [
+      "wenders-closet"
+     ]
+    },
+    {
+     "title": "Pigsty",
+     "year": 1969,
+     "imdb": "tt0064828",
+     "tmdb": 48688,
+     "tmdbType": "movie",
+     "letterboxd": "pigsty",
+     "sources": [
+      "wenders-closet"
+     ]
+    },
+    {
+     "title": "Five Easy Pieces",
+     "year": 1970,
+     "imdb": "tt0065724",
+     "tmdb": 26617,
+     "tmdbType": "movie",
+     "letterboxd": "five-easy-pieces",
+     "sources": [
+      "wenders-lbx-road"
+     ]
+    },
+    {
+     "title": "Trafic",
+     "year": 1971,
+     "imdb": "tt0069400",
+     "tmdb": 11378,
+     "tmdbType": "movie",
+     "letterboxd": "trafic",
+     "sources": [
+      "wenders-closet"
+     ]
+    },
+    {
+     "title": "Two-Lane Blacktop",
+     "year": 1971,
+     "imdb": "tt0067893",
+     "tmdb": 27236,
+     "tmdbType": "movie",
+     "letterboxd": "two-lane-blacktop",
+     "sources": [
+      "wenders-lbx-road"
+     ]
+    },
+    {
+     "title": "Badlands",
+     "year": 1973,
+     "imdb": "tt0069762",
+     "tmdb": 3133,
+     "tmdbType": "movie",
+     "letterboxd": "badlands",
+     "sources": [
+      "wenders-lbx-road"
+     ]
+    },
+    {
+     "title": "Parade",
+     "year": 1974,
+     "imdb": "tt0071968",
+     "tmdb": 58655,
+     "tmdbType": "movie",
+     "letterboxd": "parade",
+     "sources": [
+      "wenders-closet"
+     ]
+    },
+    {
+     "title": "Salò, or the 120 Days of Sodom",
+     "year": 1975,
+     "imdb": "tt0073650",
+     "tmdb": 5336,
+     "tmdbType": "movie",
+     "letterboxd": "salo-or-the-120-days-of-sodom",
+     "sources": [
+      "wenders-closet"
+     ]
+    },
+    {
+     "title": "Kings of the Road",
+     "year": 1976,
+     "imdb": "tt0073152",
+     "tmdb": 10834,
+     "tmdbType": "movie",
+     "letterboxd": "kings-of-the-road",
+     "sources": [
+      "wenders-lbx-road"
+     ]
+    },
+    {
+     "title": "The Straight Story",
+     "year": 1999,
+     "imdb": "tt0166896",
+     "tmdb": 404,
+     "tmdbType": "movie",
+     "letterboxd": "the-straight-story",
+     "sources": [
+      "wenders-lbx-road"
+     ]
+    },
+    {
+     "title": "The Motorcycle Diaries",
+     "year": 2004,
+     "imdb": "tt0318462",
+     "tmdb": 1653,
+     "tmdbType": "movie",
+     "letterboxd": "the-motorcycle-diaries",
+     "sources": [
+      "wenders-lbx-road"
+     ]
+    },
+    {
+     "title": "Nomadland",
+     "year": 2020,
+     "imdb": "tt9770150",
+     "tmdb": 581734,
+     "tmdbType": "movie",
+     "letterboxd": "nomadland",
+     "sources": [
+      "wenders-lbx-road"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Ingmar Bergman",
+   "sources": [
+    {
+     "id": "bergman-mubi",
+     "kind": "interview",
+     "confidence": "medium",
+     "title": "35 seleções montadas a partir de entrevistas, Criterion e Wikiquote, com citação por item (The Film Stage / MUBI)",
+     "url": "https://thefilmstage.com/news/ingmar-bergmans-favorite-films/",
+     "date": "2015-07",
+     "note": "Psycho (1960) ficou de fora: a citação de Bergman é crítica. Várias entradas são elogio a um filme específico citado por terceiros."
+    }
+   ],
+   "films": [
+    {
+     "title": "The Outlaw and His Wife",
+     "year": 1918,
+     "imdb": "tt0008879",
+     "tmdb": 70800,
+     "tmdbType": "movie",
+     "letterboxd": "the-outlaw-and-his-wife",
+     "sources": [
+      "bergman-mubi"
+     ]
+    },
+    {
+     "title": "The Phantom Carriage",
+     "year": 1921,
+     "imdb": "tt0012364",
+     "tmdb": 58129,
+     "tmdbType": "movie",
+     "letterboxd": "the-phantom-carriage",
+     "sources": [
+      "bergman-mubi"
+     ]
+    },
+    {
+     "title": "The Last Laugh",
+     "year": 1924,
+     "imdb": "tt0015064",
+     "tmdb": 5991,
+     "tmdbType": "movie",
+     "letterboxd": "the-last-laugh",
+     "sources": [
+      "bergman-mubi"
+     ]
+    },
+    {
+     "title": "The Saga of Gösta Berling",
+     "year": 1924,
+     "imdb": "tt0014109",
+     "tmdb": 38759,
+     "tmdbType": "movie",
+     "letterboxd": "the-saga-of-gosta-berling",
+     "sources": [
+      "bergman-mubi"
+     ]
+    },
+    {
+     "title": "Faust",
+     "year": 1926,
+     "imdb": "tt0016847",
+     "tmdb": 10728,
+     "tmdbType": "movie",
+     "letterboxd": "faust-1926",
+     "sources": [
+      "bergman-mubi"
+     ]
+    },
+    {
+     "title": "Sunrise: A Song of Two Humans",
+     "year": 1927,
+     "imdb": "tt0018455",
+     "tmdb": 631,
+     "tmdbType": "movie",
+     "letterboxd": "sunrise-a-song-of-two-humans",
+     "sources": [
+      "bergman-mubi"
+     ]
+    },
+    {
+     "title": "The Circus",
+     "year": 1928,
+     "imdb": "tt0018773",
+     "tmdb": 28978,
+     "tmdbType": "movie",
+     "letterboxd": "the-circus",
+     "sources": [
+      "bergman-mubi"
+     ]
+    },
+    {
+     "title": "The Passion of Joan of Arc",
+     "year": 1928,
+     "imdb": "tt0019254",
+     "tmdb": 780,
+     "tmdbType": "movie",
+     "letterboxd": "the-passion-of-joan-of-arc",
+     "sources": [
+      "bergman-mubi"
+     ]
+    },
+    {
+     "title": "Pépé le Moko",
+     "year": 1937,
+     "imdb": "tt0029453",
+     "tmdb": 26252,
+     "tmdbType": "movie",
+     "letterboxd": "pepe-le-moko",
+     "sources": [
+      "bergman-mubi"
+     ]
+    },
+    {
+     "title": "Hôtel du Nord",
+     "year": 1938,
+     "imdb": "tt0030252",
+     "tmdb": 48369,
+     "tmdbType": "movie",
+     "letterboxd": "hotel-du-nord",
+     "sources": [
+      "bergman-mubi"
+     ]
+    },
+    {
+     "title": "Port of Shadows",
+     "year": 1938,
+     "imdb": "tt0030643",
+     "tmdb": 46326,
+     "tmdbType": "movie",
+     "letterboxd": "port-of-shadows",
+     "sources": [
+      "bergman-mubi"
+     ]
+    },
+    {
+     "title": "Daybreak",
+     "year": 1939,
+     "imdb": "tt0031514",
+     "tmdb": 27053,
+     "tmdbType": "movie",
+     "letterboxd": "le-jour-se-leve",
+     "sources": [
+      "bergman-mubi"
+     ]
+    },
+    {
+     "title": "Rashomon",
+     "year": 1950,
+     "imdb": "tt0042876",
+     "tmdb": 548,
+     "tmdbType": "movie",
+     "letterboxd": "rashomon",
+     "sources": [
+      "bergman-mubi"
+     ]
+    },
+    {
+     "title": "Sunset Boulevard",
+     "year": 1950,
+     "imdb": "tt0043014",
+     "tmdb": 599,
+     "tmdbType": "movie",
+     "letterboxd": "sunset-boulevard",
+     "sources": [
+      "bergman-mubi"
+     ]
+    },
+    {
+     "title": "Diary of a Country Priest",
+     "year": 1951,
+     "imdb": "tt0042619",
+     "tmdb": 43376,
+     "tmdbType": "movie",
+     "letterboxd": "diary-of-a-country-priest",
+     "sources": [
+      "bergman-mubi"
+     ]
+    },
+    {
+     "title": "Monsieur Hulot's Holiday",
+     "year": 1953,
+     "imdb": "tt0046487",
+     "tmdb": 778,
+     "tmdbType": "movie",
+     "letterboxd": "monsieur-hulots-holiday",
+     "sources": [
+      "bergman-mubi"
+     ]
+    },
+    {
+     "title": "La Strada",
+     "year": 1954,
+     "imdb": "tt0047528",
+     "tmdb": 405,
+     "tmdbType": "movie",
+     "letterboxd": "la-strada",
+     "sources": [
+      "bergman-mubi"
+     ]
+    },
+    {
+     "title": "La Dolce Vita",
+     "year": 1960,
+     "imdb": "tt0053779",
+     "tmdb": 439,
+     "tmdbType": "movie",
+     "letterboxd": "la-dolce-vita",
+     "sources": [
+      "bergman-mubi"
+     ]
+    },
+    {
+     "title": "La Notte",
+     "year": 1961,
+     "imdb": "tt0054130",
+     "tmdb": 41050,
+     "tmdbType": "movie",
+     "letterboxd": "la-notte",
+     "sources": [
+      "bergman-mubi"
+     ]
+    },
+    {
+     "title": "Raven's End",
+     "year": 1963,
+     "imdb": "tt0057237",
+     "tmdb": 47206,
+     "tmdbType": "movie",
+     "letterboxd": "ravens-end",
+     "sources": [
+      "bergman-mubi"
+     ]
+    },
+    {
+     "title": "Andrei Rublev",
+     "year": 1966,
+     "imdb": "tt0060107",
+     "tmdb": 895,
+     "tmdbType": "movie",
+     "letterboxd": "andrei-rublev",
+     "sources": [
+      "bergman-mubi"
+     ]
+    },
+    {
+     "title": "Blow-Up",
+     "year": 1966,
+     "imdb": "tt0060176",
+     "tmdb": 1052,
+     "tmdbType": "movie",
+     "letterboxd": "blow-up",
+     "sources": [
+      "bergman-mubi"
+     ]
+    },
+    {
+     "title": "My Sister My Love",
+     "year": 1966,
+     "imdb": "tt0061055",
+     "tmdb": 102497,
+     "tmdbType": "movie",
+     "letterboxd": "syskonbadd-1782",
+     "sources": [
+      "bergman-mubi"
+     ]
+    },
+    {
+     "title": "The Emigrants",
+     "year": 1971,
+     "imdb": "tt0067919",
+     "tmdb": 40732,
+     "tmdbType": "movie",
+     "letterboxd": "the-emigrants",
+     "sources": [
+      "bergman-mubi"
+     ]
+    },
+    {
+     "title": "Edvard Munch",
+     "year": 1974,
+     "imdb": "tt0074462",
+     "tmdb": 50254,
+     "tmdbType": "movie",
+     "letterboxd": "edvard-munch",
+     "sources": [
+      "bergman-mubi"
+     ]
+    },
+    {
+     "title": "A Respectable Life",
+     "year": 1979,
+     "imdb": "tt0078784",
+     "tmdb": 56503,
+     "tmdbType": "movie",
+     "letterboxd": "ett-anstandigt-liv",
+     "sources": [
+      "bergman-mubi"
+     ]
+    },
+    {
+     "title": "The Conductor",
+     "year": 1980,
+     "imdb": "tt0079090",
+     "tmdb": 95269,
+     "tmdbType": "movie",
+     "letterboxd": "the-conductor",
+     "sources": [
+      "bergman-mubi"
+     ]
+    },
+    {
+     "title": "Marianne and Juliane",
+     "year": 1981,
+     "imdb": "tt0082081",
+     "tmdb": 42142,
+     "tmdbType": "movie",
+     "letterboxd": "marianne-and-juliane",
+     "sources": [
+      "bergman-mubi"
+     ]
+    },
+    {
+     "title": "My Life as a Dog",
+     "year": 1985,
+     "imdb": "tt0089606",
+     "tmdb": 8816,
+     "tmdbType": "movie",
+     "letterboxd": "my-life-as-a-dog",
+     "sources": [
+      "bergman-mubi"
+     ]
+    },
+    {
+     "title": "Show Me Love",
+     "year": 1998,
+     "imdb": "tt0150662",
+     "tmdb": 11634,
+     "tmdbType": "movie",
+     "letterboxd": "show-me-love",
+     "sources": [
+      "bergman-mubi"
+     ]
+    },
+    {
+     "title": "The Celebration",
+     "year": 1998,
+     "imdb": "tt0154420",
+     "tmdb": 309,
+     "tmdbType": "movie",
+     "letterboxd": "the-celebration",
+     "sources": [
+      "bergman-mubi"
+     ]
+    },
+    {
+     "title": "American Beauty",
+     "year": 1999,
+     "imdb": "tt0169547",
+     "tmdb": 14,
+     "tmdbType": "movie",
+     "letterboxd": "american-beauty",
+     "sources": [
+      "bergman-mubi"
+     ]
+    },
+    {
+     "title": "Magnolia",
+     "year": 1999,
+     "imdb": "tt0175880",
+     "tmdb": 334,
+     "tmdbType": "movie",
+     "letterboxd": "magnolia",
+     "sources": [
+      "bergman-mubi"
+     ]
+    },
+    {
+     "title": "Traffic",
+     "year": 2000,
+     "imdb": "tt0181865",
+     "tmdb": 1900,
+     "tmdbType": "movie",
+     "letterboxd": "traffic",
+     "sources": [
+      "bergman-mubi"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Federico Fellini",
+   "sources": [
+    {
+     "id": "fellini-ss",
+     "kind": "interview",
+     "confidence": "medium",
+     "title": "Top 10 publicado na Sight and Sound (reproduzido pelo Open Culture / No Film School)",
+     "url": "https://nofilmschool.com/2015/01/federico-fellinis-top-10-favorite-films",
+     "date": null,
+     "note": "A cédula original no BFI não foi localizada. \"Qualquer filme dos Irmãos Marx / Laurel e Hardy\" ficou de fora. Chaplin vem como grupo (Circo/Luzes da Cidade/Monsieur Verdoux)."
+    }
+   ],
+   "films": [
+    {
+     "title": "The Circus",
+     "year": 1928,
+     "imdb": "tt0018773",
+     "tmdb": 28978,
+     "tmdbType": "movie",
+     "letterboxd": "the-circus",
+     "sources": [
+      "fellini-ss"
+     ]
+    },
+    {
+     "title": "City Lights",
+     "year": 1931,
+     "imdb": "tt0021749",
+     "tmdb": 901,
+     "tmdbType": "movie",
+     "letterboxd": "city-lights",
+     "sources": [
+      "fellini-ss"
+     ]
+    },
+    {
+     "title": "Stagecoach",
+     "year": 1939,
+     "imdb": "tt0031971",
+     "tmdb": 995,
+     "tmdbType": "movie",
+     "letterboxd": "stagecoach",
+     "sources": [
+      "fellini-ss"
+     ]
+    },
+    {
+     "title": "Paisan",
+     "year": 1946,
+     "imdb": "tt0038823",
+     "tmdb": 8429,
+     "tmdbType": "movie",
+     "letterboxd": "paisan",
+     "sources": [
+      "fellini-ss"
+     ]
+    },
+    {
+     "title": "Monsieur Verdoux",
+     "year": 1947,
+     "imdb": "tt0039631",
+     "tmdb": 30588,
+     "tmdbType": "movie",
+     "letterboxd": "monsieur-verdoux",
+     "sources": [
+      "fellini-ss"
+     ]
+    },
+    {
+     "title": "Rashomon",
+     "year": 1950,
+     "imdb": "tt0042876",
+     "tmdb": 548,
+     "tmdbType": "movie",
+     "letterboxd": "rashomon",
+     "sources": [
+      "fellini-ss"
+     ]
+    },
+    {
+     "title": "Wild Strawberries",
+     "year": 1957,
+     "imdb": "tt0050986",
+     "tmdb": 614,
+     "tmdbType": "movie",
+     "letterboxd": "wild-strawberries",
+     "sources": [
+      "fellini-ss"
+     ]
+    },
+    {
+     "title": "8½",
+     "year": 1963,
+     "imdb": "tt0056801",
+     "tmdb": 422,
+     "tmdbType": "movie",
+     "letterboxd": "8-half",
+     "sources": [
+      "fellini-ss"
+     ]
+    },
+    {
+     "title": "The Birds",
+     "year": 1963,
+     "imdb": "tt0056869",
+     "tmdb": 571,
+     "tmdbType": "movie",
+     "letterboxd": "the-birds",
+     "sources": [
+      "fellini-ss"
+     ]
+    },
+    {
+     "title": "2001: A Space Odyssey",
+     "year": 1968,
+     "imdb": "tt0062622",
+     "tmdb": 62,
+     "tmdbType": "movie",
+     "letterboxd": "2001-a-space-odyssey",
+     "sources": [
+      "fellini-ss"
+     ]
+    },
+    {
+     "title": "The Discreet Charm of the Bourgeoisie",
+     "year": 1972,
+     "imdb": "tt0068361",
+     "tmdb": 4593,
+     "tmdbType": "movie",
+     "letterboxd": "the-discreet-charm-of-the-bourgeoisie",
+     "sources": [
+      "fellini-ss"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Sergio Leone",
+   "sources": [],
+   "films": []
+  },
+  {
+   "name": "Alfred Hitchcock",
+   "sources": [
+    {
+     "id": "hitchcock-1939",
+     "kind": "interview",
+     "confidence": "medium",
+     "title": "Dez favoritos de 1939 (New York Sun, citado por Movies Silently)",
+     "url": "https://moviessilently.com/2016/03/23/alfred-hitchcocks-top-10-films-9-of-them-silent/",
+     "date": "1939"
+    }
+   ],
+   "films": [
+    {
+     "title": "Forbidden Fruit",
+     "year": 1921,
+     "imdb": "tt0012187",
+     "tmdb": 72496,
+     "tmdbType": "movie",
+     "letterboxd": "forbidden-fruit",
+     "sources": [
+      "hitchcock-1939"
+     ]
+    },
+    {
+     "title": "Sentimental Tommy",
+     "year": 1921,
+     "imdb": "tt0012664",
+     "tmdb": 483072,
+     "tmdbType": "movie",
+     "letterboxd": "sentimental-tommy",
+     "sources": [
+      "hitchcock-1939"
+     ]
+    },
+    {
+     "title": "Saturday Night",
+     "year": 1922,
+     "imdb": "tt0013574",
+     "tmdb": 292192,
+     "tmdbType": "movie",
+     "letterboxd": "saturday-night-1922",
+     "sources": [
+      "hitchcock-1939"
+     ]
+    },
+    {
+     "title": "Scaramouche",
+     "year": 1923,
+     "imdb": "tt0014440",
+     "tmdb": 97716,
+     "tmdbType": "movie",
+     "letterboxd": "scaramouche-1923",
+     "sources": [
+      "hitchcock-1939"
+     ]
+    },
+    {
+     "title": "The Isle of Lost Ships",
+     "year": 1923,
+     "imdb": "tt0014158",
+     "tmdb": 460171,
+     "tmdbType": "movie",
+     "letterboxd": "the-isle-of-lost-ships-1923",
+     "sources": [
+      "hitchcock-1939"
+     ]
+    },
+    {
+     "title": "The Enchanted Cottage",
+     "year": 1924,
+     "imdb": "tt0014869",
+     "tmdb": 176275,
+     "tmdbType": "movie",
+     "letterboxd": "the-enchanted-cottage-1924",
+     "sources": [
+      "hitchcock-1939"
+     ]
+    },
+    {
+     "title": "The Gold Rush",
+     "year": 1925,
+     "imdb": "tt0015864",
+     "tmdb": 962,
+     "tmdbType": "movie",
+     "letterboxd": "the-gold-rush",
+     "sources": [
+      "hitchcock-1939"
+     ]
+    },
+    {
+     "title": "Variety",
+     "year": 1925,
+     "imdb": "tt0016481",
+     "tmdb": 94803,
+     "tmdbType": "movie",
+     "letterboxd": "variety-1925",
+     "sources": [
+      "hitchcock-1939"
+     ]
+    },
+    {
+     "title": "The Last Command",
+     "year": 1928,
+     "imdb": "tt0019071",
+     "tmdb": 52679,
+     "tmdbType": "movie",
+     "letterboxd": "the-last-command",
+     "sources": [
+      "hitchcock-1939"
+     ]
+    },
+    {
+     "title": "I Am a Fugitive from a Chain Gang",
+     "year": 1932,
+     "imdb": "tt0023042",
+     "tmdb": 29740,
+     "tmdbType": "movie",
+     "letterboxd": "i-am-a-fugitive-from-a-chain-gang",
+     "sources": [
+      "hitchcock-1939"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Sofia Coppola",
+   "sources": [
+    {
+     "id": "sofia-ss2022",
+     "kind": "sight-and-sound-2022",
+     "confidence": "high",
+     "title": "Cédula individual, Sight and Sound 2022 (enquete de diretores)",
+     "url": "https://www.bfi.org.uk/sight-and-sound/greatest-films-all-time/all-voters/sofia-coppola",
+     "date": "2022"
+    },
+    {
+     "id": "sofia-closet-marc-jacobs",
+     "kind": "criterion-closet",
+     "confidence": "high",
+     "title": "Sofia Coppola and Marc Jacobs's Criterion Closet Picks",
+     "url": "https://letterboxd.com/closetpicks/list/sofia-coppola-and-marc-jacobs-criterion-closet/",
+     "date": null,
+     "with": "Marc Jacobs"
+    }
+   ],
+   "films": [
+    {
+     "title": "A Place in the Sun",
+     "year": 1951,
+     "imdb": "tt0043924",
+     "tmdb": 25673,
+     "tmdbType": "movie",
+     "letterboxd": "a-place-in-the-sun",
+     "sources": [
+      "sofia-ss2022"
+     ]
+    },
+    {
+     "title": "Seven Samurai",
+     "year": 1954,
+     "imdb": "tt0047478",
+     "tmdb": 346,
+     "tmdbType": "movie",
+     "letterboxd": "seven-samurai",
+     "sources": [
+      "sofia-ss2022"
+     ]
+    },
+    {
+     "title": "La Notte",
+     "year": 1961,
+     "imdb": "tt0054130",
+     "tmdb": 41050,
+     "tmdbType": "movie",
+     "letterboxd": "la-notte",
+     "sources": [
+      "sofia-ss2022"
+     ]
+    },
+    {
+     "title": "The Heartbreak Kid",
+     "year": 1972,
+     "imdb": "tt0068687",
+     "tmdb": 40687,
+     "tmdbType": "movie",
+     "letterboxd": "the-heartbreak-kid-1972",
+     "sources": [
+      "sofia-ss2022"
+     ]
+    },
+    {
+     "title": "Bugsy Malone",
+     "year": 1976,
+     "imdb": "tt0074256",
+     "tmdb": 8446,
+     "tmdbType": "movie",
+     "letterboxd": "bugsy-malone",
+     "sources": [
+      "sofia-ss2022"
+     ]
+    },
+    {
+     "title": "Rumble Fish",
+     "year": 1983,
+     "imdb": "tt0086216",
+     "tmdb": 232,
+     "tmdbType": "movie",
+     "letterboxd": "rumble-fish",
+     "sources": [
+      "sofia-ss2022"
+     ]
+    },
+    {
+     "title": "Purple Rain",
+     "year": 1984,
+     "imdb": "tt0087957",
+     "tmdb": 13763,
+     "tmdbType": "movie",
+     "letterboxd": "purple-rain",
+     "sources": [
+      "sofia-ss2022"
+     ]
+    },
+    {
+     "title": "Lost in America",
+     "year": 1985,
+     "imdb": "tt0089504",
+     "tmdb": 27223,
+     "tmdbType": "movie",
+     "letterboxd": "lost-in-america",
+     "sources": [
+      "sofia-ss2022"
+     ]
+    },
+    {
+     "title": "The Piano",
+     "year": 1993,
+     "imdb": "tt0107822",
+     "tmdb": 713,
+     "tmdbType": "movie",
+     "letterboxd": "the-piano",
+     "sources": [
+      "sofia-ss2022"
+     ]
+    },
+    {
+     "title": "In the Mood for Love",
+     "year": 2000,
+     "imdb": "tt0118694",
+     "tmdb": 843,
+     "tmdbType": "movie",
+     "letterboxd": "in-the-mood-for-love",
+     "sources": [
+      "sofia-ss2022"
+     ]
+    },
+    {
+     "title": "Grey Gardens",
+     "year": 1975,
+     "imdb": "tt0073076",
+     "tmdb": 17346,
+     "tmdbType": "movie",
+     "letterboxd": "grey-gardens",
+     "sources": [
+      "sofia-closet-marc-jacobs"
+     ]
+    },
+    {
+     "title": "Loves of a Blonde",
+     "year": 1965,
+     "imdb": "tt0059415",
+     "tmdb": 39387,
+     "tmdbType": "movie",
+     "letterboxd": "loves-of-a-blonde",
+     "sources": [
+      "sofia-closet-marc-jacobs"
+     ]
+    },
+    {
+     "title": "All That Jazz",
+     "year": 1979,
+     "imdb": "tt0078754",
+     "tmdb": 16858,
+     "tmdbType": "movie",
+     "letterboxd": "all-that-jazz",
+     "sources": [
+      "sofia-closet-marc-jacobs"
+     ]
+    },
+    {
+     "title": "The Bitter Tears of Petra von Kant",
+     "year": 1972,
+     "imdb": "tt0068278",
+     "tmdb": 10310,
+     "tmdbType": "movie",
+     "letterboxd": "the-bitter-tears-of-petra-von-kant",
+     "sources": [
+      "sofia-closet-marc-jacobs"
+     ]
+    },
+    {
+     "title": "Paris Is Burning",
+     "year": 1990,
+     "imdb": "tt0100332",
+     "tmdb": 31225,
+     "tmdbType": "movie",
+     "letterboxd": "paris-is-burning",
+     "sources": [
+      "sofia-closet-marc-jacobs"
+     ]
+    },
+    {
+     "title": "Female Trouble",
+     "year": 1974,
+     "imdb": "tt0072979",
+     "tmdb": 14267,
+     "tmdbType": "movie",
+     "letterboxd": "female-trouble",
+     "sources": [
+      "sofia-closet-marc-jacobs"
+     ]
+    },
+    {
+     "title": "Klute",
+     "year": 1971,
+     "imdb": "tt0067309",
+     "tmdb": 466,
+     "tmdbType": "movie",
+     "letterboxd": "klute",
+     "sources": [
+      "sofia-closet-marc-jacobs"
+     ]
+    },
+    {
+     "title": "The Virgin Suicides",
+     "year": 1999,
+     "imdb": "tt0159097",
+     "tmdb": 1443,
+     "tmdbType": "movie",
+     "letterboxd": "the-virgin-suicides",
+     "sources": [
+      "sofia-closet-marc-jacobs"
+     ]
+    },
+    {
+     "title": "After Hours",
+     "year": 1985,
+     "imdb": "tt0088680",
+     "tmdb": 10843,
+     "tmdbType": "movie",
+     "letterboxd": "after-hours",
+     "sources": [
+      "sofia-closet-marc-jacobs"
+     ]
+    },
+    {
+     "title": "Summer with Monika",
+     "year": 1953,
+     "imdb": "tt0046345",
+     "tmdb": 47735,
+     "tmdbType": "movie",
+     "letterboxd": "summer-with-monika",
+     "sources": [
+      "sofia-closet-marc-jacobs"
+     ]
+    },
+    {
+     "title": "I Knew Her Well",
+     "year": 1965,
+     "imdb": "tt0060545",
+     "tmdb": 59336,
+     "tmdbType": "movie",
+     "letterboxd": "i-knew-her-well",
+     "sources": [
+      "sofia-closet-marc-jacobs"
+     ]
+    },
+    {
+     "title": "Pather Panchali",
+     "year": 1955,
+     "imdb": "tt0048473",
+     "tmdb": 5801,
+     "tmdbType": "movie",
+     "letterboxd": "pather-panchali",
+     "sources": [
+      "sofia-closet-marc-jacobs"
+     ]
+    },
+    {
+     "title": "Aparajito",
+     "year": 1956,
+     "imdb": "tt0048956",
+     "tmdb": 897,
+     "tmdbType": "movie",
+     "letterboxd": "aparajito",
+     "sources": [
+      "sofia-closet-marc-jacobs"
+     ]
+    },
+    {
+     "title": "Apur Sansar",
+     "year": 1959,
+     "imdb": "tt0052572",
+     "tmdb": 896,
+     "tmdbType": "movie",
+     "letterboxd": "apur-sansar",
+     "sources": [
+      "sofia-closet-marc-jacobs"
+     ]
+    },
+    {
+     "title": "Belle de Jour",
+     "year": 1967,
+     "imdb": "tt0061395",
+     "tmdb": 649,
+     "tmdbType": "movie",
+     "letterboxd": "belle-de-jour",
+     "sources": [
+      "sofia-closet-marc-jacobs"
+     ]
+    },
+    {
+     "title": "Flow",
+     "year": 2024,
+     "imdb": "tt4772188",
+     "tmdb": 823219,
+     "tmdbType": "movie",
+     "letterboxd": "flow-2024",
+     "sources": [
+      "sofia-closet-marc-jacobs"
+     ]
+    },
+    {
+     "title": "Ryuichi Sakamoto | Opus",
+     "year": 2023,
+     "imdb": "tt28490873",
+     "tmdb": 1156189,
+     "tmdbType": "movie",
+     "letterboxd": "ryuichi-sakamoto-opus",
+     "sources": [
+      "sofia-closet-marc-jacobs"
+     ]
+    },
+    {
+     "title": "Totally F***ed Up",
+     "year": 1993,
+     "imdb": "tt0108366",
+     "tmdb": 33560,
+     "tmdbType": "movie",
+     "letterboxd": "totally-fed-up",
+     "sources": [
+      "sofia-closet-marc-jacobs"
+     ]
+    },
+    {
+     "title": "The Doom Generation",
+     "year": 1995,
+     "imdb": "tt0112887",
+     "tmdb": 13552,
+     "tmdbType": "movie",
+     "letterboxd": "the-doom-generation",
+     "sources": [
+      "sofia-closet-marc-jacobs"
+     ]
+    },
+    {
+     "title": "Nowhere",
+     "year": 1997,
+     "imdb": "tt0119809",
+     "tmdb": 1811,
+     "tmdbType": "movie",
+     "letterboxd": "nowhere",
+     "sources": [
+      "sofia-closet-marc-jacobs"
+     ]
+    },
+    {
+     "title": "The Heiress",
+     "year": 1949,
+     "imdb": "tt0041452",
+     "tmdb": 28571,
+     "tmdbType": "movie",
+     "letterboxd": "the-heiress",
+     "sources": [
+      "sofia-closet-marc-jacobs"
+     ]
+    },
+    {
+     "title": "Funny Games",
+     "year": 1997,
+     "imdb": "tt0119167",
+     "tmdb": 10234,
+     "tmdbType": "movie",
+     "letterboxd": "funny-games",
+     "sources": [
+      "sofia-closet-marc-jacobs"
+     ]
+    },
+    {
+     "title": "Fast Times at Ridgemont High",
+     "year": 1982,
+     "imdb": "tt0083929",
+     "tmdb": 13342,
+     "tmdbType": "movie",
+     "letterboxd": "fast-times-at-ridgemont-high",
+     "sources": [
+      "sofia-closet-marc-jacobs"
+     ]
+    },
+    {
+     "title": "The Grifters",
+     "year": 1990,
+     "imdb": "tt0099703",
+     "tmdb": 18129,
+     "tmdbType": "movie",
+     "letterboxd": "the-grifters",
+     "sources": [
+      "sofia-closet-marc-jacobs"
+     ]
+    },
+    {
+     "title": "Uncut Gems",
+     "year": 2019,
+     "imdb": "tt5727208",
+     "tmdb": 473033,
+     "tmdbType": "movie",
+     "letterboxd": "uncut-gems",
+     "sources": [
+      "sofia-closet-marc-jacobs"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Lars von Trier",
+   "sources": [],
+   "films": []
+  },
+  {
+   "name": "Alejandro G. Iñárritu",
+   "sources": [
+    {
+     "id": "inarritu-ss2022",
+     "kind": "sight-and-sound-2022",
+     "confidence": "high",
+     "title": "Cédula individual, Sight and Sound 2022 (enquete de diretores)",
+     "url": "https://www.bfi.org.uk/sight-and-sound/greatest-films-all-time/all-voters/alejandro-gonzalez-inarritu",
+     "date": "2022"
+    }
+   ],
+   "films": [
+    {
+     "title": "Ordet",
+     "year": 1955,
+     "imdb": "tt0048452",
+     "tmdb": 48035,
+     "tmdbType": "movie",
+     "letterboxd": "ordet",
+     "sources": [
+      "inarritu-ss2022"
+     ]
+    },
+    {
+     "title": "L'Avventura",
+     "year": 1960,
+     "imdb": "tt0053619",
+     "tmdb": 5165,
+     "tmdbType": "movie",
+     "letterboxd": "lavventura",
+     "sources": [
+      "inarritu-ss2022"
+     ]
+    },
+    {
+     "title": "La Dolce Vita",
+     "year": 1960,
+     "imdb": "tt0053779",
+     "tmdb": 439,
+     "tmdbType": "movie",
+     "letterboxd": "la-dolce-vita",
+     "sources": [
+      "inarritu-ss2022"
+     ]
+    },
+    {
+     "title": "Contempt",
+     "year": 1963,
+     "imdb": "tt0057345",
+     "tmdb": 266,
+     "tmdbType": "movie",
+     "letterboxd": "contempt",
+     "sources": [
+      "inarritu-ss2022"
+     ]
+    },
+    {
+     "title": "Andrei Rublev",
+     "year": 1966,
+     "imdb": "tt0060107",
+     "tmdb": 895,
+     "tmdbType": "movie",
+     "letterboxd": "andrei-rublev",
+     "sources": [
+      "inarritu-ss2022"
+     ]
+    },
+    {
+     "title": "Persona",
+     "year": 1966,
+     "imdb": "tt0060827",
+     "tmdb": 797,
+     "tmdbType": "movie",
+     "letterboxd": "persona",
+     "sources": [
+      "inarritu-ss2022"
+     ]
+    },
+    {
+     "title": "PlayTime",
+     "year": 1967,
+     "imdb": "tt0062136",
+     "tmdb": 10227,
+     "tmdbType": "movie",
+     "letterboxd": "playtime",
+     "sources": [
+      "inarritu-ss2022"
+     ]
+    },
+    {
+     "title": "The Discreet Charm of the Bourgeoisie",
+     "year": 1972,
+     "imdb": "tt0068361",
+     "tmdb": 4593,
+     "tmdbType": "movie",
+     "letterboxd": "the-discreet-charm-of-the-bourgeoisie",
+     "sources": [
+      "inarritu-ss2022"
+     ]
+    },
+    {
+     "title": "The Tree of Wooden Clogs",
+     "year": 1978,
+     "imdb": "tt0077138",
+     "tmdb": 31542,
+     "tmdbType": "movie",
+     "letterboxd": "the-tree-of-wooden-clogs",
+     "sources": [
+      "inarritu-ss2022"
+     ]
+    },
+    {
+     "title": "You, the Living",
+     "year": 2007,
+     "imdb": "tt0445336",
+     "tmdb": 5817,
+     "tmdbType": "movie",
+     "letterboxd": "you-the-living",
+     "sources": [
+      "inarritu-ss2022"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Damien Chazelle",
+   "sources": [
+    {
+     "id": "chazelle-lacinetek",
+     "kind": "interview",
+     "confidence": "medium",
+     "title": "Cinémathèque idéale de Damien Chazelle (LaCinetek, lista do próprio diretor)",
+     "url": "https://www.lacinetek.com/be-en/director-list/damien-chazelle-55",
+     "date": null,
+     "note": "Lida via WebFetch da página do LaCinetek (66 títulos); LaCinetek lista só filmes disponíveis no seu VOD. Ugetsu aparece como \"Tales of the Pale and Silvery Moon after the Rain\"."
+    }
+   ],
+   "films": [
+    {
+     "title": "Manhatta",
+     "year": 1921,
+     "imdb": "tt0131468",
+     "tmdb": 96948,
+     "tmdbType": "movie",
+     "letterboxd": "manhatta",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Ballet Mécanique",
+     "year": 1924,
+     "imdb": "tt0014694",
+     "tmdb": 107011,
+     "tmdbType": "movie",
+     "letterboxd": "ballet-mecanique",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Ménilmontant",
+     "year": 1926,
+     "imdb": "tt0147039",
+     "tmdb": 48000,
+     "tmdbType": "movie",
+     "letterboxd": "menilmontant",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Berlin: Symphony of a Great City",
+     "year": 1927,
+     "imdb": "tt0017668",
+     "tmdb": 222,
+     "tmdbType": "movie",
+     "letterboxd": "berlin-symphony-of-a-great-city",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "College",
+     "year": 1927,
+     "imdb": "tt0017765",
+     "tmdb": 34847,
+     "tmdbType": "movie",
+     "letterboxd": "college",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Napoleon",
+     "year": 1927,
+     "imdb": "tt0018192",
+     "tmdb": 42536,
+     "tmdbType": "movie",
+     "letterboxd": "napoleon",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Sunrise: A Song of Two Humans",
+     "year": 1927,
+     "imdb": "tt0018455",
+     "tmdb": 631,
+     "tmdbType": "movie",
+     "letterboxd": "sunrise-a-song-of-two-humans",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "The Fall of the House of Usher",
+     "year": 1928,
+     "imdb": "tt0018770",
+     "tmdb": 28189,
+     "tmdbType": "movie",
+     "letterboxd": "the-fall-of-the-house-of-usher",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "The Passion of Joan of Arc",
+     "year": 1928,
+     "imdb": "tt0019254",
+     "tmdb": 780,
+     "tmdbType": "movie",
+     "letterboxd": "the-passion-of-joan-of-arc",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Black and Tan",
+     "year": 1929,
+     "imdb": "tt0019701",
+     "tmdb": 144615,
+     "tmdbType": "movie",
+     "letterboxd": "black-and-tan",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "City Lights",
+     "year": 1931,
+     "imdb": "tt0021749",
+     "tmdb": 901,
+     "tmdbType": "movie",
+     "letterboxd": "city-lights",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Vampyr",
+     "year": 1932,
+     "imdb": "tt0023649",
+     "tmdb": 779,
+     "tmdbType": "movie",
+     "letterboxd": "vampyr",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "L'Atalante",
+     "year": 1934,
+     "imdb": "tt0024844",
+     "tmdb": 43904,
+     "tmdbType": "movie",
+     "letterboxd": "latalante",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Rose Hobart",
+     "year": 1936,
+     "imdb": "tt0138758",
+     "tmdb": 105552,
+     "tmdbType": "movie",
+     "letterboxd": "rose-hobart",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Make Way for Tomorrow",
+     "year": 1937,
+     "imdb": "tt0029192",
+     "tmdb": 41059,
+     "tmdbType": "movie",
+     "letterboxd": "make-way-for-tomorrow",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Bringing Up Baby",
+     "year": 1938,
+     "imdb": "tt0029947",
+     "tmdb": 900,
+     "tmdbType": "movie",
+     "letterboxd": "bringing-up-baby",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "The Rules of the Game",
+     "year": 1939,
+     "imdb": "tt0031885",
+     "tmdb": 776,
+     "tmdbType": "movie",
+     "letterboxd": "the-rules-of-the-game",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "The Wizard of Oz",
+     "year": 1939,
+     "imdb": "tt0032138",
+     "tmdb": 630,
+     "tmdbType": "movie",
+     "letterboxd": "the-wizard-of-oz-1939",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Dumbo",
+     "year": 1941,
+     "imdb": "tt0033563",
+     "tmdb": 11360,
+     "tmdbType": "movie",
+     "letterboxd": "dumbo",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Bambi",
+     "year": 1942,
+     "imdb": "tt0034492",
+     "tmdb": 3170,
+     "tmdbType": "movie",
+     "letterboxd": "bambi",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Meet Me in St. Louis",
+     "year": 1944,
+     "imdb": "tt0037059",
+     "tmdb": 909,
+     "tmdbType": "movie",
+     "letterboxd": "meet-me-in-st-louis",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "The Vampire",
+     "year": 1945,
+     "imdb": "tt0130342",
+     "tmdb": 144694,
+     "tmdbType": "movie",
+     "letterboxd": "the-vampire-1945",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Blood of the Beasts",
+     "year": 1949,
+     "imdb": "tt0041842",
+     "tmdb": 91262,
+     "tmdbType": "movie",
+     "letterboxd": "blood-of-the-beasts",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Late Spring",
+     "year": 1949,
+     "imdb": "tt0041154",
+     "tmdb": 20530,
+     "tmdbType": "movie",
+     "letterboxd": "late-spring",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Singin' in the Rain",
+     "year": 1952,
+     "imdb": "tt0045152",
+     "tmdb": 872,
+     "tmdbType": "movie",
+     "letterboxd": "singin-in-the-rain",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Ugetsu",
+     "year": 1953,
+     "imdb": "tt0046478",
+     "tmdb": 14696,
+     "tmdbType": "movie",
+     "letterboxd": "ugetsu",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Vertigo",
+     "year": 1958,
+     "imdb": "tt0052357",
+     "tmdb": 426,
+     "tmdbType": "movie",
+     "letterboxd": "vertigo",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Window Water Baby Moving",
+     "year": 1959,
+     "imdb": "tt0138941",
+     "tmdb": 97513,
+     "tmdbType": "movie",
+     "letterboxd": "window-water-baby-moving",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "La Dolce Vita",
+     "year": 1960,
+     "imdb": "tt0053779",
+     "tmdb": 439,
+     "tmdbType": "movie",
+     "letterboxd": "la-dolce-vita",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Primary",
+     "year": 1960,
+     "imdb": "tt0054205",
+     "tmdb": 133,
+     "tmdbType": "movie",
+     "letterboxd": "primary",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Chronicle of a Summer",
+     "year": 1961,
+     "imdb": "tt0054745",
+     "tmdb": 84972,
+     "tmdbType": "movie",
+     "letterboxd": "chronicle-of-a-summer",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Cléo from 5 to 7",
+     "year": 1962,
+     "imdb": "tt0055852",
+     "tmdb": 499,
+     "tmdbType": "movie",
+     "letterboxd": "cleo-from-5-to-7",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "High and Low",
+     "year": 1963,
+     "imdb": "tt0057565",
+     "tmdb": 12493,
+     "tmdbType": "movie",
+     "letterboxd": "high-and-low",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "The Umbrellas of Cherbourg",
+     "year": 1964,
+     "imdb": "tt0058450",
+     "tmdb": 5967,
+     "tmdbType": "movie",
+     "letterboxd": "the-umbrellas-of-cherbourg",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Andrei Rublev",
+     "year": 1966,
+     "imdb": "tt0060107",
+     "tmdb": 895,
+     "tmdbType": "movie",
+     "letterboxd": "andrei-rublev",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Gimme Shelter",
+     "year": 1970,
+     "imdb": "tt0065780",
+     "tmdb": 132,
+     "tmdbType": "movie",
+     "letterboxd": "gimme-shelter-1970",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Zorns Lemma",
+     "year": 1970,
+     "imdb": "tt0131149",
+     "tmdb": 88276,
+     "tmdbType": "movie",
+     "letterboxd": "zorns-lemma",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "The Mother and the Whore",
+     "year": 1973,
+     "imdb": "tt0070359",
+     "tmdb": 48693,
+     "tmdbType": "movie",
+     "letterboxd": "the-mother-and-the-whore",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Touki Bouki",
+     "year": 1973,
+     "imdb": "tt0070820",
+     "tmdb": 77771,
+     "tmdbType": "movie",
+     "letterboxd": "touki-bouki",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "A Woman Under the Influence",
+     "year": 1974,
+     "imdb": "tt0072417",
+     "tmdb": 29845,
+     "tmdbType": "movie",
+     "letterboxd": "a-woman-under-the-influence",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Barry Lyndon",
+     "year": 1975,
+     "imdb": "tt0072684",
+     "tmdb": 3175,
+     "tmdbType": "movie",
+     "letterboxd": "barry-lyndon",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Taxi Driver",
+     "year": 1976,
+     "imdb": "tt0075314",
+     "tmdb": 103,
+     "tmdbType": "movie",
+     "letterboxd": "taxi-driver",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Days of Heaven",
+     "year": 1978,
+     "imdb": "tt0077405",
+     "tmdb": 16642,
+     "tmdbType": "movie",
+     "letterboxd": "days-of-heaven",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Raging Bull",
+     "year": 1980,
+     "imdb": "tt0081398",
+     "tmdb": 1578,
+     "tmdbType": "movie",
+     "letterboxd": "raging-bull",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "A Nos Amours",
+     "year": 1983,
+     "imdb": "tt0086650",
+     "tmdb": 2282,
+     "tmdbType": "movie",
+     "letterboxd": "a-nos-amours",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Sans Soleil",
+     "year": 1983,
+     "imdb": "tt0084628",
+     "tmdb": 1563,
+     "tmdbType": "movie",
+     "letterboxd": "sans-soleil",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Blue Velvet",
+     "year": 1986,
+     "imdb": "tt0090756",
+     "tmdb": 793,
+     "tmdbType": "movie",
+     "letterboxd": "blue-velvet",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Close-Up",
+     "year": 1990,
+     "imdb": "tt0100234",
+     "tmdb": 30017,
+     "tmdbType": "movie",
+     "letterboxd": "close-up",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Sink or Swim",
+     "year": 1990,
+     "imdb": "tt0100624",
+     "tmdb": 123777,
+     "tmdbType": "movie",
+     "letterboxd": "sink-or-swim",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "The Double Life of Véronique",
+     "year": 1991,
+     "imdb": "tt0101765",
+     "tmdb": 1600,
+     "tmdbType": "movie",
+     "letterboxd": "the-double-life-of-veronique",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "The Lovers on the Bridge",
+     "year": 1991,
+     "imdb": "tt0101318",
+     "tmdb": 2767,
+     "tmdbType": "movie",
+     "letterboxd": "the-lovers-on-the-bridge",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Vive L'Amour",
+     "year": 1994,
+     "imdb": "tt0109066",
+     "tmdb": 11985,
+     "tmdbType": "movie",
+     "letterboxd": "vive-lamour",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "My Sex Life... or How I Got Into an Argument",
+     "year": 1996,
+     "imdb": "tt0115928",
+     "tmdb": 83994,
+     "tmdbType": "movie",
+     "letterboxd": "my-sex-life-or-how-i-got-into-an-argument",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Happy Together",
+     "year": 1997,
+     "imdb": "tt0118845",
+     "tmdb": 18329,
+     "tmdbType": "movie",
+     "letterboxd": "happy-together-1997",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Titanic",
+     "year": 1997,
+     "imdb": "tt0120338",
+     "tmdb": 597,
+     "tmdbType": "movie",
+     "letterboxd": "titanic-1997",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Beau Travail",
+     "year": 1999,
+     "imdb": "tt0209933",
+     "tmdb": 14626,
+     "tmdbType": "movie",
+     "letterboxd": "beau-travail",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Eyes Wide Shut",
+     "year": 1999,
+     "imdb": "tt0120663",
+     "tmdb": 345,
+     "tmdbType": "movie",
+     "letterboxd": "eyes-wide-shut",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Humanité",
+     "year": 1999,
+     "imdb": "tt0197569",
+     "tmdb": 65296,
+     "tmdbType": "movie",
+     "letterboxd": "humanite",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Romance",
+     "year": 1999,
+     "imdb": "tt0194314",
+     "tmdb": 26338,
+     "tmdbType": "movie",
+     "letterboxd": "romance-1999",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Spirited Away",
+     "year": 2001,
+     "imdb": "tt0245429",
+     "tmdb": 129,
+     "tmdbType": "movie",
+     "letterboxd": "spirited-away",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Time Out",
+     "year": 2001,
+     "imdb": "tt0279065",
+     "tmdb": 35651,
+     "tmdbType": "movie",
+     "letterboxd": "time-out",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    },
+    {
+     "title": "Before Sunset",
+     "year": 2004,
+     "imdb": "tt0381681",
+     "tmdb": 80,
+     "tmdbType": "movie",
+     "letterboxd": "before-sunset",
+     "sources": [
+      "chazelle-lacinetek"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Alfonso Cuarón",
+   "sources": [
+    {
+     "id": "cuaron-closet",
+     "kind": "criterion-closet",
+     "confidence": "high",
+     "title": "Alfonso Cuarón and Paweł Pawlikowski's Closet Picks",
+     "url": "https://www.criterion.com/shop/collection/526-alfonso-cuaron-and-pawel-pawlikowski-s-closet-picks",
+     "date": null,
+     "note": "Lista dos dois diretores (\"recomendam favoritos um ao outro\"); não dá para separar o que é de Cuarón. Caixas The Complete Jean Vigo e Eclipse Larisa Shepitko não expandidas.",
+     "with": "Pawel Pawlikowski"
+    }
+   ],
+   "films": [
+    {
+     "title": "To Be or Not to Be",
+     "year": 1942,
+     "imdb": "tt0035446",
+     "tmdb": 198,
+     "tmdbType": "movie",
+     "letterboxd": "to-be-or-not-to-be",
+     "sources": [
+      "cuaron-closet"
+     ]
+    },
+    {
+     "title": "Lola Montès",
+     "year": 1955,
+     "imdb": "tt0048308",
+     "tmdb": 35987,
+     "tmdbType": "movie",
+     "letterboxd": "lola-montes",
+     "sources": [
+      "cuaron-closet"
+     ]
+    },
+    {
+     "title": "The Virgin Spring",
+     "year": 1960,
+     "imdb": "tt0053976",
+     "tmdb": 11656,
+     "tmdbType": "movie",
+     "letterboxd": "the-virgin-spring",
+     "sources": [
+      "cuaron-closet"
+     ]
+    },
+    {
+     "title": "Vivre Sa Vie",
+     "year": 1962,
+     "imdb": "tt0056663",
+     "tmdb": 1626,
+     "tmdbType": "movie",
+     "letterboxd": "vivre-sa-vie",
+     "sources": [
+      "cuaron-closet"
+     ]
+    },
+    {
+     "title": "This Sporting Life",
+     "year": 1963,
+     "imdb": "tt0057578",
+     "tmdb": 18774,
+     "tmdbType": "movie",
+     "letterboxd": "this-sporting-life",
+     "sources": [
+      "cuaron-closet"
+     ]
+    },
+    {
+     "title": "Masculin Féminin",
+     "year": 1966,
+     "imdb": "tt0060675",
+     "tmdb": 4710,
+     "tmdbType": "movie",
+     "letterboxd": "masculin-feminin",
+     "sources": [
+      "cuaron-closet"
+     ]
+    },
+    {
+     "title": "The Firemen's Ball",
+     "year": 1967,
+     "imdb": "tt0061781",
+     "tmdb": 38442,
+     "tmdbType": "movie",
+     "letterboxd": "the-firemens-ball",
+     "sources": [
+      "cuaron-closet"
+     ]
+    },
+    {
+     "title": "Two-Lane Blacktop",
+     "year": 1971,
+     "imdb": "tt0067893",
+     "tmdb": 27236,
+     "tmdbType": "movie",
+     "letterboxd": "two-lane-blacktop",
+     "sources": [
+      "cuaron-closet"
+     ]
+    },
+    {
+     "title": "Naked",
+     "year": 1993,
+     "imdb": "tt0107653",
+     "tmdb": 21450,
+     "tmdbType": "movie",
+     "letterboxd": "naked",
+     "sources": [
+      "cuaron-closet"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Noah Baumbach",
+   "sources": [],
+   "films": []
+  },
+  {
+   "name": "Francis Ford Coppola",
+   "sources": [
+    {
+     "id": "coppola-ss2012",
+     "kind": "sight-and-sound-2012",
+     "confidence": "high",
+     "title": "Cédula individual, Sight and Sound 2012 (enquete de diretores)",
+     "url": "http://www.bfi.org.uk/films-tv-people/sightandsoundpoll2012/voter/948",
+     "date": "2012"
+    },
+    {
+     "id": "coppola-closet",
+     "kind": "criterion-closet",
+     "confidence": "high",
+     "title": "Francis Ford Coppola: Criterion Closet Picks",
+     "url": "https://www.criterion.com/shop/collection/763-francis-ford-coppola-s-closet-picks",
+     "date": null,
+     "note": "Filmes lidos na transcrição da conta closetpicks no Letterboxd (caixas expandidas); a página da Criterion confere os títulos."
+    },
+    {
+     "id": "coppola-lbx-recommend",
+     "kind": "letterboxd-own",
+     "confidence": "high",
+     "title": "Lista 'Movies That I Highly Recommend' (conta própria francisfcoppola)",
+     "url": "https://letterboxd.com/francisfcoppola/list/movies-that-i-highly-recommend/",
+     "date": null
+    },
+    {
+     "id": "coppola-lbx-megalopolis",
+     "kind": "letterboxd-own",
+     "confidence": "high",
+     "title": "Lista '20 Films that Inspired Megalopolis' (conta própria francisfcoppola)",
+     "url": "https://letterboxd.com/francisfcoppola/list/20-films-that-inspired-megalopolis/",
+     "date": null
+    }
+   ],
+   "films": [
+    {
+     "title": "Sunrise: A Song of Two Humans",
+     "year": 1927,
+     "imdb": "tt0018455",
+     "tmdb": 631,
+     "tmdbType": "movie",
+     "letterboxd": "sunrise-a-song-of-two-humans",
+     "sources": [
+      "coppola-ss2012",
+      "coppola-lbx-recommend"
+     ]
+    },
+    {
+     "title": "The Awful Truth",
+     "year": 1937,
+     "imdb": "tt0028597",
+     "tmdb": 14675,
+     "tmdbType": "movie",
+     "letterboxd": "the-awful-truth",
+     "sources": [
+      "coppola-closet",
+      "coppola-lbx-recommend"
+     ]
+    },
+    {
+     "title": "The Best Years of Our Lives",
+     "year": 1946,
+     "imdb": "tt0036868",
+     "tmdb": 887,
+     "tmdbType": "movie",
+     "letterboxd": "the-best-years-of-our-lives",
+     "sources": [
+      "coppola-ss2012",
+      "coppola-lbx-megalopolis"
+     ]
+    },
+    {
+     "title": "Ashes and Diamonds",
+     "year": 1958,
+     "imdb": "tt0052080",
+     "tmdb": 5055,
+     "tmdbType": "movie",
+     "letterboxd": "ashes-and-diamonds",
+     "sources": [
+      "coppola-ss2012",
+      "coppola-lbx-recommend"
+     ]
+    },
+    {
+     "title": "The Bad Sleep Well",
+     "year": 1960,
+     "imdb": "tt0054460",
+     "tmdb": 31589,
+     "tmdbType": "movie",
+     "letterboxd": "the-bad-sleep-well",
+     "sources": [
+      "coppola-ss2012",
+      "coppola-lbx-recommend"
+     ]
+    },
+    {
+     "title": "The King of Comedy",
+     "year": 1982,
+     "imdb": "tt0085794",
+     "tmdb": 262,
+     "tmdbType": "movie",
+     "letterboxd": "the-king-of-comedy",
+     "sources": [
+      "coppola-ss2012",
+      "coppola-lbx-recommend"
+     ]
+    },
+    {
+     "title": "Cabiria",
+     "year": 1914,
+     "imdb": "tt0003740",
+     "tmdb": 5153,
+     "tmdbType": "movie",
+     "letterboxd": "cabiria",
+     "sources": [
+      "coppola-lbx-megalopolis"
+     ]
+    },
+    {
+     "title": "The Last Laugh",
+     "year": 1924,
+     "imdb": "tt0015064",
+     "tmdb": 5991,
+     "tmdbType": "movie",
+     "letterboxd": "the-last-laugh",
+     "sources": [
+      "coppola-lbx-recommend"
+     ]
+    },
+    {
+     "title": "Joyless Street",
+     "year": 1925,
+     "imdb": "tt0015842",
+     "tmdb": 8462,
+     "tmdbType": "movie",
+     "letterboxd": "joyless-street",
+     "sources": [
+      "coppola-lbx-recommend"
+     ]
+    },
+    {
+     "title": "The Blue Angel",
+     "year": 1930,
+     "imdb": "tt0020697",
+     "tmdb": 228,
+     "tmdbType": "movie",
+     "letterboxd": "the-blue-angel",
+     "sources": [
+      "coppola-lbx-recommend"
+     ]
+    },
+    {
+     "title": "Shanghai Express",
+     "year": 1932,
+     "imdb": "tt0023458",
+     "tmdb": 875,
+     "tmdbType": "movie",
+     "letterboxd": "shanghai-express",
+     "sources": [
+      "coppola-lbx-recommend"
+     ]
+    },
+    {
+     "title": "The Bitter Tea of General Yen",
+     "year": 1932,
+     "imdb": "tt0023814",
+     "tmdb": 34187,
+     "tmdbType": "movie",
+     "letterboxd": "the-bitter-tea-of-general-yen",
+     "sources": [
+      "coppola-lbx-recommend"
+     ]
+    },
+    {
+     "title": "The Invisible Man",
+     "year": 1933,
+     "imdb": "tt0024184",
+     "tmdb": 10787,
+     "tmdbType": "movie",
+     "letterboxd": "the-invisible-man",
+     "sources": [
+      "coppola-lbx-megalopolis"
+     ]
+    },
+    {
+     "title": "Things to Come",
+     "year": 1936,
+     "imdb": "tt0028358",
+     "tmdb": 3596,
+     "tmdbType": "movie",
+     "letterboxd": "things-to-come",
+     "sources": [
+      "coppola-lbx-megalopolis"
+     ]
+    },
+    {
+     "title": "Pygmalion",
+     "year": 1938,
+     "imdb": "tt0030637",
+     "tmdb": 25016,
+     "tmdbType": "movie",
+     "letterboxd": "pygmalion",
+     "sources": [
+      "coppola-lbx-megalopolis"
+     ]
+    },
+    {
+     "title": "Dance, Girl, Dance",
+     "year": 1940,
+     "imdb": "tt0032376",
+     "tmdb": 32196,
+     "tmdbType": "movie",
+     "letterboxd": "dance-girl-dance",
+     "sources": [
+      "coppola-closet"
+     ]
+    },
+    {
+     "title": "Citizen Kane",
+     "year": 1941,
+     "imdb": "tt0033467",
+     "tmdb": 15,
+     "tmdbType": "movie",
+     "letterboxd": "citizen-kane",
+     "sources": [
+      "coppola-lbx-megalopolis"
+     ]
+    },
+    {
+     "title": "In Which We Serve",
+     "year": 1942,
+     "imdb": "tt0034891",
+     "tmdb": 28093,
+     "tmdbType": "movie",
+     "letterboxd": "in-which-we-serve",
+     "sources": [
+      "coppola-closet"
+     ]
+    },
+    {
+     "title": "This Happy Breed",
+     "year": 1944,
+     "imdb": "tt0037367",
+     "tmdb": 51617,
+     "tmdbType": "movie",
+     "letterboxd": "this-happy-breed",
+     "sources": [
+      "coppola-closet"
+     ]
+    },
+    {
+     "title": "Blithe Spirit",
+     "year": 1945,
+     "imdb": "tt0038363",
+     "tmdb": 19072,
+     "tmdbType": "movie",
+     "letterboxd": "blithe-spirit",
+     "sources": [
+      "coppola-closet"
+     ]
+    },
+    {
+     "title": "Brief Encounter",
+     "year": 1945,
+     "imdb": "tt0037558",
+     "tmdb": 851,
+     "tmdbType": "movie",
+     "letterboxd": "brief-encounter",
+     "sources": [
+      "coppola-closet"
+     ]
+    },
+    {
+     "title": "Caesar and Cleopatra",
+     "year": 1945,
+     "imdb": "tt0038390",
+     "tmdb": 31561,
+     "tmdbType": "movie",
+     "letterboxd": "caesar-and-cleopatra",
+     "sources": [
+      "coppola-lbx-megalopolis"
+     ]
+    },
+    {
+     "title": "Beauty and the Beast",
+     "year": 1946,
+     "imdb": "tt0038348",
+     "tmdb": 648,
+     "tmdbType": "movie",
+     "letterboxd": "beauty-and-the-beast",
+     "sources": [
+      "coppola-lbx-megalopolis"
+     ]
+    },
+    {
+     "title": "The Red Shoes",
+     "year": 1948,
+     "imdb": "tt0040725",
+     "tmdb": 19542,
+     "tmdbType": "movie",
+     "letterboxd": "the-red-shoes",
+     "sources": [
+      "coppola-lbx-megalopolis"
+     ]
+    },
+    {
+     "title": "Jour de Fête",
+     "year": 1949,
+     "imdb": "tt0040497",
+     "tmdb": 4595,
+     "tmdbType": "movie",
+     "letterboxd": "jour-de-fete",
+     "sources": [
+      "coppola-closet"
+     ]
+    },
+    {
+     "title": "The Fountainhead",
+     "year": 1949,
+     "imdb": "tt0041386",
+     "tmdb": 24650,
+     "tmdbType": "movie",
+     "letterboxd": "the-fountainhead",
+     "sources": [
+      "coppola-lbx-megalopolis"
+     ]
+    },
+    {
+     "title": "A Place in the Sun",
+     "year": 1951,
+     "imdb": "tt0043924",
+     "tmdb": 25673,
+     "tmdbType": "movie",
+     "letterboxd": "a-place-in-the-sun",
+     "sources": [
+      "coppola-lbx-recommend"
+     ]
+    },
+    {
+     "title": "Singin' in the Rain",
+     "year": 1952,
+     "imdb": "tt0045152",
+     "tmdb": 872,
+     "tmdbType": "movie",
+     "letterboxd": "singin-in-the-rain",
+     "sources": [
+      "coppola-ss2012"
+     ]
+    },
+    {
+     "title": "I Vitelloni",
+     "year": 1953,
+     "imdb": "tt0046521",
+     "tmdb": 12548,
+     "tmdbType": "movie",
+     "letterboxd": "i-vitelloni",
+     "sources": [
+      "coppola-ss2012"
+     ]
+    },
+    {
+     "title": "Monsieur Hulot's Holiday",
+     "year": 1953,
+     "imdb": "tt0046487",
+     "tmdb": 778,
+     "tmdbType": "movie",
+     "letterboxd": "monsieur-hulots-holiday",
+     "sources": [
+      "coppola-closet"
+     ]
+    },
+    {
+     "title": "Tokyo Story",
+     "year": 1953,
+     "imdb": "tt0046438",
+     "tmdb": 18148,
+     "tmdbType": "movie",
+     "letterboxd": "tokyo-story",
+     "sources": [
+      "coppola-lbx-recommend"
+     ]
+    },
+    {
+     "title": "French Cancan",
+     "year": 1955,
+     "imdb": "tt0046998",
+     "tmdb": 45213,
+     "tmdbType": "movie",
+     "letterboxd": "french-cancan",
+     "sources": [
+      "coppola-lbx-recommend"
+     ]
+    },
+    {
+     "title": "Invitation to the Dance",
+     "year": 1956,
+     "imdb": "tt0049367",
+     "tmdb": 47310,
+     "tmdbType": "movie",
+     "letterboxd": "invitation-to-the-dance",
+     "sources": [
+      "coppola-lbx-recommend"
+     ]
+    },
+    {
+     "title": "The Burmese Harp",
+     "year": 1956,
+     "imdb": "tt0049012",
+     "tmdb": 33319,
+     "tmdbType": "movie",
+     "letterboxd": "the-burmese-harp",
+     "sources": [
+      "coppola-lbx-recommend"
+     ]
+    },
+    {
+     "title": "Mon Oncle",
+     "year": 1958,
+     "imdb": "tt0050706",
+     "tmdb": 427,
+     "tmdbType": "movie",
+     "letterboxd": "mon-oncle",
+     "sources": [
+      "coppola-closet"
+     ]
+    },
+    {
+     "title": "Ben-Hur",
+     "year": 1959,
+     "imdb": "tt0052618",
+     "tmdb": 665,
+     "tmdbType": "movie",
+     "letterboxd": "ben-hur-1959",
+     "sources": [
+      "coppola-lbx-megalopolis"
+     ]
+    },
+    {
+     "title": "Spartacus",
+     "year": 1960,
+     "imdb": "tt0054331",
+     "tmdb": 967,
+     "tmdbType": "movie",
+     "letterboxd": "spartacus",
+     "sources": [
+      "coppola-lbx-megalopolis"
+     ]
+    },
+    {
+     "title": "The Apartment",
+     "year": 1960,
+     "imdb": "tt0053604",
+     "tmdb": 284,
+     "tmdbType": "movie",
+     "letterboxd": "the-apartment",
+     "sources": [
+      "coppola-ss2012"
+     ]
+    },
+    {
+     "title": "One-Eyed Jacks",
+     "year": 1961,
+     "imdb": "tt0055257",
+     "tmdb": 18647,
+     "tmdbType": "movie",
+     "letterboxd": "one-eyed-jacks",
+     "sources": [
+      "coppola-lbx-megalopolis"
+     ]
+    },
+    {
+     "title": "Splendor in the Grass",
+     "year": 1961,
+     "imdb": "tt0055471",
+     "tmdb": 28569,
+     "tmdbType": "movie",
+     "letterboxd": "splendor-in-the-grass",
+     "sources": [
+      "coppola-lbx-recommend"
+     ]
+    },
+    {
+     "title": "The Ladies Man",
+     "year": 1961,
+     "imdb": "tt0055069",
+     "tmdb": 28333,
+     "tmdbType": "movie",
+     "letterboxd": "the-ladies-man-1961",
+     "sources": [
+      "coppola-lbx-recommend"
+     ]
+    },
+    {
+     "title": "Yojimbo",
+     "year": 1961,
+     "imdb": "tt0055630",
+     "tmdb": 11878,
+     "tmdbType": "movie",
+     "letterboxd": "yojimbo",
+     "sources": [
+      "coppola-ss2012"
+     ]
+    },
+    {
+     "title": "The Manchurian Candidate",
+     "year": 1962,
+     "imdb": "tt0056218",
+     "tmdb": 982,
+     "tmdbType": "movie",
+     "letterboxd": "the-manchurian-candidate",
+     "sources": [
+      "coppola-lbx-megalopolis"
+     ]
+    },
+    {
+     "title": "Blow-Up",
+     "year": 1966,
+     "imdb": "tt0060176",
+     "tmdb": 1052,
+     "tmdbType": "movie",
+     "letterboxd": "blow-up",
+     "sources": [
+      "coppola-closet"
+     ]
+    },
+    {
+     "title": "Persona",
+     "year": 1966,
+     "imdb": "tt0060827",
+     "tmdb": 797,
+     "tmdbType": "movie",
+     "letterboxd": "persona",
+     "sources": [
+      "coppola-lbx-megalopolis"
+     ]
+    },
+    {
+     "title": "PlayTime",
+     "year": 1967,
+     "imdb": "tt0062136",
+     "tmdb": 10227,
+     "tmdbType": "movie",
+     "letterboxd": "playtime",
+     "sources": [
+      "coppola-closet"
+     ]
+    },
+    {
+     "title": "Trafic",
+     "year": 1971,
+     "imdb": "tt0069400",
+     "tmdb": 11378,
+     "tmdbType": "movie",
+     "letterboxd": "trafic",
+     "sources": [
+      "coppola-closet"
+     ]
+    },
+    {
+     "title": "Parade",
+     "year": 1974,
+     "imdb": "tt0071968",
+     "tmdb": 58655,
+     "tmdbType": "movie",
+     "letterboxd": "parade",
+     "sources": [
+      "coppola-closet"
+     ]
+    },
+    {
+     "title": "Raging Bull",
+     "year": 1980,
+     "imdb": "tt0081398",
+     "tmdb": 1578,
+     "tmdbType": "movie",
+     "letterboxd": "raging-bull",
+     "sources": [
+      "coppola-ss2012"
+     ]
+    },
+    {
+     "title": "Rumble Fish",
+     "year": 1983,
+     "imdb": "tt0086216",
+     "tmdb": 232,
+     "tmdbType": "movie",
+     "letterboxd": "rumble-fish",
+     "sources": [
+      "coppola-closet"
+     ]
+    },
+    {
+     "title": "After Hours",
+     "year": 1985,
+     "imdb": "tt0088680",
+     "tmdb": 10843,
+     "tmdbType": "movie",
+     "letterboxd": "after-hours",
+     "sources": [
+      "coppola-lbx-recommend"
+     ]
+    },
+    {
+     "title": "Empire of the Sun",
+     "year": 1987,
+     "imdb": "tt0092965",
+     "tmdb": 10110,
+     "tmdbType": "movie",
+     "letterboxd": "empire-of-the-sun",
+     "sources": [
+      "coppola-lbx-recommend"
+     ]
+    },
+    {
+     "title": "Raise the Red Lantern",
+     "year": 1991,
+     "imdb": "tt0101640",
+     "tmdb": 10404,
+     "tmdbType": "movie",
+     "letterboxd": "raise-the-red-lantern",
+     "sources": [
+      "coppola-lbx-megalopolis"
+     ]
+    },
+    {
+     "title": "Chungking Express",
+     "year": 1994,
+     "imdb": "tt0109424",
+     "tmdb": 11104,
+     "tmdbType": "movie",
+     "letterboxd": "chungking-express",
+     "sources": [
+      "coppola-lbx-megalopolis"
+     ]
+    },
+    {
+     "title": "The Hudsucker Proxy",
+     "year": 1994,
+     "imdb": "tt0110074",
+     "tmdb": 11934,
+     "tmdbType": "movie",
+     "letterboxd": "the-hudsucker-proxy",
+     "sources": [
+      "coppola-lbx-megalopolis"
+     ]
+    },
+    {
+     "title": "Eyes Wide Shut",
+     "year": 1999,
+     "imdb": "tt0120663",
+     "tmdb": 345,
+     "tmdbType": "movie",
+     "letterboxd": "eyes-wide-shut",
+     "sources": [
+      "coppola-lbx-megalopolis"
+     ]
+    },
+    {
+     "title": "Timecode",
+     "year": 2000,
+     "imdb": "tt0220100",
+     "tmdb": 36234,
+     "tmdbType": "movie",
+     "letterboxd": "timecode",
+     "sources": [
+      "coppola-lbx-megalopolis"
+     ]
+    },
+    {
+     "title": "Punch-Drunk Love",
+     "year": 2002,
+     "imdb": "tt0272338",
+     "tmdb": 8051,
+     "tmdbType": "movie",
+     "letterboxd": "punch-drunk-love",
+     "sources": [
+      "coppola-lbx-recommend"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Lucrecia Martel",
+   "sources": [
+    {
+     "id": "martel-closet",
+     "kind": "criterion-closet",
+     "confidence": "high",
+     "title": "Martel: Criterion Closet Picks",
+     "url": "https://www.criterion.com/shop/collection/439-lucrecia-martel-s-closet-picks",
+     "date": null,
+     "note": "Filmes lidos na transcrição da conta closetpicks no Letterboxd (caixas expandidas); a página da Criterion confere os títulos."
+    }
+   ],
+   "films": [
+    {
+     "title": "The Lady Vanishes",
+     "year": 1938,
+     "imdb": "tt0030341",
+     "tmdb": 940,
+     "tmdbType": "movie",
+     "letterboxd": "the-lady-vanishes",
+     "sources": [
+      "martel-closet"
+     ]
+    },
+    {
+     "title": "Cat People",
+     "year": 1942,
+     "imdb": "tt0034587",
+     "tmdb": 25508,
+     "tmdbType": "movie",
+     "letterboxd": "cat-people",
+     "sources": [
+      "martel-closet"
+     ]
+    },
+    {
+     "title": "Beauty and the Beast",
+     "year": 1946,
+     "imdb": "tt0038348",
+     "tmdb": 648,
+     "tmdbType": "movie",
+     "letterboxd": "beauty-and-the-beast",
+     "sources": [
+      "martel-closet"
+     ]
+    },
+    {
+     "title": "The Red Shoes",
+     "year": 1948,
+     "imdb": "tt0040725",
+     "tmdb": 19542,
+     "tmdbType": "movie",
+     "letterboxd": "the-red-shoes",
+     "sources": [
+      "martel-closet"
+     ]
+    },
+    {
+     "title": "Seven Samurai",
+     "year": 1954,
+     "imdb": "tt0047478",
+     "tmdb": 346,
+     "tmdbType": "movie",
+     "letterboxd": "seven-samurai",
+     "sources": [
+      "martel-closet"
+     ]
+    },
+    {
+     "title": "Eyes Without a Face",
+     "year": 1960,
+     "imdb": "tt0053459",
+     "tmdb": 31417,
+     "tmdbType": "movie",
+     "letterboxd": "eyes-without-a-face",
+     "sources": [
+      "martel-closet"
+     ]
+    },
+    {
+     "title": "Carnival of Souls",
+     "year": 1962,
+     "imdb": "tt0055830",
+     "tmdb": 16093,
+     "tmdbType": "movie",
+     "letterboxd": "carnival-of-souls",
+     "sources": [
+      "martel-closet"
+     ]
+    },
+    {
+     "title": "Amarcord",
+     "year": 1973,
+     "imdb": "tt0071129",
+     "tmdb": 7857,
+     "tmdbType": "movie",
+     "letterboxd": "amarcord",
+     "sources": [
+      "martel-closet"
+     ]
+    },
+    {
+     "title": "Time Bandits",
+     "year": 1981,
+     "imdb": "tt0081633",
+     "tmdb": 36819,
+     "tmdbType": "movie",
+     "letterboxd": "time-bandits",
+     "sources": [
+      "martel-closet"
+     ]
+    },
+    {
+     "title": "Love Streams",
+     "year": 1984,
+     "imdb": "tt0087644",
+     "tmdb": 52109,
+     "tmdbType": "movie",
+     "letterboxd": "love-streams",
+     "sources": [
+      "martel-closet"
+     ]
+    },
+    {
+     "title": "Naked Lunch",
+     "year": 1991,
+     "imdb": "tt0102511",
+     "tmdb": 2742,
+     "tmdbType": "movie",
+     "letterboxd": "naked-lunch",
+     "sources": [
+      "martel-closet"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Mike Leigh",
+   "sources": [
+    {
+     "id": "leigh-ss2022",
+     "kind": "sight-and-sound-2022",
+     "confidence": "high",
+     "title": "Cédula individual, Sight and Sound 2022 (enquete de diretores)",
+     "url": "https://www.bfi.org.uk/sight-and-sound/greatest-films-all-time/all-voters/mike-leigh",
+     "date": "2022"
+    },
+    {
+     "id": "leigh-ss2012",
+     "kind": "sight-and-sound-2012",
+     "confidence": "high",
+     "title": "Cédula individual, Sight and Sound 2012 (enquete de diretores)",
+     "url": "http://www.bfi.org.uk/films-tv-people/sightandsoundpoll2012/voter/1075",
+     "date": "2012"
+    },
+    {
+     "id": "leigh-closet",
+     "kind": "criterion-closet",
+     "confidence": "high",
+     "title": "Leigh: Criterion Closet Picks",
+     "url": "https://www.criterion.com/shop/collection/538-mike-leigh-s-closet-picks",
+     "date": null,
+     "note": "Filmes lidos na transcrição da conta closetpicks no Letterboxd (caixas expandidas); a página da Criterion confere os títulos."
+    },
+    {
+     "id": "leigh-closet-jean-baptiste",
+     "kind": "criterion-closet",
+     "confidence": "high",
+     "title": "Mike Leigh and Marianne Jean-Baptiste's Criterion Closet Picks",
+     "url": "https://letterboxd.com/closetpicks/list/mike-leigh-and-marianne-jean-baptistes-criterion/",
+     "date": null,
+     "with": "Marianne Jean-Baptiste"
+    }
+   ],
+   "films": [
+    {
+     "title": "How a Mosquito Operates",
+     "year": 1912,
+     "imdb": "tt0002260",
+     "tmdb": 128973,
+     "tmdbType": "movie",
+     "letterboxd": "how-a-mosquito-operates",
+     "sources": [
+      "leigh-ss2022",
+      "leigh-ss2012"
+     ]
+    },
+    {
+     "title": "Tokyo Story",
+     "year": 1953,
+     "imdb": "tt0046438",
+     "tmdb": 18148,
+     "tmdbType": "movie",
+     "letterboxd": "tokyo-story",
+     "sources": [
+      "leigh-ss2022",
+      "leigh-ss2012"
+     ]
+    },
+    {
+     "title": "Jules and Jim",
+     "year": 1962,
+     "imdb": "tt0055032",
+     "tmdb": 1628,
+     "tmdbType": "movie",
+     "letterboxd": "jules-and-jim",
+     "sources": [
+      "leigh-ss2012",
+      "leigh-closet"
+     ]
+    },
+    {
+     "title": "Barry Lyndon",
+     "year": 1975,
+     "imdb": "tt0072684",
+     "tmdb": 3175,
+     "tmdbType": "movie",
+     "letterboxd": "barry-lyndon",
+     "sources": [
+      "leigh-ss2022",
+      "leigh-ss2012"
+     ]
+    },
+    {
+     "title": "Songs from the Second Floor",
+     "year": 2000,
+     "imdb": "tt0120263",
+     "tmdb": 34070,
+     "tmdbType": "movie",
+     "letterboxd": "songs-from-the-second-floor",
+     "sources": [
+      "leigh-ss2022",
+      "leigh-ss2012"
+     ]
+    },
+    {
+     "title": "American Madness",
+     "year": 1932,
+     "imdb": "tt0022626",
+     "tmdb": 1773,
+     "tmdbType": "movie",
+     "letterboxd": "american-madness",
+     "sources": [
+      "leigh-ss2012"
+     ]
+    },
+    {
+     "title": "Bicycle Thieves",
+     "year": 1948,
+     "imdb": "tt0040522",
+     "tmdb": 5156,
+     "tmdbType": "movie",
+     "letterboxd": "bicycle-thieves",
+     "sources": [
+      "leigh-closet"
+     ]
+    },
+    {
+     "title": "Late Spring",
+     "year": 1949,
+     "imdb": "tt0041154",
+     "tmdb": 20530,
+     "tmdbType": "movie",
+     "letterboxd": "late-spring",
+     "sources": [
+      "leigh-closet"
+     ]
+    },
+    {
+     "title": "Some Like It Hot",
+     "year": 1959,
+     "imdb": "tt0053291",
+     "tmdb": 239,
+     "tmdbType": "movie",
+     "letterboxd": "some-like-it-hot",
+     "sources": [
+      "leigh-ss2022"
+     ]
+    },
+    {
+     "title": "The 400 Blows",
+     "year": 1959,
+     "imdb": "tt0053198",
+     "tmdb": 147,
+     "tmdbType": "movie",
+     "letterboxd": "the-400-blows",
+     "sources": [
+      "leigh-ss2022"
+     ]
+    },
+    {
+     "title": "Divorce Italian Style",
+     "year": 1961,
+     "imdb": "tt0055913",
+     "tmdb": 20271,
+     "tmdbType": "movie",
+     "letterboxd": "divorce-italian-style",
+     "sources": [
+      "leigh-closet"
+     ]
+    },
+    {
+     "title": "Vivre Sa Vie",
+     "year": 1962,
+     "imdb": "tt0056663",
+     "tmdb": 1626,
+     "tmdbType": "movie",
+     "letterboxd": "vivre-sa-vie",
+     "sources": [
+      "leigh-closet"
+     ]
+    },
+    {
+     "title": "Judex",
+     "year": 1963,
+     "imdb": "tt0057207",
+     "tmdb": 56800,
+     "tmdbType": "movie",
+     "letterboxd": "judex-1963",
+     "sources": [
+      "leigh-closet"
+     ]
+    },
+    {
+     "title": "A Hard Day's Night",
+     "year": 1964,
+     "imdb": "tt0058182",
+     "tmdb": 704,
+     "tmdbType": "movie",
+     "letterboxd": "a-hard-days-night",
+     "sources": [
+      "leigh-closet"
+     ]
+    },
+    {
+     "title": "I Am Cuba",
+     "year": 1964,
+     "imdb": "tt0058604",
+     "tmdb": 32015,
+     "tmdbType": "movie",
+     "letterboxd": "i-am-cuba",
+     "sources": [
+      "leigh-ss2012"
+     ]
+    },
+    {
+     "title": "The Gospel According to St. Matthew",
+     "year": 1964,
+     "imdb": "tt0058715",
+     "tmdb": 24192,
+     "tmdbType": "movie",
+     "letterboxd": "the-gospel-according-to-st-matthew",
+     "sources": [
+      "leigh-ss2022"
+     ]
+    },
+    {
+     "title": "Loves of a Blonde",
+     "year": 1965,
+     "imdb": "tt0059415",
+     "tmdb": 39387,
+     "tmdbType": "movie",
+     "letterboxd": "loves-of-a-blonde",
+     "sources": [
+      "leigh-ss2022",
+      "leigh-closet-jean-baptiste"
+     ]
+    },
+    {
+     "title": "Here Is Your Life",
+     "year": 1966,
+     "imdb": "tt0060529",
+     "tmdb": 9646,
+     "tmdbType": "movie",
+     "letterboxd": "here-is-your-life",
+     "sources": [
+      "leigh-ss2022"
+     ]
+    },
+    {
+     "title": "The Firemen's Ball",
+     "year": 1967,
+     "imdb": "tt0061781",
+     "tmdb": 38442,
+     "tmdbType": "movie",
+     "letterboxd": "the-firemens-ball",
+     "sources": [
+      "leigh-closet"
+     ]
+    },
+    {
+     "title": "The Emigrants",
+     "year": 1971,
+     "imdb": "tt0067919",
+     "tmdb": 40732,
+     "tmdbType": "movie",
+     "letterboxd": "the-emigrants",
+     "sources": [
+      "leigh-ss2012"
+     ]
+    },
+    {
+     "title": "The Tree of Wooden Clogs",
+     "year": 1978,
+     "imdb": "tt0077138",
+     "tmdb": 31542,
+     "tmdbType": "movie",
+     "letterboxd": "the-tree-of-wooden-clogs",
+     "sources": [
+      "leigh-ss2012"
+     ]
+    },
+    {
+     "title": "Berlin Alexanderplatz",
+     "year": 1980,
+     "imdb": "tt0080196",
+     "tmdb": 43189,
+     "tmdbType": "tv",
+     "letterboxd": "berlin-alexanderplatz",
+     "sources": [
+      "leigh-closet"
+     ]
+    },
+    {
+     "title": "Radio Days",
+     "year": 1987,
+     "imdb": "tt0093818",
+     "tmdb": 30890,
+     "tmdbType": "movie",
+     "letterboxd": "radio-days",
+     "sources": [
+      "leigh-ss2012"
+     ]
+    },
+    {
+     "title": "The Death of Mr. Lazarescu",
+     "year": 2005,
+     "imdb": "tt0456149",
+     "tmdb": 31032,
+     "tmdbType": "movie",
+     "letterboxd": "the-death-of-mr-lazarescu",
+     "sources": [
+      "leigh-ss2022"
+     ]
+    },
+    {
+     "title": "A Story of Floating Weeds",
+     "year": 1934,
+     "imdb": "tt0025929",
+     "tmdb": 44163,
+     "tmdbType": "movie",
+     "letterboxd": "a-story-of-floating-weeds",
+     "sources": [
+      "leigh-closet-jean-baptiste"
+     ]
+    },
+    {
+     "title": "Floating Weeds",
+     "year": 1959,
+     "imdb": "tt0053390",
+     "tmdb": 46918,
+     "tmdbType": "movie",
+     "letterboxd": "floating-weeds",
+     "sources": [
+      "leigh-closet-jean-baptiste"
+     ]
+    },
+    {
+     "title": "Night on Earth",
+     "year": 1991,
+     "imdb": "tt0102536",
+     "tmdb": 339,
+     "tmdbType": "movie",
+     "letterboxd": "night-on-earth",
+     "sources": [
+      "leigh-closet-jean-baptiste"
+     ]
+    },
+    {
+     "title": "Shadows",
+     "year": 1958,
+     "imdb": "tt0053270",
+     "tmdb": 15484,
+     "tmdbType": "movie",
+     "letterboxd": "shadows-1958",
+     "sources": [
+      "leigh-closet-jean-baptiste"
+     ]
+    },
+    {
+     "title": "Faces",
+     "year": 1968,
+     "imdb": "tt0062952",
+     "tmdb": 753,
+     "tmdbType": "movie",
+     "letterboxd": "faces-1968",
+     "sources": [
+      "leigh-closet-jean-baptiste"
+     ]
+    },
+    {
+     "title": "A Woman Under the Influence",
+     "year": 1974,
+     "imdb": "tt0072417",
+     "tmdb": 29845,
+     "tmdbType": "movie",
+     "letterboxd": "a-woman-under-the-influence",
+     "sources": [
+      "leigh-closet-jean-baptiste"
+     ]
+    },
+    {
+     "title": "The Killing of a Chinese Bookie",
+     "year": 1976,
+     "imdb": "tt0074749",
+     "tmdb": 32040,
+     "tmdbType": "movie",
+     "letterboxd": "the-killing-of-a-chinese-bookie",
+     "sources": [
+      "leigh-closet-jean-baptiste"
+     ]
+    },
+    {
+     "title": "Opening Night",
+     "year": 1977,
+     "imdb": "tt0079672",
+     "tmdb": 33665,
+     "tmdbType": "movie",
+     "letterboxd": "opening-night",
+     "sources": [
+      "leigh-closet-jean-baptiste"
+     ]
+    },
+    {
+     "title": "A Constant Forge",
+     "year": 2000,
+     "imdb": "tt0346794",
+     "tmdb": 66131,
+     "tmdbType": "movie",
+     "letterboxd": "a-constant-forge",
+     "sources": [
+      "leigh-closet-jean-baptiste"
+     ]
+    },
+    {
+     "title": "Secrets & Lies",
+     "year": 1996,
+     "imdb": "tt0117589",
+     "tmdb": 11159,
+     "tmdbType": "movie",
+     "letterboxd": "secrets-lies",
+     "sources": [
+      "leigh-closet-jean-baptiste"
+     ]
+    },
+    {
+     "title": "To Sleep with Anger",
+     "year": 1990,
+     "imdb": "tt0100791",
+     "tmdb": 94725,
+     "tmdbType": "movie",
+     "letterboxd": "to-sleep-with-anger",
+     "sources": [
+      "leigh-closet-jean-baptiste"
+     ]
+    },
+    {
+     "title": "Kes",
+     "year": 1969,
+     "imdb": "tt0064541",
+     "tmdb": 13384,
+     "tmdbType": "movie",
+     "letterboxd": "kes",
+     "sources": [
+      "leigh-closet-jean-baptiste"
+     ]
+    },
+    {
+     "title": "White Material",
+     "year": 2009,
+     "imdb": "tt1135952",
+     "tmdb": 46207,
+     "tmdbType": "movie",
+     "letterboxd": "white-material",
+     "sources": [
+      "leigh-closet-jean-baptiste"
+     ]
+    },
+    {
+     "title": "Hunger",
+     "year": 2008,
+     "imdb": "tt0986233",
+     "tmdb": 10360,
+     "tmdbType": "movie",
+     "letterboxd": "hunger",
+     "sources": [
+      "leigh-closet-jean-baptiste"
+     ]
+    },
+    {
+     "title": "The Life of Oharu",
+     "year": 1952,
+     "imdb": "tt0045112",
+     "tmdb": 43364,
+     "tmdbType": "movie",
+     "letterboxd": "the-life-of-oharu",
+     "sources": [
+      "leigh-closet-jean-baptiste"
+     ]
+    },
+    {
+     "title": "Sanshiro Sugata",
+     "year": 1943,
+     "imdb": "tt0036400",
+     "tmdb": 35022,
+     "tmdbType": "movie",
+     "letterboxd": "sanshiro-sugata",
+     "sources": [
+      "leigh-closet-jean-baptiste"
+     ]
+    },
+    {
+     "title": "The Most Beautiful",
+     "year": 1944,
+     "imdb": "tt0036947",
+     "tmdb": 17988,
+     "tmdbType": "movie",
+     "letterboxd": "the-most-beautiful",
+     "sources": [
+      "leigh-closet-jean-baptiste"
+     ]
+    },
+    {
+     "title": "Sanshiro Sugata, Part Two",
+     "year": 1945,
+     "imdb": "tt0038268",
+     "tmdb": 45965,
+     "tmdbType": "movie",
+     "letterboxd": "sanshiro-sugata-part-two",
+     "sources": [
+      "leigh-closet-jean-baptiste"
+     ]
+    },
+    {
+     "title": "The Men Who Tread on the Tiger's Tail",
+     "year": 1945,
+     "imdb": "tt0038182",
+     "tmdb": 36916,
+     "tmdbType": "movie",
+     "letterboxd": "the-men-who-tread-on-the-tigers-tail",
+     "sources": [
+      "leigh-closet-jean-baptiste"
+     ]
+    },
+    {
+     "title": "Ashes and Diamonds",
+     "year": 1958,
+     "imdb": "tt0052080",
+     "tmdb": 5055,
+     "tmdbType": "movie",
+     "letterboxd": "ashes-and-diamonds",
+     "sources": [
+      "leigh-closet-jean-baptiste"
+     ]
+    },
+    {
+     "title": "EO",
+     "year": 2022,
+     "imdb": "tt19652910",
+     "tmdb": 785398,
+     "tmdbType": "movie",
+     "letterboxd": "eo",
+     "sources": [
+      "leigh-closet-jean-baptiste"
+     ]
+    },
+    {
+     "title": "Claudine",
+     "year": 1974,
+     "imdb": "tt0071334",
+     "tmdb": 55909,
+     "tmdbType": "movie",
+     "letterboxd": "claudine",
+     "sources": [
+      "leigh-closet-jean-baptiste"
+     ]
+    },
+    {
+     "title": "The Tall T",
+     "year": 1957,
+     "imdb": "tt0051047",
+     "tmdb": 43253,
+     "tmdbType": "movie",
+     "letterboxd": "the-tall-t",
+     "sources": [
+      "leigh-closet-jean-baptiste"
+     ]
+    },
+    {
+     "title": "Decision at Sundown",
+     "year": 1957,
+     "imdb": "tt0050296",
+     "tmdb": 39557,
+     "tmdbType": "movie",
+     "letterboxd": "decision-at-sundown",
+     "sources": [
+      "leigh-closet-jean-baptiste"
+     ]
+    },
+    {
+     "title": "Buchanan Rides Alone",
+     "year": 1958,
+     "imdb": "tt0051437",
+     "tmdb": 43114,
+     "tmdbType": "movie",
+     "letterboxd": "buchanan-rides-alone",
+     "sources": [
+      "leigh-closet-jean-baptiste"
+     ]
+    },
+    {
+     "title": "Ride Lonesome",
+     "year": 1959,
+     "imdb": "tt0053220",
+     "tmdb": 27644,
+     "tmdbType": "movie",
+     "letterboxd": "ride-lonesome",
+     "sources": [
+      "leigh-closet-jean-baptiste"
+     ]
+    },
+    {
+     "title": "Comanche Station",
+     "year": 1960,
+     "imdb": "tt0053729",
+     "tmdb": 1673,
+     "tmdbType": "movie",
+     "letterboxd": "comanche-station",
+     "sources": [
+      "leigh-closet-jean-baptiste"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Edward Yang",
+   "sources": [],
+   "films": []
+  },
+  {
+   "name": "Walter Salles",
+   "sources": [
+    {
+     "id": "salles-ss2022",
+     "kind": "sight-and-sound-2022",
+     "confidence": "high",
+     "title": "Cédula individual, Sight and Sound 2022 (enquete de diretores)",
+     "url": "https://www.bfi.org.uk/sight-and-sound/greatest-films-all-time/all-voters/walter-salles",
+     "date": "2022"
+    },
+    {
+     "id": "salles-ss2012",
+     "kind": "sight-and-sound-2012",
+     "confidence": "high",
+     "title": "Cédula individual, Sight and Sound 2012 (enquete de diretores)",
+     "url": "http://www.bfi.org.uk/films-tv-people/sightandsoundpoll2012/voter/1194",
+     "date": "2012"
+    },
+    {
+     "id": "salles-closet",
+     "kind": "criterion-closet",
+     "confidence": "high",
+     "title": "Salles: Criterion Closet Picks",
+     "url": "https://www.criterion.com/shop/collection/767-walter-salles-s-closet-picks",
+     "date": null,
+     "note": "Filmes lidos na transcrição da conta closetpicks no Letterboxd (caixas expandidas); a página da Criterion confere os títulos."
+    }
+   ],
+   "films": [
+    {
+     "title": "Memories of Underdevelopment",
+     "year": 1968,
+     "imdb": "tt0063291",
+     "tmdb": 47576,
+     "tmdbType": "movie",
+     "letterboxd": "memories-of-underdevelopment",
+     "sources": [
+      "salles-ss2022",
+      "salles-ss2012",
+      "salles-closet"
+     ]
+    },
+    {
+     "title": "The Passion of Joan of Arc",
+     "year": 1928,
+     "imdb": "tt0019254",
+     "tmdb": 780,
+     "tmdbType": "movie",
+     "letterboxd": "the-passion-of-joan-of-arc",
+     "sources": [
+      "salles-ss2022",
+      "salles-ss2012"
+     ]
+    },
+    {
+     "title": "Barren Lives",
+     "year": 1963,
+     "imdb": "tt0057654",
+     "tmdb": 836,
+     "tmdbType": "movie",
+     "letterboxd": "barren-lives",
+     "sources": [
+      "salles-ss2022",
+      "salles-ss2012"
+     ]
+    },
+    {
+     "title": "Andrei Rublev",
+     "year": 1966,
+     "imdb": "tt0060107",
+     "tmdb": 895,
+     "tmdbType": "movie",
+     "letterboxd": "andrei-rublev",
+     "sources": [
+      "salles-ss2012",
+      "salles-closet"
+     ]
+    },
+    {
+     "title": "The Passenger",
+     "year": 1975,
+     "imdb": "tt0073580",
+     "tmdb": 9652,
+     "tmdbType": "movie",
+     "letterboxd": "the-passenger",
+     "sources": [
+      "salles-ss2022",
+      "salles-ss2012"
+     ]
+    },
+    {
+     "title": "Seven Chances",
+     "year": 1925,
+     "imdb": "tt0016332",
+     "tmdb": 32600,
+     "tmdbType": "movie",
+     "letterboxd": "seven-chances",
+     "sources": [
+      "salles-ss2022"
+     ]
+    },
+    {
+     "title": "City Lights",
+     "year": 1931,
+     "imdb": "tt0021749",
+     "tmdb": 901,
+     "tmdbType": "movie",
+     "letterboxd": "city-lights",
+     "sources": [
+      "salles-ss2012"
+     ]
+    },
+    {
+     "title": "Rome, Open City",
+     "year": 1945,
+     "imdb": "tt0038890",
+     "tmdb": 307,
+     "tmdbType": "movie",
+     "letterboxd": "rome-open-city",
+     "sources": [
+      "salles-ss2022"
+     ]
+    },
+    {
+     "title": "Tokyo Story",
+     "year": 1953,
+     "imdb": "tt0046438",
+     "tmdb": 18148,
+     "tmdbType": "movie",
+     "letterboxd": "tokyo-story",
+     "sources": [
+      "salles-ss2022"
+     ]
+    },
+    {
+     "title": "The Searchers",
+     "year": 1956,
+     "imdb": "tt0049730",
+     "tmdb": 3114,
+     "tmdbType": "movie",
+     "letterboxd": "the-searchers",
+     "sources": [
+      "salles-ss2022"
+     ]
+    },
+    {
+     "title": "Breathless",
+     "year": 1960,
+     "imdb": "tt0053472",
+     "tmdb": 269,
+     "tmdbType": "movie",
+     "letterboxd": "breathless",
+     "sources": [
+      "salles-ss2022"
+     ]
+    },
+    {
+     "title": "La Notte",
+     "year": 1961,
+     "imdb": "tt0054130",
+     "tmdb": 41050,
+     "tmdbType": "movie",
+     "letterboxd": "la-notte",
+     "sources": [
+      "salles-closet"
+     ]
+    },
+    {
+     "title": "8½",
+     "year": 1963,
+     "imdb": "tt0056801",
+     "tmdb": 422,
+     "tmdbType": "movie",
+     "letterboxd": "8-half",
+     "sources": [
+      "salles-ss2012"
+     ]
+    },
+    {
+     "title": "Pierrot le Fou",
+     "year": 1965,
+     "imdb": "tt0059592",
+     "tmdb": 2786,
+     "tmdbType": "movie",
+     "letterboxd": "pierrot-le-fou",
+     "sources": [
+      "salles-ss2012"
+     ]
+    },
+    {
+     "title": "The Battle of Algiers",
+     "year": 1966,
+     "imdb": "tt0058946",
+     "tmdb": 17295,
+     "tmdbType": "movie",
+     "letterboxd": "the-battle-of-algiers",
+     "sources": [
+      "salles-ss2022"
+     ]
+    },
+    {
+     "title": "Hour of the Wolf",
+     "year": 1968,
+     "imdb": "tt0063759",
+     "tmdb": 18333,
+     "tmdbType": "movie",
+     "letterboxd": "hour-of-the-wolf",
+     "sources": [
+      "salles-ss2012"
+     ]
+    },
+    {
+     "title": "Apocalypse Now",
+     "year": 1979,
+     "imdb": "tt0078788",
+     "tmdb": 28,
+     "tmdbType": "movie",
+     "letterboxd": "apocalypse-now",
+     "sources": [
+      "salles-ss2012"
+     ]
+    },
+    {
+     "title": "Raging Bull",
+     "year": 1980,
+     "imdb": "tt0081398",
+     "tmdb": 1578,
+     "tmdbType": "movie",
+     "letterboxd": "raging-bull",
+     "sources": [
+      "salles-closet"
+     ]
+    },
+    {
+     "title": "Stranger Than Paradise",
+     "year": 1984,
+     "imdb": "tt0088184",
+     "tmdb": 469,
+     "tmdbType": "movie",
+     "letterboxd": "stranger-than-paradise",
+     "sources": [
+      "salles-closet"
+     ]
+    },
+    {
+     "title": "Time",
+     "year": 2020,
+     "imdb": "tt11416746",
+     "tmdb": 653729,
+     "tmdbType": "movie",
+     "letterboxd": "time-2020",
+     "sources": [
+      "salles-closet"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Krzysztof Kieślowski",
+   "sources": [],
+   "films": []
+  },
+  {
+   "name": "Spike Jonze",
+   "sources": [],
+   "films": []
+  },
+  {
+   "name": "Sean Baker",
+   "sources": [
+    {
+     "id": "baker-criterion-top10",
+     "kind": "criterion-top10",
+     "confidence": "high",
+     "title": "Sean Baker's Top 10 (Criterion, Current)",
+     "url": "https://www.criterion.com/current/top-10-lists/242-sean-bakers-top-10",
+     "date": null,
+     "note": "Caixa Cassavetes (5 filmes) e Seis Contos Morais (Rohmer, 6 filmes) expandidos; o documentário A Constant Forge ficou de fora."
+    },
+    {
+     "id": "baker-closet",
+     "kind": "criterion-closet",
+     "confidence": "high",
+     "title": "Baker: Criterion Closet Picks",
+     "url": "https://www.criterion.com/shop/collection/458-sean-baker-s-closet-picks",
+     "date": null,
+     "note": "Filmes lidos na transcrição da conta closetpicks no Letterboxd (caixas expandidas); a página da Criterion confere os títulos."
+    }
+   ],
+   "films": [
+    {
+     "title": "Suzanne’s Career",
+     "year": 1963,
+     "imdb": "tt0056910",
+     "tmdb": 86764,
+     "tmdbType": "movie",
+     "letterboxd": "suzannes-career",
+     "sources": [
+      "baker-criterion-top10",
+      "baker-closet"
+     ]
+    },
+    {
+     "title": "The Bakery Girl of Monceau",
+     "year": 1963,
+     "imdb": "tt0056884",
+     "tmdb": 81399,
+     "tmdbType": "movie",
+     "letterboxd": "the-bakery-girl-of-monceau",
+     "sources": [
+      "baker-criterion-top10",
+      "baker-closet"
+     ]
+    },
+    {
+     "title": "La Collectionneuse",
+     "year": 1967,
+     "imdb": "tt0061495",
+     "tmdb": 4837,
+     "tmdbType": "movie",
+     "letterboxd": "la-collectionneuse",
+     "sources": [
+      "baker-criterion-top10",
+      "baker-closet"
+     ]
+    },
+    {
+     "title": "My Night at Maud's",
+     "year": 1969,
+     "imdb": "tt0064612",
+     "tmdb": 48831,
+     "tmdbType": "movie",
+     "letterboxd": "my-night-at-mauds",
+     "sources": [
+      "baker-criterion-top10",
+      "baker-closet"
+     ]
+    },
+    {
+     "title": "Claire's Knee",
+     "year": 1970,
+     "imdb": "tt0065772",
+     "tmdb": 2860,
+     "tmdbType": "movie",
+     "letterboxd": "claires-knee",
+     "sources": [
+      "baker-criterion-top10",
+      "baker-closet"
+     ]
+    },
+    {
+     "title": "Naked",
+     "year": 1993,
+     "imdb": "tt0107653",
+     "tmdb": 21450,
+     "tmdbType": "movie",
+     "letterboxd": "naked",
+     "sources": [
+      "baker-criterion-top10",
+      "baker-closet"
+     ]
+    },
+    {
+     "title": "Secret Sunshine",
+     "year": 2007,
+     "imdb": "tt0817225",
+     "tmdb": 2015,
+     "tmdbType": "movie",
+     "letterboxd": "secret-sunshine",
+     "sources": [
+      "baker-criterion-top10",
+      "baker-closet"
+     ]
+    },
+    {
+     "title": "I Married a Witch",
+     "year": 1942,
+     "imdb": "tt0034881",
+     "tmdb": 25970,
+     "tmdbType": "movie",
+     "letterboxd": "i-married-a-witch",
+     "sources": [
+      "baker-closet"
+     ]
+    },
+    {
+     "title": "Shadows",
+     "year": 1958,
+     "imdb": "tt0053270",
+     "tmdb": 15484,
+     "tmdbType": "movie",
+     "letterboxd": "shadows-1958",
+     "sources": [
+      "baker-criterion-top10"
+     ]
+    },
+    {
+     "title": "Faces",
+     "year": 1968,
+     "imdb": "tt0062952",
+     "tmdb": 753,
+     "tmdbType": "movie",
+     "letterboxd": "faces-1968",
+     "sources": [
+      "baker-criterion-top10"
+     ]
+    },
+    {
+     "title": "Kes",
+     "year": 1969,
+     "imdb": "tt0064541",
+     "tmdb": 13384,
+     "tmdbType": "movie",
+     "letterboxd": "kes",
+     "sources": [
+      "baker-closet"
+     ]
+    },
+    {
+     "title": "Harold and Maude",
+     "year": 1971,
+     "imdb": "tt0067185",
+     "tmdb": 343,
+     "tmdbType": "movie",
+     "letterboxd": "harold-and-maude",
+     "sources": [
+      "baker-criterion-top10"
+     ]
+    },
+    {
+     "title": "La chambre",
+     "year": 1972,
+     "imdb": "tt0068354",
+     "tmdb": 109383,
+     "tmdbType": "movie",
+     "letterboxd": "la-chambre-1972",
+     "sources": [
+      "baker-closet"
+     ]
+    },
+    {
+     "title": "Love in the Afternoon",
+     "year": 1972,
+     "imdb": "tt0068205",
+     "tmdb": 12116,
+     "tmdbType": "movie",
+     "letterboxd": "love-in-the-afternoon-1972",
+     "sources": [
+      "baker-criterion-top10"
+     ]
+    },
+    {
+     "title": "Hotel Monterey",
+     "year": 1973,
+     "imdb": "tt0068725",
+     "tmdb": 108831,
+     "tmdbType": "movie",
+     "letterboxd": "hotel-monterey",
+     "sources": [
+      "baker-closet"
+     ]
+    },
+    {
+     "title": "Scenes from a Marriage",
+     "year": 1973,
+     "imdb": "tt0070644",
+     "tmdb": 65170,
+     "tmdbType": "tv",
+     "letterboxd": "scenes-from-a-marriage-1973-1",
+     "sources": [
+      "baker-criterion-top10"
+     ]
+    },
+    {
+     "title": "A Woman Under the Influence",
+     "year": 1974,
+     "imdb": "tt0072417",
+     "tmdb": 29845,
+     "tmdbType": "movie",
+     "letterboxd": "a-woman-under-the-influence",
+     "sources": [
+      "baker-criterion-top10"
+     ]
+    },
+    {
+     "title": "Je Tu Il Elle",
+     "year": 1974,
+     "imdb": "tt0071690",
+     "tmdb": 93934,
+     "tmdbType": "movie",
+     "letterboxd": "je-tu-il-elle",
+     "sources": [
+      "baker-closet"
+     ]
+    },
+    {
+     "title": "News from Home",
+     "year": 1976,
+     "imdb": "tt0076452",
+     "tmdb": 86814,
+     "tmdbType": "movie",
+     "letterboxd": "news-from-home",
+     "sources": [
+      "baker-closet"
+     ]
+    },
+    {
+     "title": "The Killing of a Chinese Bookie",
+     "year": 1976,
+     "imdb": "tt0074749",
+     "tmdb": 32040,
+     "tmdbType": "movie",
+     "letterboxd": "the-killing-of-a-chinese-bookie",
+     "sources": [
+      "baker-criterion-top10"
+     ]
+    },
+    {
+     "title": "Opening Night",
+     "year": 1977,
+     "imdb": "tt0079672",
+     "tmdb": 33665,
+     "tmdbType": "movie",
+     "letterboxd": "opening-night",
+     "sources": [
+      "baker-criterion-top10"
+     ]
+    },
+    {
+     "title": "The Meetings of Anna",
+     "year": 1978,
+     "imdb": "tt0078152",
+     "tmdb": 93669,
+     "tmdbType": "movie",
+     "letterboxd": "the-meetings-of-anna",
+     "sources": [
+      "baker-closet"
+     ]
+    },
+    {
+     "title": "Eating Raoul",
+     "year": 1982,
+     "imdb": "tt0083869",
+     "tmdb": 28940,
+     "tmdbType": "movie",
+     "letterboxd": "eating-raoul",
+     "sources": [
+      "baker-closet"
+     ]
+    },
+    {
+     "title": "A Nos Amours",
+     "year": 1983,
+     "imdb": "tt0086650",
+     "tmdb": 2282,
+     "tmdbType": "movie",
+     "letterboxd": "a-nos-amours",
+     "sources": [
+      "baker-criterion-top10"
+     ]
+    },
+    {
+     "title": "El Norte",
+     "year": 1983,
+     "imdb": "tt0085482",
+     "tmdb": 17435,
+     "tmdbType": "movie",
+     "letterboxd": "el-norte",
+     "sources": [
+      "baker-closet"
+     ]
+    },
+    {
+     "title": "Repo Man",
+     "year": 1984,
+     "imdb": "tt0087995",
+     "tmdb": 13820,
+     "tmdbType": "movie",
+     "letterboxd": "repo-man",
+     "sources": [
+      "baker-closet"
+     ]
+    },
+    {
+     "title": "RoboCop",
+     "year": 1987,
+     "imdb": "tt0093870",
+     "tmdb": 5548,
+     "tmdbType": "movie",
+     "letterboxd": "robocop",
+     "sources": [
+      "baker-criterion-top10"
+     ]
+    },
+    {
+     "title": "Life Is Sweet",
+     "year": 1990,
+     "imdb": "tt0100024",
+     "tmdb": 36843,
+     "tmdbType": "movie",
+     "letterboxd": "life-is-sweet",
+     "sources": [
+      "baker-closet"
+     ]
+    },
+    {
+     "title": "Breaking the Waves",
+     "year": 1996,
+     "imdb": "tt0115751",
+     "tmdb": 145,
+     "tmdbType": "movie",
+     "letterboxd": "breaking-the-waves",
+     "sources": [
+      "baker-criterion-top10"
+     ]
+    },
+    {
+     "title": "Rosetta",
+     "year": 1999,
+     "imdb": "tt0200071",
+     "tmdb": 11489,
+     "tmdbType": "movie",
+     "letterboxd": "rosetta",
+     "sources": [
+      "baker-criterion-top10"
+     ]
+    },
+    {
+     "title": "Yi Yi",
+     "year": 2000,
+     "imdb": "tt0244316",
+     "tmdb": 25538,
+     "tmdbType": "movie",
+     "letterboxd": "yi-yi",
+     "sources": [
+      "baker-closet"
+     ]
+    },
+    {
+     "title": "La Ciénaga",
+     "year": 2001,
+     "imdb": "tt0240419",
+     "tmdb": 58429,
+     "tmdbType": "movie",
+     "letterboxd": "la-cienaga",
+     "sources": [
+      "baker-closet"
+     ]
+    },
+    {
+     "title": "Jellyfish Eyes",
+     "year": 2013,
+     "imdb": "tt2006181",
+     "tmdb": 228426,
+     "tmdbType": "movie",
+     "letterboxd": "jellyfish-eyes",
+     "sources": [
+      "baker-closet"
+     ]
+    }
+   ]
+  }
+ ]
+}

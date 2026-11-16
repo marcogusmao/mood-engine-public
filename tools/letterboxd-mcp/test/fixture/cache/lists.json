@@ -1,0 +1,25 @@
+{
+  "lists": {
+    "critics-picks": {
+      "title": "Critics Picks",
+      "fetchedAt": "2026-10-10T00:00:00.000Z",
+      "items": [
+        [
+          "suspiria",
+          "Suspiria",
+          1977
+        ],
+        [
+          "community-only",
+          "Community Only",
+          2007
+        ],
+        [
+          "seen-one",
+          "Seen One",
+          2008
+        ]
+      ]
+    }
+  }
+}

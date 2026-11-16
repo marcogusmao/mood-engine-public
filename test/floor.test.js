@@ -1,0 +1,4 @@
+'use strict';
+const test=require('node:test'),a=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),Q=require('../lib/recommendation-quality');
+test('retired configurable floor has no production consumer; quality policy is the approved single boundary',()=>{const root=path.resolve(__dirname,'..');a.equal(JSON.parse(fs.readFileSync(path.join(root,'config.json'))).recommendations,undefined);for(const name of ['build.js','lib/rows.js','lib/pool.js'])a(!/makeFloor|floor\.filter|floor\.reset|NO_FLOOR|exportFloor/.test(fs.readFileSync(path.join(root,name),'utf8')),name);a.equal(Q.MIN_STARS,3.5);});
+test('quality boundary preserves raw 3.49/3.5 and missing-average friend exception',()=>{a(!Q.qualifies({lb:3.49}));a(Q.qualifies({lb:3.5}));a(!Q.qualifies({lb:null}));a(Q.qualifies({lb:null,fr:3.5}));});

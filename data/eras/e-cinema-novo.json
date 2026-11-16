@@ -1,0 +1,72 @@
+{
+"id": "e-cinema-novo", "type": "school", "years": {"min": 1955, "max": 1975}, "admit": ["core", "periphery"],
+"school": {
+  "countries": ["BR"],
+  "directors": [
+    {"id": 544845, "name": "Glauber Rocha"},
+    {"id": 12386, "name": "Nelson Pereira dos Santos"},
+    {"id": 20548, "name": "Ruy Guerra"},
+    {"id": 254884, "name": "Joaquim Pedro de Andrade"},
+    {"id": 112117, "name": "Carlos Diegues"},
+    {"id": 1185869, "name": "Leon Hirszman"},
+    {"id": 1154787, "name": "Paulo César Saraceni"},
+    {"id": 531780, "name": "Arnaldo Jabor"},
+    {"id": 150495, "name": "Walter Lima Jr."},
+    {"id": 1166120, "name": "Rogério Sganzerla"},
+    {"id": 145608, "name": "Júlio Bressane"},
+    {"id": 1156445, "name": "Andrea Tonacci"},
+    {"id": 1030678, "name": "Carlos Reichenbach"}
+  ]
+},
+"sources": [
+  {"id": "abraccine-2015", "publication": "Abraccine", "title": "100 Melhores Filmes Brasileiros (ranking)", "url": "https://abraccine.org/2016/09/04/abraccine-lanca-100-melhores-filmes-brasileiros-no-festival-de-gramado/", "revision": null, "readOn": "2026-11-15", "mark": "read"},
+  {"id": "abraccine-2026", "publication": "Abraccine (Associação Brasileira de Críticos de Cinema)", "title": "100 filmes brasileiros essenciais", "url": "https://abraccine.org/2026/05/11/abraccine-elege-100-filmes-brasileiros-essenciais/", "revision": null, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-05-11"},
+  {"id": "bfi-10-brasil-2024", "publication": "BFI", "title": "10 great Brazilian films", "url": "https://www.bfi.org.uk/lists/10-great-brazilian-films", "revision": null, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2024-02-22"},
+  {"id": "wikipedia-en-cinema-novo", "publication": "Wikipedia em inglês", "title": "Cinema Novo", "url": "https://en.wikipedia.org/w/index.php?oldid=1317944019", "revision": 1317944019, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2025-10-20"},
+  {"id": "wikipedia-pt-cinema-marginal", "publication": "Wikipedia em português", "title": "Cinema marginal", "url": "https://pt.wikipedia.org/w/index.php?oldid=73288987", "revision": 73288987, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-10-25"},
+  {"id": "wikipedia-pt-cinema-novo", "publication": "Wikipedia em português", "title": "Cinema Novo", "url": "https://pt.wikipedia.org/w/index.php?oldid=73249049", "revision": 73249049, "readOn": "2026-11-15", "mark": "read", "publishedOn": "2026-10-19"}
+],
+"consensus": null,
+"films": [
+  {"imdb": "tt0048572", "tmdb": 146075, "slug": "rio-100-degrees-f", "title": "Rio, 40 graus", "year": 1955, "sources": ["abraccine-2015", "abraccine-2026", "wikipedia-pt-cinema-novo"], "class": "core"},
+  {"imdb": "tt0050919", "tmdb": 146904, "title": "Rio, Zona Norte", "year": 1957, "sources": ["abraccine-2015", "abraccine-2026", "bfi-10-brasil-2024", "wikipedia-pt-cinema-novo"], "class": "core"},
+  {"imdb": "tt0053609", "tmdb": 329786, "title": "Aruanda", "year": 1960, "sources": ["abraccine-2015", "abraccine-2026", "wikipedia-en-cinema-novo", "wikipedia-pt-cinema-novo"], "class": "core"},
+  {"imdb": "tt0055287", "tmdb": 253374, "title": "Cinco Vezes Favela", "year": 1962, "sources": ["wikipedia-en-cinema-novo", "wikipedia-pt-cinema-novo"], "class": "periphery"},
+  {"imdb": "tt0055776", "tmdb": 66184, "slug": "the-turning-wind", "title": "Barravento", "year": 1962, "sources": ["wikipedia-en-cinema-novo", "wikipedia-pt-cinema-novo"], "class": "periphery"},
+  {"imdb": "tt0055821", "tmdb": 28525, "title": "Os cafajestes", "year": 1962, "sources": ["abraccine-2015", "abraccine-2026", "wikipedia-en-cinema-novo", "wikipedia-pt-cinema-novo"], "class": "core"},
+  {"imdb": "tt0057654", "tmdb": 836, "slug": "barren-lives", "title": "Vidas secas", "year": 1963, "sources": ["abraccine-2015", "abraccine-2026", "wikipedia-en-cinema-novo", "wikipedia-pt-cinema-novo"], "class": "core"},
+  {"imdb": "tt0145401", "tmdb": 194978, "slug": "porto-das-caixas", "title": "Porto das caixas", "year": 1963, "sources": ["abraccine-2026", "wikipedia-pt-cinema-novo"], "class": "core"},
+  {"imdb": "tt0058006", "tmdb": 67612, "slug": "black-god-white-devil", "title": "Deus e o diabo na terra do sol", "year": 1964, "sources": ["abraccine-2015", "abraccine-2026", "bfi-10-brasil-2024", "wikipedia-en-cinema-novo", "wikipedia-pt-cinema-novo"], "class": "core"},
+  {"imdb": "tt0058122", "tmdb": 194853, "slug": "the-guns", "title": "Os fuzis", "year": 1964, "sources": ["abraccine-2015", "abraccine-2026", "wikipedia-en-cinema-novo", "wikipedia-pt-cinema-novo"], "class": "core"},
+  {"imdb": "tt0059163", "tmdb": 258521, "slug": "the-deceased", "title": "A falecida", "year": 1965, "sources": ["abraccine-2015", "abraccine-2026", "wikipedia-pt-cinema-novo"], "class": "core"},
+  {"imdb": "tt0191947", "tmdb": 194980, "title": "O Desafio", "year": 1965, "sources": ["wikipedia-en-cinema-novo", "wikipedia-pt-cinema-novo"], "class": "periphery"},
+  {"imdb": "tt0059560", "tmdb": 119023, "slug": "the-priest-and-the-girl", "title": "O padre e a moça", "year": 1966, "sources": ["abraccine-2015", "abraccine-2026", "wikipedia-pt-cinema-novo"], "class": "core"},
+  {"imdb": "tt0145532", "tmdb": 251766, "title": "Todas as mulheres do mundo", "year": 1966, "sources": ["abraccine-2015", "abraccine-2026", "wikipedia-pt-cinema-novo"], "class": "core"},
+  {"imdb": "tt0062352", "tmdb": 67062, "slug": "entranced-earth", "title": "Terra em transe", "year": 1967, "sources": ["abraccine-2015", "abraccine-2026", "wikipedia-en-cinema-novo", "wikipedia-pt-cinema-novo"], "class": "core"},
+  {"imdb": "tt0144295", "tmdb": 183678, "slug": "the-margin", "title": "A margem", "year": 1967, "sources": ["abraccine-2015", "abraccine-2026", "wikipedia-pt-cinema-marginal"], "class": "core"},
+  {"imdb": "tt0144782", "tmdb": 186738, "slug": "the-red-light-bandit", "title": "O bandido da luz vermelha", "year": 1968, "sources": ["abraccine-2015", "abraccine-2026", "bfi-10-brasil-2024", "wikipedia-en-cinema-novo", "wikipedia-pt-cinema-marginal", "wikipedia-pt-cinema-novo"], "class": "core"},
+  {"imdb": "tt0064029", "tmdb": 86238, "title": "O Anjo Nasceu", "year": 1969, "sources": ["abraccine-2015", "wikipedia-pt-cinema-marginal"], "class": "core"},
+  {"imdb": "tt0064256", "tmdb": 74349, "slug": "antonio-das-mortes", "title": "O dragão da maldade contra o santo guerreiro", "year": 1969, "sources": ["abraccine-2015", "abraccine-2026", "wikipedia-en-cinema-novo", "wikipedia-pt-cinema-novo"], "class": "core"},
+  {"imdb": "tt0064616", "tmdb": 68173, "slug": "macunaima", "title": "Macunaíma", "year": 1969, "sources": ["abraccine-2015", "abraccine-2026", "wikipedia-en-cinema-novo", "wikipedia-pt-cinema-novo"], "class": "core"},
+  {"imdb": "tt0145100", "tmdb": 192566, "slug": "the-woman-of-everyone", "title": "A mulher de todos", "year": 1969, "sources": ["abraccine-2015", "abraccine-2026", "wikipedia-pt-cinema-marginal"], "class": "core"},
+  {"imdb": "tt0158766", "tmdb": 175125, "slug": "killed-the-family-and-went-to-the-movies-1969", "title": "Matou a família e foi ao cinema", "year": 1969, "sources": ["abraccine-2015", "abraccine-2026", "wikipedia-pt-cinema-marginal"], "class": "core"},
+  {"imdb": "tt0065631", "tmdb": 193532, "title": "Os Deuses e os Mortos", "year": 1970, "sources": ["wikipedia-en-cinema-novo", "wikipedia-pt-cinema-novo"], "class": "periphery"},
+  {"imdb": "tt0065831", "tmdb": 143918, "slug": "the-inheritance-1970", "title": "A Herança", "year": 1970, "sources": ["wikipedia-pt-cinema-marginal"], "class": "periphery"},
+  {"imdb": "tt0259944", "tmdb": 192568, "slug": "copacabana-mon-amour", "title": "Copacabana Mon Amour", "year": 1970, "sources": ["wikipedia-pt-cinema-marginal"], "class": "periphery"},
+  {"imdb": "tt0260354", "tmdb": 186735, "slug": "no-way-spider", "title": "Sem essa, Aranha", "year": 1970, "sources": ["abraccine-2015", "abraccine-2026", "wikipedia-pt-cinema-marginal"], "class": "core"},
+  {"imdb": "tt0066936", "tmdb": 105347, "slug": "how-tasty-was-my-little-frenchman", "title": "Como Era Gostoso o Meu Francês", "year": 1971, "sources": ["wikipedia-en-cinema-novo", "wikipedia-pt-cinema-novo"], "class": "periphery"},
+  {"imdb": "tt0201450", "tmdb": 173732, "slug": "bang-bang-1971", "title": "Bang bang", "year": 1971, "sources": ["abraccine-2015", "abraccine-2026", "bfi-10-brasil-2024", "wikipedia-pt-cinema-marginal"], "class": "core"},
+  {"imdb": "tt0068739", "tmdb": 74441, "slug": "the-conspirators-1972", "title": "Os Inconfidentes", "year": 1972, "sources": ["abraccine-2015", "wikipedia-pt-cinema-novo"], "class": "core"},
+  {"imdb": "tt0185714", "tmdb": 253380, "slug": "saint-bernard-1972", "title": "S. Bernardo", "year": 1972, "sources": ["abraccine-2015", "abraccine-2026", "wikipedia-en-cinema-novo", "wikipedia-pt-cinema-novo"], "class": "core"}
+],
+"exclude": [
+
+],
+"pending": [
+  {"title": "Arraial do Cabo", "year": 1960, "class": "periphery", "why": "the curation found no IMDb id for this film; it is written down so that it is not lost"},
+  {"title": "Manhã Cinzenta", "year": 1969, "class": "periphery", "why": "the curation found no IMDb id for this film; it is written down so that it is not lost"},
+  {"imdb": "tt0140084", "title": "A Grande Feira", "year": 1961, "class": "periphery", "why": "above the prefilter and not in the index, but no TMDB id or Letterboxd page is known yet"},
+  {"imdb": "tt0057088", "title": "Ganga Zumba", "year": 1963, "class": "periphery", "why": "above the prefilter and not in the index, but no TMDB id or Letterboxd page is known yet"}
+],
+"counted": {"curationFilms": 68, "written": 30, "inIndexOfReference": 30, "notInIndexAdmitted": 10, "notInIndexPassingImdb7": 1, "pending": 4, "documentariesWrittenOut": 0, "leftOut": {"named only by a source that is not a source of the movement (Abraccine reinforces, never suffices)": 25, "outside the years of the era": 1, "not in the index and under the prefilter": 8, "named with no id and no class (not written in pending)": 0}}
+}
